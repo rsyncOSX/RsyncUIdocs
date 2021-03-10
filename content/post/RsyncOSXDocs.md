@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "How to use RsyncUI"
-date = "2020-04-24"
+date = "2021-03-10"
 description = "If you want some more info about RsyncUI there are some resources here."
 tags = ["summary"]
 categories = ["general information"]

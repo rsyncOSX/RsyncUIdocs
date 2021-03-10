@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2020-04-23"
+date = "2021-03-10"
 title =  "JSON support"
 tags = ["json","config file"]
 categories = ["general information"]

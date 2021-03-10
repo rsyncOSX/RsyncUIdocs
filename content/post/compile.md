@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2020-04-17"
+date = "2021-03-10"
 title =  "How to compile RsyncUI"
 tags = ["compile"]
 categories = ["source code"]

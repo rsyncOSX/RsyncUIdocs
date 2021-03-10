@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2020-04-16"
+date = "2021-03-10"
 title =  "Add configurations"
 description = "How to enter synchronize tasks into RsyncUI."
 tags = ["add configurations"]

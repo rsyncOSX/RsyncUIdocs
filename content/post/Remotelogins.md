@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2020-04-17"
+date = "2021-03-10"
 title =  "Remote servers and passwordless logins"
 tags = ["passwordless"]
 categories = ["remotelogins"]

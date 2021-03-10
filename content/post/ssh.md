@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2020-04-16"
+date = "2021-03-10"
 title =  "Passwordless logins by ssh-keys - assisted by RsyncUI."
 tags = ["passwordless","ssh keypath and identity file"]
 categories = ["remotelogins"]
