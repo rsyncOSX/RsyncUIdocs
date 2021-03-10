@@ -1,7 +1,7 @@
-baseURL = "https://rsyncosx.netlify.app/"
+baseURL = "https://RsyncUI.netlify.app/"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "The RsyncOSX documentation"
+title = "The RsyncUI documentation"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -18,10 +18,10 @@ hasCJKLanguage = false     # has chinese/japanese/korean ? # 自动检测是否�
 paginate = 20                                              # 首页每页显示的文章数
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = "UA-168706149-1"      # UA-XXXXXXXX-X
-copyright = "RsyncOSX"            # default: author.name ↓        # 默认为下面配置的author.name ↓
+copyright = "Thomas Evensen"            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
-  name = "RsyncOSX"
+  name = "RsyncUI"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -56,10 +56,10 @@ copyright = "RsyncOSX"            # default: author.name ↓        # 默认为�
   since = "2017"            # Site creation time          # 站点建立时间
   # use public git repo url to link lastmod git commit, enableGitInfo should be true.
   # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
-  gitRepo = "https://github.com/rsyncOSX/RsyncOSX"
+  gitRepo = "https://github.com/RsyncUI/RsyncUI"
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "RsyncOSX"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "RsyncUI"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","even"]
   description = "Hugo theme even example site."
 
@@ -185,7 +185,7 @@ copyright = "RsyncOSX"            # default: author.name ↓        # 默认为�
 #    d-facebook = "http://localhost:1313"
 #    e-linkedin = "http://localhost:1313"
 #    f-google = "http://localhost:1313"
-    g-github = "https://github.com/rsyncOSX/RsyncOSX"
+    g-github = "https://github.com/RsyncUI/RsyncUI"
 #    h-weibo = "http://localhost:1313"
 #    i-zhihu = "http://localhost:1313"
 #    j-douban = "http://localhost:1313"

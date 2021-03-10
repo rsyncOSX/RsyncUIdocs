@@ -1,22 +1,22 @@
 +++
-author = "RsyncOSX"
+author = "Thomas Evensen"
 date = "2020-04-16"
-title =  "RsyncOSX default parameters"
+title =  "RsyncUI default parameters"
 tags = ["default rsync parameters"]
 categories = ["rsyncparameters"]
 description = "There are som default parameters to rsync."
 lastmod = "2020-07-16"
 +++
-RsyncOSX implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over **network connection** or not. Which standard parameters to use is computed during startup of application by reading the configuration file. The user can also remove default parameters if required.
+RsyncUI implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over **network connection** or not. Which standard parameters to use is computed during startup of application by reading the configuration file. The user can also remove default parameters if required.
 
-![](/images/RsyncOSX/master/userparameters/userparameters.png)
+![](/images/RsyncUI/master/userparameters/userparameters.png)
 
 ## Default rsync parameters
 
 The following parameters are applied to all tasks:
 
 - `--archive` ensures that all files are transferred with all attributes preserved
-- `--verbose` make rsync very outspoken, required for counting files in RsyncOSX
+- `--verbose` make rsync very outspoken, required for counting files in RsyncUI
 - `--delete` delete all files at **destination** which are not in the **source**
 	- this parameter also applies when restoring files, always do a restore to a temporary restore catalog
 

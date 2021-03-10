@@ -1,10 +1,10 @@
 +++
-author = "RsyncOSX"
+author = "Thomas Evensen"
 date = "2020-04-16"
 title =  "User selected rsync parameters"
 tags = ["user rsync parameters"]
 categories = ["rsyncparameters"]
-description = "RsyncOSX allows the user to set parameters to rsync."
+description = "RsyncUI allows the user to set parameters to rsync."
 lastmod = "2020-07-16"
 +++
 See also [default parameters](/post/rsyncparameters) for info about default parameters and the ssh parameters (local). Rsync utilizes a ton of parameters. Parameters are normally constructed as:
@@ -22,12 +22,12 @@ You can instruct rsync to save changed and deleted files in a separate backup ca
 
 - `--backup` parameter instructs rsync to save changed files
 - `--backup-dir` parameter where to save changed or deleted files before rsync synchronize source and destination
-	- RsyncOSX does suggest a value for the `--backup-dir` but you might set it to whatever you want
+	- RsyncUI does suggest a value for the `--backup-dir` but you might set it to whatever you want
 - **rsync daemon**: `::` enabling rsync daemon puts a double colon `::` in address parameter to rsync. It forces rsync to use the rsync daemon remote.
 
 There are [two possible setup for using the rsync daemon](/post/rsyncdaemon/). Utilizing a rsync daemon setup does **not** encrypt the transfer between client and server. To encrypt the transfer require tunneling traffic in a ssh protocol, [see how to setup ssh passwordless logins](/post/remotelogins/).
 
-![](/images/RsyncOSX/master/userparameters/userparameters.png)
+![](/images/RsyncUI/master/userparameters/userparameters.png)
 
 ## Suffix on changed and deleted files
 

@@ -1,14 +1,14 @@
 +++
-author = "RsyncOSX"
+author = "Thomas Evensen"
 date = "2020-04-16"
 title =  "License"
 tags = ["license"]
 categories = ["general information"]
-description = "The License of RsyncOSX."
+description = "The License of RsyncUI."
 +++
 The MIT License (MIT)
 
-Copyright (c) 2017 - Thomas Evensen
+Copyright (c) 2021 - Thomas Evensen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

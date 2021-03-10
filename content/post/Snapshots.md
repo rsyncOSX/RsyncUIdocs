@@ -1,5 +1,5 @@
 +++
-author = "RsyncOSX"
+author = "Thomas Evensen"
 date = "2020-04-16"
 title =  "Snapshots"
 tags = ["snapshot"]
@@ -30,7 +30,7 @@ where
 
 If remote catalog is a local volume full path must be added. The source catalog is **never** touched, only read by rsync.
 
-RsyncOSX creates the snapshots within the remote catalog. The ~ is expanded to the user home catalog on remote server. Utilizing snapshot on local attached disks require full path for remote catalog.
+RsyncUI creates the snapshots within the remote catalog. The ~ is expanded to the user home catalog on remote server. Utilizing snapshot on local attached disks require full path for remote catalog.
 
 - `~/snapshots/1` - snapshot one
   - a full sync when snapshot is created
@@ -44,7 +44,7 @@ RsyncOSX creates the snapshots within the remote catalog. The ~ is expanded to t
 
 ## Create a snapshot
 
-To create a snapshot task select `snapshot` as type in [add configurations](/post/addconfigurations/). Do **not** copy and paste command for execution within a terminal window. RsyncOSX saves the number n to the configuration. The number n is the next snapshot number. The number n is used when computing the parameter for rsync
+To create a snapshot task select `snapshot` as type in [add configurations](/post/addconfigurations/). Do **not** copy and paste command for execution within a terminal window. RsyncUI saves the number n to the configuration. The number n is the next snapshot number. The number n is used when computing the parameter for rsync
 and is picked up from the configuration.
 
 ## Snapshots on local attached volumes
@@ -53,13 +53,13 @@ It seems like you have to disable `Ignore ownership on this volume` on local att
 
 ## Snapshot administration
 
-It is important to administrate snapshots. By administrate means deleting not relevant snapshots. If snapshots are never deleted the number of snapshots might become difficult to use. A snapshot is most likely used to restore old and deleted files. This is why a plan to administrate snapshots is important. RsyncOSX can assist you in this.
+It is important to administrate snapshots. By administrate means deleting not relevant snapshots. If snapshots are never deleted the number of snapshots might become difficult to use. A snapshot is most likely used to restore old and deleted files. This is why a plan to administrate snapshots is important. RsyncUI can assist you in this.
 
-To administrate snapshots select the snapshot tab. Deleting snapshots is a **destructive** operation and should be performed with care. It is important to have a plan about which snapshots to keep and which to delete. RsyncOSX utilizes a simple plan for delete and keep snapshots.
+To administrate snapshots select the snapshot tab. Deleting snapshots is a **destructive** operation and should be performed with care. It is important to have a plan about which snapshots to keep and which to delete. RsyncUI utilizes a simple plan for delete and keep snapshots.
 
 Selecting the `Tag` button evaluates all snapshots based on the date withing the log record. Based and the selected plan and date, snapshots are either tagged with keep or delete. Snapshots which are tagged with delete are also preselected for delete. To actually delete the marked snapshots require to select the Delete button.
 
-![](/images/RsyncOSX/master/snapshots/snapshot.png)
+![](/images/RsyncUI/master/snapshots/snapshot.png)
 
 The plan is based upon three parts:
 

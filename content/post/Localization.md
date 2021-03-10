@@ -1,22 +1,18 @@
 +++
-author = "RsyncOSX"
+author = "Thomas Evensen"
 date = "2020-04-16"
 title =  "Localization"
 tags = ["Localization"]
 categories = ["general information"]
-description = "RsyncOSX speaks several languages."
+description = "RsyncUI speaks several languages."
 +++
-RsyncOSX and the menu app RsyncOSXsched are prepared for localization. Default language for both is English.
+RsyncUI and the menu app RsyncOSXsched are prepared for localization. Default language for both is English.
 
-RsyncOSX is localized to:
+RsyncUI is localized to:
 
-- Chinese (Simplified) -  by [StringKe (Chen)](https://github.com/StringKe)
-- German - by [Andre Voigtmann](https://github.com/andre68723)
 - Norwegian - by me
-- English - the base language of RsyncOSX
-- Italian - by [Stefano Steve Cutelle'](https://github.com/stefanocutelle)
-- Dutch - by [Marcellino Santoso](https://github.com/maebs), in progress
+- English - the base language of RsyncUI
 
-Localization is done by utilizing [Crowdin](https://crowdin.com/project/rsyncosx) to translate the xliff files which are imported into Xcode after translating. Xcode then creates the required language strings. [Crowdin is free for open source projects](https://crowdin.com/page/open-source-project-setup-request).
+Localization is done by utilizing [Crowdin](https://crowdin.com/project/RsyncUI) to translate the xliff files which are imported into Xcode after translating. Xcode then creates the required language strings. [Crowdin is free for open source projects](https://crowdin.com/page/open-source-project-setup-request).
 
-Volunteers are wanted for translating to other languages. Please create an issue if you have possibility to translate. Translating to new languages is mostly a proofreading exercise. [Crowdin](https://crowdin.com/project/rsyncosx) does most of the work and proofreading is last step before importing into code.
+Volunteers are wanted for translating to other languages. Please create an issue if you have possibility to translate. Translating to new languages is mostly a proofreading exercise. [Crowdin](https://crowdin.com/project/RsyncUI) does most of the work and proofreading is last step before importing into code.
