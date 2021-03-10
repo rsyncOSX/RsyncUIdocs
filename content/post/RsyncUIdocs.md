@@ -68,13 +68,6 @@ There are some info about logging and where RsyncUI store files. There are a few
 - where does RsyncUI [stores the config files](/post/configfiles/)
 - how to [check synchronized data](/post/check/)
 
-## Intro and video
-
-There are two short YouTube videos of RsyncUI:
-
-- [how to get and install RsyncUI](https://youtu.be/d-srHjL2F-0)
-- [adding and executing the first backup](https://youtu.be/vS5_rXdTtZ8)
-
 ## Compile
 
 And there is some info about [how to compile RsyncUI](/post/compile/).
