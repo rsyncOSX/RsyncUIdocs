@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
-date = "2020-04-16"
 date = "2021-03-10"
+title =  "Snapshots"
 tags = ["snapshot"]
 categories = ["synchronize"]
 description = "Snapshot is a very effective method for saving changes to file."
