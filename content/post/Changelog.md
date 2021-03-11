@@ -15,7 +15,7 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 ## Prerelase
 
-To be released before Easter 2021.
+There is [released a test version 11 March 2021](https://github.com/rsyncOSX/RsyncUI/releases).
 
 ## Todo list
 
