@@ -16,6 +16,8 @@ RsyncUI is a GUI ontop of the command line utility `rsync`, no more no less. Rsy
 
 All releases of RsyncUI are [signed and notarized](/post/notarized/). And there [is a short about me](/about).
 
+**THIS SITE IS WORK IN PROGRESS**
+
 ## The changelog
 
 There is a [changelog](/post/changelog/). Also please see info about [the latest version of rsync to install.](/post/rsync/)
