@@ -17,7 +17,7 @@ RsyncUI is a GUI ontop of the command line utility `rsync`, no more no less. Rsy
   - the latest version is [released here](https://github.com/rsyncOSX/RsyncUI/releases)
 - RsyncUI is built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
-RsyncUI is [signed and notarized](/post/notarized/). And there [is a short about me](/about). There is a [changelog](/post/changelog/). Also please see info about [the latest version of rsync to install.](/post/rsync/)
+RsyncUI is [signed and notarized](/post/notarized/).There is a [changelog](/post/changelog/) and a [todo list](/post/todo/).
 
 ## A few important words about RsyncUI
 
