@@ -1,4 +1,4 @@
-baseURL = "https://RsyncUI.netlify.app/"
+baseURL = "https://rsyncui.netlify.app/"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "The RsyncUI documentation"

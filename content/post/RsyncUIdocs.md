@@ -1,11 +1,11 @@
 +++
 author = "Thomas Evensen"
 title = "How to use RsyncUI"
-date = "2021-03-10"
+date = "2021-03-11"
 description = "If you want some more info about RsyncUI there are some resources here."
 tags = ["summary"]
 categories = ["general information"]
-lastmod = "2020-12-24"
+lastmod = "2021-03-11"
 +++
 RsyncUI is a GUI ontop of the command line utility `rsync`, no more no less. Rsync is a file-based tool for transferring and synchronization of files. RsyncUI supports both synchronize and snapshot tasks. There is no custom solution for the synchronized archive. And you can quit utilizing RsyncUI (and rsync) at any time and still have access to all synchronized files.
 
