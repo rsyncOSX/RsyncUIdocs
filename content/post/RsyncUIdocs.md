@@ -7,16 +7,17 @@ tags = ["summary"]
 categories = ["general information"]
 lastmod = "2021-03-11"
 +++
+This site is the new site for documentation of RsyncUI, the next release of RsyncOSX. Most of the pages are copy of the information from the previous version. The documentation will be updated as the development of next release is progressing.
+
+**THIS SITE IS WORK IN PROGRESS**
+
 RsyncUI is a GUI ontop of the command line utility `rsync`, no more no less. Rsync is a file-based tool for transferring and synchronization of files. RsyncUI supports both synchronize and snapshot tasks. There is no custom solution for the synchronized archive. And you can quit utilizing RsyncUI (and rsync) at any time and still have access to all synchronized files.
 
 - RsyncUI is compiled with support for **macOS Big Sur** only
   - the latest version is [released here](https://github.com/RsyncUI/RsyncUI/releases)
-  - RsyncUI can also be installed by homebrew - `brew install --cask RsyncUI`
 - RsyncUI is built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
 All releases of RsyncUI are [signed and notarized](/post/notarized/). And there [is a short about me](/about).
-
-**THIS SITE IS WORK IN PROGRESS**
 
 ## The changelog
 
