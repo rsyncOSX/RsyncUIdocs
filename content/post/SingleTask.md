@@ -11,12 +11,12 @@ Execute single tasks is a two step operation, one for estimation (dry-run) and o
 
 ![](/images/singletask/singletask.png)
 
-## The buttons:
+The following actions are possible within this view:
 
-The following actions within this view:
-
-- `Estimate` - estimate the select task, after estimating the label changes to `Execute`
+- `Estimate` - estimate the selected task, after estimating the label changes to `Execute`
 - `Now` - execute the selected task
+
+The buttons to right:
 
 - `View` - after estimaten, view result
 - `Abort` - abort the ongoing task
