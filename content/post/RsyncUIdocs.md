@@ -46,8 +46,16 @@ It is easy to add a first configuration and execute your first synchronize task.
 
 ## Execute tasks
 
+How to execute tasks, either multiple tasks or single task.
+
 - [executing multiple tasks](/post/multipletasks/)
 - [executing single tasks](/post/singletask/)
+
+## The user configuration
+
+Some info about user settings:
+
+- some info about [the user settings](/post/userconfiguration/)
 
 ## How to add parameters to rsync
 
@@ -55,27 +63,6 @@ Rsync has a ton of parameters. In user selected parameters you can add your own 
 
 - [user selected parameters](/post/userparameters/)
 - [default parameters](/post/rsyncparameters)
-
-## Snapshots, quick backup and scheduling
-
-Snapshot is an effective method for saving changes and deleted files. You can also execute a group of tasks. If you want to schedule daily or weekly synchronize or snapshot tasks, add a schedule in RsyncUI and execute by the menu app.
-
-- utilizing the [snapshot feature](/post/snapshots/)
-- utilizing the [quick synchronize feature](/post/quickbackup/)
-- [scheduling of tasks](/post/scheduletasks/)
-
-## How to restore
-
-Sometimes you need to restore files. Either execute [a full restore or file by file](/post/restore/).
-
-## Logging, configuration, config files, check
-
-There are some info about logging and where RsyncUI store files. There are a few user selected options. And sometimes you should execute a verify of synchronized files.
-
-- some info about [logging execution of tasks](/post/logging/)
-- some info about [user configuration](/post/userconfiguration/)
-- where does RsyncUI [stores the config files](/post/configfiles/)
-- how to [check synchronized data](/post/check/)
 
 ## Compile
 
