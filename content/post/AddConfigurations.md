@@ -12,6 +12,9 @@ A configuration require minimum a **local catalog** and a **remote catalog**. Af
 ![](/images/add/add.png)
 
 ## The buttons:
+
+The following actions within this view:
+
 - `Add` - will add a new configuration
 - `Select` - will select a configuration for update, the Add label will change to `Update`
 - `Profile` - add a new profile name and add the profile

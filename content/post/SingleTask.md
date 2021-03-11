@@ -10,3 +10,13 @@ lastmod = "2021-03-10"
 Execute single tasks is a two step operation, one for estimation (dry-run) and one for the real task. The output from rsync can be presented after each run.
 
 ![](/images/singletask/singletask.png)
+
+## The buttons:
+
+The following actions within this view:
+
+- `Estimate` - estimate the select task, after estimating the label changes to `Execute`
+- `Now` - execute the selected task
+
+- `View` - after estimaten, view result
+- `Abort` - abort the ongoing task
