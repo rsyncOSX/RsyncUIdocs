@@ -7,7 +7,9 @@ tags = ["todo"]
 categories = ["todo"]
 lastmod = "2021-03-11"
 +++
-The execution part of RsyncUI seems to be quite stable. Usersettings is working. Delete and update configurations is working. Adding configurations and create new profiles are working. Adding and delete schedules are working, but there is no link to the schedule app yet. The error handling is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
+Updated: 11 March 2021
+
+The execution part of RsyncUI seems to be quite stable. Usersettings is working. Delete and update configurations are working. Adding configurations and create new profiles are working. Adding and delete schedules are working, but there is no link to the schedule app yet. The error handling is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
 I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in paralell, but not at the same time due to locking of files.
 
