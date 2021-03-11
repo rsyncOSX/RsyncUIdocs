@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-10"
+date = "2021-03-11"
 title =  "User configuration"
 tags = ["userconfig"]
 categories = ["general information"]
@@ -8,27 +8,20 @@ astmod = "2020-08-24"
 +++
 There are a few parameters to choose in user configuration. Parameters are saved to permanent store.
 
-![](/images/RsyncUI/master/userconfig/user.png)
+![](/images/usersettings/settings.png)
 
 ## Rsync
 
- - v 3.1.2, 3.1.3, 3.2.x rsync - set optional path if **NOT** in /usr/local/bin
+ - Rsync version and path - set optional path if **NOT** in /usr/local/bin
    	- any version of rsync should work, but only version 2.6.9, 3.1.3 and 3.2.x are tested and verified
     - [utilizing the snapshot feature](/post/snapshots/) require either version 3.1.3 or 3.2.x of rsync
-- optional path for rsync:
+- path for rsync:
     - if other version of rsync is installed in other path than /usr/local/bin it must be set here
-- temporary path restore:
+- path for restore:
     - preset temporary path for restoring single files and catalogs
     - preset temporary path for a full restore
 
 If there is a not valid rsync path is set an error is presented.
-
-## Paths for RsyncUI and RsyncUIsched
-
-If both apps are installed in `/Applications` there is no need for setting paths.
-
-- path RsyncUI
-- path RsyncUIsched
 
 ## Logging
 
@@ -46,7 +39,7 @@ Logging is saved to permanent store:
 
 - either minimum (last 10 lines) or full logging of output from rsync, be carful not logging everything, the log file might be big
 - the log file can be inspected by open the output
-- the log file is stored at `$HOME/.RsyncUI/macserial/rsynclog.txt`
+- the log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`
 
 ## Monitor network connection
 
@@ -58,6 +51,14 @@ RsyncUI can monitor the network connection during execution of tasks. If a netwo
 
 By setting check data, RsyncUI will check and if required clean logs. The check data flag is **not** persistent and have to be set each time.
 
+## Number of days
+
+Number of days:
+
+- in Synchronize view tasks older than number of days are marked red
+
+![](/images/usersettings/ssh.png)
+
 ## Ssh parameters (global)
 
 The user can set a selected ssh keypath and identityfile. Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is not required to set if default values are used.
@@ -67,18 +68,21 @@ The user can set a selected ssh keypath and identityfile. Default values for ssh
 
 If global values are set, this is what the ssh parameter within the rsync command looks like.
 
-`-e  "ssh -i ~/.ssh_RsyncUI/RsyncUI -p NN"` where:
+`-e  "ssh -i ~/.ssh_rsyncosx/rsyncosx -p NN"` where:
 
 - `-i` is the ssh keypath and identityfile
 - `-p` is the port number ssh communicates through, default port 22
 
 If global ssh parameters are set, it applies to **all configurations**. It is possible to set other ssh values on each task.
 
-## Number of days
+![](/images/usersettings/paths.png)
 
-Number of days:
+## Paths for RsyncUI and RsyncOSXsched
 
-- in Synchronize view tasks older than number of days are marked red
+If both apps are installed in `/Applications` there is no need for setting paths.
+
+- path RsyncUI
+- path RsyncOSXsched
 
 ## Environment
 
@@ -88,9 +92,11 @@ It is possible to enter an environment variable to the process which executes th
 
 `"SSH_AUTH_SOCK": "/Users/username/.gnupg/S.gpg-agent.ssh"`
 
+![](/images/usersettings/json.png)
+
 ## Backup
 
-The `Backup` function copies all configurations and logs as a backup to your `$HOME/Documents/RsyncUIcopy-$date-suffix`. Viewing the catalog in Finder might show an empty catalog. The catalog is not empty, the configurations are saved as `.RsyncUI/macserialnumber` and Finder might not show `.` catalogs.
+The `Backup` function copies all configurations and logs as a backup to your `$HOME/Documents/RsyncOSXcopy-$date-suffix`. Viewing the catalog in Finder might show an empty catalog. The catalog is not empty, the configurations are saved as `.rsyncosx/macserialnumber` and Finder might not show `.` catalogs.
 
 ## JSON
 
