@@ -17,15 +17,17 @@ RsyncUI is a GUI ontop of the command line utility `rsync`, no more no less. Rsy
   - the latest version is [released here](https://github.com/rsyncOSX/RsyncUI/releases)
 - RsyncUI is built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
-RsyncUI is [signed and notarized](/post/notarized/). And there [is a short about me](/about).
-
-## The changelog
-
-There is a [changelog](/post/changelog/). Also please see info about [the latest version of rsync to install.](/post/rsync/)
+RsyncUI is [signed and notarized](/post/notarized/). And there [is a short about me](/about). There is a [changelog](/post/changelog/). Also please see info about [the latest version of rsync to install.](/post/rsync/)
 
 ## A few important words about RsyncUI
 
 Before commencing use of RsyncUI [there are a few important words to read](/post/important/).
+
+## The main menu
+
+Tis is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The start might be `Multiple tasks`. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
+
+![](/images/start/start.png)
 
 ## How to setup remote servers
 
@@ -36,11 +38,15 @@ Utilizing RsyncUI to synchronize files to remote servers requires some setup. Th
 
 Snapshot is not possible with [rsync daemon setup](/post/rsyncdaemon/).
 
-## How to add and execute single tasks
+## How to add and update
 
 It is easy to add a first configuration and execute your first synchronize task.
 
 - [add configurations](/post/addconfigurations/)
+
+## Execute tasks
+
+- [executing multiple tasks](/post/multipletasks/)
 - [executing single tasks](/post/singletask/)
 
 ## How to add parameters to rsync
