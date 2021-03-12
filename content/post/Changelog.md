@@ -11,7 +11,7 @@ If you are utilizing a local version of rsync, execute the rsync utility in a te
 
 **THIS SITE IS WORK IN PROGRESS**
 
-**THE PRERELEASE OF RsyncUI IS WORK IN PROGRESS AND THERE MIGHT BE BUGS**
+The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. There is a [todo list](/post/todo/), please read it before commencing the use of the prerelease.
 
 RsyncUI is [signed and notarized](/post/notarized/). Please see info about [the latest version of rsync in install](/post/rsync/).
 
@@ -22,5 +22,3 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 There is 11 March 2021 [released a test version](https://github.com/rsyncOSX/RsyncUI/releases). The testversion can be used in parallel with RsyncOSX.
 
 ## Todo list
-
-There is a [todo list](/post/todo/), please check it before commencing the use of SwiftUI.

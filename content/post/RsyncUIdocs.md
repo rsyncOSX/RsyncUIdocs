@@ -11,7 +11,7 @@ This site is the new site for documentation of RsyncUI, the next release of Rsyn
 
 **THIS SITE IS WORK IN PROGRESS**
 
-**THE PRERELEASE OF RsyncUI IS WORK IN PROGRESS AND THERE MIGHT BE BUGS**
+The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. There is a [todo list](/post/todo/), please read it before commencing the use of the prerelease.
 
 RsyncUI is a GUI ontop of the command line utility `rsync`, no more no less. Rsync is a file-based tool for transferring and synchronization of files. RsyncUI supports both synchronize and snapshot tasks. There is no custom solution for the synchronized archive. And you can quit utilizing RsyncUI (and rsync) at any time and still have access to all synchronized files.
 
