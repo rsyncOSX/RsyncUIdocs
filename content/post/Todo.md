@@ -13,7 +13,7 @@ Updated: 11 March 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
-The execution part of RsyncUI seems to be quite stable. Usersettings is working. Delete and update configurations are working. Adding configurations and create new profiles are working. Adding and delete schedules are working, but there is no link to the schedule app yet.
+The execution part of RsyncUI seems to be quite stable. The user settings are working. Delete and update configurations are working. Adding configurations and create new profiles are working. Adding and delete schedules are working, but there is no link to the schedule app yet.
 
 The error handling is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
@@ -26,6 +26,7 @@ Adding schedules and deleting tasks and logs.
 The following is work todo:
 
 - some more QA and work is required
+- not happy with the UI
 
 ## Parameters to rsync and the command
 
@@ -36,6 +37,7 @@ The following is work todo:
 - administrating parameters to rsync
 - setting parameters for backup and backup catalog of changed data before synchronizing
 - disable and enable default parameters to rsync
+- enable rsync daemon setup
 
 ## Administrate snapshots
 
