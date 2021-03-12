@@ -14,9 +14,9 @@ This view includes the most normal settings to tweak.
 
 ![](/images/usersettings/settings.png)
 
-### Rsync
+### Rsync version and path
 
- - Rsync version and path - set optional path if **NOT** in /usr/local/bin
+ - Rsync version 3.x to `on` - set optional path if **NOT** in /usr/local/bin
    	- any version of rsync should work, but only version 2.6.9, 3.1.3 and 3.2.x are tested and verified
     - [utilizing the snapshot feature](/post/snapshots/) require either version 3.1.3 or 3.2.x of rsync
 - path for rsync:
@@ -29,19 +29,19 @@ If there is a not valid rsync path is set an error is presented.
 
 ### Log to file
 
-If None is switch off there is no log to file. If on there is either a minimum or full log to file.
+If None is switch `on` there is no log to file. If `off` there is either a minimum or full log to file.
 
-- either minimum (last 10 lines) or full logging of output from rsync, be carful not logging everything, the log file might be big
-- the log file can be inspected by open the output
+- either Min (last 10 lines) or Ful logging of output from rsync, be carful not logging everything, the log file might be big
+- the log file can be inspected by `⌘L` shortcut or bu the File menu
 - the log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`
 
 ### Level log
 
-If Detailed is on there is a separate log for each run. If off only date for last run is saved on the configuration.
+If Detailed is `on` there is a separate log for each run. If `off` only date for last run is saved on the configuration.
 
 ### Mark days
 
-- in Synchronize view tasks older than number of days are marked red
+Tasks with older execute date than number of days are marked red.
 
 ### Monitor connection
 
@@ -53,7 +53,7 @@ By setting check data, RsyncUI will check and if required clean logs. The check 
 
 ### Enable JSON
 
-RsyncUI can store configurations and schedules in either JSON or PLIST format. If JSON is off PLIST is selected.
+RsyncUI can store configurations and schedules in either JSON or PLIST format. If JSON is `off` PLIST is selected.
 
 ## SSH settings
 
@@ -61,14 +61,18 @@ In this view you can let RsyncUI assist in creating ssh-keys and setup global ss
 
 ![](/images/usersettings/ssh.png)
 
-### Ssh parameters (global)
+### Local ssh keys found
 
-The user can set a selected ssh keypath and identityfile. Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is not required to set if default values are used.
+If `on` RsyncUI has found local ssh keys.
+
+### Set ssh keypath and identityfile
+
+The user can set a selected ssh keypath and identityfile which applies to all configurations. Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not required** to set if default values are used.
 
 - portnumber, which ssh communicates through
 - keypath + identityfile, user selected if other than default
 
-If global values are set, this is what the ssh parameter within the rsync command looks like.
+If **global values** are set, this is what the ssh parameter within the rsync command looks like.
 
 `-e  "ssh -i ~/.ssh_rsyncosx/rsyncosx -p NN"` where:
 
