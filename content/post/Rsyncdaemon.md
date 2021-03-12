@@ -50,9 +50,6 @@ Within the edit view:
 
 - prefix username `rsync://username`, remember the double `//`
 
-![](/images/RsyncUI/master/rsyncdaemon/edit.png)
-
-
 Within the parameter view:
 
 - in the parameter view, add a full path to the file with password, `--password-file=/Users/thomas/passord.txt`, remember to set `chmod 600` on the password file
@@ -65,5 +62,3 @@ All actions is within the parameter view:
 - enable the `rsync daemon`, it adds a double colon `::` to the rsync command string
 - add a full path to the file with password, `--password-file=/Users/thomas/passord.txt`, remember to set `chmod 600` on the password file
 - delete the `-e ssh` parameter
-
-![](/images/RsyncUI/master/rsyncdaemon/rsyncdaemon.png)
