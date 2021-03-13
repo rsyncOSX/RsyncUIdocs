@@ -19,7 +19,7 @@ The error handling is better in this version. If e.g rsync produces the word `er
 
 I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
 
-Also check out the [changelog for changes and updates](/post/changelog/)
+Also check out the [changelog for changes and updates](/post/changelog/).
 
 ## Schedules
 
