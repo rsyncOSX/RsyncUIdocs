@@ -7,7 +7,7 @@ tags = ["todo"]
 categories = ["todo"]
 lastmod = "2021-03-11"
 +++
-Updated: 11 March 2021
+Updated: 13 March 2021
 
 **THIS SITE IS WORK IN PROGRESS**
 
@@ -18,6 +18,8 @@ The execution part of RsyncUI seems to be quite stable. The user settings are wo
 The error handling is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
 I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
+
+Also check out the [changelog for changes and updates](/post/changelog/)
 
 ## Schedules
 
