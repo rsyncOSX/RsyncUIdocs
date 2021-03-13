@@ -39,14 +39,10 @@ If Detailed is `on` there is a separate log for each run. If `off` only date for
 
 Tasks with older execute date than number of days are marked red.
 
-## Monitor connection
+## Monitor network
 
 RsyncUI can monitor the network connection during execution of tasks. If a network connection is dropped during execution, RsyncUI sends an interrupt signal to the task and it halts with an error.
 
 ## Check input
 
 By setting check data, RsyncUI will check and if required clean logs. The check data flag is **not** persistent and have to be set each time.
-
-## Enable JSON
-
-RsyncUI can store configurations and schedules in either JSON or PLIST format. If JSON is `off` PLIST is selected. See [JSON support](/post/json/) for more info about JSON support. Default is PLIST.
