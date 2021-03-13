@@ -19,10 +19,13 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 ## Prerelease v0.35(7)
 
-There is 13 March 2021 [released a test version](https://github.com/rsyncOSX/RsyncUI/releases) a new version. The following is changed compared to previous version:
+There is 13 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
 - the user settings is updated, there were a few bugs in previous version
 - the documentation for [user settings is also updated](/post/userconfiguration/)
+- with this release there is about three months since I commenced the preparation and work on RsyncUI
+- RsyncUI will probably be released in version 1.0 in about two or three months, either late in May or beginning of June 2021
+- as the development progresses new testreleases will be available
 
 ## Prerelease v0.3(6)  
 
