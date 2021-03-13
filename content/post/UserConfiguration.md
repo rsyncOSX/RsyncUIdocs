@@ -8,6 +8,8 @@ astmod = "2020-08-24"
 +++
 There are a few parameters to choose in user configuration. Parameters are saved to permanent store. The settings is dividede into four parts.
 
+When the user has changed values it is marked with a change on the `Save` button.
+
 ## Settings
 
 This view includes the most normal settings to tweak.
@@ -57,7 +59,7 @@ RsyncUI can store configurations and schedules in either JSON or PLIST format. I
 
 ## SSH settings
 
-In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh keypath and identityfile.
+In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh keypath and identityfile, either utilizing default values or set your own. If utilizing default values, [see info about ssh](/post/ssh/).
 
 ![](/images/usersettings/ssh.png)
 
@@ -65,9 +67,22 @@ In this view you can let RsyncUI assist in creating ssh-keys and setup global ss
 
 If `on` RsyncUI has found local ssh keys.
 
+Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not required** to set your own values for key path and identityfile if default values are used.
+
+If there are no local ssh keys selecting the `Create` button will create the keys. If ssh keys are found, either default values or by the user set keypath and identityfile, RsyncUI will mark it.
+
+**Caution:** if setting your own values for keypath and identityfile save the values before creating new keys. Creating keys will adding output from the process in the logfile.
+
+Creating default ssh keys.
+![](/images/usersettings/ssh3.png)
+Creating ssh keys in user set keypath and identityfile.
+![](/images/usersettings/ssh4.png)
+
 ### Set ssh keypath and identityfile
 
-The user can set a selected ssh keypath and identityfile which applies to all configurations. Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not required** to set if default values are used.
+The user can set a selected ssh keypath and identityfile which applies to all configurations.
+
+Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not required** to set your own values for key path and identityfile if default values are used.
 
 - portnumber, which ssh communicates through
 - keypath + identityfile, user selected if other than default
@@ -80,6 +95,10 @@ If **global values** are set, this is what the ssh parameter within the rsync co
 - `-p` is the port number ssh communicates through, default port 22
 
 If global ssh parameters are set, it applies to **all configurations**. It is possible to set other ssh values on each task.
+
+Choosing the `Verify` button present view for copy and paste commands into a terminal view.
+
+![](/images/usersettings/ssh2.png)
 
 ## Paths and environment
 
@@ -110,7 +129,7 @@ In this view you can backup configurations and, if wanted transform existing con
 
 ### Backup
 
-The `Backup` function copies all configurations and logs as a backup to your `$HOME/Documents/RsyncOSXcopy-$date-suffix`. Viewing the catalog in Finder might show an empty catalog. The catalog is not empty, the configurations are saved as `.rsyncosx/macserialnumber` and Finder might not show `.` catalogs.
+The `Backup` button copies all configurations and logs as a backup to your `$HOME/Documents/RsyncOSXcopy-$date-suffix`. Viewing the catalog in Finder might show an empty catalog. The catalog is not empty, the configurations are saved as `.rsyncosx/macserialnumber` and Finder might not show `.` catalogs.
 
 ### JSON
 

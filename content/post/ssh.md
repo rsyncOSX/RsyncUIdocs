@@ -7,7 +7,11 @@ categories = ["remotelogins"]
 description = "RsyncUI can guide you in setting up passwordless login by ssh-keys."
 lastmod = "2020-12-13"
 +++
-RsyncUI utilizes user set ssh keypath and identityfile. See more info about how to set it in [the user configuration](/post/userconfiguration/).
+RsyncUI utilizes user set ssh keypath and identityfile.
+
+Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not required** to set your own values for key path and identityfile if default values are used.
+
+- how to set ssh keypath and identityfile in [the user configuration](/post/userconfiguration/#ssh-settings)
 
 The ssh parameter within the rsync command is if set by the user:
 
