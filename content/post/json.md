@@ -18,7 +18,7 @@ To enable JSON support is a **two step** process. Go to User settings and select
 - Verfiy - verify after Convert either converted JSON or PLIST files
 - Convert -  will transform the current format to either JSON or PLIST, after Convert choose Verify
 
-After transforming, the second task is to enable JSON support by selecting the `JSON` option [in user configuration](/post/userconfiguration/)
+After transforming, the second task is to enable JSON support by selecting the `JSON` option [in user configuration](/post/jsonsettings/)
 
 ## JSON enablet
 

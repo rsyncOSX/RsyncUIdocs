@@ -1,11 +1,11 @@
 +++
 author = "Thomas Evensen"
 title = "How to use RsyncUI"
-date = "2021-03-11"
+date = "2021-03-13"
 description = "If you want some more info about RsyncUI there are some resources here."
 tags = ["summary"]
 categories = ["general information"]
-lastmod = "2021-03-11"
+lastmod = "2021-03-13"
 +++
 This site is the new site for documentation of RsyncUI, the next release of RsyncOSX. Most of the pages are copy of the information from the previous version. The documentation will be updated as the development of next release is progressing.
 
@@ -19,7 +19,7 @@ RsyncUI is a GUI ontop of the command line utility `rsync`, no more no less. Rsy
   - the latest version is [released here](https://github.com/rsyncOSX/RsyncUI/releases)
 - RsyncUI is built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
-RsyncUI is [signed and notarized](/post/notarized/).There is a [changelog](/post/changelog/) and a [todo list](/post/todo/).
+RsyncUI is [signed and notarized](/post/notarized/). There is a [changelog](/post/changelog/) and a [todo list](/post/todo/).
 
 ## A few important words about RsyncUI
 
@@ -38,7 +38,7 @@ Utilizing RsyncUI to synchronize files to remote servers requires some setup. Th
 - [setup by ssh-keys](/post/ssh/)
 - [rsync daemon setup](/post/rsyncdaemon/)
 
-Snapshot is not possible with [rsync daemon setup](/post/rsyncdaemon/).
+Snapshot is **not** possible with rsync daemon setup.
 
 ## How to add and update
 

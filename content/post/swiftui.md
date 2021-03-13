@@ -1,11 +1,11 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-11"
+date = "2021-03-12"
 title =  "Next version"
 tags = ["swiftui, nextversion"]
 categories = ["swiftui"]
 description = "Some info about SwiftUI version of RsyncOSX"
-lastmod = "2021-03-11"
+lastmod = "2021-03-12"
 +++
 The development of next version commenced in December 2020 and the release of RsyncUI will be sometime before summer 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
 

@@ -1,136 +1,16 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-11"
+date = "2021-03-12"
 title =  "User configuration"
 tags = ["userconfig"]
 categories = ["general information"]
-astmod = "2020-08-24"
+lastmod = "2021-03-12"
 +++
-There are a few parameters to choose in user configuration. Parameters are saved to permanent store. The settings is dividede into four parts.
+There are a few parameters to choose in user configuration. Parameters are saved to permanent store. The settings are dividede into four parts. When the user has changed a value it is marked with a change on the `Save` button.
 
-When the user has changed values it is marked with a change on the `Save` button.
+![](/images/usersettings/save.png)
 
-## Settings
-
-This view includes the most normal settings to tweak.
-
-![](/images/usersettings/settings.png)
-
-### Rsync version and path
-
- - Rsync version 3.x to `on` - set optional path if **NOT** in /usr/local/bin
-   	- any version of rsync should work, but only version 2.6.9, 3.1.3 and 3.2.x are tested and verified
-    - [utilizing the snapshot feature](/post/snapshots/) require either version 3.1.3 or 3.2.x of rsync
-- path for rsync:
-    - if other version of rsync is installed in other path than /usr/local/bin it must be set here
-- path for restore:
-    - preset temporary path for restoring single files and catalogs
-    - preset temporary path for a full restore
-
-If there is a not valid rsync path is set an error is presented.
-
-### Log to file
-
-If None is switch `on` there is no log to file. If `off` there is either a minimum or full log to file.
-
-- either Min (last 10 lines) or Ful logging of output from rsync, be carful not logging everything, the log file might be big
-- the log file can be inspected by `⌘L` shortcut or bu the File menu
-- the log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`
-
-### Level log
-
-If Detailed is `on` there is a separate log for each run. If `off` only date for last run is saved on the configuration.
-
-### Mark days
-
-Tasks with older execute date than number of days are marked red.
-
-### Monitor connection
-
-RsyncUI can monitor the network connection during execution of tasks. If a network connection is dropped during execution, RsyncUI sends an interrupt signal to the task and it halts with an error.
-
-### Check input
-
-By setting check data, RsyncUI will check and if required clean logs. The check data flag is **not** persistent and have to be set each time.
-
-### Enable JSON
-
-RsyncUI can store configurations and schedules in either JSON or PLIST format. If JSON is `off` PLIST is selected.
-
-## SSH settings
-
-In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh keypath and identityfile, either utilizing default values or set your own. If utilizing default values, [see info about ssh](/post/ssh/).
-
-![](/images/usersettings/ssh.png)
-
-### Local ssh keys found
-
-If `on` RsyncUI has found local ssh keys.
-
-Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not required** to set your own values for key path and identityfile if default values are used.
-
-If there are no local ssh keys selecting the `Create` button will create the keys. If ssh keys are found, either default values or by the user set keypath and identityfile, RsyncUI will mark it.
-
-**Caution:** if setting your own values for keypath and identityfile save the values before creating new keys. Creating keys will adding output from the process in the logfile.
-
-Creating default ssh keys.
-![](/images/usersettings/ssh3.png)
-Creating ssh keys in user set keypath and identityfile.
-![](/images/usersettings/ssh4.png)
-
-### Set ssh keypath and identityfile
-
-The user can set a selected ssh keypath and identityfile which applies to all configurations.
-
-Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not required** to set your own values for key path and identityfile if default values are used.
-
-- portnumber, which ssh communicates through
-- keypath + identityfile, user selected if other than default
-
-If **global values** are set, this is what the ssh parameter within the rsync command looks like.
-
-`-e  "ssh -i ~/.ssh_rsyncosx/rsyncosx -p NN"` where:
-
-- `-i` is the ssh keypath and identityfile
-- `-p` is the port number ssh communicates through, default port 22
-
-If global ssh parameters are set, it applies to **all configurations**. It is possible to set other ssh values on each task.
-
-Choosing the `Verify` button present view for copy and paste commands into a terminal view.
-
-![](/images/usersettings/ssh2.png)
-
-## Paths and environment
-
-In this view set alternative path to apps and environment.
-
-![](/images/usersettings/paths.png)
-
-### Paths for RsyncUI and RsyncOSXsched
-
-If both apps are installed in `/Applications` there is no need for setting paths.
-
-- path RsyncUI
-- path RsyncOSXsched
-
-### Environment
-
-Enable environment:
-
-It is possible to enter an environment variable to the process which executes the synchronize task. An example of such is :
-
-`"SSH_AUTH_SOCK": "/Users/username/.gnupg/S.gpg-agent.ssh"`
-
-## Backup, JSON and PLIST
-
-In this view you can backup configurations and, if wanted transform existing configurations to either JSON or PLIST.
-
-![](/images/usersettings/json.png)
-
-### Backup
-
-The `Backup` button copies all configurations and logs as a backup to your `$HOME/Documents/RsyncOSXcopy-$date-suffix`. Viewing the catalog in Finder might show an empty catalog. The catalog is not empty, the configurations are saved as `.rsyncosx/macserialnumber` and Finder might not show `.` catalogs.
-
-### JSON
-
-See [JSON support](/post/json/)
+- [rsync and other settings](/post/normalsettings/)
+- [ssh settings](/post/sshsettings)
+- [paths](/post/pathsettings/)
+- [JSON and backup](/post/jsonsettings/)

@@ -11,7 +11,7 @@ RsyncUI utilizes user set ssh keypath and identityfile.
 
 Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not required** to set your own values for key path and identityfile if default values are used.
 
-- how to set ssh keypath and identityfile in [the user configuration](/post/userconfiguration/#ssh-settings)
+- how to set ssh keypath and identityfile in [the user configuration](/post/sshsettings/)
 
 The ssh parameter within the rsync command is if set by the user:
 
@@ -50,7 +50,7 @@ The following command copy the newly created public key to the server:
 
 You can also setup the new ssh keypath and identityfile in a terminal window and after setup add the new ssh keypath and identityfile in Userconfig. RsyncUI will automatically enable it when added in user config.
 
-If you want RsyncUI to assist in setting up please select the ssh tab, open [the user configuration](/post/userconfiguration/) and add new ssh keypath and identityfile and ssh port number if other than 22.
+If you want RsyncUI to assist in setting up please select the ssh tab, open [the user configuration](/post/sshsettings/) and add new ssh keypath and identityfile and ssh port number if other than 22.
 
 The user can also apply local ssh keypath and identityfile and ssh port, which rules the global settings, on each task.
 
