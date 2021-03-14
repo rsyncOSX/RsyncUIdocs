@@ -25,11 +25,13 @@ If there is a not valid rsync path is set an error is presented.
 
 ## Log to file
 
-If None is switch `on` there is no log to file. If `off` there is either a minimum or full log to file.
+There is three choices for logging, none, min and full and they are mutually exclusive. The following are settings for logging:
 
-- either Min (last 10 lines) or Ful logging of output from rsync, be carful not logging everything, the log file might be big
-- the log file can be inspected by `⌘L` shortcut or bu the File menu
-- the log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`
+- none - there is no logging
+- min - last 10 lines of output is logged
+- full - everything is logged
+
+The log file can be inspected by `⌘L` shortcut or bu the File menu. The log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`.
 
 ## Level log
 
