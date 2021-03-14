@@ -18,6 +18,8 @@ RsyncUI is [signed and notarized](/post/notarized/). Please see info about [the 
 
 ## Prerelease v0.35(7)
 
+There is still some minor issues with settings - a new prerelease will be uploaded in next week (16 - 20 March). Use RsyncOSX if you will change some settings.
+
 There is 14 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
 - the user settings is updated, there were a few bugs in previous version
