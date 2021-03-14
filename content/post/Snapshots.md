@@ -5,7 +5,7 @@ title =  "Snapshots"
 tags = ["snapshot"]
 categories = ["synchronize"]
 description = "Snapshot is a very effective method for saving changes to file."
-lastmod = "2020-12-13"
+lastmod = "2020-12-14"
 +++
 Utilizing snapshot is an effective method for restore of previous versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
 
@@ -58,8 +58,6 @@ It is important to administrate snapshots. By administrate means deleting not re
 To administrate snapshots select the snapshot tab. Deleting snapshots is a **destructive** operation and should be performed with care. It is important to have a plan about which snapshots to keep and which to delete. RsyncUI utilizes a simple plan for delete and keep snapshots.
 
 Selecting the `Tag` button evaluates all snapshots based on the date withing the log record. Based and the selected plan and date, snapshots are either tagged with keep or delete. Snapshots which are tagged with delete are also preselected for delete. To actually delete the marked snapshots require to select the Delete button.
-
-![](/images/RsyncUI/master/snapshots/snapshot.png)
 
 The plan is based upon three parts:
 

@@ -5,21 +5,20 @@ date = "2021-03-13"
 description = "If you want some more info about RsyncUI there are some resources here."
 tags = ["summary"]
 categories = ["general information"]
-lastmod = "2021-03-13"
+lastmod = "2021-03-14"
 +++
-This site is the new site for documentation of RsyncUI, the next release of RsyncOSX. Most of the pages are copy of the information from the previous version. The documentation will be updated as the development of next release is progressing.
+This site is the new site for documentation of RsyncUI, the next release of RsyncOSX. The documentation will be updated as the development of next release is progressing.
 
 **THIS SITE IS WORK IN PROGRESS**
 
-The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. There is a [todo list](/post/todo/), please read it before commencing the use of the prerelease.
+The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease.
 
 RsyncUI is a GUI ontop of the command line utility `rsync`, no more no less. Rsync is a file-based tool for transferring and synchronization of files. RsyncUI supports both synchronize and snapshot tasks. There is no custom solution for the synchronized archive. And you can quit utilizing RsyncUI (and rsync) at any time and still have access to all synchronized files.
 
 - RsyncUI is compiled with support for **macOS Big Sur** only
-  - the latest version is [released here](https://github.com/rsyncOSX/RsyncUI/releases)
-- RsyncUI is built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
+- the latest prerelase (test) is [released here](https://github.com/rsyncOSX/RsyncUI/releases)
 
-RsyncUI is [signed and notarized](/post/notarized/). There is a [changelog](/post/changelog/) and a [todo list](/post/todo/).
+RsyncUI is [signed and notarized](/post/notarized/) and it is built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
 ## A few important words about RsyncUI
 
@@ -27,7 +26,7 @@ Before commencing use of RsyncUI [there are a few important words to read](/post
 
 ## The main menu
 
-Tis is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The start might be `Multiple tasks`. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
+This is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
 
 ![](/images/start/start.png)
 
@@ -46,18 +45,18 @@ It is easy to add a first configuration and execute your first synchronize task.
 
 - [add configurations](/post/addconfigurations/)
 
+## The user configuration
+
+Some info about user settings:
+
+- some info about [the user settings](/post/userconfiguration/)
+
 ## Execute tasks
 
 How to execute tasks, either multiple tasks or single task.
 
 - [executing multiple tasks](/post/multipletasks/)
 - [executing single tasks](/post/singletask/)
-
-## The user configuration
-
-Some info about user settings:
-
-- some info about [the user settings](/post/userconfiguration/)
 
 ## How to add parameters to rsync
 
