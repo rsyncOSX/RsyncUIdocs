@@ -9,19 +9,19 @@ lastmod = "2021-03-11"
 +++
 Updated: 13 March 2021
 
-**THIS SITE IS WORK IN PROGRESS**
-
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
-
-The execution part of RsyncUI seems to be quite stable. The user settings are working. Delete and update configurations are working. Adding configurations and create new profiles are working. Adding and delete schedules are working, but there is no link to the schedule app yet.
-
-The error handling is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
 I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
 
-Also check out the [changelog for changes and updates](/post/changelog/).
+Also check out the [changelog](/post/changelog/).
 
 [Combine](https://developer.apple.com/documentation/combine) is a declarative framework. I am using some of it in RsyncUI, but there is potensial for more use. To understand what Combine is and how to use it takes time and the plan is to use more of it in RsyncUI after the first release. But I need to spend time to learn it now.
+
+## What is working
+
+The **execution part** of RsyncUI seems to be quite stable. The **user settings** are working. **Delete and update** configurations are working. **Adding** configurations and **create new profiles** are working. **Adding and delete schedules** are working, but there is no link to the schedule app yet.
+
+The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
 ## Schedules
 
@@ -30,7 +30,6 @@ Adding schedules and deleting tasks and logs.
 The following is work todo:
 
 - some more QA and work is required
-- not happy with the UI
 
 ## Parameters to rsync and the command
 
