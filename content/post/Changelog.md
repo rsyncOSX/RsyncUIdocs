@@ -15,6 +15,15 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 RsyncUI is [signed and notarized](/post/notarized/). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Prerelease v0.36(8)
+
+There is 15 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
+
+- the issues with usersettings should be solved
+- a few other enhancments
+- focus the next few weeks are QA of what is implemented and planning what to be developed next
+- I am also using time to learn more about SwiftUI, focus now is Combine and how can I use Combine in RsyncUI
+
 
 ## Prerelease v0.35(7)
 

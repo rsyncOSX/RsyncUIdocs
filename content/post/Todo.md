@@ -21,6 +21,8 @@ I am using the app it on daily basis myself. From time to time I do a check with
 
 Also check out the [changelog for changes and updates](/post/changelog/).
 
+[Combine](https://developer.apple.com/documentation/combine) is a declarative framework. I am using some of it in RsyncUI, but there is potensial for more use. To understand what Combine is and how to use it takes time and the plan is to use more of it in RsyncUI in second halft of 2021. But I need to spend time to learn it now.
+
 ## Schedules
 
 Adding schedules and deleting tasks and logs.
