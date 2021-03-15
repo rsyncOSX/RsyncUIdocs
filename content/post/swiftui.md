@@ -15,7 +15,7 @@ And to be honest, **the future of RsyncOSX is SwiftUI**. And it is **really fun 
 
 ## About the development and progress
 
-There are some more info about the progress in [the todo list](/post/todo/). Also check out the [changelog for changes and updates](/post/changelog/)
+There are some more info about the progress in [the todo list](/post/todo/). Also check out the [changelog](/post/changelog/).
 
 The final version will be released sometime closer to summer 2021. Most of the core basic functions like executing tasks, compute the parameters to rsync are reused code from the current version. And most of the executing part is stable and working.
 
