@@ -54,7 +54,7 @@ How to execute tasks, either multiple tasks or single task.
 
 ## Log files
 
-The [logfiles](/post/logging/) can bi viewed either all or by config.
+The [logfiles](/post/logging/) can be viewed either all or by config.
 
 ## How to add parameters to rsync
 
