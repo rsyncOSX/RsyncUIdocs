@@ -7,20 +7,20 @@ tags = ["RsyncUI"]
 categories = ["changelog"]
 lastmod = "2021-03-11"
 +++
-If you are utilizing a local version of rsync, execute the rsync utility in a terminal window before using RsyncUI. There is a process of granting access for the rsync utility before using it by RsyncUI. MacOS will also ask permission for accessing your home catalog the first time you start RsyncUI. If you also utilize the menu-app (RsyncUIsched), be aware of you might have to force quit RsyncUI the first time you start the menu-app. This is because the macOS asks for permissions when starting the menu-app for the first time and RsyncUI is not closed automatically when starting the menu-app. This might happen only once first time start.
+The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. RsyncUI is [signed and notarized](/post/notarized/).
 
-**THIS SITE IS WORK IN PROGRESS**
+---
 
-The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. There is a [todo list](/post/todo/), please read it before commencing the use of the prerelease.
+The prerelease v036(build 10) is now very close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
-RsyncUI is [signed and notarized](/post/notarized/). Please see info about [the latest version of rsync in install](/post/rsync/).
+---
 
 ## Prerelease v0.36(build 10)
 
 There is 18 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
 - a kind of "race" situation related to Alert and the word error in output is fixed
-- logs view, either all or by config, search and delete in logs 
+- logs view, either all or by config, search and delete in logs
 - and a few other enhancments as well, commenced using Combine
 
 ## Prerelease v0.36(build 8)
