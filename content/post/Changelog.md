@@ -15,7 +15,15 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 RsyncUI is [signed and notarized](/post/notarized/). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Prerelease v0.36(8)
+## Prerelease v0.36(build 10)
+
+There is 18 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
+
+- a kind of "race" situation related to Alert and the word error in output is fixed
+- logs view, either all or by config, search and delete in logs 
+- and a few other enhancments as well, commenced using Combine
+
+## Prerelease v0.36(build 8)
 
 There is 15 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
@@ -25,7 +33,7 @@ There is 15 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - I am also using time to learn more about SwiftUI, focus now is Combine and how can I use Combine in RsyncUI
 
 
-## Prerelease v0.35(7)
+## Prerelease v0.35(build 7)
 
 There is still some minor issues with settings - a new prerelease will be uploaded in next week (16 - 20 March). Use RsyncOSX if you will change some settings.
 
@@ -37,6 +45,6 @@ There is 14 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - RsyncUI will probably be released in version 1.0 in about two or three months, either late in May or beginning of June 2021
 - as the development progresses new testreleases will be available
 
-## Prerelease v0.3(6)  
+## Prerelease v0.3(build 6)  
 
 There is 12 March 2021 [released a test version](https://github.com/rsyncOSX/RsyncUI/releases). The testversion can be used in parallel with RsyncOSX.
