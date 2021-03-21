@@ -10,9 +10,9 @@ RsyncUI and the menu app RsyncOSXsched are prepared for localization. Default la
 
 RsyncUI is localized to:
 
+- English - the base language of RsyncOSX
+- German - by [Andre Voigtmann](https://github.com/andre68723)
+- Italian - by [Stefano Steve Cutelle'](https://github.com/stefanocutelle)
 - Norwegian - by me
-- English - the base language of RsyncUI
 
-Localization is done by utilizing [Crowdin](https://crowdin.com/project/RsyncUI) to translate the xliff files which are imported into Xcode after translating. Xcode then creates the required language strings. [Crowdin is free for open source projects](https://crowdin.com/page/open-source-project-setup-request).
-
-Volunteers are wanted for translating to other languages. Please create an issue if you have possibility to translate. Translating to new languages is mostly a proofreading exercise. [Crowdin](https://crowdin.com/project/RsyncUI) does most of the work and proofreading is last step before importing into code.
+Localization is done by utilizing [Crowdin](https://rsyncosx.crowdin.com/u/projects/30) to translate the xliff files which are imported into Xcode after translating. Xcode then creates the required language strings. [Crowdin is free for open source projects](https://crowdin.com/page/open-source-project-setup-request).
