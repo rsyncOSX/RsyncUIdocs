@@ -67,3 +67,4 @@ The following is **not yet** implemented:
 - shortcut codes for various tasks
 - no start or stop of the menu app for scheduling of tasks
 - not yet localized, but prepared for it
+- local and remote info about synchronized data
