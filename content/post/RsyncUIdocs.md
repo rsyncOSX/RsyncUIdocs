@@ -52,16 +52,15 @@ How to execute tasks, either multiple tasks or single task.
 - [executing multiple tasks](/post/multipletasks/)
 - [executing single tasks](/post/singletask/)
 
-## Log files
-
-The [logfiles](/post/logging/) can be viewed either all or by config.
-
-## How to add parameters to rsync
+## Parameters to rsync
 
 Rsync has a ton of parameters. In user selected parameters you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
 
-- [user selected parameters](/post/userparameters/)
-- [default parameters](/post/rsyncparameters)
+- [default and add parameters](/post/rsyncparameters)
+
+## Log files
+
+The [logfiles](/post/logging/) can be viewed either all or by config.
 
 ## Compile
 
