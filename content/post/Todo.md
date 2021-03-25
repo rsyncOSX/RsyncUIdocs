@@ -13,7 +13,7 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 ---
 
-The prerelease v036(build 10) is now very close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. I am using the prerelase only, and from time to time checking with current release.
+The prerelease v039(build 11) is now very close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. I am using the prerelase only, and from time to time checking with current release.
 
 ---
 

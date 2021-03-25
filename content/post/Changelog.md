@@ -11,7 +11,7 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 ---
 
-The prerelease v036(build 10) is now very close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
+The prerelease v039(build 11) is now very close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
 
@@ -22,7 +22,7 @@ There is 25 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - adding parameters to rsync
 - som UI updates
 
-The plan for release of version 1.0 is sometime in June or July 2021. 
+The plan for release of version 1.0 is sometime in June or July 2021.
 
 ## Prerelease v0.36(build 10)
 
