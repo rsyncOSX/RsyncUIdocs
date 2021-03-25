@@ -15,6 +15,15 @@ The prerelease v036(build 10) is now very close, by functions, to the current re
 
 ---
 
+## Prerelease v0.39(build 11)
+
+There is 25 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
+
+- adding parameters to rsync
+- som UI updates
+
+The plan for release of version 1.0 is sometime in June or July 2021. 
+
 ## Prerelease v0.36(build 10)
 
 There is 18 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:

@@ -7,7 +7,7 @@ tags = ["todo"]
 categories = ["todo"]
 lastmod = "2021-03-11"
 +++
-Updated: 18 March 2021
+Updated: 25 March 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
@@ -25,28 +25,18 @@ Also check out the [changelog](/post/changelog/).
 
 ## What is working
 
-The **execution part** of RsyncUI seems to be quite stable. The **user settings** are working. **Delete and update** configurations are working. **Adding** configurations and **create new profiles** are working. **Adding and delete schedules** are working, but there is no link to the schedule app yet. **Deleting logrecords** are working.
+The following is the prerelase:
+
+- the **execution part** of RsyncUI seems to be quite stable, both single and multiple tasks
+- administrate the **user settings**
+- **delete and update** configurations
+- **add** configurations and **create new profiles**
+- **add and delete schedules** are working, but there is no link to the schedule app yet.
+- **delete logrecords**
+- **add and delete parameters** to rsync
+- commenced the work on localize RsyncUI to German, Italian and Norwegian
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
-
-## Schedules
-
-Adding schedules and deleting tasks and logs.
-
-The following is work todo:
-
-- some more QA and work is required
-
-## Parameters to rsync and the command
-
-Viewing the actual rsync command and parameters to rsync for one task. The user can (when the app is released) set any parameter to rsync. The `Copy` button copy the actual rsync command (--dry-run) to memory for possible paste it into a terminal view.
-
-The following is work todo:
-
-- administrating parameters to rsync
-- setting parameters for backup and backup catalog of changed data before synchronizing
-- disable and enable default parameters to rsync
-- enable rsync daemon setup
 
 ## Administrate snapshots
 
@@ -62,7 +52,6 @@ The following is **not yet** implemented:
 
 - **restore** of data
 - execution of **shellout tasks**, configurations with pre and post shell scripts
-- administration of parameters to rsync
 - administration of snapshot tasks
 - shortcut codes for various tasks
 - no start or stop of the menu app for scheduling of tasks
