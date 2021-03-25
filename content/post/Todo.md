@@ -11,12 +11,6 @@ Updated: 25 March 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
----
-
-The prerelease v039(build 11) is now very close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. I am using the prerelase only, and from time to time checking with current release.
-
----
-
 I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
 
 Also check out the [changelog](/post/changelog/).
@@ -38,7 +32,7 @@ The following is the prerelase:
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
-## Administrate snapshots
+## Snapshots
 
 RsyncUI supports snapshot tasks. It is important to administrate (delete) older snapshots not needed. RsyncUI supports a couple of plans to assist in which snapshoots to keep and which to delete.
 
