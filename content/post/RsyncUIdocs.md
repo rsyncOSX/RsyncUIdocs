@@ -7,11 +7,9 @@ tags = ["summary"]
 categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This site is the new site for documentation of RsyncUI, the next release of RsyncOSX. The documentation will be updated as the development of next release is progressing.
+This is the documentation of the new app RsyncUI, the next release of RsyncOSX. The documentation will be updated as the **development of next release is going forward**.
 
-**THIS SITE IS WORK IN PROGRESS**
-
-The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease.
+The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur. There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease.
 
 - RsyncUI is compiled with support for **macOS Big Sur** only
 - the latest prerelase (test) is [released here](https://github.com/rsyncOSX/RsyncUI/releases)

@@ -44,7 +44,6 @@ Rsync utilizes a ton of parameters. Parameters are normally constructed as:
 
 For a full list of parameters to rsync please see the [rsync docs](https://download.samba.org/pub/rsync/rsync.html).
 
-
 ![](/images/rsyncparameters/parameters.png)
 ![](/images/rsynccommando/rsynccommand.png)
 
@@ -58,8 +57,6 @@ You can instruct rsync to save changed and deleted files in a separate backup ca
 - **rsync daemon**: `::` enabling rsync daemon puts a double colon `::` in address parameter to rsync. It forces rsync to use the rsync daemon remote.
 
 There are [two possible setup for using the rsync daemon](/post/rsyncdaemon/). Utilizing a rsync daemon setup does **not** encrypt the transfer between client and server. To encrypt the transfer require tunneling traffic in a ssh protocol, [see how to setup ssh passwordless logins](/post/remotelogins/).
-
-![](/images/RsyncUI/master/userparameters/userparameters.png)
 
 ### Suffix on changed and deleted files
 

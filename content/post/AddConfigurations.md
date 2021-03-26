@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 date = "2021-03-10"
-title =  "Add and edit configurations"
+title =  "Add and update configurations"
 description = "How to enter synchronize tasks into RsyncUI."
 tags = ["add configurations"]
 categories = ["configurations"]
@@ -62,7 +62,11 @@ Local catalog and Remote catalog are added either by using drag and drop from fi
 
 Select the `Add` button when completed and configuration is added to RsyncUI. RsyncUI adds a trailing / character to both local and remote volume. After selecting the Add button another configuration might be added. Any changes (edit or delete) to configurations are done from the Synchronize view. Additional parameters to rsync might be added utilizing the Parameter button.
 
-## Update configurations
+## Update configuration
+
+To update a configuration use the `Select` button and choose which configuration to update.
 
 ![](/images/add/select.png)
+
+After changes either save or select another task to abandon the update.
 ![](/images/add/update.png)
