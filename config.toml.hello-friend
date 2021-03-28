@@ -1,7 +1,7 @@
-baseurl = "/"
+baseurl = "https://rsyncui.netlify.app/"
 languageCode = "en-us"
 theme = "hello-friend"
-paginate = 5
+paginate = 15
 googleAnalytics = "G-N34DQ0X5YS"
 
 [params]

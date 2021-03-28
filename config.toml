@@ -1,7 +1,7 @@
-baseurl = "/"
+baseurl = "https://rsyncui.netlify.app/"
 languageCode = "en-us"
 theme = "hello-friend"
-paginate = 5
+paginate = 15
 googleAnalytics = "G-N34DQ0X5YS"
 
 [params]
@@ -16,7 +16,7 @@ googleAnalytics = "G-N34DQ0X5YS"
   showMenuItems = 2
 
   # Show reading time in minutes for posts
-  showReadingTime = false
+  showReadingTime = true
 
   # Show table of contents at the top of your posts (defaults to false)
   # Alternatively, add this param to post front matter for specific posts
