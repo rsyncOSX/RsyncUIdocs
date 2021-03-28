@@ -17,7 +17,7 @@ I am using the app it on daily basis myself. From time to time I do a check with
 
 ## What is working
 
-The following is the prerelase:
+The following is in the prerelase:
 
 - the **execution part** of RsyncUI seems to be quite stable, both single and multiple tasks
 - administrate the **user settings**
@@ -36,9 +36,8 @@ The following is **not yet** implemented:
 
 - **restore** of data
 - execution of **shellout tasks**, configurations with pre and post shell scripts
-- administration of snapshot tasks
+- administration of snapshot tasks (delete snapshots)
 - shortcut codes for various tasks
 - no start or stop of the menu app for scheduling of tasks
 - not yet localized, but prepared for it
 - local and remote info about synchronized data
-- delete snapshots
