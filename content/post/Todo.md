@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "The Todo list"
 date = "2021-03-11"
-description = "Todo"
+description = "The todo list"
 tags = ["todo"]
 categories = ["todo"]
 lastmod = "2021-03-28"
@@ -12,8 +12,6 @@ Updated: 28 March 2021
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
 I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files. Also check out the [changelog](/post/changelog/).
-
-[Combine](https://developer.apple.com/documentation/combine) is new and a declarative framework from Apple. I am using it primarly for asynchronous tasks like validate input from the user and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. They must be reliable and whenever they are triggered RsyncUI must catch them.
 
 ## What is working
 

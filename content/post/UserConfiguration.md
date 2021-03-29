@@ -2,6 +2,7 @@
 author = "Thomas Evensen"
 date = "2021-03-12"
 title =  "User configuration"
+description = "There are some settings which can be tweaked by the user."
 tags = ["userconfig"]
 categories = ["general information"]
 lastmod = "2021-03-12"

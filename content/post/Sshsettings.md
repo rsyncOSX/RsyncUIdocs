@@ -1,7 +1,8 @@
 +++
 author = "Thomas Evensen"
 date = "2021-03-11"
-title =  "User configuration"
+title =  "SSH settings"
+description = "Let RsyncUI assist in setting up SSH keypath and identityfile."
 tags = ["userconfig"]
 categories = ["general information"]
 lastmod = "2021-03-11"

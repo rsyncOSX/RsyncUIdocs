@@ -1,17 +1,21 @@
 +++
 author = "Thomas Evensen"
 date = "2021-03-12"
-title =  "Next version"
-tags = ["swiftui, nextversion"]
-categories = ["swiftui"]
-description = "Some info about SwiftUI version of RsyncOSX"
+title =  "The development of RsyncUI"
+tags = ["SwiftUI"]
+categories = ["SwiftUI"]
+description = "Some info about the development of RsyncUI"
 lastmod = "2021-03-12"
 +++
 The development of next version commenced in December 2020 and the release of RsyncUI will be sometime before summer 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
 
-SwiftUI is **a framework for UI**. Compared to a Swift, Storyboard and View Controllers application, the numbers of codelines to create the UI with SwiftUI is minimal. Programming the UI in SwiftUI is **declarative** and not imperativ. The code for the model part is traditional Swift code.
+[SwiftUI](https://developer.apple.com/documentation/swiftui/) is a framework for UI. Compared to a Swift, Storyboard and View Controllers application, the numbers of codelines to create the UI with SwiftUI is minimal. Developing the UI in SwiftUI is **declarative** and not imperativ.
 
-And to be honest, **the future of RsyncOSX is SwiftUI**. And it is **really fun to code in SwiftUI**. The code for UI is minimal and separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code and make more easy to read. The declarative paradigm makes the code for the UI cleaner and more easy to follow.
+The future of RsyncOSX is SwiftUI. The code for UI is minimal and separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code and make more easy to read. The declarative paradigm makes the code for the UI cleaner and more easy to follow.
+
+[Combine](https://developer.apple.com/documentation/combine) is new and a declarative framework from Apple. I am using it primarly for asynchronous tasks like validate input from the user and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. They must be reliable and whenever they are triggered RsyncUI must catch them.
+
+Combine is also a used in SwiftUI.
 
 ## About the development and progress
 
