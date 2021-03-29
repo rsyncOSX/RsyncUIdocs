@@ -7,18 +7,18 @@ tags = ["summary"]
 categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This is the documentation of the new app RsyncUI, the next release of RsyncOSX. The documentation will be updated as the **development of next release is going forward**.
+This is the documentation of the new app RsyncUI, the next release of RsyncOSX. The documentation will be updated as the development is going forward. The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur.
 
-The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur. There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease.
+There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease.
 
 - RsyncUI is compiled with support for **macOS Big Sur** only
 - the latest prerelase (test) is [released here](https://github.com/rsyncOSX/RsyncUI/releases)
 
-RsyncUI is [signed and notarized](/post/notarized/) and it is built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
+RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
 ## The main menu
 
-This is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
+Below is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
 
 ![](/images/start/start.png)
 
@@ -37,7 +37,7 @@ It is easy to [add a configuration](/post/addconfigurations/) and execute your f
 
 ## RsyncUI settings
 
-The user can [tweak some settings in RsyncUI](/post/userconfiguration/)
+The user can [tweak some settings in RsyncUI](/post/settings/)
 
 ## Execute tasks
 

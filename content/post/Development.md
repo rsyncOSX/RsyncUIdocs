@@ -13,7 +13,9 @@ The development of RsyncUI commenced in December 2020 and the release of RsyncUI
 
 [Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. I am using it primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. They must be reliable and whenever they are triggered RsyncUI must catch them.
 
-The future of development on the Apple plattform is SwiftUI. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code and make more easy to read. The declarative paradigm makes the code for the UI cleaner and more easy to follow.
+The future of development on the Apple plattform is SwiftUI. [SwiftUI](https://en.wikipedia.org/wiki/Swift_(programming_language)) was released in 2019. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code and make more easy to read. The declarative paradigm makes the code for the UI cleaner and more easy to follow.
+
+The development of RsyncOSX began early in 2016 in it is a pure Swift (Cocoa and Foundation) based application. RsyncUI is a SwiftUI and Swift based application. Developing the UI in SwiftUI is giant step forward compared to how it the UI is implemented in Swift.
 
 ## About the development and progress
 
