@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 date = "2021-03-11"
 title =  "Paths"
-tags = ["userconfig"]
+tags = ["usersettings"]
 categories = ["general information"]
 lastmod = "2021-03-11"
 +++

@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 title = "How to use RsyncUI"
 date = "2021-03-13"
-description = "If you want some more info about RsyncUI there are some resources here."
+description = "If you want some more info about RsyncUI there are some resources here"
 tags = ["summary"]
 categories = ["general information"]
 lastmod = "2021-03-14"
@@ -33,15 +33,11 @@ Snapshot is **not** possible with rsync daemon setup.
 
 ## How to add and update
 
-It is easy to add a first configuration and execute your first synchronize task.
+It is easy to [add a configuration](/post/addconfigurations/) and execute your first synchronize task.
 
-- [add configurations](/post/addconfigurations/)
+## RsyncUI settings
 
-## The user configuration
-
-Some info about user settings:
-
-- some info about [the user settings](/post/userconfiguration/)
+The user can [tweak some settings in RsyncUI](/post/userconfiguration/)
 
 ## Execute tasks
 
@@ -52,13 +48,15 @@ How to execute tasks, either multiple tasks or single task.
 
 ## Parameters to rsync
 
-Rsync has a ton of parameters. In user selected parameters you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
-
-- [default and add parameters](/post/rsyncparameters)
+Rsync has a ton of parameters. In [user selected parameters](/post/rsyncparameters) you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
 
 ## Log files
 
 The [logfiles](/post/logging/) can be viewed either all or by config.
+
+## The development of RsyncUI
+
+Why is [RsyncUI based on SwiftUI?](/post/development)
 
 ## Compile
 
