@@ -14,6 +14,14 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 The prerelease v039(build 11) is now very close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
+## Prerelease v0.41(build 12)
+
+There is 31 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
+
+- shortcuts for estimating and executing in both multiple and single task (see the File menu)
+- German and Norwegian localization is updated
+- there is still work to do abouth the Italian localization
+- and some other parts are also enhanced 
 
 ## Prerelease v0.39(build 11)
 

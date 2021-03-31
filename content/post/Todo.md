@@ -7,7 +7,7 @@ tags = ["todo"]
 categories = ["todo"]
 lastmod = "2021-03-28"
 +++
-Updated: 28 March 2021
+Updated: 31 March 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
@@ -25,6 +25,7 @@ The following is in the prerelase:
 - **delete logrecords**
 - **add and delete parameters** to rsync
 - commenced the work on localize RsyncUI to German, Italian and Norwegian
+- shortcut codes for estimating and executing multiple and single tasks
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
@@ -35,7 +36,5 @@ The following is **not yet** implemented:
 - **restore** of data
 - execution of **shellout tasks**, configurations with pre and post shell scripts
 - administration of snapshot tasks (delete snapshots)
-- shortcut codes for various tasks
 - no start or stop of the menu app for scheduling of tasks
-- not yet localized, but prepared for it
 - local and remote info about synchronized data
