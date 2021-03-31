@@ -2,6 +2,7 @@
 author = "Thomas Evensen"
 date = "2021-03-11"
 title =  "Paths"
+description = "Some settings for paths and environment"
 tags = ["usersettings"]
 categories = ["general information"]
 lastmod = "2021-03-11"

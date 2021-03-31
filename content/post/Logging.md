@@ -4,7 +4,7 @@ date = "2021-03-11"
 title =  "Administrating logrecords"
 tags = ["logrecords"]
 categories = ["general information"]
-description = "There are a few logging options to file in RsyncUI."
+description = "There are a few options for logging"
 lastmod = "2021-03-18"
 +++
 Logging in RsyncUI might be switched on/off in user configuration. The log records are by default sorted with most recent ontop. Log records can be **filtered** by **any strings** by search field.
