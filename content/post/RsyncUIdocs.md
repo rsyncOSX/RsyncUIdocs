@@ -18,13 +18,13 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## The main menu
 
-Below is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
+The default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
 
 ![](/images/start/start.png)
 
 ## How to setup remote servers
 
-Utilizing RsyncUI to synchronize files to remote servers requires some setup. There are two options to setup [passwordless logins](/post/remotelogins/). The advised setup is by utilizing ssh-keys.
+Utilizing RsyncUI to synchronize files to remote servers requires setup of remote connection as [passwordless logins](/post/remotelogins/). There are two options for setup. The advised setup is by utilizing ssh-keys.
 
 - [setup by ssh-keys](/post/ssh/)
 - [rsync daemon setup](/post/rsyncdaemon/)

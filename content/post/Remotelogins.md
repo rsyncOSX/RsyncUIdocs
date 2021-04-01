@@ -7,13 +7,11 @@ categories = ["remotelogins"]
 description = "There are two ways to setup passwordless logins to remote servers."
 lastmod = "2021-03-10"
 +++
-There are two ways to setup passwordless logins to a remote server and RsyncUI supports both. It is advised to use ssh and ssh-keys, method one below, because the traffic is encrypted and it is considered more secure.
+There are two ways to setup passwordless logins to a remote server and RsyncUI supports both. It is advised to use ssh and ssh-keys because the traffic is encrypted and it is considered more secure.
 
 ## Encrypted protocol by ssh and ssh-keys
 
-Utilizing ssh enables passwordless logins to remote servers by ssh private and public key-pair.
-
-Using [ssh-keys](https://wiki.archlinux.org/index.php/SSH_keys) is in general considered more safe than standard password solutions (single factor authentication). ssh-keys is based upon [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography).
+Using [ssh-keys](https://wiki.archlinux.org/index.php/SSH_keys) is in general considered more safe than standard password solutions (single factor authentication). Ssh-keys is based upon [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
 - RsyncUI can assist you [in setting up passwordless logins](/post/ssh/)
 
