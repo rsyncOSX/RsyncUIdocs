@@ -26,7 +26,7 @@ The following is in the prerelase:
 - **add and delete parameters** to rsync
 - commenced the work on localize RsyncUI to German, Italian and Norwegian
 - shortcut codes for estimating and executing multiple and single tasks
-- added a quick task option, add a source and a destination and synchronize
+- added a quick task option, add a source and a destination and go for it
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
