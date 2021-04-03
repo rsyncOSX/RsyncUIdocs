@@ -7,7 +7,7 @@ tags = ["todo"]
 categories = ["todo"]
 lastmod = "2021-03-28"
 +++
-Updated: 31 March 2021
+Updated: 2 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
@@ -26,6 +26,7 @@ The following is in the prerelase:
 - **add and delete parameters** to rsync
 - commenced the work on localize RsyncUI to German, Italian and Norwegian
 - shortcut codes for estimating and executing multiple and single tasks
+- added a quick task option, add a source and a destination and synchronize
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 

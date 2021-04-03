@@ -11,7 +11,7 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 ---
 
-The prerelease v039(build 11) is now very close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
+The prerelease v0.42(build 14) is close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still some major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
 ## Prerelease v0.42(build 14)
@@ -54,7 +54,6 @@ There is 15 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - a few other enhancments
 - focus the next few weeks are QA of what is implemented and planning what to be developed next
 - I am also using time to learn more about SwiftUI, focus now is Combine and how can I use Combine in RsyncUI
-
 
 ## Prerelease v0.35(build 7)
 

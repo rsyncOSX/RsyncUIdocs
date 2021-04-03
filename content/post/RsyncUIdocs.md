@@ -20,6 +20,8 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 The default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
 
+The screenshots may be slightly different from what is in the current prerelease. The prerelease is still in development.
+
 ![](/images/start/start.png)
 
 ## How to setup remote servers
