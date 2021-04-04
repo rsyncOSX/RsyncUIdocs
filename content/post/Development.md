@@ -7,21 +7,19 @@ categories = ["SwiftUI"]
 description = "Why is the development of RsyncUI based on SwiftUI?"
 lastmod = "2021-03-12"
 +++
-The development of RsyncUI commenced in December 2020 and the release of RsyncUI will be sometime before summer 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
+The development of RsyncUI commenced in December 2020 and it will be released sometime in June or July 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
 
-[SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framwork** for UI. Compared to a Swift, Storyboard and View Controllers application, the numbers of codelines to create the UI with SwiftUI is minimal.
+[SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framwork** for UI. Developing the UI based on SwiftUI compared to the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. And the future of development on the Apple plattform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C framworks.
 
-The future of development on the Apple plattform is SwiftUI. [SwiftUI](https://en.wikipedia.org/wiki/Swift_(programming_language)) was released in 2019. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code and make more easy to read. The declarative paradigm makes the code for the UI cleaner and more easy to follow.
+[SwiftUI](https://en.wikipedia.org/wiki/Swift_(programming_language)) was released in 2019 and it is still young and in development. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code and make more easy to read. The declarative paradigm makes the code for the UI cleaner and more easy to follow.
 
-[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. I am using it primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. They must be reliable and whenever they are triggered RsyncUI must catch them.
+[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. They must be reliable and whenever they are triggered RsyncUI must catch them.
 
-The development of RsyncOSX began early in 2016 in it is a pure Swift (Cocoa and Foundation) based application. RsyncUI is a SwiftUI and Swift based application. Developing the UI in SwiftUI is giant step forward compared to how it the UI is implemented in Swift.
+The development of RsyncOSX began early in 2016 in it is a pure Swift (Cocoa and Foundation) based application. The next future generation of RsyncOSX is RsyncUI, a SwiftUI and Swift based application.
 
 ## About the development and progress
 
-There are some more info about the progress in [the todo list](/post/todo/). Also check out the [changelog](/post/changelog/).
-
-The final version will be released sometime closer to summer 2021. Most of the core basic functions like executing tasks, compute the parameters to rsync are reused code from the current version. And most of the executing part is stable and working.
+There are some more info about the progress in [the todo list](/post/todo/). Also check out the [changelog](/post/changelog/). Most of the core basic functions like executing tasks, compute the parameters to rsync are reused code from the current version. And most of the executing part is stable and working.
 
 ## The source code
 
@@ -120,4 +118,4 @@ var body: some View {
 ```
 ### Reading data
 
-Configurations, logs and scedules are read from permanent store into an `ObservableObject` [RsyncOSXdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncOSXdata.swift). The data is read only and made available for the various views as a `@EnvironmentObject`. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded. 
+Configurations, logs and scedules are read from permanent store into an `ObservableObject` [RsyncOSXdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncOSXdata.swift). The data is read only and made available for the various views as a `@EnvironmentObject`. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded.
