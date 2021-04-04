@@ -37,20 +37,87 @@ There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube a
 - PhysicsNerd´s [YouTube SwiftUI channel](https://www.youtube.com/c/PhysicsNerdDev/featured)
 - [Apple tutorials about developing in SwiftUI](https://developer.apple.com/tutorials/app-dev-training)
 
-## How is RsyncUI developed
+## How is RsyncUI developed?
 
 The following are som high level info about how RsyncUI is constructed and operates.
 
 ### Basic data structure
 
-The basic datastructure in RsyncUI is two arrays of structs: Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>. During start and load of data all rsync parameters for all configurations [computed](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift). The main [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcessCmdCombineClosure.swift) reads all arguments for one task as an Array\<String\>. The compute object reads and prepares all rsync parameters as Array\<String\> as part of start and load of data.
+The basic datastructure in RsyncUI is two arrays of structs: configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and logs- and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>. During start and load of data all rsync parameters for all configurations are [computed](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift). The main [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcessCmdCombineClosure.swift) reads all arguments an Array\<String\> ahead of exection. The [compute](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift) object reads and prepares all rsync parameters as Array\<String\> as part of start and load of data.
 
 Any change to the basic data structures causes RsyncUI to write data to permanent storage, reload data and recompute rsync parameters.
 
 ### MVC model
 
-RsyncUI is constructed in compliance to the Model View Controller (MVC). Any operation on the data is within the model. The modelpart is normal Swift, imperativ development, with classes and structs. The UI part (view) is SwiftUI, declarative development, with structs only. And the view is clearly separated from the model. Another important part of the UI (and SwiftUI) is the [single source of truth](https://developer.apple.com/documentation/swiftui/managing-user-interface-state). Single source of truth is also an important part of the MVC architecture.
+RsyncUI is constructed in compliance to the Model View Controller (MVC) architecture. Any operation on the data is within the model. The modelpart is normal **imperativ** Swift development, with classes and structs. The UI part (view) is **declarative** SwiftUI development, with structs only. And the view is clearly separated from the model. Another important part of the UI (and SwiftUI) is the [single source of truth](https://developer.apple.com/documentation/swiftui/managing-user-interface-state). Single source of truth is also part of the MVC architecture.
 
 ### The UI
 
-The UI is SwiftUI. Each view is small and by hiding most of the logic witihn the UI in computed properties and actions, the structure of the UI is easy to follow. The view [AddConfigurationView.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Add/AddConfigurationView.swift) is an example of that. The structure of the view is less than 80 lines of code, the details is within each computed property.
+The UI is SwiftUI. Each view is small and by hiding most of the logic within the UI in computed properties and actions, the structure of the UI is easy to follow. The view [AddConfigurationView.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Add/AddConfigurationView.swift) is an example of that. The structure of the view is less than 80 lines of code, the details is within each computed property.
+
+The Add view are put together of two columns and two buttons in right corner. And the structure of the view is very easy to follow. The properties, like `localandremotecatalog` are computed and details about it are hidden within the property itself.
+
+![](/images/development/add.png)
+
+```
+var body: some View {
+       Form {
+           ZStack {
+               HStack {
+                   // For center
+                   Spacer()
+                   // Column 1
+                   VStack(alignment: .leading) {
+                       pickerselecttypeoftask
+                       VStack(alignment: .leading) { localandremotecatalog }
+                       VStack(alignment: .leading) { backupid }
+                       VStack(alignment: .leading) { remoteuserandserver }
+                   }
+                   // Column 2
+                   VStack(alignment: .leading) {
+                       ToggleView(NSLocalizedString("Don´t add /", comment: "settings"), $donotaddtrailingslash)
+                       HStack {
+                           EditValue(100, NSLocalizedString("New profile", comment: "settings"), $newprofile)
+                           Button(action: { createprofile() }) { Image(systemName: "plus") }
+                           .buttonStyle(GrayCircleButtonStyle())
+                       }
+                   }
+                   // For center
+                   Spacer()
+               }
+               HStack {
+                   // Present when either added, updated or profile created
+                   if added == true { notifyadded }
+                   if updated == true { notifyupdated }
+                   if created == true { notifycreated }
+               }
+           }
+           VStack {
+               HStack {
+                   Spacer()
+                   // Add or Update button
+                   if selectedconfig == nil {
+                       Button(NSLocalizedString("Add", comment: "Add button")) { addconfig() }
+                           .buttonStyle(PrimaryButtonStyle())
+                   } else {
+                       Button(NSLocalizedString("Update", comment: "Update button")) { validateandupdate() }
+                           .buttonStyle(PrimaryButtonStyle())
+                           .overlay(
+                               RoundedRectangle(cornerRadius: 20)
+                                   .stroke(Color.red, lineWidth: 5)
+                           )
+                   }
+
+                   Button(NSLocalizedString("Select", comment: "Select button")) { selectconfig() }
+                       .buttonStyle(PrimaryButtonStyle())
+               }
+           }
+       }
+       .lineSpacing(2)
+       .padding()
+       .sheet(isPresented: $presentsheet) { configsheet }
+   }
+```
+### Reading data
+
+Configurations, logs and scedules are read from permanent store into an `ObservableObject` [RsyncOSXdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncOSXdata.swift). The data is read only and made available for the various views as a `@EnvironmentObject`. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded. 
