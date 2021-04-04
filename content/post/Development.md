@@ -11,9 +11,9 @@ The development of RsyncUI commenced in December 2020 and it will be released so
 
 [SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framwork** for UI. Developing the UI based on SwiftUI compared to the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. And the future of development on the Apple plattform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C framworks.
 
-[SwiftUI](https://en.wikipedia.org/wiki/Swift_(programming_language)) was released in 2019 and it is still young and in development. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code and make more easy to read. The declarative paradigm makes the code for the UI cleaner and more easy to follow.
+[SwiftUI](https://en.wikipedia.org/wiki/Swift_(programming_language)) was released in 2019 and it is still young and in development. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code. The declarative paradigm also makes the code for the UI cleaner and more easy to follow.
 
-[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. They must be reliable and whenever they are triggered RsyncUI must catch them.
+[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. It must be reliable and whenever they are triggered RsyncUI must catch them.
 
 The development of RsyncOSX began early in 2016 in it is a pure Swift (Cocoa and Foundation) based application. The next future generation of RsyncOSX is RsyncUI, a SwiftUI and Swift based application.
 
@@ -51,9 +51,9 @@ RsyncUI is constructed in compliance to the Model View Controller (MVC) architec
 
 ### The UI
 
-The UI is SwiftUI. Each view is small and by hiding most of the logic within the UI in computed properties and actions, the structure of the UI is easy to follow. The view [AddConfigurationView.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Add/AddConfigurationView.swift) is an example of that. The structure of the view is less than 80 lines of code, the details is within each computed property.
+Each view is small. By hiding most of the logic within the UI in computed properties, functions and closures, the structure of the UI is easy to follow. The view [AddConfigurationView.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Add/AddConfigurationView.swift) is an example of that. The structure of the view is less than 80 lines of code, the details is within each computed property.
 
-The Add view are put together of two columns and two buttons in right corner. And the structure of the view is very easy to follow. The properties, like `localandremotecatalog` are computed and details about it are hidden within the property itself.
+The Add view are put together of two columns and two buttons in right corner. The properties, like `localandremotecatalog` are computed and details about it are hidden within the property itself.
 
 ![](/images/development/add.png)
 
@@ -119,3 +119,7 @@ var body: some View {
 ### Reading data
 
 Configurations, logs and scedules are read from permanent store into an `ObservableObject` [RsyncOSXdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncOSXdata.swift). The data is read only and made available for the various views as a `@EnvironmentObject`. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded.
+
+### Execution of tasks
+
+Execution of a task is an asynchronous operation. The [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcessCmdCombineClosure.swift) is responsible for kicking of the task. Combine is used for listening for two notifications, `Process.didTerminateNotification` and `NSNotification.Name.NSFileHandleDataAvailable`. The process object is initialized with two escaping closures, `processtermination: @escaping () -> Void` and `filehandler: @escaping () -> Void`. Those two closures takes care of whatever action they are set to do any time the notifications are discovered.
