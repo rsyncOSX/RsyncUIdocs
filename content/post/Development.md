@@ -7,15 +7,15 @@ categories = ["SwiftUI"]
 description = "Why is the development of RsyncUI based on SwiftUI?"
 lastmod = "2021-03-12"
 +++
-The development of RsyncUI commenced in December 2020 and it will be released sometime in June or July 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
+The development of RsyncUI commenced in December 2020 and will be released sometime in June or July 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
 
-[SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framwork** for UI. Developing the UI based on SwiftUI compared to developing utilizing the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. And the future of development on the Apple plattform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C frameworks.
+[SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framework** for UI. Developing the UI based on SwiftUI compared to developing utilizing the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. And the future of development on the Apple plattform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C frameworks.
 
-[SwiftUI](https://en.wikipedia.org/wiki/Swift_(programming_language)) was released in 2019 and it is still young and in development. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code. The declarative paradigm also makes the code for the UI cleaner and more easy to follow.
+[SwiftUI](https://en.wikipedia.org/wiki/Swift_(programming_language)) was released in 2019 and it is still young and in development. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic in properties, functions and closures will simplify the code. The declarative paradigm also makes the code for the UI cleaner and more easy to follow.
 
 [Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. It must be reliable and whenever they are triggered RsyncUI must catch them.
 
-The development of RsyncOSX began early in 2016 in it is a pure Swift (Cocoa and Foundation) based application. The next future generation of RsyncOSX is RsyncUI, a SwiftUI and Swift based application.
+The development of RsyncOSX began early in 2016. RsyncOSX is a pure Swift, Cocoa and Foundation, based application. The future generation of RsyncOSX is RsyncUI, a SwiftUI and Swift (Foundation) based application.
 
 ## About the development and progress
 
@@ -45,13 +45,13 @@ The basic datastructures in RsyncUI are two arrays of structs: configurations as
 
 Any change to the basic data structures causes RsyncUI to write data to permanent storage, reload data and recompute rsync parameters.
 
-### MVC model
+### MVC architecture
 
-RsyncUI is constructed in compliance to the Model View Controller (MVC) architecture. Any operation on the data is within the model. The modelpart is normal **imperativ** Swift development, with classes and structs. The UI part (view) is **declarative** SwiftUI development, with structs only. And the view is clearly separated from the model. Another important part of the UI (and SwiftUI) is the [single source of truth](https://developer.apple.com/documentation/swiftui/managing-user-interface-state). Single source of truth is also part of the MVC architecture.
+RsyncUI is constructed in compliance to the Model View Controller (MVC) architecture. Any operations on the data is within the model. The modelpart is normal **imperativ** Swift development, with classes and structs. The UI part (view) is **declarative** SwiftUI development, with structs only. The UI is clearly separated from the model. Another important part of SwiftUI is the [single source of truth](https://developer.apple.com/documentation/swiftui/managing-user-interface-state).
 
 ### Permanent storage
 
-RsyncUI saves data on permanent store either as PLIST or JSON format. The user can any time convert existing data to either of the formats. There is no preferences of which format to use and default is PLIST. JSON is a preferred format for exchanging data on the Internet and Swift has very good support encoding and decoding JSON.
+RsyncUI saves data on permanent store either as PLIST or JSON format. The user can any time convert existing data to either of the formats. There is no preferences of which format to use and default is PLIST. JSON is a preferred format for exchanging data on the Internet and Swift has very good support for encoding and decoding JSON.
 
 Details about JSON encoding and decoding of configurations are [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/PersistentStorage/PersistentStorageConfigurationJSON.swift). And details about PLIST encoding and decoding of configurations er [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/PersistentStorage/PersistentStorageConfigurationPLIST.swift).
 
@@ -87,9 +87,9 @@ var body: some View {
                    VStack(alignment: .leading) {
                        ToggleView(NSLocalizedString("Don´t add /", comment: "settings"), $donotaddtrailingslash)
                        HStack {
-                           EditValue(100, NSLocalizedString("New profile", comment: "settings"), $newprofile)
                            Button(action: { createprofile() }) { Image(systemName: "plus") }
                            .buttonStyle(GrayCircleButtonStyle())
+                           EditValue(100, NSLocalizedString("New profile", comment: "settings"), $newprofile)
                        }
                    }
                    // For center
@@ -117,7 +117,6 @@ var body: some View {
                                    .stroke(Color.red, lineWidth: 5)
                            )
                    }
-
                    Button(NSLocalizedString("Select", comment: "Select button")) { selectconfig() }
                        .buttonStyle(PrimaryButtonStyle())
                }
