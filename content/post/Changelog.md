@@ -18,7 +18,7 @@ The prerelease v0.42(build 14) is close, by functions, to the current release of
 There is 5 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
 - some cleanup and tweaks in the UI
-- the docs about the [development] of RsyncUI is updated, and more updates will come
+- the docs about the [development](/post/development/) of RsyncUI is updated, and more updates will come
 - the base language is English, German and Norwegian localization is up to date, Italian is still work to do
 
 ---
