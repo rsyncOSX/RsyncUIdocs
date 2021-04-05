@@ -9,7 +9,7 @@ lastmod = "2021-03-12"
 +++
 The development of RsyncUI commenced in December 2020 and it will be released sometime in June or July 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
 
-[SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framwork** for UI. Developing the UI based on SwiftUI compared to the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. And the future of development on the Apple plattform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C framworks.
+[SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framwork** for UI. Developing the UI based on SwiftUI compared to developing utilizing the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. And the future of development on the Apple plattform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C frameworks.
 
 [SwiftUI](https://en.wikipedia.org/wiki/Swift_(programming_language)) was released in 2019 and it is still young and in development. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic and actions in properties, functions and closures will simplify the code. The declarative paradigm also makes the code for the UI cleaner and more easy to follow.
 
@@ -37,17 +37,29 @@ There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube a
 
 ## How is RsyncUI developed?
 
-The following are som high level info about how RsyncUI is constructed and operates.
+The following are som high level info about how RsyncUI is developed.
 
 ### Basic data structure
 
-The basic datastructure in RsyncUI is two arrays of structs: configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and logs- and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>. During start and load of data all rsync parameters for all configurations are [computed](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift). The main [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcessCmdCombineClosure.swift) reads all arguments an Array\<String\> ahead of exection. The [compute](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift) object reads and prepares all rsync parameters as Array\<String\> as part of start and load of data.
+The basic datastructures in RsyncUI are two arrays of structs: configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and logs- and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>. During start and load of data all rsync parameters for all configurations are [computed](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift). The main [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcessCmdCombineClosure.swift) reads all arguments as an Array\<String\> ahead of execution. The [compute](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift) object reads and prepares all rsync parameters as Array\<String\> as part of start and load of data.
 
 Any change to the basic data structures causes RsyncUI to write data to permanent storage, reload data and recompute rsync parameters.
 
 ### MVC model
 
 RsyncUI is constructed in compliance to the Model View Controller (MVC) architecture. Any operation on the data is within the model. The modelpart is normal **imperativ** Swift development, with classes and structs. The UI part (view) is **declarative** SwiftUI development, with structs only. And the view is clearly separated from the model. Another important part of the UI (and SwiftUI) is the [single source of truth](https://developer.apple.com/documentation/swiftui/managing-user-interface-state). Single source of truth is also part of the MVC architecture.
+
+### Permanent storage
+
+RsyncUI saves data on permanent store either as PLIST or JSON format. The user can any time convert existing data to either of the formats. There is no preferences of which format to use and default is PLIST. JSON is a preferred format for exchanging data on the Internet and Swift has very good support encoding and decoding JSON.
+
+Details about JSON encoding and decoding of configurations are [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/PersistentStorage/PersistentStorageConfigurationJSON.swift). And details about PLIST encoding and decoding of configurations er [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/PersistentStorage/PersistentStorageConfigurationPLIST.swift).
+
+The same is for logs- and schedules. See also where RsyncUI [saves data](/post/configfiles/).
+
+### User settings
+
+Some settings within RsyncUI can be changed by the user. The settings are read by RsyncUI ahead of loading the data. All usersettings are stored within a [singelton object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Global/SharedReference.swift) which stays alive during the lifetime of RsyncUI. This is the one and only singelton object.
 
 ### The UI
 

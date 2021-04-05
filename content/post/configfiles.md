@@ -7,13 +7,11 @@ categories = ["general information"]
 description = "Where does RsyncUI stores the various configuration files."
 lastmod = "2020-10-23"
 +++
-RsyncUI stores its configurations, schedules and log records either as [property list files](https://en.wikipedia.org/wiki/Property_list) or [JSON](https://en.wikipedia.org/wiki/JSON) files. Default format is property list files, the user can change [the format to JSON](/post/json/).
+RsyncUI stores its configurations, schedules and log records either as [property list files](https://en.wikipedia.org/wiki/Property_list) or [JSON](https://en.wikipedia.org/wiki/JSON) files. Default format is property list files, the user can change [the format to JSON](/post/json/). The storage of config files is in `$HOME/.rsyncosx/macserialnumber`. In the `About` the used path for configuration files is shown.
 
-The storage of config files is default in `$HOME/.RsyncUI/macserialnumber`. Existing users of previous versions of RsyncUI can move configfiles from old localization (`Documents/Rsync/macserialnumber`) to new by selecting `Move` from the `File` menu of RsyncUI.  In the `About` the used path for configuration files is shown.
+Configuration files are store in `$HOME/.rsyncosx/macserialnumber`. RsyncUI evaluates the computer mac serial number at startup.
 
-Configuration files are store in `$HOME/.RsyncUI/macserialnumber`. RsyncUI evaluates the computer mac serial number at startup.
-
-## Configurations as plist
+## Configurations as PLIST
 
 The default format is plist:
 
@@ -61,11 +59,10 @@ If profile is utilized:
 $HOME/.rsyncosx/macserialnumber/profile/schedules.json
 ```
 
-## User configurations and Assist
+## User configurations
 
-The [user configurations](/post/userconfiguration/) and [Assist](/post/addconfigurations/#assist) data are stored as plist in:
+The [user configurations](/post/userconfiguration/) are stored as PLIST in:
 ```
 $HOME/.rsyncosx/macserialnumber/config.plist
-$HOME/.rsyncosx/macserialnumber/assist.plist
 ```
 The user settings applies to all profiles.
