@@ -11,7 +11,7 @@ Updated: 6 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
-I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
+I am using the app on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
 
 ## What is working
 
