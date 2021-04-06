@@ -5,13 +5,13 @@ date = "2021-03-11"
 description = "The todo list"
 tags = ["todo"]
 categories = ["todo"]
-lastmod = "2021-03-28"
+lastmod = "2021-04-06"
 +++
-Updated: 2 April 2021
+Updated: 6 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
-I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files. Also check out the [changelog](/post/changelog/).
+I am using the app it on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
 
 ## What is working
 
@@ -25,8 +25,10 @@ The following is in the prerelase:
 - **delete logrecords**
 - **add and delete parameters** to rsync
 - commenced the work on localize RsyncUI to German, Italian and Norwegian
-- shortcut codes for estimating and executing multiple and single tasks
-- added a quick task option, add a source and a destination and go for it
+- added **shortcut codes** for estimating and executing multiple and single tasks
+  - `⌘E` shortcut for estimate
+  - `⌘R` shortcut for synchronize
+- added a **quick task** option, add a source and a destination and go for it
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
