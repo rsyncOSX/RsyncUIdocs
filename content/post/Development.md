@@ -137,7 +137,9 @@ Execution of a task is an asynchronous operation. The [process object](https://g
 
 ### Combine
 
-Combine is used in RsyncUI. It enables a very good control of asynchronous operations and flow of data. As an example of use is validating user data. The Views (SwiftUI) are connected to an `ObservableObject` utilizing Combine and the connection between the `ObservableObject` and the view is by `Binding`. Below is how SSH values are validated. The ObservableObject is a StateObject in the view and by Bindings data is communicated between the view and StateObject.
+Combine is used in RsyncUI. It enables a very good control of asynchronous operations and flow of data. As an example of use is validating of user data. The Views (SwiftUI) are connected to an (private) `ObservableObject`. The flow of data between the `ObservableObject` and the view is by `Binding` and the Combine framework.
+
+Below is how SSH values are validated. The ObservableObject is a StateObject in the view and by Bindings data is communicated between the view and StateObject.
 
 The [code snippet](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Global/ObservableReferenceSSH.swift) for the StateObject:
 
