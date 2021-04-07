@@ -69,7 +69,7 @@ Each view is small. By hiding most of the logic within the UI in computed proper
 
 ### Reading data
 
-Configurations, logs and scedules are read from permanent store into an `ObservableObject` [RsyncOSXdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncOSXdata.swift). The data is read only and made available for the various views as a `@EnvironmentObject`. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded.
+Configurations, logs and scedules are read from permanent store into an `ObservableObject` [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift). The data is read only and made available for the various views as a `@EnvironmentObject`. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded.
 
 ### Execution of tasks
 
