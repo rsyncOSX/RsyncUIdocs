@@ -4,12 +4,14 @@ date = "2021-03-10"
 title =  "RsyncUI config files"
 tags = ["config file"]
 categories = ["general information"]
-description = "Where does RsyncUI stores the various configuration files."
+description = "Where does RsyncUI store the configuration files?"
 lastmod = "2020-10-23"
 +++
-RsyncUI stores its configurations, schedules and log records either as [property list files](https://en.wikipedia.org/wiki/Property_list) or [JSON](https://en.wikipedia.org/wiki/JSON) files. Default format is property list files, the user can change [the format to JSON](/post/json/). The storage of config files is in `$HOME/.rsyncosx/macserialnumber`. In the `About` the used path for configuration files is shown.
-
-Configuration files are store in `$HOME/.rsyncosx/macserialnumber`. RsyncUI evaluates the computer mac serial number at startup.
+RsyncUI stores its configurations, schedules and log records either as [property list files (PLIST)](https://en.wikipedia.org/wiki/Property_list) or [JavaScript Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) files. Default format is PLIST files. The user can [change the format to JSON](/post/json/). The storage of config files is in:
+```
+$HOME/.rsyncosx/macserialnumber/
+```
+In the `About` the used path for configuration files is shown. RsyncUI evaluates the computer mac serial number at startup.
 
 ## Configurations as PLIST
 

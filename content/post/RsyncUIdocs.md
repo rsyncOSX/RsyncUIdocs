@@ -56,6 +56,10 @@ Rsync has a ton of parameters. In [user selected parameters](/post/rsyncparamete
 
 The [logfiles](/post/logging/) can be viewed either all or by config.
 
+## Config files
+
+Where does RsyncUI [save the files](/post/configfiles/) to permanent storage?
+
 ## The development of RsyncUI
 
 Why is [RsyncUI based on SwiftUI?](/post/development)

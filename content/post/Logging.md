@@ -1,8 +1,8 @@
 +++
 author = "Thomas Evensen"
 date = "2021-03-11"
-title =  "Administrating logrecords"
-tags = ["logrecords"]
+title =  "Log records"
+tags = ["log records"]
 categories = ["general information"]
 description = "There are a few options for logging"
 lastmod = "2021-03-18"
