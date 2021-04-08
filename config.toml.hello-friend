@@ -2,7 +2,7 @@ baseurl = "https://rsyncui.netlify.app/"
 languageCode = "en-us"
 theme = "hello-friend"
 paginate = 15
-googleAnalytics = "G-N34DQ0X5YS"
+googleAnalytics = "UA-194139788-1"
 
 [params]
   # dir name of your blog content (default is `content/posts`).
