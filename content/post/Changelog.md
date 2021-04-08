@@ -11,9 +11,19 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 ---
 
-The prerelease v0.45(build 15) is close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still a few major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
+The prerelease v0.47(build 16) is close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still a few major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
+
+## Prerelease v0.47(build 16)
+
+There is 8 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
+
+- commenced developing the restore view
+- updated the progress indicators, size and how they are presented
+- and some ohter minor updates as well
+
+It seems to be a release version 1.0.0 of RsyncUI sometime in May 2021. There are only a few missing parts, see [todo lis](/post/todo/).
 
 ## Prerelease v0.45(build 15)
 
