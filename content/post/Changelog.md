@@ -17,6 +17,10 @@ The prerelease v0.47(build 16) is close, by functions, to the current release of
 
 ---
 
+## Known issues
+
+- there is an issue with speed in logs, the **issue is fixed** in code but not in the prerelease (9 April 2021)
+
 ## Prerelease v0.47(build 16)
 
 There is 8 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
