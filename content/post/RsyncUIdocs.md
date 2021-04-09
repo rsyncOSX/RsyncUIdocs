@@ -43,14 +43,19 @@ The user can [tweak some settings in RsyncUI](/post/settings/)
 
 ## Execute tasks
 
-How to execute tasks, either multiple tasks or single task.
+How to execute tasks, either multiple tasks, single task or just a quick task.
 
 - [executing multiple tasks](/post/multipletasks/)
-- [executing single tasks](/post/singletask/)
+- [executing a single task](/post/singletask/)
+- [execute quick task](/post/quicktask/)
 
 ## Parameters to rsync
 
 Rsync has a ton of parameters. In [user selected parameters](/post/rsyncparameters) you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
+
+## Verify the synchronized data
+
+Rsync can also [verify the synchronized data](/post/verify/).
 
 ## Log files
 
