@@ -13,7 +13,7 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 I am using the app on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
 
-## What is working
+# What is in the prerelease
 
 The following is in the prerelase:
 
@@ -33,7 +33,7 @@ The following is in the prerelase:
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
-## Not yet implemented
+# Not yet implemented
 
 The following is **not yet** implemented:
 
