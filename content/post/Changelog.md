@@ -7,8 +7,6 @@ tags = ["RsyncUI"]
 categories = ["changelog"]
 lastmod = "2021-03-11"
 +++
-[![GitHub license](https://img.shields.io/github/license/rsyncOSX/RsyncUI)](https://github.com/rsyncOSX/RsyncUI/blob/main/Licence.MD) [![GitHub issues](https://img.shields.io/github/issues/rsyncOSX/RsyncUI)](https://github.com/rsyncOSX/RsyncUI/issues) [![Netlify Status](https://api.netlify.com/api/v1/badges/1d14d49b-ff14-4142-b135-771db071b58a/deploy-status)](https://app.netlify.com/sites/rsyncui/deploys)
-
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. RsyncUI is [signed and notarized](/post/notarized/).
 
 ---

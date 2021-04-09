@@ -6,6 +6,7 @@ tags = ["SwiftUI"]
 categories = ["SwiftUI"]
 description = "Why is the development of RsyncUI based on SwiftUI?"
 lastmod = "2021-03-12"
+toc = "true"
 +++
 The development of RsyncUI commenced in December 2020 and will be released sometime in June or July 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
 
@@ -81,3 +82,7 @@ Combine is used in RsyncUI. It enables a very good control of asynchronous opera
 
 - see [code snippet for ObservableReference](/post/codesnippetobserver/)
 - see [code snippet for SSH settings View](/post/codesnippetviewssh/)
+
+### Speed
+
+SwiftUI refreshes the view every time there is a change on a bindig. And there are also a several other happenings which causes a refresh. If there are, within the view, properties which are computed it might become an issue with speed of the app. As an example there might be several hundred log records for one task. If sorting of logs, filtering of logs are computed properties within a view it might become an issue. Therefore are all sorting and filtering of logs computed within the [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift) object.
