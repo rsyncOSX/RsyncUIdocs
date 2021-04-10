@@ -85,4 +85,8 @@ Combine is used in RsyncUI. It enables a very good control of asynchronous opera
 
 ### Speed
 
-SwiftUI refreshes the view every time there is a change on a bindig. And there are also a several other happenings which causes a refresh. If there are, within the view, properties which are computed it might become an issue with speed of the app. As an example there might be several hundred log records for one task. If sorting of logs, filtering of logs are computed properties within a view it might become an issue. Therefore are all sorting and filtering of logs computed within the [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift) object.
+SwiftUI refreshes the view every time there is a change on a `<Binding>`. And there are also a several other happenings which causes a refresh. If there are, within the view, properties which are computed it might become an issue.
+
+There might be several hundred log records for one task. If sorting and filtering of logs are computed properties within a view it might become an speed issue aka a *spinning beach ball*. Therefore are all sorting and filtering of logs computed within the [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift) object and the result is set to the `<Binding>` value after the sort or filtering is completed.
+
+The above also apply to the restore function. Getting the remote filenames of synchcronized data might be huge, severeal hundred thousand of lines. It is after the completion of getting filenames and filtering the result is set to a `<Binding>` value which causes a refresh.
