@@ -1,4 +1,4 @@
-+++
+s+++
 author = "Thomas Evensen"
 title = "The RsyncUI changelog"
 date = "2021-03-11"
@@ -11,7 +11,7 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 ---
 
-The prerelease v0.47(build 16) is close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still a few major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
+The latest prereleases are close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still a few major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
 
