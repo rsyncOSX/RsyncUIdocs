@@ -1,4 +1,4 @@
-s+++
++++
 author = "Thomas Evensen"
 title = "The RsyncUI changelog"
 date = "2021-03-11"
