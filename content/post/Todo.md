@@ -5,9 +5,9 @@ date = "2021-03-11"
 description = "The todo list"
 tags = ["todo"]
 categories = ["todo"]
-lastmod = "2021-04-06"
+lastmod = "2021-04-12"
 +++
-Updated: 8 April 2021
+Updated: 12 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
@@ -30,6 +30,7 @@ The following is in the prerelase:
   - `⌘R` shortcut for synchronize
 - added a **quick task** option, add a source and a destination and go for it
 - commenced developing **restore** of data
+- RsyncUI will from **version 0.49 inform** when there is a new update
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 

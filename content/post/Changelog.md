@@ -5,7 +5,7 @@ date = "2021-03-11"
 description = "Changelog"
 tags = ["RsyncUI"]
 categories = ["changelog"]
-lastmod = "2021-03-11"
+lastmod = "2021-04-12"
 +++
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. RsyncUI is [signed and notarized](/post/notarized/).
 
@@ -14,6 +14,16 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 The latest prereleases are close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still a few major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
+
+## Prerelease v0.49(build 18)
+
+There is 12 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
+
+- some improvmentes in speed for view output from the restore part
+  - still the actual restore is not yet implemented
+- the app now inform when there is a new update
+- the pace of new prereleases will slow down, it will probably be a copule of new pre releases and after that version 1.0.0 release candidates (in May 2021)
+
 
 ## Prerelease v0.48(build 17)
 
