@@ -19,11 +19,12 @@ The latest prereleases are close, by functions, to the current release of RsyncO
 
 There is 12 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
-- some improvmentes in speed for view output from the restore part
+- some improvmentes in speed view synchronized filelist within the restore part
   - still the actual restore is not yet implemented
-- the app now inform when there is a new update
-- the pace of new prereleases will slow down, it will probably be a copule of new pre releases and after that version 1.0.0 release candidates (in May 2021)
+- some other minor improvmentes as well
+- RsyncUI now **inform** when there is a new update for download
 
+The pace of new prereleases will slow down, it will probably be a copule of new pre releases and after that a few version 1.0.0 release candidates (in May 2021) before release of version 1.0.0.
 
 ## Prerelease v0.48(build 17)
 
