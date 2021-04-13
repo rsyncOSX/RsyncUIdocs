@@ -32,13 +32,21 @@ auth users = thomas
 secrets file = /etc/rsyncd.secrets
 ```
 
-The file `/etc/rsyncd.secrets` stores the passwords for each user on the server side. Set `chmod 600` on the `/etc/rsyncd.secrets` file.
-
+The file `/etc/rsyncd.secrets` stores the passwords for each user on the server side.
+The `/etc/rsyncd.secrets` file:
 ```
 user1:password_for_user1
 user2:password_for_user2
 ```
-The rsync daemon has to be started on the server. There are several methods to automatically start the rsync daemon. For a test you can execute `sudo rsync --daemon` to start rsync as a daemon on the server.
+Set `chmod 600` on the `/etc/rsyncd.secrets` file.
+```
+~ sudo chmod 600 /etc/rsyncd.secrets
+```
+The rsync daemon has to be started on the server. There are several methods to automatically start the rsync daemon. For a test you can execute
+```
+~ sudo rsync --daemon
+```
+to start rsync as a daemon on the server.
 
 ## RsyncUI setup
 

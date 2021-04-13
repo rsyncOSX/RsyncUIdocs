@@ -13,8 +13,8 @@ The ssh parameter within the rsync command is if set by the user:
 ```
 -e  "ssh -i ~/.ssh_keypath/identityfile -p NN"
 ```
-- `-i` is the ssh keypath and identityfile
-- `-p` is the port number ssh communicates through, default port 22
+- `-i ~/.ssh_keypath/identityfile` is the ssh keypath and identityfile
+- `-p NN` is the port number ssh communicates through, default port 22
 
 ## Ssh keypath and identityfile
 
@@ -35,7 +35,7 @@ The ssh functions assist in two methods:
 - private and public ssh key pair based upon default ssh values for RSA based key `~/.ssh/id_rsa`
 - private and public ssh key pair based upon user selected values as `~/.ssh_rsyncosx/rsyncosx`
 
-If creating a new public ssh key pair based upon default ssh values for RSA based key (1), RsyncOSX does not add any parameters to the rsync command because this is default values. Ssh parameters to the rsync command is only added if the second method is choosed.
+If creating a new public ssh key pair based upon default ssh values for RSA based key, RsyncOSX does not add any parameters to the rsync command because this is default values. Ssh parameters to the rsync command is only added if the second method is choosed.
 
 The following is the command for creating a new, alternative private and public ssh key pair:
 ```
