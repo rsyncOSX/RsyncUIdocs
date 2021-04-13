@@ -56,7 +56,7 @@ RsyncUI saves data on permanent store either as PLIST or JSON format. The user c
 
 Details about JSON encoding and decoding of configurations are [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/PersistentStorage/PersistentStorageConfigurationJSON.swift). And details about PLIST encoding and decoding of configurations er [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/PersistentStorage/PersistentStorageConfigurationPLIST.swift).
 
-The same is for logs- and schedules. See also where RsyncUI [saves data](/post/configfiles/).
+The same are for logs- and schedules. See also where RsyncUI [saves data](/post/configfiles/).
 
 ### User settings
 
@@ -82,6 +82,8 @@ Combine is used in RsyncUI. It enables a very good control of asynchronous opera
 
 - see [code snippet for ObservableReference](/post/codesnippetobserver/)
 - see [code snippet for SSH settings View](/post/codesnippetviewssh/)
+
+Combine is also used to check if there is a new version available. There is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version. At startup RsyncUI, by Combine, [gets the file](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Utils/NewversionJSON.swift) and verify if current version should be upgraded.
 
 ### Speed
 
