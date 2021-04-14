@@ -7,7 +7,7 @@ tags = ["todo"]
 categories = ["todo"]
 lastmod = "2021-04-12"
 +++
-Updated: 13 April 2021
+Updated: 14 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
@@ -34,7 +34,7 @@ The following is in the prerelase:
 
 ## In code but not in prerelease
 
-- function for **restore** is in code, still som QA to do before comleted, will be in next prerelease
+- function for **restore** is in code
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
@@ -42,7 +42,6 @@ The **error handling** is better in this version. If e.g rsync produces the word
 
 The following is **not yet** implemented:
 
-- actual function for **restore** of data
 - execution of **shellout tasks**, configurations with pre and post shell scripts
 - actual function for **delete** of snapshots
 - no start or stop of the menu app for scheduling of tasks
