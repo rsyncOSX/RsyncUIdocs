@@ -21,7 +21,7 @@ There is 14 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 
 - **restore** data is in the prerelease
 - this prerelase is also a test of informing about updates
-- and as always some minor updsates
+- and as always some minor updates
 
 The pace of new prereleases will slow down, it will probably be a copule of new pre releases and after that a few version 1.0.0 release candidates (in May 2021) before release of version 1.0.0.
 
