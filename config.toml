@@ -10,7 +10,7 @@ googleAnalytics = "UA-194139788-1"
   contentTypeName = "post"
 
   # "light" or "dark"
-  defaultTheme = "dark"
+  defaultTheme = "light"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
