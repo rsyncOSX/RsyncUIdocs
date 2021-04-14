@@ -1,36 +1,41 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-10"
-title =  "Restore files"
+date = "2021-03-11"
+title =  "Restore data"
 tags = ["restore"]
 categories = ["synchronize"]
-description = "How to restore files, there are two options."
-lastmod = "2020-12-13"
+description = "You might want to restore som data?"
+lastmod = "2021-03-18"
 +++
-A restore should always be executed carefully. There is always a possibilty to delete or replace newer files with older when executing a restore. It is **only allowed** to do a restore to a temporary restore catalog. To set a temporary restore path [select userconfiguration](/post/userconfiguration/) and set `temporary path restore`.
+Restore either files or complete synchronize files is easy in RsyncUI. A restore **has** to be executed to a temporary restore path. This is to secure not destroying any original data. A restore session might be as follow:
 
-There are two types of restore:
+### Selecting and filtering
 
-- full restore
-  - if the remote (destination) is a snapshot the Full restore is from the latest snapshot
-- restore files
-  - if the remote (destination) is a snapshot the file list might be huge, depends upon how many snapshots and how many files in a snapshot
-  - any file from any snapshot might be restored
+First of all select from which configuration to restore from. After selection RsyncUI automatically collects filenames of all synchronized files. The list might be huge and it is adviced to filter data before viewing retrieved filelist if there are several hundred thousand of lines.  
 
-Step one in a restore is to select from which configuration a restore is to be executed.
+![](/images/restore/restore1.png)
 
-To do a restore, either full or by file, an estimation is normally required. The status light changes from red to yellow when an estimation can be executed. The status light is green when a restore can be executed.
+A filter will narrow down the filelist to only filenames including the filter.
 
-You can restore single file or catalogs by a double click in the right table, if restore by files are selected and RsyncUI has retrieved file list from remote location.
+![](/images/restore/restore2.png)
 
-## Full restore
+### Files to restore
 
-A full restore might be restored to the original source catalog on the Mac. It is not advised to do so. Always execute a restore to the temporary restore path.
+There are two types of restore, either by file or full restore. If a restore from a `snapshot` task a full restore is from the latest snapshot.
 
-![](/images/RsyncUI/master/restore/restore.png)
+- full restore - set `./.` within the select files field
+- restore by files - open the View of files and select - the file name must be on the form `./folder/filename`, e.g `./` +  `folder/filename`
 
-The button `Do the real thing:` must be checked before a restore can be executed (after an estimation run). If not only a simulation message is shown.
+Select the View button and select a file or folder to restore. Behind the scenes rsync is used for collecting the synchronized list of files.
 
-## Restore files
+![](/images/restore/restore3.png)
 
-To restore files or catalogs select the restore by file button. RsyncUI retrieves files from remote location. Select either a file or catalog, execute an `Estimate` and then a `Restore`. A double click on a file or catalog in right table will execute a restore right away.
+Select the file or folder and the name is automatically set as file to restore. Default restore is a `--dry-run` action. Before executing the real restore view the result from the `--dry-run` action.
+
+![](/images/restore/restore4.png)
+
+### Result of restore
+
+And the result after restore.
+
+![](/images/restore/restore5.png)

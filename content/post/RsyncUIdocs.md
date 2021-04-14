@@ -57,6 +57,10 @@ How to execute tasks, either multiple tasks, single task or just a quick task.
 - [executing a single task](/post/singletask/)
 - [execute quick task](/post/quicktask/)
 
+### Restore data
+
+Sometimes you might want to [restore some data](/post/restore/).
+
 ### Parameters to rsync
 
 Rsync has a ton of parameters. In [user selected parameters](/post/rsyncparameters) you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
