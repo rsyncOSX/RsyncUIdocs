@@ -45,7 +45,7 @@ Rsync utilizes a ton of parameters. Parameters are normally constructed as:
 For a full list of parameters to rsync please see the [rsync docs](https://download.samba.org/pub/rsync/rsync.html).
 
 ![](/images/rsyncparameters/parameters.png)
-![](/images/rsynccommando/rsynccommand.png)
+![](/images/verify/verify.png)
 
 ### Backup parameters
 

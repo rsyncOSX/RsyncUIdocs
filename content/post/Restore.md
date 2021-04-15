@@ -7,7 +7,7 @@ categories = ["synchronize"]
 description = "You might want to restore som data?"
 lastmod = "2021-03-18"
 +++
-Restore either files or complete synchronize files is easy in RsyncUI. A restore **has** to be executed to a temporary restore path. This is to secure not destroying any original data. A restore session might be as follow:
+Restore either files or complete synchronized files is easy in RsyncUI. A restore has to be executed to a **temporary restore path**. This is to secure not destroying any original data. A restore session might be as follows.
 
 ### Selecting and filtering
 
@@ -21,7 +21,7 @@ A filter will narrow down the filelist to only filenames including the filter.
 
 ### Files to restore
 
-There are two types of restore, either by file or full restore. If a restore from a `snapshot` task a full restore is from the latest snapshot.
+There are two types of restore, either a full restore or by file. If a restore is from a `snapshot` task, a full restore is from the latest snapshot. 
 
 - full restore - set `./.` within the select files field
 - restore by files - open the View of files and select - the file name must be on the form `./folder/filename`, e.g `./` +  `folder/filename`
