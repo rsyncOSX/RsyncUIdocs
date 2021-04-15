@@ -8,7 +8,9 @@ categories = ["general information"]
 lastmod = "2021-03-14"
 toc = "true"
 +++
-This is the documentation of the new app RsyncUI, the next release of RsyncOSX. The documentation will be updated as the development is going forward. The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur.
+This is the documentation of the new app RsyncUI, the next and future release of RsyncOSX. My main focus after releasing RsyncUI will be to enhance and continue the development of it. There will also be developed a Sandboxed version of it for release on Apple Mac Store later this year. And there will also be a menu app for executing scheduled tasks.
+
+The documentation will be updated as the development is going forward. The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur.
 
 There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease.
 
