@@ -44,7 +44,9 @@ The **error handling** is better in this version. If e.g rsync produces the word
 
 The following is **not yet** implemented:
 
-
 - actual function for **delete** of snapshots
-- no start or stop of the menu app for scheduling of tasks
+- a **menu app for RsyncUI executing scheduled tasks**, will be based on current version - new name will be `RsyncSchedule` (probably)
+  - start and stop of the menu app for scheduling of tasks
+  - utilizing Combine in new version
+  - utilizing SwiftUI for the few UI
 - local and remote info about synchronized data
