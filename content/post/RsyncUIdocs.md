@@ -57,6 +57,10 @@ How to execute tasks, either multiple tasks, single task or just a quick task.
 - [executing a single task](/post/singletask/)
 - [execute quick task](/post/quicktask/)
 
+### Pre and post task
+
+RsyncUI might [execute a pre- and post shell script](/post/shellout/) connected to a task.
+
 ### Restore data
 
 Sometimes you might want to [restore some data](/post/restore/).

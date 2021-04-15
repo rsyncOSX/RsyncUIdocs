@@ -32,13 +32,19 @@ The following is in the prerelase:
 - **restore** of data
 - RsyncUI will from **version 0.49 inform** when there is a new update
 
+## In code
+
+The following is in code but not yet in the prerelase:
+
+- execution of **shellout tasks**, configurations with pre and post shell scripts
+
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
 # Not yet implemented
 
 The following is **not yet** implemented:
 
-- execution of **shellout tasks**, configurations with pre and post shell scripts
+
 - actual function for **delete** of snapshots
 - no start or stop of the menu app for scheduling of tasks
 - local and remote info about synchronized data
