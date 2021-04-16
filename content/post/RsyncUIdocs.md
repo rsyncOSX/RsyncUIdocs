@@ -6,7 +6,6 @@ description = "If you want some more info about RsyncUI there are some resources
 tags = ["summary"]
 categories = ["general information"]
 lastmod = "2021-03-14"
-toc = "true"
 +++
 This is the documentation of the new app RsyncUI, the next and future release of RsyncOSX. My main focus after releasing RsyncUI will be to enhance and continue the development of it. There will also be developed a Sandboxed version of it for release on Apple Mac Store later this year. And there will also be a menu app for executing scheduled tasks.
 
@@ -19,7 +18,6 @@ There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please 
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
----
 ---
 
 ## Using RsyncUI
@@ -79,7 +77,6 @@ Rsync can also [verify the synchronized data](/post/verify/).
 
 The [logfiles](/post/logging/) can be viewed either all or by config.
 
----
 ---
 
 ## Some technical details about RsyncUI

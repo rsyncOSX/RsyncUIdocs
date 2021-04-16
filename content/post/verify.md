@@ -15,6 +15,6 @@ The `--checksum` parameters forces rsync to evaluate files based upon 128-bit [M
 
 If the **check** finds files not synchronized a touch command on file will update timestamp on file and next synchronize task will copy missing files.
 
-To execute a **check** select the `Rsync` command from the sidebar, and then the button `Rsync`. Choose `verify` and copy the command for paste into a terminal.
+To execute a **check** select the `Rsync parameters` command from the sidebar, and then the button `Rsync`. Choose `verify` and copy the command for paste into a terminal. The verify, in RsyncUI, is a set as a `--dry-run` task.  
 
 ![](/images/verify/verify.png)
