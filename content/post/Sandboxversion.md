@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
 title = "A Sandbox version of RsyncUI"
-date = "2021-03-11"
+date = "2021-03-10"
 description = "The todo list"
 tags = ["sandbox"]
-lastmod = "2021-04-12"
+lastmod = "2021-04-16"
 +++
 Later in 2021 there will developed and released a Sandboxed version of RsyncUI for release on Apple Mac Store.
 
