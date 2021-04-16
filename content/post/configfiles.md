@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "RsyncUI config files"
 tags = ["config file"]
-categories = ["general information"]
+# categories = ["general information"]
 description = "Where does RsyncUI store the configuration files?"
 lastmod = "2020-10-23"
 +++

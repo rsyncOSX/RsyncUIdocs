@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Execute single tasks"
 tags = ["single task"]
-categories = ["synchronize"]
+# categories = ["synchronize"]
 description = "Execute single task, first a verify run and then the real run."
 lastmod = "2021-03-10"
 +++

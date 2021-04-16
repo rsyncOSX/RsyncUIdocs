@@ -4,7 +4,7 @@ title = "Important info about using RsyncUI"
 date = "2021-03-10"
 description = "Important info about using RsyncUI"
 tags = ["important"]
-categories = ["general information"]
+# categories = ["general information"]
 lastmod = "2021-01-14"
 +++
 RsyncUI is not developed to be an easy to use synchronize and backup tool. The main purpose is to assist and ease the use of `rsync` to synchronize files on your Mac to remote FreeBSD and Linux servers. And of course restore files from those remote servers.

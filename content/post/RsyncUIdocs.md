@@ -4,17 +4,19 @@ title = "How to use RsyncUI"
 date = "2021-03-13"
 description = "If you want some more info about RsyncUI there are some resources here"
 tags = ["summary"]
-categories = ["general information"]
+# categories = ["general information"]
 lastmod = "2021-03-14"
 +++
 This is the documentation of the new app RsyncUI, the next and future release of RsyncOSX. My main focus after releasing RsyncUI will be to enhance and continue the development of it. There will also be developed a Sandboxed version of it for release on Apple Mac Store later this year. And there will also be a menu app for executing scheduled tasks.
+
+For the moment the development of current version of RsyncOSX and RsyncOSXsched (the menu app) is frozen. Both apps are quite stable and only critical bugs will be fixed. Both apps will be avaliable for download in the future, probably to end of 2022. The main focus now is the release of [RsyncUI](https://github.com/rsyncOSX/RsyncUI) and [RsyncSchedule](https://github.com/rsyncOSX/RsyncSchedule).
 
 The documentation will be updated as the development is going forward. The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur.
 
 There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease.
 
-- RsyncUI is compiled with support for **macOS Big Sur** only
-- the latest prerelase (test) is [released here](https://github.com/rsyncOSX/RsyncUI/releases)
+- RsyncUI and RsyncSchedule are compiled with support for **macOS Big Sur** and later
+- the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
@@ -82,6 +84,10 @@ The [logfiles](/post/logging/) can be viewed either all or by config.
 ## Some technical details about RsyncUI
 
 This section is some technical details about RsyncUI.
+
+### Sandboxed version
+
+Later in 2021 there will be released [a sandboxed version of RsyncUI](/post/sandboxversion/).
 
 ### Config files
 

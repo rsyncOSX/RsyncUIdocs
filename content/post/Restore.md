@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-11"
 title =  "Restore data"
 tags = ["restore"]
-categories = ["synchronize"]
+# categories = ["synchronize"]
 description = "You might want to restore som data?"
 lastmod = "2021-03-18"
 +++
@@ -21,7 +21,7 @@ A filter will narrow down the filelist to only filenames including the filter.
 
 ### Files to restore
 
-There are two types of restore, either a full restore or by file. If a restore is from a `snapshot` task, a full restore is from the latest snapshot. 
+There are two types of restore, either a full restore or by file. If a restore is from a `snapshot` task, a full restore is from the latest snapshot.
 
 - full restore - set `./.` within the select files field
 - restore by files - open the View of files and select - the file name must be on the form `./folder/filename`, e.g `./` +  `folder/filename`

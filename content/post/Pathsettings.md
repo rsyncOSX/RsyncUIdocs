@@ -4,7 +4,7 @@ date = "2021-03-11"
 title =  "Paths"
 description = "Some settings for paths and environment"
 tags = ["usersettings"]
-categories = ["general information"]
+# categories = ["general information"]
 lastmod = "2021-03-11"
 +++
 In this view set alternative path to apps and environment.

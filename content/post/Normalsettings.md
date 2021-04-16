@@ -4,7 +4,7 @@ date = "2021-03-11"
 title =  "Rsync and other settings"
 description = "Which version of rsync to use?"
 tags = ["usersettings"]
-categories = ["general information"]
+# categories = ["general information"]
 lastmod = "2021-03-11"
 +++
 This view includes the most normal settings to tweak.

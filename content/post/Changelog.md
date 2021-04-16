@@ -4,7 +4,7 @@ title = "The RsyncUI changelog"
 date = "2021-03-11"
 description = "Changelog"
 tags = ["RsyncUI"]
-categories = ["changelog"]
+# categories = ["changelog"]
 lastmod = "2021-04-12"
 +++
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. RsyncUI is [signed and notarized](/post/notarized/).

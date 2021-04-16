@@ -24,7 +24,7 @@ googleAnalytics = "UA-194139788-1"
 
   # Show full page content in RSS feed items
   #(default is Description or Summary metadata in the front matter)
-  # rssFullText = true
+  rssFullText = true
 
 [languages]
   [languages.en]

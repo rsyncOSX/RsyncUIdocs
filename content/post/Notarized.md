@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Signing and notarization"
 tags = ["notarize","signed"]
-categories = ["sequrity"]
+# categories = ["sequrity"]
 description = "Some info about signing and notarizing."
 lastmod = "2020-08-06"
 +++

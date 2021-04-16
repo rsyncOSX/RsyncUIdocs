@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Scheduled task"
 tags = ["scheduling","menu app"]
-categories = ["synchronize"]
+# categories = ["synchronize"]
 description = "Tasks can be scheduled for executing."
 lastmod = "2020-12-13"
 +++

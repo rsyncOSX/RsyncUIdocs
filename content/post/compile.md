@@ -4,7 +4,7 @@ date = "2021-03-10"
 title =  "How to compile RsyncUI"
 description = "You can easy compile your own version of RsyncUI"
 tags = ["compile"]
-categories = ["source code"]
+# categories = ["source code"]
 +++
 RsyncUI is only depended upon the Swift language and SwiftUI and Foundation frameworks. There are two ways to compile, either in Xcode or utilize `make` from command line in RsyncUI catalog. To use make require Xcode command line utilities to be installed. Execute the following command and follow the instructions.
 ```

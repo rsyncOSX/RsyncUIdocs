@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Code snippet for the SSH settings View"
 tags = ["SwiftUI","code snippets"]
-categories = ["SwiftUI"]
+# categories = ["SwiftUI"]
 description = "Why is the development of RsyncUI based on SwiftUI?"
 lastmod = "2021-04-06"
 +++

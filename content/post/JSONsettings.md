@@ -4,7 +4,7 @@ date = "2021-03-11"
 title =  "JSON and backup"
 description = "Use JSON as storage format?"
 tags = ["usersettings"]
-categories = ["general information"]
+# categories = ["general information"]
 lastmod = "2021-03-11"
 +++
 In this view you can backup configurations and, if wanted transform existing configurations to either JSON or PLIST.

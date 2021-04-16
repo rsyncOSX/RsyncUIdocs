@@ -4,7 +4,7 @@ title = "The Todo list"
 date = "2021-03-11"
 description = "The todo list"
 tags = ["todo"]
-categories = ["todo"]
+# categories = ["todo"]
 lastmod = "2021-04-12"
 +++
 Updated: 14 April 2021

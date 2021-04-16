@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Passwordless logins by ssh-keys."
 tags = ["passwordless","ssh keypath and identity file"]
-categories = ["remotelogins"]
+# categories = ["remotelogins"]
 description = "RsyncUI can guide you in setting up passwordless login by ssh-keys"
 lastmod = "2020-12-13"
 +++

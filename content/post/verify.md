@@ -4,7 +4,7 @@ date = "2021-03-10"
 title =  "Verify synchronized data"
 description = "Sometimes you want to verify the synchronized data"
 tags = ["verify"]
-categories = ["rsync"]
+# categories = ["rsync"]
 lastmod = "2020-12-13"
 +++
 The `--archive` parameter is the normal parameter to use in synchronize and snapshot tasks because it is fast. The `--archive` parameter to [rsync](https://en.wikipedia.org/wiki/Rsync) preserves a lot of attributes of files when synchronizing. Files transferred in `--archive` mode ensures that symbolic links, devices, permissions, ownerships, modification times, ACLs, and extended attributes are preserved. When synchronizing files based upon the `--archive` parameter, rsync compares file size and last modification time to compute which files to be synchronized.
