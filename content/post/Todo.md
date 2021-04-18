@@ -7,7 +7,7 @@ tags = ["todo"]
 # categories = ["todo"]
 lastmod = "2021-04-12"
 +++
-Updated: 14 April 2021
+Updated: 18 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
@@ -39,10 +39,11 @@ Updated 18 April 2021.
 The following is in code but not yet in the prerelase, soon to be released as prerelase:
 
 - execution of **shellout tasks**, configurations with pre and post shell scripts
-- `RsyncSchedule` - **the menu app for RsyncUI executing scheduled tasks**, is based on current version
+- `RsyncSchedule` - the menu app for RsyncUI executing **scheduled tasks**
+  - it is based on current version
   - start and stop of the menu app for scheduling of tasks
   - utilizing Combine in new version
-  - utilizing SwiftUI for the few UI
+  - utilizing SwiftUI will be developed sometime later this year
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
@@ -51,5 +52,4 @@ The **error handling** is better in this version. If e.g rsync produces the word
 The following is **not yet** implemented:
 
 - actual function for **delete** of snapshots
-
 - local and remote info about synchronized data
