@@ -7,9 +7,9 @@ tags = ["summary"]
 # categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This is the documentation of the new app RsyncUI, the next and future release of RsyncOSX. My main focus after releasing RsyncUI will be to enhance and continue the development of it. There will also be developed a Sandboxed version of it for release on Apple Mac Store later this year. And there will also be a menu app for executing scheduled tasks.
+This is the documentation of the new app RsyncUI, the next and future release of RsyncOSX. My main focus after releasing RsyncUI will be to enhance and continue the development of it. There will also later this year, be developed a Sandboxed version for release on Apple Mac Store . And there will also be a menu app for executing scheduled tasks.
 
-For the moment the development of current version of RsyncOSX and RsyncOSXsched (the menu app) is frozen. Both apps are quite stable and only critical bugs will be fixed. Both apps will be avaliable for download in the future, probably to end of 2022. The main focus now is the release of [RsyncUI](https://github.com/rsyncOSX/RsyncUI) and [RsyncSchedule](https://github.com/rsyncOSX/RsyncSchedule).
+For the moment the development of current version of RsyncOSX and RsyncOSXsched (the menu app) is frozen. Both apps are stable and only critical bugs will be fixed. Both apps will be avaliable for download in the future, probably to end of 2022. The main focus now is the release of [RsyncUI](https://github.com/rsyncOSX/RsyncUI) and [RsyncSchedule](https://github.com/rsyncOSX/RsyncSchedule).
 
 The documentation will be updated as the development is going forward. The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur.
 
@@ -30,7 +30,7 @@ This section is about using RsyncUI.
 
 The default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
 
-The screenshots may be slightly different from what is in the current prerelease. There are minor tweaks and changes in the screenshots very frequent now. The documentation will be updated with screenshots after release 1.0.0 in May 2021.
+The screenshots may be slightly different from what is in the current prerelease. There are minor tweaks and changes to the UI very frequent now. The documentation will be updated with updated screenshots after release 1.0.0 in May 2021.
 
 ![](/images/start/start.png)
 
