@@ -54,11 +54,9 @@ RsyncUI is constructed in compliance to the Model View Controller (MVC) architec
 
 ### Permanent storage
 
-RsyncUI saves data on permanent store either as PLIST or JSON format. The user can any time convert existing data to either of the formats. There is no preferences of which format to use and default is PLIST. JSON is a preferred format for exchanging data on the Internet and Swift has very good support for encoding and decoding JSON.
+RsyncUI saves data on permanent store as JSON files. JSON is a preferred format for exchanging data on the Internet and Swift has very good support for encoding and decoding JSON. As an example about reading JSON files and decoding configurations see [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift). For the moment saving changes to configurations and schedules is not by Combine, but as a [try catch closure](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift).
 
-Details about JSON encoding and decoding of configurations are [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/PersistentStorage/PersistentStorageConfigurationJSON.swift). And details about PLIST encoding and decoding of configurations er [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/PersistentStorage/PersistentStorageConfigurationPLIST.swift).
-
-The same are for logs- and schedules. See also where RsyncUI [saves data](/post/configfiles/).
+See also where RsyncUI [saves data](/post/configfiles/).
 
 ### User settings
 
