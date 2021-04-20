@@ -7,44 +7,13 @@ tags = ["config file"]
 description = "Where does RsyncUI store the configuration files?"
 lastmod = "2020-10-23"
 +++
-RsyncUI stores its configurations, schedules and log records either as [property list files (PLIST)](https://en.wikipedia.org/wiki/Property_list) or [JavaScript Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) files. Default format is PLIST files. The user can [change the format to JSON](/post/json/). The storage of config files is in:
+RsyncUI stores its configurations, schedules and log records as [JavaScript Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) files. The storage of config files is in:
 ```
 $HOME/.rsyncosx/macserialnumber/
 ```
 In the `About` the used path for configuration files is shown. RsyncUI evaluates the computer mac serial number at startup.
 
-## Configurations as PLIST
-
-The default format is plist:
-
-### Configuration files
-
-Default profile stores all configurations in:
-```
-$HOME/.rsyncosx/macserialnumber/configRsync.plist
-```
-If profile is utilized:
-```
-$HOME/.rsyncosx/macserialnumber/profile/configRsync.plist
-```
-where `profile` is a sub catalog.
-
-### Schedules and log records
-
-Default profile stores all Schedules and log records in:
-```
-$HOME/.rsyncosx/macserialnumber/macserialnumber/scheduleRsync.plist
-```
-If profile is utilized:
-```
-$HOME/.rsyncosx/macserialnumber/profile/scheduleRsync.plist
-```
-
-## Configurations as JSON
-
-The user can [change format to JSON](/post/json/):
-
-### Configuration files
+## Configuration files
 ```
 $HOME/.rsyncosx/macserialnumber/configurations.json
 ```
@@ -52,7 +21,7 @@ If profile is utilized:
 ```
 $HOME/.rsyncosx/macserialnumber/profile/configurations.json
 ```
-### Schedules and log records
+## Schedules and log records
 ```
 $HOME/.rsyncosx/macserialnumber/macserialnumber/schedules.json
 ```
@@ -61,7 +30,7 @@ If profile is utilized:
 $HOME/.rsyncosx/macserialnumber/profile/schedules.json
 ```
 
-## User configurations
+## User configurations (as a PLIST file)
 
 The [user configurations](/post/userconfiguration/) are stored as PLIST in:
 ```

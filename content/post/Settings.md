@@ -14,4 +14,3 @@ There are a few settings to be tweaked. Settings are saved to permanent store. T
 - [Rsync](/post/normalsettings/) - rsync and other settings
 - [Ssh](/post/sshsettings) - SSH settings
 - [Paths](/post/pathsettings/) - path to applications and environment
-- [JSON](/post/jsonsettings/) - JSON settings

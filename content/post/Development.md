@@ -87,6 +87,8 @@ Combine is used in RsyncUI. It enables a very good control of asynchronous opera
 
 Combine is also used to check if there is a new version available. There is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version. At startup RsyncUI, by Combine, [gets the file](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Utils/NewversionJSON.swift) and verify if current version should be upgraded.
 
+Combine is a complex framework and it takes some time to learn it. The use of Combine in RsyncUI is expanding and the latest use now is reading and decoding JSON files, configurations and schedules, into theire respective internal representations. 
+
 ### Speed
 
 SwiftUI refreshes the view every time there is a change on a `<Binding>`. And there are also several other happenings which causes a refresh of the view. If there are, within the view, properties which are computed it might become an issue. There can be several hundred log records each task. If sorting and filtering of logs are computed properties within a view it can become an speed issue aka *spinning beach ball*. Therefore are all sorting and filtering of logs computed within the [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift) object and the result is set to the `<Binding>` value after the sort or filtering is completed.

@@ -14,6 +14,9 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 The latest prereleases are close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still a few major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
+## Next prerelase (not yet released) - breaking changes
+
+There are some breaking changes in next prerelease. RsyncUI is **only** saving configurations as JSON files. That means if you are using RsyncUI and RsyncOSX in parallel, RsyncOSX must be changed to use JSON files (in RsyncOSX user settings).
 
 ## Prerelease v0.55(build 19)
 
