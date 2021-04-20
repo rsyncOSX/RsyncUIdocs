@@ -16,7 +16,7 @@ The development of RsyncUI commenced in December 2020 and will be released somet
 
 Less code is better code.
 
-[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. It must be reliable and whenever they are triggered RsyncUI must catch them.
+[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. It must be reliable and whenever they are triggered RsyncUI must catch them. Combine is also used for decoding JSON.
 
 The development of RsyncOSX began early in 2016. RsyncOSX is a pure Swift, Cocoa and Foundation, based application. The future generation of RsyncOSX is RsyncUI, a SwiftUI and Swift (Foundation) based application.
 
@@ -87,7 +87,7 @@ Combine is used in RsyncUI. It enables a very good control of asynchronous opera
 
 Combine is also used to check if there is a new version available. There is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version. At startup RsyncUI, by Combine, [gets the file](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Utils/NewversionJSON.swift) and verify if current version should be upgraded.
 
-Combine is a complex framework and it takes some time to learn it. The use of Combine in RsyncUI is expanding and the latest use now is reading and decoding JSON files, configurations and schedules, into theire respective internal representations. 
+Combine is a complex framework and it takes some time to learn it. The use of Combine in RsyncUI is expanding and the latest use now is reading and decoding JSON files, configurations and schedules, into theire respective internal representations.
 
 ### Speed
 

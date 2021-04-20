@@ -16,7 +16,8 @@ The latest prereleases are close, by functions, to the current release of RsyncO
 ---
 ## Next prerelase (not yet released) - breaking changes
 
-There are some breaking changes in next prerelease. RsyncUI is **only** saving configurations as JSON files. That means if you are using RsyncUI and RsyncOSX in parallel, RsyncOSX must be changed to use JSON files (in RsyncOSX user settings).
+There are some breaking changes in next prerelease. RsyncUI is **only** saving configurations as JSON files. That means if you are using RsyncUI and RsyncOSX in parallel, **RsyncOSX** must be **changed** to use JSON files (in RsyncOSX user settings). The usersettings for RsyncUI is also changed and separated from RsyncOSX. Any settings in RsyncUI has to be set and saved.
+
 
 ## Prerelease v0.55(build 19)
 
