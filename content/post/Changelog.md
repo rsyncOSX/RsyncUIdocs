@@ -20,14 +20,14 @@ There is 21 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 
 - RsyncUI from this release **only** supports JSON files
 - settings in RsyncUI is separated from RsyncOSX settings
-  - the menu app can be activated from the `File` menu or by `⌘S` shortcut
 
 You **must** set new user settings in RsyncUI if other than default values, like change version of `rsync`. If you are using RsyncOSX and want to test RsyncUI, [please enable JSON support in RsyncOSX](https://rsyncosx.netlify.app/post/json/) ahead of using RsyncUI.
 
-The following are changes compared to previoos release:
+The following are changes compared to previous release:
 
 - there was an bug in creating configurations if never used RsyncUI and RsyncOSX before
-- the menu app RsyncSchedule is released as test
+- the menu app RsyncSchedule is released
+  - the menu app can be activated from the `File` menu or by `⌘S` shortcut
 - and some minor tweaks and updates in the UI
 - execution of **shellout tasks**, configurations with pre and post shell scripts
 
