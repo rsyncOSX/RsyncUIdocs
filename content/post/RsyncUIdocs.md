@@ -24,13 +24,13 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Using RsyncUI
 
-This section is about using RsyncUI.
+This section is about using RsyncUI. RsyncUI can be used in parallel with RsyncOSX. But that requires that RsyncOSX is setup to use JSON files and that the files for permanent storage is in the same catalog. RsyncUI and RsyncOSX does **not** share the settings.  
 
 ### The main menu
 
 The default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. The main view informs about which version of rsync is utilized and if JSON or PLIST is used for storing configurations and schedules.
 
-The screenshots may be slightly different from what is in the current prerelease. There are minor tweaks and changes to the UI very frequent now. The documentation will be updated with updated screenshots after release 1.0.0 in May 2021.
+The screenshots may be slightly different from what is in the current prerelease. There are now very frequent minor tweaks and changes to the UI. The documentation will be updated with updated screenshots after release 1.0.0 in May 2021.
 
 ![](/images/start/start.png)
 

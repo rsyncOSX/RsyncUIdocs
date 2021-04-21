@@ -8,7 +8,7 @@ description = "Why is the development of RsyncUI based on SwiftUI?"
 lastmod = "2021-03-12"
 toc = "true"
 +++
-The development of RsyncUI commenced in December 2020 and will be released sometime in June or July 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
+The development of RsyncUI commenced in December 2020 and will be released sometime in May 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
 
 [SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framework** for UI. Developing the UI based on SwiftUI compared to developing utilizing the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. And the future of development on the Apple plattform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C frameworks.
 
@@ -85,7 +85,7 @@ Combine is used in RsyncUI. It enables a very good control of asynchronous opera
 
 Combine is also used to check if there is a new version available. There is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version. At startup RsyncUI, by Combine, [gets the file](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Utils/NewversionJSON.swift) and verify if current version should be upgraded.
 
-Combine is a complex framework and it takes some time to learn it. The use of Combine in RsyncUI is expanding and the latest use now is reading and decoding JSON files, configurations and schedules, into theire respective internal representations.
+Combine is a complex framework and it takes some time to learn the basics of it. The use of Combine in RsyncUI is expanding and the latest use now is reading and decoding JSON files as permanent storage for configurations and schedules, into theire respective internal representations (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>).
 
 ### Speed
 

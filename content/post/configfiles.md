@@ -32,7 +32,7 @@ $HOME/.rsyncosx/macserialnumber/profile/schedules.json
 
 ## User configurations
 
-The [user configurations](/post/userconfiguration/) are stored as a PLIST file in:
+The [user configuration](/post/settings/) is stored as a PLIST file in:
 ```
 $HOME/.rsyncosx/macserialnumber/rsyncuiconfig.plist
 ```
