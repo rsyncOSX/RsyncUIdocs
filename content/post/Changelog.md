@@ -5,7 +5,7 @@ date = "2021-03-11"
 description = "Changelog"
 tags = ["RsyncUI"]
 # categories = ["changelog"]
-lastmod = "2021-04-12"
+lastmod = "2021-04-21"
 +++
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. RsyncUI is [signed and notarized](/post/notarized/).
 
@@ -14,10 +14,22 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 The latest prereleases are close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still a few major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
-## Next prerelase (not yet released) - breaking changes
+## Prerelease v0.60(build 20) - breaking changes
 
-There are some breaking changes in next prerelease. RsyncUI is **only** saving configurations as JSON files. That means if you are using RsyncUI and RsyncOSX in parallel, **RsyncOSX** must be **changed** to use JSON files (in RsyncOSX user settings). The usersettings for RsyncUI is also changed and separated from RsyncOSX. Any settings in RsyncUI has to be set and saved.
+There is 21 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks. There are two **breaking changes** in this release:
 
+- RsyncUI from this release **only** supports JSON files
+- settings in RsyncUI is separated from RsyncOSX settings
+  - the menu app can be activated from the `File` menu or by `⌘S` shortcut
+
+You **must** set new user settings in RsyncUI if other than default values, like change version of `rsync`. If you are using RsyncOSX and want to test RsyncUI, [please enable JSON support in RsyncOSX](https://rsyncosx.netlify.app/post/json/) ahead of using RsyncUI.
+
+The following are changes compared to previoos release:
+
+- there was an bug in creating configurations if never used RsyncUI and RsyncOSX before
+- the menu app RsyncSchedule is released as test
+- and some minor tweaks and updates in the UI
+- execution of **shellout tasks**, configurations with pre and post shell scripts
 
 ## Prerelease v0.55(build 19)
 

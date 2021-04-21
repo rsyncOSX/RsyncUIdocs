@@ -5,9 +5,9 @@ date = "2021-03-11"
 description = "The todo list"
 tags = ["todo"]
 # categories = ["todo"]
-lastmod = "2021-04-12"
+lastmod = "2021-04-21"
 +++
-Updated: 18 April 2021
+Updated: 21 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
@@ -31,13 +31,6 @@ The following is in the prerelase:
 - added a **quick task** option, add a source and a destination and go for it
 - **restore** of data
 - RsyncUI will from **version 0.49 inform** when there is a new update
-
-## In code
-
-Updated 18 April 2021.
-
-The following is in code but not yet in the prerelase, soon to be released as prerelase:
-
 - execution of **shellout tasks**, configurations with pre and post shell scripts
 - `RsyncSchedule` - the menu app for RsyncUI executing **scheduled tasks**
   - it is based on current version
