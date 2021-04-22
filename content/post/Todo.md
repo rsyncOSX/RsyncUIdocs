@@ -21,14 +21,16 @@ The following is in the prerelase:
 - administrate the **user settings**
 - **delete and update** configurations
 - **add** configurations and **create new profiles**
-- **add and delete schedules** are working, but there is no link to the schedule app yet.
+- **add, stop and delete** scheduled tasks
 - **delete logrecords**
 - **add and delete parameters** to rsync
 - commenced the work on localize RsyncUI to German, Italian and Norwegian
 - added **shortcut codes** for estimating and executing multiple and single tasks
   - `⌘E` shortcut for estimate
   - `⌘R` shortcut for synchronize
-- added a **quick task** option, add a source and a destination and go for it
+- added **quick task** option, add a source and a destination and go for it
+  - default is a `synchronize` task
+  - can also be set as a `syncremote` task, pull data from a remote server
 - **restore** of data
 - RsyncUI will from **version 0.49 inform** when there is a new update
 - execution of **shellout tasks**, configurations with pre and post shell scripts
