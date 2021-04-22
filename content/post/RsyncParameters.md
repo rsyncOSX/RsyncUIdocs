@@ -28,7 +28,7 @@ The following parameters are for networked tasks only. A networked task is a tas
 
 ### Ssh parameters (local)
 
-There are two parameters to set for ssh. The local ssh parameters overrides global ssh parameters set in the [user config](/post/userconfiguration/).
+There are two parameters to set for ssh. The local ssh parameters overrides global ssh parameters set in the [user config](/post/sshsettings/).
 
 - ssh port, set if ssh uses other port than standard port 22
 - the ssh keypath and identity file, normally this is `.ssh/id_rsa`, set name only if other keypath and identity file to be used by ssh
@@ -56,8 +56,12 @@ You can instruct rsync to save changed and deleted files in a separate backup ca
 	- RsyncUI does suggest a value for the `--backup-dir` but you might set it to whatever you want
 - **rsync daemon**: `::` enabling rsync daemon puts a double colon `::` in address parameter to rsync. It forces rsync to use the rsync daemon remote.
 
-There are [two possible setup for using the rsync daemon](/post/rsyncdaemon/). Utilizing a rsync daemon setup does **not** encrypt the transfer between client and server. To encrypt the transfer require tunneling traffic in a ssh protocol, [see how to setup ssh passwordless logins](/post/remotelogins/).
+There are [two possible setup for using the rsync daemon](/post/rsyncdaemon/). Utilizing a rsync daemon setup does **not** encrypt the transfer between client and server. To encrypt the transfer require tunneling traffic in a ssh protocol, [see how to setup ssh passwordless logins](/post/ssh/).
 
+Default catalog for backup of `<catalog to synchronize>` relativ to the synchronized catalog is:
+```
+../backup_<catalog to synchronize>
+```
 ### Suffix on changed and deleted files
 
 Rsync can also set a time stamp as suffix on files. This might be useful if there are several revisions of files. The --suffix parameter set suffix on files, suffix can be set on files together with the --backup parameter. One suffix might rename files which are either deleted or replaced newer files with a trailing date and time stamp.
@@ -72,5 +76,3 @@ Rsync can also set a time stamp as suffix on files. This might be useful if ther
 ```
 
 I have experienced some variations regarding the suffix. If you want to use suffix you might try an alternative suffix if the above is not working as expected. If so is true use  instead. You just have to try and see what works
-
-The parameters in picture (below) instructs rsync to save changed files in catalog ../backup_Directory (relative to destination catalog) and suffix the backup file with timestamps. The above is enabled or disabled by select the backup button. The user might change the backup catalog. The backup catalog can either be absolute path or relative path. Default backup catalog is ../backup_Directory.
