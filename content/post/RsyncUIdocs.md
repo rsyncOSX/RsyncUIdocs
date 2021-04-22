@@ -75,9 +75,13 @@ Rsync has a ton of parameters. In [user selected parameters](/post/rsyncparamete
 
 Rsync can also [verify the synchronized data](/post/verify/).
 
-### Log files
+### Logging of runs
 
-The [logfiles](/post/logging/) can be viewed either all or by config.
+ [The logredcods](/post/logging/) can be viewed either all or by config.
+
+### Logfile
+
+The `⌘L` shortcut brings up any logging to file. Sometimes `rsync` produces error and output are saved to the logfile for viewing and possible corrections of the task. If `rsync` produces an error RsyncUI will inform about that.
 
 ---
 
