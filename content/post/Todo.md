@@ -7,7 +7,7 @@ tags = ["todo"]
 # categories = ["todo"]
 lastmod = "2021-04-21"
 +++
-Updated: 21 April 2021
+Updated: 23 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
 
@@ -41,6 +41,13 @@ The following is in the prerelase:
   - utilizing SwiftUI will be developed sometime later this year
 
 The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
+
+# In code but not in prerelease
+
+The release of version 1.0.0 is closing. The following is in code but not in the prerelase:
+
+- view for rsync parameters is reworked into two views
+- view for schedules is reworked into two views
 
 # Not yet implemented
 
