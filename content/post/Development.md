@@ -18,6 +18,11 @@ Less code is better code.
 
 [Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. It must be reliable and whenever they are triggered RsyncUI must catch them. Combine is also used for decoding JSON.
 
+Combine is a very powerful framework and as fun to use as the SwiftUI framwork is (my personal opinion). Learning and understanding Combine take time and I am in the process of learning both SwiftUI and Combine. There are several resources available for the Combine framework. Two resources I will like to point out are:
+
+- [Matt Neuburg´s Understanding Combine,](https://www.apeth.com/UnderstandingCombine/)
+- [Joseph Heck´s Using Combine](https://heckj.github.io/swiftui-notes/)
+
 The development of RsyncOSX began early in 2016. RsyncOSX is a pure Swift, Cocoa and Foundation, based application. The future generation of RsyncOSX is RsyncUI, a SwiftUI and Swift (Foundation) based application.
 
 ## About the development and progress
