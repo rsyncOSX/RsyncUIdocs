@@ -32,9 +32,9 @@ The source is available on my [GitHub account](https://github.com/rsyncOSX/Rsync
 
 There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube and GitHub are amongst the most used resources. I am also following a few blogs like:
 
-- Paul Hudson´s [Hacking With Swift](https://www.hackingwithswift.com/)
-- John Sundell´s [Swift by Sundell](https://swiftbysundell.com/)
-- Dave Werver´s [iOS Dev Weekly](https://iosdevweekly.com/)
+- [Paul Hudson´s Hacking With Swift](https://www.hackingwithswift.com/)
+- [John Sundell´s Swift by Sundell](https://swiftbysundell.com/)
+- [Dave Werver´s iOS Dev Weekly](https://iosdevweekly.com/)
 - [Apple tutorials about developing in SwiftUI](https://developer.apple.com/tutorials/app-dev-training)
 
 There are also several resources available for the Combine framework. I will like to point the following resources:
