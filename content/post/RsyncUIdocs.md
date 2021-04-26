@@ -24,9 +24,13 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Using RsyncUI
 
-This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. But that requires RsyncOSX to be setup to use JSON files and that the files for permanent storage is in the same catalog. RsyncUI and RsyncOSX does **not** share the settings. There is some more info about how to [setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/).
+This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use JSON files and that the files for permanent storage is in the same catalog as RsyncUI. RsyncUI and RsyncOSX does **not** share the settings.
 
-The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved.
+There is some more info about how to [setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved. Default catalog for storing files for both apps is:
+
+```
+$HOME/.rsyncosx/macserialnumber/
+```
 
 ### The main menu
 
