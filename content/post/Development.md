@@ -59,9 +59,7 @@ RsyncUI is constructed in compliance to the Model View Controller (MVC) architec
 
 ### Permanent storage
 
-RsyncUI saves data on permanent store as JSON files. JSON is a preferred format for exchanging data on the Internet and Swift has very good support for encoding and decoding JSON. As an example about reading JSON files and decoding configurations see [here](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift). For the moment saving changes to configurations and schedules is not by Combine, but as a [try catch closure](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift).
-
-See also where RsyncUI [saves data](/post/configfiles/).
+RsyncUI saves data on permanent store as files with JSON data. JSON is the preferred format for exchanging data on the Internet and Swift has very good support for decode and encode JSON. See more info about this within the Combine part below. See also where RsyncUI [saves data](/post/configfiles/).
 
 ### User settings
 
