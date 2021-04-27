@@ -16,7 +16,7 @@ The development of RsyncUI commenced in December 2020 and will be released somet
 
 Less code is better code.
 
-[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. It must be reliable and whenever they are triggered RsyncUI must catch them. Combine is also used for decoding JSON.
+[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used primarly for asynchronous tasks like validate input and listening for (two) notifications from the NotificationCenter. Those two notifications are very important for RsyncUI to work. It must be reliable and whenever they are triggered RsyncUI must catch them. Combine is also used for decoding JSON data from storage to internal datastructures. And the other way around, encode internal datastructures to JSON data and storing data to permanent storage.
 
 The development of RsyncOSX began early in 2016. RsyncOSX is a pure Swift, Cocoa and Foundation, based application. The future generation of RsyncOSX is RsyncUI, a SwiftUI and Swift (Foundation) based application.
 
@@ -92,8 +92,8 @@ Combine is also used to check if there is a new version available. There is a [J
 
 Combine is a complex framework and it takes some time to learn the basics of it. Combine is used for:
 
-- reading and decoding JSON files as permanent storage for configurations and schedules, into theire respective internal representations (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>)
-- encoding the above internal representations of data and [writing JSON strings](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) to permanent storage
+- [reading and decoding JSON data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) from permanent storage into theire respective datastructures (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>)
+- encoding the above datastructures to [JSON data and writing data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) to permanent storage
 
 ### Speed
 
