@@ -90,7 +90,10 @@ Combine is used in RsyncUI. It enables a very good control of asynchronous opera
 
 Combine is also used to check if there is a new version available. There is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version. At startup RsyncUI, by Combine, [gets the file](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Utils/NewversionJSON.swift) and verify if current version should be upgraded.
 
-Combine is a complex framework and it takes some time to learn the basics of it. The use of Combine in RsyncUI is expanding and the latest use now is reading and decoding JSON files as permanent storage for configurations and schedules, into theire respective internal representations (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>).
+Combine is a complex framework and it takes some time to learn the basics of it. Combine is used for:
+
+- reading and decoding JSON files as permanent storage for configurations and schedules, into theire respective internal representations (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>)
+- encoding the above internal representations of data and [writing JSON strings](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) to permanent storage
 
 ### Speed
 
