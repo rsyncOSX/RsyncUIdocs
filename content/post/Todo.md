@@ -7,13 +7,9 @@ tags = ["todo"]
 # categories = ["todo"]
 lastmod = "2021-04-21"
 +++
-Updated: 26 April 2021
+Updated: 28 April 2021
 
 The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur.
-
-I am using the app on daily basis myself. From time to time I do a check with RsyncOSX. RsyncUI and RsyncOSX can both be used in parallel, but not at the same time due to locking of files.
-
-Version 0.99 - release candidate 1.0.0 will be released in first week of May 2021.
 
 # What is in the prerelease
 
@@ -41,15 +37,10 @@ The following is in the prerelase:
   - start and stop of the menu app for scheduling of tasks
   - utilizing Combine in new version
   - utilizing SwiftUI will be developed sometime later this year
-
-The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
-
-# In code - will be released as version 0.99 release candidate
-
-The release of version 1.0.0 is closing. The following is in code but not in the prerelase:
-
 - view for rsync parameters is reworked into two views
 - view for schedules is reworked into two views
+
+The **error handling** is better in this version. If e.g rsync produces the word `error` in the output,  an alert will inform about it. If a validate of input, when adding new configurations, fails an alert will inform about the error.
 
 # Not yet implemented
 

@@ -7,14 +7,9 @@ tags = ["RsyncUI"]
 # categories = ["changelog"]
 lastmod = "2021-04-21"
 +++
-The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. RsyncUI is [signed and notarized](/post/notarized/).
+The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. RsyncUI is [signed and notarized](/post/notarized/). Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
-
-The latest prereleases are close, by functions, to the current release of RsyncOSX. But it is still in development and bugs might occur. There are still a few major functions missing, but the gap is closing. Also check the [todo list](/post/todo/) for an up to date status.
-
----
-## Version 0.99 - release candidate version 1.0.0 (not yet released)
 
 The work on RsyncUI commenced in December 2020 and version 1.0.0 is close to release. The rc version 1.0.0 will be released in first week of May 2021, after about four months of work. The four last months also includes learning the basics about SwiftUI and Combine frameworks. And there is still a lot to learn. RsyncUI is reusing a lot of the model classes from RsyncOSX. There has been some minor refactor av the model classes due to utilizing Combine and adaption to RsyncUI.
 
@@ -26,14 +21,29 @@ I think RsyncUI is ready to be released. There is still work to do, but that wil
 
 I also believe that by releasing RsyncUI will result in users asking for fixing bugs and enhancements for functions and the UI.
 
+---
+
+## Prerelease version 0.99(build 22) - release candidate version 1.0.0
+
+There is 28 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a release candidate of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks.
+
+The following are changes compared to previous release:
+
+- German and Norwegian localization is completed
+- more use of the Combine framework
+- split two "busy" UIs into two views, schedules and rsync parameters
+- some minor tweaks in preparation for release of version 1.0.0
+
+Caution: RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use JSON files and that the files for permanent storage is in the same catalog as RsyncUI. RsyncUI and RsyncOSX does **not** share the user settings.
+
+There is some more info about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved. Default catalog for storing files for both apps is:
+
+```
+$HOME/.rsyncosx/macserialnumber/
+```
 ## Prerelease v0.60(build 20) - breaking changes
 
 There is 21 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks. There are two **breaking changes** in this release:
-
-- RsyncUI from this release **only** supports JSON files
-- settings in RsyncUI is separated from RsyncOSX settings
-
-You **must** set new user settings in RsyncUI if other than default values, like change version of `rsync`. If you are using RsyncOSX and want to test RsyncUI, [please enable JSON support in RsyncOSX](https://rsyncosx.netlify.app/post/json/) ahead of using RsyncUI.
 
 The following are changes compared to previous release:
 
