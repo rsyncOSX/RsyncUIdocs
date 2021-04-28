@@ -8,7 +8,7 @@ description = "Why is the development of RsyncUI based on SwiftUI?"
 lastmod = "2021-03-12"
 toc = "true"
 +++
-The development of RsyncUI commenced in December 2020 and will be released sometime in May 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX.
+The development of RsyncUI commenced in December 2020 and will be released sometime in May 2021. The name of the next version is **RsyncUI**. It is built for **macOS Big Sur** and later, that is why it will be released as a new appliction and not replace the current version of RsyncOSX. There are also some SwiftUI features in code which require macOS Big Sur.
 
 [SwiftUI](https://developer.apple.com/documentation/swiftui/) is a new **declarative framework** for UI. Developing the UI based on SwiftUI compared to developing utilizing the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. And the future of development on the Apple plattform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C frameworks.
 
