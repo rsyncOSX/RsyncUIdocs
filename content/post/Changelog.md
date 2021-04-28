@@ -11,7 +11,7 @@ The prerelease is a version **for test and preview of what is coming**. It is wo
 
 ---
 
-The work on RsyncUI commenced in December 2020 and version 1.0.0 is close to release. The rc version 1.0.0 will be released in first week of May 2021, after about four months of work. The four last months also includes learning the basics about SwiftUI and Combine frameworks. And there is still a lot to learn. RsyncUI is reusing a lot of the model classes from RsyncOSX. There has been some minor refactor av the model classes due to utilizing Combine and adaption to RsyncUI.
+The work on RsyncUI commenced in December 2020 and version 1.0.0 is close to release. The rc version 1.0.0 is released after about four months of work. The four last months also includes learning the basics about SwiftUI and Combine frameworks. And there is still a lot to learn. RsyncUI is reusing a lot of the model classes from RsyncOSX. There has been some minor refactor av the model classes due to utilizing Combine and adaption to RsyncUI.
 
 I think RsyncUI is ready to be released. There is still work to do, but that will be included in future releases. The future of RsyncOSX is RsyncUI and RsyncSchedule, the menu app. I have for the moment some ideas for the future development:
 
