@@ -31,6 +31,9 @@ There is some more info about [how to setup RsyncOSX utilizing JSON](https://rsy
 ```
 $HOME/.rsyncosx/macserialnumber/
 ```
+### Important
+
+There is some [important info](/post/important/) about using RsyncUI. Please read it befor ceommence the use of RsyncUI.
 
 ### The main menu
 
