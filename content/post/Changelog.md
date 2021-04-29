@@ -34,7 +34,9 @@ The following are changes compared to previous release:
 - split two "busy" UIs into two views, schedules and rsync parameters
 - some minor tweaks in preparation for release of version 1.0.0
 
-Caution: RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use JSON files and that the files for permanent storage is in the same catalog as RsyncUI. RsyncUI and RsyncOSX does **not** share the user settings.
+The **administration**, like delete old snapshots, of snapshots is not yet completed. There is still some QA and thinking to do. There are some issues which has to be resolved before release. The function for delete is not available in the release candidate.
+
+**Caution**: RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use JSON files and that the files for permanent storage is in the same catalog as RsyncUI. RsyncUI and RsyncOSX does **not** share the user settings.
 
 There is some more info about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved. Default catalog for storing files for both apps is:
 
