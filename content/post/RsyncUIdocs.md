@@ -82,7 +82,7 @@ Rsync has a ton of parameters. In [user selected parameters](/post/rsyncparamete
 
 ### Snapshots
 
-[Snapshot is an very effective method](/post/snapshots/) for saving changed and deleted data.
+[Snapshot is an effective method](/post/snapshots/) for saving previous versions of data and deleted files in case of a restore.
 
 ### Verify the synchronized data
 
