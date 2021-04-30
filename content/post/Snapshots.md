@@ -61,9 +61,14 @@ Selecting the `Tag` button evaluates all snapshots based on the date withing the
 
 The plan is based upon three parts:
 
-- the current week
+- **the current week**
   - keep all the snapshots within the current week
-- the current month minus the current week
+  - value of `Plan` has no effect on the current week
+- **the current month** minus the current week
   - keep all snapshots for the selected Day of week, e.g all snapshots every Sunday this month
-- previous months (and years)
+  - if `Plan == Every` TBD
+  - if `Plan == Last` TBD
+- **previous months (and years)**
   - keep the snapshot in the last week of month for selected Day of week, e.g the last Sunday in the month
+  - if `Plan == Every` TBD
+  - if `Plan == Last` TBD
