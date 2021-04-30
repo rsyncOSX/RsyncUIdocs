@@ -80,6 +80,10 @@ Sometimes you might want to [restore some data](/post/restore/).
 
 Rsync has a ton of parameters. In [user selected parameters](/post/rsyncparameters) you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
 
+### Snapshots
+
+[Snapshot is an very effective method](/post/snapshots/) for saving changed and deleted data.
+
 ### Verify the synchronized data
 
 Rsync can also [verify the synchronized data](/post/verify/).
