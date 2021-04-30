@@ -65,10 +65,9 @@ The plan is based upon three parts:
   - keep all the snapshots within the current week
   - value of `Plan` has no effect on the current week
 - **the current month** minus the current week
-  - keep all snapshots for the selected Day of week, e.g all snapshots every Sunday this month
-  - if `Plan == Every` TBD
-  - if `Plan == Last` TBD
+  - keep **all snapshots** for the selected Day of week, e.g all snapshots every Sunday this month
+  - the `Plan == Every or Last` has no effect for current month
 - **previous months (and years)**
   - keep the snapshot in the last week of month for selected Day of week, e.g the last Sunday in the month
-  - if `Plan == Every` TBD
-  - if `Plan == Last` TBD
+  - if `Plan == Every`, keep for the selected Day of week, e.g all snapshots every Sunday, every week in previous period
+  - if `Plan == Last`, keep for the selected Day of week, e.g all snapshots every last Sunday every month in previous period
