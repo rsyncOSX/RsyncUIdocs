@@ -23,6 +23,12 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 ---
 
+## Update 2 May 2021
+
+The **snapshot administration**, like delete old snapshots, is not yet completed. The work on snapshot administration is progression and it will be released as part of version 1.0.0 of RsyncUI.
+
+There is still some QA and thinking to do. There are some issues which has to be resolved before release. The function for delete is not available in the release candidate.
+
 ## Prerelease version 0.99(build 22) - release candidate version 1.0.0
 
 There is 28 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a release candidate of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks.
@@ -33,8 +39,6 @@ The following are changes compared to previous release:
 - more use of the Combine framework
 - split two "busy" UIs into two views, schedules and rsync parameters
 - some minor tweaks in preparation for release of version 1.0.0
-
-The **administration**, like delete old snapshots, of snapshots is not yet completed. There is still some QA and thinking to do. There are some issues which has to be resolved before release. The function for delete is not available in the release candidate.
 
 **Caution**: RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use JSON files and that the files for permanent storage is in the same catalog as RsyncUI. RsyncUI and RsyncOSX does **not** share the user settings.
 
