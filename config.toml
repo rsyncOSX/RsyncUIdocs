@@ -6,8 +6,8 @@ theme = "hello-friend-ng"
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-paginate  = 10
-rssLimit  = 10  # Maximum number of items in the RSS feed.
+paginate  = 15
+rssLimit  = 15  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 googleAnalytics = "UA-194139788-1"
@@ -36,7 +36,7 @@ disableHugoGeneratorInject = false
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Jane Doe"
+  name = "Thomas Evensen"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -60,7 +60,7 @@ disableHugoGeneratorInject = false
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Hello Friend NG"
+  homeSubtitle = "RsyncUI"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -79,7 +79,7 @@ disableHugoGeneratorInject = false
   # Per default, this option is off.
   # The theme is respecting the prefers-color-scheme of the operating systeme.
   # With this option on, the page user is able to set the scheme he wants.
-  enableThemeToggle = false
+  enableThemeToggle = true
 
   # Sharing buttons
   #
@@ -150,28 +150,12 @@ disableHugoGeneratorInject = false
 
   # Social icons
   [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
-
-  [[params.social]]
-    name = "email"
-    url  = "mailto:nobody@example.com"
-
-  [[params.social]]
     name = "github"
     url  = "https://github.com/"
 
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/"
-
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
-
 [languages]
   [languages.en]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = "RsyncUI"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
