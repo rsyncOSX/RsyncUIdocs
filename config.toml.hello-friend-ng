@@ -1,5 +1,5 @@
 baseurl = "https://rsyncui.netlify.app/"
-title   = "Hello Friend NG"
+title   = "The RsyncUI documentation..."
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -8,7 +8,7 @@ PygmentsStyle = "monokai"
 
 paginate  = 15
 rssLimit  = 15  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+# copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 googleAnalytics = "UA-194139788-1"
 
@@ -54,13 +54,13 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   #
-  description = "Nice theme for homepages and blogs"
+  description = "The RsyncUI documents"
   keywords = ""
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "RsyncUI"
+  homeSubtitle = ""
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -110,7 +110,7 @@ disableHugoGeneratorInject = false
 
     topText = []
     bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-            "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"]
+            "by <a href=\"https://github.com/rsyncOSX/RsyncUIdocs\">Thomas Evensen</a>"]
 
   # Colors for favicons
   #
@@ -122,7 +122,7 @@ disableHugoGeneratorInject = false
   [params.logo]
     logoMark     = ">"
     logoText     = "$ cd /home/"
-    logoHomeLink = "/"
+    logoHomeLink = "/post/rsyncuidocs/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
@@ -151,13 +151,13 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/rsyncOSX/RsyncUI"
 
 [languages]
   [languages.en]
     subtitle  = "RsyncUI"
     weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    # copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
