@@ -25,9 +25,9 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 ## Update 2 May 2021
 
-The **snapshot administration**, like delete old snapshots, is not yet completed. The work on snapshot administration is progression and it will be released as part of version 1.0.0 of RsyncUI.
+The **snapshot administration**, like delete old snapshots, is not yet completed. The work on snapshot administration is going forward and it will be released as part of version 1.0.0 of RsyncUI. But there are a few issues which has to be resolved before release.
 
-There is still some QA and thinking to do. There are some issues which has to be resolved before release. The function for delete is not available in the release candidate.
+The function for **delete snapshots** is not available in the release candidate.
 
 ## Prerelease version 0.99(build 22) - release candidate version 1.0.0
 
