@@ -23,7 +23,7 @@ RsyncUI is [signed and notarized](/post/notarized/).
 
 ## Version 1.0.0(build 23)
 
-There is 06 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0. of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks. The **snapshot administration**, like delete old snapshots, is still not yet completed. The work on snapshot administration is going forward and it will be released as an update of RsyncUI. But there are a few issues which has to be resolved before release.
+There is 06 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0.0 of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks. The **snapshot administration**, like delete old snapshots, is still not yet completed. The work on snapshot administration is going forward and it will be released as an update of RsyncUI. But there are a few issues which has to be resolved before release.
 
 The following are changes compared to previous releases:
 
@@ -35,7 +35,7 @@ Issue: there is an issue, in Snapshots, selecting a snapshot task and collecting
 
 About **JSON**: see note on the release 0.99.
 
-## Prerelease version 0.99(build 22) - release candidate version 1.0.0
+## Prerelease version 0.99(build 22)
 
 There is 28 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a release candidate of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks.
 
