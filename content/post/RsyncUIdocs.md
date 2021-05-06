@@ -13,7 +13,7 @@ For the moment the development of current version of RsyncOSX and RsyncOSXsched 
 
 The documentation will be updated as the development is going forward. The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur.
 
-There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease.
+There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease. There is also some [important info](/post/important/) about using RsyncUI.
 
 - RsyncUI and RsyncSchedule are compiled with support for **macOS Big Sur** and later
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
@@ -31,9 +31,6 @@ There is some more info about [how to setup RsyncOSX utilizing JSON](https://rsy
 ```
 $HOME/.rsyncosx/macserialnumber/
 ```
-
-There is some [important info](/post/important/) about using RsyncUI. Please read it befor commence the use of RsyncUI.
-
 ### The main menu
 
 The default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data.
