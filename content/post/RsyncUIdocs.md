@@ -33,7 +33,7 @@ $HOME/.rsyncosx/macserialnumber/
 
 The default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data.
 
-The documented screenshots may be slightly different from what is in the current prerelease. There is now frequent minor tweaks and changes to the UI. The documentation will be updated with the latest screenshots **after** release 1.0.0 in May 2021.
+The documented screenshots may be slightly different from what is in version 1.0.0 released in May 2021. The documentation will be updated with the latest screenshots **after** release 1.0.0.
 
 ![](/images/start/start.png)
 
