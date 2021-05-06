@@ -23,13 +23,21 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 ---
 
-## Update 6 May 2021
+## Version 1.0.0(build 23)
 
-The **snapshot administration**, like delete old snapshots, is not yet completed. The work on snapshot administration is going forward and it will be released as part of version 1.0.0 of RsyncUI. But there are a few issues which has to be resolved before release.
+There is 06 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a release of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks.
 
-The function for **delete snapshots** is not available in the release candidate. The version 1.0.0 will probably be released in about a week from now. There has been several changes during the last two weeks. Combine has replaced more of the code and the result is less code and the code is more easy to read.
+The **snapshot administration**, like delete old snapshots, is still not yet completed. The work on snapshot administration is going forward and it will be released as an update of RsyncUI. But there are a few issues which has to be resolved before release.
 
-There are a lot of opensource SwiftUI components on GitHub which are really nice. I am integrating a few of those for the UI part in RsyncUI as well.
+The following are changes compared to previous release:
+
+- German and Norwegian localizations are updated
+- even more use of the Combine framework
+- a few internal updates and UI updates
+
+Issue: there is an issue, in Snapshots, selecting a snapshot task and collecting remote data for snapshotcatalogs. The UI will notify if it seems to be such an issue.
+
+About **JSON**: see note on the release 0.99.
 
 ## Prerelease version 0.99(build 22) - release candidate version 1.0.0
 
@@ -42,7 +50,7 @@ The following are changes compared to previous release:
 - split two "busy" UIs into two views, schedules and rsync parameters
 - some minor tweaks in preparation for release of version 1.0.0
 
-**Caution**: RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use JSON files and that the files for permanent storage is in the same catalog as RsyncUI. RsyncUI and RsyncOSX does **not** share the user settings.
+**Caution**: RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use **JSON files** and that the files for permanent storage is in the same catalog as RsyncUI. RsyncUI and RsyncOSX does **not** share the user settings.
 
 There is some more info about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved. Default catalog for storing files for both apps is:
 
