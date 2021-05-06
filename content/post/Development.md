@@ -92,6 +92,8 @@ Combine is a complex framework and it takes some time to learn the basics of it.
 
 - [reading and decoding JSON data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) from permanent storage into theire respective datastructures (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>)
 - encoding the above datastructures to [JSON data and writing data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) to permanent storage
+- subscribe, within the [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcessCmdCombineClosure.swift), for notifications from the NotificationCenter
+- parsing output from the above process object like [trimming and preparing output](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Output/TrimTwo.swift) from a rsync task, this trimming also looks for the string `error` in the output and reports if found
 
 ### Speed
 

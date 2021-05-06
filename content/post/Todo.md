@@ -46,5 +46,5 @@ The **error handling** is better in this version. If e.g rsync produces the word
 
 The following is **not yet** implemented:
 
-- actual function for **delete** of snapshots
+- actual function for **delete** of snapshots (working on this now)
 - local and remote info about synchronized data

@@ -23,11 +23,13 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 ---
 
-## Update 2 May 2021
+## Update 6 May 2021
 
 The **snapshot administration**, like delete old snapshots, is not yet completed. The work on snapshot administration is going forward and it will be released as part of version 1.0.0 of RsyncUI. But there are a few issues which has to be resolved before release.
 
-The function for **delete snapshots** is not available in the release candidate.
+The function for **delete snapshots** is not available in the release candidate. The version 1.0.0 will probably be released in about a week from now. There has several changes during the last two weeks. Combine has replaced more of the code and the result is less code and the code is more easy to read.
+
+There are a lot of opensource SwiftUI components on GitHub which are really nice. I am integrating a few of those for the UI part in RsyncUI.
 
 ## Prerelease version 0.99(build 22) - release candidate version 1.0.0
 
