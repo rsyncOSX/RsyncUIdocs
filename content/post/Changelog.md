@@ -7,13 +7,13 @@ tags = ["RsyncUI"]
 # categories = ["changelog"]
 lastmod = "2021-04-21"
 +++
-The prerelease is a version **for test and preview of what is coming**. It is work in progress and bugs might occur. RsyncUI is [signed and notarized](/post/notarized/). Also check the [todo list](/post/todo/) for an up to date status.
+RsyncUI is [signed and notarized](/post/notarized/). Also check the [todo list](/post/todo/) for an up to date status.
 
 ---
 
-The work on RsyncUI commenced in December 2020 and version 1.0.0 is close to release. The rc version 1.0.0 is released after about four months of work. The four last months also includes learning the basics about SwiftUI and Combine frameworks. And there is still a lot to learn. RsyncUI is reusing a lot of the model classes from RsyncOSX. There has been some minor refactor av the model classes due to utilizing Combine and adaption to RsyncUI.
+The development of RsyncUI commenced in December 2020 and version 1.0.0 was released in May 2021. The name is **RsyncUI** and it is built for **macOS Big Sur** and later. That is why it is released as a new appliction and not as an upgrade the current version of RsyncOSX. There are also some SwiftUI features in code which require macOS Big Sur.
 
-I think RsyncUI is ready to be released. There is still work to do, but that will be included in future releases. The future of RsyncOSX is RsyncUI and RsyncSchedule, the menu app. I have for the moment some ideas for the future development:
+I have for the moment some ideas for the future development:
 
 - develop a Sandboxed version of RsyncUI for release on the Apple App Store
 - develop the RsyncOSXsched, the menu app, utilizing SwiftUI

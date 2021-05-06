@@ -7,13 +7,11 @@ tags = ["summary"]
 # categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This is the documentation of the new app RsyncUI, the next and future release of RsyncOSX. My main focus after releasing RsyncUI will be to enhance and continue the development of it. There will also later this year, be developed a Sandboxed version for release on Apple Mac Store . And there will also be a menu app for executing scheduled tasks.
+This is the documentation of the new app **RsyncUI**, the next and future release of RsyncOSX. There will also later this year, be developed a Sandboxed version for release on Apple Mac Store .
 
-For the moment the development of current version of RsyncOSX and RsyncOSXsched (the menu app) is frozen. Both apps are stable and only critical bugs will be fixed. Both apps will be avaliable for download in the future, probably to end of 2022. The main focus now is the release of [RsyncUI](https://github.com/rsyncOSX/RsyncUI) and [RsyncSchedule](https://github.com/rsyncOSX/RsyncSchedule).
+The development of current version of RsyncOSX and RsyncOSXsched (the menu app) is frozen. Both apps are stable and only critical bugs will be fixed. Both apps will be avaliable for download in the future, probably to end of 2022. The main focus now is the release of [RsyncUI](https://github.com/rsyncOSX/RsyncUI) and [RsyncSchedule](https://github.com/rsyncOSX/RsyncSchedule).
 
-The documentation will be updated as the development is going forward. The prerelease is a version for **test** and **preview** of what is coming. It is work in progress and bugs might occur.
-
-There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of the prerelease. There is also some [important info](/post/important/) about using RsyncUI.
+There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
 
 - RsyncUI and RsyncSchedule are compiled with support for **macOS Big Sur** and later
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
