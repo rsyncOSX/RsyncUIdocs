@@ -5,12 +5,8 @@ date = "2021-03-11"
 description = "Changelog"
 tags = ["RsyncUI"]
 # categories = ["changelog"]
-lastmod = "2021-04-21"
+lastmod = "2021-05-06"
 +++
-RsyncUI is [signed and notarized](/post/notarized/). Also check the [todo list](/post/todo/) for an up to date status.
-
----
-
 The development of RsyncUI commenced in December 2020 and version 1.0.0 was released in May 2021. The name is **RsyncUI** and it is built for **macOS Big Sur** and later. That is why it is released as a new appliction and not as an upgrade the current version of RsyncOSX. There are also some SwiftUI features in code which require macOS Big Sur.
 
 I have for the moment some ideas for the future development:
@@ -23,13 +19,13 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 ---
 
+RsyncUI is [signed and notarized](/post/notarized/). Also check the [todo list](/post/todo/) for an up to date status.
+
 ## Version 1.0.0(build 23)
 
-There is 06 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a release of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks.
+There is 06 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0. of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks. The **snapshot administration**, like delete old snapshots, is still not yet completed. The work on snapshot administration is going forward and it will be released as an update of RsyncUI. But there are a few issues which has to be resolved before release.
 
-The **snapshot administration**, like delete old snapshots, is still not yet completed. The work on snapshot administration is going forward and it will be released as an update of RsyncUI. But there are a few issues which has to be resolved before release.
-
-The following are changes compared to previous release:
+The following are changes compared to previous releases:
 
 - German and Norwegian localizations are updated
 - even more use of the Combine framework
