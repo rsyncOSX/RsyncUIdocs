@@ -20,10 +20,6 @@ Less code is better code.
 
 The development of RsyncOSX began early in 2016. RsyncOSX is a pure Swift, Cocoa and Foundation, based application. The future generation of RsyncOSX is RsyncUI, a SwiftUI and Swift (Foundation) based application.
 
-## About the development and progress
-
-There are some more info about the progress in [the todo list](/post/todo/). Also check out the [changelog](/post/changelog/). Most of the core basic functions like executing tasks, compute the parameters to rsync are reused code from the current version. And most of the executing part is stable and working.
-
 ## The source code
 
 The source is available on my [GitHub account](https://github.com/rsyncOSX/RsyncUI). If you have any comments or ideas please use [the discussion part for RsyncUI](https://github.com/rsyncOSX/RsyncUI/discussions).

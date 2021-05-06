@@ -19,7 +19,7 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 ---
 
-RsyncUI is [signed and notarized](/post/notarized/). Also check the [todo list](/post/todo/) for an up to date status.
+RsyncUI is [signed and notarized](/post/notarized/).
 
 ## Version 1.0.0(build 23)
 
@@ -98,7 +98,7 @@ There is 8 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a
 - updated the progress indicators, size and how they are presented
 - and some ohter minor updates as well
 
-It seems to be a release version 1.0.0 of RsyncUI sometime in May 2021. There are only a few missing parts, see [todo list](/post/todo/).
+It seems to be a release version 1.0.0 of RsyncUI sometime in May 2021.
 
 ## Prerelease v0.45(build 15)
 

@@ -11,7 +11,7 @@ This is the documentation of the new app **RsyncUI**, the next and future releas
 
 The development of current version of RsyncOSX and RsyncOSXsched (the menu app) is frozen. Both apps are stable and only critical bugs will be fixed. Both apps will be avaliable for download in the future, probably to end of 2022. The main focus now is the release of [RsyncUI](https://github.com/rsyncOSX/RsyncUI) and [RsyncSchedule](https://github.com/rsyncOSX/RsyncSchedule).
 
-There is a [changelog](/post/changelog/) and a [todo list](/post/todo/), please check both before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
+There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
 
 - RsyncUI and RsyncSchedule are compiled with support for **macOS Big Sur** and later
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
