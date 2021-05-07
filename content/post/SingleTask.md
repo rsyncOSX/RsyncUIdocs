@@ -14,7 +14,7 @@ Execute single tasks is a two step operation, one for estimation (dry-run) and o
 The following actions are possible within this view:
 
 - `Estimate` - estimate the selected task, after estimating the label changes to `Execute`
-- `Now` - execute the selected task
+- `Now` - execute the selected task, no estimation
 
 The buttons to right:
 

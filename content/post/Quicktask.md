@@ -9,9 +9,16 @@ lastmod = "2021-03-18"
 +++
 Use RsyncUI for quickly synchronize files to either local or remote storage. If synchronizing to a remote storage require setup of [passwordless login](/post/remotelogins/).
 
+There are two types of quick tasks:
+
+- `synchronize` - synchronize local files to remote
+- `syncremote` - synchronize remote files to local
+
+**Caution:** if `syncremote` the localcatalog in the form is the remote data and remotecatalog is the local data where remote data will land when pulled.
+
 ![](/images/quicktask/quicktask.png)
 
-After entering data, default is a `--dry-run` task. It is adviced to inspect the result before the real run. 
+After entering data, default is a `--dry-run` task. It is adviced to inspect the result before the real run.
 
 #### Catalog parameters
 - **Local catalog**: required field `/Users/thomas/Documents/`

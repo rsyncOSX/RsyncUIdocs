@@ -7,7 +7,11 @@ tags = ["multiple task","delete tasks"]
 description = "Execute multiple tasks."
 lastmod = "2021-03-10"
 +++
-The multiple tasks view will probably be the most used view after adding the tasks. The info in this view is still in development.
+The multiple tasks view will probably be the most used view after adding the tasks. The info in this view is still in development. Select the `Estimate` button an let RsyncUI find all tasks with data to be synchcronized. After estimating select `Execute` for the actual synchronize of data for tasks with new data.
+
+You can also select one or more task, or just execute all tasks by the `All` button.
+
+To delete one or more task, select and `Delete`.
 
 ![](/images/multipletasks/multipletasks.png)
 

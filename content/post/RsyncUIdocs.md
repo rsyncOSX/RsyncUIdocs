@@ -9,6 +9,8 @@ lastmod = "2021-03-14"
 +++
 This is the documentation of the new app **RsyncUI**, the next and future release of RsyncOSX. There will also later this year, be developed a Sandboxed version for release on Apple Mac Store .
 
+The screenshots are updated with release 1.0.0. Some info may be missing, incorrect or inaccurate. The info will be updated within a the nexr weeks. If you miss some info, please [create an issue](https://github.com/rsyncOSX/RsyncUIdocs/issues) and let me know.
+
 The development of current version of RsyncOSX and RsyncOSXsched (the menu app) is frozen. Both apps are stable and only critical bugs will be fixed. Both apps will be avaliable for download in the future, probably to end of 2022. The main focus now is the release of [RsyncUI](https://github.com/rsyncOSX/RsyncUI) and [RsyncSchedule](https://github.com/rsyncOSX/RsyncSchedule).
 
 There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
@@ -20,24 +22,24 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ---
 
-## Using RsyncUI
+# Using RsyncUI
 
-This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use JSON files and that the files for permanent storage is in the same catalog as RsyncUI. RsyncUI and RsyncOSX does **not** share the user settings.
+This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use JSON files and that the files for permanent storage is in the same catalog as RsyncUI.
+
+RsyncUI and RsyncOSX does **not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps.
 
 There is some more info about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved. Default catalog for storing files for both apps is:
 
 ```
 $HOME/.rsyncosx/macserialnumber/
 ```
-### The main menu
+## The main menu
 
-The default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data.
-
-The documented screenshots may be slightly different from what is in version 1.0.0 released in May 2021. The documentation will be updated with the latest screenshots **after** release 1.0.0.
+This is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. If you are new til RsyncUI, please start with select the `Configurations` task [to add a configuration](/post/addconfigurations/).
 
 ![](/images/start/start.png)
 
-### How to setup remote servers
+## How to setup remote servers
 
 Utilizing RsyncUI to synchronize files to remote servers requires setup of remote connection as [passwordless logins](/post/remotelogins/). There are two options for setup. The advised setup is by utilizing ssh-keys.
 
@@ -46,15 +48,15 @@ Utilizing RsyncUI to synchronize files to remote servers requires setup of remot
 
 Snapshot is **not** possible with rsync daemon setup.
 
-### How to add and update
+## How to add and update
 
 It is easy to [add a configuration](/post/addconfigurations/) and execute your first synchronize task.
 
-### RsyncUI settings
+## RsyncUI settings
 
 The user can [tweak some settings in RsyncUI](/post/settings/)
 
-### Execute tasks
+## Execute tasks
 
 How to execute tasks, either multiple tasks, single task or just a quick task.
 
@@ -62,52 +64,52 @@ How to execute tasks, either multiple tasks, single task or just a quick task.
 - [executing a single task](/post/singletask/)
 - [execute quick task](/post/quicktask/)
 
-### Pre and post task
+## Pre and post task
 
 RsyncUI might [execute a pre- and post shell script](/post/shellout/) connected to a task.
 
-### Restore data
+## Restore data
 
 Sometimes you might want to [restore some data](/post/restore/).
 
-### Parameters to rsync
+## Parameters to rsync
 
-Rsync has a ton of parameters. In [user selected parameters](/post/rsyncparameters) you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
+Rsync has a ton of parameters. In [rsync parameters](/post/rsyncparameters/) you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
 
-### Snapshots
+## Snapshots
 
 [Snapshot is an effective method](/post/snapshots/) for saving previous versions of data and deleted files in case of a restore.
 
-### Verify the synchronized data
+## Verify the synchronized data
 
 Rsync can also [verify the synchronized data](/post/verify/).
 
-### Logging of runs
+## Logging of runs
 
- [The logredcods](/post/logging/) can be viewed either all or by config.
+ [The logrecords](/post/logging/) can be viewed either all or by config.
 
-### Logfile
+## Logfile
 
 The `⌘L` shortcut brings up any logging to file. Sometimes `rsync` produces error and output are saved to the logfile for viewing and possible corrections of the task. If `rsync` produces an error RsyncUI will inform about that.
 
 ---
 
-## Some technical details about RsyncUI
+# Some technical details about RsyncUI
 
 This section is some technical details about RsyncUI.
 
-### Sandboxed version
+## Sandboxed version
 
 Later in 2021 there will be released [a sandboxed version of RsyncUI](/post/sandboxversion/).
 
-### Config files
+## Config files
 
 Where does RsyncUI [save the files](/post/configfiles/) to permanent storage?
 
-### The development of RsyncUI
+## The development of RsyncUI
 
 Why is [RsyncUI based on SwiftUI?](/post/development)
 
-### Compile
+## Compile
 
 And there is some info about [how to compile RsyncUI](/post/compile/).

@@ -65,7 +65,7 @@ Within the parameter view:
 
 ## Enable the rsync daemon
 
-All actions is within the parameter view:
+All actions is within the [rsync parameter](/post/rsyncparameters/) view:
 
 - enable the `rsync daemon`, it adds a double colon `::` to the rsync command string
 - add a full path to the file with password, `--password-file=/Users/thomas/passord.txt`, remember to set `chmod 600` on the password file
