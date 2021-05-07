@@ -84,3 +84,6 @@ The plan is based upon three parts where the parameter `plan` has an effect on *
   - keep the snapshot in the last week of month for selected Day of week, e.g the last Sunday in the month
   - if `plan == Every`, keep for the selected Day of week, e.g all snapshots every Sunday, every week in previous period
   - if `plan == Last`, keep for the selected Day of week, e.g all snapshots every last Sunday every month in previous period
+
+
+![](/images/snapshots/snapshots.png)

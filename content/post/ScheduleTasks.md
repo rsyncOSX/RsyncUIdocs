@@ -29,4 +29,5 @@ The yellow flag in column Sched indicates there are active scheduled tasks. The 
 
 Remember, only the menu app which executes scheduled tasks. Select the calendar icon to start the menu app and automaticall close RsyncUI.
 
-![](/images/RsyncUI/master/schedule/schedule.png)
+![](/images/schedules/schedules.png)
+![](/images/schedules/schedules2.png)

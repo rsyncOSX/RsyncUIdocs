@@ -51,13 +51,6 @@ Local catalog and Remote catalog are added either by using drag and drop from fi
 ### Task
 - **Type**: there are four types of tasks, `synchronize` which is default, `snapshots`, `syncremote` and `single file`.
 
-### Optional pre and post task
-- **pretask**: attach optional pre shell script to the synchronize command. The `pre.sh`is executed ahead of the synchronize command, the `post.sh` after the synchronize command. The scripts are normal shell scripts as if executed from the command line.
-  - switch execute shell script on/off
-- **posttask**: attach optional post shell script to the synchronize command. The `post.sh` is executed after the synchronize command.
-  - switch execute shell script on/off
-- **Halt on error**: if the phrase "error" occurs in the output from the `pre.sh` command, if `on` the execution of synchronize command is aborted
-
 ## Add configurations
 
 Select the `Add` button when completed and configuration is added to RsyncUI. RsyncUI adds a trailing / character to both local and remote volume. After selecting the Add button another configuration might be added. Any changes (edit or delete) to configurations are done from the Synchronize view. Additional parameters to rsync might be added utilizing the Parameter button.
@@ -69,4 +62,5 @@ To update a configuration use the `Select` button and choose which configuration
 ![](/images/add/select.png)
 
 After changes either save or select another task to abandon the update.
+
 ![](/images/add/update.png)
