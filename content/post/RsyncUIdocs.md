@@ -108,7 +108,7 @@ Where does RsyncUI [save the files](/post/configfiles/) to permanent storage?
 
 ## The development of RsyncUI
 
-Why is [RsyncUI based on SwiftUI?](/post/development)
+Why is [RsyncUI based on SwiftUI?](/post/development). There is some more [information about the development](/post/developmentdetails/).
 
 ## Compile
 
