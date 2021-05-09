@@ -17,7 +17,8 @@ The following actions within this view:
 
 - `Add` - will add a new configuration
 - `Select` - will select a configuration for update, the Add label will change to `Update`
-- `Profile` - add a new profile name and add the profile
+- `Profile` - create a new profile, add and select the profile
+- `Delete` - delete the selected profile, default profile cannot be deleted
 
 ## Sample configuration
 
