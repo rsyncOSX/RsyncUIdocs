@@ -7,11 +7,9 @@ tags = ["summary"]
 # categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This is the documentation of the new app **RsyncUI**, the future version of RsyncOSX. There will also later this year, be developed a Sandboxed version for release on Apple Mac Store .
+This is the documentation of the new app **RsyncUI**, the future version of RsyncOSX. There will also later in 2021, be developed a Sandboxed version for release on Apple Mac Store .
 
 The screenshots are updated with release 1.0.0. Some info may be missing, is incorrect or inaccurate. The info will be updated within the next few weeks. If you miss something, please [create an issue](https://github.com/rsyncOSX/RsyncUIdocs/issues) and let me know.
-
-The development of current version of RsyncOSX and RsyncOSXsched (the menu app) is frozen. Both apps are stable and only critical bugs will be fixed. Both apps will be avaliable for download in the future, probably to end of 2022. The main focus now is the release of [RsyncUI](https://github.com/rsyncOSX/RsyncUI) and [RsyncSchedule](https://github.com/rsyncOSX/RsyncSchedule).
 
 There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
 
@@ -19,6 +17,10 @@ There is a [changelog](/post/changelog/), please check it before commencing the 
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
+
+### About RsyncOSX
+
+The development of RsyncOSX is frozen. RsyncOSX is stable and only critical bugs will be fixed. It will be avaliable for download in the future, probably to end of 2022. The main focus now is the new release [RsyncUI](https://github.com/rsyncOSX/RsyncUI).
 
 ---
 

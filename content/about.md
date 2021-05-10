@@ -2,14 +2,16 @@
 author = "Thomas Evensen"
 title = "About"
 date = "2021-03-11"
-description = "My about"
+description = "Who am I?"
 tags = ["about"]
 # categories = ["todo"]
 lastmod = "2021-04-12"
 +++
-My name is Thomas and I am the developer of RsyncUI and RsyncOSX. The development of RsyncOSX commenced in January 2016 as a personal project to learn Swift. And I am still learning, every day. The first version of RsyncOSX was released in March 2016 and there has been a lot of releases and changes since then. And the focus in 2021 is SwiftUI.
+My name is Thomas and I am the developer of RsyncUI and RsyncOSX. The development of **RsyncOSX** commenced in January 2016 as a personal project to learn Swift. The work on **RsyncUI** started in December 2020 after some thoughts about what next? Should I start learning languages like TypeScript and develop a multiplattform version of RsyncOSX or stay on macOS. I did some investigating about crossplattform development and I did not manage to find out what should be the right tools for such an application. I did also understand learning how to develop a crossplattform application would require very much of me.
 
-I do hold a degree in computing science, but I am **not a professional developer**. For the moment I am a senior advicer at a university. I will, early in 2022 at the age of 62, retire from work. I am granddad to three young ones, and the fourth grandkid will come later in 2021.
+So, after some carefull thinking I decided stay on Swift and SwiftUI. And I am very happy I did. SwiftUI is an amazing framework. I have also learned about another amazing framework, Combine.
+
+Learning new stuff is very important for me. Learning is important to keep your mind sharp. I do hold a degree in computing science, but I am **not a professional developer**. For the moment I am a senior advicer at a university. I will, early in 2022 at the age of 62, retire from work. I am also granddad to several young ones. I am of the opinion to have a hobby which require learning is important after retirement. Another, for me, important activity is [outdoor life in the Norwegian mountains](https://translate.google.com/translate?sl=no&tl=en&u=https://toppturer.netlify.app/), summer and winter. 
 
 RsyncUI is not a professional software. There is only one developer, me, and I am doing what I can to keep RsyncUI as stable and userfriendly as possible. I am not a UI designer and some user might find the UI of RsyncUI complicated and less userfriendly.
 
