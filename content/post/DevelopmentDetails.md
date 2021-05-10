@@ -33,7 +33,7 @@ Configurations, logs and scedules are read from permanent store into an `Observa
 
 ## Execution of tasks
 
-Execution of a task is an asynchronous operation. The [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcessCmdCombineClosure.swift) is responsible for kicking of the task. Combine is used for listening for two notifications, `Process.didTerminateNotification` and `NSNotification.Name.NSFileHandleDataAvailable`. The process object is initialized with two escaping closures, `processtermination: @escaping () -> Void` and `filehandler: @escaping () -> Void`. Those two closures takes care of whatever action they are set to do any time the notifications are discovered.
+Execution of a task is an asynchronous operation. The [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcess.swift) is responsible for kicking of the task. Combine is used for listening for two notifications, `Process.didTerminateNotification` and `NSNotification.Name.NSFileHandleDataAvailable`. The process object is initialized with two escaping closures, `processtermination: @escaping () -> Void` and `filehandler: @escaping () -> Void`. Those two closures takes care of whatever action they are set to do any time the notifications are discovered.
 
 ## Combine
 
@@ -42,7 +42,7 @@ Combine enables a very good control of asynchronous operations and flow of data.
 - see [code snippet for ObservableReference](/post/codesnippetobserver/)
 - see [code snippet for SSH settings View](/post/codesnippetviewssh/)
 
-Combine is a complex framework to learn. It is though still easy and elegangt to use. More complex use of Combine take some time to learn. The following are parts where Combine also are used in RsyncUI: 
+Combine is a complex framework to learn. It is though still easy and elegangt to use. More complex use of Combine take some time to learn. The following are parts where Combine also are used in RsyncUI:
 
 - at startup [a check](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Newversion/NewversionJSON.swift) if there is a new version of RsyncUI available
   - there is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version
