@@ -26,8 +26,11 @@ RsyncUI is [signed and notarized](/post/notarized/).
 The following are in code but not yet released:
 
 - delete a Profile
-- the issue with snapshots and remote catalogs are solved, next is to include the actual delete of old snapshots
+- administration of Snapshots
+  - the issue with snapshots and remote catalogs is solved
   - save plan and day on a snapshot task
+  - delete old snapshots
+- a few minor cleanups and enhancments in the UI part
 
 The above is to be relased as an update to RsyncUI later in May 2021.
 
