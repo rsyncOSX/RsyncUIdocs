@@ -21,9 +21,11 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 RsyncUI is [signed and notarized](/post/notarized/).
 
-## What is in code but not yet released
+## Version 1.0.1(build 24)
 
-The following are in code but not yet released:
+There is 12 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0.1 of RsyncUI and RsyncSchedule.
+
+The following are changes compared to previous releases:
 
 - delete a Profile
 - administration of Snapshots
@@ -31,8 +33,6 @@ The following are in code but not yet released:
   - save plan and day on a snapshot task
   - delete old snapshots
 - a few minor cleanups and enhancements in the UI part
-
-The above is to be relased as an update to RsyncUI later in May 2021.
 
 ## Version 1.0.0(build 23)
 
