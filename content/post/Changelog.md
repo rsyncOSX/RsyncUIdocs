@@ -30,7 +30,7 @@ The following are in code but not yet released:
   - the issue with snapshots and remote catalogs is solved
   - save plan and day on a snapshot task
   - delete old snapshots
-- a few minor cleanups and enhancments in the UI part
+- a few minor cleanups and enhancements in the UI part
 
 The above is to be relased as an update to RsyncUI later in May 2021.
 
