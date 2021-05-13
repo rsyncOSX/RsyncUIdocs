@@ -17,7 +17,7 @@ If a `file.txt` is saved in snapshot number one and never changed or deleted, th
 
 Snapshot is not possible in a rsync daemon setup. For info about what a rsync daemon setup see info [about passwordless logins](/post/remotelogins/) and rsync daemon setup.
 
-## What is a snapshots?
+## What is a snapshot?
 
 A snapshot is a saved state or backup of data at a specific point of time. Every snapshot is in sync with local catalog at the time of creating the snapshot. Previous versions of files can be restored from snapshots. The snapshot is by utilizing the `--link-dest` parameter to rsync. The rsync parameter for next snapshot to save is:
 ```
@@ -91,5 +91,5 @@ The plan is based upon three parts where the parameter `plan` has an effect on *
 
 It is advised to cleanup the number of snapshots. Select a plan, tagg the snapshots and delete the snapshots which are marked for delete.
 
-![](/images/snapshots/snapshots.png)
-![](/images/snapshots/snapshots.png)
+![](/images/snapshots/snapshots2.png)
+![](/images/snapshots/snapshots3.png)
