@@ -15,7 +15,9 @@ The future of development on the Apple plattform is SwiftUI. Not only by SwiftUI
 
 Less code is better code.
 
-[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used for asynchronous tasks like validate user input, listening for notifications from the NotificationCenter, decode and encode JSON data and checking, trimming and verify the output from rsync. There are some more details about the use of Combine in [the details about development](/post/developmentdetails/).
+[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used for asynchronous tasks like validate user input, listening for notifications from the NotificationCenter, decode and encode JSON data and checking, trimming and verify the output from rsync.
+
+There are some more details about the use of Combine in [the details about development](/post/developmentdetails/).
 
 ## The source code
 

@@ -50,7 +50,7 @@ Utilizing RsyncUI to synchronize files to remote servers requires setup of remot
 
 Snapshot is **not** possible with rsync daemon setup.
 
-## How to add and update
+## How to add and update configurations
 
 It is easy to [add a configuration](/post/addconfigurations/) and execute your first synchronize task.
 
@@ -100,14 +100,6 @@ The `⌘L` shortcut brings up any logging to file. Sometimes `rsync` produces er
 
 This section is some technical details about RsyncUI.
 
-## Sandboxed version
-
-Later in 2021 there will be released [a sandboxed version of RsyncUI](/post/sandboxversion/).
-
-## Config files
-
-Where does RsyncUI [save the files](/post/configfiles/) to permanent storage?
-
 ## The development of RsyncUI
 
 Why is [RsyncUI based on SwiftUI?](/post/development). There is some more [information about the development](/post/developmentdetails/).
@@ -115,6 +107,14 @@ Why is [RsyncUI based on SwiftUI?](/post/development). There is some more [infor
 ## Compile
 
 And there is some info about [how to compile RsyncUI](/post/compile/).
+
+## Sandboxed version
+
+Later in 2021 there will be released [a sandboxed version of RsyncUI](/post/sandboxversion/).
+
+## Config files
+
+Where does RsyncUI [save the files](/post/configfiles/) to permanent storage?
 
 # Why backup?
 
