@@ -21,6 +21,13 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 RsyncUI is [signed and notarized](/post/notarized/).
 
+## Version 1.0.2(build 25)
+
+There is 16 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0.1 of RsyncUI. The following is fixed in this release:
+
+- a minor bug in executing shell scripts
+- updates to the UI for adding and updating Configuration
+
 ## Version 1.0.1(build 24)
 
 There is 12 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0.1 of RsyncUI and RsyncSchedule.
