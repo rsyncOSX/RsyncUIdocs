@@ -16,13 +16,11 @@ A configuration require minimum a **local catalog** and a **remote catalog**. Af
 The following actions within this view:
 
 - `Add` - will add a new configuration
-- `Select` - will select a configuration for update, the Add label will change to `Update`
-- `Profile` - create a new profile, add and select the profile
+- `Update` - the `Add` button will change when a configuration is selected
+- `Create` - create a new profile, add and select the profile
 - `Delete` - delete the selected profile, default profile cannot be deleted
 
-## Sample configuration
-
-Local catalog and Remote catalog are added either by using drag and drop from filemanager or by text only. If enter by text please remember to add the full path. Remote catalogs is entered either by full paths or use the `~` character to expand remote user home catalog. The `red` text is sample values.
+Local catalog and Remote catalog are added either by using drag and drop from filemanager or by text only. If enter by text please remember to add the full path. Remote catalogs is entered either by full paths or use the `~` character to expand remote user home catalog.
 
 ### Task
 
@@ -33,24 +31,21 @@ Local catalog and Remote catalog are added either by using drag and drop from fi
   - by default a trailing `/` is added to both source and destination
 
 ### Catalog parameters
-- **Local catalog**: required field `/Users/thomas/Documents/`
-  - my Documents catalog in my home catalog
-- **Remote catalog**: required field `~/Documents/`
-  - the `~` is expanded as the home catalog with full path by the remote operating system
-  - the remote catalog might also be added by full path, depends where the backup catalog is placed on remote server
+- **Local catalog**: required field
+- **Remote catalog**: required field
   - the backup catalog might also be a local catalog on a local attached disk
 
 
 ### Remote parameters
-- **Remote username**: `thomas`
+- **Remote username**:
   - username for login to remote server
-- **Remote server**: `10.0.0.57`
+- **Remote server**:
   - either server name or IP-address for remote server
-- **Backup ID**: `My docs catalog`
+- **Backup ID**:
   - informal tag for the configuration
 
 ### Task
-- **Type**: there are four types of tasks, `synchronize` which is default, `snapshots`, `syncremote` and `single file`.
+- **Type**: there are three types of tasks, `synchronize` which is default, `snapshots` or `syncremote`.
 
 ## Add configurations
 
@@ -58,10 +53,6 @@ Select the `Add` button when completed and configuration is added to RsyncUI. Rs
 
 ## Update configuration
 
-To update a configuration use the `Select` button and choose which configuration to update.
-
-![](/images/add/select.png)
-
-After changes either save or select another task to abandon the update.
+To update a configuration select it and update. After changes either save or select another task to abandon the update.
 
 ![](/images/add/update.png)
