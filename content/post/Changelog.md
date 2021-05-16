@@ -26,7 +26,8 @@ RsyncUI is [signed and notarized](/post/notarized/).
 There is 16 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0.1 of RsyncUI. The following is fixed in this release:
 
 - a minor bug in executing shell scripts
-- updates to the UI for adding and updating Configuration
+- updates to [the UI for adding and updating Configuration](https://rsyncui.netlify.app/post/addconfigurations/)
+- updates to [the UI for adding shell scripts](https://rsyncui.netlify.app/post/shellout/)
 
 ## Version 1.0.1(build 24)
 
