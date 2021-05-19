@@ -39,7 +39,7 @@ Execution of a task is an asynchronous operation. The [process object](https://g
 
 Combine enables a very good control of asynchronous operations and flow of data. Combine is also used as part of the SwiftUI framework. As an example everytime a SwiftUI binding is changed, the UI is updated. And SwiftUI does a lot of UI updates. But SwiftUI components are Swift structs and updates on the UI is very efficient.
 
-The following are parts where Combine are used in RsyncUI:
+The following are parts where Combine is used in RsyncUI:
 
 - validating of input from the user, as example see how SSH settings are added and validated
   - see [code snippet for ObservableReference](/post/codesnippetobserver/)
