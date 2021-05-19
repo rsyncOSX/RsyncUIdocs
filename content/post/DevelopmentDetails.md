@@ -42,8 +42,8 @@ Combine enables a very good control of asynchronous operations and flow of data.
 The following are parts where Combine is used in RsyncUI:
 
 - validating of input from the user, as example see how SSH settings are added and validated
-  - see [code snippet for ObservableReference](/post/codesnippetobserver/)
-  - see [code snippet for SSH settings View](/post/codesnippetviewssh/)
+  - [the SwiftUI code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Settings/Sshsettings.swift) for the SSH UI
+  - [the Swift code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Global/ObservableReferenceSSH.swift) for the StateObject validating user input
 - [at startup of RsyncUI a check](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Newversion/NewversionJSON.swift) if there is a new version of RsyncUI available
   - there is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version
 - [reading and decoding JSON data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) from permanent storage into theire respective datastructures (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>)
