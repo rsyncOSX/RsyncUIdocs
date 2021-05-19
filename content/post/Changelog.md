@@ -21,6 +21,15 @@ I also believe that by releasing RsyncUI will result in users asking for fixing 
 
 RsyncUI is [signed and notarized](/post/notarized/).
 
+## What is changed after 1.0.2(build 25)
+
+The following is in code, but not yet released:
+
+- after a delete of a profile, reload of existing profiles
+- a minor update in UI for post and pretask (clearing the input fields)
+- more internals using the Combine framework, check about [Combine in development details](/post/developmentdetails/#combine)
+- some cleaning up and minor refactor
+
 ## Version 1.0.2(build 25)
 
 There is 16 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0.1 of RsyncUI. The following is fixed in this release:

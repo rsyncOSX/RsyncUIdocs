@@ -37,19 +37,20 @@ Execution of a task is an asynchronous operation. The [process object](https://g
 
 ## Combine
 
-Combine enables a very good control of asynchronous operations and flow of data. As an example of use is validating of input from the user. The SwiftUI views are connected to an `ObservableObject`. The flow of data between the `ObservableObject` and the view is by `Binding` and the Combine framework. The ObservableObject is a StateObject in the view and by Bindings data is communicated between the view and StateObject.
+Combine enables a very good control of asynchronous operations and flow of data. Combine is also used as part of the SwiftUI framework. As an example everytime a SwiftUI binding is changed, the UI is updated. And SwiftUI does a lot of UI updates. But SwiftUI components are Swift structs and updates on the UI is very efficient.
 
-- see [code snippet for ObservableReference](/post/codesnippetobserver/)
-- see [code snippet for SSH settings View](/post/codesnippetviewssh/)
+The following are parts where Combine are used in RsyncUI:
 
-Combine is a complex framework to learn. It is though still easy and elegangt to use. More complex use of Combine take some time to learn. The following are parts where Combine also are used in RsyncUI:
-
-- at startup [a check](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Newversion/NewversionJSON.swift) if there is a new version of RsyncUI available
+- validating of input from the user, as example see how SSH settings are added and validated
+  - see [code snippet for ObservableReference](/post/codesnippetobserver/)
+  - see [code snippet for SSH settings View](/post/codesnippetviewssh/)
+- [at startup of RsyncUI a check](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Newversion/NewversionJSON.swift) if there is a new version of RsyncUI available
   - there is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version
 - [reading and decoding JSON data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) from permanent storage into theire respective datastructures (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>)
 - encoding the above datastructures to [JSON data and writing data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) to permanent storage
 - subscribe, within the [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcess.swift), for notifications from the NotificationCenter
 - parsing output from the above process object like [trimming and preparing output](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Output/TrimTwo.swift) from a rsync task, this trimming also looks for the string `error` in the output and reports if found
+- reading [the user configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Userconfiguration/ReadUserConfigurationPLIST.swift) and setting the values
 
 ## Speed
 
