@@ -22,6 +22,10 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 The development of RsyncOSX is frozen. RsyncOSX is stable and only critical bugs will be fixed. It will be avaliable for download in the future, probably to end of 2022. The main focus now is the new release [RsyncUI](https://github.com/rsyncOSX/RsyncUI).
 
+### Encrypt data
+
+There is at [the bottom of this page](#why-backup) a guide for how to utilize RsyncUI and `rclone` for encrypt and synchronize encrypted data to a remote server.
+
 ---
 
 # Using RsyncUI
@@ -116,10 +120,12 @@ Later in 2021 there will be released [a sandboxed version of RsyncUI](/post/sand
 
 Where does RsyncUI [save the files](/post/configfiles/) to permanent storage?
 
-# Why backup?
+## Why backup?
 
 The simple answer is recovery of lost data. There might be several reasons to loosing data, and I will not elaborate why you might risk loosing data. Computer crashes or restore deleted files is one obvious reason. But, there is another reason as well; a recovery from a ransomware attack. I have setup RsyncUI to synchronize, both normal synchronize and snapshots. One server is in house, the second is a remote server somewhere on the Internet. Data synchronized to the remote server is encrypyted before data is synchronized.
 
 Once my configurations are setup, I do backups utilizing RsyncUI every day. So, if I by some reason, has to execute a recovery I know where to find the most updated synchronized data for restore.
 
 I will never pay someone money to decrypt any data of mine. So, for your own protection, do regularly backups. There are tons of utilities for backups, RsyncUI is one. It is free and it is based on the rock solid utility `rsync`.
+
+I have written a short [guide how to use RsyncUI to synchronize encrypted data](/post/encryptedtask/) to a remote server.
