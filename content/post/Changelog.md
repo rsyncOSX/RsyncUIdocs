@@ -25,7 +25,7 @@ RsyncUI is [signed and notarized](/post/notarized/).
 
 The following is in code, but not yet released:
 
-- after a delete of a profile, reload of existing profiles
+- after a delete of a profile, reload of existing profile names
 - a minor update in UI for post and pretask (clearing the input fields)
 - more internals using the Combine framework, check about [Combine in development details](/post/developmentdetails/#combine)
 - some cleaning up and minor refactor
