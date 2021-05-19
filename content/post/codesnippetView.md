@@ -33,6 +33,12 @@ var body: some View {
                         adddeleteprofile
                     }
                     .padding()
+                    // Column 3
+                    VStack(alignment: .leading) {
+                        ConfigurationsListSmall(selectedconfig: $selectedconfig.onChange {
+                            updateview()
+                        })
+                    }
                     // For center
                     Spacer()
                 }
