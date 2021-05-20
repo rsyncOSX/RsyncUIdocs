@@ -128,4 +128,4 @@ Once my configurations are setup, I do backups utilizing RsyncUI every day. So, 
 
 I will never pay someone money to decrypt any data of mine. So, for your own protection, do regularly backups. There are tons of utilities for backups, RsyncUI is one. It is free and it is based on the rock solid utility `rsync`.
 
-I have written a short [guide how to use RsyncUI to synchronize encrypted data](/post/encryptedtask/) to a remote server.
+There is a short [guide how to use RsyncUI to synchronize encrypted data](/post/encryptedtask/) to a remote server.

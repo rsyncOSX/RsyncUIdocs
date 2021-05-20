@@ -33,11 +33,21 @@ Configurations, logs and scedules are read from permanent store into an `Observa
 
 ## Execution of tasks
 
-Execution of a task is an asynchronous operation. The [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcess.swift) is responsible for kicking of the task. Combine is used for listening for two notifications, `Process.didTerminateNotification` and `NSNotification.Name.NSFileHandleDataAvailable`. The process object is initialized with two escaping closures, `processtermination: @escaping () -> Void` and `filehandler: @escaping () -> Void`. Those two closures takes care of whatever action they are set to do any time the notifications are discovered.
+Execution of a task is an asynchronous operation. The [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcess.swift) is responsible for kicking of the task. The process object are, by Combine, listening for two notifications:
+
+- `Process.didTerminateNotification` and
+- `NSNotification.Name.NSFileHandleDataAvailable`
+
+The process object is initialized with two escaping closures:
+
+- `processtermination: @escaping () -> Void` and
+- `filehandler: @escaping () -> Void`.
+
+The closures takes care of whatever action they are set to do any time the notifications are discovered.
 
 ## Combine
 
-Combine enables a very good control of asynchronous operations and flow of data. Combine is also used as part of the SwiftUI framework. As an example everytime a SwiftUI binding is changed, the UI is updated. And SwiftUI does a lot of UI updates. But SwiftUI components are Swift structs and updates on the UI is very efficient.
+Combine enables a very good control of asynchronous operations and flow of data. Combine is also used as part of the SwiftUI framework. As an example everytime a SwiftUI `<Binding>` is changed, the UI is updated. And SwiftUI does a lot of UI updates. But SwiftUI components are structs and updates on the UI is very efficient.
 
 The following are parts where Combine is used in RsyncUI:
 
@@ -46,7 +56,7 @@ The following are parts where Combine is used in RsyncUI:
   - [the Swift code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Global/ObservableReferenceSSH.swift) for the StateObject validating user input
 - [at startup of RsyncUI a check](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Newversion/NewversionJSON.swift) if there is a new version of RsyncUI available
   - there is a [JSON-file](https://github.com/rsyncOSX/RsyncUI/blob/main/versionRsyncUI/versionRsyncUI.json) with versions to update and url-link to the new version
-- [reading and decoding JSON data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) from permanent storage into theire respective datastructures (configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>)
+- [reading and decoding JSON data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) from permanent storage into theire respective datastructures, configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>
 - encoding the above datastructures to [JSON data and writing data](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) to permanent storage
 - subscribe, within the [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcess.swift), for notifications from the NotificationCenter
 - parsing output from the above process object like [trimming and preparing output](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Output/TrimTwo.swift) from a rsync task, this trimming also looks for the string `error` in the output and reports if found
