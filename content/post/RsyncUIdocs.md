@@ -7,9 +7,7 @@ tags = ["summary"]
 # categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This is the documentation of the new app **RsyncUI**, the future version of RsyncOSX. There will also later in 2021, be developed a Sandboxed version for release on Apple Mac Store .
-
-The screenshots are updated with release 1.0.0. Some info may be missing, is incorrect or inaccurate. The info will be updated within the next few weeks. If you miss something, please [create an issue](https://github.com/rsyncOSX/RsyncUIdocs/issues) and let me know.
+This is the documentation of the new app **RsyncUI**, the new and future version of RsyncOSX. There will also later in 2021, be developed a Sandboxed version for release on Apple Mac Store . Some information may be missing, is incorrect or inaccurate. If you miss something, please [create an issue](https://github.com/rsyncOSX/RsyncUIdocs/issues) and let me know.
 
 There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
 
@@ -30,18 +28,20 @@ There is at [the bottom of this page](#why-backup) a guide for how to utilize Rs
 
 # Using RsyncUI
 
-This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use **JSON files** and that the files for permanent storage is in the same catalog as RsyncUI.
-
-RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps.
-
-There are some instructions about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved. Default catalog for storing files is:
+This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use **JSON files** and that the files for permanent storage is in the same catalog as RsyncUI. Default catalog for storing files is:
 
 ```
 $HOME/.rsyncosx/macserialnumber/
 ```
+
+RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps.
+
+There are some instructions about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved.
 ## The main menu
 
-This is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. If you are new til RsyncUI, please start with select the `Configurations` task [to add a configuration](/post/addconfigurations/).
+This is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data.
+
+If you are new til RsyncUI, please start with select the `Configurations` task [to add a configuration](/post/addconfigurations/).
 
 ![](/images/start/start.png)
 
@@ -70,9 +70,9 @@ How to execute tasks, either multiple tasks, single task or just a quick task.
 - [executing a single task](/post/singletask/)
 - [execute quick task](/post/quicktask/)
 
-## Pre and post task
+## Pre and post shell scripts
 
-RsyncUI might [execute a pre- and post shell script](/post/shellout/) connected to a task.
+RsyncUI might execute a [pre and post shell script](/post/shellout/) connected to a task.
 
 ## Restore data
 

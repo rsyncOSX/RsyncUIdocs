@@ -17,6 +17,9 @@ The following actions within this view:
 
 - `Add` - will add a new configuration
 - `Update` - the `Add` button will change when a configuration is selected
+
+Profile:
+
 - `Create` - create a new profile, add and select the profile
 - `Delete` - delete the selected profile, default profile cannot be deleted
 

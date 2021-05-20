@@ -7,7 +7,7 @@ tags = ["passwordless","rsync daemon"]
 description = "How to setup remote logins by rsync daemon. There are also two methods for setting up."
 lastmod = "2020-07-16"
 +++
-With a few tweaks it is possible to get RsyncUI working with rsync daemon. Be aware of not utilizing ssh, transfer of data is not encrypted. This is might not a problem on a local network, but I would not advise it on a public network. Also be aware of **snapshot is not possible** with a rsync daemon setup.
+With a few tweaks it is possible to get RsyncUI working with rsync daemon. Be aware of not utilizing ssh, transfer of data is **not** encrypted. This is might not a problem on a local network, but I would not advise it on a public network. Also be aware of **snapshot is not possible** with a rsync daemon setup.
 
 Setting up a rsync daemon setup require a server side setup and some tweaks in RsyncUI.
 

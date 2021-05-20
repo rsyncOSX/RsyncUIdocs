@@ -22,7 +22,7 @@ How to set ssh keypath and identityfile in [the user configuration](/post/sshset
 
 If global ssh parameters are set, it applies to **all configurations**. It is possible to set other ssh values on each task. There is a check and QA of ssh keypath and identityfile. When enabling user selected ssh keypath and identityfile please make sure it is in compliance with:
 ```
-`~/.mynewsshcatalog/mynewkey`
+~/.mysshcatalog/mykey
 ```
 The prefix has to be `~` followed by a `/`. RsyncUI will verify that the ssh keypath has the prefix `~` and at least two `/` before saving the new keypath.
 
@@ -32,9 +32,14 @@ The following ssh tools are used: `ssh-keygen` and `ssh-copy-id`. RsyncUI only a
 
 The ssh functions assist in two methods:
 
-- private and public ssh key pair based upon default ssh values for RSA based key `~/.ssh/id_rsa`
-- private and public ssh key pair based upon user selected values as `~/.ssh_rsyncosx/rsyncosx`
-
+- private and public ssh key pair based upon default ssh values for RSA based key
+```
+~/.ssh/id_rsa
+```
+- private and public ssh key pair based upon user selected values as
+```
+~/.ssh_rsyncosx/rsyncosx
+```
 If creating a new public ssh key pair based upon default ssh values for RSA based key, RsyncOSX does not add any parameters to the rsync command because this is default values. Ssh parameters to the rsync command is only added if the second method is choosed.
 
 The following is the command for creating a new, alternative private and public ssh key pair:
