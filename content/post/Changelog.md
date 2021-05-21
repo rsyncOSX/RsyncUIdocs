@@ -15,8 +15,6 @@ I have for the moment some ideas for the future development:
 - develop the RsyncOSXsched, the menu app, utilizing SwiftUI
 - integrate more of Combine in all apps
 
-I also believe that by releasing RsyncUI will result in users asking for fixing bugs and enhancements for functions and the UI.
-
 ---
 
 RsyncUI is [signed and notarized](/post/notarized/).
