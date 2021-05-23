@@ -19,6 +19,20 @@ I have for the moment some ideas for the future development:
 
 RsyncUI is [signed and notarized](/post/notarized/).
 
+## Updates not in release (yet)
+
+RsyncUI is new and from time to time I discover parts in code which should be refactored. I am also trying, within my understanding of Swift and SwiftUI, to remove as much as I can of "boilerplate code". There are a few programming technics around like use generics, use features supported by the language and so on. And this is part of learning a language and almost every day there are new learning.
+
+The following are changes in code:
+
+- removed some "boilerplate code" from decode and encode JSON, Combine is a super framework
+- SwiftUI require some computed properties, like UUID, on data
+  - these properties are added during reading data, by mistake these properties was also written to file
+  - this is now fixed and the filesize, specially the logs file, is reduced
+- existing users of RsyncOSX using defalt format for storing data (PLIST) now can use RsyncUI to transform default PLIST data to JSON which is required in RsyncUI
+
+There will be a update version 1.1.1 sometime in June 2021. Or you can compile your own version.
+
 ## Version 1.1.0(build 26)
 
 There is 21 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.0 of RsyncUI. The following is fixed in this release:
