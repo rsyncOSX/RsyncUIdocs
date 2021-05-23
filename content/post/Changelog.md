@@ -24,11 +24,9 @@ RsyncUI is [signed and notarized](/post/notarized/).
 
 ## Updates not in release (yet)
 
-RsyncUI is new and from time to time I discover parts in code which should be refactored. I am also trying, within my understanding of Swift and SwiftUI, to remove most of "boilerplate" code. There are a few programming technics around like utilize generics, use features supported by the language and so on. All of this is part of learning a language and almost every day there are new learning. It is a great community out there and I am learning a lot by following a few of those.
+RsyncUI is new and from time to time I discover parts in code which should be refactored. The following are changes in code:
 
-The following are changes in code:
-
-- removed "boilerplate" code from decode and encode JSON, Combine is a super framework
+- refactored parts of decode and encode JSON, Combine is a super framework
 - SwiftUI require some computed properties, like UUID, on data
   - these properties are added during reading data, by mistake these properties was also written to file
   - this is now fixed and the filesize, specially the logs file, is reduced
