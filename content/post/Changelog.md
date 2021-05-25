@@ -30,7 +30,7 @@ RsyncUI is new and from time to time I discover parts in code which should be re
 - SwiftUI require some computed properties, like UUID, on data
   - these properties are added during reading data, by mistake these properties was also written to file
   - this is now fixed and the filesize, specially the logs file, is reduced
-- existing users of RsyncOSX using defalt format for storing data (PLIST) now can use RsyncUI to transform default PLIST data to JSON which is required in RsyncUI
+- existing users of RsyncOSX using defalt format for storing data (PLIST) now can use RsyncUI to [transform default PLIST data](/post/plist/) to JSON which is required in RsyncUI
 
 There will be a update version 1.1.1 sometime in June 2021. Or you can compile your own version.
 
