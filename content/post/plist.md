@@ -7,14 +7,14 @@ tags = ["plist"]
 description = "Some info about converting PLIST to JSON"
 lastmod = "2021-05-25"
 +++
-To be released in version 1.1.1 in June 2021.
+To be released in version 1.1.1 in June 2021. This function are for **existing users of RsyncOSX** who wants start using RsyncUI.
 
-RsyncUI read and write configurations and logs as [JSON](https://en.wikipedia.org/wiki/JSON) files. The user will have the option to convert **RsyncOSX** [plist](https://en.wikipedia.org/wiki/Property_list) to JSON. Before converting to JSON make a backup of the current configuration files. The current configurations is backed up in the Documents catalog.
+RsyncUI read and write configurations and logs as [JSON](https://en.wikipedia.org/wiki/JSON) files. The user will have the option to convert **RsyncOSX** [plist configuration files](https://en.wikipedia.org/wiki/Property_list) to JSON. Before converting to JSON make a backup of the current configuration files. The current configurations is backed up in the Documents catalog.
 
 - sample JSON data for [configurations](https://raw.githubusercontent.com/rsyncOSX/RsyncUI/main/samplejsondata/configurations.json)
 - sample JSON data for [schedules](https://raw.githubusercontent.com/rsyncOSX/RsyncUI/main/samplejsondata/schedules.json)
 
-This is for **existing users of RsyncOSX** who wants start using RsyncUI. If you dont see any configurations in RsyncUI, RsyncOSX is not setup to use JOSN files. This will convert existing PLIST configurations and logs to JSON files which RsyncUI can read.
+If you dont see any configurations in RsyncUI, RsyncOSX is not setup to use JSON files. This will convert existing PLIST configurations and logs to JSON files which RsyncUI can read.
 
 Start RsyncUI, select the **correct profile** or use **default**, select Settings and the Paths tab.
 
