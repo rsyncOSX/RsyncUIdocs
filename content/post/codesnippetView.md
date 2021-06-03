@@ -11,7 +11,7 @@ The [AddConfigurationView.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/R
 
 ![](/images/add/add.png)
 
-```
+```swift
 var body: some View {
         Form {
             ZStack {

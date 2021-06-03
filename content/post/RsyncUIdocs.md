@@ -30,7 +30,7 @@ There is at [the bottom of this page](#why-backup) a guide for how to utilize Rs
 
 This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use **JSON files** and that the files for permanent storage is in the same catalog as RsyncUI. Default catalog for storing files is:
 
-```
+```bash
 $HOME/.rsyncosx/macserialnumber/
 ```
 

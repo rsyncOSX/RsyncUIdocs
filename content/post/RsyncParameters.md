@@ -60,7 +60,7 @@ You can instruct rsync to save changed and deleted files in a separate backup ca
 There are [two possible setup for using the rsync daemon](/post/rsyncdaemon/). Utilizing a rsync daemon setup does **not** encrypt the transfer between client and server. To encrypt the transfer require tunneling traffic in a ssh protocol, [see how to setup ssh passwordless logins](/post/ssh/).
 
 Default catalog for backup of `<catalog to synchronize>` relativ to the synchronized catalog is:
-```
+```bash
 ../backup_<catalog to synchronize>
 ```
 ### Suffix on changed and deleted files
@@ -68,11 +68,11 @@ Default catalog for backup of `<catalog to synchronize>` relativ to the synchron
 Rsync can also set a time stamp as suffix on files. This might be useful if there are several revisions of files. The --suffix parameter set suffix on files, suffix can be set on files together with the --backup parameter. One suffix might rename files which are either deleted or replaced newer files with a trailing date and time stamp.
 
 - sample suffix FreeBSD
-```
+```bash
 --suffix=`date +'%Y-%m-%d.%H.%M'`
 ```
 - sample suffix Linux
-```
+```bash
 --suffix=_$(date +%Y-%m-%d.%H.%M)
 ```
 

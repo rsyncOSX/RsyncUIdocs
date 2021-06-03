@@ -88,7 +88,7 @@ The following are changes compared to previous release:
 
 There is some more info about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved. Default catalog for storing files for both apps is:
 
-```
+```bash
 $HOME/.rsyncosx/macserialnumber/
 ```
 ## Prerelease v0.60(build 20) - breaking changes

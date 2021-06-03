@@ -8,13 +8,13 @@ description = "How to execute an encrypted copy of data"
 lastmod = "2021-03-11"
 +++
 Rclone is a command line tool to manage files on cloud storage. It can be installed by homebrew or download and installed from [Rclone](https://rclone.org/).
-```
+```bash
 brew install rclone
 ```
 This guide is nor a verification of how strong encryption of data in rclone is or how to setup encryption by rclone. This guide is how to connect a shell script for encrypting data **ahead** of synchronize the encrypted data to a remote server. The shell script encrypts and copy the encrypted data from `/Users/thomas/Documents` to a new local catalog which I have named `/Users/thomas/rcloneencrypted`. Rclone reads the setup for the encryption from the rclone config file with label `localencrypt`. There is also some exludes which rclone reads from a text file, just like rsync.
 
 The shell script.
-```
+```bash
 #!/bin/bash
 /usr/local/bin/rclone sync /Users/thomas/Documents  localencrypt: --exclude-from=/Users/thomas/Documents/excludersync/exclude_rclone.txt
 ```

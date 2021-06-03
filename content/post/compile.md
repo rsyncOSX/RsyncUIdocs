@@ -7,7 +7,7 @@ tags = ["compile"]
 # categories = ["source code"]
 +++
 RsyncUI is only depended upon the Swift language and SwiftUI and Foundation frameworks. There are two ways to compile, either in Xcode or utilize `make` from command line in RsyncUI catalog. To use make require Xcode command line utilities to be installed. Execute the following command and follow the instructions.
-```
+```bash
 xcode-select --install
 ```
 ## Remove signing credentials or replace
@@ -21,11 +21,11 @@ There are two utilities used, [SwiftLint](https://github.com/realm/SwiftLint) an
 ## Ready to Compile
 
 Either execute RsyncUI directly in Xcode or utilize make. Go to the catalog top RsyncUI and execute the following command.
-```
+```bash
 make clean & make
 ```
 After the compiling is completed the RsyncUI.app is build and saved in:
-```
+```bash
 RsyncUI/Build/Products/Release/RsyncUI.app
 ```
 ## Tools used
