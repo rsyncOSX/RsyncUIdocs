@@ -16,11 +16,7 @@ There is a [changelog](/post/changelog/), please check it before commencing the 
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
-### About RsyncOSX
-
-The development of RsyncOSX is frozen. RsyncOSX is stable and only critical bugs will be fixed. It will be avaliable for download in the future, probably to end of 2022. The main focus now is the new release [RsyncUI](https://github.com/rsyncOSX/RsyncUI).
-
-### Encrypt data
+### Encrypted data
 
 There is at [the bottom of this page](#why-backup) a guide for how to utilize RsyncUI and `rclone` for encrypt and synchronize encrypted data to a remote server.
 
@@ -37,11 +33,10 @@ $HOME/.rsyncosx/macserialnumber/
 RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps.
 
 There are some instructions about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved.
+
 ## The main menu
 
-This is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data.
-
-If you are new til RsyncUI, please start with select the `Configurations` task [to add a configuration](/post/addconfigurations/).
+This is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. If you are new til RsyncUI, please start with select the `Configurations` task [to add a configuration](/post/addconfigurations/).
 
 ![](/images/start/start.png)
 
