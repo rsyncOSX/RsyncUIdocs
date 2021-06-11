@@ -9,6 +9,8 @@ lastmod = "2021-03-25"
 +++
 A configuration require minimum a **local catalog** and a **remote catalog**. After entering information about a configuration select the `Add` button to add it to RsyncUI. Continue adding new configurations until completed and configurations are saved to permanent storage after each entry. Select local catalog either by drag and drop or by enter text directly. For remote catalogs only drag and drop for local attached volumes. For remote server catalogs enter by text only.
 
+New features in Add configuration will be released on [the build for macOS 12](/post/macos12/).
+
 ![](/images/add/add.png)
 
 ## The buttons:
@@ -23,7 +25,7 @@ Profile:
 - `Create` - create a new profile, add and select the profile
 - `Delete` - delete the selected profile, default profile cannot be deleted
 
-Local catalog and Remote catalog are added either by using drag and drop from filemanager or by text only. If enter by text please remember to add the full path. Remote catalogs is entered either by full paths or use the `~` character to expand remote user home catalog.
+Local catalog and Remote catalog are added either by using drag and drop from file manager or by text only. If enter by text please remember to add the full path. Remote catalogs is entered either by full paths or use the `~` character to expand remote user home catalog.
 
 ### Task
 
