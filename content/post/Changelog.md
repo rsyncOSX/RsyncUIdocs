@@ -24,9 +24,9 @@ RsyncUI is [signed and notarized](/post/notarized/).
 
 ## MacOS 12, Xcode 13, Swift 5.5
 
-Apple released on 7 Jun 2021 beta of the above including new features in SwiftUI. Some of the new features in SwiftUI, like the `@FocusState` property, require macOS 12. There are a lot of new stuff within the updates SwiftUI and some of them will be integrated in next version of RsyncUI. The property `@FocusState` is great for guiding the user in input forms.
+Apple released on 7 Jun 2021 beta of the above including a lot of new features in SwiftUI. Some of the new stuff in SwiftUI, like the `@FocusState` property, require macOS 12. Some of them will be integrated in next version of RsyncUI, e.g. the property `@FocusState` is great for guiding the user in input forms.
 
-The next version of RsyncUI will be built for macOS 12. There might be a minor update of the current version on macOS 11 before the next release on macOS 12. 
+The next version of RsyncUI will be built for macOS 12. There might be a minor update of the current version on macOS 11 before the next release on macOS 12.
 
 ## Version 1.1.1(build 27)
 
