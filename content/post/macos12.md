@@ -9,6 +9,10 @@ lastmod = "2021-05-25"
 +++
 Apple released on 7 Jun 2021 beta of the above including a lot of new features in SwiftUI. Some of the new stuff in SwiftUI, like the `@FocusState` property, require macOS 12. Some of the features will be integrated in next version of RsyncUI, e.g. the property `@FocusState` is great for guiding the user in input forms.
 
+## App protocol
+
+The current version of RsyncUI is utilizing the AppDelegate protocol to kick of the application, which is how a Swift and Storyboard macOS is starting up. The default start for a SwiftUI application is by the [App protocol](https://developer.apple.com/documentation/swiftui/app-structure-and-behavior). This is now changed in code.
+
 ## The @FocusState property
 
 The property enables a detailed guide and possibilities depended upon the flow of input and the value of the input. There are in the Configurations form three possibilities for actions depended upon the value of the input and where the focus is. And there is actual no need for neither the tab and the Add button. Both the tab and Add button is there, but there is no need to use them.
