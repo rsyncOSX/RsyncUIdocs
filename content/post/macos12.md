@@ -41,7 +41,7 @@ And it is likewise for the pre- and post shell scripts. There is **no need** to 
 
 ## The searchable modifier
 
-The `searchable` modifier utlizes a standard method for filter records. The modifier is added to configuration listings as well log listings.
+The `searchable` modifier utilizes a standard method for filter data. The modifier is added to configuration listings and log listings. 
 
 ![](/images/macos12/search1.png)
 ![](/images/macos12/search2.png)
