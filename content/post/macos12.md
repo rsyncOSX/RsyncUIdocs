@@ -5,7 +5,8 @@ title =  "RsyncUI and macOS 12?"
 tags = ["macos12"]
 # categories = ["sequrity"]
 description = "Some info about what is new in RsyncUI on macOS 12"
-lastmod = "2021-05-25"
+lastmod = "2021-06-15"
+toc = true
 +++
 Apple released on 7 Jun 2021 beta of the above including a lot of new features in SwiftUI. Some of the new stuff in SwiftUI, like the `@FocusState` property, require macOS 12. Some of the features will be integrated in next version of RsyncUI, e.g. the property `@FocusState` is great for guiding the user in input forms.
 
@@ -37,3 +38,16 @@ When the synchronize ID is submitted, by the Enter key, the Form is validating i
 And it is likewise for the pre- and post shell scripts. There is **no need** to explicit toggle the pre- and post shell scripts on. By the Enter key add pre and post, the Form will automatically switch the toggles on.
 
 ![](/images/macos12/newpreandpost.png)
+
+## The searchable modifier
+
+The `searchable` modifier utlizes a standard method for filter records. The modifier is added to configuration listings as well log listings.
+
+![](/images/macos12/search1.png)
+![](/images/macos12/search2.png)
+
+## Settings
+
+The settings is now available from the menu bar only.
+
+![](/images/macos12/settings.png)
