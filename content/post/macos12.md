@@ -8,11 +8,13 @@ description = "Some info about what is new in RsyncUI on macOS 12"
 lastmod = "2021-06-15"
 toc = true
 +++
-Apple released on 7 Jun 2021 beta of the above including a lot of new features in SwiftUI. Some of the new stuff in SwiftUI, like the `@FocusState` property, require macOS 12. Some of the features will be integrated in next version of RsyncUI, e.g. the property `@FocusState` is great for guiding the user in input forms.
+Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI and macOS 12. Some of the new features in SwiftUI are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated in RsyncUI. The major part of the new features in SwiftUI require macOS 12. Next major update of RsyncUI will be built for macOS 12 only.
 
-## App protocol
+There will be released a version 1.1.2 with some minor updates on macOS 11 later in June 2021. This update also includes upgrade utilizing the App protocol.
 
-The current version of RsyncUI is utilizing the AppDelegate protocol to kick of the application, which is how a Swift and Storyboard macOS is starting up. The default start for a SwiftUI application is by the [App protocol](https://developer.apple.com/documentation/swiftui/app-structure-and-behavior). This is now changed in code.
+## The App protocol
+
+The released version 1.1.1 of RsyncUI is utilizing the AppDelegate protocol to kick of the application, which is how a Swift and Storyboard macOS apps are starting up. The default start for a SwiftUI application is by the [App protocol](https://developer.apple.com/documentation/swiftui/app-structure-and-behavior). This is now changed in code. Some features in SwiftUI require the App protocol.
 
 ## The @FocusState property
 
