@@ -41,7 +41,7 @@ And it is likewise for the pre- and post shell scripts. There is **no need** to 
 
 ## The searchable modifier
 
-The `searchable` modifier utilizes a standard method for filter data. The modifier is added to configuration listings and log listings. 
+The `searchable` modifier utilizes a standard method for filter data. The modifier is utilized in configuration listings and log listings.
 
 ![](/images/macos12/search1.png)
 ![](/images/macos12/search2.png)
@@ -51,3 +51,7 @@ The `searchable` modifier utilizes a standard method for filter data. The modifi
 The settings is now available from the menu bar only.
 
 ![](/images/macos12/settings.png)
+
+## The @FocusedBinding property and focusedSceneValue modifier
+
+This property and modifier is utilized to trigger estimation and execution of tasks from the application menu. The property and modifier enables that a value from one view is injected into to the full focused view. By selecting from the application menu, the value of the trigger is changed and injected into either the single task view or multiple task view depended upon which has focus.
