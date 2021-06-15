@@ -32,7 +32,7 @@ The released version of RsyncUI still need some more work on the details. There 
 
 And there are a few significant changes in SwiftUI and macOS 12 which makes RsyncUI a more user friendly application. The downside is there will be no release until the final version of Xcode 13 and macOS 12 is here.
 
-  - [changes in RsyncUI on macOS 12](https://rsyncui.netlify.app/post/macos12/#the-focusedbinding-property-and-focusedscenevalue-modifier)
+  - [changes in RsyncUI on macOS 12](https://rsyncui.netlify.app/post/macos12/)
 
 ## Version 1.1.1(build 27)
 
