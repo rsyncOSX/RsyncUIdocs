@@ -16,9 +16,11 @@ There is a [changelog](/post/changelog/), please check it before commencing the 
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
-### Encrypted data
+# Development
 
-There is at [the bottom of this page](#why-backup) a guide for how to utilize RsyncUI and `rclone` for encrypt and synchronize encrypted data to a remote server.
+The released version of RsyncUI still need some more work on the details. There is a lot to learn about the new version of Swift, SwiftUI and macOS 12. RsyncUI is stabel and it works. But some parts of the UI and how it works still need some more poslish. I am learning more about SwiftUI every day and the challenge for me is to learn about the built in API and use the most of it. And that takes some time. But there is every day some enhancments in the code.
+
+So, if you download RsyncUI and start using it please have this in mind. And as always, please report back if there something to dislike or request for new features. 
 
 ---
 
