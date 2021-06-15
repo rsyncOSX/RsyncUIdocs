@@ -12,7 +12,7 @@ The development of RsyncUI commenced in December 2020 and version 1.0.0 was rele
 I have for the moment some ideas for the future development:
 
 - develop a Sandboxed version of RsyncUI for release on the Apple App Store
-  - I have in test verified the Sandbox code, some carefull planning is required to only use one codebase for the notarized and Sandboxed version
+  - I have in test verified the Sandbox code, some careful planning is required to only use one codebase for the notarized and Sandboxed version
 - develop the RsyncOSXsched, the menu app, utilizing SwiftUI
   - current version is still a Swift and Storyboard app, but Combine has replaced much of the code
   - I have some ideas, but not yet commenced any development
@@ -24,13 +24,15 @@ RsyncUI is [signed and notarized](/post/notarized/).
 
 ## MacOS 12, Xcode 13, Swift 5.5
 
-Apple released on 7 Jun 2021 beta of the Swift 5.5 and SwiftUI. Some of the new stuff in SwiftUI, like the `@FocusState` property, require macOS 12. Some of the features will be integrated in next version of RsyncUI, e.g. the property `@FocusState` is great for guiding the user in input forms.
-
-The current version of RsyncUI is utilizing the AppDelegate protocol to kick of the application, which is how a Swift and Storyboard macOS is starting up. The default start for a SwiftUI application is by the [App protocol](https://developer.apple.com/documentation/swiftui/app-structure-and-behavior). This is now changed in code.
+Apple released on 7 Jun 2021 beta of the Swift 5.5 and SwiftUI. The current version of RsyncUI is utilizing the AppDelegate protocol to kick of the application, which is how a Swift and Storyboard macOS is starting up. The default start for a SwiftUI application is by the [App protocol](https://developer.apple.com/documentation/swiftui/app-structure-and-behavior). This is now changed in code.
 
 The next version of RsyncUI will be built for macOS 12. There might be a minor update of the current version on macOS 11 before the next release on macOS 12.
 
-As new features for macOS 12 are added to RsyncUI they are [shortly described here](/post/macos12/).
+The released version of RsyncUI still need some more work on the details. There is a lot to learn about the new version of Swift, SwiftUI and macOS 12. RsyncUI is stabel and it works. But some parts of the UI and how it works still need some more polish. I am learning more about SwiftUI every day and the challenge for me is to learn about the built in API and use the most of it. And that takes some time. But there is every day some enhancements in the code.
+
+And there are a few significant changes in SwiftUI and macOS 12 which makes RsyncUI a more user friendly application. The downside is there will be no release until the final version of Xcode 13 and macOS 12 is here.
+
+  - [changes in RsyncUI on macOS 12](https://rsyncui.netlify.app/post/macos12/#the-focusedbinding-property-and-focusedscenevalue-modifier)
 
 ## Version 1.1.1(build 27)
 
