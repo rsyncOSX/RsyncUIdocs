@@ -61,3 +61,7 @@ The settings is now available from the menu bar only.
 This property and modifier is utilized to trigger estimation and execution of tasks from the application menu. The property and modifier enables that a value from one view is injected into to the full focused view. By selecting from the application menu, the value of the trigger is changed and injected into either the single task view or multiple task view depended upon which has focus.
 
 ![](/images/macos12/shortcuts.png)
+
+# A possible bug
+
+RsyncUI stores data for a profile in a seperate catalog. When RsyncUI starts it is, from the Sidebar menu, reading the data for the default profile.

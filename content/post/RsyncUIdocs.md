@@ -22,7 +22,7 @@ The released version of RsyncUI still need some more work on the details. There 
 
 So, if you download RsyncUI and start using it please have this in mind. And as always, please report back if there something to dislike or request for new features.
 
-There is some info about [RsyncUI on macOS Monterey](/post/macos12/).
+There is some info about [RsyncUI on macOS Monterey](/post/macos12/). I have also discovered a possible bug, which makes building a new version on macOS Catalina a bit more difficult.
 
 ---
 
