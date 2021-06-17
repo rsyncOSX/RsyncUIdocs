@@ -64,4 +64,8 @@ This property and modifier is utilized to trigger estimation and execution of ta
 
 # A possible bug
 
-RsyncUI stores data for a profile in a seperate catalog. When RsyncUI starts it is, from the Sidebar menu, reading the data for the default profile.
+RsyncUI stores data for a profile in a seperate catalog. When RsyncUI starts it, from the Sidebar menu, [reads the data for the default profile](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/RsyncUIView.swift). The data about the configurations is enabled for the views as an `@EnvironmentObject var rsyncUIData: RsyncUIdata`. Either an update on data or change profile causes the Sidebar view to do a refresh and by the refresh reread data.
+
+On macOS Catalina it seems like the `@EnvironmentObject` is not properly updated. This becomes an issue, on macOS Catalina, when executing task in one profile and after that change profile for executing next backups. The views are updated with new date, but the model classes does not get the updated data.
+
+On macOS Monterey this issue does not exists. The `@EnvironmentObject` seems to be updated as it should and there are no issues for the modell classes when reading the data.
