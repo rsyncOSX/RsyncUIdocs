@@ -62,7 +62,7 @@ This property and modifier is utilized to trigger estimation and execution of ta
 
 ![](/images/macos12/shortcuts.png)
 
-# A possible bug
+## A possible bug
 
 RsyncUI stores data for a profile in a seperate catalog. When RsyncUI starts it, from the Sidebar menu, [reads the data for the default profile](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/RsyncUIView.swift). The data about the configurations is enabled for the views as an `@EnvironmentObject var rsyncUIData: RsyncUIdata`. Either an update on data or change profile causes the Sidebar view to do a refresh and by the refresh reread data.
 
