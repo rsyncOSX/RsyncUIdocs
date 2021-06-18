@@ -28,7 +28,7 @@ There are a few significant changes in the updated SwiftUI and macOS 12, please 
 
 ## Version 1.1.1(build 27)
 
-**Update 17 June 2021**. The builds are removed for the moment, the UI need some more polish and there is also discovered an issue with RsyncUI on macOS Big Sur. The issue does not exists on macOS Monterey with Xcode 13. I am not sure why and further QA of code is required. The updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. For more info see. Please use the latest version of RsyncOSX. There might be another build on macOS Big Sur if I manage to solve the issue. If not there will not be any new releases of RsyncUI until macOS Monterey is public.
+**Update 17 June 2021**. The builds are removed for the moment, the UI need some more polish and there is also discovered an issue with RsyncUI on macOS Big Sur. The issue does not exists on macOS Monterey with Xcode 13. I am not sure why and further QA of code is required. The updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. Please use the latest version of RsyncOSX. There might be another build on macOS Big Sur if I manage to solve the issue. If not there will not be any new releases of RsyncUI until macOS Monterey is public.
 
 There is 4 June 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.1 of RsyncUI. The following is fixed in this release:
 
