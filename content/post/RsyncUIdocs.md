@@ -7,22 +7,21 @@ tags = ["summary"]
 # categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This is the documentation of the new app **RsyncUI**, the new and future version of RsyncOSX. There will also later in 2021, be developed a Sandboxed version for release on Apple Mac Store . Some information may be missing, is incorrect or inaccurate. If you miss something, please [create an issue](https://github.com/rsyncOSX/RsyncUIdocs/issues) and let me know.
+This is the documentation of the new app **RsyncUI**, the new and future version of RsyncOSX. If some information is missing, is incorrect or inaccurate please let me know by [creating an issue](https://github.com/rsyncOSX/RsyncUIdocs/issues).
 
 There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
 
-- RsyncUI and RsyncSchedule are compiled with support for **macOS Big Sur** and later
+- RsyncUI and RsyncSchedule are built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
+  - macOS Monterey is for the moment released as a beta
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
 # Development
 
-The released version of RsyncUI still need some more work on the details. There is a lot to learn about the new version of Swift, SwiftUI and macOS 12 (macOS Monterey). RsyncUI is stabel and it works. But some parts of the UI and how it works still need some more polish. I am learning more about SwiftUI every day and the challenge for me is to learn about the built in API and use the most of it. And that takes some time. But there is every day some enhancments in the code.
+The released version of RsyncUI still need some more work on the details. There is a lot to learn about the new version of Swift, SwiftUI and macOS 12 (macOS Monterey). Some parts of the UI and how it works still need some more polish. I am learning more about SwiftUI every day and the challenge for me is to learn about the built in API and use the most of it. And that takes some time. But there is every day some enhancments in the code.
 
-So, if you download RsyncUI and start using it please have this in mind. And as always, please report back if there something to dislike or request for new features.
-
-There is some info about [RsyncUI on macOS Monterey](/post/macos12/). I have also discovered a possible bug, which makes building a new version on macOS Catalina a bit more difficult.
+There is some info about [RsyncUI on macOS Monterey](/post/macos12/). I have also discovered some issues on macOS Catalina, which makes building a new version on macOS Catalina a bit more difficult.
 
 ---
 
@@ -34,9 +33,7 @@ This section is about using RsyncUI. RsyncUI can be used in **parallel with Rsyn
 $HOME/.rsyncosx/macserialnumber/
 ```
 
-RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps.
-
-There are some instructions about [how to setup RsyncOSX utilizing JSON](https://rsyncosx.netlify.app/post/json/). The `About` for both RsyncOSX and RsyncUI shows in bottom of view, where the data is saved.
+RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps. It is advised using version 6.6.0 of RsyncOSX in parallel with RsyncUI. 
 
 ## The main menu
 
