@@ -19,7 +19,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 # Development
 
-The released version of RsyncUI still need some more work on the details. There is a lot to learn about the new version of Swift, SwiftUI and macOS 12 (macOS Monterey). Some parts of the UI and how it works still need some more polish. I am learning more about SwiftUI every day and the challenge for me is to learn about the built in API and use the most of it. And that takes some time. But there is every day some enhancments in the code.
+The released version of RsyncUI still need some more work on the details. There is a lot to learn about the new version of Swift, SwiftUI and macOS 12 (macOS Monterey). Some parts of the UI and how it works still need some more polish. I am learning more about SwiftUI every day and the challenge for me is to learn about the built in API and use the most of it. And that takes some time. But there is every day some enhancements in the code.
 
 There is some info about [RsyncUI on macOS Monterey](/post/macos12/). I have also discovered some issues on macOS Catalina, which makes building a new version on macOS Catalina a bit more difficult.
 
@@ -33,7 +33,7 @@ This section is about using RsyncUI. RsyncUI can be used in **parallel with Rsyn
 $HOME/.rsyncosx/macserialnumber/
 ```
 
-RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps. It is advised using version 6.6.0 of RsyncOSX in parallel with RsyncUI. 
+RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps. It is advised using version 6.6.0 of RsyncOSX in parallel with RsyncUI.
 
 ## The main menu
 

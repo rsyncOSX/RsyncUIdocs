@@ -62,7 +62,9 @@ This property and modifier is utilized to trigger estimation and execution of ta
 
 ![](/images/macos12/shortcuts.png)
 
-## Colours
+## Colours and some other settings
+
+The buttons and menus apply to colour settings within the macOS General settings as well as the icon size sidebar menu. The help menu is linked to default help shortcut and likewise for the settings. 
 
 ![](/images/macos12/adaptive.png)
 ![](/images/macos12/adaptive2.png)
