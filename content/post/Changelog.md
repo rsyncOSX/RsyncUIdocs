@@ -7,24 +7,7 @@ tags = ["RsyncUI"]
 # categories = ["changelog"]
 lastmod = "2021-05-06"
 +++
-The development of RsyncUI commenced in December 2020 and version 1.0.0 was released in May 2021. The name is **RsyncUI** and it is built for **macOS Big Sur** and later. That is why it is released as a new appliction and not as an upgrade the current version of RsyncOSX. There are also some SwiftUI features in code which require macOS Big Sur.
-
-I have for the moment some ideas for the future development:
-
-- develop a Sandboxed version of RsyncUI for release on the Apple App Store
-  - I have in test verified the Sandbox code, some careful planning is required to only use one codebase for the notarized and Sandboxed version
-- develop the RsyncOSXsched, the menu app, utilizing SwiftUI
-  - current version is still a Swift and Storyboard app, but Combine has replaced much of the code
-  - I have some ideas, but not yet commenced any development
-- integrate more of Combine in all apps
-
----
-
-RsyncUI is [signed and notarized](/post/notarized/).
-
-## SwiftUI and macOS 12
-
-There are a few significant changes in the updated SwiftUI and macOS 12, please see more info about [changes in RsyncUI on macOS 12](/post/macos12/).
+There are a few significant changes in the updated SwiftUI 3 and macOS 12, please see more info about [changes in RsyncUI on macOS 12](/post/macos12/).
 
 ## Version 1.1.1(build 27)
 

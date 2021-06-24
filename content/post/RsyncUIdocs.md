@@ -19,9 +19,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 # Development
 
-The released version of RsyncUI still need some more work on the details. There is a lot to learn about the new version of Swift, SwiftUI and macOS 12 (macOS Monterey). Some parts of the UI and how it works still need some more polish. I am learning more about SwiftUI every day and the challenge for me is to learn about the built in API and use the most of it. And that takes some time. But there is every day some enhancements in the code.
-
-There is some info about [RsyncUI on macOS Monterey](/post/macos12/). I have also discovered some issues on macOS Catalina, which makes building a new version on macOS Catalina a bit more difficult.
+The target for RsyncUI is **macOS Monterey**. But there will also be a couple of prerelease builds on macOS Big Sur. The UI need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. There is some info about [RsyncUI on macOS Monterey](/post/macos12/).
 
 ---
 
