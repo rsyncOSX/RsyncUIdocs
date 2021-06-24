@@ -21,11 +21,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 The target for RsyncUI is **macOS Monterey**. But there will also be a couple of prerelease builds on macOS Big Sur. The UI need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. There is some info about [RsyncUI on macOS Monterey](/post/macos12/).
 
----
-
 # Using RsyncUI
 
-This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. But that requires **RsyncOSX** to be setup to use **JSON files** and that the files for permanent storage is in the same catalog as RsyncUI. Default catalog for storing files is:
+This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing configuration files is:
 
 ```bash
 $HOME/.rsyncosx/macserialnumber/
@@ -105,10 +103,6 @@ Why is [RsyncUI based on SwiftUI?](/post/development). There is some more [infor
 ## Compile
 
 And there is some info about [how to compile RsyncUI](/post/compile/).
-
-## Sandboxed version
-
-Later in 2021 there will be released [a sandboxed version of RsyncUI](/post/sandboxversion/).
 
 ## Config files
 
