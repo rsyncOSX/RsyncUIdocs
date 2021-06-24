@@ -23,10 +23,6 @@ RsyncUI saves data on permanent store as files with JSON data. JSON is the prefe
 
 Some settings within RsyncUI can be changed by the user. The settings are read by RsyncUI ahead of loading the data. All usersettings are stored within a [singelton object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Global/SharedReference.swift) which stays alive during the lifetime of RsyncUI. This is the one and only singelton object.
 
-## The UI
-
-Each view is small. By hiding most of the logic within the UI in computed properties, functions and closures, the structure of the UI is easy to follow. See sample of [code snippet for the add view](/post/codesnippetview/).
-
 ## Reading data
 
 Configurations, logs and scedules are read from permanent store into an `ObservableObject` [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift). The data is read only and made available for the various views as a `@EnvironmentObject`. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded.
