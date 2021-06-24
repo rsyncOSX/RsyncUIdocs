@@ -29,7 +29,7 @@ This section is about using RsyncUI. RsyncUI can be used in **parallel with Rsyn
 $HOME/.rsyncosx/macserialnumber/
 ```
 
-RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps. It is advised using version 6.6.0 of RsyncOSX in parallel with RsyncUI.
+RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps. It is advised using version 6.6.2 of RsyncOSX in parallel with RsyncUI.
 
 ## The main menu
 
