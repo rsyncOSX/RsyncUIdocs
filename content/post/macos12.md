@@ -10,13 +10,7 @@ toc = true
 +++
 Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI and macOS 12. Some of the new features in SwiftUI are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated in RsyncUI. The major part of the new features in SwiftUI require macOS 12. Next major update of RsyncUI will be built for macOS 12 only.
 
-There will be released a version 1.1.2 with some minor updates on macOS 11 later in June 2021. This update also includes upgrade utilizing the App protocol.
-
 And there are a few significant changes in SwiftUI and macOS 12 which makes RsyncUI a more user friendly application. The downside is there will be no release until the final version of Xcode 13 and macOS 12 is here.
-
-## The App protocol
-
-The released version 1.1.1 of RsyncUI is utilizing the AppDelegate protocol to kick of the application, which is how a Swift and Storyboard macOS apps are starting up. The default start for a SwiftUI application is by the [App protocol](https://developer.apple.com/documentation/swiftui/app-structure-and-behavior). This is now changed in code. Some features in SwiftUI require the App protocol.
 
 ## The @FocusState property
 
@@ -64,7 +58,7 @@ This property and modifier is utilized to trigger estimation and execution of ta
 
 ## Colours and some other settings
 
-The buttons and menus apply to colour settings within the macOS General settings as well as the icon size sidebar menu. The help menu is linked to default help shortcut and likewise for the settings. 
+The buttons and menus apply to colour settings within the macOS General settings as well as the icon size sidebar menu. The help menu is linked to default help shortcut and likewise for the settings.
 
 ![](/images/macos12/adaptive.png)
 ![](/images/macos12/adaptive2.png)
