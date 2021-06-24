@@ -84,7 +84,7 @@ Rsync can also [verify the synchronized data](/post/verify/).
 
 ## Logfile
 
-The `⌘L` shortcut brings up any logging to file. Sometimes `rsync` produces error and output are saved to the logfile for viewing and possible corrections of the task. If `rsync` produces an error RsyncUI will inform about that.
+The `⌘O` shortcut brings up any logging to file. Sometimes `rsync` produces error and output are saved to the logfile for viewing and possible corrections of the task. If `rsync` produces an error RsyncUI will inform about that.
 
 ---
 
