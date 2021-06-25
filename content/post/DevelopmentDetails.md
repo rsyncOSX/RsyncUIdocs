@@ -43,7 +43,7 @@ The closures takes care of whatever action they are set to do any time the notif
 
 ## Combine
 
-Combine enables a very good control of asynchronous operations and flow of data. Combine is also used as part of the SwiftUI framework. As an example everytime a SwiftUI `<Binding>` is changed, the UI is updated. And SwiftUI does a lot of UI updates. But SwiftUI components are structs and updates on the UI is very efficient.
+Combine enables a very good control of asynchronous operations and flow of data. Combine is also used as part of the SwiftUI framework. As an example everytime a SwiftUI `<Binding>` is changed, the UI is updated. And SwiftUI does a lot of UI updates.
 
 The following are parts where Combine is used in RsyncUI:
 
@@ -60,6 +60,6 @@ The following are parts where Combine is used in RsyncUI:
 
 ## Speed
 
-SwiftUI refreshes the view every time there is a change on a `<Binding>`. And there are also several other happenings which causes a refresh of the view. If there are, within the view, properties which are computed it might become an issue. There can be several hundred log records each task. If sorting and filtering of logs are computed properties within a view it can become an speed issue aka *spinning beach ball*. Therefore are all sorting and filtering of logs computed within the [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift) object and the result is set to the `<Binding>` value after the sort or filtering is completed.
+SwiftUI refreshes the view every time there is a change on a `<Binding>`. And there are also several other happenings which causes a refresh of the view. There can be several hundred log records each task. If sorting and filtering of logs are computed properties within a view it can become an speed issue aka *spinning beach ball*. Therefore are all sorting and filtering of logs computed within the [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift) object and the result is set to the `<Binding>` value after the sort or filtering is completed.
 
 The above also apply to the restore function. Getting the remote filenames of synchcronized data might be huge, several hundred thousand or millions of lines. It is after the completion of getting filenames and filtering, the result is set to a `<Binding>` value which causes a refresh.
