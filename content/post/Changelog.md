@@ -11,7 +11,7 @@ There are a few significant changes in the updated SwiftUI 3 and macOS 12, pleas
 
 ## Version 1.1.2(build 28)
 
-There is 29 June 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. This version is a **prerelease** of RsyncUI on macOS Monterey. The finale release is for macOS Monterey due to significant changes in SwiftUI. There is some details about [RsyncUI on macOS Monterey here](/post/macos12/). The prerelase is working, but there are a few missing parts compared to RsyncUI for macOS Monterey.
+There is 29 June 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. This version is built for **macOS Big Sur** and it is a **prerelease** for RsyncUI on macOS Monterey. The finale release is for macOS Monterey due to significant changes in SwiftUI. There is some details about [RsyncUI on macOS Monterey here](/post/macos12/). The prerelase is working, but there are a few missing parts compared to RsyncUI for macOS Monterey.
 
 At start select, from the drop down, either the "Default profile" or other profile if used.
 
