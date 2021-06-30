@@ -20,6 +20,8 @@ At start select, from the drop down, either the "Default profile" or other profi
 - several internal changes
 - RsyncUI adapts to some changes in macOS settings, see link about [RsyncUI on macOS Monterey](/post/macos12/)
 
+The localization of RsyncUI is somewhat refactored. For the moment RsyncUI is localized to German and Norwegian, and there are a few strings missing in the release candidate. See more info about localization in [RsyncUI on macOS Monterey](/post/macos12/).
+
 ## Version 1.1.1(build 27)
 
 **Update 17 June 2021**. The builds are removed for the moment.

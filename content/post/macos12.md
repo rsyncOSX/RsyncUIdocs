@@ -62,3 +62,23 @@ The buttons and menus apply to colour settings within the macOS General settings
 
 ![](/images/macos12/adaptive.png)
 ![](/images/macos12/adaptive2.png)
+
+## Localization
+
+Xcode 13 is really good at extracting strings from code for localization. In RsyncUI localization is done by the following. The `EditValue` is a simple modifyer for a `TextField`.
+
+- all strings which require localizations is within one file, as an example [see the German string](https://github.com/rsyncOSX/RsyncUI/blob/main/de.lproj/Localizable.strings)
+- strings used like a sample value for a `TextField` is wrapped inside a `NSLocalizedString`
+- all strings connected to like a Button or Text is extracted and automatically translated by Xcode
+```swift
+// String is wrapped inside a NSLocalizedString
+EditValue(150, NSLocalizedString("New profile", comment: ""),
+                      $newdata.newprofile)
+                .focused($focusField, equals: .newprofileField)
+                .textContentType(.none)
+                .submitLabel(.return)
+// String is extracted by Xcode for localization
+Button("Create") { createprofile() }
+    .buttonStyle(PrimaryButtonStyle())
+```
+All strings to be translated is looked up by Xcode within the `Localizable.strings` file. Services like Crowdin is great for the actual translation process. Export strings for translation by Xcode, import to Crowdin and after translation import in Xcode.
