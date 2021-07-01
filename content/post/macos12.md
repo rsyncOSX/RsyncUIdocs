@@ -12,6 +12,8 @@ Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI 3 and macOS 12
 
 And there are a few significant changes in SwiftUI and macOS 12 which makes RsyncUI a more user friendly application. The downside is there will be no release until the final version of Xcode 13 and macOS 12 is here.
 
+There is **not yet** a build for macOS Monterey. Prereleases of RsyncUI on macOS Monterey will be build when Apple releases public betas of macOS Monterey. The main repository at GitHuB for RsyncUI is updated with latest changes for Xcode 13 and macOS Monterey.
+
 ## The @FocusState property
 
 The property enables a detailed guide and possibilities depended upon the flow of input and the value of the input. There are in the Configurations form three possibilities for actions depended upon the value of the input and where the focus is. And there is actual no need for neither the tab and the Add button. Both the tab and Add button is there, but there is no need to use them.
