@@ -8,7 +8,7 @@ description = "Some info about what is new in RsyncUI on macOS 12"
 lastmod = "2021-06-15"
 toc = true
 +++
-Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI and macOS 12. Some of the new features in SwiftUI are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated in RsyncUI. The major part of the new features in SwiftUI require macOS 12. Next major update of RsyncUI will be built for macOS 12 only.
+Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI 3 and macOS 12. Some of the new features in SwiftUI are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated in RsyncUI. The major part of the new features in SwiftUI require macOS 12. Next major update of RsyncUI will be built for macOS 12 only.
 
 And there are a few significant changes in SwiftUI and macOS 12 which makes RsyncUI a more user friendly application. The downside is there will be no release until the final version of Xcode 13 and macOS 12 is here.
 
@@ -46,7 +46,7 @@ The `searchable` modifier utilizes a standard method for filter data. The modifi
 
 ## Settings
 
-The settings is now available from the menu bar only.
+The settings is now available from the menu bar only or by the default `⌘,` shortcut for settings.
 
 ![](/images/macos12/settings.png)
 
