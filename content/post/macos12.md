@@ -69,7 +69,7 @@ The buttons and menus apply to colour settings within the macOS General settings
 
 Xcode 13 is really good at extracting strings from code for localization. In RsyncUI localization is done by the following. The `EditValue` is a simple modifier for a `TextField`. And there are several methods for localization., please see the Apple documentation for more info.
 
-- all strings which require localizations is within one file, as an example [see the German Localizable.strings](https://github.com/rsyncOSX/RsyncUI/blob/main/de.lproj/Localizable.strings)
+- all strings which require localizations is within one file, as an example [see the German Localizable.strings](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/de.lproj/Localizable.strings)
 - strings used like a sample text for a `TextField` is wrapped inside a `NSLocalizedString`
 - all strings connected to like a Button or Text is extracted and automatically translated by Xcode
 ```swift
