@@ -8,19 +8,17 @@ description = "Some info about what is new in RsyncUI on macOS 12"
 lastmod = "2021-06-15"
 toc = true
 +++
-Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI 3 and macOS 12. Some of the new features in SwiftUI are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated in RsyncUI. The major part of the new features in SwiftUI require macOS 12. Next major update of RsyncUI will be built for macOS 12 only.
-
-And there are a few significant changes in SwiftUI and macOS 12 which makes RsyncUI a more user friendly application. The downside is there will be no release until the final version of Xcode 13 and macOS 12 is here.
-
-There is **not yet** a build for macOS Monterey. Prereleases of RsyncUI on macOS Monterey will be build when Apple releases public betas of macOS Monterey. The main repository at GitHuB for RsyncUI is updated with latest changes for Xcode 13 and macOS Monterey.
+Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI 3 and macOS Monterey (macOS 12). Some of the new features in SwiftUI 3 are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated. The major part of the new stuff require macOS Monterey. The new stuff in SwiftUI 3 and macOS Monterey makes RsyncUI a more user friendly application. Prereleases of RsyncUI on macOS Monterey will be build when Apple releases public betas of macOS Monterey. The main repository at GitHuB for RsyncUI is updated with latest changes for Xcode 13 and macOS Monterey.
 
 ## The @FocusState property
 
-The property enables a detailed guide and possibilities depended upon the flow of input and the value of the input. There are in the Configurations form three possibilities for actions depended upon the value of the input and where the focus is. And there is actual no need for neither the tab and the Add button. Both the tab and Add button is there, but there is no need to use them.
+The property toghether with the Combine framework makes it possible to ease and valdidate the input added by the user. There are in the Configurations form three possibilities for actions depended upon the value of the input and the focus. And there is actual no need for neither the tab for advance to next field and the Add button for adding data. The buttons are there, but there is no need to use them.
+
+The following is use of the property within the Configurations form.
 
 ### The profile field
 
-Adding data to the profile field will automatically **create a new profile** when the user press **the Enter key for submitting** the name of the profile. The new profile is automatically selected.
+Adding data to the profile field will automatically **create** a new profile when the user press **the Enter key** for submitting the name of the profile. The new profile is automatically selected.
 
 ### Configurations
 
@@ -69,7 +67,7 @@ The buttons and menus apply to colour settings within the macOS General settings
 
 Xcode 13 is really good at extracting strings from code for localization. In RsyncUI localization is done by the following. The `EditValue` is a simple modifier for a `TextField`. And there are several methods for localization., please see the Apple documentation for more info.
 
-- all strings which require localizations is within one file, as an example [see the German Localizable.strings](https://github.com/rsyncOSX/RsyncUI/blob/main/de.lproj/Localizable.strings)
+- all strings which require localizations is within one file, as an example [see the German Localizable.strings](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/de.lproj/Localizable.strings)
 - strings used like a sample text for a `TextField` is wrapped inside a `NSLocalizedString`
 - all strings connected to like a Button or Text is extracted and automatically translated by Xcode
 ```swift
