@@ -8,19 +8,17 @@ description = "Some info about what is new in RsyncUI on macOS 12"
 lastmod = "2021-06-15"
 toc = true
 +++
-Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI 3 and macOS Monterey (macOS 12). Some of the new features in SwiftUI 3 are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated. The major part of the new features in SwiftUI 3 require macOS Monterey. Next major update of RsyncUI will be built for macOS Monterey only.
-
-And there are a few significant changes in SwiftUI 3 and macOS Monterey which makes RsyncUI a more user friendly application. There is **not yet** a build for macOS Monterey. Prereleases of RsyncUI on macOS Monterey will be build when Apple releases public betas of macOS Monterey. The main repository at GitHuB for RsyncUI is updated with latest changes for Xcode 13 and macOS Monterey.
+Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI 3 and macOS Monterey (macOS 12). Some of the new features in SwiftUI 3 are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated. The major part of the new stuff require macOS Monterey. The new stuff in SwiftUI 3 and macOS Monterey makes RsyncUI a more user friendly application. Prereleases of RsyncUI on macOS Monterey will be build when Apple releases public betas of macOS Monterey. The main repository at GitHuB for RsyncUI is updated with latest changes for Xcode 13 and macOS Monterey.
 
 ## The @FocusState property
 
-The property enables a detailed guide and possibilities depended upon the flow and the value of the input. There are in the Configurations form three possibilities for actions depended upon the value of the input and the focus. And there is actual no need for neither the tab and the Add button. Both buttons are there, but there is no need to use them.
+The property toghether with the Combine framework makes it possible to ease and valdidate the input added by the user. There are in the Configurations form three possibilities for actions depended upon the value of the input and the focus. And there is actual no need for neither the tab for advance to next field and the Add button for adding data. The buttons are there, but there is no need to use them.
 
 The following is use of the property within the Configurations form.
 
 ### The profile field
 
-Adding data to the profile field will automatically **create a new profile** when the user press **the Enter key for submitting** the name of the profile. The new profile is automatically selected.
+Adding data to the profile field will automatically **create** a new profile when the user press **the Enter key** for submitting the name of the profile. The new profile is automatically selected.
 
 ### Configurations
 
