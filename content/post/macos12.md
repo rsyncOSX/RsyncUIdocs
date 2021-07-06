@@ -39,7 +39,7 @@ And it is likewise for the pre- and post shell scripts. There is **no need** to 
 
 ## The searchable modifier
 
-The `searchable` modifier utilizes a standard method for filter data. The modifier is utilized in configuration listings and log listings.
+The `searchable` modifier utilizes a standard method for filter data. The modifier is utilized for filter in **configuration listings**, **log listings** and  **restore files**.
 
 ![](/images/macos12/search1.png)
 ![](/images/macos12/search2.png)
