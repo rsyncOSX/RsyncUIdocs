@@ -9,6 +9,8 @@ lastmod = "2021-05-06"
 +++
 There are a few significant changes in the updated SwiftUI 3 and macOS 12, please see more info about [changes in RsyncUI on macOS 12](/post/macos12/).
 
+The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
+
 ## Version 1.1.2(build 28)
 
 There is 29 June 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. There are two builds, one for macOS Big Sur and one for macOS Monterey.
