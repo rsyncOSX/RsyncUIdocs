@@ -23,6 +23,7 @@ The macOS Monterey version includes enhancements only available for macOS Monter
   - in both views select the execute button executes the task(s) in one go
   - or estimate, view estimate and then execute
 - the schedules view is changed as well
+- the log views and filter logs are updated, both all logs and by configuration
 - and some internal stuff refactored
 
 The QA and cleanup of UI continues on the road to release on macOS Monterey.
