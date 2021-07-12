@@ -13,7 +13,9 @@ The builds are considered as beta versions even if version number is greater tha
 
 ## Version 1.1.2(build 29)
 
-There is 10 July 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. There are two builds, one for macOS Big Sur and one for macOS Monterey.
+**Caution**: the schedules part, adding schedules, needs more QA and work. There are som issues to solve, and the UI is not yet completed.
+
+There is 11 July 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. There are two builds, one for macOS Big Sur and one for macOS Monterey.
 
 At start of the macOS Big Sur version select, from the drop down, either the "Default profile" or other profile if used. This is **not** required on RsyncUI on macOS Monterey. RsyncUI on macOS Monterey picks the default profile when selecting a task.
 
@@ -23,6 +25,7 @@ The macOS Monterey version includes enhancements only available for macOS Monter
   - in both views select the execute button executes the task(s) in one go
   - or estimate, view estimate and then execute
 - the schedules view is changed as well
+  - it is required some more QA on the schedules
 - the log views and filter logs are updated, both all logs and by configuration
 - and some internal stuff refactored
 
