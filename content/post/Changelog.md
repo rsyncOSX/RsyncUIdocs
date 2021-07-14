@@ -11,11 +11,13 @@ There are a few significant changes in the updated SwiftUI 3 and macOS 12, pleas
 
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
-## Version 1.1.2(build 29)
+## Version 1.1.2(build 31) - updated 14 July 2021
 
-**Caution**: the schedules part, adding schedules, needs more QA and work. There are som issues to solve, and the UI is not yet completed.
+The schedules part, adding schedules, is updated in this build.
 
-There is 11 July 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. There are two builds, one for macOS Big Sur and one for macOS Monterey.
+There is still some issues with localization, builds are English only.
+
+There is 14 July 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. There are two builds, one for macOS Big Sur and one for macOS Monterey.
 
 At start of the macOS Big Sur version select, from the drop down, either the "Default profile" or other profile if used. This is **not** required on RsyncUI on macOS Monterey. RsyncUI on macOS Monterey picks the default profile when selecting a task.
 
