@@ -7,23 +7,23 @@ tags = ["multiple task","delete tasks"]
 description = "Execute multiple tasks."
 lastmod = "2021-03-10"
 +++
-The multiple tasks view will probably be the most used view after adding the tasks. Select the `Estimate` button and let RsyncUI find all tasks with data to be synchcronized. After estimating select `Execute` for the actual synchronize of data for tasks with new data.
+The multiple tasks view will probably be the most used view after adding the tasks. Select the `Execute` button and let RsyncUI find all tasks with data to be synchcronized.  To delete one or more task, select and `Delete`.
 
-You can also select one or more task, or just execute all tasks by the `All` button.
+Estimate and execute might be triggered by shortcuts when view is opened:
 
-To delete one or more task, select and `Delete`.
+- `Estimate` - shortcut `⌘E`
+- `Execute` - shortcut `⌘R`
 
 ![](/images/multipletasks/multipletasks.png)
 
 The following actions are possible within this view:
 
-- `All` - execute all tasks, no estimation just execute all tasks
-- `Select` - select tasks for either estimate and execute, or just execute
-- `Estimate` - estimate all tasks, select tasks with data for synchronizing
-- `Execute` - execute selected and estimated tasks
+- `Estimate` - only estimate all tasks, view result after estimate is completed
+- `Execute` - first it estimates all tasks and then automatically executes all tasks with data to synchronize
 
 The buttons to right:
 
-- `View` - after estimaten, view result
+- `View` - after a estimate run, view result
+- `Select` - select tasks for either estimate and execute, or delete
 - `Delete` - select a task for delete
 - `Abort` - abort the ongoing task

@@ -37,16 +37,20 @@ There are two parameters to set for ssh. The local ssh parameters overrides glob
 
 Rsync utilizes a ton of parameters. Parameters are normally constructed as:
 
-- --parameter=value
-	- `--exclude-from=/Volumes/home/user/exclude-list.txt`
-- --parameter
-	- `--stats`, `--dry-run`
-
+- parameter=value
+```bash
+--exclude-from=/Volumes/home/user/exclude-list.txt
+```
+- parameter only
+```bash
+--stats
+```
+```bash
+--dry-run
+```
 For a full list of parameters to rsync please see the [rsync docs](https://download.samba.org/pub/rsync/rsync.html).
 
 ![](/images/rsyncparameters/parameters.png)
-![](/images/rsyncparameters/parameters2.png)
-![](/images/rsyncparameters/parameters3.png)
 
 ### Backup parameters
 

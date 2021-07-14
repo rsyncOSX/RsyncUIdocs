@@ -16,14 +16,12 @@ If you **don´t** see any configurations in RsyncUI, RsyncOSX is not setup to us
 
 Start RsyncUI, select the **correct profile** or use **default**, select Settings and the Paths tab.
 
-In the Paths tab select the PLIST button:
+From the tasks menu select the Plist action:
 
-![](/images/plist/plist1.png)
+![](/images/plist/plist.png)
 
 If there is JSON files, RsyncUI will inform about it. To continue select the Confirm switch. If there are no JSON files, the Alert will not be presented.
 
-![](/images/plist/plist2.png)
+![](/images/plist/jsonexists.png)
 
 To continue, do a backup of existing configurations. Choose convert and that is it.
-
-![](/images/plist/plist3.png)

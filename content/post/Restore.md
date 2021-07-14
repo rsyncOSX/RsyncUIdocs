@@ -13,11 +13,9 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 
 First of all select from which configuration to restore from. After selection RsyncUI automatically collects filenames of all synchronized files. The list might be huge and it is adviced to filter data before viewing retrieved filelist if there are several hundred thousand of lines.  
 
-![](/images/restore/restore1.png)
+![](/images/restore/restore.png)
 
 A filter will narrow down the filelist to only filenames including the filter.
-
-![](/images/restore/restore2.png)
 
 ### Files to restore
 
@@ -28,14 +26,4 @@ There are two types of restore, either a full restore or by file. If a restore i
 
 Select the View button and select a file or folder to restore. Behind the scenes rsync is used for collecting the synchronized list of files.
 
-![](/images/restore/restore3.png)
-
 Select the file or folder and the name is automatically set as file to restore. Default restore is a `--dry-run` action. Before executing the real restore view the result from the `--dry-run` action.
-
-![](/images/restore/restore4.png)
-
-### Result of restore
-
-And the result after restore.
-
-![](/images/restore/restore5.png)

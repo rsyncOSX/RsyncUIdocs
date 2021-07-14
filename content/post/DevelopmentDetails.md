@@ -6,6 +6,7 @@ tags = ["SwiftUI"]
 # categories = ["SwiftUI"]
 description = "How is RsyncUI developed?"
 lastmod = "2021-03-12"
+toc = true
 +++
 RsyncUI is developed in compliance to the Model View Controller (MVC) architecture. Any operations on the data is within the model part. The modelpart is mostly traditional **imperativ** Swift development, with classes and structs. The model classes does also utilize the Combine framework. See the Combine part below for more details. The UI part (view) is **declarative** SwiftUI development, with structs only. The UI is clearly separated from the model. Another important part of SwiftUI is the [single source of truth](https://developer.apple.com/documentation/swiftui/managing-user-interface-state).
 
@@ -63,3 +64,7 @@ The following are parts where Combine is used in RsyncUI:
 SwiftUI refreshes the view every time there is a change on a `<Binding>`. And there are also several other happenings which causes a refresh of the view. There can be several hundred log records each task. If sorting and filtering of logs are computed properties within a view it can become an speed issue aka *spinning beach ball*. Therefore are all sorting and filtering of logs computed within the [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift) object and the result is set to the `<Binding>` value after the sort or filtering is completed.
 
 The above also apply to the restore function. Getting the remote filenames of synchcronized data might be huge, several hundred thousand or millions of lines. It is after the completion of getting filenames and filtering, the result is set to a `<Binding>` value which causes a refresh.
+
+## MacOS Monterey
+
+There are also some details about [RsyncUI on MacOS Monterey](/post/macos12/).

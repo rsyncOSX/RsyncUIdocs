@@ -26,8 +26,7 @@ There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube a
 - [Dave Werver´s iOS Dev Weekly](https://iosdevweekly.com/)
 - [Apple tutorials about developing in SwiftUI](https://developer.apple.com/tutorials/app-dev-training)
 
-There are also several resources available for the Combine framework. I will like to point the following resources:
+There are also several resources available for the Combine framework. I will like to point the following resources on Combine:
 
 - [Matt Neuburg´s Understanding Combine,](https://www.apeth.com/UnderstandingCombine/)
 - [Joseph Heck´s Using Combine](https://heckj.github.io/swiftui-notes/)
-- [PhysicsNerd´s  YouTube SwiftUI channel](https://www.youtube.com/c/PhysicsNerdDev/featured)
