@@ -12,7 +12,7 @@ This function are for **existing users of RsyncOSX** who wants start using Rsync
 - sample JSON data for [configurations](https://raw.githubusercontent.com/rsyncOSX/RsyncUI/main/samplejsondata/configurations.json)
 - sample JSON data for [schedules](https://raw.githubusercontent.com/rsyncOSX/RsyncUI/main/samplejsondata/schedules.json)
 
-If you dont see any configurations in RsyncUI, RsyncOSX is not setup to use JSON files. This will convert existing PLIST configurations and logs to JSON files which RsyncUI can read.
+If you **don´t** see any configurations in RsyncUI, RsyncOSX is not setup to use JSON files. This will convert existing PLIST configurations and logs to JSON files which RsyncUI can read.
 
 Start RsyncUI, select the **correct profile** or use **default**, select Settings and the Paths tab.
 
