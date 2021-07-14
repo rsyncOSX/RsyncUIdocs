@@ -25,8 +25,4 @@ The stack is a reference only to a configuration (by a hidden key). The user can
 
 The [menu app](/post/menuapp/) should be started from RsyncUI.
 
-The yellow flag in column Sched indicates there are active scheduled tasks. The flag is either yellow or green. Green is next task within one hour.
-
 Remember, only the menu app which executes scheduled tasks. Select the calendar icon to start the menu app and automaticall close RsyncUI.
-
-![](/images/schedules/schedules.png)

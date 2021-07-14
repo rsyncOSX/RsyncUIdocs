@@ -27,3 +27,10 @@ The buttons to right:
 - `Select` - select tasks for either estimate and execute, or delete
 - `Delete` - select a task for delete
 - `Abort` - abort the ongoing task
+
+## Logs
+
+Every time executing a synchronized tasks adds a log record. Either view all logs or logs by configuration.
+
+![](/images/logs/all.png)
+![](/images/logs/byconfig.png)
