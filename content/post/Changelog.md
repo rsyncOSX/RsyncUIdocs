@@ -11,9 +11,9 @@ There are a few significant changes in the updated SwiftUI 3 and macOS 12, pleas
 
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
-## Version 1.1.2(build 31) - updated 14 July 2021
+## Version 1.1.2(build 31) - updated 15 July 2021
 
-The schedules part, adding schedules, is updated in this build.
+New build for MacOS Monterey beta 3 by Xcode 13 beta 3 (released 14 June 2021), previous build does not work.
 
 There is still some issues with localization, builds are English only.
 
