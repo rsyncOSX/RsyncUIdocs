@@ -7,7 +7,11 @@ tags = ["usersettings"]
 # categories = ["general information"]
 lastmod = "2021-03-11"
 +++
-This view includes the most normal settings to tweak.
+You can any time save the current configuration files by the `Backup` button. The backup button executes a copy of all configuration files into your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`.
+```bash
+$HOME/Documents/RsyncUIcopy-05-06-2021/08/21
+```
+**Caution**: when opening the catalog it might be seen as empty. The copy is a `.catalog` and your filebrowser might not see such catalogs.
 
 ![](/images/usersettings/settings.png)
 
@@ -32,7 +36,7 @@ There is three choices for logging, none, min and full and they are mutually exc
 - min - last 10 lines of output is logged
 - full - everything is logged
 
-The log file can be inspected by `⌘L` shortcut or bu the File menu. The log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`.
+The log file can be inspected by `⌘O` shortcut or by the File menu. The log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`.
 
 ## Level log
 

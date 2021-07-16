@@ -11,12 +11,6 @@ There are a few settings to be tweaked. Settings are saved to permanent store. T
 
 Usersettings might be opened by the default `⌘,` shortcut for settings.
 
-You can any time save the current configuration files by the `Backup` button. The backup button executes a copy of all configuration files into your Documents catalog and postfixes the copy with a timestamp (`-month-day-year/hour/minute`).
-```bash
-$HOME/Documents/RsyncUIcopy-05-06-2021/08/21
-```
-**Caution**: when opening the catalog it might be seen as empty. The copy is a `.catalog` and your filebrowser might not see such catalogs.
-
 - [Rsync](/post/normalsettings/) - rsync and other settings
 - [Ssh](/post/sshsettings) - SSH settings
 - [Paths](/post/pathsettings/) - path to applications and environment
