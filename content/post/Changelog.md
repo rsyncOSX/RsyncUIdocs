@@ -11,18 +11,14 @@ There are a few significant changes in the updated SwiftUI 3 and macOS 12, pleas
 
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
-## Version 1.1.2(build 31) - updated 15 July 2021
+## Version 1.1.2(build 32) - updated 20 July 2021
 
-New build for MacOS Monterey beta 3 by Xcode 13 beta 3 (released 14 June 2021), previous build does not work.
+New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of MacOS Monterey, build by Xcode 13 beta 3. There is still some issues with localization, builds are English only.
 
-There is still some issues with localization, builds are English only.
-
-There is 14 July 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. There are two builds, one for macOS Big Sur and one for macOS Monterey.
-
-At start of the macOS Big Sur version select, from the drop down, either the "Default profile" or other profile if used. This is **not** required on RsyncUI on macOS Monterey. RsyncUI on macOS Monterey picks the default profile when selecting a task.
+The build for macOS Big Sur is **removed**, there are many changes in Xcode 13, SwiftUI 3 and macOS Monterey compared to current official releases from Apple
 
 The macOS Monterey version includes enhancements only available for macOS Monterey.
-
+- the buttons and togge buttons are changed
 - the multiple tasks and single tasks view buttons for estimate and execute are "cleaned up"
   - in both views select the execute button executes the task(s) in one go
   - or estimate, view estimate and then execute
