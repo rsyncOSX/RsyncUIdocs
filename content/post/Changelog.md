@@ -17,7 +17,6 @@ New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of Mac
 
 The build for macOS Big Sur is **removed**, there are many changes in Xcode 13, SwiftUI 3 and macOS Monterey compared to current official releases from Apple
 
-The macOS Monterey version includes enhancements only available for macOS Monterey.
 - the buttons and togge buttons are changed
 - the multiple tasks and single tasks view buttons for estimate and execute are "cleaned up"
   - in both views select the execute button executes the task(s) in one go
