@@ -11,7 +11,7 @@ There are a few significant changes in the updated SwiftUI 3 and macOS 12, pleas
 
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
-## Version 1.1.2(build 32) - updated 20 July 2021
+## Version 1.1.2(build 33) - updated 25 July 2021
 
 New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of MacOS Monterey, build by Xcode 13 beta 3. There is still some issues with localization, builds are English only.
 
@@ -25,6 +25,7 @@ The build for macOS Big Sur is **removed**, there are many changes in Xcode 13, 
   - it is required some more QA on the schedules
 - the log views and filter logs are updated, both all logs and by configuration
 - and some internal stuff refactored
+- one minor bugfix
 
 The QA and cleanup of UI continues on the road to release on macOS Monterey.
 
