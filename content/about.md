@@ -13,9 +13,9 @@ After some carefull thinking I decided stay on on the Apple development plattfor
 
 Learning is very important for me. Learning is important to keep your mind sharp. I have a masters degree in computing science, but I am **not a professional developer**. I did my master degree in the days when Linux was released in 1991 and Internet became a public service. And a few years ahead of that, in 1989, the Web was invented at Cern.   
 
-For the moment I am a senior advicer at a university. I will, early in 2022 at the age of 62, retire from work. I am also so lucky to be a granddad. I am also of the opinion of to have a hobby which require learning new stuff is very important after retirement.
+For the moment I am a senior advicer at a university. I will, early in 2022 at the age of 62, retire from work. I am also so lucky to be a granddad. I am also of the opinion of to have a hobby which require learning is important after retirement.
 
-RsyncOSX and RsyncUI is not a professional software. There is only one developer, me, and I am doing what I can to keep RsyncUI as stable and userfriendly as possible. I am not a UI designer and some user might find the UI of RsyncUI complicated and less userfriendly.
+RsyncOSX and RsyncUI is not a professional software. There is only one developer, me, and I am doing what I can to keep the applications as stable and userfriendly as possible. I am not a UI designer and some user might find the UI complicated and less userfriendly.
 
 The development of RsyncOSX and RsyncUI will continue to be one of my prioritized hobbies. A long as there are users of it I will continue developing.  If you like using RsyncOSX or RsyncUI please consider giving me a star on the GitHub repository. Every single star is a motivation for me to continue developing and keep the apps updated for the latest version of macOS.
 
