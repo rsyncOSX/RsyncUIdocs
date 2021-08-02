@@ -7,13 +7,15 @@ tags = ["RsyncUI"]
 # categories = ["changelog"]
 lastmod = "2021-05-06"
 +++
-There are a few significant changes in the updated SwiftUI 3 and macOS 12, please see more info about [changes in RsyncUI on macOS 12](/post/macos12/).
-
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
+
+There are a few significant changes in the updated SwiftUI 3 and macOS 12, please see more info about [changes in RsyncUI on macOS 12](/post/macos12/).
 
 ## Version 1.1.2(build 34) - updated 30 July 2021
 
 New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of MacOS Monterey, build by **Xcode 13 beta 4**, builds are English only.
+
+The QA and cleanup of UI continues on the road to release on macOS Monterey. RsyncUI is **stable** and there are not any known issues. The following is changed compared to previous builds.
 
 - the buttons and toggle buttons are changed
 - the multiple tasks and single tasks view buttons for estimate and execute are "cleaned up"
@@ -22,10 +24,8 @@ New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of Mac
 - the schedules view is changed as well
   - it is required some more QA on the schedules
 - the log views and filter logs are updated, both all logs and by configuration
-- and some internal stuff refactored
+- and some internal stuff is refactored
 - one minor bugfix
-
-The QA and cleanup of UI continues on the road to release on macOS Monterey.
 
 ## Version 1.1.2(build 28)
 
