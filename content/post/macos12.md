@@ -58,7 +58,7 @@ This property and modifier is utilized to trigger estimation and execution of ta
 
 ## The .swipeActions function
 
-The latest beta of SwiftUI also make it easy to attach actions to a row in a list and emphasize the role of the buttons. The following are in the releaed version, but there are **not yet** connected an actions to the buttons.
+The latest beta of SwiftUI also makes it easy to attach actions to a row in a list and emphasize the role of the button. The following are in the released version, but there are **not yet** connected an actions to the buttons.
 
 ![](/images/macos12/slidedelete.png)
 ![](/images/macos12/slideexecute.png)
