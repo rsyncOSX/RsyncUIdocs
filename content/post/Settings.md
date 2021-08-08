@@ -11,7 +11,7 @@ There are a few settings to be tweaked. Settings are saved to permanent store. T
 
 Usersettings might be opened by the default `⌘,` shortcut for settings.
 
-- [Rsync](/post/normalsettings/) - rsync and other settings
+- [Settings](/post/normalsettings/) - rsync and other settings
 - [Ssh](/post/sshsettings) - SSH settings
 - [Paths](/post/pathsettings/) - path to applications and environment
 

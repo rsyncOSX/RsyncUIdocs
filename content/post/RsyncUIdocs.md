@@ -13,27 +13,28 @@ There is a [changelog](/post/changelog/), please check it before commencing the 
 
 - RsyncUI and RsyncSchedule are built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
-  - macOS Monterey is for the moment released as a beta
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
 # Development
 
-The target for RsyncUI is **macOS Monterey**. But there will also be a couple of prerelease builds on macOS Big Sur. The UI need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. There is some info about [RsyncUI on macOS Monterey](/post/macos12/).
+The target for RsyncUI is **macOS Monterey**. But there will also be a couple of prerelease builds on macOS Big Sur. The UI need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot.
+
+There is more info about [the development](/post/development/) of RsyncUI.
 
 # Using RsyncUI
 
-This section is about using RsyncUI. RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing configuration files is:
+RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing configuration files is:
 
 ```bash
 $HOME/.rsyncosx/macserialnumber/
 ```
 
-RsyncUI and RsyncOSX **does not** share the user settings, e.g like  enabling version 3.x of rsync has to be set in both apps. It is advised using version 6.6.2 of RsyncOSX in parallel with RsyncUI.
+RsyncUI and RsyncOSX **does not** share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
 
 ## The main menu
 
-This is the default view when starting the app. RsyncUI can store configurations in profiles. Select a profile at any time and the app reloads the data. If you are new til RsyncUI, please start with select the `Configurations` task [to add a configuration](/post/addconfigurations/).
+This is the default view when starting the app. RsyncUI can store configurations in profiles. If you are new til RsyncUI, please start with select the `Configurations` task to [add a configuration](/post/addconfigurations/).
 
 ![](/images/start/start.png)
 
@@ -41,14 +42,14 @@ This is the default view when starting the app. RsyncUI can store configurations
 
 Utilizing RsyncUI to synchronize files to remote servers requires setup of remote connection as [passwordless logins](/post/remotelogins/). There are two options for setup. The advised setup is by utilizing ssh-keys.
 
-- [setup by ssh-keys](/post/ssh/)
-- [rsync daemon setup](/post/rsyncdaemon/)
+- [by ssh-keys](/post/ssh/)
+- [by rsync daemon setup](/post/rsyncdaemon/)
 
 Snapshot is **not** possible with rsync daemon setup.
 
 ## How to add and update configurations
 
-It is easy to [add a configuration](/post/addconfigurations/) and execute your first synchronize task.
+It is easy to [add and update configurations](/post/addconfigurations/).
 
 ## RsyncUI settings
 
@@ -94,7 +95,7 @@ This section is some technical details about RsyncUI.
 
 ## The development of RsyncUI
 
-Why is [RsyncUI based on SwiftUI?](/post/development). There is some more [information about the development](/post/developmentdetails/).
+Why is [RsyncUI based on SwiftUI?](/post/development).
 
 ## Compile
 

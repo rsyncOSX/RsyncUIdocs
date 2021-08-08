@@ -9,8 +9,6 @@ lastmod = "2021-03-25"
 +++
 A configuration require minimum a **local catalog** and a **remote catalog**. After entering information about a configuration select the `Add` button to add it to RsyncUI. Continue adding new configurations until completed and configurations are saved to permanent storage after each entry. Select local catalog either by drag and drop or by enter text directly. For remote catalogs only drag and drop for local attached volumes. For remote server catalogs enter by text only.
 
-New features in Add configuration will be released on [the build for macOS 12](/post/macos12/).
-
 ![](/images/add/add.png)
 
 ## The buttons:

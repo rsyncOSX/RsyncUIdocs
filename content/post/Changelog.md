@@ -9,8 +9,6 @@ lastmod = "2021-05-06"
 +++
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
-There are a few significant changes in the updated SwiftUI 3 and macOS 12, please see more info about [changes in RsyncUI on macOS 12](/post/macos12/).
-
 ## Version 1.1.2(build 34) - updated 30 July 2021
 
 New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of MacOS Monterey, build by **Xcode 13 beta 4**, builds are English only.
@@ -36,9 +34,9 @@ At start of the macOS Big Sur version select, from the drop down, either the "De
 - RsyncUI conforms [the App protocol](https://developer.apple.com/documentation/swiftui/app)
 - the UI is cleaned up a bit
 - several internal changes
-- RsyncUI adapts to some changes in macOS settings, see link about [RsyncUI on macOS Monterey](/post/macos12/)
+- RsyncUI adapts to some changes in macOS settings
 
-The localization of RsyncUI is somewhat refactored. For the moment RsyncUI is localized to German and Norwegian, and there are a few strings missing in the release candidate. See more info about localization in [RsyncUI on macOS Monterey](/post/macos12/).
+The localization of RsyncUI is somewhat refactored. For the moment RsyncUI is localized to German and Norwegian, and there are a few strings missing in the release candidate.
 
 ## Version 1.1.1(build 27)
 
@@ -162,7 +160,6 @@ It seems to be a release version 1.0.0 of RsyncUI sometime in May 2021.
 There is 5 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
 - some cleanup and tweaks in the UI
-- the docs about the [development](/post/development/) of RsyncUI is updated, and more updates will come
 - the base language is English, German and Norwegian localization is up to date, Italian is still work to do
 
 
