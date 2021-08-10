@@ -13,6 +13,10 @@ lastmod = "2021-03-12"
 
 The future of development on the Apple platform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C frameworks.
 
+## Compile
+
+How to [compile RsyncUI](/post/compile/).
+
 ## Resources to learn SwiftUI and Combine
 
 There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube and GitHub are amongst the most used resources. I am also following a few blogs like:

@@ -7,9 +7,7 @@ tags = ["summary"]
 # categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This is the documentation of the new app **RsyncUI**, the new and future version of RsyncOSX. If some information is missing, is incorrect or inaccurate please let me know by [creating an issue](https://github.com/rsyncOSX/RsyncUIdocs/issues).
-
-There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
+This is the documentation of the new and SwiftUI based app **RsyncUI**. There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
 
 - RsyncUI and RsyncSchedule are built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
@@ -18,9 +16,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 # Development
 
-The target for RsyncUI is **macOS Monterey**. But there will also be a couple of prerelease builds on macOS Big Sur. The UI need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot.
-
-There is more info about [the development](/post/development/) of RsyncUI.
+The target for RsyncUI is **macOS Monterey**. The UI still need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. There are more info about [the development](/post/development/) of RsyncUI.
 
 # Using RsyncUI
 
@@ -59,9 +55,9 @@ The user can [tweak some settings in RsyncUI](/post/settings/)
 
 How to execute tasks, either multiple tasks, single task or just a quick task.
 
-- [executing multiple tasks](/post/multipletasks/)
-- [executing a single task](/post/singletask/)
-- [execute quick task](/post/quicktask/)
+- execute [multiple tasks](/post/multipletasks/)
+- execute a [single task](/post/singletask/)
+- execute a [quick task](/post/quicktask/)
 
 ## Pre and post shell scripts
 
@@ -86,20 +82,6 @@ Rsync can also [verify the synchronized data](/post/verify/).
 ## Logfile
 
 The `⌘O` shortcut brings up any logging to file. Sometimes `rsync` produces error and output are saved to the logfile for viewing and possible corrections of the task. If `rsync` produces an error RsyncUI will inform about that.
-
----
-
-# Some technical details about RsyncUI
-
-This section is some technical details about RsyncUI.
-
-## The development of RsyncUI
-
-Why is [RsyncUI based on SwiftUI?](/post/development).
-
-## Compile
-
-And there is some info about [how to compile RsyncUI](/post/compile/).
 
 ## Config files
 
