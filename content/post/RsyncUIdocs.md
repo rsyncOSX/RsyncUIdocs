@@ -16,7 +16,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 # Development
 
-The target for RsyncUI is **macOS Monterey**. The UI still need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. There are more info about [the development](/post/development/) of RsyncUI.
+The target for RsyncUI is **macOS Monterey**. The UI still need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. There is more info about [the development](/post/development/) of RsyncUI.
 
 # Using RsyncUI
 
@@ -38,8 +38,8 @@ This is the default view when starting the app. RsyncUI can store configurations
 
 Utilizing RsyncUI to synchronize files to remote servers requires setup of remote connection as [passwordless logins](/post/remotelogins/). There are two options for setup. The advised setup is by utilizing ssh-keys.
 
-- [by ssh-keys](/post/ssh/)
-- [by rsync daemon setup](/post/rsyncdaemon/)
+- by [ssh-keys](/post/ssh/)
+- by [rsync daemon setup](/post/rsyncdaemon/)
 
 Snapshot is **not** possible with rsync daemon setup.
 
@@ -77,7 +77,7 @@ Rsync has a ton of parameters. In [rsync parameters](/post/rsyncparameters/) you
 
 ## Verify the synchronized data
 
-Rsync can also [verify the synchronized data](/post/verify/).
+Rsync can also verify [the synchronized data](/post/verify/).
 
 ## Logfile
 
@@ -85,7 +85,7 @@ The `⌘O` shortcut brings up any logging to file. Sometimes `rsync` produces er
 
 ## Config files
 
-Where does RsyncUI [save the files](/post/configfiles/) to permanent storage?
+Where does RsyncUI save [the files](/post/configfiles/) to permanent storage?
 
 ## Why backup?
 
@@ -93,4 +93,4 @@ The simple answer is recovery of lost data. There might be several reasons to lo
 
 Once my configurations are setup, I do backups utilizing RsyncUI every day. So, if I by some reason, has to execute a recovery I know where to find the most updated synchronized data for restore. So, for your own protection, do regularly backups. There are tons of utilities for backups, RsyncUI is one. It is free and it is based on the rock solid utility `rsync`.
 
-There is a short [guide how to use RsyncUI to synchronize encrypted data](/post/encryptedtask/) to a remote server.
+There is a short guide [how to use RsyncUI to synchronize encrypted data](/post/encryptedtask/) to a remote server.
