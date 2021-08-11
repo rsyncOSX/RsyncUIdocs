@@ -9,6 +9,14 @@ lastmod = "2021-05-06"
 +++
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
+## Version 1.1.2(build 35) - updated 11 August 2021
+
+- added "select and slide to left" for delete a configuration
+- removed the delete button within multiple tasks view
+- utilized a few new features included in last Xcode 13 beta 5, released 10 August 2021
+
+Thats it for now.
+
 ## Version 1.1.2(build 34) - updated 30 July 2021
 
 New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of MacOS Monterey, build by **Xcode 13 beta 4**, builds are English only.
