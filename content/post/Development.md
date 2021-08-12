@@ -23,6 +23,7 @@ There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube a
 
 - [Paul Hudson´s Hacking With Swift](https://www.hackingwithswift.com/)
 - [John Sundell´s Swift by Sundell](https://swiftbysundell.com/)
+- [Swift with Majid](https://swiftwithmajid.com)
 - [Dave Werver´s iOS Dev Weekly](https://iosdevweekly.com/)
 - [Apple tutorials about developing in SwiftUI](https://developer.apple.com/tutorials/app-dev-training)
 
