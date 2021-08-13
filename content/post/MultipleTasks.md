@@ -11,22 +11,25 @@ The multiple tasks view will probably be the most used view after adding the tas
 
 Estimate and execute might be triggered by shortcuts when view is opened:
 
-- `Estimate` - shortcut `⌘E`
-- `Execute` - shortcut `⌘R`
+- `Estimate` -
+- `Execute` -
 
 ![](/images/multipletasks/multipletasks.png)
 
 The following actions are possible within this view:
 
-- `Estimate` - only estimate all tasks, view result after estimate is completed
-- `Execute` - first it estimates all tasks and then automatically executes all tasks with data to synchronize
+- `Estimate` - shortcut `⌘E`, only **estimate** all tasks, view result after estimate is completed
+- `Execute` - shortcut `⌘R`, estimate and execute all tasks with data to synchronize
 
 The buttons to right:
 
 - `View` - after a estimate run, view result
 - `Select` - select tasks for either estimate and execute, or delete
-- `Delete` - select a task for delete
 - `Abort` - abort the ongoing task
+
+## Delete
+
+Select a configuration and slide left for delete.
 
 ## Logs
 
