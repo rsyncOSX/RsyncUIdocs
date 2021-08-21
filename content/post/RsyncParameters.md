@@ -11,6 +11,10 @@ RsyncUI implements default parameters which are working fine for simple synchron
 
 ## Default rsync parameters
 
+Selecting the default tab presents the default parameters to rsync. The defaults parameters can also be switched on or off on a task.
+
+![](/images/rsyncparameters/default.png)
+
 The following parameters are applied to all tasks:
 
 - `--archive` ensures that all files are transferred with all attributes preserved
@@ -35,7 +39,7 @@ There are two parameters to set for ssh. The local ssh parameters overrides glob
 
 ## Adding parameters to rsync
 
-Rsync utilizes a ton of parameters. Parameters are normally constructed as:
+Selecting the parameters tab enables adding new parameters to rsync.  Rsync utilizes a ton of parameters. Parameters are normally constructed as:
 
 - parameter=value
 ```bash
@@ -50,7 +54,8 @@ Rsync utilizes a ton of parameters. Parameters are normally constructed as:
 ```
 For a full list of parameters to rsync please see the [rsync docs](https://download.samba.org/pub/rsync/rsync.html).
 
-![](/images/rsyncparameters/parameters.png)
+![](/images/rsyncparameters/parameters1.png)
+![](/images/rsyncparameters/parameters2.png)
 
 ### Backup parameters
 
