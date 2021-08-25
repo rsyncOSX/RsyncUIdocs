@@ -39,7 +39,11 @@ There are two parameters to set for ssh. The local ssh parameters overrides glob
 
 ## Adding parameters to rsync
 
-Selecting the parameters tab enables adding new parameters to rsync.  Rsync utilizes a ton of parameters. Parameters are normally constructed as:
+Selecting the parameters tab enables adding new parameters to rsync.  Rsync utilizes a ton of parameters.
+
+![](/images/rsyncparameters/parameters.png)
+
+Parameters are normally constructed as:
 
 - parameter=value
 ```bash
@@ -54,8 +58,7 @@ Selecting the parameters tab enables adding new parameters to rsync.  Rsync util
 ```
 For a full list of parameters to rsync please see the [rsync docs](https://download.samba.org/pub/rsync/rsync.html).
 
-![](/images/rsyncparameters/parameters1.png)
-![](/images/rsyncparameters/parameters2.png)
+
 
 ### Backup parameters
 
