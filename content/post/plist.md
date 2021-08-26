@@ -7,7 +7,7 @@ tags = ["plist"]
 description = "Some info about converting PLIST to JSON"
 lastmod = "2021-05-25"
 +++
-This function is for **older versions** of RsyncOSX (6.5.x or older) who wants start using RsyncUI. The current release of RsyncOSX, version 6.6.3 and greater only supports JSON files and there is **no need** for converting. If you **don´t** see any configurations in RsyncUI, RsyncOSX is not setup to use JSON files. This will convert existing PLIST configurations and logs to JSON files which RsyncUI can read.
+This function is for **older versions** of RsyncOSX (6.5.x or older). The current release of RsyncOSX, version 6.6.3 and greater only supports JSON files and there is **no need** for converting. If you **don´t** see any configurations in RsyncUI, RsyncOSX is not setup to use JSON files. This will convert existing PLIST configurations and logs to JSON files which RsyncUI can read.
 
 RsyncUI read and write configurations and logs as [JSON](https://en.wikipedia.org/wiki/JSON) files. The user has the option to convert **RsyncOSX** [plist configuration files](https://en.wikipedia.org/wiki/Property_list) to JSON. Before converting to JSON do a  **backup** of the current configuration files. The current configurations is backed up in the Documents catalog.
 
