@@ -9,6 +9,13 @@ lastmod = "2021-08-21"
 +++
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
+## Version 1.1.2(build 38) - updated 28 August 2021
+
+- a few minor UI enhancements
+- no bugfixes
+
+And the QA and work on the UI continues.
+
 ## Version 1.1.2(build 37) - updated 21 August 2021
 
 - redesign of rsync parameters UI, [split into parameters and default parameters](/post/rsyncparameters/)
