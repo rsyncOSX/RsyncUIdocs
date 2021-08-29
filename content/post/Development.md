@@ -13,13 +13,17 @@ lastmod = "2021-03-12"
 
 The future of development on the Apple platform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C frameworks.
 
+### My level of coding
+
+If you browse or fork my repositories please be aware of I am not a professional developer nor an expert on Swift. Both RsyncOSX and RsyncUI are projects to learn and keep learning. I try to follow common development paradigms and use the Swift and SwiftUI APIs as they are supposed to be used. I try to utilize all functions the Swift APIs offer and keep the code as small and clean as possible. 
+
 ## Compile
 
 How to [compile RsyncUI](/post/compile/).
 
 ## Resources to learn SwiftUI and Combine
 
-There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube and GitHub are amongst the most used resources. I am also following a few blogs like:
+There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube and GitHub are amongst the most used. I am also following a few blogs like:
 
 - [Paul Hudson´s Hacking With Swift](https://www.hackingwithswift.com/)
 - [John Sundell´s Swift by Sundell](https://swiftbysundell.com/)
@@ -27,7 +31,7 @@ There are a lot of resources to learn SwiftUI. Google, Stack Overflow, YouTube a
 - [Dave Werver´s iOS Dev Weekly](https://iosdevweekly.com/)
 - [Apple tutorials about developing in SwiftUI](https://developer.apple.com/tutorials/app-dev-training)
 
-There are also several resources available for the Combine framework. I will like to point the following resources on Combine:
+There are also several resources available for the Combine framework. I will like to point the following:
 
 - [Matt Neuburg´s Understanding Combine,](https://www.apeth.com/UnderstandingCombine/)
 - [Joseph Heck´s Using Combine](https://heckj.github.io/swiftui-notes/)
