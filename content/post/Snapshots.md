@@ -7,11 +7,7 @@ tags = ["snapshot"]
 description = "Snapshots, an effective method for saving changes to file"
 lastmod = "2020-12-14"
 +++
-Utilizing snapshot is an effective method for for saving previous versions of data and deleted files in case of a restore. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
-
-![](/images/snapshots/snapshots.png)
-
-If a `file.txt` is saved in snapshot number one and never changed or deleted, the file `file.txt` in the latest snapshot is just a hardlink to the original file. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation.
+Utilizing snapshot is an effective method for for saving previous versions of data and deleted files in case of a restore. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file. If a `file.txt` is saved in snapshot number one and never changed or deleted, the file `file.txt` in the latest snapshot is just a hardlink to the original file. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation.
 
 ## Snapshot and rsync daemon setup
 
@@ -87,9 +83,4 @@ The plan is based upon three parts where the parameter `plan` has an effect on *
   - if `plan == Every`, keep for the selected Day of week, e.g all snapshots every Sunday, every week in previous period
   - if `plan == Last`, keep for the selected Day of week, e.g all snapshots every last Sunday every month in previous period
 
-## Tagging and delete snapshots
-
 It is advised to cleanup the number of snapshots. Select a plan, tagg the snapshots and delete the snapshots which are marked for delete.
-
-![](/images/snapshots/snapshots2.png)
-![](/images/snapshots/snapshots3.png)
