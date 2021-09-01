@@ -9,6 +9,10 @@ lastmod = "2021-08-21"
 +++
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
+## Version 1.1.2(build 39) - updated 1 September 2021
+
+The schedule task part is removed from the app. It might be introduced later and the majority of users dont use scheduling. This is the experience from RsyncOSX and download statistics. The reason for removing it is for making RsyncUI as clean, stable and simple as possible.
+
 ## Version 1.1.2(build 38) - updated 28 August 2021
 
 - a few minor UI enhancements

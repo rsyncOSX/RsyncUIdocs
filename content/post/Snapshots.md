@@ -53,7 +53,7 @@ RsyncUI creates the snapshots within the remote catalog. The ~ is expanded to th
 
 ## Create a snapshot
 
-To create a snapshot task select `snapshot` as type in [add configurations](/post/addconfigurations/). Do **not** copy and paste command for execution within a terminal window. RsyncUI saves the number n to the configuration. The number n is the next snapshot number. The number n is used when computing the parameter for rsync
+To create a snapshot task select `snapshot` as type in [add configurations](/post/addconfigurations/). RsyncUI saves the number n to the configuration. The number n is the next snapshot number. The number n is used when computing the parameter for rsync
 and is picked up from the configuration.
 
 ## Snapshots on local attached volumes
@@ -68,7 +68,9 @@ Deleting snapshots is a **destructive** operation and should be performed with c
 
 ## The plan for keep and delete
 
-Selecting the `Tag` button evaluates all snapshots based on the date withing the log record. Based and the selected plan and date, snapshots are either tagged with keep or delete. Snapshots which are tagged with delete are also preselected for delete. To actually delete the marked snapshots require to select the Delete button.
+It is advised to cleanup the number of snapshots. Select a plan, tagg the snapshots and delete the snapshots which are marked for delete.
+
+Selecting the `Tag` button evaluates all snapshots based on the date within the log record. Based and the selected plan and date, snapshots are either tagged with keep or delete. Snapshots which are tagged with delete are also preselected for delete. To actually delete the marked snapshots require to select the Delete button.
 
 The plan is based upon three parts where the parameter `plan` has an effect on **previous months (and years)**:
 
@@ -82,5 +84,3 @@ The plan is based upon three parts where the parameter `plan` has an effect on *
   - keep the snapshot in the last week of month for selected Day of week, e.g the last Sunday in the month
   - if `plan == Every`, keep for the selected Day of week, e.g all snapshots every Sunday, every week in previous period
   - if `plan == Last`, keep for the selected Day of week, e.g all snapshots every last Sunday every month in previous period
-
-It is advised to cleanup the number of snapshots. Select a plan, tagg the snapshots and delete the snapshots which are marked for delete.
