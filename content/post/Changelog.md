@@ -11,7 +11,7 @@ The builds are considered as beta versions even if version number is greater tha
 
 ## Version 1.1.2(build 39) - updated 1 September 2021
 
-The schedule task part is removed from the app. It might be introduced later and the majority of users dont use scheduling. This is the experience from RsyncOSX and download statistics. The reason for removing it is for making RsyncUI as clean, stable and simple as possible.
+The schedule task part is removed from the app. The majority of users dont use scheduling but it might be introduced later. This is the experience from RsyncOSX and download statistics. In about 2000 downloads of RsyncOSX about 80 is the scheduling part. 
 
 ## Version 1.1.2(build 38) - updated 28 August 2021
 
