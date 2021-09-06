@@ -18,13 +18,6 @@ The following actions within this view:
 - `Add` - will add a new configuration
 - `Update` - the `Add` button will change when a configuration is selected
 
-Profile:
-
-- `Create` - create a new profile, add and select the profile
-- `Delete` - delete the selected profile, default profile cannot be deleted
-
-Local catalog and Remote catalog are added either by using drag and drop from file manager or by text only. If enter by text please remember to add the full path. Remote catalogs is entered either by full paths or use the `~` character to expand remote user home catalog.
-
 ### Task
 
 - synchronize, which is default and keeps source and destination in sync
@@ -57,5 +50,3 @@ Select the `Add` button when completed and configuration is added to RsyncUI. Rs
 ## Update configuration
 
 To update a configuration select it and update. After changes either save or select another task to abandon the update.
-
-![](/images/add/update.png)

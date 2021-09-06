@@ -30,7 +30,10 @@ The user can set a selected ssh keypath and identityfile which applies to all co
 
 If **global values** are set, this is what the ssh parameter within the rsync command looks like.
 
-`-e  "ssh -i ~/.ssh_rsyncosx/rsyncosx -p NN"` where:
+```bash
+-e  "ssh -i ~/.ssh_keypath/identityfile -p NN"
+```
+where
 
 - `-i` is the ssh keypath and identityfile
 - `-p` is the port number ssh communicates through, default port 22

@@ -13,7 +13,7 @@ Usersettings might be opened by the default `⌘,` shortcut for settings.
 
 - [Settings](/post/normalsettings/) - rsync and other settings
 - [Ssh](/post/sshsettings) - SSH settings
-- [Paths](/post/pathsettings/) - path to applications and environment
+- [Environment](/post/environment/) - environment settings
 
 The info tab shows which version of rsync in use and the path for storing and reading configurations to permanent store.
 
