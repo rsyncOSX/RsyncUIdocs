@@ -9,9 +9,13 @@ lastmod = "2021-08-21"
 +++
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
+## Version 1.1.2(build 40) - updated 1 September 2021
+
+This build includes some minor UI tweaks in toggle buttons (see [settings](/post/normalsettings/)). The docs are updated with screenshots. This is most likely the last update before macOS Monterey is relesed. A new build, version 1.2.0(build 41) will be released as soon as Apple release macOS Monterey and Xcode 13.
+
 ## Version 1.1.2(build 39) - updated 1 September 2021
 
-The schedule part of app is removed. The majority of users dont use scheduling. This is the experience from RsyncOSX and the download statistics. In about 2000 downloads of RsyncOSX only 80 is the scheduling app. 
+The schedule part of app is removed. The majority of users dont use scheduling. This is the experience from RsyncOSX and the download statistics. In about 2000 downloads of RsyncOSX only 80 is the scheduling app.
 
 ## Version 1.1.2(build 38) - updated 28 August 2021
 
