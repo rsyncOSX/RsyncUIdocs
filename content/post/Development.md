@@ -15,7 +15,7 @@ The future of development on the Apple platform is SwiftUI. Not only by SwiftUI,
 
 ### My level of coding
 
-If you browse or fork my repositories please be aware of I am not a professional developer nor an expert on Swift. Both RsyncOSX and RsyncUI are projects to learn and keep learning. I try to follow common development paradigms and use the Swift and SwiftUI APIs as they are supposed to be used. I try to utilize all functions the Swift APIs offer and keep the code as small and clean as possible. 
+If you browse or fork my repositories please be aware of I am not a professional developer nor an expert on Swift. Both RsyncOSX and RsyncUI are projects to learn and keep learning. I try to follow common development paradigms and use the Swift and SwiftUI APIs as they are supposed to be used. I try to utilize all functions the Swift APIs offer and keep the code as small and clean as possible.
 
 ## Compile
 
@@ -58,16 +58,16 @@ Configurations, logs and scedules are read from permanent store into an `Observa
 
 ## Execution of tasks
 
-Execution of a task is an asynchronous operation. The [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcess.swift) is responsible for kicking of the task. The process object are, by Combine, listening for two notifications:
-
-- `Process.didTerminateNotification` and
-- `NSNotification.Name.NSFileHandleDataAvailable`
-
+Execution of a task is an asynchronous operation. The [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcess.swift) is responsible for kicking off tasks. The process object are, by Combine, listening for two notifications:
+```bash
+Process.didTerminateNotification
+NSNotification.Name.NSFileHandleDataAvailable
+```
 The process object is initialized with two escaping closures:
-
-- `processtermination: @escaping () -> Void` and
-- `filehandler: @escaping () -> Void`.
-
+```bash
+processtermination: @escaping () -> Void
+filehandler: @escaping () -> Void
+```
 The closures takes care of whatever action they are set to do any time the notifications are discovered.
 
 ## Combine
