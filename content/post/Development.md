@@ -145,17 +145,15 @@ This property and modifier is utilized to trigger estimation and execution of ta
 
 ## The .swipeActions function
 
-The latest beta of SwiftUI also makes it easy to attach actions to a row in a list and emphasize the role of the button. The following are in the released version, but there are **not yet** connected an actions to the buttons.
+The latest beta of SwiftUI also makes it easy to attach actions to a row in a list and emphasize the role of the button.
 
 ![](/images/macos12/slidedelete.png)
-![](/images/macos12/slideexecute.png)
 
 ## Colours and some other settings
 
 The buttons and menus apply to colour settings within the macOS General settings as well as the icon size sidebar menu. The help menu is linked to default help shortcut and likewise for the settings.
 
 ![](/images/macos12/adaptive.png)
-![](/images/macos12/adaptive2.png)
 
 ## Localization
 
