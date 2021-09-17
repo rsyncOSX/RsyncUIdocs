@@ -7,7 +7,7 @@ tags = ["usersettings"]
 # categories = ["general information"]
 lastmod = "2021-03-11"
 +++
-In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh keypath and identityfile, either utilizing default values or set your own. If utilizing default values, [see info about ssh](/post/ssh/).
+In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh keypath and identityfile, either utilizing default values or set your own. There is some more info [about ssh](/post/ssh/).
 
 ![](/images/usersettings/ssh.png)
 
