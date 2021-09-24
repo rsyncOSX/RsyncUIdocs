@@ -9,14 +9,14 @@ lastmod = "2021-03-14"
 +++
 This is the documentation of the new and SwiftUI based app **RsyncUI**. There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
 
-- RsyncUI and RsyncSchedule are built with support for **macOS Monterey**
+- RsyncUI is built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
 
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
 # Development
 
-The target for RsyncUI is **macOS Monterey**. The UI still need some more polish and the updated Xcode 13 and SwiftUI 3 also introduces updates which enhances the UI a lot. There is more info about [the development](/post/development/) of RsyncUI.
+The target for RsyncUI is macOS Monterey. There is more info about [the development](/post/development/) of RsyncUI.
 
 # Using RsyncUI
 
