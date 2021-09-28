@@ -13,6 +13,10 @@ The builds are considered as beta versions even if version number is greater tha
 
 Localization to German and Norwegian will be added before end of year. There was some issues in localization and it is removed for the moment. Most of strings are already translated into German and Norwegian.
 
+## Version 1.2.0(build 41) - updated 28 September 2021
+
+The issue in Update configurations is fixed. There was also a issue with labels (prompts) in textfields which is fixed. 
+
 ## Version 1.1.2(build 40) - updated 9 September 2021
 
 This build includes some minor UI tweaks in toggle buttons (see [settings](/post/normalsettings/)). The docs are updated with screenshots. This is most likely the last update before macOS Monterey is relesed. A new build, version 1.2.0(build 41) will be released as soon as Apple release macOS Monterey and Xcode 13.
