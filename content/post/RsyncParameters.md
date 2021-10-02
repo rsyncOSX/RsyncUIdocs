@@ -13,7 +13,7 @@ RsyncUI implements default parameters which are working fine for simple synchron
 
 Selecting the default tab presents the default parameters to rsync. The defaults parameters can also be switched on or off on a task.
 
-![](/images/rsyncparameters/default.png)
+{{< image src="/images/rsyncparameters/default.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 The following parameters are applied to all tasks:
 
@@ -41,7 +41,7 @@ There are two parameters to set for ssh. The local ssh parameters overrides glob
 
 Selecting the parameters tab enables adding new parameters to rsync.  Rsync utilizes a ton of parameters.
 
-![](/images/rsyncparameters/parameters.png)
+{{< image src="/images/rsyncparameters/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 Parameters are normally constructed as:
 

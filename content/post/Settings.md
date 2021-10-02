@@ -17,4 +17,4 @@ Usersettings might be opened by the default `⌘,` shortcut for settings.
 
 The info tab shows which version of rsync in use and the path for storing and reading configurations to permanent store.
 
-![](/images/usersettings/info.png)
+{{< image src="/images/usersettings/info.png" alt="" position="center" style="border-radius: 8px;" >}}

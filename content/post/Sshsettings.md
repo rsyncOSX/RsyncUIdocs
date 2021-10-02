@@ -9,7 +9,7 @@ lastmod = "2021-03-11"
 +++
 In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh keypath and identityfile, either utilizing default values or set your own. There is some more info [about ssh](/post/ssh/).
 
-![](/images/usersettings/ssh.png)
+{{< image src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Local ssh keys found
 

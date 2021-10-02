@@ -32,7 +32,7 @@ RsyncUI and RsyncOSX **does not** share the user settings, e.g like enabling ver
 
 This is the default view when starting the app. RsyncUI can store configurations in profiles. If you are new til RsyncUI, please start with select the `Configurations` task to [add a configuration](/post/addconfigurations/).
 
-![](/images/start/start.png)
+{{< image src="/images/start/start.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## How to setup remote servers
 

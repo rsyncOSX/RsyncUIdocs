@@ -13,4 +13,4 @@ It is possible to enter an environment variable to the process which executes th
 ```bash
 "SSH_AUTH_SOCK": "/Users/username/.gnupg/S.gpg-agent.ssh"
 ```
-![](/images/usersettings/environment.png)
+{{< image src="/images/usersettings/environment.png" alt="" position="center" style="border-radius: 8px;" >}}

@@ -9,7 +9,7 @@ lastmod = "2021-03-10"
 +++
 The multiple tasks view will probably be the most used view after adding the tasks. Select the `Execute` button and let RsyncUI find all tasks with data to be synchcronized. Estimate and execute might be triggered by shortcuts when view is opened.
 
-![](/images/multipletasks/multipletasks.png)
+{{< image src="/images/multipletasks/multipletasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 The following actions are possible within this view:
 
@@ -30,5 +30,5 @@ Select a configuration and slide left for delete.
 
 Every time executing a synchronized tasks adds a log record. Either view all logs or logs by configuration.
 
-![](/images/logs/all.png)
-![](/images/logs/byconfig.png)
+{{< image src="/images/logs/all.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/logs/byconfig.png" alt="" position="center" style="border-radius: 8px;" >}}

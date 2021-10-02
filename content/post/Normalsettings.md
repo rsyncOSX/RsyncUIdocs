@@ -13,7 +13,7 @@ $HOME/Documents/RsyncUIcopy-05-06-2021/08/21
 ```
 **Caution**: when opening the catalog it might be seen as empty. The copy is a `.catalog` and your filebrowser might not see such catalogs.
 
-![](/images/usersettings/settings.png)
+{{< image src="/images/usersettings/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Rsync version and path
 

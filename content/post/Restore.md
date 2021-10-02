@@ -13,7 +13,7 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 
 First of all select from which configuration to restore from. After selection RsyncUI automatically collects filenames of all synchronized files. The list might be huge and it is adviced to filter data before viewing retrieved filelist if there are several hundred thousand of lines.  
 
-![](/images/restore/restore.png)
+{{< image src="/images/restore/restore.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 A filter will narrow down the filelist to only filenames including the filter.
 

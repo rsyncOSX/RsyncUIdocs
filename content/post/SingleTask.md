@@ -14,7 +14,7 @@ Estimate and execute might be triggered by shortcuts when view is opened:
 - `Estimate` - shortcut `⌘E`
 - `Execute` - shortcut `⌘R`
 
-![](/images/singletask/singletask.png)
+{{< image src="/images/singletask/singletask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 The following actions are possible within this view:
 
@@ -30,5 +30,5 @@ The buttons to right:
 
 Every time executing a synchronized tasks adds a log record. Either view all logs or logs by configuration.
 
-![](/images/logs/all.png)
-![](/images/logs/byconfig.png)
+{{< image src="/images/logs/all.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/logs/byconfig.png" alt="" position="center" style="border-radius: 8px;" >}}

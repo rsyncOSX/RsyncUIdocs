@@ -23,13 +23,13 @@ The shell script.
 
 In RsyncUI, the connection with the shell script and rsync task is done in the Configurations view. The task is selected and the path for the shell script is set in pre task and enabled.
 
-![](/images/enryptedtask/encryptedtask.png)
+{{< image src="/images/enryptedtask/encryptedtask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 There are some limitations with execute shell scripts in RsyncUI. The only way to execute the shell script is select the `Now` button. Any other task just executes the rsync task and not the shell script.
 
 By selecting the `Now` button executes the shell script. RsyncUI waits until the shell script is completed and then executes the rsync task.
 
-![](/images/enryptedtask/encryptedtask2.png)
+{{< image src="/images/enryptedtask/encryptedtask2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 The above setup does the following when `Now` is selcted:
 
