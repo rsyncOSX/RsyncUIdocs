@@ -9,7 +9,7 @@ lastmod = "2021-03-25"
 +++
 A configuration require minimum a **local catalog** and a **remote catalog**. After entering information about a configuration select the `Add` button to add it to RsyncUI. Continue adding new configurations until completed and configurations are saved to permanent storage after each entry. Select local catalog either by drag and drop or by enter text directly. For remote catalogs only drag and drop for local attached volumes. For remote server catalogs enter by text only.
 
-{{< image src="/images/add/add.png.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## The buttons:
 
