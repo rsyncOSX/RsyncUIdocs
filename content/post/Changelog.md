@@ -11,7 +11,7 @@ The builds are considered as beta versions even if version number is greater tha
 
 ## Version 1.2.1 - not yet released
 
-The work on this release has commenced. It will not be released before December 2021 or January 2022. T1he major work is internal. There might be several hundred or thousands of logrecords. Reading and loading logrecords into memory is moved to when they are needed. And not when the app is started or a new profile is selected. The change will improve memory footprint and speed up the application.
+The work on this release has commenced. It will not be released before December 2021 or January 2022. The major work is internal. There might be several hundred or thousands of logrecords. Reading and loading logrecords into memory is moved to when they are needed. And not when the app is started or a new profile is selected. The change will improve memory footprint and speed up the application.
 
 Localization to German, Italian and Norwegian might be added in this release. There was some issues in localization and it is removed for the moment. Most of strings are already translated into German and Norwegian.
 
