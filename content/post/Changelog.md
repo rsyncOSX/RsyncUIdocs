@@ -9,11 +9,15 @@ lastmod = "2021-08-21"
 +++
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
-## Version 1.2.1(build 42) - not yet released
+## Version 1.2.1(build 42) - updated 21 October 2021
 
-The work on this release has commenced. The major work is internal. There might be several hundred or thousands of logrecords. Reading and loading logrecords into memory is moved to when they are needed. And not when the app is started or a new profile is selected. The change will improve memory footprint and speed up the application.
+Build by Xcode 13.1 RC
 
-Localization to German, Italian and Norwegian might be added in this release. There was some issues in localization and it is removed for the moment. Most of strings are already translated into German and Norwegian.
+The major work is internal. There might be several hundred or thousands of logrecords. Reading and loading logrecords into memory is moved to when they are needed. And not when the app is started or a new profile is selected. The change will improve memory footprint and speed up the application.
+
+The default profile is automatically selected at start of application.
+
+Localization to German, Italian and Norwegian is **not** yet added. There was some issues in localization and it is removed for the moment. Most of strings are already translated into German and Norwegian.
 
 ## Version 1.2.0(build 41) - updated 28 September 2021
 
