@@ -38,7 +38,7 @@ There are also several resources available for the Combine framework. I will lik
 
 RsyncUI is developed in compliance to the Model View Controller (MVC) architecture. Any operations on the data is within the model part. The modelpart is mostly traditional **imperativ** Swift development, with classes and structs. The model classes does also utilize the Combine framework. See the Combine part below for more details. The UI part (view) is **declarative** SwiftUI development, with structs only. The UI is clearly separated from the model. Another important part of SwiftUI is the [single source of truth](https://developer.apple.com/documentation/swiftui/managing-user-interface-state).
 
-## Basic datastructure
+## Basic datastructures
 
 The basic datastructures in RsyncUI are two arrays of structs: configurations as Array<[Configurations](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/Configuration.swift)> and logs- and schedules as Array<[ConfigurationSchedule](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/Basic/ConfigurationSchedule.swift)>. The actual parameters for a task are [computed](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift) as part of prepare for the run. All parameters are based on data for each configuration. The main [process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/RsyncProcess.swift) reads all arguments as an Array\<String\> ahead of execution. The [compute](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/ComputeParametersRsync/ComputeRsyncParameters.swift) object reads and computes all rsync parameters as Array\<String\> ahead of executing a task.
 
@@ -54,7 +54,12 @@ Some settings within RsyncUI can be changed by the user. The settings are read b
 
 ## Reading data
 
-Configurations, logs and scedules are read from permanent store into an `ObservableObject` [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift). The data is read only and made available for the various views as a `@EnvironmentObject`. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded.
+Configurations, logs and scedules are read from permanent store into two `ObservableObject`:
+
+- [RsyncUIconfigurations.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIconfigurations.swift) and
+- [RsyncUIlogrecords.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIlogrecords.swift)
+
+The data is read only and made available for the views as `@EnvironmentObject` objects. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded. The object reading logs and schedules are not initialized until the user browse the logs. This is for keep the memory footprint as low as possible and speed the application. 
 
 ## Execution of tasks
 
