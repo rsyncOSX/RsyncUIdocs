@@ -9,11 +9,11 @@ lastmod = "2021-08-21"
 +++
 The builds are considered as beta versions even if version number is greater than one. The builds are stable and they are working. But the UI needs some more polish and QA, and the next version is 1.2.0(build xx) when macOS Monterey is released. The betas, version 1.1.2(build xx), will be updated when there are new updates in code.
 
-## Minor issue in version 1.2.1
+## Some issues in version 1.2.1
 
-There is a minor issue in refreshing the view for deleting logrecords. The view is not updated after delete. Workaround is change to another view and return.
+I have just got my new ARM MacBook Pro 14" with the new M1 processor. The path to the installation of Homebrew on the new MBP is changed and there is an issue in changing path for rsync. There is also a minor issue in refreshing the view for deleting log records. The view is not updated after delete. Workaround is change to another view and return.
 
-The issue is fixed and there will be a new release shortly. 
+As a temporary fix I will build new releases for ARM.
 
 ## Version 1.2.1(build 42) - updated 21 October 2021
 
