@@ -11,11 +11,11 @@ The builds are considered as beta versions even if version number is greater tha
 
 ## Some issues in version 1.2.1 (26 Oct 2021)
 
-I have just got my new ARM MacBook Pro 14" with the new M1 processor. The path to the installation of Homebrew on the new MBP is changed and there is an issue in changing path for rsync. There is also a minor issue in refreshing the view for deleting log records. The view is not updated after delete. Workaround is change to another view and return.
+I have just got my new ARM MacBook Pro 14" with the new M1 processor. The path to the installation of Homebrew on the new MBP is changed and there is an issue in changing path for rsync.
 
-As a temporary fix there is a new build for ARM based Mac´s and Homebrew installation in `/opt/homebrew/bin/`.
+As a temporary fix there is a new build for ARM based Mac´s and Homebrew installation in `/opt/homebrew/bin/`. RsyncUI should also detect if on a ARM or Intel based Mac. And  there is also an annoying error messages when a not valid path for `rsync` and restore is set.
 
-There is also an annoying error messages when a not valid path for `rsync` and restore is set. This is now fixed and a new temporary build will be released tomorrow.
+There will be a new release in some days. Please use RsyncOSX until the issues are fixed.
 
 ## Version 1.2.1(build 42) - updated 21 October 2021
 
