@@ -15,7 +15,9 @@ I have just got my new ARM MacBook Pro 14" with the new M1 processor. The path t
 
 As a temporary fix there is a new build for ARM based Mac´s and Homebrew installation in `/opt/homebrew/bin/`. RsyncUI should also detect if on a ARM or Intel based Mac. And  there is also an annoying error messages when a not valid path for `rsync` and restore is set.
 
-There will be a new release in some days. Please use RsyncOSX until the issues are fixed.
+There will be a new release in some days.
+
+Workaround: either use RsyncOSX until the issues are fixed or the version 1.2.1 for ARM if rsync is installed by Homebrew.
 
 ## Version 1.2.1(build 42) - updated 21 October 2021
 
