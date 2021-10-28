@@ -7,15 +7,13 @@ tags = ["RsyncUI"]
 # categories = ["changelog"]
 lastmod = "2021-08-21"
 +++
-## Some issues in version 1.2.1 (26 Oct 2021)
+## Version 1.2.2(build 45) - updated 28 October 2021
 
-I have just got my new ARM MacBook Pro 14" with the new M1 processor. The path to the installation of Homebrew on the new MBP is changed and there is an issue in changing path for rsync.
+The issues **below** should be solved now.
 
-As a temporary fix there is a new build for ARM based Mac´s and Homebrew installation in `/opt/homebrew/bin/`. RsyncUI should also detect if on a ARM or Intel based Mac. And  there is also an annoying error messages when a not valid path for `rsync` and restore is set.
+I have just got my new Apple Silicon based MacBook Pro 14" with the new M1 processor. The path to the installation of Homebrew on Apple Silicon Mac is changed and there is an issue in changing path for rsync. Homebrew is installed in `/opt/homebrew/bin/`.
 
-There will be a new release in some days.
-
-Workaround: either use RsyncOSX until the issues are fixed or the version 1.2.1 for ARM if rsync is installed by Homebrew.
+ RsyncUI should also detect if on a ARM or Intel based Mac. And  there is also an annoying error messages when a not valid path for `rsync` and restore is set.
 
 ## Version 1.2.1(build 42) - updated 21 October 2021
 
