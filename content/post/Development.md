@@ -59,7 +59,7 @@ Configurations, logs and scedules are read from permanent store into two `Observ
 - [RsyncUIconfigurations.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIconfigurations.swift) and
 - [RsyncUIlogrecords.swift](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIlogrecords.swift)
 
-The data is read only and made available for the views as `@EnvironmentObject` objects. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded. The object reading logs and schedules are not initialized until the user browse the logs. This is for keep the memory footprint as low as possible and speed the application. 
+The data is read only and made available for the views as `@EnvironmentObject` objects. Everytime there is a change to the data, the changes are handled by the model, saved to permanent store and reloaded. The object reading logs and schedules are not initialized until the user browse the logs. This is for keep the memory footprint as low as possible and speed the application.
 
 ## Execution of tasks
 
@@ -96,15 +96,11 @@ The following are parts where Combine is used in RsyncUI:
 
 SwiftUI refreshes the view every time there is a change on a `<Binding>`. And there are also several other happenings which causes a refresh of the view. There can be several hundred log records each task. If sorting and filtering of logs are computed properties within a view it can become an speed issue aka *spinning beach ball*. Therefore are all sorting and filtering of logs computed within the [RsyncUIdata](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Data/RsyncUIdata.swift) object and the result is set to the `<Binding>` value after the sort or filtering is completed.
 
-The above also apply to the restore function. Getting the remote filenames of synchcronized data might be huge, several hundred thousand or millions of lines. It is after the completion of getting filenames and filtering, the result is set to a `<Binding>` value which causes a refresh.
-
-## MacOS Monterey
-
-Apple released on 7 Jun 2021 beta of Xcode 13, Swift 5.5, SwiftUI 3 and macOS Monterey (macOS 12). Some of the new features in SwiftUI 3 are already in RsyncUI and most likely will more of the new features, as I learn about them, be integrated. The major part of the new stuff require macOS Monterey. The new stuff in SwiftUI 3 and macOS Monterey makes RsyncUI a more user friendly application. Prereleases of RsyncUI on macOS Monterey will be build when Apple releases public betas of macOS Monterey. The main repository at GitHuB for RsyncUI is updated with latest changes for Xcode 13 and macOS Monterey.
+The above also apply to the restore function. Getting the remote filenames of synchronized data might be huge, several hundred thousand or millions of lines. It is after the completion of getting filenames and filtering, the result is set to a `<Binding>` value which causes a refresh.
 
 ## The @FocusState property
 
-The property toghether with the Combine framework makes it possible to ease and valdidate the input added by the user. There are in the Configurations form three possibilities for actions depended upon the value of the input and the focus. And there is actual no need for neither the tab for advance to next field and the Add button for adding data. The buttons are there, but there is no need to use them.
+The property together with the Combine framework makes it possible to ease and validate the input added by the user. There are in the Configurations form three possibilities for actions depended upon the value of the input and the focus. And there is actual no need for neither the tab for advance to next field and the Add button for adding data. The buttons are there, but there is no need to use them.
 
 The following is use of the property within the Configurations form.
 
@@ -140,7 +136,7 @@ The `searchable` modifier utilizes a standard method for filter data. The modifi
 
 The settings is now available from the menu bar only or by the default `⌘,` shortcut for settings.
 
-{{< image src="/images/macos12/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/usersettings/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## The @FocusedBinding property and focusedSceneValue modifier
 
