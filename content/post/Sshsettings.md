@@ -19,8 +19,6 @@ Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is **not requ
 
 If there are no local ssh keys selecting the `Create` button will create the keys. If ssh keys are found, either default values or by the user set keypath and identityfile, RsyncUI will mark it.
 
-**Caution:** if setting your own values for keypath and identityfile save the values before creating new keys. Creating keys will adding output from the process to the logfile.
-
 ## Set ssh keypath and identityfile
 
 The user can set a selected ssh keypath and identityfile which applies to all configurations.
@@ -38,8 +36,6 @@ where
 - `-i` is the ssh keypath and identityfile
 - `-p` is the port number ssh communicates through, default port 22
 
-If global ssh parameters are set, it applies to **all configurations**. It is possible to set other ssh values on each task. The `Verify` button present view for copy and paste commands into a terminal view.
-
-Global SSH keypath and identityfile in use:
+If global ssh parameters are set, it applies to **all configurations**. It is possible to set other ssh values on each task. Global SSH keypath and identityfile in use.
 
 {{< image src="/images/usersettings/ssh2.png" alt="" position="center" style="border-radius: 8px;" >}}
