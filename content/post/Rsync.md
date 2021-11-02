@@ -17,7 +17,7 @@ to install the latest version of rsync.
 
 ## Snapshots
 
-RsyncUI supports [snapshots](/post/snapshots/) of files. Due to a bug in version 2.6.9 in rsync, the snapshot feature of RsyncUI require to install rsync version 3.1.3 or higer.
+RsyncUI supports [snapshots](/post/snapshots/) of files. Due to a bug in version 2.6.9 in rsync, the snapshot feature of RsyncUI require to install the latest version of rsync.
 
 ## Compile the latest version
 
