@@ -19,11 +19,11 @@ $HOME/Documents/RsyncUIcopy-05-06-2021/08/21
 
 It is adviced to install rsync as part of Homebrew. RsyncUI discover what type of Mac you are on. The path for Homebrew on the Intel based Mac is: `/usr/local/bin` and on the Apple Silicon: `/opt/homebrew/bin`.
 
- - Rsync version 3.x to `on` - set optional path if **NOT** in /usr/local/bin
-   	- any version of rsync should work, but only version 2.6.9, 3.1.3 and 3.2.x are tested and verified
-    - [utilizing the snapshot feature](/post/snapshots/) require either version 3.1.3 or 3.2.x of rsync
+ - Rsync v3.x to `on` - set optional path if **NOT** by Homebrew
+   	- any version of rsync should work, but only version 2.6.9 and 3.2.x are tested and verified
+    - [utilizing the snapshot feature](/post/snapshots/) require version 3.2.x of rsync
 - path for rsync:
-    - if other version of rsync is installed in other path than above it must be set here
+    - if utilized version of rsync is **not** installed by Homebrew set path to rsync
 - path for restore:
     - preset temporary path for restoring single files and catalogs
     - preset temporary path for a full restore
