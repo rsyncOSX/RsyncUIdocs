@@ -7,12 +7,10 @@ tags = ["summary"]
 # categories = ["general information"]
 lastmod = "2021-03-14"
 +++
-This is the documentation of the new and SwiftUI based app **RsyncUI**. There is a [changelog](/post/changelog/), please check it before commencing the use of RsyncUI. There is also some [important info](/post/important/) about using RsyncUI.
+RsyncUI is a SwiftUI based GUI on top of the command line utility `rsync` which is a file based tool for synchronization of files. RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
 - RsyncUI is built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
-
-RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
 
 # Development
 
