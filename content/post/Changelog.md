@@ -7,15 +7,20 @@ tags = ["RsyncUI"]
 # categories = ["changelog"]
 lastmod = "2021-08-21"
 +++
+## Version 1.2.3(build 46) - updated 11 November 2021
+
+Localization for German and Norwegian added.
+Added GUI panels for selecting catalogs to synchronize.
+
 ## Version 1.2.2(build 45) - updated 28 October 2021
 
 The issues **below** is solved in this version.
 
 I have just got my new Apple Silicon based MacBook Pro 14" with the new M1 Pro processor. The path for the installation of Homebrew on Apple Silicon Mac´s is changed. And there is an issue in changing path for rsync in RsyncUI. Homebrew on Apple Silicon based Mac´s installed in `/opt/homebrew/bin/`.
 
- RsyncUI should also detect if on a Apple Silicon or Intel based Mac.
+RsyncUI should also detect if on a Apple Silicon or Intel based Mac.
 
- And  there is also an annoying error messages if a not valid path for `rsync` and restore is set.
+And  there is also an annoying error messages if a not valid path for `rsync` and restore is set.
 
 ## Version 1.2.1(build 42) - updated 21 October 2021
 
