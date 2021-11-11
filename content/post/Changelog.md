@@ -7,12 +7,17 @@ tags = ["RsyncUI"]
 # categories = ["changelog"]
 lastmod = "2021-08-21"
 +++
-## Version 1.2.3(build 46) - updated 11 November 2021
+RsyncOSX is signed and notarized. Please see info about [the latest version of rsync in install](/post/rsync/).
 
-Localization for German and Norwegian added.
-Added GUI panels for selecting catalogs to synchronize.
+Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
-## Version 1.2.2(build 45) - updated 28 October 2021
+## Version 1.2.3(build 46) - 11 November 2021
+
+Compiled on Apple Silicon (M1 Pro) by Xcode 13.1 as a Universal macOS Binary.
+
+Localization for German and Norwegian added. Added GUI panels for selecting catalogs to synchronize.
+
+## Version 1.2.2(build 45) - 28 October 2021
 
 The issues **below** is solved in this version.
 
@@ -22,7 +27,7 @@ RsyncUI should also detect if on a Apple Silicon or Intel based Mac.
 
 And  there is also an annoying error messages if a not valid path for `rsync` and restore is set.
 
-## Version 1.2.1(build 42) - updated 21 October 2021
+## Version 1.2.1(build 42) - 21 October 2021
 
 Build by Xcode 13.1 RC
 
@@ -32,38 +37,38 @@ The default profile is automatically selected at start of application.
 
 Localization to German, Italian and Norwegian is **not** yet added. There was some issues in localization and it is removed for the moment. Most of strings are already translated into German and Norwegian.
 
-## Version 1.2.0(build 41) - updated 28 September 2021
+## Version 1.2.0(build 41) - 28 September 2021
 
 The issue in Update configurations is fixed. There was also a issue with labels (prompts) in textfields which is fixed.
 
-## Version 1.1.2(build 40) - updated 9 September 2021
+## Version 1.1.2(build 40) - 9 September 2021
 
 This build includes some minor UI tweaks in toggle buttons (see [settings](/post/normalsettings/)). The docs are updated with screenshots. This is most likely the last update before macOS Monterey is relesed. A new build, version 1.2.0(build 41) will be released as soon as Apple release macOS Monterey and Xcode 13.
 
-## Version 1.1.2(build 39) - updated 1 September 2021
+## Version 1.1.2(build 39) - 1 September 2021
 
 The schedule part of app is removed. The majority of users dont use scheduling. This is the experience from RsyncOSX and the download statistics. In about 2000 downloads of RsyncOSX only 80 is the scheduling app.
 
-## Version 1.1.2(build 38) - updated 28 August 2021
+## Version 1.1.2(build 38) - 28 August 2021
 
 - a few minor UI enhancements
 - no bugfixes
 
 And the QA and work on the UI continues.
 
-## Version 1.1.2(build 37) - updated 21 August 2021
+## Version 1.1.2(build 37) - 21 August 2021
 
 - redesign of rsync parameters UI, [split into parameters and default parameters](/post/rsyncparameters/)
 - fixed a couple of bugs in rsync parameters as well
 
 The QA and work on the UI continues, still not happy with some of the views.
 
-## Version 1.1.2(build 36) - updated 16 August 2021
+## Version 1.1.2(build 36) - 16 August 2021
 
 - finally decided about button style, see screenshots in this doc
 - some minor changes
 
-## Version 1.1.2(build 35) - updated 11 August 2021
+## Version 1.1.2(build 35) - 11 August 2021
 
 - added "select and slide to left" for delete a configuration
 - removed the delete button within multiple tasks view
@@ -71,7 +76,7 @@ The QA and work on the UI continues, still not happy with some of the views.
 
 Thats it for now.
 
-## Version 1.1.2(build 34) - updated 30 July 2021
+## Version 1.1.2(build 34) - 30 July 2021
 
 New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of MacOS Monterey, build by **Xcode 13 beta 4**, builds are English only.
 
