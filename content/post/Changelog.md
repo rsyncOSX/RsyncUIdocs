@@ -7,7 +7,7 @@ tags = ["RsyncUI"]
 # categories = ["changelog"]
 lastmod = "2021-08-21"
 +++
-RsyncOSX is signed and notarized. Please see info about [the latest version of rsync in install](/post/rsync/).
+RsyncUI is signed and notarized. Please see info about [the latest version of rsync in install](/post/rsync/).
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
