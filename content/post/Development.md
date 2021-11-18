@@ -6,20 +6,17 @@ tags = ["SwiftUI"]
 # categories = ["SwiftUI"]
 description = "Why is the development of RsyncUI based on SwiftUI?"
 lastmod = "2021-03-12"
+toc = "true"
 +++
-[SwiftUI](https://developer.apple.com/documentation/swiftui/) was released in 2019 and is a new **declarative framework** for UI development across the various Apple operating systems. It is still young and in development. Developing the UI based on SwiftUI compared to developing utilizing the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic in properties, functions and closures will simplify the code. The declarative paradigm also makes the code for the UI cleaner and more easy to follow.
+[SwiftUI](https://developer.apple.com/documentation/swiftui/) was released in 2019 and is a **declarative framework** for UI development across the various Apple operating systems. Developing the UI based on SwiftUI compared to developing utilizing the [Cocoa](https://en.wikipedia.org/wiki/Cocoa_(API)) framework is a huge step forward. The code for the UI utilizing SwiftUI is minimal and easily separated from the Model (MVC). By hiding application logic in properties, functions and closures will simplify the code. The declarative paradigm also makes the code for the UI cleaner and more easy to follow.
 
-[Combine](https://developer.apple.com/documentation/combine) is also a new **declarative framework** from Apple. In RsyncUI it is used for asynchronous tasks like validate user input, listening for notifications from the NotificationCenter, decode and encode JSON data and checking, trimming and verify the output from rsync.
+[Combine](https://developer.apple.com/documentation/combine) is also a **declarative framework** from Apple. In RsyncUI it is used for asynchronous tasks like validate user input, listening for notifications from the NotificationCenter, decode and encode JSON data and checking, trimming and verify the output from rsync.
 
 The future of development on the Apple platform is SwiftUI. Not only by SwiftUI, but in companion with the other Swift and Objective-C frameworks.
 
-### My level of coding
+## My level of coding
 
 If you browse or fork my repositories please be aware of I am not a professional developer nor an expert on Swift. Both RsyncOSX and RsyncUI are projects to learn and keep learning. I try to follow common development paradigms and use the Swift and SwiftUI APIs as they are supposed to be used. I try to utilize all functions the Swift APIs offer and keep the code as small and clean as possible.
-
-## Compile
-
-How to [compile RsyncUI](/post/compile/).
 
 ## Resources to learn SwiftUI and Combine
 
@@ -175,3 +172,7 @@ Button("Create") { createprofile() }
     .buttonStyle(PrimaryButtonStyle())
 ```
 All strings to be translated is looked up by Xcode within the `Localizable.strings` file. Services like Crowdin is great for the actual translation process. Export strings for translation by Xcode, import to Crowdin and after translation import in Xcode.
+
+## Compile
+
+How to [compile RsyncUI](/post/compile/).
