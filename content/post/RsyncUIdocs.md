@@ -12,10 +12,6 @@ RsyncUI is a SwiftUI based GUI on top of the command line utility `rsync` which 
 - RsyncUI is built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
 
-# Development
-
-The target for RsyncUI is macOS Monterey. There is more info about [the development](/post/development/) of RsyncUI.
-
 # Using RsyncUI
 
 RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing configuration files is:
@@ -83,10 +79,10 @@ The `⌘O` shortcut brings up any logging to file. Sometimes `rsync` produces er
 
 Where does RsyncUI save [the files](/post/configfiles/) to permanent storage?
 
+# Development
+
+The target for RsyncUI is macOS Monterey. There is more info about [the development](/post/development/) of RsyncUI.
+
 ## Why backup?
-
-The simple answer is recovery of lost data. There might be several reasons to loosing data, and I will not elaborate why you might risk loosing data. Computer crashes or restore deleted files is one obvious reason. But, there is another reason as well; a recovery from a ransomware attack. I have setup RsyncUI to synchronize, both normal synchronize and snapshots. One server is in house, the second is a remote server somewhere on the Internet. Data synchronized to the remote server is encrypyted before data is synchronized.
-
-Once my configurations are setup, I do backups utilizing RsyncUI every day. So, if I by some reason, has to execute a recovery I know where to find the most updated synchronized data for restore. So, for your own protection, do regularly backups. There are tons of utilities for backups, RsyncUI is one. It is free and it is based on the rock solid utility `rsync`.
 
 There is a short guide [how to use RsyncUI to synchronize encrypted data](/post/encryptedtask/) to a remote server.
