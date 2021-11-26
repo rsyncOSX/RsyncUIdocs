@@ -25,10 +25,3 @@ The buttons to right:
 
 - `View` - after estimaten, view result
 - `Abort` - abort the ongoing task
-
-## Logs
-
-Every time executing a synchronized tasks adds a log record. Either view all logs or logs by configuration.
-
-{{< image src="/images/logs/all.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< image src="/images/logs/byconfig.png" alt="" position="center" style="border-radius: 8px;" >}}

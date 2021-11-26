@@ -116,42 +116,28 @@ The start is selecting focus in the local catalog. After submitting data by **th
 
 When the synchronize ID is submitted, by the Enter key, the Form is validating if **the remote catalog** is on a **local attached disk**. If this is validated the Form will automatically add a new configuration by the Enter key. If not validated the Form expect it is s remote catalog and the focus is advanced to remote user and server. After submitting a remote server the Form will automatically add a new configuration.
 
-{{< image src="/images/macos12/newadd.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 And it is likewise for the pre- and post shell scripts. There is **no need** to explicit toggle the pre- and post shell scripts on. By the Enter key add pre and post, the Form will automatically switch the toggles on.
-
-{{< image src="/images/macos12/newpreandpost.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## The searchable modifier
 
 The `searchable` modifier utilizes a standard method for filter data. The modifier is utilized for filter in **configuration listings**, **log listings** and  **restore files**.
 
-{{< image src="/images/macos12/search1.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< image src="/images/macos12/search2.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 ## Settings
 
 The settings is now available from the menu bar only or by the default `⌘,` shortcut for settings.
-
-{{< image src="/images/usersettings/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## The @FocusedBinding property and focusedSceneValue modifier
 
 This property and modifier is utilized to trigger estimation and execution of tasks from the application menu. The property and modifier enables that a value from one view is injected into to the full focused view. By selecting from the application menu, the value of the trigger is changed and injected into either the single task view or multiple task view depended upon which has focus.
 
-{{< image src="/images/macos12/shortcuts.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 ## The .swipeActions function
 
 The latest beta of SwiftUI also makes it easy to attach actions to a row in a list and emphasize the role of the button.
-
-{{< image src="/images/macos12/slidedelete.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Colours and some other settings
 
 The buttons and menus apply to colour settings within the macOS General settings as well as the icon size sidebar menu. The help menu is linked to default help shortcut and likewise for the settings.
 
-{{< image src="/images/macos12/adaptive.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Localization
 
