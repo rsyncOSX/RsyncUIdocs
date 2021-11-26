@@ -83,6 +83,6 @@ Where does RsyncUI save [the files](/post/configfiles/) to permanent storage?
 
 The target for RsyncUI is macOS Monterey. There is more info about [the development](/post/development/) of RsyncUI.
 
-## Why backup?
+# Encrypted backup?
 
 There is a short guide [how to use RsyncUI to synchronize encrypted data](/post/encryptedtask/) to a remote server.
