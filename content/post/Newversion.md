@@ -11,7 +11,8 @@ The task view is merged into one view. Either estimate and execute, or execute w
 {{< image src="/images/newversion/estimateall.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< image src="/images/newversion/logall.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Select a task when the task view is opened and select (or by shortcut) the Estimate button.
+**Choose** a task when the task view is opened and select (or by shortcut) the Estimate button.
 
+{{< image src="/images/newversion/selectone.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< image src="/images/newversion/estimateone.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< image src="/images/newversion/logone.png" alt="" position="center" style="border-radius: 8px;" >}}
