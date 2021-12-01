@@ -11,9 +11,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
-## Version 1.2.4(build 47) - not yet released
+## Version 1.2.4(build 47) release candidate - 1 December 2021
 
-The following are changes within this version:
+The following are [changes](/post/newversion/) within this version:
 
 - multiple tasks and single task view is merged into one view
 - the new task view includes some reorganization of functions
