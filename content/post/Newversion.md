@@ -5,7 +5,12 @@ title =  "What is changed"
 description = "What is changed"
 tags = ["changes"]
 +++
-The task view either let you execute several task at once or for one task, estimate and view the detailed output from rsync before executing the real run. All actions are triggered either by keyboard shortcuts or by selecting a button. The following are allowed shortcut actions:
+The task view either lets you:
+
+- execute all or selected tasks in one go
+- or for one task estimate and view the detailed output from rsync before executing the real run 
+
+All actions are triggered either by keyboard shortcuts or by selecting a button. The following are allowed shortcut actions:
 
 - `Estimate` - shortcut `⌘E`
 - `Execute` - shortcut `⌘R`
@@ -13,7 +18,7 @@ The task view either let you execute several task at once or for one task, estim
 
 ## Several tasks
 
-This is most likely the most used action after adding and verifying the task. When RsyncUI starts it automatically opens this view and by selecting the shortcut action `⌘R` will commence estimating and execute all tasks. If you only want to do this for some of the tasks, select the tasks and choose the action.
+This is most likely the most used action after adding and verifying the task. When RsyncUI starts it automatically open this view and by selecting the shortcut action `⌘R` will commence estimating and execute all tasks. If you only want to do this for some of the tasks, select the tasks and choose the action.
 
 {{< image src="/images/newversion/estimateall.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< image src="/images/newversion/logall.png" alt="" position="center" style="border-radius: 8px;" >}}
