@@ -13,7 +13,7 @@ The task view either let you execute several task at once or for one task, estim
 
 ## Several tasks
 
-This is most likely the most used action after adding and verifying the task. When RsyncUI starts it automatically opens this view and by selecting the shortcut action `⌘R` will starte estimating and execute all tasks. If you only want to do this for some of the tasks, select the tasks and choose the action.
+This is most likely the most used action after adding and verifying the task. When RsyncUI starts it automatically opens this view and by selecting the shortcut action `⌘R` will commence estimating and execute all tasks. If you only want to do this for some of the tasks, select the tasks and choose the action.
 
 {{< image src="/images/newversion/estimateall.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< image src="/images/newversion/logall.png" alt="" position="center" style="border-radius: 8px;" >}}
