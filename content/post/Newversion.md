@@ -5,22 +5,25 @@ title =  "What is changed"
 description = "What is changed"
 tags = ["changes"]
 +++
-The task view either lets you:
+The (new) task view either lets you:
 
-- execute all or selected tasks in one go
-- or for one task estimate and view the detailed output from rsync before executing the real run 
+- execute **all** or **selected** (by shortcut `⌘T`) tasks in one go
+- for **one** task, estimate and view the detailed output from rsync before executing the real run
 
-All actions are triggered either by keyboard shortcuts or by selecting a button. The following are allowed shortcut actions:
+All actions are triggered either by keyboard shortcuts or by buttons. The following are allowed shortcut actions:
 
-- `Estimate` - shortcut `⌘E`
-- `Execute` - shortcut `⌘R`
-- `Select task` - shortcut `⌘T`
+- `estimate` - shortcut `⌘E`
+- `execute` - shortcut `⌘R`
+- `select task` - shortcut `⌘T`
 
 ## Several tasks
 
 This is most likely the most used action after adding and verifying the task. When RsyncUI starts it automatically open this view and by selecting the shortcut action `⌘R` will commence estimating and execute all tasks. If you only want to do this for some of the tasks, select the tasks and choose the action.
 
 {{< image src="/images/newversion/estimateall.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+The `Log` button presents a summarized output from all rsync tasks. 
+
 {{< image src="/images/newversion/logall.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## One task
@@ -28,5 +31,11 @@ This is most likely the most used action after adding and verifying the task. Wh
 **Choose** (not select) a task when the task view is opened and select (or by shortcut) the Estimate button.
 
 {{< image src="/images/newversion/selectone.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+A summarized view of an estimation run:
+
 {{< image src="/images/newversion/estimateone.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+The `Log` button presents a detailed output from rsync.
+
 {{< image src="/images/newversion/logone.png" alt="" position="center" style="border-radius: 8px;" >}}
