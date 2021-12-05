@@ -12,6 +12,11 @@ RsyncUI is a SwiftUI based GUI on top of the command line utility `rsync` which 
 - RsyncUI is built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
 
+## The changelog
+
+There is a [changelog](/post/changelog/). Also please see info about [the latest version of rsync](/post/rsync/) to install. Before commencing use of RsyncOSX there are a few [important words to read](/post/important/).
+
+
 # Using RsyncUI
 
 RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing configuration files is:
@@ -19,7 +24,6 @@ RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing c
 ```bash
 $HOME/.rsyncosx/macserialnumber/
 ```
-
 RsyncUI and RsyncOSX **does not** share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
 
 ## The main menu
