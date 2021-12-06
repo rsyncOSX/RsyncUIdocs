@@ -12,12 +12,13 @@ RsyncUI is a SwiftUI based GUI on top of the command line utility `rsync` which 
 - RsyncUI is built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
 
+The first time RsyncUI is started the Welcome message is presented. Please read the info and when ready to add tasks select the Dismiss button which opens the [add a configuration](/post/addconfigurations/) view. Before commencing use of RsyncOSX there are a few [important words to read](/post/important/).
+
+{{< image src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 ## The changelog
 
-There is a [changelog](/post/changelog/). Also please see info about [the latest version of rsync](/post/rsync/) to install. Before commencing use of RsyncOSX there are a few [important words to read](/post/important/).
-
-
-# Using RsyncUI
+There is a [changelog](/post/changelog/). Also please see info about [the latest version of rsync](/post/rsync/) to install.
 
 RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing configuration files is:
 
@@ -26,9 +27,12 @@ $HOME/.rsyncosx/macserialnumber/
 ```
 RsyncUI and RsyncOSX **does not** share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
 
-## The main menu
+## Synchronize data
 
-This is the default view when starting the app. RsyncUI can store configurations in profiles. If you are new til RsyncUI, please start with select the `Configurations` task to [add a configuration](/post/addconfigurations/). RsyncUI loads the default configuration at startup.
+How to synchronize data or just execute a quick task.
+
+- execute a synchronize data [tasks](/post/tasks/)
+- execute a [quick task](/post/quicktask/)
 
 ## How to setup remote servers
 
@@ -46,14 +50,6 @@ It is easy to [add and update configurations](/post/addconfigurations/).
 ## RsyncUI settings
 
 The user can [tweak some settings in RsyncUI](/post/settings/)
-
-## Execute tasks
-
-How to execute tasks, either multiple tasks, single task or just a quick task.
-
-- execute [multiple tasks](/post/multipletasks/)
-- execute a [single task](/post/singletask/)
-- execute a [quick task](/post/quicktask/)
 
 ## Pre and post shell scripts
 
