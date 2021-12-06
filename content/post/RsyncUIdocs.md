@@ -12,9 +12,18 @@ RsyncUI is a SwiftUI based GUI on top of the command line utility `rsync` which 
 - RsyncUI is built with support for **macOS Monterey**
 - the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
 
-The first time RsyncUI is started the Welcome message is presented. Please read the info and when ready to add tasks select the Dismiss button which opens the [add a configuration](/post/addconfigurations/) view. Before commencing use of RsyncOSX there are a few [important words to read](/post/important/).
+The first time RsyncUI is started the Welcome message is presented. Please read the info and when ready to add tasks select the Dismiss button which opens the [add a task](/post/addconfigurations/).
+
+Before commencing use of RsyncOSX there are a few [important words to read](/post/important/).
 
 {{< image src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+## Synchronize data
+
+After [adding a task](/post/addconfigurations/) you are ready to execute your first synchronize data task.
+
+- execute a synchronize data [task](/post/tasks/)
+- execute a [quick task](/post/quicktask/)
 
 ## The changelog
 
@@ -26,13 +35,6 @@ RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing c
 $HOME/.rsyncosx/macserialnumber/
 ```
 RsyncUI and RsyncOSX **does not** share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
-
-## Synchronize data
-
-How to synchronize data or just execute a quick task.
-
-- execute a synchronize data [task](/post/tasks/)
-- execute a [quick task](/post/quicktask/)
 
 ## How to setup remote servers
 
