@@ -31,7 +31,7 @@ RsyncUI and RsyncOSX **does not** share the user settings, e.g like enabling ver
 
 How to synchronize data or just execute a quick task.
 
-- execute a synchronize data [tasks](/post/tasks/)
+- execute a synchronize data [task](/post/tasks/)
 - execute a [quick task](/post/quicktask/)
 
 ## How to setup remote servers
