@@ -4,7 +4,6 @@ title = "About"
 date = "2021-03-11"
 description = "Who am I?"
 tags = ["about"]
-# categories = ["todo"]
 lastmod = "2021-04-12"
 +++
 My name is Thomas and I am the developer of RsyncOSX and RsyncUI. The development of **RsyncOSX** commenced early in 2016 as a project to learn Swift. The work on the SwiftUI based **RsyncUI** commenced late in 2020 after some thoughts about what next? Should I learn a language like TypeScript and develop a multiplattform version of RsyncOSX or continue on the Apple plattform.

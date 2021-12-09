@@ -4,7 +4,7 @@ date = "2021-03-11"
 title =  "Rsync and other settings"
 description = "Which version of rsync to use?"
 tags = ["usersettings"]
-# categories = ["general information"]
+categories = ["general information"]
 lastmod = "2021-03-11"
 +++
 You can any time save the current configuration files by the `Backup` button. The backup button executes a copy of all configuration files into your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`.

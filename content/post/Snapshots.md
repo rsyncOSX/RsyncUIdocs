@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Snapshots"
 tags = ["snapshot"]
-# categories = ["synchronize"]
+categories = ["synchronize"]
 description = "Snapshots, an effective method for saving changes to file"
 lastmod = "2020-12-14"
 +++

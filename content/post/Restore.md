@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-11"
 title =  "Restore data"
 tags = ["restore"]
-# categories = ["synchronize"]
+categories = ["synchronize"]
 description = "You might want to restore som data?"
 lastmod = "2021-03-18"
 +++

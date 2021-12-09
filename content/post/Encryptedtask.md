@@ -3,7 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-11"
 title =  "Encrypted task"
 tags = ["encrypt"]
-# categories = ["general information"]
+categories = ["general information"]
 description = "How to execute an encrypted copy of data"
 lastmod = "2021-03-11"
 +++

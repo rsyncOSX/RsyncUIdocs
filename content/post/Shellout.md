@@ -4,7 +4,7 @@ date = "2021-03-10"
 title =  "Pre- and post shell scripts"
 description = "It is possible to set a pre and post shell script"
 tags = ["shellout"]
-# categories = ["synchronize"]
+categories = ["synchronize"]
 lastmod = "2021-04-16"
 +++
 You can connect shell scripts to a task. A shell script can e.g. be mounting (pre) and unmounting (post) of a remote storage. Or you can execute a shell script to encrypyt your data ahead of synchronizing the data.  It is **only** possible to execute the shell scripts utilizing Single task and the `Now` button. Tasks are marked if there are shell scripts connected to the task.

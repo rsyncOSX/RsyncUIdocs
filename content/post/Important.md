@@ -4,7 +4,7 @@ title = "Important info about using RsyncUI"
 date = "2021-03-10"
 description = "Important info about using RsyncUI"
 tags = ["important"]
-# categories = ["general information"]
+categories = ["general information"]
 lastmod = "2021-01-14"
 +++
 There are some important information about using RsyncUI and rsync to learn if you are new to the command line tool rsync. RsyncUI is only a GUI on top of rsync. It is rsync which does actual work, not RsyncUI.

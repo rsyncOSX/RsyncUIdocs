@@ -4,7 +4,7 @@ title = "Changelog"
 date = "2021-03-11"
 description = "Changelog"
 tags = ["RsyncUI"]
-# categories = ["changelog"]
+categories = ["changelog"]
 lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
