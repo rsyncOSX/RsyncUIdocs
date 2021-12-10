@@ -11,6 +11,14 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
+## Work in progress December 2021
+
+RsyncUI is slowly, but steady becoming better and more user friendly. RsyncUI is stabel, most of the core functions are based on code from RsyncOSX. There are no plans for major changes, but more like minor enhancements when I discover parts which should be improved.
+
+One change which is in code, is deleting a task by shortcut `⌘D` when the Tasks view is the current view. The name of the menu item is also changed to Tasks.
+
+There will probably be a new release sometime in January 2022. But if you like it is easy to [compile your own version](/post/compile/).
+
 ## Version 1.2.5(build 48) - 6 December 2021
 
 The following are [changes](/post/newversion/) within this version:

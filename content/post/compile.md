@@ -12,7 +12,9 @@ xcode-select --install
 ```
 ## Remove signing credentials or replace
 
-To compile you have to either remove signing or replace signing credentials. To remove or replace select Target RsyncUI and tab "Signing and Capabilities". The first view is my signing credentials. To remove select "Team: none" and "Signing Certificates: Sign to Run Locally".
+To compile you have to either remove signing or replace signing credentials. To remove or replace select Target RsyncUI and tab "Signing and Capabilities".
+
+To remove select "Team: none" and "Signing Certificates: Sign to Run Locally".
 
 ## Compile scripts
 
