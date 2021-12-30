@@ -1,5 +1,5 @@
 baseurl = "https://rsyncui.netlify.app/"
-title   = "The RsyncUI documentation..."
+title   = "How to use RsyncUI ..."
 languageCode = "en-us"
 theme = "hello-friend-ng"
 

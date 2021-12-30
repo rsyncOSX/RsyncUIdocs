@@ -15,8 +15,8 @@ After adding or changed a task please verify the result by executing an estimati
 
 The following actions within this view:
 
-- `Add` - will add a new configuration
-- `Update` - the `Add` button will change when a configuration is selected
+- `Add` - will add a new task
+- `Update` - the `Add` button will change when a task is selected
 
 Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID.
 
@@ -45,10 +45,10 @@ Just press the Enter key will automatically enter a new task. The Enter key will
   - either server name or IP-address for remote server
 
 
-## Add configurations
+## Add tasks
 
-Select the `Add` button when completed and configuration is added to RsyncUI. RsyncUI adds a trailing / character to both local and remote volume. After selecting the Add button another configuration might be added. Any changes (edit or delete) to configurations are done from the Synchronize view. Additional parameters to rsync might be added utilizing the Parameter button.
+Select the `Add` button when completed and task is added to RsyncUI. RsyncUI adds a trailing / character to both local and remote volume. After selecting the Add button another task might be added. Any changes (edit or delete) to task are done from the Synchronize view.
 
-## Update configuration
+## Update task
 
-To update a configuration select it and update. After changes either save or select another task to abandon the update.
+To update a task select it and update. After changes either save or select another task to abandon the update.
