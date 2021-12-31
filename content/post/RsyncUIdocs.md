@@ -65,10 +65,6 @@ Rsync has a ton of parameters. In [rsync parameters](/post/rsyncparameters/) you
 
 [Snapshot is an effective method](/post/snapshots/) for saving previous versions of data and deleted files in case of a restore.
 
-## Verify the synchronized data
-
-Rsync can also verify [the synchronized data](/post/verify/).
-
 ## Logfile
 
 The `⌘O` shortcut brings up any logging to file. Sometimes `rsync` produces error and output are saved to the logfile for viewing and possible corrections of the task. If `rsync` produces an error RsyncUI will inform about that.
