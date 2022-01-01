@@ -17,8 +17,4 @@ The shell scripts names and locations is selected by the user.
   - switch execute shell script on/off
 - **Halt on error**: if the phrase "error" occurs in the output from the `pre.sh` command, if `on` the execution of synchronize command is aborted
 
-{{< image src="/images/shellout/shellout1.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Shell tasks has to be `Enabled` before they are active.
-
-{{< image src="/images/shellout/shellout2.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/shellout/shellout.png" alt="" position="center" style="border-radius: 8px;" >}}
