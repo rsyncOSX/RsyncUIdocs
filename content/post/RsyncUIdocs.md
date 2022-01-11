@@ -7,14 +7,14 @@ tags = ["summary"]
 categories = ["general information"]
 lastmod = "2021-12-09"
 +++
-RsyncUI is a SwiftUI based GUI on top of the command line utility `rsync` which is a file based tool for synchronization of files. RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).
+RsyncUI is a SwiftUI based GUI on top of the command line utility `rsync` which is a file based tool for synchronization of files. RsyncUI is [signed and notarized](/post/notarized/). It is also built as a Universal macOS Binary which means it run natively on both Apple silicon and Intel-based Mac computers.
 
-- RsyncUI is built with support for **macOS Monterey**
-- the latest [release for download](https://github.com/rsyncOSX/RsyncUI/releases)
+- the [latest version](https://github.com/rsyncOSX/RsyncUI/releases) of RsyncUI is compiled for **macOS Monterey**
+- the [changelog](/post/changelog/)
 
-The first time RsyncUI is started the Welcome message is presented. Please read the info and when ready to add tasks select the Dismiss button which opens the [add a task](/post/addconfigurations/).
+## First start
 
-There is a [changelog](/post/changelog/). Also please see info about [the latest version of rsync](/post/rsync/) to install. Before commencing use of RsyncOSX there are a few [important words to read](/post/important/).
+The first time RsyncUI is started a Welcome message is presented. Please read the [important words to read](/post/important/) and when ready to add tasks select the Dismiss button which opens the [add a task](/post/addconfigurations/). Also please see info about [the latest version of rsync](/post/rsync/) to install.
 
 {{< image src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
