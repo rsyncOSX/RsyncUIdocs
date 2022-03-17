@@ -11,7 +11,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
-## Version 1.2.7(build 50) - 17 March 2023
+## Version 1.2.7(build 50) - 17 March 2022
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 13.3 as a Universal macOS Binary.
 
@@ -21,7 +21,7 @@ This is a primarily a maintenance release.
   - search and filter
   - removed a button
 - within the restore view there is a new search facility
-- **the userconfig** is now saved as JSON file, automatically transferred from the previous PLIST config file
+- the userconfig is now saved as JSON file, automatically transferred from the previous PLIST config file
 	- userconfig are values like which version of rsync is utilized, restore path and so on
 
 ## Version 1.2.6(build 48) - 31 December 2021
