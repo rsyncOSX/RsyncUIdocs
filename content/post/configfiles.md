@@ -7,7 +7,7 @@ categories = ["general information"]
 description = "Where does RsyncUI store the configuration files?"
 lastmod = "2020-10-23"
 +++
-RsyncUI stores configurations, schedules and log records for tasks as [JavaScript Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) files. The storage of those files is:
+RsyncUI stores its configurations, schedules and log records and user configurations as [JSON](https://en.wikipedia.org/wiki/JSON) files. The storage of those files is:
 ```bash
 $HOME/.rsyncosx/macserialnumber/
 ```
@@ -29,11 +29,10 @@ If profile:
 ```bash
 $HOME/.rsyncosx/macserialnumber/profile/schedules.json
 ```
-
 ## User configurations
 
-The [user configuration](/post/settings/) is stored as a PLIST file in:
+The [user configuration](/post/settings/) is stored as:
 ```bash
-$HOME/.rsyncosx/macserialnumber/rsyncuiconfig.plist
+$HOME/.rsyncosx/macserialnumber/rsyncuiconfig.json
 ```
 The user settings applies to all profiles.
