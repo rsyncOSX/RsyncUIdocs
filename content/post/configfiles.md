@@ -7,7 +7,7 @@ categories = ["general information"]
 description = "Where does RsyncUI store the configuration files?"
 lastmod = "2020-10-23"
 +++
-RsyncUI stores its configurations, schedules and log records and user configurations as [JSON](https://en.wikipedia.org/wiki/JSON) files. The storage of those files is:
+RsyncUI stores its configurations, log records and user configurations as [JSON](https://en.wikipedia.org/wiki/JSON) files. The storage of those files is:
 ```bash
 $HOME/.rsyncosx/macserialnumber/
 ```
