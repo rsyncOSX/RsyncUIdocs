@@ -7,7 +7,7 @@ tags = ["summary"]
 categories = ["general information"]
 lastmod = "2021-12-09"
 +++
-RsyncUI is a SwiftUI based GUI on top of the command line utility `rsync` which is a file based tool for synchronization of files. RsyncUI is [signed and notarized](/post/notarized/). It is also built as a Universal macOS Binary which means it run natively on both Apple silicon and Intel-based Mac computers.
+RsyncUI is a [signed and notarized](/post/notarized/) SwiftUI based GUI on top of the command line utility `rsync` which is a file based tool for synchronization of files. RsyncUI is built as a Universal macOS Binary which means it run natively on Apple Silicon and Intel based Mac computers.
 
 - the [latest version](https://github.com/rsyncOSX/RsyncUI/releases) of RsyncUI is compiled for **macOS Monterey**
 - the [changelog](/post/changelog/)
@@ -18,7 +18,7 @@ The first time RsyncUI is started a Welcome message is presented. Please read th
 
 {{< image src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-RsyncUI can be used in **parallel with RsyncOSX**. Default catalog for storing configuration files is:
+RsyncUI can be used in **parallel with RsyncOSX**. Catalog for storing configuration files is:
 
 ```bash
 $HOME/.rsyncosx/macserialnumber/
