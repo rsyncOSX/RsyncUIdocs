@@ -18,12 +18,7 @@ The first time RsyncUI is started a Welcome message is presented. Please read th
 
 {{< image src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-RsyncUI can be used in **parallel with RsyncOSX**. Catalog for storing configuration files is:
-
-```bash
-$HOME/.rsyncosx/macserialnumber/
-```
-RsyncUI and RsyncOSX **does not** share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
+RsyncUI can be used in parallel with RsyncOSX. Catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX does not share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
 
 ## Synchronize data
 
