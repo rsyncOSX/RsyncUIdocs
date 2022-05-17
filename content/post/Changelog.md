@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 title = "Changelog"
-date = "2021-03-11"
+date = "2022-05-16"
 description = "Changelog"
 tags = ["RsyncUI"]
 categories = ["changelog"]
