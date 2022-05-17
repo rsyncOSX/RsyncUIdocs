@@ -1,15 +1,15 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-10"
+date = "2021-04-16"
 title =  "Rsync daemon setup"
 tags = ["passwordless","rsync daemon"]
 categories = ["remotelogins"]
 description = "How to setup remote logins by rsync daemon. There are also two methods for setting up."
 lastmod = "2020-07-16"
 +++
-With a few tweaks it is possible to get RsyncUI working with rsync daemon. Be aware of not utilizing ssh, transfer of data is **not** encrypted. This is might not a problem on a local network, but I would not advise it on a public network. Also be aware of **snapshot is not possible** with a rsync daemon setup.
+With a few tweaks it is possible to get RsyncOSX working with rsync daemon. Be aware of not utilizing ssh, transfer of data is not encrypted. This is might not a problem on a local network, but I would not advise it on a public network. Also be aware of **snapshot is not possible** with a rsync daemon setup.
 
-Setting up a rsync daemon setup require a server side setup and some tweaks in RsyncUI.
+Setting up a rsync daemon setup require a server side setup and some tweaks in RsyncOSX.
 
 ## Server setup
 
@@ -32,27 +32,19 @@ auth users = thomas
 secrets file = /etc/rsyncd.secrets
 ```
 
-The file `/etc/rsyncd.secrets` stores the passwords for each user on the server side.
-The `/etc/rsyncd.secrets` file:
+The file `/etc/rsyncd.secrets` stores the passwords for each user on the server side. Set `chmod 600` on the `/etc/rsyncd.secrets` file.
+
 ```bash
 user1:password_for_user1
 user2:password_for_user2
 ```
-Set `chmod 600` on the `/etc/rsyncd.secrets` file.
-```bash
-~ sudo chmod 600 /etc/rsyncd.secrets
-```
-The rsync daemon has to be started on the server. There are several methods to automatically start the rsync daemon. For a test you can execute
-```bash
-~ sudo rsync --daemon
-```
-to start rsync as a daemon on the server.
+The rsync daemon has to be started on the server. There are several methods to automatically start the rsync daemon. For a test you can execute `sudo rsync --daemon` to start rsync as a daemon on the server.
 
-## RsyncUI setup
+## RsyncOSX setup
 
-There are two methods in RsyncUI to enable rsync daemon setup. One is to prefix the username and the second is to use a double colon. Both are demonstrated below.
+There are two methods in RsyncOSX to enable rsync daemon setup. One is to prefix the username and the second is to use a double colon. Both are demonstrated below.
 
-## Prefix username in RsyncUI
+## Prefix username in RsyncOSX
 
 Within the edit view:
 
@@ -65,7 +57,7 @@ Within the parameter view:
 
 ## Enable the rsync daemon
 
-All actions is within the [rsync parameter](/post/rsyncparameters/) view:
+All actions is within the parameter view:
 
 - enable the `rsync daemon`, it adds a double colon `::` to the rsync command string
 - add a full path to the file with password, `--password-file=/Users/thomas/passord.txt`, remember to set `chmod 600` on the password file

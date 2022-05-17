@@ -1,13 +1,15 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-10"
+date = "2021-04-16"
 title =  "Snapshots"
 tags = ["snapshot"]
 categories = ["synchronize"]
-description = "Snapshots, an effective method for saving changes to file"
-lastmod = "2020-12-14"
+description = "Snapshot is a very effective method for saving changes to file."
+lastmod = "2020-12-13"
 +++
-Utilizing snapshot is an effective method for for saving previous versions of data and deleted files in case of a restore. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file. If a `file.txt` is saved in snapshot number one and never changed or deleted, the file `file.txt` in the latest snapshot is just a hardlink to the original file. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation.
+Utilizing snapshot is an effective method for restore of previous versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
+
+If a `file.txt` is saved in snapshot number one and never changed or deleted, the file `file.txt` in the latest snapshot is just a hardlink to the original file. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation.
 
 ## Snapshot and rsync daemon setup
 
@@ -15,10 +17,10 @@ Snapshot is not possible in a rsync daemon setup. For info about what a rsync da
 
 ## What is a snapshot?
 
-A snapshot is a saved state or backup of data at a specific point of time. Every snapshot is in sync with local catalog at the time of creating the snapshot. Previous versions of files can be restored from snapshots. The snapshot is by utilizing the `--link-dest` parameter to rsync. The rsync parameter for next snapshot to save is:
-```bash
---link-dest=~/snapshots/n-1 /Volumes/user/data/ user@remote.server:~/snapshots/n
-```
+A snapshot is a saved state or backup of data at a specific point of time. Every snapshot is in sync with local catalog at the time of creating the snapshot. Previous versions of files can be restored from a snapshot. The snapshot is by utilizing the `--link-dest` parameter to rsync. The rsync parameter for next snapshot to save is:
+
+`--link-dest=~/snapshots/n-1 /Volumes/user/data/ user@remote.server:~/snapshots/n`
+
 where
 
 - `n` is the number of next snapshot to be saved
@@ -32,28 +34,27 @@ RsyncUI creates the snapshots within the remote catalog. The ~ is expanded to th
 
 - snapshot one
 - a full sync when snapshot is created
-```bash
-~/snapshots/1
-```  
+
+`~/snapshots/1`
+
 - snapshot two
 - the next snapshots saves the changed files and makes hard links for files not changed
-```bash
-~/snapshots/2
-```
+
+`~/snapshots/2`
+
 - snapshot n
 - n-1 is the latest snapshot saved to disk
-```bash
-~/snapshots/n-1
-```
+
+`~/snapshots/n-1`
+
 - snapshot n
 - n is the latest snapshot to be saved
-```bash
-`~/snapshots/n
-```  
+
+`~/snapshots/n`
 
 ## Create a snapshot
 
-To create a snapshot task select `snapshot` as type in [add tasks](/post/addconfigurations/). RsyncUI saves the number n to the configuration. The number n is the next snapshot number. The number n is used when computing the parameter for rsync
+To create a snapshot task select `snapshot` as type in [add tasks](/post/addconfigurations/). Do **not** copy and paste command for execution within a terminal window. RsyncOSX saves the number n to the configuration. The number n is the next snapshot number. The number n is used when computing the parameter for rsync
 and is picked up from the configuration.
 
 ## Snapshots on local attached volumes
@@ -68,9 +69,7 @@ Deleting snapshots is a **destructive** operation and should be performed with c
 
 ## The plan for keep and delete
 
-It is advised to cleanup the number of snapshots. Select a plan, tagg the snapshots and delete the snapshots which are marked for delete.
-
-Selecting the `Tag` button evaluates all snapshots based on the date within the log record. Based and the selected plan and date, snapshots are either tagged with keep or delete. Snapshots which are tagged with delete are also preselected for delete. To actually delete the marked snapshots require to select the Delete button.
+Selecting the `Tag` button evaluates all snapshots based on the date withing the log record. Based and the selected plan and date, snapshots are either tagged with keep or delete. Snapshots which are tagged with delete are also preselected for delete. To actually delete the marked snapshots require to select the Delete button.
 
 The plan is based upon three parts where the parameter `plan` has an effect on **previous months (and years)**:
 
@@ -84,3 +83,7 @@ The plan is based upon three parts where the parameter `plan` has an effect on *
   - keep the snapshot in the last week of month for selected Day of week, e.g the last Sunday in the month
   - if `plan == Every`, keep for the selected Day of week, e.g all snapshots every Sunday, every week in previous period
   - if `plan == Last`, keep for the selected Day of week, e.g all snapshots every last Sunday every month in previous period
+
+## Tagging and delete snapshots
+
+It is advised to cleanup the number of snapshots. Select a plan, tagg the snapshots and delete the snapshots which are marked for delete.
