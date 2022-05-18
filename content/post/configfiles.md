@@ -1,13 +1,13 @@
 +++
 author = "Thomas Evensen"
 date = "2021-04-16"
-title =  "RsyncOSX config files"
+title =  "RsyncUI configuration files"
 tags = ["config file"]
 categories = ["general information"]
-description = "Where does RsyncOSX stores the various configuration files."
+description = "Where does RsyncUI stores the various configuration files?"
 lastmod = "2020-10-23"
 +++
-RsyncOSX stores its configurations, schedules and log records and user configurations as [JSON](https://en.wikipedia.org/wiki/JSON) files. The storage of those files is:
+RsyncUI stores its configurations, schedules and log records and user configurations as [JSON](https://en.wikipedia.org/wiki/JSON) files. The storage of those files is:
 
 `$HOME/.rsyncosx/macserialnumber`
 
@@ -29,8 +29,8 @@ If profile is utilized:
 
 ## User configurations
 
-The [user configurations](/post/userconfiguration/) is stored as:
+The [user configuration](/post/settings/) is stored as:
 
-`$HOME/.rsyncosx/macserialnumber/rsyncosxconfig.json`
+`$HOME/.rsyncosx/macserialnumber/rsyncuiconfig.json`
 
 The user settings applies to all profiles.
