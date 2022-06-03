@@ -20,6 +20,12 @@ The first time RsyncUI is started a Welcome message is presented. Please read th
 
 RsyncUI can be used in parallel with RsyncOSX. Catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX does not share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
 
+### Aborting task
+
+Please be aware it is an external task or process which actually executes the command line tool `rsync`. RsyncUI is monitoring the external task for counting progress and termination. The user can abort all tasks at any time. Please let abort of a task to finish and cleanup properly before starting a new task. It might take a few seconds. If not RsyncUI might become unresponsive.
+
+One advantage of utilizing `rsync` is that it can restart the synchronize task from where it was aborted.
+
 ## Synchronize data
 
 After [adding a task](/post/addconfigurations/) you are ready to execute your first synchronize data task.
