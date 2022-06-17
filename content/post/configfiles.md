@@ -19,7 +19,8 @@ In the `About` the used path for configuration files is shown. RsyncOSX evaluate
 If profile is utilized:
 
 `$HOME/.rsyncosx/macserialnumber/profile/configurations.json`
-## Schedules and log records
+
+## Log records
 
 `$HOME/.rsyncosx/macserialnumber/macserialnumber/schedules.json`
 

@@ -25,7 +25,7 @@ Just press the Enter key will automatically enter a new task. The Enter key will
 - synchronize, which is default and keeps source and destination in sync
 - [snapshots](/post/snapshots/), save changes and deletes ahead of a synchronize
 - syncremote, remote is source, synchronize a remote source to a local volume
-- *Dont´t add `/`
+- Dont´t add `/`
   - by default a trailing `/` is added to both source and destination
 
 ### Catalog parameters

@@ -7,9 +7,9 @@ categories = ["remotelogins"]
 description = "How to setup remote logins by rsync daemon. There are also two methods for setting up."
 lastmod = "2020-07-16"
 +++
-With a few tweaks it is possible to get RsyncOSX working with rsync daemon. Be aware of not utilizing ssh, transfer of data is not encrypted. This is might not a problem on a local network, but I would not advise it on a public network. Also be aware of **snapshot is not possible** with a rsync daemon setup.
+With a few tweaks it is possible to get RsyncUI working with rsync daemon. Be aware of not utilizing ssh, transfer of data is not encrypted. This is might not a problem on a local network, but I would not advise it on a public network. Also be aware of **snapshot is not possible** with a rsync daemon setup.
 
-Setting up a rsync daemon setup require a server side setup and some tweaks in RsyncOSX.
+Setting up a rsync daemon setup require a server side setup and some tweaks in RsyncUI.
 
 ## Server setup
 
@@ -40,11 +40,11 @@ user2:password_for_user2
 ```
 The rsync daemon has to be started on the server. There are several methods to automatically start the rsync daemon. For a test you can execute `sudo rsync --daemon` to start rsync as a daemon on the server.
 
-## RsyncOSX setup
+## RsyncUI setup
 
-There are two methods in RsyncOSX to enable rsync daemon setup. One is to prefix the username and the second is to use a double colon. Both are demonstrated below.
+There are two methods in RsyncUI to enable rsync daemon setup. One is to prefix the username and the second is to use a double colon. Both are demonstrated below.
 
-## Prefix username in RsyncOSX
+## Prefix username in RsyncUI
 
 Within the edit view:
 
