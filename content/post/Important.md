@@ -19,9 +19,9 @@ Default parameters set by RsyncUI to `rsync` can be disabled task by task. If yo
 
 ## Aborting task
 
-Please be aware it is an external task or process which actually executes the command line tool `rsync`. RsyncUI is monitoring the external task for counting progress and termination. The user can abort a tasks at any time. Please let the abort to finish and cleanup properly before starting a new task. It might take a few seconds. If not the apps might become unresponsive.
+Please be aware it is an external task not controlled by RsyncUI which executes the command line tool `rsync`. RsyncUI is monitoring the task for progress and termination. The user can abort a tasks at any time. Please let the abort to finish and cleanup properly before starting a new task. It might take a few seconds. If not the apps might become unresponsive.
 
-One advantage of utilizing `rsync` is that it can restart the synchronize task from where it was aborted.
+One of many advantages of utilizing `rsync` is that it can restart and continue the synchronize task from where it was aborted.
 
 ## RsyncUI as your main tool for backup
 
