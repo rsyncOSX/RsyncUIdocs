@@ -26,11 +26,12 @@ The user can set a selected ssh keypath and identityfile which applies to all co
 - portnumber, which ssh communicates through
 - keypath + identityfile, user selected if other than default
 
-If **global values** are set, this is what the ssh parameter within the rsync command looks like.
+If **global values** are set, this is what the ssh parameter within the rsync command looks like
 
-```bash
+```
 -e  "ssh -i ~/.ssh_keypath/identityfile -p NN"
 ```
+
 where
 
 - `-i` is the ssh keypath and identityfile

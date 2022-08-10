@@ -8,9 +8,9 @@ categories = ["general information"]
 lastmod = "2021-03-11"
 +++
 You can any time save the current configuration files by the `Backup` button. The backup button executes a copy of all configuration files into your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`.
-```bash
-$HOME/Documents/RsyncUIcopy-05-06-2021/08/21
-```
+
+`$HOME/Documents/RsyncUIcopy-05-06-2021/08/21`
+
 **Caution**: when opening the catalog it might be seen as empty. The copy is a `.catalog` and your filebrowser might not see such catalogs.
 
 {{< image src="/images/usersettings/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
