@@ -22,7 +22,7 @@ If profile is utilized:
 
 ## Log records
 
-`$HOME/.rsyncosx/macserialnumber/macserialnumber/schedules.json`
+`$HOME/.rsyncosx/macserialnumber/schedules.json`
 
 If profile is utilized:
 
