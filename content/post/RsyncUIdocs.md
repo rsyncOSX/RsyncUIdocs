@@ -7,7 +7,7 @@ tags = ["summary"]
 categories = ["general information"]
 lastmod = "2021-12-09"
 +++
-RsyncUI is a [signed and notarized](/post/notarized/) SwiftUI based GUI on top of the command line utility `rsync`, which is a file based tool for synchronization of files. RsyncUI is built as a Universal macOS Binary which means it run natively on Apple Silicon and Intel based Mac computers.
+RsyncUI is a [signed and notarized](/post/notarized/) SwiftUI based GUI on top of the command line utility `rsync`, which is a file based tool for synchronization of files. RsyncUI is built as a Universal macOS Binary which means it runs natively on Apple Silicon and Intel based Mac computers.
 
 - the [latest version](https://github.com/rsyncOSX/RsyncUI/releases) of RsyncUI is compiled for **macOS Monterey**
 - the [changelog](/post/changelog/)
