@@ -11,7 +11,13 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
-## Version 1.2.8(build 51) - 20 March 2022
+### Version 1.2.9 build (52) - not yet released
+
+Date: 2 September 2022
+
+There will be a new release as soon as macOS Ventura and Xcode 14.0 are released. There are minor enhancements as well. As part of Xcode 14.0 there is also a new version of Swift. There might as well be some updates related to the new version of Swift.
+
+## Version 1.2.8 build (51) - 20 March 2022
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 13.3 as a Universal macOS Binary.
 
@@ -19,8 +25,7 @@ Compiled on Apple Silicon (M1 Pro) by Xcode 13.3 as a Universal macOS Binary.
   - if not set RsyncUI will execute tasks with no estimation
   - shortcuts for estimation and execution works as expected
 
-
-## Version 1.2.7(build 50) - 17 March 2022
+## Version 1.2.7 build (50) - 17 March 2022
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 13.3 as a Universal macOS Binary.
 
@@ -31,9 +36,9 @@ This is a primarily a maintenance release.
   - removed a button
 - within the restore view there is a new search facility
 - the userconfig is now saved as JSON file, automatically transferred from the previous PLIST config file
-	- userconfig are values like which version of rsync is utilized, restore path and so on
+  - userconfig are values like which version of rsync is utilized, restore path and so on
 
-## Version 1.2.6(build 48) - 31 December 2021
+## Version 1.2.6 build (48) - 31 December 2021
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 13.2.1 as a Universal macOS Binary.
 
@@ -43,7 +48,7 @@ RsyncUI is slowly, but steady becoming better and more user friendly. RsyncUI is
 - updated a few labels
 - some minor updates as well
 
-## Version 1.2.5(build 48) - 6 December 2021
+## Version 1.2.5 build (48) - 6 December 2021
 
 The following are [changes](/post/newversion/) within this version:
 
@@ -55,13 +60,13 @@ The following are [changes](/post/newversion/) within this version:
 - a few buttons are removed, functions in buttons are moved to shortcuts
 - there is a new first time start view
 
-## Version 1.2.3(build 46) - 11 November 2021
+## Version 1.2.3 build (46) - 11 November 2021
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 13.1 as a Universal macOS Binary.
 
 Localization for German and Norwegian added. Added GUI panels for selecting catalogs to synchronize.
 
-## Version 1.2.2(build 45) - 28 October 2021
+## Version 1.2.2 build (45) - 28 October 2021
 
 The issues **below** is solved in this version.
 
@@ -71,7 +76,7 @@ RsyncUI should also detect if on a Apple Silicon or Intel based Mac.
 
 And  there is also an annoying error messages if a not valid path for `rsync` and restore is set.
 
-## Version 1.2.1(build 42) - 21 October 2021
+## Version 1.2.1 build (42) - 21 October 2021
 
 Build by Xcode 13.1 RC
 
@@ -81,38 +86,38 @@ The default profile is automatically selected at start of application.
 
 Localization to German, Italian and Norwegian is **not** yet added. There was some issues in localization and it is removed for the moment. Most of strings are already translated into German and Norwegian.
 
-## Version 1.2.0(build 41) - 28 September 2021
+## Version 1.2.0 build (41) - 28 September 2021
 
 The issue in Update configurations is fixed. There was also a issue with labels (prompts) in textfields which is fixed.
 
-## Version 1.1.2(build 40) - 9 September 2021
+## Version 1.1.2 build (40) - 9 September 2021
 
-This build includes some minor UI tweaks in toggle buttons (see [settings](/post/normalsettings/)). The docs are updated with screenshots. This is most likely the last update before macOS Monterey is relesed. A new build, version 1.2.0(build 41) will be released as soon as Apple release macOS Monterey and Xcode 13.
+This build includes some minor UI tweaks in toggle buttons (see [settings](/post/normalsettings/)). The docs are updated with screenshots. This is most likely the last update before macOS Monterey is relesed. A new build, version 1.2.0build (41) will be released as soon as Apple release macOS Monterey and Xcode 13.
 
-## Version 1.1.2(build 39) - 1 September 2021
+## Version 1.1.2 build (39) - 1 September 2021
 
 The schedule part of app is removed. The majority of users dont use scheduling. This is the experience from RsyncOSX and the download statistics. In about 2000 downloads of RsyncOSX only 80 is the scheduling app.
 
-## Version 1.1.2(build 38) - 28 August 2021
+## Version 1.1.2 build (38) - 28 August 2021
 
 - a few minor UI enhancements
 - no bugfixes
 
 And the QA and work on the UI continues.
 
-## Version 1.1.2(build 37) - 21 August 2021
+## Version 1.1.2 build (37) - 21 August 2021
 
 - redesign of rsync parameters UI, [split into parameters and default parameters](/post/rsyncparameters/)
 - fixed a couple of bugs in rsync parameters as well
 
 The QA and work on the UI continues, still not happy with some of the views.
 
-## Version 1.1.2(build 36) - 16 August 2021
+## Version 1.1.2 build (36) - 16 August 2021
 
 - finally decided about button style, see screenshots in this doc
 - some minor changes
 
-## Version 1.1.2(build 35) - 11 August 2021
+## Version 1.1.2 build (35) - 11 August 2021
 
 - added "select and slide to left" for delete a configuration
 - removed the delete button within multiple tasks view
@@ -120,7 +125,7 @@ The QA and work on the UI continues, still not happy with some of the views.
 
 Thats it for now.
 
-## Version 1.1.2(build 34) - 30 July 2021
+## Version 1.1.2 build (34) - 30 July 2021
 
 New [build](https://github.com/rsyncOSX/RsyncUI/releases) for public beta of MacOS Monterey, build by **Xcode 13 beta 4**, builds are English only.
 
@@ -136,7 +141,7 @@ The QA and cleanup of UI continues on the road to release on macOS Monterey. Rsy
 - and some internal stuff is refactored
 - one minor bugfix
 
-## Version 1.1.2(build 28)
+## Version 1.1.2 build (28)
 
 There is 29 June 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.2 of RsyncUI. There are two builds, one for macOS Big Sur and one for macOS Monterey.
 
@@ -149,7 +154,7 @@ At start of the macOS Big Sur version select, from the drop down, either the "De
 
 The localization of RsyncUI is somewhat refactored. For the moment RsyncUI is localized to German and Norwegian, and there are a few strings missing in the release candidate.
 
-## Version 1.1.1(build 27)
+## Version 1.1.1 build (27)
 
 **Update 17 June 2021**. The builds are removed for the moment.
 
@@ -162,7 +167,7 @@ There is 4 June 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) ve
   - this is now fixed and the filesize, specially the logs file, is reduced
 - existing users of RsyncOSX using defalt format for storing data (PLIST) now can use RsyncUI to [transform default PLIST data](/post/plist/) to JSON which is required in RsyncUI
 
-## Version 1.1.0(build 26)
+## Version 1.1.0 build (26)
 
 There is 21 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.1.0 of RsyncUI. The following is fixed in this release:
 
@@ -174,7 +179,7 @@ There is 21 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) ve
 - updates to [the UI for adding and updating Configuration](https://rsyncui.netlify.app/post/addconfigurations/)
 - updates to [the UI for adding shell scripts](https://rsyncui.netlify.app/post/shellout/)
 
-## Version 1.0.1(build 24)
+## Version 1.0.1 build (24)
 
 There is 12 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0.1 of RsyncUI and RsyncSchedule.
 
@@ -187,7 +192,7 @@ The following are changes compared to previous releases:
   - delete old snapshots
 - a few minor cleanups and enhancements in the UI part
 
-## Version 1.0.0(build 23)
+## Version 1.0.0 build (23)
 
 There is 06 May 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) version 1.0.0 of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks. The **snapshot administration**, like delete old snapshots, is still not yet completed. The work on snapshot administration is going forward and it will be released as an update of RsyncUI. But there are a few issues which has to be resolved before release.
 
@@ -201,7 +206,7 @@ Issue: there is an issue, in Snapshots, selecting a snapshot task and collecting
 
 About **JSON**: see note on the release 0.99.
 
-## Prerelease version 0.99(build 22)
+## Prerelease version 0.99 build (22)
 
 There is 28 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a release candidate of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks.
 
@@ -219,7 +224,8 @@ There is some more info about [how to setup RsyncOSX utilizing JSON](https://rsy
 ```bash
 $HOME/.rsyncosx/macserialnumber/
 ```
-## Prerelease v0.60(build 20) - breaking changes
+
+## Prerelease v0.60 build (20) - breaking changes
 
 There is 21 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version of RsyncUI and RsyncSchedule, the menu app for executing scheduled tasks. There are two **breaking changes** in this release:
 
@@ -231,7 +237,7 @@ The following are changes compared to previous release:
 - and some minor tweaks and updates in the UI
 - execution of **shellout tasks**, configurations with pre and post shell scripts
 
-## Prerelease v0.55(build 19)
+## Prerelease v0.55 build (19)
 
 There is 14 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
@@ -241,7 +247,7 @@ There is 14 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 
 The pace of new prereleases will slow down, it will probably be a copule of new pre releases and after that a few version 1.0.0 release candidates (in May 2021) before release of version 1.0.0.
 
-## Prerelease v0.49(build 18)
+## Prerelease v0.49 build (18)
 
 There is 12 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
@@ -250,13 +256,13 @@ There is 12 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - some other minor improvmentes as well
 - RsyncUI now **inform** when there is a new update for download
 
-## Prerelease v0.48(build 17)
+## Prerelease v0.48 build (17)
 
 There is 9 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
 - there is fixed an issue with speed in administrating logs, previous versions *spinning beach ball* where many log records
 
-## Prerelease v0.47(build 16)
+## Prerelease v0.47 build (16)
 
 There is 8 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
@@ -266,21 +272,20 @@ There is 8 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a
 
 It seems to be a release version 1.0.0 of RsyncUI sometime in May 2021.
 
-## Prerelease v0.45(build 15)
+## Prerelease v0.45 build (15)
 
 There is 5 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
 - some cleanup and tweaks in the UI
 - the base language is English, German and Norwegian localization is up to date, Italian is still work to do
 
-
-## Prerelease v0.42(build 14)
+## Prerelease v0.42 build (14)
 
 There is 2 April 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
 - added Quick task, add a source and a destination and go for it
 
-## Prerelease v0.41(build 12)
+## Prerelease v0.41 build (12)
 
 There is 31 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
@@ -289,7 +294,7 @@ There is 31 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - there is still work to do abouth the Italian localization
 - and some other parts are also enhanced
 
-## Prerelease v0.39(build 11)
+## Prerelease v0.39 build (11)
 
 There is 25 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
@@ -298,7 +303,7 @@ There is 25 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 
 The plan for release of version 1.0 is sometime in June or July 2021.
 
-## Prerelease v0.36(build 10)
+## Prerelease v0.36 build (10)
 
 There is 18 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
@@ -306,7 +311,7 @@ There is 18 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - logs view, either all or by config, search and delete in logs
 - and a few other enhancments as well, commenced using Combine
 
-## Prerelease v0.36(build 8)
+## Prerelease v0.36 build (8)
 
 There is 15 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) a new version for test. The following is changed compared to previous version:
 
@@ -315,7 +320,7 @@ There is 15 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - focus the next few weeks are QA of what is implemented and planning what to be developed next
 - I am also using time to learn more about SwiftUI, focus now is Combine and how can I use Combine in RsyncUI
 
-## Prerelease v0.35(build 7)
+## Prerelease v0.35 build (7)
 
 There is still some minor issues with settings - a new prerelease will be uploaded in next week (16 - 20 March). Use RsyncOSX if you will change some settings.
 
@@ -327,6 +332,6 @@ There is 14 March 2021 [released](https://github.com/rsyncOSX/RsyncUI/releases) 
 - RsyncUI will probably be released in version 1.0 in about two or three months, either late in May or beginning of June 2021
 - as the development progresses new testreleases will be available
 
-## Prerelease v0.3(build 6)  
+## Prerelease v0.3 build (6)
 
 There is 12 March 2021 [released a test version](https://github.com/rsyncOSX/RsyncUI/releases). The testversion can be used in parallel with RsyncOSX.
