@@ -13,9 +13,9 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 ## Version 1.2.9 build (52) - 8 September 2022
 
-Date: 8 September 2022
+Compiled on Apple Silicon (M1 Pro) by Xcode 14.0 as a Universal macOS Binary.
 
-This release is built on macOS  Ventura and Xcode 14.0.  There are some minor GUI enhancements.
+This release is built on macOS  Ventura. There are some minor GUI enhancements.
 
 ## Version 1.2.8 build (51) - 20 March 2022
 
