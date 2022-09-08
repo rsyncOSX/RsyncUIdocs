@@ -11,11 +11,11 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
-## Version 1.2.9 build (52) - not yet released
+## Version 1.2.9 build (52) - 8 September 2022
 
-Date: 2 September 2022
+Date: 8 September 2022
 
-There will be a new release as soon as macOS Ventura and Xcode 14.0 are released. There are minor enhancements as well. As part of Xcode 14.0 there is also a new version of Swift. There might as well be some updates related to the new version of Swift.
+This release is built on macOS  Ventura and Xcode 14.0.  There are some minor GUI enhancements.
 
 ## Version 1.2.8 build (51) - 20 March 2022
 
