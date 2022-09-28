@@ -4,7 +4,6 @@ date = "2021-04-16"
 title =  "RsyncUI configuration files"
 tags = ["config file"]
 categories = ["general information"]
-description = "Where does RsyncUI stores the various configuration files?"
 lastmod = "2020-10-23"
 +++
 RsyncUI stores its configurations, schedules and log records and user configurations as [JSON](https://en.wikipedia.org/wiki/JSON) files. The storage of those files is:

@@ -2,8 +2,7 @@
 author = "Thomas Evensen"
 date = "2021-03-12"
 title =  "RsyncUI settings"
-description = "Some settings in RsyncUI can be tweaked by the user"
-tags = ["usersettings"]
+tags = ["userconfig"]
 categories = ["general information"]
 lastmod = "2021-03-12"
 +++

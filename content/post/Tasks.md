@@ -4,7 +4,6 @@ date = "2021-03-10"
 title =  "Execute tasks"
 tags = ["execute","delete tasks"]
 categories = ["synchronize"]
-description = "Execute multiple tasks."
 lastmod = "2021-03-10"
 +++
 The task view either lets you:

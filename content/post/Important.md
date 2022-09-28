@@ -2,7 +2,6 @@
 author = "Thomas Evensen"
 title = "Important info about using RsyncUI"
 date = "2021-03-10"
-description = "Important info about using RsyncUI"
 tags = ["important"]
 categories = ["general information"]
 lastmod = "2021-01-14"

@@ -4,7 +4,6 @@ date = "2021-03-11"
 title =  "Restore data"
 tags = ["restore"]
 categories = ["synchronize"]
-description = "You might want to restore som data?"
 lastmod = "2021-03-18"
 +++
 Restore either files or complete synchronized files is easy in RsyncUI. A restore has to be executed to a **temporary restore path**. This is to secure not destroying any original data. A restore session might be as follows.

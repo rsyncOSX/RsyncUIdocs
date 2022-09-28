@@ -4,7 +4,6 @@ date = "2021-03-10"
 title =  "License"
 tags = ["license"]
 categories = ["general information"]
-description = "The License of RsyncUI."
 +++
 The MIT License (MIT)
 

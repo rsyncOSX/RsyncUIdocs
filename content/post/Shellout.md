@@ -2,7 +2,6 @@
 author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Pre- and post shell scripts"
-description = "It is possible to set a pre and post shell script"
 tags = ["shellout"]
 categories = ["synchronize"]
 lastmod = "2021-04-16"

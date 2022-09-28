@@ -2,9 +2,8 @@
 author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Add and update tasks"
-description = "How to enter synchronize tasks into RsyncUI."
-tags = ["add configurations"]
-categories = ["configurations"]
+tags = ["add"]
+categories = ["synchronize"]
 lastmod = "2021-03-25"
 +++
 A task require minimum a **local catalog** and a **remote catalog**. After entering information about a task, select the `Add` button to add it to RsyncUI. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.

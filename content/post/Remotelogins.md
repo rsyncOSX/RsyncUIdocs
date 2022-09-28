@@ -3,8 +3,7 @@ author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Remote servers and passwordless logins"
 tags = ["passwordless"]
-categories = ["remotelogins"]
-description = "There are two ways to setup passwordless logins to remote servers."
+categories = ["remote servers"]
 lastmod = "2021-03-10"
 +++
 There are two ways to setup passwordless logins to a remote server. RsyncUI supports both. It is strongly advised to use ssh and ssh-keys because the traffic is encrypted and it is considered more secure.

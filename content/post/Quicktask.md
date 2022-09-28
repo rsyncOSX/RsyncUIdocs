@@ -4,7 +4,6 @@ date = "2021-03-11"
 title =  "Quicktask"
 tags = ["quick task"]
 categories = ["synchronize"]
-description = "How to just execute a quick task?"
 lastmod = "2021-03-18"
 +++
 Use RsyncUI for quickly synchronize files to either local or remote storage. If synchronizing to a remote storage require setup of [passwordless login](/post/remotelogins/).
