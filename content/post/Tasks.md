@@ -41,10 +41,6 @@ The `Log` button presents a detailed output from rsync.
 
 {{< image src="/images/tasks/detailedoutput.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Delete
-
-Select a configuration and slide left for delete.
-
 ## Abort
 
 Select Abort will halt any ongoing action.

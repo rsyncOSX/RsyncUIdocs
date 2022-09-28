@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 date = "2021-03-10"
-title =  "Remote servers and passwordless logins"
+title = "Remote servers and passwordless logins"
 tags = ["passwordless"]
 categories = ["remote servers"]
 lastmod = "2021-03-10"

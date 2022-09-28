@@ -72,9 +72,3 @@ The `⌘O` shortcut brings up any logging to file. Sometimes `rsync` produces er
 ## Config files
 
 Where does RsyncUI save [the files](/post/configfiles/) to permanent storage?
-
-# Development
-
-The target for RsyncUI is macOS Monterey. There is more info about [the development](/post/development/) of RsyncUI.
-
-# 
