@@ -36,11 +36,6 @@ RsyncUI creates the snapshots within the remote catalog. The ~ is expanded to th
 - snapshot one
 - a full sync when snapshot is created
 
-`~/snapshots/2`
-
-- snapshot two
-- the next snapshots saves the changed files and makes hard links for files not changed
-
 ...
 
 `~/snapshots/n`
