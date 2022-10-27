@@ -8,38 +8,38 @@ lastmod = "2021-03-10"
 +++
 The task view either lets you:
 
-- execute **all** or **selected** (by shortcut `⌘T`) tasks in one go
-- for **one** task, estimate and view the detailed output from rsync before executing the real run
+- execute **all** or **selected** (by shortcut `⌘S`) tasks in one go
 
 All actions are triggered either by keyboard shortcuts or by buttons. The following are allowed shortcut actions:
 
 - `estimate` - shortcut `⌘E`
 - `execute` - shortcut `⌘R`
-- `select task` - shortcut `⌘T`
+- `select/deselct task` - shortcut `⌘S`
+- `show info` - shortcut `⌘I`
 
 ## Several tasks
 
-This is most likely the most used action after adding and verifying the task. When RsyncUI starts it automatically open this view and by selecting the shortcut action `⌘R` will commence estimating and execute all tasks. If you only want to do this for some of the tasks, select the tasks and choose the action.
+This is most likely the most used action after adding and verifying the task. When RsyncUI starts it automatically open this view and by selecting the shortcut action `⌘R` will commence executing **all** tasks. If selecting the shortcut action `⌘E`, estimating, will estimate all tasks. Executing tasks after estimating, a progressbar will show progress. 
 
-{{< image src="/images/tasks/estimateall.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-The `Log` button presents a summarized output from all rsync tasks.
+{{< image src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-{{< image src="/images/tasks/summarizedoutput.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/tasks/execute.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## One task
 
-**Choose** (not select) a task when the task view is opened and select (or by shortcut) the Estimate button.
+All of the above can also be utilized for either one and selected tasks. **Choose** (higlight) or select tasks by shortcut `⌘S`.
 
-{{< image src="/images/tasks/selectone.png" alt="" position="center" style="border-radius: 8px;" >}}
+## Dry run and local and remote info
 
-A summarized view of an estimation run:
+Highlight a task and select `DryRun` button executes a dry run for task and presents the output from rsync. 
 
-{{< image src="/images/tasks/estimateone.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/tasks/dryrun.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-The `Log` button presents a detailed output from rsync.
+Highlight a task and select `⌘I` will show local and remote info about a task.
 
-{{< image src="/images/tasks/detailedoutput.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/tasks/localremote.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Abort
 
