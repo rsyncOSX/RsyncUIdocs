@@ -14,7 +14,9 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.0 as a Universal macOS Binary
 
-The major work in this release is rewriting some of the code to utilize Swifts async and await for asynchronous execution of code. The new code utilizing async and await is much simpler to read and write. The need for callback functions are reduced and it makes code lesser and much cleaner. The main view is also changed a little bit, see info:  [the changed main view](/post/tasks/).
+The major work in this release is rewriting some of the code to utilize Swifts async and await for asynchronous execution of code. The new code utilizing async and await is much simpler to read and write. The need for callback functions are reduced and it makes code lesser and much simpler. 
+
+The main view is also changed a little bit, see info [the changed main view](/post/tasks/).
 
 ## Version 1.3.0 build (53) - 30 September 2022
 
