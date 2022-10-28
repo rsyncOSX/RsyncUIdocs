@@ -15,7 +15,7 @@ The task view either lets you execute **all** or **selected** (by shortcut `⌘S
 
 ## Several tasks
 
-This is most likely the most used action after adding and verifying the task. When RsyncUI starts it automatically open this view and by selecting the shortcut action `⌘R` will commence executing **all** tasks. If selecting the shortcut action `⌘E`, estimating, will estimate all tasks. Executing tasks after estimating, a progressbar will show progress. 
+When RsyncUI starts it automatically open this view and by selecting the shortcut action `⌘R`, execute, will commence executing **all** tasks. If there is no estimating ahead there is no progress bars.  If selecting the shortcut action `⌘E`, estimating, will estimate all tasks. Executing tasks after estimating, a progressbar will show progress. 
 
 {{< image src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
