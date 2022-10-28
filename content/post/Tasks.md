@@ -6,11 +6,7 @@ tags = ["execute","delete tasks"]
 categories = ["synchronize"]
 lastmod = "2021-03-10"
 +++
-The task view either lets you:
-
-- execute **all** or **selected** (by shortcut `⌘S`) tasks in one go
-
-All actions are triggered either by keyboard shortcuts or by buttons. The following are allowed shortcut actions:
+The task view either lets you execute **all** or **selected** (by shortcut `⌘S`) tasks in one go. Actions are triggered either by keyboard shortcuts or by buttons. The following are allowed shortcut actions:
 
 - `estimate` - shortcut `⌘E`
 - `execute` - shortcut `⌘R`
