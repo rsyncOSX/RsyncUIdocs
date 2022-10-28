@@ -21,13 +21,17 @@ It is adviced to install rsync as part of Homebrew. RsyncUI discover what type o
  - Rsync v3.x to `on` - set optional path if **NOT** by Homebrew
    	- any version of rsync should work, but only version 2.6.9 and 3.2.x are tested and verified
     - [utilizing the snapshot feature](/post/snapshots/) require version 3.2.x of rsync
-- path for rsync:
+- rsync version and path:
     - if utilized version of rsync is **not** installed by Homebrew set path to rsync
 - path for restore:
     - preset temporary path for restoring single files and catalogs
     - preset temporary path for a full restore
 
 If there is a not valid rsync path is set an error is presented.
+
+## Mark days
+
+Tasks with older execute date than number of days are marked red.
 
 ## Log to file
 
@@ -39,18 +43,8 @@ There is three choices for logging, none, min and full and they are mutually exc
 
 The log file can be inspected by `⌘O` shortcut or by the File menu. The log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`.
 
-## Level log
+## Detailed log level and monitor network
 
 If Detailed is `on` there is a separate log for each run. If `off` only date for last run is saved on the configuration.
 
-## Mark days
-
-Tasks with older execute date than number of days are marked red.
-
-## Monitor network
-
 RsyncUI can monitor the network connection during execution of tasks. If a network connection is dropped during execution, RsyncUI sends an interrupt signal to the task and it halts with an error.
-
-## Check input
-
-By setting check data, RsyncUI will check and if required clean logs. The check data flag is **not** persistent and have to be set each time.
