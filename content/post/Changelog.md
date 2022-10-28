@@ -14,7 +14,7 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.0 as a Universal macOS Binary
 
-The major work in this release is rewriting some of the code to utilize Swifts async and await for asynchronous execution of code. The new code utilizing async and await is much simpler to read and write. The need for callback functions are reduced and it makes code lesser.  Lesser code is good. Asynchronous execution is a key part of RsyncUI. The completion of a task is not known and whenever that happens next action is executed. Next action is like execute next task, present output from rsync or like present a list of files. 
+The major work in this release is rewriting some of the code to utilize Swifts async and await for asynchronous execution of code. The new code utilizing async and await is much simpler to read and write. The need for callback functions are reduced and it makes code lesser.  Lesser code is better code. Asynchronous execution is a key part of RsyncUI. The completion of a task is not known ahead of execution and whenever a task is completed next action is executed. Next action is e.g. execute next synchronization task, present output from rsync or present a list of files. 
 
 The main view is also changed a little bit, see [the changed main view](/post/tasks/).
 
