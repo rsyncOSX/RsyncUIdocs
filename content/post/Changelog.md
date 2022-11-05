@@ -10,6 +10,13 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
+## Version 1.3.7 build (56) - 5 November 2022
+
+Compiled on Apple Silicon (M1 Pro) by Xcode 14.0 as a Universal macOS Binary
+
+There is fixed a minor bug when selecting a task and hitting the shortcut `⌘R` for excute task now. The task is executed but the spinning progresswheel did not disappear when task was completed. It is now fixed.
+
+
 ## Version 1.3.6 build (55) - 31 October 2022
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.0 as a Universal macOS Binary
