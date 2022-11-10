@@ -14,14 +14,13 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary
 
-There are a few changes and fixes to the snapshot part of RsyncUI. The changes are the as applied to the snapshot part of RsyncOSX. This is a release candidate on will be released as an new version in a couple of weeks.
+There are a few changes and fixes to the snapshot part of RsyncUI. The changes are as applied to the snapshot part of RsyncOSX. This is a release candidate and will be released as an new version in a couple of weeks.
 
 ## Version 1.3.7 build (56) - 5 November 2022
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.0 as a Universal macOS Binary
 
 There is fixed a minor bug when selecting a task and hitting the shortcut `⌘R` for excute task now. The task is executed but the spinning progresswheel did not disappear when task was completed. It is now fixed.
-
 
 ## Version 1.3.6 build (55) - 31 October 2022
 
