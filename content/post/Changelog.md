@@ -14,7 +14,10 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary
 
-There are a few changes and fixes to the snapshot part  and the parameters to rsync part of RsyncUI.
+There are a few changes and fixes to the snapshots and the parameters to rsync parts of RsyncUI. Changes are:
+
+- snaphots: fixed a few bugs, the first and last snapshot are not possible to delete even if they are marked for delete, during delete process they are removed from delete list if marked
+- parameters to rsync: if default parameters are marked for delete the actual parameterlist presented is updated, changes has to be saved to take effect
 
 ## Version 1.3.8 build (56) release candidate - 10 November 2022
 
