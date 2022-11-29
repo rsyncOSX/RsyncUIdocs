@@ -14,11 +14,11 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary as version version 1.3.9 build (59)
 
-No bugfixes but a few enhancements to the main task view.  The enhancement let you view details (dryn run) after a estimate all tasks. 
+No bugfixes but a few enhancements to the main task view.  The enhancement let you view details (`dryrun`) after a estimate all tasks. 
 
 - in main view select `Estimate` button without selecting a task
 - after closing the summarized estimated view, select a task and the details (dryn run) is presented
-- select another task and the details (dryn run) is presented
+- select another task and the details(`dryrun`) is presented
 
 The `Reset` will reset all estimates. Likewise if tasks er executed after estimate will reset all estimates.
 
