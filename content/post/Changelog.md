@@ -10,6 +10,18 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
+## Version 1.3.9 build (59) release candidate  - 29 November 2022
+
+Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary
+
+No bugfixes but a few enhancements to the main task view.  The enhancement let you view details (dryn run) after a estimate all tasks. 
+
+- in main view select `Estimate` button without selecting a task
+- after closing the summarized estimated view, select a task and the details (dryn run) is presented
+- select another task and the details (dryn run) is presented
+
+The `Reset` will reset all estimates. Likewise if tasks er executed after estimate will reset all estimates.
+
 ## Version 1.3.9 build (57) - 18 November 2022
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary
