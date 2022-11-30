@@ -17,8 +17,8 @@ Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary as 
 No bugfixes but a few enhancements to the main task view.  The enhancement let you view details (`dryrun`) after an estimate all tasks. 
 
 - in main view select `Estimate` button without selecting a task
-- after closing the summarized estimated view, select a task and the details (dryn run) is presented
-- select another task and the details(`dryrun`) is presented
+- after closing the summarized estimated view, select a task and the details (`dryrun`) is presented
+- select another task and the details is presented
 
 The `Reset` will reset all estimates. Likewise if tasks er executed after estimate will reset all estimates.
 
