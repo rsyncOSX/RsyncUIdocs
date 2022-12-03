@@ -12,7 +12,7 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 ## Version 1.4.0 release candidate  - 3 December 2022 (updated)
 
-Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary as version version 1.3.9 build (60)
+Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary as version version 1.3.9 build (61)
 
 Update 3 December 2022.
 
