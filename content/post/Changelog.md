@@ -10,27 +10,20 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI is to ease the use of `rsync`, not teach macOS users how to use `rsync`. That is beyond the scope of RsyncUI. Setting the wrong parameters to rsync can result in deleted data. And RsyncUI will not stop you for doing so. That is why it is very important to execute a simulated run (`--dry-run`) and inspect what happens before a real run.
 
-## Version 1.4.0 release candidate  - 3 December 2022 (updated)
+## Version 1.4.0 build (62) - 6 December 2022
 
-Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary as version version 1.3.9 build (61)
+Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary
 
-Update 3 December 2022.
+Some enhancements and a few bugfixes:
 
-- there are a few enhancements within the parameters view (default and user) to rsync
-- any changes to parameters are presented "on the fly"
-- changes might be verified (by a `dryrun`) ahead of saving
-
-Update 1 December 2022.
-
-- bugfix in [Quick Synchronize](https://rsyncui.netlify.app/post/quicktask/), now it works as expected 
-
-No bugfixes but a few enhancements to the main task view.  The enhancement let you view details (`dryrun`) after an estimate all tasks. 
-
+- there is a enhancement within the parameters view (default and user) to rsync
+    - any changes to parameters are presented "on the fly"
+    - changes might be verified (by a `dryrun`) ahead of saving
 - in main view select `Estimate` button without selecting a task
-- after closing the summarized estimated view, select a task and the details (`dryrun`) is presented
-- select another task and the details is presented
-
-The `Reset` will reset all estimates. Likewise if tasks er executed after estimate will reset all estimates.
+    - after closing the summarized estimated view, select a task and the details (`dryrun`) is presented
+    - select another task and the details is presented
+    - the `Reset` will reset all estimates, likewise if tasks er executed after estimate will reset all estimates.
+- bugfix in [Quick Synchronize](https://rsyncui.netlify.app/post/quicktask/)
 
 ## Version 1.3.9 build (57) - 18 November 2022
 
