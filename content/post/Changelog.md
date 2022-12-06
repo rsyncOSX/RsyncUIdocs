@@ -14,16 +14,21 @@ Using RsyncUI requires some knowledge of `rsync`. The main objective for RsyncUI
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary
 
-Some enhancements and a few bugfixes:
+Some enhancements and a bugfix in this release.
 
-- there is a enhancement within the parameters view (default and user) to rsync
-    - any changes to parameters are presented "on the fly"
-    - changes might be verified (by a `dryrun`) ahead of saving
+Parameters to rsync:
+
+- any changes to parameters are presented "on the fly", add or delete a parameter and the updated rsync command is presented
+- the changed rsync command might be verified (by a `dryrun`) ahead of saving
+
+Estimate and details:
+
 - in main view select `Estimate` button without selecting a task
     - after closing the summarized estimated view, select a task and the details (`dryrun`) is presented
     - select another task and the details is presented
     - the `Reset` will reset all estimates, likewise if tasks er executed after estimate will reset all estimates.
-- bugfix in [Quick Synchronize](https://rsyncui.netlify.app/post/quicktask/)
+    
+And there is a bugfix in [Quick Synchronize](https://rsyncui.netlify.app/post/quicktask/).
 
 ## Version 1.3.9 build (57) - 18 November 2022
 
