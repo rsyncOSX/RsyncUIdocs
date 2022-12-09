@@ -27,7 +27,7 @@ One advantage of utilizing `rsync` is that it can restart the synchronize task f
 
 ### How to verify a new task - important
 
-After adding [a task](/post/addconfigurations/), select the task and choose `DryRun` button to verify the the output from rsync. A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button.
+After adding [a task](/post/addconfigurations/), within the main view, select the task and choose `DryRun` button to verify the the output from rsync. A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button.
 
 For more experienced users of rsync, form within the Rsync parameters view, select the new task. Copy and paste the `Synchronize` string into a terminal view. The rsync command includes the `dryrun` parameter as default within this view.
 
