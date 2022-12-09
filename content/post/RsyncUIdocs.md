@@ -25,12 +25,20 @@ Please be aware it is an external task or process which actually executes the co
 
 One advantage of utilizing `rsync` is that it can restart the synchronize task from where it was aborted.
 
+### How to verify a new task - important
+
+After adding [a task](/post/addconfigurations/), select the task and choose `DryRun` button to verify the the output from rsync. A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button.
+
+For more experienced users of rsync, form within the Rsync parameters view, select the new task. Copy and paste the `Synchronize` string into a terminal view. The rsync command includes the `dryrun` parameter as default within this view.
+
 ## Synchronize data
 
 After [adding a task](/post/addconfigurations/) you are ready to execute your first synchronize data task.
 
 - execute a [synchronize data task](/post/tasks/)
 - execute a [quick task](/post/quicktask/)
+
+**Always** verify, by a `dryrun`,  the result of a **new** task before executing it.
 
 ## How to setup remote servers
 
