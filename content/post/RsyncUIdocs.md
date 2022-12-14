@@ -57,6 +57,10 @@ It is easy to [add and update configurations](/post/addconfigurations/).
 
 The user can [tweak some settings in RsyncUI](/post/settings/)
 
+## Parameters to rsync
+
+Rsync has a ton of parameters. In [rsync parameters](/post/rsyncparameters/) you can add your own additional parameters to rsync. There is also a set of default rsync parameters. Default parameters might be deleted if wanted. Default parameters are added to all new tasks.
+
 ## Pre and post shell scripts
 
 RsyncUI might execute a [pre and post shell script](/post/shellout/) connected to a task.
@@ -64,10 +68,6 @@ RsyncUI might execute a [pre and post shell script](/post/shellout/) connected t
 ## Restore data
 
 Sometimes you might want to [restore some data](/post/restore/).
-
-## Parameters to rsync
-
-Rsync has a ton of parameters. In [rsync parameters](/post/rsyncparameters/) you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
 
 ## Snapshots
 

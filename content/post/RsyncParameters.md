@@ -6,7 +6,9 @@ tags = ["parameters to rsync"]
 categories = ["rsync parameters"]
 lastmod = "2021-03-25"
 +++
-RsyncUI implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over **network connection** or not. Which standard parameters to use is computed during startup of application by reading the configuration file. The user can also remove default parameters if required.
+RsyncUI implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over **network connection** or not. Which standard parameters to use is computed during startup of application by reading the configuration file. The user can also remove default parameters if required. Parameters to rsync is saved by task.  The ssh parameter might be set global to all tasks. The global ssh parameters might by overridden by ssh parameter by task.
+
+The resulting commandline string is dynamically updated. By the `Verify` button new parameters might be tested before saving. The verify executes a `--dry-run` task for verification of parameters. The above applies to both default and user set parameters.
 
 ## Default rsync parameters
 
