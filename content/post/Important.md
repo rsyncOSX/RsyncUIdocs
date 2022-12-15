@@ -1,6 +1,6 @@
 +++
 author = "Thomas Evensen"
-title = "Important info about using RsyncUI"
+title = "Important"
 date = "2021-03-10"
 tags = ["important"]
 categories = ["general information"]

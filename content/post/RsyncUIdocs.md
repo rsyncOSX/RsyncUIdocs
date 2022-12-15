@@ -13,19 +13,19 @@ RsyncUI is a [signed and notarized](/post/notarized/) SwiftUI based GUI on top o
 
 ## First start
 
-The first time RsyncUI is started a Welcome message is presented. Please read the [important words to read](/post/important/) and when ready to add tasks select the Dismiss button which opens the [add a task](/post/addconfigurations/). Also please see info about [the latest version of rsync](/post/rsync/) to install.
+The first time RsyncUI is started a Welcome message is presented. Please read the [important information](/post/important/) and when ready to add tasks select the Dismiss button which opens the [add a task](/post/addconfigurations/). Also please see info about [the latest version of rsync](/post/rsync/) to install.
 
 {{< image src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 RsyncUI can be used in parallel with RsyncOSX. Catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX does not share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
 
-### Aborting task
+### Aborting a task
 
 Please be aware it is an external task or process which actually executes the command line tool `rsync`.RsyncUI is monitoring the external task for counting progress and termination. The user can abort a tasks at any time. Please let the abort to finish and cleanup properly before starting a new task. It might take a few seconds. If not the apps might become unresponsive.
 
 One advantage of utilizing `rsync` is that it can restart the synchronize task from where it was aborted.
 
-### How to verify a new task - important
+### How to verify a new task
 
 After adding [a task](/post/addconfigurations/), within the main view, select the task and choose `DryRun` button to verify the the output from rsync. A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button.
 
@@ -40,7 +40,7 @@ After [adding a task](/post/addconfigurations/) you are ready to execute your fi
 
 **Always** verify, by a `dryrun`,  the result of a **new** task before executing it.
 
-## How to setup remote servers
+## Remote servers
 
 Utilizing RsyncUI to synchronize files to remote servers requires setup of remote connection as [passwordless logins](/post/remotelogins/). There are two options for setup. The advised setup is by utilizing ssh-keys.
 
@@ -49,7 +49,7 @@ Utilizing RsyncUI to synchronize files to remote servers requires setup of remot
 
 Snapshot is **not** possible with rsync daemon setup.
 
-## How to add and update configurations
+## Add and update configurations
 
 It is easy to [add and update configurations](/post/addconfigurations/).
 
