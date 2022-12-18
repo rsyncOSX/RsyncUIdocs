@@ -21,7 +21,7 @@ RsyncUI can be used in parallel with RsyncOSX. Catalog for storing configuration
 
 ### Aborting a task
 
-Please be aware it is an external task or process which actually executes the command line tool `rsync`.RsyncUI is monitoring the external task for counting progress and termination. The user can abort a tasks at any time. Please let the abort to finish and cleanup properly before starting a new task. It might take a few seconds. If not the apps might become unresponsive.
+Please be aware it is an external task or process which actually executes the command line tool `rsync`.RsyncUI is monitoring the external task for counting progress and termination. The user can abort a task at any time. Please let the abort to finish and cleanup properly before starting a new task. It might take a few seconds. If not the apps might become unresponsive.
 
 One advantage of utilizing `rsync` is that it can restart the synchronize task from where it was aborted.
 
