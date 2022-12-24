@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.4.1 build (63) - 23 Decxember 2022 (release candidate)
 
-Compiled on Apple Silicon (M1 Pro) by Xcode 14.1 as a Universal macOS Binary on macOS Ventura
+Compiled on Apple Silicon (M1 Pro) by Xcode 14.2 as a Universal macOS Binary on macOS Ventura
 
 There are some minor updates in this rc, nothing big at all. As an example there is added an assist function in add task. I am using this rc on a daily basis and it seems to be as stable as the previous release. 
 
