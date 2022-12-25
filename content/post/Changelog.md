@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 
 
-## Version 1.4.1 build (63) - 23 Decxember 2022 (release candidate)
+## Version 1.4.1 build (63) - 23 December 2022 (release candidate)
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.2 as a Universal macOS Binary on macOS Ventura
 
