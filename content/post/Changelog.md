@@ -10,11 +10,15 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 
 
-## Version 1.4.1 build (63) - 23 December 2022 (release candidate)
+## Version 1.4.2 build (64) - 6 January 2023
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.2 as a Universal macOS Binary on macOS Ventura
 
-There are some minor updates in this rc, nothing big at all. As an example there is added an assist function in add task. I am using this rc on a daily basis and it seems to be as stable as the previous release. 
+There are some minor updates in this release, nothing big at all. As an example there is added an assist function in add task. There are also some internal cleanups and minor changes.
+
+The parameters to rsync view is enhanced, if the `verify` swicth is selected the Verify button executes a verify command.  And likewise for `synchronize` and `restore` switch.
+
+{{< image src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.4.0 build (62) - 6 December 2022
 

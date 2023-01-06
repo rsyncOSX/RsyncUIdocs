@@ -8,7 +8,7 @@ lastmod = "2021-03-25"
 +++
 RsyncUI implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over **network connection** or not. Which standard parameters to use is computed during startup of application by reading the configuration file. The user can also remove default parameters if required. Parameters to rsync is saved by task.  The ssh parameter might be set global to all tasks. The global ssh parameters might by overridden by ssh parameter by task.
 
-The resulting commandline string is dynamically updated. By the `Verify` button new parameters might be tested before saving. The verify executes a `--dry-run` task for verification of parameters. The above applies to both default and user set parameters.
+About verify changes in parameters, see below about Verify.
 
 ## Default rsync parameters
 
@@ -38,6 +38,12 @@ There are two parameters to set for ssh. The local ssh parameters overrides glob
 - ssh port, set if ssh uses other port than standard port 22
 - the ssh keypath and identity file, normally this is `.ssh/id_rsa`, set name only if other keypath and identity file to be used by ssh
 
+## The Verify button
+
+The resulting commandline string is dynamically updated when changing parameters. By the `Verify` button new parameters might be tested before saving. The verify executes a `--dry-run` task for verification of parameters. The above applies to both default and user set parameters. The `Verify` is context sensitive. If like the `verify` swicth is selected the verify executes a verify. And likewise for `synchronize` and `restore` switch.
+
+{{< image src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 ## Adding parameters to rsync
 
 Selecting the parameters tab enables adding new parameters to rsync.  Rsync utilizes a ton of parameters.
@@ -58,8 +64,6 @@ Parameters are normally constructed as:
 --dry-run
 ```
 For a full list of parameters to rsync please see the [rsync docs](https://download.samba.org/pub/rsync/rsync.html).
-
-
 
 ### Backup parameters
 
