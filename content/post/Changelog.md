@@ -14,7 +14,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.2 as a Universal macOS Binary on macOS Ventura
 
-There are some minor updates and some internal cleanups in this release, nothing big at all. There is added an simple assist function in add task. The parameters to rsync view is enhanced, if the `verify` swicth is on the Verify button executes a verify command.  And likewise for `synchronize` and `restore` switch. All verify commands are `dryrun` commands.
+There are some minor updates and some internal cleanups in this release, nothing big at all. There is added an simple assist function in add task. The parameters to rsync view is enhanced, if the `verify` switch is on the Verify button executes a verify command.  And likewise for `synchronize` and `restore` switch. All verify commands are `dryrun` commands.
 
 {{< image src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
 
