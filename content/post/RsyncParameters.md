@@ -42,6 +42,8 @@ There are two parameters to set for ssh. The local ssh parameters overrides glob
 
 The resulting commandline string is dynamically updated when changing parameters. By the `Verify` button new parameters might be tested before saving. The verify executes a `--dry-run` task for verification of parameters. The above applies to both default and user set parameters. The `Verify` is context sensitive. If like the `verify` swicth is selected the verify executes a verify. And likewise for `synchronize` and `restore` switch.
 
+**Caution**: regarding the Verify button and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
+
 {{< image src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Adding parameters to rsync

@@ -16,6 +16,8 @@ Compiled on Apple Silicon (M1 Pro) by Xcode 14.2 as a Universal macOS Binary on 
 
 There are some minor updates and some internal cleanups in this release, nothing big at all. There is added an simple assist function in add task. The parameters to rsync view is enhanced, if the `verify` switch is on the Verify button executes a verify command.  And likewise for `synchronize` and `restore` switch. All verify commands are `dryrun` commands.
 
+**Caution**: regarding the Verify button and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
+
 {{< image src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.4.0 build (62) - 6 December 2022
