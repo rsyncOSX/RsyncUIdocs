@@ -20,6 +20,12 @@ RsyncOSX and RsyncUI are not professional software. There is one developer only,
 
 I have retired from work at the age of 62. I am a passionate [photographer](https://photosbythomas.netlify.app/), nature and wildlife (birds) and love staying in the Norwegian mountains. Grand kids, photography, continue maintenance of my macOS applications and cross country skiing are keeping me busy.
 
+## How are these pages built
+
+Hugo, which is **static site** generator, is the web framwork serving these pages. The source for his web is hosted on GitHub. Netlify, which runs the web server, automatically picks up changes on main branch and rebuilds the server. The Hugo theme used is another open source project hosted on GitHub. 
+
+Every time I change or add pages I commit the changes to GitHub and Netlify automatically builds the new server in seconds. 
+
 ## Swift and Storyboard
 
 - [RsyncOSX](https://github.com/rsyncOSX/RsyncOSX) a GUI for rsync
@@ -31,4 +37,3 @@ This app is compiled with support for macOS Big Sur and later.
 - [RsyncUI](https://github.com/rsyncOSX/RsyncUI) a GUI for rsync
 
 This app is compiled for macOS Monterey and later.
-
