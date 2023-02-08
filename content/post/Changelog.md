@@ -14,7 +14,7 @@ This is a maintenance release.
 
 - fixed one non critical bug
 - some cleanup in code and a few minor GUI updates
-- this is a maintenacne release
+- this is a maintenance release
 
 ## Version 1.4.2 build (64) - 6 January 2023
 
