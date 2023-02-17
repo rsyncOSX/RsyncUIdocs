@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.4.4 build(66) - not yet released
 
-There is a *annoying non critical bug* for *the first time user* of RsyncUI. This is fixed in code but not yet released. The bug pops up the wrong popup view at start. Just dismiss the view and add task.
+There is a *annoying non critical bug* for *the first time user* of RsyncUI. This is fixed in code but not yet released. The bug causes pop up the wrong view at start for first time user of RsyncUI. Workaround,  dismiss the view and add a task.
 
 ## Version 1.4.3 build (65) - 8 February 2023
 
