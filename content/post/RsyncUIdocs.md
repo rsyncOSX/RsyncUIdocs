@@ -6,12 +6,17 @@ tags = ["overview"]
 categories = ["general information"]
 lastmod = "2021-12-09"
 +++
-RsyncUI is a [signed and notarized](/post/notarized/) SwiftUI based GUI on top of the command line utility `rsync`, which is a file based tool for synchronization of files. RsyncUI is built as a Universal macOS Binary which means it runs natively on Apple Silicon and Intel based Mac computers.
+RsyncUI is a s a signed and notarized GUI on top of the command line utility `rsync`, which is a file based tool for synchronization of files. By signed and notarized means that Apple has digital signed and verified the application for not containing malicious code. 
 
-- the [latest version](https://github.com/rsyncOSX/RsyncUI/releases) of RsyncUI is compiled for **macOS Monterey** and later
-- the [changelog](/post/changelog/)
+[RsyncUI](https://github.com/rsyncOSX/RsyncUI/releases) is compiled for **macOS Monterey** and later.  See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary which means it runs natively on Apple Silicon and Intel based Mac computers.
 
-## First start
+### Remote servers or local attached volumes
+
+RsyncUI can synchronize your data to either remote servers on Internet and local LAN, or to local attached volumes (disks). If you only want to synchronize data to local attached volumes, connect the external disk and just add the source and destination and you are ready for your first task. 
+
+If you want to synchronize data to remote servers there are some more setup to do. If you already have enabled *passwordless login* by `ssh` you only have to add login id and servername, the source and destination and you are ready.  If you have not enabled  *passwordless login* there are some more actions requiered before your first task. See chapter *Remote servers* below.
+
+### First start
 
 The first time RsyncUI is started a Welcome message is presented. Please read the [important information](/post/important/) and when ready to add tasks select the Dismiss button which opens the [add a task](/post/addconfigurations/). Also please see info about [the latest version of rsync](/post/rsync/) to install.
 
