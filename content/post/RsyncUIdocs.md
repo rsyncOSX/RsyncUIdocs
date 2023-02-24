@@ -41,18 +41,16 @@ One of many advantages of utilizing `rsync` is that it can restart and continue 
 
 ## New tasks, verify and synchronize data
 
-After adding [a task](/post/addconfigurations/), within the main view, select the task and choose `DryRun` button to verify the the output from rsync. A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button.
+After adding [a task](/post/addconfigurations/), within the main view, select the task and choose `DryRun` button to verify the the output from rsync. A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button. 
 
-For more experienced users of rsync, form within the Rsync parameters view, select the new task. Copy and paste the `Synchronize` string into a terminal view. The rsync command includes the `dryrun` parameter as default within this view.
-
-**Always** verify, by a `dryrun`,  the result of a **new** task before executing it.
+For more experienced users of rsync, form within the Rsync parameters view, select the new task. Copy and paste the `Synchronize` string into a terminal view. The rsync command includes the `dryrun` parameter as default within this view. **Always** verify, by a `dryrun`,  the result of a **new** task before executing it.
 
 ## Add parameters to rsync
 
 Rsync has a ton of parameters. In user selected parameters you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
 
-- default [parameters](/post/rsyncparameters)
-- user selected [parameters](/post/userparameters/)
+- [default parameters](/post/rsyncparameters)
+- [user selected parameters](/post/userparameters/)
 
 ## Remote servers and passwordless logins
 
@@ -68,7 +66,7 @@ Rsync transfer data between client and server by tunneling transfer of data in a
 
 ### Not encrypted protocol by rsync daemon
 
-There is also possible to setup RsyncOSX utilizing a rsync daemon setup for synchronizing files to remote servers.
+There is also possible to setup RsyncUI utilizing a rsync daemon setup for synchronizing files to remote servers.
 
 - this is a special setup and require [some tweaking](/post/rsyncdaemon/)
 
@@ -79,10 +77,6 @@ Snapshots is **not** possible with rsync daemon setup.
 ## Snapshots
 
 [Snapshot is an effective method](/post/snapshots/) for saving previous versions of data and deleted files in case of a restore.
-
-## Add and update configurations
-
-It is easy to [add and update configurations](/post/addconfigurations/).
 
 ## RsyncUI settings
 
@@ -99,10 +93,6 @@ RsyncUI might execute a [pre and post shell script](/post/shellout/) connected t
 ## Restore data
 
 Sometimes you might want to [restore some data](/post/restore/).
-
-## Snapshots
-
-[Snapshot is an effective method](/post/snapshots/) for saving previous versions of data and deleted files in case of a restore.
 
 ## Logfile
 
