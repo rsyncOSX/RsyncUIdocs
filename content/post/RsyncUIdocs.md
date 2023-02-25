@@ -7,21 +7,21 @@ categories = ["general information"]
 lastmod = "2021-12-09"
 +++
 
-RsyncUI is a pure SwiftUI and Swift based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the actual synchronize task. RsyncUI is only a GUI ontop of `rsync`. RsyncUI is a signed and notarized by Apple. By signed and notarized means that Apple has verified for not containing malicious code and digitally signed it . 
+RsyncUI is a pure SwiftUI and Swift based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the actual synchronize task. RsyncUI is only a GUI ontop of `rsync`. RsyncUI is a signed and notarized by Apple. Apple has verified for not containing malicious code and digitally signed it . 
 
 `rsync` is a file based tool for synchronization of files.
 
-# Some info before commenzing use of RsyncUI
+#  Before commenze use of RsyncUI
 
 [RsyncUI](https://github.com/rsyncOSX/RsyncUI/releases) is compiled for **macOS Monterey** and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary which means it runs natively on Apple Silicon and Intel based Mac computers.
 
 RsyncUI can be installed by download the [latest version](https://github.com/rsyncOSX/RsyncUI/releases). Please verify the shasum after download.
 
-## Remote servers or local attached volumes
+## Remote servers, passwordless logins and local disks
 
-RsyncUI can synchronize your data to either remote servers on Internet and local LAN, or to local attached volumes (disks). If you only want to synchronize data to local attached volumes, connect the external disk and just add the source and destination and you are ready for your first task. 
+RsyncUI can synchronize your data to either remote servers on Internet and local LAN, or to local attached disks. If you only want to synchronize data to local disks, connect the external disk and just add the source and destination and you are ready for your first task. 
 
-If you want to synchronize data to remote servers there are some more setup to do. If you already have enabled *passwordless login* by `ssh` you only have to add login id and servername, the source and destination and you are ready.  If you have not enabled  *passwordless login* there are some more actions requiered before your first task. See chapter *Remote servers* below.
+If you want to synchronize data to remote servers there are some more setup to do. If you already have enabled **passwordless login** by `ssh` you only have to add login id and servername, the source and destination and you are ready.  If you have not enabled  passwordless login there are some more actions requiered before your first task. See chapter *Remote servers* below.
 
 ## First time
 
