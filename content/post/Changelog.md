@@ -8,9 +8,13 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.4.4 build(66) - not yet released
+## Version 1.4.4 build(66) - not yet released (1 March 2023)
 
 There is an *annoying non critical bug* for *the first time user* of RsyncUI. This is fixed in code but not yet released. The bug causes pop up the wrong view at start for first time user of RsyncUI. Workaround,  dismiss the view and add a task.
+
+There are also some other minor changes coming in this release. The restore part is refactored. Creating new profile is now a button in add tasks. 
+
+The new release will prpbably be released in a week or two.
 
 ## Version 1.4.3 build (65) - 8 February 2023
 
