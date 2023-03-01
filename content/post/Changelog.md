@@ -14,7 +14,7 @@ There is an *annoying non critical bug* for *the first time user* of RsyncUI. Th
 
 There are also some other minor changes coming in this release. The restore part is refactored. Creating new profile is now a button in add tasks. 
 
-The new release will prpbably be released in a week or two.
+The new release will probably be released in a week or two.
 
 ## Version 1.4.3 build (65) - 8 February 2023
 
