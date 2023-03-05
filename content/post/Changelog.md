@@ -8,13 +8,25 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.4.4 build(66) - not yet released (1 March 2023)
+## Version 1.4.4 build(66) -  release candidate 5 March 2023
 
-There is an *annoying non critical bug* for *the first time user* of RsyncUI. This is fixed in code but not yet released. The bug causes pop up the wrong view at start for first time user of RsyncUI. Workaround,  dismiss the view and add a task.
+There is an *annoying non critical bug* for *the first time user* of RsyncUI, fixed in code but not yet released. The bug causes pop up the wrong view at start for first time user of RsyncUI. Workaround,  dismiss the view and add a task. There are also some other minor changes coming in this release:
 
-There are also some other minor changes coming in this release. The restore part is refactored. Creating new profile is now a button in add tasks. 
+The estimated view, cahnged to a table view:
+{{< image src="/images/changes/1.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-The new release will probably be released in a week or two.
+The navigation bar position is now fixed, e.g. does not change position when a new action is selected.
+{{< image src="/images/changes/2.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Create and delete profile is a by a button.
+{{< image src="/images/changes/3.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+And the restore part is refactored, mostly internal code.
+{{< image src="/images/changes/4.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+{{< image src="/images/changes/5.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+{{< image src="/images/changes/6.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.4.3 build (65) - 8 February 2023
 
