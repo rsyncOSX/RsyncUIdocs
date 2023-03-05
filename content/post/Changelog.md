@@ -15,7 +15,7 @@ There is an *annoying non critical bug* for *the first time user* of RsyncUI, fi
 The estimated view, changed to a table view:
 {{< image src="/images/changes/1.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-The navigation bar position is now fixed, e.g. does not change position when a new action is selected.
+The position navigation items within the navigation bar  is now fixed, e.g. does not change vertical position when a new sidebar action is selected.
 {{< image src="/images/changes/2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 Create and delete profile is a by a button.
