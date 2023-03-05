@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 There is an *annoying non critical bug* for *the first time user* of RsyncUI, fixed in code but not yet released. The bug causes pop up the wrong view at start for first time user of RsyncUI. Workaround,  dismiss the view and add a task. There are also some other minor changes coming in this release:
 
-The estimated view, cahnged to a table view:
+The estimated view, changed to a table view:
 {{< image src="/images/changes/1.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 The navigation bar position is now fixed, e.g. does not change position when a new action is selected.
