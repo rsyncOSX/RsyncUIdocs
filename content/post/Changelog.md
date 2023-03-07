@@ -8,7 +8,7 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-**Not signed dmg**. There seems to an issue with signing the dmg file. The RsyncUI.app is signed and notarized. Fix: verify the shasum of the downloaded dmg. Open the "Privacy & Sequrity" in preferences and add your admin priviliges to open the dmg. The app is signed. MacOS will open a dialog informing about the signinging when opening the app.
+**Not signed dmg**. There seems to be an issue with signing the dmg file. The RsyncUI.app is signed and notarized. Fix: verify the shasum of the downloaded dmg. Open the "Privacy & Sequrity" in preferences and add your admin priviliges to open the dmg. The app is signed. MacOS will open a dialog informing about the signinging when opening the app.
 
 ## Version 1.4.5 build(67) -  7 March 2023
 
