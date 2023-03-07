@@ -10,9 +10,11 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 
 ### Selecting and filtering
 
-First of all select from which configuration to restore from. After selection RsyncUI automatically collects filenames of all synchronized files. The list might be huge and it is adviced to filter data before viewing retrieved filelist if there are several hundred thousand of lines.  
+First of all select from which configuration to restore from. After selection select the Files button nd RsyncUI collects filenames of all synchronized data. Filter of data either by adding filter in top right search field before selecting the Files button or within the Files view.
 
-{{< image src="/images/restore/restore.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/restore/restore_filter.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/restore/restore_select.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/restore/restore_dryrun.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 A filter will narrow down the filelist to only filenames including the filter.
 
@@ -23,6 +25,4 @@ There are two types of restore, either a full restore or by file. If a restore i
 - full restore - set `./.` within the select files field
 - restore by files - open the View of files and select - the file name must be on the form `./folder/filename`, e.g `./` +  `folder/filename`
 
-Select the View button and select a file or folder to restore. Behind the scenes rsync is used for collecting the synchronized list of files.
-
-Select the file or folder and the name is automatically set as file to restore. Default restore is a `--dry-run` action. Before executing the real restore view the result from the `--dry-run` action.
+Select the file or folder to restore. Default restore is a `--dry-run` action. Before executing the real restore view the result from the `--dry-run` action.

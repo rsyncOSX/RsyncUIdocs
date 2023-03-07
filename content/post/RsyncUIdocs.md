@@ -7,7 +7,7 @@ categories = ["general information"]
 lastmod = "2021-12-09"
 +++
 
-RsyncUI is a pure SwiftUI and Swift based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the actual synchronize task. RsyncUI is only a GUI ontop of `rsync`. RsyncUI is a signed and notarized by Apple. Apple has verified for not containing malicious code and digitally signed it . 
+RsyncUI is a pure SwiftUI and Swift based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the actual synchronize task. RsyncUI is a GUI only ontop of `rsync`. RsyncUI is a signed and notarized by Apple. Apple has verified for not containing malicious code and digitally signed it . 
 
 `rsync` is a file based tool for synchronization of files.
 
