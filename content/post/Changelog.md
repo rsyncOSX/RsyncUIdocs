@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.4.5 build(67) -  7 March 2023
 
-There is an *annoying non critical bug* for *the first time user* of RsyncUI, fixed in the rc. The bug causes pop up the wrong view at start for first time user of RsyncUI. Workaround,  dismiss the view and add a task. There are also some other minor changes in this release:
+There is an *annoying non critical bug* for *the first time user* of RsyncUI, fixed in the release. The bug causes pop up the wrong view at start for first time user of RsyncUI. Workaround,  dismiss the view and add a task. There are also some other minor changes in this release:
 
 The estimated view, changed to a table view:
 {{< image src="/images/changes/1.png" alt="" position="center" style="border-radius: 8px;" >}}
