@@ -8,6 +8,23 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Version 1.4.6 build(68) release candidate -  9 March 2023
+
+There is a new rc and most likely further minor changes will be added before release sometime in April 2023. The restore part is different for a traditional *synchronize* task and *snapshot* task. Also new is the actual restore command is displayed and might be copied and pasted into a terminal window. The default command includes the `--dry-run` parameter.
+
+The first screenshot is a traditional synchronize task, either restore by file or catalog or a full restore.  
+
+{{< image src="/images/changes/rc_synchronize.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+For snapshot tasks the restore strategy is slightly different. As an example I have a snapshot task with 77 snapshots of my GitHub catalog. Combined there are **2 167 968** files in all snapshots. That is a huge amount of files to list. The last snapshot is **22 679** files only.  For snapshot tasks RsyncUI picks data from the last snapshot only.
+
+{{< image src="/images/changes/rc_snapshot1.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+If data from previous snapshots than last is requiered for restore you have to copy the restore command, change the snapshot number and paste the restore command in a terminal window. In the screenshot below the snapshot number is 86. The number might be changed by copy the restore command, change the number en execute the restore task in a terminal window.
+
+{{< image src="/images/changes/rc_snapshot2.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+
 ## Version 1.4.5 build(67) -  7 March 2023
 
 There is an *annoying non critical bug* for *the first time user* of RsyncUI, fixed in the release. The bug causes pop up the wrong view at start for first time user of RsyncUI. Workaround,  dismiss the view and add a task. There are also some other minor changes in this release:
