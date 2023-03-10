@@ -20,7 +20,7 @@ For snapshot tasks the restore strategy is slightly different. As an example I h
 
 {{< image src="/images/changes/rc_snapshot1.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-If data from previous snapshots than last is requiered for restore you have to copy the restore command, change the snapshot number and paste the restore command in a terminal window. In the screenshot below the snapshot number is 86. The number might be changed by copy the restore command, change the number en execute the restore task in a terminal window.
+If data from previous snapshots than last is requiered for restore you have to copy the restore command, change the snapshot number and paste the restore command in a terminal window. In the screenshot below the snapshot number is 86. The number might be changed by copy the restore command and execute the restore task in a terminal window.
 
 {{< image src="/images/changes/rc_snapshot2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
