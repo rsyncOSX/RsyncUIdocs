@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 The following are new:
 
-- the restore part for snapshot tasks are modified, restore is from last snapshot only
+- the restore part for `snapshot` tasks is modified, restore is from last snapshot only, **no** changes for normal `synchronize` tasks
 - the actual restore command is presented in Restore view (might be copied and pasted within a terminal)
 - there is a update of GUI for `DryRun` in main Tasks view
 
