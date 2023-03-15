@@ -6,6 +6,8 @@ tags = ["execute","delete tasks"]
 categories = ["synchronize"]
 lastmod = "2021-03-10"
 +++
+**Caution**: after adding new tasks always verify the result of task by selecting the `DryRun` button. 
+
 The task view either lets you execute **all** or **selected** (by shortcut `⌘S`) tasks in one go. Actions are triggered either by keyboard shortcuts or by buttons. The following are allowed shortcut actions:
 
 - `estimate` - shortcut `⌘E`
@@ -20,8 +22,6 @@ When RsyncUI starts it automatically open this view and by selecting the shortcu
 {{< image src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 {{< image src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-{{< image src="/images/tasks/execute.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## One task
 

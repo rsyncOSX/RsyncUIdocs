@@ -41,16 +41,9 @@ One of many advantages of utilizing `rsync` is that it can restart and continue 
 
 ## New tasks, verify and synchronize data
 
-After adding [a task](/post/addconfigurations/), within the main view, select the task and choose `DryRun` button to verify the the output from rsync. A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button. 
+After adding [a task](/post/addconfigurations/), within the main view, select the task and choose [dryrun](/post/tasks/) to verify the the output from rsync. A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button. 
 
 For more experienced users of rsync, form within the Rsync parameters view, select the new task. Copy and paste the `Synchronize` string into a terminal view. The rsync command includes the `dryrun` parameter as default within this view. **Always** verify, by a `dryrun`,  the result of a **new** task before executing it.
-
-## Add parameters to rsync
-
-Rsync has a ton of parameters. In user selected parameters you can add your own additional parameters to rsync. There is also a set of default rsync parameters.
-
-- [default parameters](/post/rsyncparameters)
-- [user selected parameters](/post/userparameters/)
 
 ## Remote servers and passwordless logins
 
