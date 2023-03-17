@@ -8,6 +8,10 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Version 1.4.7 build(69)  -  17 March 2023
+
+RsyncUI is now avaliable to install by Homebrew: `brew install --cask rsyncui`.
+
 ## Version 1.4.7 build(69)  -  14 March 2023
 
 The following are new:
