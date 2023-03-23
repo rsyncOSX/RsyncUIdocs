@@ -14,7 +14,7 @@ Update: 22 March 2023
 
 Next version will probably be out in a week or two. There are cleanup and refactor of the main task view, internal code only. There are also two GUI updates:
 
-- after an estimate it is no possible to execute task direct
+- after an estimate it is now possible to execute task direct
 - there is a list of all tasks for all profiles sorted by last run date from the main tasks view
 
 {{< image src="/images/temp/execute.png" alt="" position="center" style="border-radius: 8px;" >}}
