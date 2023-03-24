@@ -8,11 +8,9 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.4.8 build(70) - not yet released
+## Version 1.4.8 build(70) - 24 March 2023
 
-Update: 22 March 2023
-
-Next version will probably be out in a week or two. There are cleanup and refactor of the main task view, internal code only. There are also two GUI updates:
+There are cleanup and refactor of the main tasks view, internal code only. There are also two GUI updates:
 
 - after an estimate it is now possible to execute task direct
 - there is a list of all tasks for all profiles sorted by last run date from the main tasks view
