@@ -8,6 +8,10 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Next version - after Easter 2023
+
+I am working on integrating a new feature for enabling periodic automatic synchronization. I am thinking about setting a periodic time like one hour, will be user selected, and every periodic time RsyncUI will automatically execute synchronizing task. This requiere RsyncUI to be up and running in the background. There will be some restrictions like cannot start a synchronization task manually if periodic automatic synchronization is enabled. 
+
 ## Version 1.4.8 build(70) - 24 March 2023
 
 There are cleanup and refactor of the main tasks view, internal code only. There are also two GUI updates:
