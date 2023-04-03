@@ -14,8 +14,8 @@ I am working on integrating a new feature for periodic automatic synchronization
 
 The counter is a simple function for repeating a synchronization on a regular basis.  The basic is working but some more development and testing is required.
 
-{{< image src="/images/temp/counter1.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< image src="/images/temp/counter2.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/temp/timer1.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< image src="/images/temp/timer2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.4.8 build(70) - 24 March 2023
 
