@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 I am working on integrating a new feature for periodic automatic synchronization. I am thinking about setting a periodic time like one hour or less and every periodic time RsyncUI will automatically execute synchronizing task. This requiere RsyncUI to be up and running in the background.
 
-The counter is a simple function for repeating a synchronization on a regular basis.  The basic is working but some more development and testing is required.
+The timer is a simple function for repeating a synchronization on a regular basis.  The basic is working but some more development and testing is required.
 
 {{< image src="/images/temp/timer1.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< image src="/images/temp/timer2.png" alt="" position="center" style="border-radius: 8px;" >}}
