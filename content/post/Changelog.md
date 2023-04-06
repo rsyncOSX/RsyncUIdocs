@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.4.9 build(71) - 6 April 2023 (release candidate)
 
-The major update withion this release candidate is a simpler timer function for periodic automatic synchronization. The timer is only active when RsyncUI is open and active. If timer is enabled and you try to minimize RsyncUI will throw and alert. 
+The major update within this release candidate is a simple timer function for periodic automatic synchronization. The timer is only active when RsyncUI is open and active. If timer is enabled and you try to minimize RsyncUI will throw and alert. 
   
 {{< image src="/images/temp/timer1.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< image src="/images/temp/timer2.png" alt="" position="center" style="border-radius: 8px;" >}}
