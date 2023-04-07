@@ -8,9 +8,9 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.4.9 build(71) - 6 April 2023 (release candidate)
+## Version 1.4.9 build(71) - 7 April 2023 (release candidate is removed)
 
-**Update:** I am not quite happy with how the timer works. It should work when RsyncUI is minimized as well. So I am working on a new solution, but the release candidate is still a demonstration of how it might work. But **only** when RsyncUI is active. Change will come..
+**Update:** Release candidate is removed, I am not quite happy with how the timer works. It should work when RsyncUI is minimized as well. So I am working on a new solution...
 
 The major update within this release candidate is a **simple timer** function for periodic automatic synchronization. The timer is only active when RsyncUI is open and active e.g. not minimized. If timer is enabled and you minimize it, RsyncUI will throw an alert. 
 
