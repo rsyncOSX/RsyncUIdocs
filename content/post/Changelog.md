@@ -10,6 +10,8 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.4.9 build(71) - 6 April 2023 (release candidate)
 
+**Update:** I am not quite happy with how the timer works. It should work when RsyncUI is minimized as well. So I am working on a new solution, but the release candidate is still a demonstration of how it works. But not when RsyncUI is minimized,
+
 The major update within this release candidate is a **simple timer** function for periodic automatic synchronization. The timer is only active when RsyncUI is open and active e.g. not minimized. If timer is enabled and you minimize it, RsyncUI will throw an alert. 
 
 The timer does not run if the app is minimized. This is due to how the timer function is developed by Apple. It is only active as long as the app is active. Also if you change view while timer is active the timer is disabled. Enabling timer is not possible to save as a state.
