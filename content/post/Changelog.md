@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.4.9 build(71) - 7 April 2023 (release candidate is removed)
 
-**Update:** Release candidate is removed, I was not quite happy with how the timer worked in the release candidate. It should work when RsyncUI is minimized as well. The new code is working but need more QA and testing. 
+**Update:** Release candidate is removed. I was not quite happy with how the timer worked in the release candidate. It should work when RsyncUI is minimized as well. The updated version is working but need more QA and testing. 
 
 The purpose of the timer in RsyncUI is to enable periodic backups of important data and updates while you are working. 
   
