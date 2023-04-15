@@ -48,10 +48,6 @@ RsyncUI creates the snapshots within the remote catalog. The ~ is expanded to th
 To create a snapshot task select `snapshot` as type in [add tasks](/post/addconfigurations/). Do **not** copy and paste command for execution within a terminal window. RsyncUI saves the number `n` to the task. The number `n` is the next snapshot number. The number n is used when computing the parameter for rsync
 and is picked up from the configuration.
 
-## Snapshots on local attached volumes
-
-It seems like you have to disable `Ignore ownership on this volume` on local attached volumes to make snapshots work with hardlinks. Right click on the attached volume and disable it (in bottom of view).
-
 ## Snapshot administration
 
 It is important to administrate snapshots. By administrate means deleting not relevant snapshots. If snapshots are never deleted the number of snapshots might become difficult to use. A snapshot is most likely used to restore old and deleted files. This is why a plan to administrate snapshots is important. RsyncUI can assist you in this.
