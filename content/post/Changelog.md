@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 This is work in progress and there will be changes to the rc.
 
-This version is includes a timer function to postspone synchronization of data and updates **while you are working**.  The timer is **not** like a schedule function.  The timer is working if RsyncUI is minimized and your Mac is not going to sleep. The visual count down of minutes might not be correct if RsyncUI is minimized, but the internal count down is correct. This is due to the *timer library*  requiere the app to be active.
+This version is includes a timer function to postspone synchronization of data and updates **while you are working**.  The timer is **not** like a schedule function.  The timer is working if RsyncUI is minimized and your Mac is not going to sleep. The visual count down of minutes might not be correct if RsyncUI is minimized, but the internal count down is correct. This is due to the *timer library*  require the app to be active.
 
 RsyncUI writes a record to the log every time it executes a profile by the timer. The timer has to be reactivated after each time.
   
