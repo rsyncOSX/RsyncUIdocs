@@ -8,11 +8,13 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.4.9 build(71) - 13 April 2023 
+## Version 1.4.9 build(72) - 23 April 2023
 
-This version is includes a timer function to enable periodic backups of important data and updates **while you are working**.  The timer is **not** like a schedule function. The timer is working if RsyncUI is minimized and your Mac is not going to sleep. The visual count down of minutes might not be correct if RsyncUI is minimized, but the internal count down is correct. This is due to the *timer library*  requiere the app to be active. The visual timer is reset every time the internal count down kicks of an execution. 
+This is work in progress and there will be changes to the rc.
 
-RsyncUI writes a record to the log every time it executes a profile by the timer.
+This version is includes a timer function to postspone synchronization of data and updates **while you are working**.  The timer is **not** like a schedule function.  The timer is working if RsyncUI is minimized and your Mac is not going to sleep. The visual count down of minutes might not be correct if RsyncUI is minimized, but the internal count down is correct. This is due to the *timer library*  requiere the app to be active.
+
+RsyncUI writes a record to the log every time it executes a profile by the timer. The timer has to be reactivated after each time.
   
 {{< image src="/images/temp/timer1.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< image src="/images/temp/timer2.png" alt="" position="center" style="border-radius: 8px;" >}}
