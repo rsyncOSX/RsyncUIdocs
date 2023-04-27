@@ -8,7 +8,7 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.5.0 build(73) - noy yet released
+## Version 1.5.0 build(73) - not yet released
 
 This is work in progress and there will be changes to the rc.
 
