@@ -8,16 +8,15 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.4.9 build(72) - 23 April 2023
+## Version 1.5.0 build(73) - noy yet released
 
 This is work in progress and there will be changes to the rc.
 
-This version is includes a timer function to postspone synchronization of data and updates **while you are working**.  The timer is **not** like a schedule function.  The timer is working if RsyncUI is minimized and your Mac is not going to sleep. The visual count down of minutes might not be correct if RsyncUI is minimized, but the internal count down is correct. This is due to the *timer library*  require the app to be active.
+There is a change within the internals for navigation. RsyncUI supports macOS from version 12.0. From macOS 13.0 Apple has deprecated the [NavigationView](https://developer.apple.com/documentation/swiftui/navigationview) and released [NavigationSplitView](https://developer.apple.com/documentation/swiftui/navigationsplitview). Within this release there is now a check if macOS 13 and [code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Sidebar/SidebarVentura.swift) for navigation is refactored. The deprecadede [code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Sidebar/Sidebar.swift) for navigation still works for macOS 12, but new code is simpler when there complex navigation.
+
+This version also includes a very simpel timer function to postspone synchronization of data **while you are working**.  The timer is **not** like a schedule function.  The timer is working if RsyncUI is minimized and your Mac is not going to sleep. The visual count down of minutes might not be correct if RsyncUI is minimized, but the internal count down is correct. This is due to the *timer library*  require the app to be active.
 
 RsyncUI writes a record to the log every time it executes a profile by the timer. The timer has to be reactivated after each time.
-  
-{{< image src="/images/temp/timer1.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< image src="/images/temp/timer2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.4.8 build(70) - 24 March 2023
 
