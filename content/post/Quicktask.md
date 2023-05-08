@@ -15,7 +15,7 @@ There are two types of quick tasks:
 
 **Caution:** if `syncremote` the localcatalog in the form is the remote data and remotecatalog is the local data where remote data will land when pulled.
 
-{{< image src="/images/quicktask/quicktask.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/quicktask/quicktask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 After entering data, default is a `--dry-run` task. It is adviced to inspect the result before the real run.
 

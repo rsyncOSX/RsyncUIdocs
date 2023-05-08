@@ -27,7 +27,7 @@ If you want to synchronize data to remote servers there are some more setup to d
 
 The first time RsyncUI starts it presents a link to [important](/post/important/) information. There is also info about the latest [version of rsync](/post/rsync/) to install.
 
-{{< image src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 RsyncUI can be used in parallel with RsyncOSX. Catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX does not share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
 

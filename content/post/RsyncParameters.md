@@ -14,7 +14,7 @@ About verify changes in parameters, see below about Verify.
 
 Selecting the default tab presents the default parameters to rsync. The defaults parameters can also be switched on or off on a task.
 
-{{< image src="/images/rsyncparameters/default.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/rsyncparameters/default.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 The following parameters are applied to all tasks:
 
@@ -44,13 +44,13 @@ The resulting commandline string is dynamically updated when changing parameters
 
 **Caution**: regarding the Verify button and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
 
-{{< image src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Adding parameters to rsync
 
 Selecting the parameters tab enables adding new parameters to rsync.  Rsync utilizes a ton of parameters.
 
-{{< image src="/images/rsyncparameters/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/rsyncparameters/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 Parameters are normally constructed as:
 

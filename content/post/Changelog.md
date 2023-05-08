@@ -25,8 +25,8 @@ There are cleanup and refactor of the main tasks view, internal code only. There
 - after an estimate it is now possible to execute task direct
 - there is a list of all tasks for all profiles sorted by last run date from the main tasks view
 
-{{< image src="/images/temp/execute.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< image src="/images/temp/list.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/temp/execute.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/temp/list.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.4.7 build(69)  -  14 March 2023
 
@@ -67,7 +67,7 @@ There are some minor updates and some internal cleanups in this release, nothing
 
 **Caution**: regarding the Verify button and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
 
-{{< image src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.4.0 build (62) - 6 December 2022
 

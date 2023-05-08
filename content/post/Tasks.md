@@ -19,9 +19,9 @@ The task view either lets you execute **all** or **selected** (by shortcut `⌘S
 
 When RsyncUI starts it automatically open this view and by selecting the shortcut action `⌘R`, execute, will commence executing **all** tasks. If there is no estimating ahead there is no progress bars.  If selecting the shortcut action `⌘E`, estimating, will estimate all tasks. Executing tasks after estimating, a progressbar will show progress. 
 
-{{< image src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-{{< image src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## One task
 
@@ -31,11 +31,11 @@ All of the above can also be utilized for either one and selected tasks. **Choos
 
 Highlight a task and select `DryRun` button executes a dry run for task and presents the output from rsync. 
 
-{{< image src="/images/tasks/dryrun.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/tasks/dryrun.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 Highlight a task and select `⌘I` will show local and remote info about a task.
 
-{{< image src="/images/tasks/localremote.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/tasks/localremote.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Abort
 

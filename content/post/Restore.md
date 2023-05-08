@@ -12,9 +12,9 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 
 First of all select from which configuration to restore from. After selection select the Files button and RsyncUI collects filenames of all synchronized data. Filter of data either by adding filter in top right search field before selecting the Files button or within the Files view.
 
-{{< image src="/images/restore/restore_filter.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< image src="/images/restore/restore_select.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< image src="/images/restore/restore_dryrun.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/restore/restore_filter.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/restore/restore_select.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/restore/restore_dryrun.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 A filter will narrow down the filelist to only filenames including the filter.
 
