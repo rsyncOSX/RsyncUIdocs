@@ -10,13 +10,13 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.5.5 build(74) - not yet released
 
-I have commenced replacing the `list` and `foreach` llisting configurations within the main view with `table`. The view is cleaner and column headings are aligned with columns.
+I have commenced replacing the `list` and `foreach` listing of configurations within the main view with `table`. The view is cleaner and column headings are aligned with columns.
 
-New view:
+New view
 
 {{< figure src="/images/temp/newmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Current view:
+Current view
 
 {{< figure src="/images/temp/currentmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
 
