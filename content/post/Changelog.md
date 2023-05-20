@@ -8,6 +8,18 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Version 1.5.5 build(74) - not yet released
+
+I have commenced replacing the `list` and `foreach` llisting configurations within the main view with `table`. The view is cleaner and column headings are aligned with columns.
+
+New view:
+
+{{< figure src="/images/temp/newmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Current view:
+
+{{< figure src="/images/temp/currentmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 ## Version 1.5.0 build(73) - 4 May 2023
 
 There is a change within the internals for navigation. RsyncUI supports macOS from version 12.0. From macOS 13.0 Apple has deprecated the [NavigationView](https://developer.apple.com/documentation/swiftui/navigationview) and released [NavigationSplitView](https://developer.apple.com/documentation/swiftui/navigationsplitview). Within this release there is now a check if macOS 13 and [code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Sidebar/SidebarVentura.swift) for navigation is refactored. The deprecated [code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Sidebar/Sidebar.swift) for navigation still works for macOS 12, but new code is simpler when there is complex navigation.
@@ -24,9 +36,6 @@ There are cleanup and refactor of the main tasks view, internal code only. There
 
 - after an estimate it is now possible to execute task direct
 - there is a list of all tasks for all profiles sorted by last run date from the main tasks view
-
-{{< figure src="/images/temp/execute.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/temp/list.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.4.7 build(69)  -  14 March 2023
 
