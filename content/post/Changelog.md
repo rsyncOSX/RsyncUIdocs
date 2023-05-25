@@ -8,17 +8,17 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.5.5 build(74) - not yet released
+## Version 1.5.5 build(74) - not yet released (updates 25 May 2023)
 
-I have commenced replacing the `list` and `foreach` listing of configurations within the main view with `table`. The view is cleaner and column headings are aligned with columns.
+I have commenced replacing the `list` and `foreach` listing of configurations within the main view with `table`. The view is cleaner and column headings are aligned with columns. There are also som new minor GUI features for macOS 13. RsyncUI is still compiled for macOS 12 and later. The plan is to release new version sometime in June 2023. 
 
-New view
+I am also busy in [phtography (birds)](https://gallerybythomas.netlify.app) at this time of year. So I have to share time beetween photo and development. The changes within RsyncUI still need more testing and QA.
+
+Changed  views
 
 {{< figure src="/images/temp/newmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Current view
-
-{{< figure src="/images/temp/currentmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/temp/detailsview.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/temp/rsyncview.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.5.0 build(73) - 4 May 2023
 
