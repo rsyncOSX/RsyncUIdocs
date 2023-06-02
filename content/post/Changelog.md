@@ -12,11 +12,16 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 There are several minor GUI updates in this rc. Most of GUI components utilizing `list` and `foreach` listing are replaced with `table`.  There are also som new minor GUI features for macOS 13. RsyncUI is still compiled for macOS 12 and later. 
 
+If you have several profiles and after some changes between profiles a button like `DryRun` does not respond, just select the `Reset` button to reset. An estimate all and execute after estimate all is always work. Switching back and forth several times betewen profiles might "confuse" RsyncUI a little bit within the rc. Before final release I will smoke out those minor (and non critical) issues. 
+
+There are also a new log of actions. Select  the shortcut `⌘O` for view logfile and select actions. There is a log of all major actions within RsyncUI.
+
 A few of the changed  views:
 
 {{< figure src="/images/temp/newmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/detailsview.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/rsyncview.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/temp/actions.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.5.0 build(73) - 4 May 2023
 
