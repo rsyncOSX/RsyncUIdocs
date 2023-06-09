@@ -8,9 +8,9 @@ lastmod = "2021-08-21"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.5.5 build(74) release candidate - 2 June 2023
+## Version 1.5.5 build(74) release candidate - update 9 June 2023
 
-There are several minor GUI updates in this rc. Most of GUI components utilizing `list` and `foreach` listing are replaced with `table`.  There are also som new minor GUI features for macOS 13. RsyncUI is still compiled for macOS 12 and later. 
+All `list` and `foreach` listing are replaced with `table`. But there are a few minor isseus where table data is not autimatically updated within a view after updates. One view is update parameters to rsync. Parameters are updated, but view will only show updates when another vies is selected and then return to rsync parameters view.  It seems like a bug in SwiftUI. The new version (1.6.0) will be released in a week or two..
 
 If you have several profiles and after some changes between profiles a button like `DryRun` does not respond, just select the `Reset` button to reset. An estimate all and execute after estimate all is always working. Switching back and forth several times betewen profiles might "confuse" RsyncUI a little bit within the rc. Before final release I will smoke out those minor (and non critical) issues. 
 
