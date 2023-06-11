@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.5.5 build(74) release candidate - update 9 June 2023
 
-All `list` and `foreach` listing are replaced with `table`. But there are a few minor issus where table data is not automatically updated within a view after updates. One view is update parameters to rsync. Parameters are updated, but view will only show updates when another view is selected and return to rsync parameters view.  It might be a bug in SwiftUI. See [more details about issue](/post/issue).
+All `list` and `foreach` listing are replaced with `table`. But there are a few minor issus where table data is not automatically updated within a view after update of data. As example a view is update parameters to rsync. Parameters are updated, but view will only show updates when another view is selected and return to rsync parameters view.  It might be a bug in SwiftUI. See [more details about issue](/post/issue).
 
 RsyncUI is reloading data after updates and all other views are updated. The workaround is change to another view and return, then data is updated within the view. The new version (1.6.0) will be released in a week or two..
 

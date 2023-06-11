@@ -8,7 +8,7 @@ lastmod = "2023-06-01"
 +++
 **To be updated**.
 
-This page demonstrates the current issue with a view which is not refreshed after update. The issue  applies only to the current view. Updates will force a refresh of data and  all other views are updated but not the current view. The model data, tasks and log data, are read into an `ObservableObject` object which publish, by  the  property wrapper `@Published` , all changes to data. The data is made avaliable for all views by the `.environmentObject(rsyncUIdata)` property wrapper. And this works very well.
+This page demonstrates the current issue with a view which is not refreshed after update of data. The issue  applies only to the current view. Updates will force a refresh of data and  all other views are updated but not the current view. The model data, tasks and log data, are read into an `ObservableObject` object which publish, by  the  property wrapper `@Published` , all changes to data. The data is made avaliable for all views by the `.environmentObject(rsyncUIdata)` property wrapper. And this works very well.
 
 The view presenting tasks as table data is [very simple](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Configurations/ListofTasksLightView.swift) and the view should pick up when updates to data is published.
 
