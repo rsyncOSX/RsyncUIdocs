@@ -8,17 +8,11 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.5.5 build(74) release candidate - update 11 June 2023
+## Version 1.6.0 build(76) release candidate - update 12 June 2023
 
-All `list` and `foreach` listing are replaced with `table`. But there are a few minor issus where table data is not automatically updated within a view after update of data. As example a view is update parameters to rsync. Parameters are updated, but view will only show updates when another view is selected and return to rsync parameters view.  It might be a bug in SwiftUI. See [more details about issue](/post/issue). The issue is fixed by a workaround.
+There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. And as alwasy some cleanup of code. New version will be released in a week or two.
 
-RsyncUI is reloading data after updates and all other views are updated. The workaround is change to another view and return, then data is updated within the view. The new version (1.6.0) will be released in a week or two..
-
-If you have several profiles and after some changes between profiles a button like `DryRun` does not respond, just select the `Reset` button to reset. An estimate all and execute after estimate all is always working. Switching back and forth several times betewen profiles might "confuse" RsyncUI a little bit within the rc. Before final release I will smoke out those minor (and non critical) issues. 
-
-There are also a new log of actions. Select  the shortcut `⌘O` for view logfile and select actions. There is a log of all major actions within RsyncUI.
-
-A few of the changed  views:
+A few of the changed  views are:
 
 {{< figure src="/images/temp/newmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/detailsview.png" alt="" position="center" style="border-radius: 8px;" >}}
