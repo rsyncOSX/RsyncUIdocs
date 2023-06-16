@@ -8,7 +8,7 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.6.0 build(76) - update 12 June 2023 (not yet released)
+## Version 1.6.0 build(76) -  16 June 2023
 
 There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. And as always there are some cleanup in code. New version will be released in a week or two.
 
