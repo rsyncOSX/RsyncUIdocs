@@ -10,19 +10,11 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 
 ### Selecting and filtering
 
-First of all select from which configuration to restore from. After selection select the Files button and RsyncUI collects filenames of all synchronized data. Filter of data either by adding filter in top right search field before selecting the Files button or within the Files view.
+First of all select from which configuration to restore from and a **filter string** to narrow down the selection of files. After selection select the Files button and RsyncUI collects filenames.
 
 {{< figure src="/images/restore/restore_filter.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Select either file or catalog to restore.  Switching the command toggle shows the actual restore command. Selecting restore shows a `--dry-run` of restore. Switch of `--dry-run` toggle for actual restore of files.
+
 {{< figure src="/images/restore/restore_select.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/restore/restore_dryrun.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-A filter will narrow down the filelist to only filenames including the filter.
-
-### Files to restore
-
-There are two types of restore, either a full restore or by file. If a restore is from a `snapshot` task, a full restore is from the latest snapshot.
-
-- full restore - set `./.` within the select files field
-- restore by files - open the Files view and select 
-
-Select the file or folder to restore. Default restore is a `--dry-run` action. Before executing the real restore view the result from the `--dry-run` action.

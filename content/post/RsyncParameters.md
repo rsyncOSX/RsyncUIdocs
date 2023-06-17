@@ -44,8 +44,6 @@ The resulting commandline string is dynamically updated when changing parameters
 
 **Caution**: regarding the Verify button and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
 
-{{< figure src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 ## Adding parameters to rsync
 
 Selecting the parameters tab enables adding new parameters to rsync.  Rsync utilizes a ton of parameters.
