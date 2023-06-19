@@ -10,9 +10,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.6.0 build(76) -  16 June 2023
 
-There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. Restore is changed a little bit. xAnd as always there are some cleanup in code. 
+There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. The restore part is changed a little bit. 
 
-A few of the changed  views are:
+And as always there are some cleanup in code.  A few of the changed  views are:
 
 {{< figure src="/images/temp/newmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/detailsview.png" alt="" position="center" style="border-radius: 8px;" >}}
