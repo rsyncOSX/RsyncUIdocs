@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.6.0 build(76) -  16 June 2023
 
-Update 19 June 2023: there are a couple of **non critical issues** which cause some functions not properly working after a synchronize all execution. An update will be released in a couple of days.
+Update **19 June 2023**: there are a couple of *non critical issues* which cause some functions like dryrun within the main view not working **after** a synchronize all execution of tasks. Fixes are done in code and an update will be released in a  day or two.
 
 There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. The restore part is changed a little bit. 
 
