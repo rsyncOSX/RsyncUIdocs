@@ -8,6 +8,11 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Version 1.6.1 build(77) -  20 June 2023
+
+Non critical issues in version 1.6.0 is now fixed.
+
+
 ## Version 1.6.0 build(76) -  16 June 2023
 
 Update **19 June 2023**: there are a couple of *non critical issues* which cause some functions like dryrun within the main view not working **after** a synchronize all execution of tasks. Fixes are done in code and an update will be released in a  day or two.
