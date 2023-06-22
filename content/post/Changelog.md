@@ -14,7 +14,8 @@ I am using RsyncUI on a daily basis. And by using it several times a day also ma
 
 - when executing a `DryRun` on one task, closing the view and then `Execute` the view will include a view of progess
 	- version 1.6.1 will only execute the task without any view of progress, only a rotating progress until the task is completed
-- some if the rotating progress and position on screen is slightly changed
+- some of the rotating progress and position on screen is slightly changed
+- and probably a few more enhancements as well
 
 ## Version 1.6.1 build(77) -  20 June 2023
 
