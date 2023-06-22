@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## What is coming in version 1.6.2 - not yet released
 
-I am using RsyncUI on a daily basis. And by using it several times a day also makes me, when I believe there should be further development, ideas to enhance it. Number one priority is to keep stable and not introduce code which might compromize stability. There are a number of user of the application out there, and user rely on it doing what it is expected to do. The following will be relased as part of next release:
+I am using RsyncUI on a daily basis. And by using it several times a day also makes me, when I believe there should be further development, ideas to enhance it. Number one priority is to keep it stable and not introduce code which might compromize stability. The users rely on it doing what it is expected to do which is synchronize data properly. Enchancements in next release (July 2023):
 
 - when executing a `DryRun` on one task, closing the view and then `Execute` the view will include a view of progess
 	- version 1.6.1 will only execute the task without any view of progress, only a rotating progress until the task is completed
