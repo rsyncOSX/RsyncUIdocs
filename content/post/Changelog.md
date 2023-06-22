@@ -8,10 +8,17 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## What is coming in version 1.6.2 - not yet released
+
+I am using RsyncUI on a daily basis. And by using it several times a day also makes me, when I believe there should be further development, ideas to enhance it. Number one priority is to keep stable and not introduce code which might compromize stability. There are a number of user of the application out there, and user rely on it doing what it is expected to do. The following will be relased as part of next release:
+
+- when executing a `DryRun` on one task, closing the view and then `Execute` the view will include a view of progess
+	- version 1.6.1 will only execute the task without any view of progress, only a rotating progress until the task is completed
+- some if the rotating progress and position on screen is slightly changed
+
 ## Version 1.6.1 build(77) -  20 June 2023
 
 *Non critical issues* in version 1.6.0 are fixed.
-
 
 ## Version 1.6.0 build(76) -  16 June 2023
 
