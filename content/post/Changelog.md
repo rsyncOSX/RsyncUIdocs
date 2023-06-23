@@ -13,14 +13,12 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 I am using RsyncUI on a daily basis. And by using it several times a day also makes me, when I believe there should be further development, ideas to enhance it. Number one priority is to keep it stable and not introduce code which might compromize stability. The users rely on it doing what it is expected to do which is synchronize data properly. Enchancements in next release (July 2023):
 
 - for macOS 13 a double click on row executes a `DryRun`
-	- only avaliable for macOS 13 and later due to SwiftUI requirements
-	- the `DryRun` button is removed if macOS 13 and later
-- when executing a `DryRun` on one task, closing the view and then `Execute` the view will include a view of progess
-	- version 1.6.1 will only execute the task without any view of progress, only a rotating progress until the task is completed
-- after an dryrun it is now possible to execute task direct
+	- only avaliable for macOS 13 and later due to SwiftUI requirements, the `DryRun` button is removed if macOS 13 and later
+- after a `DryRun` it is now possible to execute task direct
+- when executing a `DryRun` and initate execute after shows a view of progess
+	- version 1.6.1 will only execute the task and show a rotating progress until the task is completed
 - some of the rotating progress and position on screen is slightly changed
 - all the above is checked in in master repository and you might [compile](/post/compile) your own version to try out before release
-- and probably a few more enhancements as well
 
 ## Version 1.6.1 build(77) -  20 June 2023
 
