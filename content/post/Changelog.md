@@ -15,7 +15,7 @@ There will probably be a few more changes before release in July 2023. The relea
 Enchancements in the release candidate (July 2023):
 
 - for macOS 13 a double click on row executes a `DryRun`
-	- next doubleclick on task wil execute it
+	- next doubleclick on task will execute it (not yet in the relase candidate)
 	- only avaliable for macOS 13 and later due to SwiftUI requirements, the `DryRun` button is removed if macOS 13 and later
 - after a `DryRun` it is now possible to execute task direct or by a new doubleclick
 - when executing a `DryRun` and initate execute after shows a view of progess
