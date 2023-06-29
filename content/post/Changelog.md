@@ -8,11 +8,9 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.6.2 build(78) release candidate -  23 June 2023
+## Version 1.6.3 build(79) -  29 June 2023
 
-There will probably be a few more changes before release in July 2023. The release candidate includes some important fixes for *administration* of snapshots. If you administrate snapshots, like tagging and delete not wanted snapshots, please use version 1.6.2 rc and not the version 1.6.1.  
-
-Enchancements in the release candidate (July 2023):
+The release includes some important fixes for *administration* of snapshots. There are also some enhancements for macOS 13 and later:
 
 - for macOS 13 a double click on row executes a `--dry-run` (button DryRun)
 	- next doubleclick on task will execute the task, RsyncUI verify if previous doubleclick was a `--dry-run` and if not a new `--dry-run` is executed
@@ -21,7 +19,7 @@ Enchancements in the release candidate (July 2023):
 - when executing a `--dry-run` and initate execute after shows a view of progess
 	- version 1.6.1 will only execute the task and show a rotating progress until the task is completed
 - some of the rotating progress and position on screen is slightly changed
-- some important fixes of critical issues in administration of snapshots
+- fixes of critical issues in administration of snapshots
 
 ## Version 1.6.1 build(77) -  20 June 2023
 
