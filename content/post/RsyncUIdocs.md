@@ -62,8 +62,6 @@ RsyncUI and RsyncOSX shares most of the code for *the model components*.  The ma
 
 ## New tasks, verify and synchronize data
 
-From version 1.6.2 (released July 2023)
-
 After adding [a task](/post/addconfigurations/), within the main view, *a double click* on task executes a [dryrun](/post/tasks/)  and next double click the real run. 
 
 A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button. 
