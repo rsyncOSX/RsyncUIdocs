@@ -25,7 +25,7 @@ or by download [the latest version](https://github.com/rsyncOSX/RsyncUI/releases
 
 ## MacOS 12 (Monterey) and later
 
-By every new release of macOS and SwiftUI there are new features only avaliable for the latest version of both. RsyncUI is compiled for macOS12 and later, but there are some features which are not avaliable for macOS 12. From version 1.6.2 (released July 2023) on macOS 13 and later only, a double click on a row executes a `--dry-run` and next double click the real run. The difference are compiled by setting [attributes in code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Configurations/ListofTasksView.swift).
+By every new release of macOS and SwiftUI there are new features only avaliable for the latest version of both. RsyncUI is compiled for macOS12 and later, but there are some features which are not avaliable for macOS 12. From version 1.6.3 on macOS 13 and later only, a double click on a row executes a `--dry-run` and next double click the real run. The difference are compiled by setting [attributes in code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Configurations/ListofTasksView.swift).
 
 ## Remote servers, passwordless logins and local disks
 
