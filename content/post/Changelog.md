@@ -12,8 +12,8 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 The release includes some important fixes for *administration* of snapshots. There are also some enhancements for macOS 13 and later:
 
-- for macOS 13 a double click on row executes a `--dry-run` (button DryRun)
-	- next doubleclick on task will execute the task, RsyncUI verify if previous doubleclick was a `--dry-run` and if not a new `--dry-run` is executed
+- for **macOS 13 and later** a double click on row executes a `--dry-run`
+	- the next doubleclick will **execute** the task, RsyncUI verify if previous doubleclick was a `--dry-run`, if not a new `--dry-run` is executed
 	- only **avaliable for macOS 13** and later due to SwiftUI requirements, the DryRun button is removed if macOS 13 and later
 - after a  `--dry-run` it is now possible to execute task direct or by a new doubleclick
 - when executing a `--dry-run` and initate execute after shows a view of progess
