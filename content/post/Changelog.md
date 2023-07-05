@@ -8,6 +8,12 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## macOS Sonoma and RsyncUI
+
+I have commenced porting RsyncUI to macOS Sonoma and Swift 5.9. There is one breaking change on the macOS Sonoma version of RsyncUI, the new Observeable macro. The new macro replaces  propertywrappers like State, StateObject, ObservedObject, and EnvironmentObject. In the current version of RsyncUI the library Combine is utilized togehter with the these propertywrappers. By utilizing the new Observeable macro makes the code cleaner and removes the need for all propertywrappers like State, StateObject, ObservedObject, and EnvironmentObject.
+
+Combine will still be used in parts of the macOS Sonoma version of RsyncUI. The next question is, is it possible to release one version of RsyncUI for macOS version 12 and later or will there be two releases? One for macOS 12 and 13 and one for macOS 14 Sonoma. The port of RsyncUI to macOS Sonoma will probably be completed when macOS Sonoma is released by Apple. 
+
 ## Version 1.6.3 build(79) -  29 June 2023
 
 The release includes some important fixes for *administration* of snapshots. There are also some enhancements for macOS 13 and later:
