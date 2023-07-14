@@ -8,6 +8,10 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Version 1.6.5 build(80) - not yet released (14 July 2023)
+
+There will be a maintenance release next week. No enhancments but some cleanup and a couple of fixes. RsyncUI will become the primary application this year (compared to RsyncOSX). RysncOSX will still be maintained, but bugfixes only. According to Apple, SwiftUI is the future and RsyncUI is developed by utilizing SwiftUI. And on macOS 13 RsyncUI is already more feature rich than RsyncOSX.
+
 ## macOS Sonoma and RsyncUI
 
 I have commenced porting RsyncUI to macOS Sonoma and Swift 5.9. There is one breaking change on the macOS Sonoma version of RsyncUI, the new Observeable macro. The new macro replaces  propertywrappers like State, StateObject, ObservedObject and EnvironmentObject. In the current version of RsyncUI the library Combine is utilized togehter with the these propertywrappers. 
