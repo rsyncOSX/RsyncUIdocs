@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.6.5 build(80) - 16 July 2023
 
-This is a a maintenance release.  No enhancments but a few cleanups and a couple of fixes. RsyncUI will become the primary application this year (compared to RsyncOSX). RysncOSX will still be maintained, but bugfixes only. According to Apple, SwiftUI is the future and RsyncUI is developed by utilizing SwiftUI. And on macOS 13 RsyncUI is already more feature rich than RsyncOSX.
+This is a a maintenance release.  No enhancments but a few cleanups and a couple of fixes. RsyncUI will become the primary application this year (compared to RsyncOSX). RsyncOSX will still be maintained, but bugfixes only. According to Apple, SwiftUI is the future and RsyncUI is developed by utilizing SwiftUI. And on macOS 13 RsyncUI is already more feature rich than RsyncOSX.
 
 ## macOS Sonoma and RsyncUI
 
