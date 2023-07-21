@@ -7,15 +7,11 @@ categories = ["general information"]
 lastmod = "2023-06-10"
 +++
 
-RsyncUI is a pure *SwiftUI* and *Swift* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is rsync which executes the actual synchronize task. RsyncUI is a GUI only ontop of rsync. RsyncUI is signed and notarized by Apple. Apple has verified it for not containing malicious code and it is digitally signed. 
-
-`rsync` is a file based tool for synchronization of files.
+RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is  `rsync` which executes the real synchronize task not RsyncUI. RsyncUI is a GUI only ontop of rsync. RsyncUI is *signed* and *notarized* by Apple. There are no third party libraries included in code. There are thought three source code not developed by me included in code. The third part source code is only for support and not critical if removed.
 
 #  Before commenze use of RsyncUI
 
-[RsyncUI](https://github.com/rsyncOSX/RsyncUI/releases) is compiled for **macOS Monterey** and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary which means it runs natively on Apple Silicon and Intel based Mac computers.
-
-RsyncUI can be installed by homebrew by command:
+[RsyncUI](https://github.com/rsyncOSX/RsyncUI/releases) is compiled for **macOS Monterey** and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary which means it runs natively on Apple Silicon and Intel based Mac computers. RsyncUI can be installed by homebrew by command:
 
 ```bash
 brew install --cask rsyncui
@@ -23,9 +19,11 @@ brew install --cask rsyncui
 
 or by download [the latest version](https://github.com/rsyncOSX/RsyncUI/releases).  If installed by homebrew the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
 
-## MacOS 12 (Monterey) and later
+## MacOS 13 (Ventura) and later
 
 By every new release of macOS and SwiftUI there are new features only avaliable for the latest version of both. RsyncUI is compiled for macOS12 and later, but there are some features which are not avaliable for macOS 12. From version 1.6.3 of RsyncUI on macOS 13 and later only, a double click on a row executes a `--dry-run` and next double click the real run. The features which applies to different versions of macOS is by setting [attributes in code](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/Configurations/ListofTasksView.swift).
+
+ This is also true for Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14). By Swift 5.9 the new `Observable` macro replace the  `@StateObject` propertywrapper. This is a *breaking* change and there will be two releases for RsyncUI when macOS Sonoma is public. It is not feasible to make one version which includes a release for macOS 12 to macOS 14. 
 
 ## Remote servers, passwordless logins and local disks
 
