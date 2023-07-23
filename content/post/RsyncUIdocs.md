@@ -28,7 +28,7 @@ By every new release of macOS and SwiftUI there are new features only avaliable 
 
 ## Remote servers, passwordless logins and local disks
 
-RsyncUI can synchronize your data to either remote servers on Internet and local LAN, or to local attached disks. If you only want to synchronize data to local disks, connect the external disk and just add the source and destination and you are ready for your first task.  If you want to synchronize data to remote servers there are some more setup to do. If you already have enabled **passwordless login** by `ssh` you only have to add login id and servername, the source and destination and you are ready.  If you have not enabled  passwordless login there are some more actions requiered before your first task. See chapter *Remote servers* below.
+RsyncUI can synchronize your data to either remote servers on Internet and local LAN, or to local attached disks. If you only want to synchronize data to local disks, connect the external disk and just add the source and destination and you are ready for your first task.  If you want to synchronize data to remote servers there are some more setup to do. If you already have enabled **passwordless login** by `ssh` you only have to add login id and servername, the source and destination and you are ready.  If you have not enabled  passwordless login there are some more actions requiered before your first task. 
 
 ## First time
 
