@@ -28,9 +28,8 @@ RsyncUI and RsyncOSX shares most of *the model components*.  There are though so
 
 | App      | Code | Paradigm |
 | ----------- | ----------- |   ----------- |
-| RsyncUI   | SwiftUI, Swift | declarativ  (SwiftUI)     |
-| RsyncOSX   | Swift, Storyboard   | imperativ (Swift)      |
-
+| RsyncUI   | SwiftUI, Swift | declarativ  |
+| RsyncOSX   | Storyboard, Swift  | imperativ |
 
 SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
 
