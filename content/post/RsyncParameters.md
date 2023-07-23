@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 date = "2021-03-10"
-title =  "RsyncUI default parameters"
+title =  "Parameters to rsync"
 tags = ["parameters to rsync"]
 categories = ["rsync parameters"]
 lastmod = "2021-03-25"
