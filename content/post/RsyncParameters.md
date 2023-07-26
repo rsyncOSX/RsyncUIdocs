@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Parameters to rsync"
-tags = ["parameters to rsync"]
+tags = ["parameters"]
 categories = ["rsync parameters"]
 lastmod = "2021-03-25"
 +++
