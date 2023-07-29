@@ -35,7 +35,7 @@ The release includes some important fixes for *administration* of snapshots. The
 
 ## Version 1.6.0 build(76) -  16 June 2023
 
-Update **19 June 2023**: there are a couple of *non critical issues* which cause some functions like dryrun within the main view not working **after** a synchronize all execution of tasks. Fixes are done in code and an update will be released in a  day or two.
+Update **19 June 2023**: there are a couple of *non critical issues* which cause some functions like `--dry-run` within the main view not working **after** a synchronize all execution of tasks. Fixes are done in code and an update will be released in a  day or two.
 
 There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. The restore part is changed a little bit. 
 
@@ -98,7 +98,7 @@ This is a maintenance release.
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.2 as a Universal macOS Binary on macOS Ventura
 
-There are some minor updates and some internal cleanups in this release, nothing big at all. There is added an simple assist function in add task. The parameters to rsync view is enhanced, if the `verify` switch is on the Verify button executes a verify command.  And likewise for `synchronize` and `restore` switch. All verify commands are `dryrun` commands.
+There are some minor updates and some internal cleanups in this release, nothing big at all. There is added an simple assist function in add task. The parameters to rsync view is enhanced, if the `verify` switch is on the Verify button executes a verify command.  And likewise for `synchronize` and `restore` switch. All verify commands are `--dry-run` commands.
 
 **Caution**: regarding the Verify button and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
 
@@ -113,12 +113,12 @@ Some enhancements and a bugfix in this release.
 Parameters to rsync:
 
 - any changes to parameters are presented "on the fly", add or delete a parameter and the updated rsync command is presented
-- the changed rsync command might be verified (by a `dryrun`) ahead of saving
+- the changed rsync command might be verified (by a `--dry-run`) ahead of saving
 
 Estimate and details:
 
 - in main view select `Estimate` button without selecting a task
-    - after closing the summarized estimated view, select a task and the details (`dryrun`) is presented
+    - after closing the summarized estimated view, select a task and the details (`--dry-run`) is presented
     - select another task and the details is presented
     - the `Reset` will reset all estimates, likewise if tasks er executed after estimate will reset all estimates.
     

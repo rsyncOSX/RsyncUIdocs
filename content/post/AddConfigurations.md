@@ -6,7 +6,7 @@ tags = ["add"]
 categories = ["synchronize"]
 lastmod = "2021-03-25"
 +++
-**Caution**:  **always** verify, by a `dryrun`,  the result of a **new** task before executing it.
+**Caution**:  **always** verify, by a `--dry-run`,  the result of a **new** task before executing it.
 
 A task require minimum a **local catalog** and a **remote catalog**. After entering information about a task, select the `Add` button to add it to RsyncUI. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
 
