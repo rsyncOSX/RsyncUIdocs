@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.6.6 build(81) - 31 July 2023 not yet released
 
-There will be a new maintenance release in a few days. Minor cleanups, bug fixes and enhancements in several parts of the code. Porting one version of RsyncUI to macOS Sonoma also caused a few changes in the current version.
+There will be a new maintenance release. Minor cleanups, bug fixes and enhancements in several parts of the code. Porting one version of RsyncUI to macOS Sonoma also caused a few changes in the current version.
 
 ## Version 1.6.5 build(80) - 16 July 2023
 
