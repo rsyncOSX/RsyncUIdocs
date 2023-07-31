@@ -10,7 +10,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.6.6 build(81) - 31 July 2023 not yet released
 
-There will be a new maintenance release. Minor cleanups, bug fixes and enhancements in several parts of the code. Porting one version of RsyncUI to macOS Sonoma also caused a few changes in the current version.
+There will be a new maintenance release. Minor cleanups, bug fixes and enhancements in several parts of the code. Porting one version of RsyncUI to macOS Sonoma also caused a few changes in the current version. There are enhancements in marking task when estimated, huge output (more than 20000 lines) from rsync is truncated and notified, summary of rsync output is appended to truncated output, enable or disable checking for error in output from rsync, errors in output from rsync is notified. And some cleanup and minor fixes.
+
+{{< figure src="/images/temp/estimated.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.6.5 build(80) - 16 July 2023
 
@@ -43,12 +45,7 @@ Update **19 June 2023**: there are a couple of *non critical issues* which cause
 
 There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. The restore part is changed a little bit. 
 
-And as always there are some cleanup in code.  A few of the changed  views are:
-
-{{< figure src="/images/temp/newmainview.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/temp/detailsview.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/temp/rsyncview.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/temp/actions.png" alt="" position="center" style="border-radius: 8px;" >}}
+And as always there are some cleanup in code. 
 
 ## Version 1.5.0 build(73) - 4 May 2023
 
