@@ -8,9 +8,14 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.6.6 build(81) - 31 July 2023 not yet released
+## Version 1.6.6 build(81) - 1 August 2023 
 
-There will be a new maintenance release. Minor cleanups, bug fixes and enhancements in several parts of the code. Porting one version of RsyncUI to macOS Sonoma also caused a few changes in the current version. There are enhancements in marking task when estimated, huge output (more than 20000 lines) from rsync is truncated and notified, summary of rsync output is appended to truncated output, enable or disable checking for error in output from rsync, errors in output from rsync is notified. And some cleanup and minor fixes.
+This is a maintenance release. Minor cleanups, bug fixes and enhancements in several parts of the code. Porting one version of RsyncUI to macOS Sonoma also caused a few changes in the current version. 
+- there are enhancements in marking task when estimated
+- new button for display rsync output on estimated task, remeber first double click estimate a task, next double click will execute the estimated task
+- huge output (more than 20000 lines) from rsync is truncated and notified, summary of rsync output is appended to truncated output
+- enable and disable checking for error in output from rsync, errors in output from rsync is notified
+- and some cleanup and minor fixes.
 
 {{< figure src="/images/temp/estimated.png" alt="" position="center" style="border-radius: 8px;" >}}
 
