@@ -6,12 +6,12 @@ tags = ["execute","delete tasks"]
 categories = ["synchronize"]
 lastmod = "2021-03-10"
 +++
-**Caution**: after adding new tasks always verify the result of task by either a double click on task or by opening the Rsync parameters view, select the task and choose the `Verify` button. 
+After adding new tasks always verify the result of task by either a double click on task or by opening the Rsync parameters view, select the task and choose the `Verify` button. 
 
-The task view also lets you execute **all** or **selected** tasks in one go. Actions are triggered either by keyboard shortcuts or by buttons. The following are allowed shortcut actions:
+The task view also lets you execute *all* or *selected* tasks in one go. Actions are triggered either by keyboard shortcuts or by buttons. The following are allowed shortcut actions:
 
-- `estimate` - shortcut `⌘E` estimates all tasks
-- `execute` - shortcut `⌘R` executes all tasks either direct or after an estimation run
+- `Estimate` - shortcut `⌘E` estimates all tasks
+- `Execute` - shortcut `⌘R` executes all tasks 
 - `show info` - shortcut `⌘I`
 
 ## Several tasks
@@ -20,6 +20,10 @@ When RsyncUI starts it automatically open this view and by selecting the shortcu
 
 {{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+When a task is estimated the progress column will show the label `Estimated`. Selecting the task and choose the `Details` button will show the output from rsync. 
+
+{{< figure src="/images/tasks/details.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## One task
 
