@@ -13,7 +13,7 @@ There are two types of quick tasks:
 - `synchronize` - synchronize local files to remote
 - `syncremote` - synchronize remote files to local
 
-**Caution:** if `syncremote` the localcatalog in the form is the remote data and remotecatalog is the local data where remote data will land when pulled.
+If `syncremote` the localcatalog in the form is the remote data and remotecatalog is the local data where remote data will land when pulled.
 
 {{< figure src="/images/quicktask/quicktask.png" alt="" position="center" style="border-radius: 8px;" >}}
 

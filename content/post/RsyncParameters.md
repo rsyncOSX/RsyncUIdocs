@@ -6,7 +6,7 @@ tags = ["parameters"]
 categories = ["rsync parameters"]
 lastmod = "2021-03-25"
 +++
-RsyncUI implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over **network connection** or not. Which standard parameters to use is computed during startup of application by reading the configuration file. The user can also remove default parameters if required. Parameters to rsync is saved by task.  The ssh parameter might be set global to all tasks. The global ssh parameters might by overridden by ssh parameter by task.
+RsyncUI implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over *network connection* or not. Which standard parameters to use is computed during startup of application by reading the configuration file. The user can also remove default parameters if required. Parameters to rsync is saved by task.  The ssh parameter might be set global to all tasks. The global ssh parameters might by overridden by ssh parameter by task.
 
 About verify changes in parameters, see below about Verify.
 
@@ -42,7 +42,7 @@ There are two parameters to set for ssh. The local ssh parameters overrides glob
 
 The resulting commandline string is dynamically updated when changing parameters. By the `Verify` button new parameters might be tested before saving. The verify executes a `--dry-run` task for verification of parameters. The above applies to both default and user set parameters. The `Verify` is context sensitive. If like the `verify` swicth is selected the verify executes a verify. And likewise for `synchronize` and `restore` switch.
 
-**Caution**: regarding the Verify button and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
+Regarding the Verify button and the `verify` switch is on. If there are many files a verify will take some time due to rsync computes the checksum and compares each files by checksum.
 
 ## Adding parameters to rsync
 
