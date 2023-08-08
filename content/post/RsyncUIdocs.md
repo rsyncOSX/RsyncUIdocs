@@ -28,15 +28,15 @@ By every new release of macOS and SwiftUI there are new features only avaliable 
 
 ## Remote servers, passwordless logins and local disks
 
-RsyncUI can synchronize your data to either remote servers on Internet and local LAN, or to local attached disks. If you only want to synchronize data to local disks, connect the external disk and just add the source and destination and you are ready for your first task.  If you want to synchronize data to remote servers there are some more setup to do. If you already have enabled **passwordless login** by `ssh` you only have to add login id and servername, the source and destination and you are ready.  If you have not enabled  passwordless login there are some more actions requiered before your first task. 
+RsyncUI can synchronize your data to either remote servers on Internet and local LAN, or to local attached disks. If you only want to synchronize data to local disks, connect the external disk and just add the source and destination and you are ready for your first task.  If you want to synchronize data to remote servers there are some more setup to do. If you already have enabled *passwordless login* by `ssh` you only have to add login id and servername, the source and destination and you are ready.  If you have not enabled  passwordless login there are some more actions requiered before your first task. 
 
-## First time
+## New users
 
 The first time RsyncUI starts it presents a link to [important](/post/important/) information. There is also info about the latest [version of rsync](/post/rsync/) to install.
 
 {{< figure src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-RsyncUI can be used in parallel with RsyncOSX. Catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX does not share the user settings, e.g like enabling version 3.x of rsync has to be set in both apps.
+RsyncUI can be used in parallel with RsyncOSX. Catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX does not share the *user settings*, e.g like enabling version 3.x of rsync has to be set in both apps.
 
 ## Aborting a task
 
@@ -46,12 +46,10 @@ Please be aware it is an external task not controlled by RsyncUI which executes 
 
 For the moment there are more users of RsyncOSX than RsyncUI. But the number of users of RsyncUI are growing. And Apple is clear, SwiftUI which RsyncUI is developed by, is the future. This means that most of my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and no new features.
 
-RsyncUI and RsyncOSX shares most of the code for *the model components*.  The main differences between the two apps are the user interface (UI) and how the UI is built. RsyncUI is deveoped by utilizing **SwiftUI**.  RsyncOSX is developed by utilizing **Storyboards**.  Both apps utilizes another great **declarative** library, Combine, developed by Apple and JSON files for storing tasks, logrecords and user configuration. 
+RsyncUI and RsyncOSX shares most of the code for *the model components*.  The main differences between the two apps are the user interface (UI) and how the UI is built. RsyncUI is deveoped by utilizing *SwiftUI*.  RsyncOSX is developed by utilizing *Storyboards*.  Both apps utilizes another great *declarative* library, Combine, developed by Apple and JSON files for storing tasks, logrecords and user configuration. 
 
 ## New tasks, verify and synchronize data
 
-After adding [a task](/post/addconfigurations/), within the main view, *a double click* on task executes a [--dry-run](/post/tasks/)  and next double click the real run. 
+After [adding](/post/addconfigurations/) a task within the main view, *a double click* on task executes a  [dryrun](/post/tasks/)  and  a second double click executes the real run.  A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button. 
 
-A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button. 
-
-For more experienced users of rsync, form within the Rsync parameters view, select the new task. Copy and paste the `Synchronize` string into a terminal view. The rsync command includes the `--dry-run` parameter as default within this view. **Always** verify, by a `--dry-run`,  the result of a **new** task before executing it.
+For more experienced users of rsync, from within the Rsync parameters view, select the new task. Copy and paste the `Synchronize` string into a terminal view. The rsync command includes the `--dry-run` parameter as default within this view. *Always* verify, by a `--dry-run`,  the result of a *new* task before executing it.
