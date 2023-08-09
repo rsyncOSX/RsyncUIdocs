@@ -8,13 +8,24 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Version 1.7.0 build(82) - not yet released
+
+Work on next release is commenced. There is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented. Also some adjustments in restore view. And the major work now is to remove most of the buttons and move the functions to the toolbar.
+
+{{< figure src="/images/temp/tasktoolbar.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/temp/taskquickview.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 ## Version 1.6.6 build(81) - 1 August 2023 
 
-This is a maintenance release. Minor cleanups, bug fixes and enhancements in several parts of the code. Porting one version of RsyncUI to macOS Sonoma also caused a few changes in the current version. 
-- there are enhancements in marking task when estimated
-- new button for display rsync output on estimated task, remeber first double click estimate a task, next double click will execute the estimated task
-- huge output (more than 20000 lines) from rsync is truncated and notified, summary of rsync output is appended to truncated output
-- enable and disable checking for error in output from rsync, errors in output from rsync is notified
+This is a maintenance release. Minor cleanups, bug fixes and enhancements in parts of the code. 
+ 
+- task are marked when estimated
+- new button for display rsync output on estimated task
+	-	remeber first double click estimate a task, next double click will execute the estimated task
+- huge output (more than 20000 lines) from rsync is truncated and notified
+	- summary of rsync output is appended to truncated output
+- enable and disable checking for error in output from rsync
+	- errors in output from rsync is notified
 - and some cleanup and minor fixes.
 
 {{< figure src="/images/temp/estimated.png" alt="" position="center" style="border-radius: 8px;" >}}
