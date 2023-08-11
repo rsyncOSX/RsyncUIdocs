@@ -10,11 +10,15 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.0 build(82) - not yet released
 
-Work on next release is commenced. There is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented. Also some adjustments in logs- and restore view. And the major work now is to remove most of the buttons and move the functions to the toolbar.
+Work on next release is commenced. There is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented. Also some adjustments in logs- and restore view. And the major work now is to move some of the functions to the toolbar where it is seems usefull. And colour of the buttons are adjusted.
 
 {{< figure src="/images/temp/tasktoolbar.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/taskquickview.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/logstoolbar.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Colour of the buttons are adjusted.
+
+{{< figure src="/images/temp/buttons.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.6.6 build(81) - 1 August 2023 
 
