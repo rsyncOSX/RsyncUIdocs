@@ -10,7 +10,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.0 build(82) - 12 August 2023 as release candidate
 
-There will most likely added a few more changes befor release. There is tooltip for each function on the toolbar
+There will most likely added a few more changes before release. There is tooltip for each function on the toolbar.
+
+On macOS Monterey there is still a button for DruRyn within main view. MacOS Monterey does not support double click.
 
 - there is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented
 - some adjustments in logs- and restore view
