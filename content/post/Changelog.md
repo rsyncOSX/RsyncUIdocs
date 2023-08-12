@@ -8,9 +8,15 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.7.0 build(82) - not yet released
+## Version 1.7.0 build(82) - 12 August 2023 as release candidate
 
-Work on next release is commenced. There is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented. Also some adjustments in logs- and restore view. And some of the functions are moved the toolbar.  Color of the buttons are adjusted. The Abort shortcut is changed to `⌘K` and it was not working in some views. 
+There will most likely added a few more changes befor release. There is tooltip for each function on the toolbar
+
+- there is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented
+- some adjustments in logs- and restore view
+- some of the functions are moved the toolbar
+- color of the buttons are adjusted
+- the Abort shortcut is changed to `⌘K` and it was not working in some views
 
 {{< figure src="/images/temp/tasktoolbar.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/taskquickview.png" alt="" position="center" style="border-radius: 8px;" >}}
