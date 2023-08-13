@@ -12,6 +12,7 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 
 First of all select from which configuration to restore from and a **filter string** to narrow down the selection of files. After selection select the Files button and RsyncUI collects filenames.
 
+{{< figure src="/images/restore/restore_filter_all.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/restore/restore_filter.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 Select either file or catalog to restore.  Switching the command toggle shows the actual restore command. Selecting restore shows a `--dry-run` of restore. Switch of `--dry-run` toggle for actual restore of files.
