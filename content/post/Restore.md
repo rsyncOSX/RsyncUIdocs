@@ -6,9 +6,11 @@ tags = ["restore"]
 categories = ["synchronize"]
 lastmod = "2021-03-18"
 +++
-Restore either files or complete synchronized files is easy in RsyncUI. A restore has to be executed to a **temporary restore path**. This is to secure not destroying any original data. A restore session might be as follows.
+Restore either files or complete synchronized files is easy in RsyncUI. A restore has to be executed to a *temporary restore path*. This is to secure not destroying any original data. A restore session might be as follows.
 
 ### Selecting and filtering
+
+List of files with more than 20,000 lines will truncated. 
 
 First of all select from which configuration to restore from and a **filter string** to narrow down the selection of files. After selection select the Files button and RsyncUI collects filenames.
 
