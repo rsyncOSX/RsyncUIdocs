@@ -10,9 +10,7 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 
 ### Selecting and filtering
 
-List of files with more than 20,000 lines will truncated. 
-
-First of all select from which configuration to restore from and a **filter string** to narrow down the selection of files. After selection select the Files button and RsyncUI collects filenames.
+List of files with more than 20,000 lines will be truncated.  Either search for files to restore by filter or by listing all files.  
 
 {{< figure src="/images/restore/restore_filter_all.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/restore/restore_filter.png" alt="" position="center" style="border-radius: 8px;" >}}
