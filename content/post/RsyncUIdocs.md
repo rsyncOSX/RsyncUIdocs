@@ -22,7 +22,7 @@ or by download [the latest version](https://github.com/rsyncOSX/RsyncUI/releases
 
 ## MacOS 12 Monterey
 
-Buttons are removed from the main view and functions for estimate, execute and so on are enabled by the new toolbar. On macOS 12 it is not possible to a enable double click on task for an estimation run and inspection of ouput from rsync ahead of the real run. The only way to check the output from an estimation run within the main view on macOS 12, is to estimate all tasks, close the view and check the output from rsync by selecting the task and then choose the `i` form the toolbar.
+Buttons are removed from the main view and functions for estimate, execute and so on are enabled by the new toolbar. On macOS 12 it is not possible to a enable double click on task for an estimation run and inspection of ouput from rsync ahead of the real run. The only way to check the output from an estimation run within the main view on macOS 12, [is to estimate all tasks](/post/macos12/), close the view and check the output from rsync by selecting the task and then choose the `i` form the toolbar.
 
 ## MacOS 13 (Ventura) and later
 
