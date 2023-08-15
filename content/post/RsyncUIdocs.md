@@ -24,8 +24,8 @@ or by download [the latest version](https://github.com/rsyncOSX/RsyncUI/releases
 
 By every new release of macOS and SwiftUI there are new features only avaliable for the latest version of both. RsyncUI is compiled for macOS12 and later, but there are some features which are not avaliable for macOS 12. From version 1.6.3 of RsyncUI on macOS 13 and later only, a double click on a row executes a `--dry-run` and next double click the real run.
 
- This is also true for Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14). By Swift 5.9 the new `Observable` macro replace the  `@StateObject` propertywrapper. This is a *breaking* change and there will be two releases for RsyncUI when macOS Sonoma is public. It is not feasible to make one version which includes a release for macOS 12 to macOS 14. 
-
+ This is also true for Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14). By Swift 5.9 the new `Observable` macro replace the  `@StateObject` propertywrapper. This is a kind of  *breaking* change, but the release of RsyncUI when Sonoma is public will be with the `@StateObject` propertywrapper. The users will not experience any change, the change only matters for developers.
+ 
 ## Remote servers, passwordless logins and local disks
 
 RsyncUI can synchronize your data to either remote servers on Internet and local LAN, or to local attached disks. If you only want to synchronize data to local disks, connect the external disk and just add the source and destination and you are ready for your first task.  If you want to synchronize data to remote servers there are some more setup to do. If you already have enabled *passwordless login* by `ssh` you only have to add login id and servername, the source and destination and you are ready.  If you have not enabled  passwordless login there are some more actions requiered before your first task. 
