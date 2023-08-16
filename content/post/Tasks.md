@@ -14,12 +14,12 @@ After adding new tasks always verify the result of task by either a double click
 
 ## All tasks in one go
 
-When RsyncUI starts it automatically open this view and by selecting the shortcut action `⌘E` will estimate all tasks. Executing tasks after estimating, either direct by button or by  `⌘R` a progressbar will show progress. 
+When RsyncUI starts it automatically open this view. By selecting the *wand and stars*  (shortcut `⌘E`) from the toolbar will estimate all tasks. Executing tasks after estimating, either direct by button or by  the *left arrow* (shortcut `⌘R`).  Progress of synchronizing data is presented.
 
 {{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-When a task is estimated the progress column will show the label `Estimated`. Selecting the task and choose the `Details` button will show the output from rsync. 
+When a task is estimated the progress column will show  a *green* bullet. Select the task and choose the *i* from toolbar will show the output from rsync. 
 
 {{< figure src="/images/tasks/details.png" alt="" position="center" style="border-radius: 8px;" >}}
 

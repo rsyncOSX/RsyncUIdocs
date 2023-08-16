@@ -20,6 +20,10 @@ brew install --cask rsyncui
 ```
 or by download [the latest version](https://github.com/rsyncOSX/RsyncUI/releases).  If installed by homebrew the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
 
+## MacOS 12 Monterey
+
+Buttons are removed from the main view and functions for estimate, execute and so on are enabled by the new toolbar. On macOS 12 it is not possible to a enable double click on task for an estimation run and inspection of ouput from rsync ahead of the real run. The only way to check the output from an estimation run within the main view on macOS 12, [is to estimate all tasks](/post/macos12/), close the view and check the output from rsync by selecting the task and then choose the `i` form the toolbar.
+
 ## MacOS 13 (Ventura) and later
 
 By every new release of macOS and SwiftUI there are new features only avaliable for the latest version of both. RsyncUI is compiled for macOS12 and later, but there are some features which are not avaliable for macOS 12. From version 1.6.3 of RsyncUI on macOS 13 and later only, a double click on a row executes a `--dry-run` and next double click the real run.
