@@ -22,7 +22,7 @@ or by download [the latest version](https://github.com/rsyncOSX/RsyncUI/releases
 
 ## MacOS 12 Monterey
 
-Buttons are removed from the main view and functions for estimate, execute and so on are enabled by the new toolbar. On macOS 12 it is not possible to a enable double click on task for an estimation run and inspection of ouput from rsync ahead of the real run. The only way to check the output from an estimation run within the main view on macOS 12, [is to estimate all tasks](/post/macos12/), close the view and check the output from rsync by selecting the task and then choose the `i` form the toolbar.
+Buttons are removed from the main view, and functions for estimate, execute, and so on are enabled by the new toolbar. On macOS 12, it is not possible to enable double-clicking on tasks for an estimation run and inspection of output from rsync ahead of the real run. The only way to check the output from an estimation run within the main view on macOS 12 is to [estimate all tasks](/post/macos12/), dismiss the estimated view, and check the output from rsync the `i` from the toolbar main view.
 
 ## MacOS 13 (Ventura) and later
 
@@ -54,6 +54,6 @@ RsyncUI and RsyncOSX shares most of the code for *the model components*.  The ma
 
 ## New tasks, verify and synchronize data
 
-After [adding](/post/addconfigurations/) a task within the main view, *a double click* on task executes a  [dryrun](/post/tasks/)  and  a second double click executes the real run.  A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button. 
+After [adding](/post/addconfigurations/) a task within the main view, *a double click* on [task executes](/post/tasks/)  a dryrun and  the *second double click* executes the real run.  A verification of a new task might also be executed by opening the Rsync parameters view, select the task and choose the `Verify` button. 
 
 For more experienced users of rsync, from within the Rsync parameters view, select the new task. Copy and paste the `Synchronize` string into a terminal view. The rsync command includes the `--dry-run` parameter as default within this view. *Always* verify, by a `--dry-run`,  the result of a *new* task before executing it.

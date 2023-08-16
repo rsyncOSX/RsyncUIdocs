@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.0 build(82) - 16 August 2023 
 
-There is tooltip for each function on the toolbar. MacOS Monterey does not support double click on row, see [how to execute a ](/post/macos12/) `--dry-run` on macOS Monterey. The RsyncUI documentation is updated and more updates will be done after this release. 
+There is tooltip for each function on the toolbar. MacOS Monterey does not support double click on row, see [how to execute](/post/macos12/)  a `--dry-run` on macOS Monterey. The RsyncUI documentation is updated and more updates will be done after this release. 
 
 - there is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented
 - some adjustments in logs- and restore view
