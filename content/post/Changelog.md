@@ -8,17 +8,14 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.7.0 build(82) - 12 August 2023 as release candidate
+## Version 1.7.0 build(82) - 16 August 2023 
 
-There will most likely be added a few more changes before release. There is tooltip for each function on the toolbar.
-
-On macOS Monterey there is still a button for DryRun within main view. MacOS Monterey does not support double click.
+There is tooltip for each function on the toolbar. MacOS Monterey does not support double click on row, see [how to execute a ](/post/macos12/) `--dry-run` on macOS Monterey. The RsyncUI documentation is updated and more updates will be done after this release. 
 
 - there is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented
 - some adjustments in logs- and restore view
 - some of the functions are moved the toolbar
 - color of the buttons are adjusted
-- the Abort shortcut is changed to `⌘K` and it was not working in some views
 
 {{< figure src="/images/temp/tasktoolbar.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/taskquickview.png" alt="" position="center" style="border-radius: 8px;" >}}
