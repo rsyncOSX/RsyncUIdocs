@@ -20,15 +20,15 @@ brew install --cask rsyncui
 ```
 or by download [the latest version](https://github.com/rsyncOSX/RsyncUI/releases).  If installed by homebrew the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
 
-## MacOS 12 Monterey
-
-Buttons are removed from the main view, and functions for estimate, execute, and so on are enabled by the new toolbar. On macOS 12, it is not possible to enable double-clicking on tasks for an estimation run and inspection of output from rsync ahead of the real run. The only way to check the output from an estimation run within the main view on macOS 12 is to [estimate all tasks](/post/macos12/), dismiss the estimated view, and check the output from rsync the `i` from the toolbar main view.
-
 ## MacOS 13 (Ventura) and later
 
-By every new release of macOS and SwiftUI there are new features only avaliable for the latest version of both. RsyncUI is compiled for macOS12 and later, but there are some features which are not avaliable for macOS 12. From version 1.6.3 of RsyncUI on macOS 13 and later only, a double click on a row executes a `--dry-run` and next double click the real run.
+By every new release of macOS and SwiftUI there are new features only avaliable for the latest version of both. RsyncUI is compiled for macOS12 and later. And *double click* on a row is only *avaliable* on macOS 13 and later. 
 
- This is also true for Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14). By Swift 5.9 the new `Observable` macro replace the  `@StateObject` propertywrapper. This is a kind of  *breaking* change, but the release of RsyncUI when Sonoma is public will be with the `@StateObject` propertywrapper. The users will not experience any change, the change only matters for developers.
+Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14) are all in beta. By Swift 5.9 the new `Observable` macro replace the `@StateObject` propertywrapper. This is a kind of  *breaking* change, but the release of RsyncUI when Sonoma is public will be with the `@StateObject` propertywrapper. But one branch of source is converted to the new macro. The users will not experience any change, the change only matters for developers. 
+ 
+## MacOS 12 Monterey
+
+Buttons are removed from the main view, and functions for estimate, execute, and so on are enabled by the new toolbar. On macOS 12 double-clicking on task is not *avaliable*. The only way to check the output from an estimation run within the main view on macOS 12 is to [estimate all tasks](/post/macos12/), dismiss the estimated view, and check the output from rsync the `i` from the toolbar main view.
  
 ## Remote servers, passwordless logins and local disks
 
