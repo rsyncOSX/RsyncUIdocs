@@ -13,7 +13,7 @@ Check out  [the tags](/tags) and [the categories](/categories) for information a
 
 ## Before commencing use of RsyncUI
 
-RsyncUI is compiled for macOS Monterey and later. See the changelog for updates. RsyncUI is built as a Universal macOS Binary, which means it runs natively on Apple Silicon and Intel-based Mac computers. RsyncUI can be installed by homebrew by command:
+[RsyncUI](https://github.com/rsyncOSX/RsyncUI/releases) is compiled for macOS Monterey and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs natively on Apple Silicon and Intel-based Mac computers. RsyncUI can be installed by homebrew by command:
 
 ```bash
 brew install --cask rsyncui
