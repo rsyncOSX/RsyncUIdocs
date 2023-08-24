@@ -8,6 +8,19 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Version 1.7.1 build(83) - not yet released
+
+The enhancement of RsyncUI continues. Not dramatic changes, but minor updates which I believe makes the app easier to use.  
+
+Profile is moved to the toolbar. It makes the navigation stack more clean. For macOS 12 and later.
+
+{{< figure src="/images/temp/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+For macOS 13 and later, from the Edit function on toolbar the shortcuts `⌘C` and  `⌘V` will copy and paste copies of the selected tasks. The copy and paste will append task(s) to make it more easy to create new task based upon existing data. Data as source, destination, server, username and parameters to rsync are copied from the selected task(s).
+
+{{< figure src="/images/temp/edit.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/temp/paste.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 ## Version 1.7.0 build(82) - 16 August 2023 
 
 There is tooltip for each function on the toolbar. MacOS Monterey does not support double click on row, see [how to execute](/post/macos12/)  a `--dry-run` on macOS Monterey. The RsyncUI documentation is updated and more updates will be done after this release. 
