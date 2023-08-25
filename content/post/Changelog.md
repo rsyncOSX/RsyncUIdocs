@@ -10,13 +10,23 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.1 build(83) - not yet released
 
-The enhancement of RsyncUI continues. Not dramatic changes, but minor updates which I believe makes the app easier to use.  
+New version is to be released in September. 
 
-Profile is moved to the toolbar. It makes the navigation stack more clean. For macOS 12 and later.
+The enhancement of RsyncUI continues. Not dramatic changes, but minor updates which I believe makes the app easier to use.  The changes in code are utilizing modifiers for table operations like copy, paste and delete. By utilizing modifiers functions for table, default menu functions are automatically enabled for all three table operations mentioned. 
 
+ For macOS 12 and later:
+ 
+ - profile is moved to the toolbar, it makes the navigation stack more clean
+ - delete tasks from main- and add view is updated to use function from Edit menu (deleted from Tasks menu)
+ - delete logrecords form within Log listings view as well (as above)
+ 
 {{< figure src="/images/temp/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-For macOS 13 and later, from the Edit function on toolbar the shortcuts `⌘C` and  `⌘V` will copy and paste copies of the selected tasks. The copy and paste will append task(s) to make it more easy to create new task based upon existing data. Data as source, destination, server, username and parameters to rsync are copied from the selected task(s).
+For macOS 13 and later:
+
+- from the Edit function on toolbar the shortcuts `⌘C` and  `⌘V` will copy and paste copies of the selected tasks. 
+
+The copy and paste will append task(s) to make it more easy to create new task based upon existing data. Data as source, destination, server, username and parameters to rsync are copied from the selected task(s).
 
 {{< figure src="/images/temp/edit.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/temp/paste.png" alt="" position="center" style="border-radius: 8px;" >}}
