@@ -18,7 +18,7 @@ The enhancement of RsyncUI continues. Not dramatic changes, but minor updates wh
  
  - profile is moved to the toolbar, it makes the navigation stack more clean
  - delete tasks from main- and add view is updated to use function from Edit menu (deleted from Tasks menu)
- - delete logrecords form within Log listings view as well (as above)
+ - delete logrecords from within Log listings view as well (as above)
  
 {{< figure src="/images/temp/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
 
