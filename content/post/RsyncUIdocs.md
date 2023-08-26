@@ -23,13 +23,18 @@ or by downloading  [the latest version](https://github.com/rsyncOSX/RsyncUI/rele
 
 ## MacOS 13 (Ventura) and later
 
-With every new release of macOS and SwiftUI there are new features only available for the latest version of both. RsyncUI is compiled for macOS12 and later. And double clicking on a row is only available on macOS 13 and later.
+With every new release of macOS and SwiftUI there are new features only available for the latest version of both. RsyncUI is compiled for macOS 12 and later.
 
-Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14) are all in beta. In Swift 5.9, the new `Observable` macro replaces the `@StateObject` propertywrapper. This is a kind of *breaking* change, but the release of RsyncUI when Sonoma is public will be with the @StateObject propertywrapper. But one branch of source was converted to the new macro. The users will not experience any change, the change only matters for developers.
+Features only avaliable on macOS 13 and later:
+
+- within the main view, double click on row for estimate and execute
+- within the Tasks view ( Add tasks),  copy and paste tasks by shortctus `⌘C` and  `⌘V` and Edit menu
+
+Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14) are all in beta. In Swift 5.9, the new `Observable` macro replaces the `@StateObject` propertywrapper. This is a kind of *breaking* change, but the release of RsyncUI when Sonoma is public, will be with the @StateObject propertywrapper to ensure RsyncUI is supported from macOS 12 and later. One branch is converted to the new macro and kept in sync with released code. 
 
 ## MacOS 12 Monterey
 
-Buttons are removed from the main view, and functions for estimate, execute, and so on are enabled by the new toolbar. On macOS 12, double-clicking on task is not available. The only way to check the output from an estimation run within the main view on macOS 12 is to estimate all tasks, dismiss the estimated view, and check the output from rsync the i from the toolbar main view.
+On macOS 12, double-clicking on task is not available. The only way to check the output from an estimation run within the main view on macOS 12 is to estimate all tasks, dismiss the estimated view, and check the output from rsync the i from the toolbar main view.
 
 ## Remote servers, passwordless logins and local disks
 
