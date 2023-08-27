@@ -13,7 +13,7 @@ Check out  [the tags](/tags) and [the categories](/categories) for information a
 
 ## Before commencing use of RsyncUI
 
-[RsyncUI](https://github.com/rsyncOSX/RsyncUI/releases) is compiled for macOS Monterey and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs natively on Apple Silicon and Intel-based Mac computers. RsyncUI can be installed by homebrew by command:
+[RsyncUI](https://github.com/rsyncOSX/RsyncUI/releases) is compiled for macOS Monterey and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers. RsyncUI can be installed by homebrew by command:
 
 ```bash
 brew install --cask rsyncui
@@ -25,7 +25,7 @@ or by downloading  [the latest version](https://github.com/rsyncOSX/RsyncUI/rele
 
 With every new release of macOS and SwiftUI there are new features only available for the latest version of both. RsyncUI is compiled for macOS 12 and later.
 
-Features only avaliable on macOS 13 and later:
+Features only available on macOS 13 and later:
 
 - within the main view, double click on row for estimate and execute
 - within the Tasks view ( Add tasks),  copy and paste tasks by shortctus `⌘C` and  `⌘V` and Edit menu
@@ -42,7 +42,7 @@ RsyncUI can synchronize your data to either remote servers on the Internet and l
 
 ## New users
 
-The first time RsyncUI starts, it presents a link to [important](/post/important/) information. There is also info about the [latest version of rsync](/post/rsync/) of rsync to install.
+The first time RsyncUI starts, it presents a link to [important](/post/important/) information. There is also info about the [latest version of rsync](/post/rsync/) to install.
 
 {{< figure src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
