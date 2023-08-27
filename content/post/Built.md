@@ -76,9 +76,9 @@ Combine, a declarative library by Apple, makes the code easy to write and easy t
 - [write](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configurations for tasks
 - [the process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) for executing tasks
 
-## Further text
+## SwiftUI
 
-SwiftUI is according the Apple the future. And so is RsyncUI of the two apps. From here the documentation is mostly about RsyncUI. 
+SwiftUI is according the Apple the future. And so is RsyncUI of the two apps. That is why the documentation is most about RsyncUI. 
 
 # How to start the apps
 
