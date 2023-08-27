@@ -15,7 +15,7 @@ Some numbers:
 | RsyncUI   | about 14K     | about 170       | 6 May 2021 |
 | RsyncOSX   | about 11K   | about 120      | 14 March 2016 |	
 
-Which application to use? Both applications does the same job. They read and update the same files for tasks and logs which mean you can use both apps, but not at the same time due to locking of files. According to Apple SwiftUI is the future. RsyncUI is built by utilizing SwiftUI and by every new release of macOS, Swift and SwiftUI there are new features supporting the new release of macOS. This is also true for Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14). By Swift 5.9 the new `Observable` macro replace the  `@StateObject` propertywrapper. This is a *breaking* change and there will be two releases for RsyncUI when macOS Sonoma is public. 
+Which application to use? Both applications does the same job. They read and update the same files for tasks and logs which mean you can use both apps, but not at the same time due to locking of files. 
 
 ## A few words about the code
 
@@ -23,7 +23,7 @@ Even if I am an educated IT person most of my professional work has been as an I
 
 ## RsyncOSX vs RsyncUI
 
-RsyncUI and RsyncOSX shares most of *the model components*.  There are though some model components within RsyncUI which are like an interface between the *shared* model and RsyncUI views. The main differences between the two apps are the user interface (UI) and how the UI is built. RsyncUI is deveoped by utilizing *SwiftUI* and Swift.  RsyncOSX is developed by utilizing *Storyboards* and Swift.  Both apps utilizes another great *declarative* library, Combine, developed by Apple and JSON files for storing tasks, logrecords and user configuration. RsyncUI is now the primary application of the two even if RsyncOSX has more users. 
+For the moment, there are more users of RsyncOSX than RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear, SwiftUI, which RsyncUI is developed by, is the future. This means that most of my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and no new features. RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. RsyncUI is developed utilizing SwiftUI. RsyncOSX is developed utilizing storyboards. Both apps utilize another great declarative library, Combine, developed by Apple and JSON files for storing tasks, logrecords and user configuration.
 
 | App      | Code | Paradigm |
 | ----------- | ----------- |   ----------- |
