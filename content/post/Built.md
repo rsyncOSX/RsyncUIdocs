@@ -6,7 +6,7 @@ tags = ["built"]
 categories = ["general information"]
 lastmod = "2023-01-03"
 +++
-*Under development.* This page is an overview of the main components of RsyncOSX and RsyncUI. The development of the apps has been an evolving process. The open source community has been and still are a great resource for ideas and how to solve specific tasks. Both apps today are stable and in a state of maintenace. 
+*Under development.* This page is an overview of the main components of RsyncOSX and RsyncUI. The development of the apps has been an evolving process. The open source community has been and still is a great resource for ideas and how to solve specific tasks. Both apps today are stable and in a state of maintenance.
 
 Some numbers:
 
@@ -15,15 +15,15 @@ Some numbers:
 | RsyncUI   | about 14K     | about 170       | 6 May 2021 |
 | RsyncOSX   | about 11K   | about 120      | 14 March 2016 |	
 
-Which application to use? Both applications does the same job. They read and update the same files for tasks and logs which mean you can use both apps, but not at the same time due to locking of files. 
+Which application to use? Both applications do the same job. They read and update the same files for tasks and logs which means you can use both apps, but not at the same time due to locking of files. 
 
 ## A few words about the code
 
-Even if I am an educated IT person most of my professional work has been as an IT-manager and not a developer. Most of my coding experience is in private projects such as RsyncOSX and RsyncUI. Google is and has been a great resource for research and advice on how to solve specific problems. Reading other developers' code and discussing is always valuable input for my code. The *MVC pattern* and *single source of truth* are important patterns for both apps. I have also tried to use all Apple Frameworks utilizing most required built-in functions like I *don't write* my own sorting or filter algorithms. And even if there are many lines of code in both apps I have tried to write as little code as possible.  So if you are looking at my code keep this in mind and my code is *only one* of *probably many ways* to solve a problem.  
+Even though I am an educated IT person, most of my professional work has been as an IT manager and not a developer. Most of my coding experience is with private projects such as RsyncOSX and RsyncUI. Google is and has been a great resource for research and advice on how to solve specific problems. Reading other developers' code and discussing it is always valuable input for my code. The MVC pattern and single source of truth are important patterns for both apps. I have also tried to use all Apple Frameworks, utilising most of the required built-in functions, like sorting or filter algorithms. And even if there are many lines of code in both apps, I have tried to write as little code as possible. So if you are looking at my code, keep this in mind: my code is only one of probably many ways to solve a problem.
 
 ## RsyncOSX vs RsyncUI
 
-For the moment, there are more users of RsyncOSX than RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear, SwiftUI, which RsyncUI is developed by, is the future. This means that most of my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and no new features. RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. RsyncUI is developed utilizing SwiftUI. RsyncOSX is developed utilizing storyboards. Both apps utilize another great declarative library, Combine, developed by Apple and JSON files for storing tasks, logrecords and user configuration.
+For the moment, there are more users of RsyncOSX than RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: SwiftUI, which RsyncUI is developed by, is the future. This means that most of my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and no new features are added. RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. RsyncUI is developed using SwiftUI. RsyncOSX is developed using storyboards. Both apps utilise another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration.
 
 | App      | Code | Paradigm |
 | ----------- | ----------- |   ----------- |
@@ -84,19 +84,20 @@ SwiftUI is according the Apple the future. And so is RsyncUI of the two apps. Th
 
 There are different ways of starting a Storyboard based app vs a SwiftUI based app.
 
-## Start of RSyncOSX
+## Start of RsyncOSX
 
-The start of RsyncOSX starts with the attribute `@NSApplicationMain` which kicks off everything. Within the Storyboard the entry point is marked and the view is binded with [MainWindowsController.swift](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/MainWindowsController.swift). The [Toolbar](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/Toolbar.swift) is programmatically constructed which makes it more easy to change vs designing it the Storyboard. But all the details how this actually work is beyond me, but it works.
+The start of RsyncOSX starts with the attribute `@NSApplicationMain` which kicks off everything. Within the Storyboard, the entry point is marked, and the view is binded with [MainWindowsController.swift](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/MainWindowsController.swift). The [Toolbar](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/Toolbar.swift) is programmatically constructed, which makes it easier to change vs. designing it on the Storyboard. But all the details of how this actually works are beyond me, but it works.
 
 ## Start of RsyncUI
 
-The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/documentation/SwiftUI/App). There is only one entrance point `@main` in [RsyncUI](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Main/RsyncUIApp.swift). The `@main` initializes the app, setup of the menubar and open the [navigation bar](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Main/RsyncUIView.swift) which is the main user start for the app.
+The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/documentation/SwiftUI/App). There is only one entrance point, `@main`, in [RsyncUI](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Main/RsyncUIApp.swift). The `@main` initialises the app, setup of the menubar, and opens the [navigation bar](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Main/RsyncUIView.swift) which is the main user start for the app.
 
 # The model
 
-The model is not equal for the apps. The concept of model is the same, but there are some differences due to the fact that SwiftUI views are value type (structs) and not reference type (class) as for Storyboard and Swift. The model is also responsible for informing the views when there are changes to the model. Both apps share the basic functions like read and write data from store, functions for updating the model and so on. 
+The model is not equal for the apps. The concept of model is the same, but there are some differences due to the fact that SwiftUI views are value types (structs) and not reference types (classes) as in Storyboard and Swift. The model is also responsible for informing the views when there are changes to the model. Both apps share the same basic functions, like reading and writing data from the store, updating the model, and so on.
 
-The memory footprint about tasks is minimal. Data for tasks are kept in memory for both apps during the lifetime of the apps. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only  read from store when viewing logs or updates. When data about logs is not used, the data is automatically released from memory to keep the memory as low as possible.
+The memory footprint of tasks is minimal. Data for tasks is kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing logs or updates. When data about logs is not used, the data is automatically released from memory to keep the memory as low as possible.
+
 
 ## Model for RsyncUI
 
