@@ -13,7 +13,7 @@ Check out  [the tags](/tags) and [the categories](/categories) for information a
 
 ## Before commencing use of RsyncUI
 
-[RsyncUI](https://github.com/rsyncOSX/RsyncUI/releases) is compiled for macOS Monterey and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers. RsyncUI can be installed by homebrew by command:
+RsyncUI is compiled for macOS Monterey and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers. RsyncUI can be installed by homebrew by command:
 
 ```bash
 brew install --cask rsyncui
@@ -23,7 +23,7 @@ or by downloading  [the latest version](https://github.com/rsyncOSX/RsyncUI/rele
 
 ## MacOS 13 (Ventura) and later
 
-With every new release of macOS and SwiftUI there are new features only available for the latest version of both. RsyncUI is compiled for macOS 12 and later.
+With every new release of macOS and SwiftUI there are new features only available for the latest version of both.
 
 Features only available on macOS 13 and later:
 
