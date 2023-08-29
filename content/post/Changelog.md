@@ -19,6 +19,9 @@ The enhancement of RsyncUI continues. Not dramatic changes, but minor updates wh
  - profile is moved to the toolbar, it makes the navigation stack more clean
  - delete tasks from main- and add view is updated to use function from Edit menu (deleted from Tasks menu)
  - delete logrecords from within Log listings view as well (as above)
+ - fixed error message about missing files for new users, if missing file default files are created
+ - added automatic execution when all tasks are estimated
+ 	- user set seconds before execution and function can be disabled, enabled by default
  
 {{< figure src="/images/temp/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
 
