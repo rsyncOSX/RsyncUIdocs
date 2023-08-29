@@ -23,8 +23,6 @@ The enhancement of RsyncUI continues. Not dramatic changes, but minor updates wh
  - added automatic execution when all tasks are estimated
  	- user set seconds before execution and function can be disabled, enabled by default
  
-{{< figure src="/images/temp/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 For macOS 13 and later:
 
 - from the Edit function on toolbar the shortcuts `⌘C` and  `⌘V` will copy and paste copies of the selected tasks. 
