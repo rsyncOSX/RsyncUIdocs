@@ -21,6 +21,15 @@ The following actions within this view:
 
 Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID.
 
+## Copy and paste
+
+{{< figure src="/images/add/copy.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/add/paste.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+## Delete
+
+{{< figure src="/images/add/delete.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 ### Task
 
 - synchronize, which is default and keeps source and destination in sync
