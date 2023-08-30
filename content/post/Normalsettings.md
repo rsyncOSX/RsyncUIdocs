@@ -43,8 +43,13 @@ There is three choices for logging, none, min and full and they are mutually exc
 
 The log file can be inspected by `⌘O` shortcut or by the File menu. The log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`.
 
-## Detailed log level and monitor network
+## Other settings
 
-If Detailed is `on` there is a separate log for each run. If `off` only date for last run is saved on the configuration.
-
-RsyncUI can monitor the network connection during execution of tasks. If a network connection is dropped during execution, RsyncUI sends an interrupt signal to the task and it halts with an error.
+- Detailed log level
+    - if Detailed is `on` there is a separate log for each run. If `off` only date for last run is saved on the task
+- Monitor network
+    - monitor the network connection during execution of tasks, If a network connection is dropped during execution, RsyncUI sends an interrupt signal to the task and it halts with an error
+- Check for error in output
+    - if the word `error` is discovered in output from rsync it is notified
+- Automatic execute
+    - in view for summarized view, enable automatic execute and time before automatic execute kicks in 

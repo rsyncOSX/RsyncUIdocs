@@ -17,6 +17,9 @@ After adding new tasks always verify the result of task by either a double click
 When RsyncUI starts it automatically open the main view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar will estimate all tasks. Execute the real run either direct from the summarized estimated view or by *left arrow* (shortcut `⌘R`). 
 
 {{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+In usersettings, enable automatic execution and execution time. Automatic execution might be disabled by selecting the count down button.
+
 {{< figure src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 When a task is estimated the progress column will show  a *green* bullet. Select the task and choose the *i* from toolbar will show the output from rsync. 
