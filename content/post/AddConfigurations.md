@@ -23,10 +23,14 @@ Just press the Enter key will automatically enter a new task. The Enter key will
 
 ## Copy and paste
 
+Shortcuts for copy and paste are `⌘C` and  `⌘V` or from the Edit menu. The copy and paste makes a copy of selected tasks and marks them with copy. The copy inlcudes all parameters of the copied tasks.
+
 {{< figure src="/images/add/copy.png" alt="" position="center" style="border-radius: 8px;" >}}
 {{< figure src="/images/add/paste.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Delete
+
+Select tasks to be deleted and delete from the Edit menu.
 
 {{< figure src="/images/add/delete.png" alt="" position="center" style="border-radius: 8px;" >}}
 
