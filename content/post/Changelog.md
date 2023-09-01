@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 New version is to be released in September. 
 
-The enhancement of RsyncUI continues. Not dramatic changes, but minor updates which I believe makes the app easier to use.  The changes in code are utilizing modifiers for table operations like copy, paste and delete. By utilizing modifiers functions for table, default menu functions are automatically enabled for all three table operations mentioned. 
+The enhancement of RsyncUI continues. Not dramatic changes, but minor updates which I believe makes the app easier to use.  The changes in code are utilizing modifiers for table operations like copy, paste and delete. By utilizing modifiers for table, default menu functions are automatically enabled for all three table operations mentioned. 
 
  For macOS 12 and later:
  
