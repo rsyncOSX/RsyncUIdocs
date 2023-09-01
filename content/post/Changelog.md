@@ -8,9 +8,7 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.7.1 build(83) - not yet released
-
-New version is to be released in September. 
+## Version 1.7.1 build(83) - 1 September 2023
 
 The enhancement of RsyncUI continues. Not dramatic changes, but minor updates which I believe makes the app easier to use.  The changes in code are utilizing modifiers for table operations like copy, paste and delete. By utilizing modifiers for table, default menu functions are automatically enabled for all three table operations mentioned. 
 
