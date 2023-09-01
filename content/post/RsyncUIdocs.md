@@ -7,7 +7,7 @@ categories = ["general information"]
 lastmod = "2023-06-10"
 +++
 
-RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple. There are no third party libraries included in the code. It is thought three source codes not developed by me are included in the code. The third part of the source code is only for support and not critical if removed.
+RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple. There are no third party libraries included in the code. It is thought three source codes not developed by me are included in the code. The third parts source code is only for support and not critical if removed.
 
 Check out [the categories](/categories) for information about other topics not linked to on this page.
 
@@ -28,7 +28,7 @@ With every new release of macOS and SwiftUI there are new features only availabl
 Features only available on macOS 13 and later:
 
 - within the main view, double click on row for estimate and execute
-- within the Tasks view ( Add tasks),  copy and paste tasks by shortctus `⌘C` and  `⌘V` and Edit menu
+- within the Tasks view ( Add tasks),  copy and paste tasks by shortcuts `⌘C` and  `⌘V` and Edit menu
 
 Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14) are all in beta. In Swift 5.9, the new `Observable` macro replaces the `@StateObject` propertywrapper. This is a kind of *breaking* change, but the release of RsyncUI when Sonoma is public, will be with the @StateObject propertywrapper to ensure RsyncUI is supported from macOS 12 and later. One branch is converted to the new macro and kept in sync with released code. 
 
