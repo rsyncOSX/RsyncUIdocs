@@ -22,6 +22,10 @@ In usersettings, enable automatic execution and execution time. Automatic execut
 
 {{< figure src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+If there are no files to transfer and delete the estimated view only present the dismiss button.
+
+{{< figure src="/images/tasks/nosynchronize.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 When a task is estimated the progress column will show  a *green* bullet. Select the task and choose the *i* from toolbar will show the output from rsync. 
 
 {{< figure src="/images/tasks/details.png" alt="" position="center" style="border-radius: 8px;" >}}
