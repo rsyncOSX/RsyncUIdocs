@@ -10,20 +10,20 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.1 build(83) - 1 September 2023
 
-The enhancement of RsyncUI continues. Not dramatic changes, but minor updates which I believe makes the app easier to use.  The changes in code are utilizing modifiers for table operations like copy, paste and delete. By utilizing modifiers for table, default menu functions are automatically enabled for all three table operations mentioned. 
+The following are enhancements of RsyncUI, minor updates which makes the app easier to use.  Some of the changes are utilizing SwiftUI modifiers for table operations like *copy*, *paste* and *delete*. By utilizing modifiers for table, default menu functions are automatically enabled for all three table operations. 
 
  For macOS 12 and later:
  
  - profile is moved to the toolbar, it makes the navigation stack more clean
  - delete tasks from main- and add view is updated to use function from Edit menu (deleted from Tasks menu)
- - delete logrecords from within Log listings view as well (as above)
+ - delete logrecords from within Log listings view from Edit menu
  - fixed error message about missing files for new users, if missing file default files are created
  - added automatic execution when all tasks are estimated
  	- user set seconds before execution and function can be disabled, enabled by default
  
 For macOS 13 and later:
 
-- from the Edit function on toolbar the shortcuts `⌘C` and  `⌘V` will copy and paste copies of the selected tasks. 
+- from the Edit menu the shortcuts `⌘C` and  `⌘V` will copy and paste copies of the selected tasks. 
 
 The copy and paste will append task(s) to make it more easy to create new task based upon existing data. Data as source, destination, server, username and parameters to rsync are copied from the selected task(s).
 
