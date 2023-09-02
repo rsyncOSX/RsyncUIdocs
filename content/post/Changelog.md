@@ -19,7 +19,8 @@ The following are enhancements of RsyncUI, minor updates which makes the app eas
  - delete logrecords from within Log listings view from Edit menu
  - fixed error message about missing files for new users, if missing file default files are created
  - added automatic execution when all tasks are estimated
- 	- user set seconds before execution and function can be disabled, enabled by default
+ 	- user set seconds before execution and function can be disabled, *disabled* by default
+ 	- select the button counting down to *temporary* disable
  
 For macOS 13 and later:
 
