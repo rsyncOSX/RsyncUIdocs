@@ -58,7 +58,7 @@ For the moment, there are more users of RsyncOSX than RsyncUI. But the number of
 
 RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. RsyncUI is developed utilizing SwiftUI. RsyncOSX is developed utilizing storyboards. Both apps utilize another great declarative library, Combine, developed by Apple and JSON files for storing tasks, logrecords and user configuration.
 
-## New tasks; verifying and synchronizing data
+## New tasks, verify task and synchronizing data
 
 After  [adding](/post/addconfigurations/) a task within the main view,  *a double click* on [task](/post/tasks/) executes a dryrun and the second double click executes the real run. A verification of a new task might also be executed by opening the Rsync parameters view, selecting the task and choosing the Verify button.
 
