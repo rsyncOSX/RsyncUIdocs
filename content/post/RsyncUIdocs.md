@@ -38,7 +38,7 @@ On macOS 12, double-clicking on task is not available. The only way to check the
 
 ## Remote servers, passwordless logins and local disks
 
-RsyncUI can synchronize your data to either remote servers on the Internet and local LAN, or to local attached disks. If you only want to synchronize data to local disks, connect the external disk and just add the source and destination and you are ready for your first task. If you want to synchronize data to remote servers there is some more setup to do. If you already have enabled passwordless login by ssh you only have to add login id and servername, the source and destination and you are ready. If you have not enabled passwordless login, there are some more actions required before your first task.
+RsyncUI can synchronize your data to either remote servers on the Internet, local LAN and to local attached disks. If you only want to synchronize data to local attached disks, connect the disk, add source and destination, and you are ready for your first task. If you want to synchronize data to remote servers there is some more setup to do. If you already have enabled passwordless login by ssh you only have to add login id and servername, the source and destination and you are ready. If you have not enabled passwordless login, there are some more actions required before your first task.
 
 ## New users
 
