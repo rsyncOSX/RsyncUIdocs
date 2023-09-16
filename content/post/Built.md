@@ -86,7 +86,7 @@ There are different ways of starting a Storyboard based app vs a SwiftUI based a
 
 ## Start of RsyncOSX
 
-The start of RsyncOSX starts with the attribute `@NSApplicationMain` which kicks off everything. Within the Storyboard, the entry point is marked, and the view is binded with [MainWindowsController.swift](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/MainWindowsController.swift). The [Toolbar](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/Toolbar.swift) is programmatically constructed, which makes it easier to change vs. designing it on the Storyboard. But all the details of how this actually works are beyond me, but it works.
+The start of RsyncOSX starts with the attribute `@NSApplicationMain` which kicks off everything. Within the Storyboard, the entry point is marked, and the view is binded with [MainWindowsController.swift](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/MainWindowsController.swift). The [Toolbar](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/Toolbar.swift) is programmatically constructed, which makes it easier to change vs. designing it on the Storyboard.
 
 ## Start of RsyncUI
 
@@ -94,7 +94,7 @@ The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/
 
 # The model
 
-The model is not equal for the apps. The concept of model is the same, but there are some differences due to the fact that SwiftUI views are value types (structs) and not reference types (classes) as in Storyboard and Swift. The model is also responsible for informing the views when there are changes to the model. Both apps share the same basic functions, like reading and writing data from the store, updating the model, and so on.
+Parts of the model is equal, but there are some differences due to the fact that SwiftUI views are value types (structs) and not reference types (classes) as in Storyboard and Swift. The model is also responsible for informing the views when there are changes. Both apps share basic functions like reading and writing data from the store, updating the model, and so on.
 
 The memory footprint of tasks is minimal. Data for tasks are kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing logs or updates. When data about logs is not used, the data is automatically released from memory to keep the memory as low as possible.
 
