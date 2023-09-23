@@ -14,7 +14,9 @@ This is a maintanence relase. Build by Xcode 15 for macOS Monterey to macOS Sono
 
 - there is a change in restore for snapshost task, either select a restore from a previous snapshot or default the latest
 
- When macOS Sonoma is released there will be a release for macOS Sonoma only. This release is for macOS Monterey and later and avaliable from Hombrew as well. The macOS Sonoma version will only be availiable as a download from Github when relaed. The macOS Sonoma version is because of the new new `0bserveable` macro and other test for previous macOS verisions are removed. 
+ When macOS Sonoma is released there will be a release for macOS Sonoma only. This release is for macOS Monterey and later and avaliable from Hombrew as well. 
+ 
+ The macOS Sonoma version will only be availiable as a download from Github when released. The macOS Sonoma version is because of the new new `0bserveable` macro and tests for previous versions of macOS which are removed. The macOS Sonoma version does not include any enhancements over version 1.7.2, but the code is cleaner.
 
 ## Version 1.7.1 build(83) - 1 September 2023
 
