@@ -8,9 +8,9 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.7.2 build (85) - not yet released
+## Version 1.7.2 build (85) - 23 September 2023
 
-There will be a maintenance release, including a few enhancements, build by Xcode 15 on macOS Sonoma a few days after the new release of macOS. The new build supports macOS Montery (macOS 12) and later. 
+This is a maintanence relase. Build by Xcode 15 for macOS Monterey to macOS Sonoma. There are no bugfixes (none reported) , only a few enhancements. When macOS Sonoma is released there will be a release for macOS Sonoma only. This build is for macOS Monterey and later and avaliable from Hombrew as well. The macOS Sonoma version will only be availiable as a download from Github when relaed.
 
 ## Version 1.7.1 build(83) - 1 September 2023
 
