@@ -10,13 +10,13 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.2 build (85) - 23 September 2023
 
-This is a maintenance relase. Build by Xcode 15 for macOS Monterey to macOS Sonoma. There are no bugfixes (none reported), some enhancements only and a few cleanups in code. 
+This is a maintenance release. Build by Xcode 15 for macOS Monterey to macOS Sonoma. There are no bugfixes (none reported), some enhancements only and a few cleanups in code. 
 
-- there is a change in restore for snapshot task, either select a restore from a previous snapshot or default the latest
+- there is a change in restore for snapshot task, either select to restore from a previous snapshot or default the latest
 
- When macOS Sonoma is released there will be a release for macOS Sonoma only. This release is for macOS Monterey and later and avaliable from Hombrew as well. 
+ When macOS Sonoma is released there will be a release for macOS Sonoma only. This release is for macOS Monterey and later and available from Hombrew as well. 
  
- The macOS Sonoma version will only be availiable as a download from Github when released. The macOS Sonoma version is because of the new new `0bserveable` macro and tests for previous versions of macOS which are removed. The macOS Sonoma version does not include any enhancements over version 1.7.2, but the code is cleaner.
+ The macOS Sonoma version will only be  available as a download from Github when released. The macOS Sonoma version is because of the new new `0bserveable` macro and tests for previous versions of macOS which are removed. The macOS Sonoma version does not include any enhancements over version 1.7.2, but the code is cleaner.
 
 ## Version 1.7.1 build(83) - 1 September 2023
 
