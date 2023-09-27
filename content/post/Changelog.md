@@ -13,8 +13,8 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 This is a maintenance release. Build by Xcode 15 for macOS Monterey to macOS Sonoma. There are no bugfixes (none reported), some enhancements only and a few cleanups in code. 
 
 - there is a change in restore for snapshot task, either select to restore from a previous snapshot or default the latest
-- to delete a task, log or snapshot select it and use the ⌫ (backspace)
-	- the delete from the menu does not work on *macOS Sonoma*, a fix will come
+- on macOS Sonoma, to delete a task, log or snapshot select and use the ⌫ (backspace)
+	- the delete from the Edit menu does not work on *macOS Sonoma*
 	- the delete works as expected on macOS Ventura and Monterey
 
  When macOS Sonoma is released there will be a release for macOS Sonoma only. This release is for macOS Monterey and later and available from Hombrew as well. 
