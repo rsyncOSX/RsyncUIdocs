@@ -36,13 +36,7 @@ SwiftUI is the latest declarative framework developed by Apple for views, contro
 
 *RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code.  Every time a property within a SwiftUI view is changed the view is recreated by the runtime. The cost of creating a value type vs a reference type is way more effective.  In SwitfUI there are special propertywrappers like `@State` and `@Binding` for local properties and properties for transferring data between views .
 
-#### macOS Sonoma
-
-On macOS Sonoma and by Swift 5.9 there is a new `Observable` macro  which replaces `@StateObject`. The new macro makes it even more easy to write code for the model part which automatically communicate updates of data to the views. There are also a few other SwiftUI modifiers only available for macOS Sonoma. 
-
-#### macOS Monterey and macOS Ventura
- 
-The propertywrapper `@StateObject` is used in combination with Combine for the model part for automatically communicate updates of data to the views.
+See later on in this artice for some information about 
 
 ### RsyncOSX, Storyboard
 
@@ -84,7 +78,7 @@ The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/
 
 # The model
 
-Parts of the model is equal, but there are some differences due to the fact that SwiftUI views are value types (structs) and not reference types (classes) as in Storyboard and Swift. The model is also responsible for informing the views when there are changes. Both apps share basic functions like reading and writing data from the store, updating the model, and so on. The memory footprint of tasks is minimal. Data for tasks are kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing logs or updates. When data about logs is not used, the data is automatically released from memory to keep the memory as low as possible.
+Parts of the model is equal, but there are some differences due to the fact that SwiftUI views are value types (structs) and not reference types (classes) as in Storyboard and Swift. The model is also responsible for informing the views when there are changes. Both apps share basic functions like reading and writing data from the store, updating the model, and so on. The memory footprint of tasks is minimal. Data for tasks are kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
 
 # RsyncUI
 
@@ -92,6 +86,11 @@ The following are for RsyncUI and SwiftUI.
 
 ## MacOS Sonoma 
 
-Data for tasks are read from store and made available for all the views by an Environment property. The RsyncUIApp is the main entrance point for RsyncUI. After the app is initialized and started it opens the main navigation view RsyncUIView and read tasks for the default profile or other profile when selected.   Data about tasks (RsyncUIconfigurations) is made available for all views by the `.environment` property on macOS Sonoma and  by the `.environmentObject` property on macOS Ventura. The property makes the data global available for all views within the hierarchy. 
+Data for tasks are read from store and made available for all the views by an Environment property. The RsyncUIApp is the main entrance point for RsyncUI. After the app is initialized and started it opens the main navigation view RsyncUIView and read tasks for the default profile or other profile when selected.   Data about tasks (RsyncUIconfigurations) is made available for all views by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views within the hierarchy. 
 
-All synchronize tasks are executed asynchron.  [The process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift), which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `StateObject` which is created when a SwiftUI view is created, is updated as progress of task. The update causes the `StateObject` to publish a change message which again trigger an action like all tasks are completed, saved to store and a new of data from store is required.
+All synchronize tasks are executed asynchron.  The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `StateObject` or `State` on macOS Sonoma, which is created when a SwiftUI view is created, is updated as progress of task. The update causes the object to publish a change message which again trigger an action like all tasks are completed, saved to store and a new of data from store is required.
+
+### Observation, Observable, ObservableObject and Combine
+
+With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `Observable` macro. Before the new macro, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, has to be used for all other types than primitive types for data used within the views. The new macro simplifies how to enable data for the views and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  
+
