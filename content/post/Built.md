@@ -86,11 +86,11 @@ The following are for RsyncUI and SwiftUI.
 
 ## MacOS Sonoma 
 
-Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views within the hierarchy. 
+Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views within the hierarchy.
 
 All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `StateObject` or `State` on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
 
-### Observation, Observable, ObservableObject and Combine
+### Observable, Bindable, ObservableObject, StateObject and Combine
 
-With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `Observable` macro. Before the new macro, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, has to be used for all other types than primitive types for data used within the views. The new macro simplifies how to enable data for the views and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  
+With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `Observable` macro. Before the new macro, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, has to be used for all other types than primitive types for data used within the views. The new macro simplifies how to enable data for the views and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of observable objects. 
 
