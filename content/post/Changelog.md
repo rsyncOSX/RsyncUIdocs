@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 For **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.5(b84)/RsyncUI.1.7.5.dmg) from GitHub.
 
-The major work in this release is migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. All tests for previous macOS versions in code are also removed. And in the future other property wrappers for the latest release of SwiftUI will be used. An example of such a property wrapper is double click on a row which is only available on macOS 13 and 14. 
+The major works in this release is migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. All tests for previous macOS versions in code are also removed. And in the future other property wrappers for the latest release of SwiftUI will be used. An example of such a property wrapper is double click on a row which is only available on macOS 13 and 14. 
 
 This version only supports macOS Sonoma. For the moment there will be two versions of RsyncUI. Version 1.7.5 is only available as direct download from GitHub.
 
