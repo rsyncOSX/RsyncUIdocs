@@ -34,9 +34,7 @@ SwiftUI is the latest declarative framework developed by Apple for views, contro
 
 ### RsyncUI, SwiftUI
 
-*RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code.  Every time a property within a SwiftUI view is changed the view is recreated by the runtime. The cost of creating a value type vs a reference type is way more effective.  In SwitfUI there are special propertywrappers like `@State` and `@Binding` for local properties and properties for transferring data between views .
-
-See later on in this artice for some information about 
+*RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are property wrappers to create bindings to mutable properties.
 
 ### RsyncOSX, Storyboard
 
@@ -44,10 +42,11 @@ See later on in this artice for some information about
 
 Storyboard for the tab views:
 {{< figure src="/images/Xcode/storyboard1.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 Storyboard for the sheetviews:
 {{< figure src="/images/Xcode/storyboard2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Asynchronous execution - boths apps
+## Asynchronous execution 
 
 Asynchronous execution of tasks are key components of both apps. Every time a `rsync` synchronize and restore task is executed the termination of the task is not known ahead.  When the *termination signal* is observed some actions are required. Some actions are like stopping a progressview, send a message about task is completed, do some logging and execute next synchronize task.
 
@@ -60,7 +59,7 @@ All code which utilizes asynchronous execution are shared between the two apps. 
 
 The difference between those two objects are minor, the async version marks the function for execution with keyword `async`. Calling the `async` require the `await` keyword. 
 
-## Combine  - boths apps
+## Combine
 
 Combine, a *declarative* library by Apple, makes the code easy to write and easy to read. In the Combine code for encode and write data to JSON file, the publisher require *macOS BigSur* and later. The following are examples of utilizing Combine:
 
@@ -80,17 +79,16 @@ The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/
 
 Parts of the model is equal, but there are some differences due to the fact that SwiftUI views are value types (structs) and not reference types (classes) as in Storyboard and Swift. The model is also responsible for informing the views when there are changes. Both apps share basic functions like reading and writing data from the store, updating the model, and so on. The memory footprint of tasks is minimal. Data for tasks are kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
 
-# RsyncUI
+# SwiftUI
 
 The following are for RsyncUI and SwiftUI.
 
-## MacOS Sonoma 
+## Property wrapper for objects
 
-Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views within the hierarchy.
+With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `Observable` macro. On previous macOS versions, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, are used to create binding to mutable properties. The new macro simplifies how to create bindings and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of `Observable` objects. 
+
+## Environment property
+
+Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views  within the view hierarchy by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views. The `@Bindable` property wrapper is also, on macOS Sonoma, used for create bindings.
 
 All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `StateObject` or `State` on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
-
-### Observable, Bindable, ObservableObject, StateObject and Combine
-
-With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `Observable` macro. Before the new macro, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, has to be used for all other types than primitive types for data used within the views. The new macro simplifies how to enable data for the views and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of observable objects. 
-
