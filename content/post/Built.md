@@ -38,11 +38,11 @@ SwiftUI is the latest declarative framework developed by Apple for views, contro
 
 #### macOS Sonoma
 
-On macOS Sonoma and by Swift 5.9 there is a new `Observable` macro  which replaces `@StateObject`. The new macro makes it even more easy to write code for the model part which automatically communicate updates of data to the view for refresh. There are also other modifiers only available for macOS Sonoma. 
+On macOS Sonoma and by Swift 5.9 there is a new `Observable` macro  which replaces `@StateObject`. The new macro makes it even more easy to write code for the model part which automatically communicate updates of data to the views. There are also a few other SwiftUI modifiers only available for macOS Sonoma. 
 
 #### macOS Monterey and macOS Ventura
  
-The propertywrapper  `@StateObject` is used in combination with Combine for the model part for automatically communicate updates of data to the view for refresh.
+The propertywrapper `@StateObject` is used in combination with Combine for the model part for automatically communicate updates of data to the views.
 
 ### RsyncOSX, Storyboard
 
@@ -57,9 +57,7 @@ Storyboard for the sheetviews:
 
 Asynchronous execution of tasks are key components of both apps. Every time a `rsync` synchronize and restore task is executed the termination of the task is not known ahead.  When the *termination signal* is observed some actions are required. Some actions are like stopping a progressview, send a message about task is completed, do some logging and execute next synchronize task.
 
-There are two methods for asynchronous execution. One is utilizing *callback functions* or *completion handlers*, which trigger next action when task is completed. The second is utilize Swift´s `async` and `await` utilities for asynchronous execution. Utilizing `async` and `await` makes the code simpler and cleaner. The need for *completion handlers* are reduced.  And lesser code is better code.
-
-Swift concurrency is a seperate and huge topic to discuss. I am not in a position to discuss it. There are structured and unstructered concurrency in Swift. There are no concurrency within the applications. There are only one asynchronous execution at any time except for concurrency within the Swift and SwiftUI libraries such as GUI updates. 
+There are two methods for asynchronous execution. One is utilizing *callback functions* or *completion handlers*, which trigger next action when task is completed. The second is utilize Swift´s `async` and `await` utilities for asynchronous execution. Utilizing `async` and `await` makes the code simpler and cleaner. The need for *completion handlers* are reduced.  And lesser code is better code. Swift concurrency is a seperate and huge topic to discuss. I am not in a position to discuss it. There are structured and unstructered concurrency in Swift. Within RsyncUI and RsyncOSX there are only one asynchronous execution at any time except for concurrency within the Swift and SwiftUI libraries such as GUI updates. 
 
 All code which utilizes asynchronous execution are shared between the two apps. The `Process` object is where the real work is done. Input to the `Process` are the command to execute and the parameters for the command. The `Process` object utilizes Combine for monitoring *process termination* and output, when needed by the apps, from the command.  There are two versions of the process object:
 
@@ -70,7 +68,7 @@ The difference between those two objects are minor, the async version marks the 
 
 ## Combine  - boths apps
 
-Combine, a declarative library by Apple, makes the code easy to write and easy to read. In the Combine code for encode and write data to JSON file, the publisher require **macOS BigSur** and later. Combine is utilized in the following parts of RsyncOSX and likewise for RsyncUI. Example of code utilizing Combine:
+Combine, a *declarative* library by Apple, makes the code easy to write and easy to read. In the Combine code for encode and write data to JSON file, the publisher require **macOS BigSur** and later. The following are examples of utilizing Combine in both apps:
 
 - [read](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) configurations for tasks
 - [write](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configurations for tasks
@@ -78,11 +76,11 @@ Combine, a declarative library by Apple, makes the code easy to write and easy t
 
 ## Start of RsyncOSX
 
-The start of RsyncOSX starts with the attribute `@NSApplicationMain` which kicks off everything. Within the Storyboard, the entry point is marked, and the view is binded with [MainWindowsController.swift](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/MainWindowsController.swift). The [Toolbar](https://github.com/rsyncOSX/RsyncOSX/blob/master/RsyncOSX/Toolbar.swift) is programmatically constructed, which makes it easier to change vs. designing it on the Storyboard.
+The start of RsyncOSX starts with the attribute `@NSApplicationMain` which kicks off everything. Within the Storyboard, the entry point is marked, and the view is binded with the Switf code to start the application. The Toolbar is programmatically constructed, which makes it easier to change vs. designing it on the Storyboard.
 
 ## Start of RsyncUI
 
-The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/documentation/SwiftUI/App). There is only one entrance point, `@main`, in [RsyncUI](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Main/RsyncUIApp.swift). The `@main` initialises the app, setup of the menubar, and opens the [navigation bar](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Main/RsyncUIView.swift) which is the main user start for the app.
+The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/documentation/SwiftUI/App). There is only one entrance point, `@main`, in RsyncUI. The `@main` initialises the app, setup of the menubar, and opens the navigation bar which is the main user start for the app.
 
 # The model
 
