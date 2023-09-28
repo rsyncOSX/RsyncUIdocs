@@ -86,9 +86,9 @@ The following are for RsyncUI and SwiftUI.
 
 ## MacOS Sonoma 
 
-Data for tasks are read from store and made available for all the views by an Environment property. The RsyncUIApp is the main entrance point for RsyncUI. After the app is initialized and started it opens the main navigation view RsyncUIView and read tasks for the default profile or other profile when selected.   Data about tasks (RsyncUIconfigurations) is made available for all views by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views within the hierarchy. 
+Data for tasks are read from store and made available for all the views by an Environment property. The RsyncUIApp is the main entrance point for RsyncUI. After the app is initialized and started it opens the main navigation view RsyncUIView and read tasks for the default profile or other profile when selected.   Data for tasks is made available for all views by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views within the hierarchy. 
 
-All synchronize tasks are executed asynchron.  The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `StateObject` or `State` on macOS Sonoma, which is created when a SwiftUI view is created, is updated as progress of task. The update causes the object to publish a change message which again trigger an action like all tasks are completed, saved to store and a new of data from store is required.
+All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `StateObject` or `State` on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
 
 ### Observation, Observable, ObservableObject and Combine
 
