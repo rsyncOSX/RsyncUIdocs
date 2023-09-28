@@ -62,7 +62,7 @@ The difference between those two objects are minor, the async version marks the 
 
 ## Combine  - boths apps
 
-Combine, a *declarative* library by Apple, makes the code easy to write and easy to read. In the Combine code for encode and write data to JSON file, the publisher require **macOS BigSur** and later. The following are examples of utilizing Combine in both apps:
+Combine, a *declarative* library by Apple, makes the code easy to write and easy to read. In the Combine code for encode and write data to JSON file, the publisher require *macOS BigSur* and later. The following are examples of utilizing Combine:
 
 - [read](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) configurations for tasks
 - [write](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configurations for tasks
@@ -86,7 +86,7 @@ The following are for RsyncUI and SwiftUI.
 
 ## MacOS Sonoma 
 
-Data for tasks are read from store and made available for all the views by an Environment property. The RsyncUIApp is the main entrance point for RsyncUI. After the app is initialized and started it opens the main navigation view RsyncUIView and read tasks for the default profile or other profile when selected.   Data for tasks is made available for all views by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views within the hierarchy. 
+Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views within the hierarchy. 
 
 All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `StateObject` or `State` on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
 
