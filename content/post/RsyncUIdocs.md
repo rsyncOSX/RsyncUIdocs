@@ -13,13 +13,14 @@ Check out [the categories](/categories) for information about other topics not l
 
 ## Before commencing use of RsyncUI
 
-RsyncUI is compiled for macOS Monterey and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers. RsyncUI can be installed by homebrew by command:
+RsyncUI is compiled for macOS Monterey and later. See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.  RsyncUI can be installed by homebrew by command
 
 ```bash
 brew install --cask rsyncui
 ```
+or by  download from GitHub. The build available by Homebrew supports all macOS versions from Monterey including Sonoma.
 
-or by downloading  [the latest version](https://github.com/rsyncOSX/RsyncUI/releases). If installed by homebrew, the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
+After the release of macOS Sonoma there are two builds of RsyncUI.  The second build only supports macOS Sonoma and it is only available as a direct download from GitHub. Why two builds? Please see the changlog and  [the latest versions](https://github.com/rsyncOSX/RsyncUI/releases) on GitHub.  If installed by homebrew, the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
 
 ## MacOS 13 (Ventura) and later
 
@@ -29,8 +30,6 @@ Features only available on macOS 13 and later:
 
 - within the main view, double click on row for estimate and execute
 - within the Tasks view ( Add tasks),  copy and paste tasks by shortcuts `⌘C` and  `⌘V` and Edit menu
-
-Swift 5.9, Xcode 15 and macOS Sonoma (macOS 14) are all in beta. In Swift 5.9, the new `Observable` macro replaces the `@StateObject` propertywrapper. This is a kind of *breaking* change, but the release of RsyncUI when Sonoma is public, will be with the @StateObject propertywrapper to ensure RsyncUI is supported from macOS 12 and later. One branch is converted to the new macro and kept in sync with released code. 
 
 ## MacOS 12 Monterey
 
