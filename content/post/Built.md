@@ -85,10 +85,21 @@ The following are for RsyncUI and SwiftUI.
 
 ## Property wrapper for objects
 
-With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `Observable` macro. On previous macOS versions, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, are used to create binding to mutable properties. The new macro simplifies how to create bindings and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of `Observable` objects. 
+With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `@Observable` macro. On previous macOS versions, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, are used to create binding to mutable properties. The new macro simplifies how to create bindings and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of `@Observable` objects. 
 
 ## Environment property
 
 Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views  within the view hierarchy by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for all views. The `@Bindable` property wrapper is also, on macOS Sonoma, used for create bindings.
 
-All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `StateObject` or `State` on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
+All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `@StateObject` or `@State` on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
+
+### Breaking change
+
+The new `@Observable` macro is a breaking change. It is not possible to include the new macro and support older macOS versions as Monterey and Ventura. To understand why see how the `class ObservableUsersetting` is for macOS Ventura and macOS Sonoma. By using the new macro the length of the files is reduced from about 200 lines to about 140. The new Observation framework is a new implementation of the observer design pattern and removes the need for including Combine. Combine itself is still used in the code, but not in combination with the Observation framework. 
+
+As example of how much lesser code is requiered by utilizing the new macro, see two versions of the `class ObservableUsersetting`:
+
+- Observation and [the new macro](https://github.com/rsyncOSX/RsyncUI/blob/version-1.7.5-macos-sonoma/RsyncUI/Model/Global/ObservableUsersetting.swift)
+- StateObject and [the "old" way](https://github.com/rsyncOSX/RsyncUI/blob/version-1.7.2/RsyncUI/Model/Global/ObservableUsersetting.swift)
+
+
