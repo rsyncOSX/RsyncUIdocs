@@ -12,11 +12,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 For **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.5(b84)/RsyncUI.1.7.5.dmg) from GitHub.
 
-The major works in this release is migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. All tests for previous macOS versions in code are also removed. And in the future other property wrappers for the latest release of SwiftUI will be used. An example of such a property wrapper is double click on a row which is only available on macOS 13 and 14. 
+The major work in this release is migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. Migrating code to the new macro is a *breaking change* and that is why there are two builds.  This version only supports macOS Sonoma. 
 
-This version only supports macOS Sonoma. For the moment there will be two versions of RsyncUI. Version 1.7.5 is only available as direct download from GitHub.
-
-*Version 1.7.2* supports macOS versions from macOS Monterey and available from Homebrew as well.  
+*Version 1.7.2* supports all macOS versions from macOS Monterey and is available from Homebrew as well.  
 
 ## Version 1.7.2 build (85) - 23 September 2023
 
@@ -25,12 +23,8 @@ This is a maintenance release. Build by Xcode 15 for macOS Monterey to macOS Son
 - there is a change in restore for snapshot task, either select to restore from a previous snapshot or default the latest
 - on macOS Sonoma, to delete a task, log or snapshot select and use the ⌫ (backspace)
 	- the delete from the Edit menu does not work on *macOS Sonoma*
-	- the delete works as expected on macOS Ventura and Monterey
-
- When macOS Sonoma is released there will be a release for macOS Sonoma only. This release is for macOS Monterey and later and available from Hombrew as well. 
+	- the delete works as expected on macOS Ventura and Monterey 
  
- The macOS Sonoma version will only be  available as a download from Github when released. The macOS Sonoma version is because of the new new `0bserveable` macro and tests for previous versions of macOS which are removed. The macOS Sonoma version does not include any enhancements over version 1.7.2, but the code is cleaner.
-
 ## Version 1.7.1 build(83) - 1 September 2023
 
 The following are enhancements of RsyncUI, minor updates which makes the app easier to use.  Some of the changes are utilizing SwiftUI modifiers for table operations like *copy*, *paste* and *delete*. By utilizing modifiers for table, default menu functions are automatically enabled for all three table operations. 
