@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.6 build (86), version 1.7.3 build(86)
 
-There will be new releases of both versions late in October 2023. There are som minor fixes and the major work is replacing the ShellOut package with an updated and maintained package. The ShellOut in the released version of RsyncUI is not working. The ShellOut let the user execute shellscript ahead and after execution of a synchronization task. A shell script might be like moving files, mounting a filesystem from a remote server and so on. The ShellOut must be used with care and most likely only the advanced macOS with experience in writing shellscripts might find this feature usefull. 
+There will be new releases of both versions late in October 2023. There are som minor fixes and the major work is replacing the ShellOut package with an updated and maintained package. The ShellOut in the released version of RsyncUI is not working. The ShellOut let the user execute shellscript ahead and after execution of a synchronization task. A shell script might be like moving files, mounting a filesystem from a remote server and so on. The ShellOut must be used with care and most likely only the advanced macOS users with experience in writing shellscripts might find this feature usefull. 
 
 And there might be some more updates as well before release.  Version 1.7.3 will be relased on HomeBrew as usual. Version 1.7.6, the macOS Sonoma version only, will be released on GitHub only. 
 
