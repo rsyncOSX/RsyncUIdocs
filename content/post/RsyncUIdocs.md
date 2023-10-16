@@ -20,9 +20,15 @@ brew install --cask rsyncui
 ```
 or by  download from GitHub. The build available by Homebrew supports all macOS versions from Monterey including Sonoma.
 
-After the release of macOS Sonoma there are two builds of RsyncUI.  The second build only supports macOS Sonoma and it is only available as a direct download from GitHub. Why two builds? Please see the changlog and  [the latest versions](https://github.com/rsyncOSX/RsyncUI/releases) on GitHub.  If installed by homebrew, the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
+After the release of macOS Sonoma there are two builds of RsyncUI.  One build only support macOS Sonoma and it is only available as a direct download from GitHub. 
 
-## MacOS 13 (Ventura) and later
+Why two builds? Please see the changlog and  [the latest versions](https://github.com/rsyncOSX/RsyncUI/releases) on GitHub.  If installed by homebrew, the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
+
+## MacOS 14 Sonoma
+
+There is due to new features in SwiftUI and Swift one build only for macOS 14 Sonoma.  
+
+## MacOS 13 Ventura and later
 
 With every new release of macOS and SwiftUI there are new features only available for the latest version of both.
 
