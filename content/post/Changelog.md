@@ -8,13 +8,16 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.7.6 build (86), version 1.7.3 build(86)
+## Version 1.7.6 build (86) - 19 October 2023
 
-There will be new releases of both versions late in October 2023. There are some minor fixes and the major work is replacing the ShellOut package with an updated and maintained package. The ShellOut in the released version of RsyncUI is not working. The ShellOut let the user execute shellscript ahead and after execution of a synchronization task. A shell script might be like moving files, mounting a filesystem from a remote server and so on. The ShellOut must be used with care and most likely only the advanced macOS users with experience in writing shellscripts might find this feature usefull. 
+For **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.6/RsyncUI.1.7.6.dmg) from GitHub. This is a maintenance release. 
 
-And there might be some more updates as well before release.  Version 1.7.3 will be relased on Homebrew as usual. Version 1.7.6, the macOS Sonoma version only, will be released on GitHub only. 
+There are some minor fixes and the major work is replacing the ShellOut package with an updated and maintained package. The ShellOut in the released version of RsyncUI is not working. The ShellOut let the user execute shellscript ahead and after execution of a synchronization task. A shell script might be like moving files, mounting a filesystem from a remote server and so on. The ShellOut must be used with care and most likely only the advanced macOS users with experience in writing shellscripts might find this feature usefull. 
 
-There is one very annoying issue in RsyncUI by updating macOS from previous versions to macOS Sonoma. I have not been able to solve it yet. Selecting a row in any table require a click on table to get focus before selecting a row. This was not an issue on either macOS Ventura or Monterey. 
+OSLog is also included in this build, see [the how is the app built](/post/Built/)  for more info. 
+
+There is still one very annoying issue in RsyncUI by updating macOS from previous versions to macOS Sonoma. I have not been able to solve it yet. Selecting a row in any table require a click on table to get focus before selecting a row. This was not an issue on either macOS Ventura or Monterey. 
+
 
 ## Version 1.7.5 build (84) - 28 September 2023
 
