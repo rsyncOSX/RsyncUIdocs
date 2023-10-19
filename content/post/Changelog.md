@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.3 build (86) - 19 October 2023
 
-Changes as for the macOS Sonoma build, but buily for macOS Monterey to macOS Sonoma. Major difference for this version compared to the macOS Sonoma only, is the bindings introduced in Swift 5.9, the `@Observable` macro. 
+Changes as for the macOS Sonoma build, but built for macOS Monterey to macOS Sonoma. Major difference for this version compared to the macOS Sonoma only, is the bindings introduced in Swift 5.9, the `@Observable` macro. 
 
 ## Version 1.7.6 build (86) - 19 October 2023
 
