@@ -26,7 +26,7 @@ Why two builds? Please see the changlog and  [the latest versions](https://githu
 
 ## MacOS 14 Sonoma
 
-There is due to new features in SwiftUI and Swift one build only for macOS 14 Sonoma.  
+There is due to new features in SwiftUI and Swift a build only for macOS 14 Sonoma. The macOS Sonoma version of RsyncUI is only avaiable as direct download from GitHub.  There is also a version supporting macOS Monterey and later. This version is available from Homebrew and direct download from GitHub. 
 
 ## MacOS 13 Ventura and later
 
