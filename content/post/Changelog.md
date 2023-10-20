@@ -12,6 +12,8 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Changes as for the macOS Sonoma build, but built for macOS Monterey to macOS Sonoma. Major difference for this version compared to the macOS Sonoma only, is the bindings introduced in Swift 5.9, the `@Observable` macro. 
 
+*Version 1.7.3 build(86)* supports all macOS versions from macOS Monterey and is available from Homebrew as well.  
+
 ## Version 1.7.6 build (86) - 19 October 2023
 
 For **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.6/RsyncUI.1.7.6.dmg) from GitHub. This is a maintenance release. 
@@ -21,7 +23,6 @@ There are some minor fixes and the major work is replacing the ShellOut package 
 OSLog is also included in this build, see [the how is the app built](/post/Built/)  for more info. 
 
 There is still one very annoying issue in RsyncUI by updating macOS from previous versions to macOS Sonoma. I have not been able to solve it yet. Selecting a row in any table require a click on table to get focus before selecting a row. This was not an issue on either macOS Ventura or Monterey. 
-
 
 ## Version 1.7.5 build (84) - 28 September 2023
 
