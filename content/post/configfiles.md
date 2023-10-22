@@ -6,17 +6,12 @@ tags = ["config file"]
 categories = ["general information"]
 lastmod = "2020-10-23"
 +++
-RsyncUI stores its configurations, log records and user settings as [JSON](https://en.wikipedia.org/wiki/JSON) files. The storage of files are:
-
-`$HOME/.rsyncosx/macserialnumber`
-
-RsyncUI evaluates the computer mac serial number at startup.
-
-The catalog `$HOME/.rsyncosx/macserialnumber/` is used because RsyncUI and RsyncOSX shares the path from where configuration files are read and stored. 
+RsyncUI read and store configurations, log records and user settings as [JSON](https://en.wikipedia.org/wiki/JSON) files. The location of files is: `$HOME/.rsyncosx/macserialnumber`. RsyncUI evaluates the computer mac serial number at startup. 
 
 ## Configuration files
 
 `$HOME/.rsyncosx/macserialnumber/configurations.json`
+
 If profile is utilized:
 
 `$HOME/.rsyncosx/macserialnumber/profile/configurations.json`
