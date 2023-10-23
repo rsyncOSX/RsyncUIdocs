@@ -26,20 +26,20 @@ Why two builds? Please see the changlog and  [the latest versions](https://githu
 
 ## MacOS 14 Sonoma
 
-There is due to new features in SwiftUI and Swift a build only for macOS 14 Sonoma. The macOS Sonoma version of RsyncUI is only avaiable as direct download from GitHub.  There is also a version supporting macOS Monterey and later. This version is available from Homebrew and direct download from GitHub. 
+There is due to new features in SwiftUI and Swift a build only for macOS 14 Sonoma. The macOS Sonoma version of RsyncUI is only avaiable as direct download from GitHub.  There is also a version supporting macOS Monterey and later including macOS Sonoma. This version is available from Homebrew and direct download from GitHub. 
 
 ## MacOS 13 Ventura and later
 
 With every new release of macOS and SwiftUI there are new features only available for the latest version of both.
 
-Features only available on macOS 13 and later:
+Features only available on macOS Ventura and later:
 
 - within the main view, double click on row for estimate and execute
 - within the Tasks view ( Add tasks),  copy and paste tasks by shortcuts `⌘C` and  `⌘V` and Edit menu
 
 ## MacOS 12 Monterey
 
-On macOS 12, double-clicking on task is not available. The only way to check the output from an estimation run within the main view on macOS 12 is to estimate all tasks, dismiss the estimated view, and check the output from rsync the i from the toolbar main view.
+On macOS Monterey, double-clicking on task is not available. The only way to check the output from an estimation run within the main view on macOS 12 is to estimate all tasks, dismiss the estimated view, and check the output from rsync the i from the toolbar main view.
 
 ## Remote servers, passwordless logins and local disks
 
