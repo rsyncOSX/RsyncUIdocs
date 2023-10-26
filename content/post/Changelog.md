@@ -14,9 +14,9 @@ The issue: *There is still one very annoying issue in RsyncUI by updating macOS 
 
 26 October 2023, not yet released.
 
-There is, by the search field, in some of the views possible to filter the output. Within the logs and restore view filter by any string. In the current release the filter might be observed as a kind not working properly if there are may rows of data. This is due to the list of data is refreshed on every keypress in search field. And by every refresh, the list of data is computed. New in this release there is a one *second debounce* or delay in refresh. By the delay typing in a filter search is much smoother. 
+There is, by the search field, in some of the views possible to filter the output. Within the logs and restore view filter by any string. In the current release the filter might be observed as a kind not working properly if there are may rows of data. This is due to the list of data is refreshed on every keypress in search field. And by every refresh, the list of data is computed. In the this version there is a one *second debounce* or delay in refresh. By the delay, typing in the search field is much smoother. 
 
-This feature will also be included in version 1.7.3 as well. 
+This feature will be included in version 1.7.3 as well. 
 
 ## Version 1.7.3 build (86) - 19 October 2023
 
