@@ -8,7 +8,7 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-The issue: *There is still one very annoying issue in RsyncUI by updating macOS from previous versions to macOS Sonoma. I have not been able to solve it yet. Selecting a row in any table require a click on table to get focus before selecting a row. This was not an issue on either macOS Ventura or Monterey.* seems to be solved by upgrading to macOS Sonoma 14.1 which was released 26 Oct 2023. 
+The issue: *There is still one very annoying issue in RsyncUI by updating macOS from previous versions to macOS Sonoma. I have not been able to solve it yet. Selecting a row in any table require a click on table to get focus before selecting a row. This was not an issue on either macOS Ventura or Monterey* seems to be solved by updating to macOS Sonoma 14.1 which was released **26 Oct 2023**. 
 
 ## Version 1.7.3 build (86) - 19 October 2023
 
