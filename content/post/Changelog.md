@@ -14,7 +14,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 *Version 1.7.7 build(87)* for **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.7/RsyncUI.1.7.7.dmg) from GitHub. This version is for macOS Sonoma only because of migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. 
 
-There is, by the search field, in some of the views possible to filter the output. Within the logs and restore view filter by any string. In the current release the filter might be observed as a kind not working properly if there are many rows of data. This is due to the list of data is refreshed on every keypress in search field. And by every refresh, the list of data is computed. In the this version there is a one *second debounce* or delay in refresh. By the delay, typing in the search field is smoother.  The 1 second delay in *filter search* is notified by a rotating progressview.
+There is, by the search field, in some of the views possible to filter the output. Within the logs and restore view filter by any string. In the current release the filter might be observed as a kind of not working properly if there are many rows of data. This is due to the list of data is refreshed on every keypress in search field. And by every refresh, the list of data is computed. In the this version there is a one *second debounce* or delay in refresh. By the delay, typing in the search field is smoother.  The 1 second delay in *filter search* is notified by a rotating progressview.
 
 And there are some other minor updates as well.
 
