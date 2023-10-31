@@ -8,15 +8,16 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-The issue: *There is still one very annoying issue in RsyncUI by updating macOS from previous versions to macOS Sonoma. I have not been able to solve it yet. Selecting a row in any table require a click on table to get focus before selecting a row. This was not an issue on either macOS Ventura or Monterey* seems to be solved by updating to macOS Sonoma 14.1 which was released **26 Oct 2023**.
+## Version 1.7.7 build (87)  and 1.7.4 build (87) - 31 October 2023
 
-## Version 1.7.7 build (87) - macOS Sonoma only
+*Version 1.7.4 build(87)* supports all macOS versions from macOS Monterey and is available from Homebrew as well.  
+*Version 1.7.7 build(87)* for **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.7/RsyncUI.1.7.7.dmg) from GitHub. This version is for macOS Sonoma only because of migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. 
 
-26 October 2023, not yet released.
+There is, by the search field, in some of the views possible to filter the output. Within the logs and restore view filter by any string. In the current release the filter might be observed as a kind not working properly if there are many rows of data. This is due to the list of data is refreshed on every keypress in search field. And by every refresh, the list of data is computed. In the this version there is a one *second debounce* or delay in refresh. By the delay, typing in the search field is smoother.  The 1 second delay in *filter search* is notified by a rotating progressview.
 
-There is, by the search field, in some of the views possible to filter the output. Within the logs and restore view filter by any string. In the current release the filter might be observed as a kind not working properly if there are many rows of data. This is due to the list of data is refreshed on every keypress in search field. And by every refresh, the list of data is computed. In the this version there is a one *second debounce* or delay in refresh. By the delay, typing in the search field is much smoother. 
+And there are some other minor updates as well.
 
-This feature will be included in version 1.7.3 as well. 
+The issue: *There is still one very annoying issue in RsyncUI by updating macOS from previous versions to macOS Sonoma. I have not been able to solve it yet. Selecting a row in any table require a click on table to get focus before selecting a row. This was not an issue on either macOS Ventura or Monterey.* seems to be solved by updating to macOS Sonoma 14.1 which was released **26 Oct 2023**.
 
 ## Version 1.7.3 build (86) - 19 October 2023
 
