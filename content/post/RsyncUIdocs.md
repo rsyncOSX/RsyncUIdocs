@@ -18,28 +18,7 @@ RsyncUI is compiled for macOS Monterey and later. See [the changelog](/post/chan
 ```bash
 brew install --cask rsyncui
 ```
-or by  download from GitHub. The build available by Homebrew supports all macOS versions from Monterey including Sonoma.
-
-After the release of macOS Sonoma there are two builds of RsyncUI.  One build only support macOS Sonoma and it is only available as a direct download from GitHub. 
-
-Why two builds? Please see the changlog and  [the latest versions](https://github.com/rsyncOSX/RsyncUI/releases) on GitHub.  If installed by homebrew, the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
-
-## MacOS 14 Sonoma
-
-There is due to new features in SwiftUI and Swift a build only for macOS 14 Sonoma. The macOS Sonoma version of RsyncUI is only avaiable as direct download from GitHub.  There is also a version supporting macOS Monterey and later including macOS Sonoma. This version is available from Homebrew and direct download from GitHub. 
-
-## MacOS 13 Ventura and later
-
-With every new release of macOS and SwiftUI there are new features only available for the latest version of both.
-
-Features only available on macOS Ventura and later:
-
-- within the main view, double click on row for estimate and execute
-- within the Tasks view ( Add tasks),  copy and paste tasks by shortcuts `⌘C` and  `⌘V` and Edit menu
-
-## MacOS 12 Monterey
-
-On macOS Monterey, double-clicking on task is not available. The only way to check the output from an estimation run within the main view on macOS 12 is to estimate all tasks, dismiss the estimated view, and check the output from rsync the i from the toolbar main view.
+or by  download from GitHub. The build available by Homebrew supports all macOS versions from Monterey including Sonoma. There is some [additional information](/post/macos/) about RsyncUI and macOS versions.
 
 ## Remote servers, passwordless logins and local disks
 
