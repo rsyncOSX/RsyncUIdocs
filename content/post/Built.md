@@ -57,6 +57,10 @@ All code which utilizes asynchronous execution are shared between the two apps. 
 
 The difference between those two objects are minor, the async version marks the function for execution with keyword `async`. Calling the `async` require the `await` keyword. 
 
+## The Process object
+
+Without communicating to the macOS system, RsyncUI is *nothing*. Every command within RsyncUI, except administration of tasks and logs, are commands to be executed by the macOS system. The main commands are executing `rsync` with the approriate arguments. But there are also commands executing `rm`, `ssh` and `mkdir`. And the Process object is utilized for all those commands. 
+
 ## Combine
 
 Combine, a *declarative* library by Apple, makes the code easy to write and easy to read. In the Combine code for encode and write data to JSON file, the publisher require *macOS BigSur* and later. The following are examples of utilizing Combine:
@@ -97,7 +101,7 @@ The `@Observable` macro is a breaking change. It is not possible to include the 
 
 ## Logger
 
-Included in Swift 5 there is a unified logging feature `OSLog`. There are several methods for logging and investigate what the application is doing. By using OSLog there is no need for print statements in code to follow execution. All logging is by utilizing OSLog displayed as part of Xcode. The `Process` objects are where the real work is done. OSLog is  included in all objects which perform work and it is very easy to check which commands RsyncUI are executing.
+Included in Swift 5 there is a unified logging feature `OSLog`. There are several methods for logging and investigate what the application is up to. By using OSLog there is no need for print statements to follow execution. All logging is by utilizing OSLog displayed as part of Xcode. The `Process` objects are where all the real work is done. OSLog is  included in all objects which perform work and it is very easy to check which commands RsyncUI are executing.
 
 OSLog info in Xcode. The logging is displaying commands and arguments as shown below. It makes it convenient to check that RsyncUI is executing the correct command.
 
