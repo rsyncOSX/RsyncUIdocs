@@ -25,7 +25,7 @@ Features only available on macOS Ventura and later:
 
 ## MacOS 12 Monterey
 
-On macOS Monterey, double-clicking on task is *not available*. The only way to check the output from an estimation run within the main view on macOS 12 is to estimate all tasks, dismiss the estimated view, and check the output from rsync the i from the toolbar main view.
+On macOS Monterey, *double-click* on a task is *not available*. The only way to check the output from an estimation run within the main view on macOS 12 is to estimate all tasks, dismiss the estimated view, and check the output from rsync the i from the toolbar main view.
 
 
 Select the *wand and stars* on the toolbar for estimate all tasks.

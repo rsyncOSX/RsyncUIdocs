@@ -7,9 +7,7 @@ categories = ["general information"]
 lastmod = "2023-06-10"
 +++
 
-RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple. There are no third party libraries included in the code. It is thought three source codes not developed by me are included in the code. The third parts source code is only for support and not critical if removed.
-
-Check out [the categories](/categories) for information about other topics not linked to on this page.
+RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple. Check out [the categories](/categories) for information about other topics not linked to on this page.
 
 ## Before commencing use of RsyncUI
 
@@ -18,11 +16,13 @@ RsyncUI is compiled for macOS Monterey and later. See [the changelog](/post/chan
 ```bash
 brew install --cask rsyncui
 ```
-or by  download from GitHub. The build available by Homebrew supports all macOS versions from Monterey including Sonoma. There is some [additional information](/post/macos/) about RsyncUI and macOS versions.
+or by  download from GitHub. The build available by Homebrew supports all macOS versions from Monterey including Sonoma. 
+
+There is some [additional information](/post/macos/) about RsyncUI and macOS versions.
 
 ## Remote servers, passwordless logins and local disks
 
-RsyncUI can synchronize your data to either remote servers on the Internet, servers on your local LAN and to local attached disk. If you only want to synchronize data to a local attached disk, connect the disk, add source and destination and you are ready for your first task. If you want to synchronize data to a server there is some more setup to do. If you have enabled passwordless login by ssh you only have to add login id, servername, source and destination and you are ready to synchronize. If you have not enabled passwordless login, there are some more actions required before your first task.
+RsyncUI can synchronize your data to remote servers on the Internet, servers on your local LAN and to local attached disk. If you only want to synchronize data to a local attached disk, connect the disk, add source and destination and you are ready for your first task. If you want to synchronize data to a server there is some more setup to do. If you have enabled passwordless login by ssh you only have to add login id, servername, source and destination and you are ready to synchronize. If you have not enabled passwordless login, there are some more actions required before your first task.
 
 ## New users
 
