@@ -107,3 +107,8 @@ OSLog info in Xcode. The logging is displaying commands and arguments as shown b
 
 {{< figure src="/images/Xcode/Logger.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+And the OSLogs might be read by using the Console app. Be sure to set the Action in Console app menu to `Include Info Messages`.
+
+{{< figure src="/images/Xcode/console.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+
