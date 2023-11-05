@@ -8,6 +8,10 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+### OSLog (5 Nov 2023)
+
+OSLog, a unified logging system developed by Apple, is implemented in both versions. If you want to verify or just see what RsyncUI is executing of commands for `rsync`, you can from next release in late November, use the Console app to verify the commands. Please see more info about OSLog in [the built](/post/Built/) documentation.
+
 ## Version 1.7.7 build (87)  and 1.7.4 build (87) - 31 October 2023
 
 *Version 1.7.4 build(87)* supports all macOS versions from macOS Monterey and is available from Homebrew as well.  
@@ -31,8 +35,6 @@ Changes as for the macOS Sonoma build, but built for macOS Monterey to macOS Son
 For **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.6/RsyncUI.1.7.6.dmg) from GitHub. This is a maintenance release. 
 
 There are some minor fixes and the major work is replacing the ShellOut package with an updated and maintained package. The ShellOut in the released version of RsyncUI is not working. The ShellOut let the user execute shellscript ahead and after execution of a synchronization task. A shell script might be like moving files, mounting a filesystem from a remote server and so on. The ShellOut must be used with care and most likely only the advanced macOS users with experience in writing shellscripts might find this feature usefull. 
-
-OSLog is also included in this build, see [the how is the app built](/post/Built/)  for more info. 
 
 ## Version 1.7.5 build (84) - 28 September 2023
 
