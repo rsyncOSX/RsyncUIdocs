@@ -8,6 +8,10 @@ lastmod = "2023-06-09"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Next version (sometime in December 2023)
+
+There will be some minor GUI changes in next version of both apps.  There are several methods for navigation within SwiftUI, and one method is utlizing `NavigationStack`: "*A view that displays a root view and enables you to present additional views over the root view*". The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. No more pop up views and I think the presentation of the other views connected to execution of tasks will be smoother and better.  
+
 ### OSLog (5 Nov 2023)
 
 OSLog, a unified logging system developed by Apple, is implemented in both versions. If you want to verify or just see what RsyncUI is executing of commands for `rsync`, you can from next release in late November, use the Console app to verify the commands. Please see more info about OSLog in [the built](/post/Built/) documentation.
