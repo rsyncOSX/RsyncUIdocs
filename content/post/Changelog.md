@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 There will be some minor GUI changes in next version of both apps.  There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`: "*A view that displays a root view and enables you to present additional views over the root view*". The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. No more pop up views and I think the presentation of the other views connected to execution of tasks will be smoother and better.  
 
-There will be a version to try out what `NavigationStack` is before release in a week or two. Personally I believe this is more convenient to use, but most likely next release will enable the user to choose what to use by settings.
+There will be a version to try out what `NavigationStack` is before release in a week or two. Personally I believe `NavigationStack` is more convenient, but most likely next release will enable the user to choose what to use by settings.
 
 ### OSLog (5 Nov 2023)
 
