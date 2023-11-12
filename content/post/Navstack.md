@@ -10,7 +10,7 @@ There are several methods for navigation within SwiftUI, and one method is utili
 
 There will be a version to try out what `NavigationStack` is before release in a week or two. Personally I believe `NavigationStack` is more convenient, but most likely next release will enable the user to choose what to use by settings.
 
-The code in the changed views are also cleaned up and easier to read. I have been working on this for a couple of days only, and it need some more testing before a *try out version* is published. 
+The code in the changed views are also cleaned up and easier to read. I have been working on this for a couple of days only. It need some more QA and testing before a *try out version* is published. 
 
 ### Views 
 
@@ -35,4 +35,15 @@ Within the *estimated view* there is a *left arrow* on the toolbar upper right. 
 First time info for new users of RsyncUI, with confetti.
 
 {{< figure src="/images/navstack/confetti.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+### With and without
+
+Here is how the list all profiles and tasks with and without `NavigationStack`.
+
+With NavigationStack enabled:
+{{< figure src="/images/navstack/with.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+With NavigationStack disabled:
+{{< figure src="/images/navstack/without.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 
