@@ -20,6 +20,8 @@ The main or *root view* when RsyncUI starts. For new users the *First Time* view
 
 Selecting the *Wand and stars* commence an estimating run and display the result ontop of the *root view*. The left arrow on the toolbar, upper left, indicates this is a view ontop of *root view*. Selecting the arrow returns the main view.
 
+And of course double click on a row works as expected. First double click executes a dryrun, the details from dry run is presented on top of *root view*. Next double click executes the real run.
+
 {{< figure src="/images/navstack/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 If a row is selected the details about estimation is presented ontop of the *estimated view*. 
