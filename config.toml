@@ -13,7 +13,7 @@ hasCJKLanguage = false
 home = ["HTML", "RSS"]
 
 [params]
-  header_image = "/images/start/rsyncui.png"
+  # header_image = "/images/start/rsyncui.png"
   SEOTitle = "RsyncUI"
   description = "A GUI onto of rsync"
   keyword = "rsync"
