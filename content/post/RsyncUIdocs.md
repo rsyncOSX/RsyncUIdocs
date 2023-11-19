@@ -16,7 +16,7 @@ RsyncUI is compiled for macOS Monterey and later. See [the changelog](/post/chan
 ```bash
 brew install --cask rsyncui
 ```
-or by  download from GitHub. The build available by Homebrew supports all macOS versions from Monterey including Sonoma. 
+or by  [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases). The build available by Homebrew supports all macOS versions from Monterey including Sonoma. 
 
 There is some [additional information](/post/macos/) about RsyncUI and macOS versions.
 
