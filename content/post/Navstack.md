@@ -8,7 +8,7 @@ lastmod = "2023-11-12"
 +++
 There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`: "*A view that displays a root view and enables you to present additional views over the root view*". The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. No more pop up views and I think the presentation of the other views connected to execution of tasks will be smoother and better.  
 
-There will be a version to try out what `NavigationStack` is before release. Personally I believe `NavigationStack` is more convenient. The user might choose to use the new  `NavigationStack` or stay by default. 
+There will be a version to try out what `NavigationStack` is before release. Personally, I believe enable `NavigationStack` is a more convenient way of navigation within the Tasks view. The user might choose to use the new  `NavigationStack` or stay by default. 
 
 RsyncUI need some more QA and testing before a *try out version* is published. 
 
