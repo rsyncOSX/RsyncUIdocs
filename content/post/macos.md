@@ -16,6 +16,8 @@ On macOS 14 is the `ContentUnavailableView`, an interface, which display when th
 
 {{< figure src="/images/macos/ContentUnavailable.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+And the new navigation by  `NavigationStack` within RsyncUI will only be available for macOS 14 when released. See more info about [NavigationStack](/post/navstack/).
+
 ## MacOS 13 Ventura and later
 
 Features only available on macOS Ventura and later:
