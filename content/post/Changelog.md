@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 There will be some minor GUI changes in next version of both apps.  There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. See more info about it [here](/post/navstack/).
 
-### OSLog (5 Nov 2023)
+### OSLog
 
 OSLog, a unified logging system developed by Apple, is implemented in both versions. If you want to verify or just see what RsyncUI is executing of commands for `rsync`, you can from next release in  December, use the Console app to verify the commands. Please see more info about OSLog in [the built](/post/Built/) documentation.
 
