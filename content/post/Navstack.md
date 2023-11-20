@@ -10,7 +10,7 @@ There are several methods for navigation within SwiftUI, and one method is utili
 
 The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. No more pop up views and I think the presentation of the other views connected to execution of tasks will be smoother and better.   The user might choose to use the new  `NavigationStack` or stay by default. 
 
-Using `NavigationStack` is only enabled on macOS 14 due to use of the new `Observable` macro which require macos14.
+Using `NavigationStack` is only enabled on macOS 14 due to use of the new `Observable` macro which require macOS 14.
 
 ## Synchronize data by shortcuts
 
