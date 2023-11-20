@@ -30,7 +30,7 @@ Selecting a row presents the details from the estimate run. Selecting the left a
 
 {{< figure src="/images/navstack/detailstask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-### Execute  `⌘R`
+### Synchronize  `⌘R`
 
 Either by shortcut `⌘R` or by selecting  "Arrowshape" right on the toolbar starts the real synchronization of data.
 
