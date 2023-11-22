@@ -8,13 +8,15 @@ lastmod =  "2023-11-12"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Next version - December 2023
+## Next version - by end of November 2023
 
-There will be some minor GUI changes in next version of both apps.  There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. See more info about it [here](/post/navstack/).
+There are some GUI changes in next version of both apps.  And a couple of minor fixes. There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. Enable `NavigationStack` is by settings and it is default off. All sheets, like pop up views, are for *the macOS Sonoma only* version converted to new Navigation if enabled. For *the Homebrew* version only for macOS 14 users and only the Tasks view including estimating details. 
+
+See more info about it [here](/post/navstack/).
 
 ### OSLog
 
-OSLog, a unified logging system developed by Apple, is implemented in both versions. If you want to verify or just see what RsyncUI is executing of commands for `rsync`, you can from next release in  December, use the Console app to verify the commands. Please see more info about OSLog in [the built](/post/Built/) documentation.
+OSLog, a unified logging system developed by Apple, is implemented in both versions. If you want to verify or just see what RsyncUI is executing of commands for `rsync`, you can from next release, use the Console app to verify the commands. Please see more info about OSLog in [the built](/post/Built/) documentation.
 
 ## Version 1.7.7 build (87)  and 1.7.4 build (87) - 31 October 2023
 
