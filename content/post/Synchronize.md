@@ -13,7 +13,7 @@ After adding new tasks always verify the result of task by either a double click
 
 ##  Synchronize data
 
-When RsyncUI starts it automatically open the main view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar will estimate all tasks. Execute the real run either direct from the summarized estimated view or by *left arrow* (shortcut `⌘R`). 
+When RsyncUI starts it automatically open the main view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar will estimate all tasks. Execute the real run either direct from the summarized estimated view or by *left arrow* (shortcut `⌘R`) on the toolbar. 
 
 {{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
