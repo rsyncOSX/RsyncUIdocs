@@ -9,7 +9,7 @@ lastmod = "2021-03-10"
 After adding new tasks always verify the result of task by either a double click on task or by opening the Rsync parameters view, select the task and choose `Verify`.  The main task view also lets you execute *all* or *selected* tasks in one go. Actions are triggered either by shortcuts or by toolbar. The following are allowed shortcut actions:
 
 - `Estimate` - `⌘E` estimates all tasks
-- `Execute` - `⌘R` synchronize all tasks 
+- `Synchronize` - `⌘R` synchronize all tasks 
 
 ##  Synchronize data
 
