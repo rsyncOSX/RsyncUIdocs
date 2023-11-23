@@ -10,8 +10,6 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.8 build (88)  and 1.7.5 build (88) - 23 October 2023
 
-There is an issue with codesiging the dmg files. New dmg files to be uploaded.
-
 There are some GUI changes in both apps.  And a couple of minor fixes. There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. Enable `NavigationStack` is by settings and it is default off. All sheets, like pop up views, are for *the macOS Sonoma only* version converted to new Navigation if enabled. For *the Homebrew* version only for macOS 14 users and only the Tasks view including estimating details. 
 
 See more info about it [here](/post/navstack/).
