@@ -18,7 +18,7 @@ See more info about it [here](/post/navstack/).
 
 ### OSLog
 
-OSLog, a unified logging system developed by Apple, is implemented in both versions. If you want to verify or just see what RsyncUI is executing of commands for `rsync`, you can from next release, use the Console app to verify the commands. Please see more info about OSLog in [the built](/post/Built/) documentation.
+OSLog, a unified logging system developed by Apple, is implemented in both versions. If you want to verify or just see what RsyncUI is executing of commands for `rsync`, you can in this release, use the Console app to verify the commands. Please see more info about OSLog in [the built](/post/Built/) documentation.
 
 ## Version 1.7.7 build (87)  and 1.7.4 build (87) - 31 October 2023
 
