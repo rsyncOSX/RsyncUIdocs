@@ -121,4 +121,25 @@ By each view functions are avaliable by the Toolbar and for many functions by ke
 
 The user may select either pop-up views, sheets, or emedded views by `NavigationStack`. It is for the user to decide which type to prefer. Views by `NavigationStack` are views embedded and ontop of the root view. An arrow left on the Toolbar shows when it is a view over the main view. A pop-up view hast to be closed by a Button to continue.
 
+The main root view
+
+{{< figure src="/images/Xcode/taskview.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Estimate by `NavigationStack`
+
+{{< figure src="/images/Xcode/navestimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Details by `NavigationStack`
+
+{{< figure src="/images/Xcode/navdetails.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Estimate by sheet view
+
+{{< figure src="/images/Xcode/sheetestimate.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Details by sheet view
+
+{{< figure src="/images/Xcode/sheetdetails.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+
 
