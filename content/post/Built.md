@@ -111,4 +111,14 @@ And the OSLogs might be read by using the Console app. Be sure to set the Action
 
 {{< figure src="/images/Xcode/console.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+## Navigation
+
+The main navigation, when RsyncUI starts, is by a `NavigationSplitView`: *A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.* . RsyncUI utilizes two columns. Left column for main functions and the right column for details about each main function.  The details part is computed every time the user select a function like the Synchronize view, Tasks view and so on. 
+
+By each view most functions are avaliable by the Toolbar and for many functions by keyboard shortcuts as well. Some functions by each view is also connected to Buttons within the view when it seems to be most approriate. Actions by buttons could also be by the Toolbar, but to many functions by the Toolbar might confuse the user.
+
+### Sheet views and NavigationStack
+
+The user may select either pop-up views, sheets, or emedded views by `NavigationStack`. It is for the user to decide which type to prefer. Views by `NavigationStack` are views embedded and ontop of the root view. An arrow left on the Toolbar shows when it is a view over the main view. A pop-up view hast to be closed by a Button to continue.
+
 
