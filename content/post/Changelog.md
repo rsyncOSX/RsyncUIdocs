@@ -16,8 +16,8 @@ Both versions will run on macOS Sonoma, but one is built for macOS Sonoma only. 
 
 Enable  `NavigationStack` by switch on in user settings, save and restart RsyncUI. Disable it by switch off, save and restart.
 
-- *Version 1.7.5 build(88)* supports all macOS versions from macOS Monterey and is available from Homebrew as well
-- *Version 1.7.8 build(8)* for **macOS Sonoma** only
+- *Version 1.7.5 b(88)* supports all macOS versions from macOS Monterey and is available from Homebrew as well
+- *Version 1.7.8 b(88)* for **macOS Sonoma** only
 
 There are some GUI changes in both apps.  And a couple of minor fixes. There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. Enable `NavigationStack` is by settings and it is default off. All sheets, like pop up views, are for *the macOS Sonoma only* version converted to new Navigation if enabled. For *the Homebrew* version only for macOS 14 users and only the Tasks view including estimating details. 
 
