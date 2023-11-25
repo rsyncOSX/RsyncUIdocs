@@ -8,9 +8,16 @@ lastmod =  "2023-11-12"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Two versions of RsyncUI
+
+Both versions will run on macOS Sonoma, but one is built for macOS Sonoma only. And by the release of version *1.7.8 b(88)* and *1.7.5 b(88)* the macOS includes a few more enhancements than the other version. There are two versions because of the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. 
+
 ## Version 1.7.8 build (88)  and 1.7.5 build (88) - 23 November 2023
 
-Enable using `NavigationStack` by switch on in user settings, save and restart RsyncUI. Disable it by switch off, save and restart.
+Enable  `NavigationStack` by switch on in user settings, save and restart RsyncUI. Disable it by switch off, save and restart.
+
+- *Version 1.7.5 build(88)* supports all macOS versions from macOS Monterey and is available from Homebrew as well
+- *Version 1.7.8 build(8)* for **macOS Sonoma** only
 
 There are some GUI changes in both apps.  And a couple of minor fixes. There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. Enable `NavigationStack` is by settings and it is default off. All sheets, like pop up views, are for *the macOS Sonoma only* version converted to new Navigation if enabled. For *the Homebrew* version only for macOS 14 users and only the Tasks view including estimating details. 
 
@@ -29,8 +36,6 @@ OSLog, a unified logging system developed by Apple, is implemented in both versi
 There is, by the search field, in some of the views possible to filter the output. Within the logs and restore view filter by any string. In the previous releases, the filter might be observed as a kind of not working properly if there are many rows of data. This is due to the list of data is refreshed on every keypress in search field. And by every refresh, the list of data is computed. In the this version there is a one *second debounce* or delay in refresh. By the delay, typing in the search field is smoother.  The 1 second delay in *filter search* is notified by a rotating progressview.
 
 And there are some other minor updates as well.
-
-The issue: *There is still one very annoying issue in RsyncUI by updating macOS from previous versions to macOS Sonoma. I have not been able to solve it yet. Selecting a row in any table require a click on table to get focus before selecting a row. This was not an issue on either macOS Ventura or Monterey.* seems to be solved by updating to macOS Sonoma 14.1 which was released **26 Oct 2023**.
 
 ## Version 1.7.3 build (86) - 19 October 2023
 
