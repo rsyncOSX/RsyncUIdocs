@@ -32,6 +32,10 @@ The first time RsyncUI starts, it presents a link to [important](/post/important
 
 RsyncUI can be used in parallel with RsyncOSX. The catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX do not share user settings, e.g, like enabling version 3.x of rsync, has to be set in both apps.
 
+## Navigation
+
+There are two ways for information and navigation within RsyncUI, either by sheets or by Navigation Stack. Default for new users is by sheets and Navigation Stack might be switch on in user settings. See more info about [NavigationStack](/post/navstack/).
+
 ## Aborting a task
 
 Please be aware it is an external task not controlled by RsyncUI, which executes the command line tool `rsync`. RsyncUI is monitoring the task for progress and termination. The user can at any time abort a task. Please let the abort to finish and cleanup properly before starting a new task. It might take a few seconds. If not, the apps might become unresponsive.

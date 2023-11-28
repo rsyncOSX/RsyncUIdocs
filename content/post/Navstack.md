@@ -1,26 +1,22 @@
 +++
 author = "Thomas Evensen"
 date = "2023-11-10"
-title =  "What is NavigationStack?"
+title =  "NavigationStack"
 tags = ["navigationstack"]
 categories = ["general information"]
 lastmod = "2023-11-12"
 +++
-There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`: "*A view that displays a root view and enables you to present additional views over the root view*". 
+Apple documents `NavigationStack` as: "*A view that displays a root view and enables you to present additional views over the root view*".  The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. No more pop up views and I think the presentation of the other views connected to execution of tasks will be smoother and better. 
 
-Enable using `NavigationStack` by switch on in user settings, save and restart RsyncUI. Disable it by switch off, save and restart.
-
-The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. No more pop up views and I think the presentation of the other views connected to execution of tasks will be smoother and better.   The user might choose to use the new  `NavigationStack` or stay by default. 
-
-Using `NavigationStack` is only enabled on macOS 14 due to use of the new `Observable` macro which require macOS 14.
+Using `NavigationStack` is only enabled on **macOS 14** due to use of the new `Observable` macro which require macOS 14. The following is my procedure for synchronizing data to my backup server. And all tasks are executed by shortcuts on the keyboard.
 
 ## Synchronize data by shortcuts
 
-The synchronization of data is not changed much after introduction of navigation by NavigationStack. By using NavigationStack there are no popups or sheetviews. The following is my procedure for synchronizing data to my backup server. And all tasks are executed by shortcuts on the keyboard. 
+The synchronization of data is not changed much after introduction of navigation by NavigationStack. By using NavigationStack there are no popups or sheetviews. 
 
 ### Estimate  `⌘E`
 
-New task are added, for demo purpose only. After adding tasks the main or root view looks like this.  Either by shortcut `⌘E` or by selecting the toolbar "Wand and Stars" starts the estimate.
+After adding tasks the main or root view looks like this.  Either by shortcut `⌘E` or by selecting the toolbar "Wand and Stars" starts the estimate.
 
 {{< figure src="/images/navstack/addtasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -55,14 +51,10 @@ And after synchronization of data the tasks or root view is updated.
 
 {{< figure src="/images/navstack/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-### Enable `NavigationStack` and confetti
+### Enable `NavigationStack`
 
-Enable or disable `NavigationStack`.
+Enable using `NavigationStack` by switch on in user settings, save and restart RsyncUI. Disable by switch off, save and restart.
 
 {{< figure src="/images/navstack/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-First time info for new users of RsyncUI, with confetti.
-
-{{< figure src="/images/navstack/confetti.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 
