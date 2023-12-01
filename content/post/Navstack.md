@@ -8,7 +8,7 @@ lastmod = "2023-11-12"
 +++
 Apple documents `NavigationStack` as: "*A view that displays a root view and enables you to present additional views over the root view*".  The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. No more pop up views and I think the presentation of the other views connected to execution of tasks will be smoother and better. 
 
-Using `NavigationStack` is only enabled on **macOS 14** due to use of the new `Observable` macro which require macOS 14. The following is my procedure for synchronizing data to my backup server. And all tasks are executed by shortcuts on the keyboard.
+The following is my procedure for synchronizing data to my backup server. And all tasks are executed by shortcuts on the keyboard.
 
 ## Synchronize data by shortcuts
 

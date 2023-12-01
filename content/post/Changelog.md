@@ -8,11 +8,17 @@ lastmod =  "2023-11-12"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Two versions of RsyncUI
+## Version 1.7.9 (build 89) - not yet relased
 
-Both versions will run on macOS Sonoma, but one is built for macOS Sonoma only. And by the release of version *1.7.8 b(88)* and *1.7.5 b(88)* the macOS includes a few more enhancements than the other version. There are two versions because of the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. 
+This version is to be released later in December 2023 and from this release RsyncUI is **only supported for macOS Sonoma**, the latest release of macOS. This also includes the RsyncUI version on Homebrew. By every new release of SwiftUI and macOS there are several new features which also are beneficial for RsyncUI. The result is the macOS Sonoma version of RsyncUI includes enhancements not in the other versions. And it is difficult to maintain two release of RsyncUI. There are too many `#avaliable` statements in code which makes the code more vulnerable for bugs.
+
+## Last version supporting previous versions of macOS - 1 December 2023
+
+The relase 23 November 2023 were the last releases of RsyncUI supporting macOS Montery and macOS Ventura, macOS 12 and 13. Next release will be for macOS Sonoma only. This also applies for the Homebrew version as well.
 
 ## Version 1.7.8 build (88)  and 1.7.5 build (88) - 23 November 2023
+
+Both versions will run on macOS Sonoma, but one is built for macOS Sonoma only. And by the release of version *1.7.8 b(88)* and *1.7.5 b(88)* the macOS includes a few more enhancements than the other version. There are two versions because of the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. 
 
 Enable  `NavigationStack` by switch on in user settings, save and restart RsyncUI. Disable it by switch off, save and restart.
 

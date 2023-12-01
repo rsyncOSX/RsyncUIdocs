@@ -6,9 +6,17 @@ tags = ["macOS"]
 categories = ["general information"]
 +++
 
+**1 December 2023** - next release later in December 2023 will **only support  macOS Sonoma**.  By every new release of SwiftUI and macOS there are several new features which also are beneficial for RsyncUI. The result is the macOS Sonoma version of RsyncUI includes enhancements not in the other versions. And it is difficult to maintain two release of RsyncUI. There are too many `#avaliable` statements in code which makes the code more vulnerable for bugs.
+
+## Breaking changes 
+
 On every new release of macOS, Swift, SwiftUI and Xcode there are new features only supporting the latest release. RsyncUI is not an advanced application, but there are some features only available on each version of macOS.  With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `@Observable` macro. On previous macOS versions, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, are used to create binding to mutable properties. The new macro simplifies how to create bindings and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of `@Observable` objects. 
 
+And there are other properties only available for the latest version of macOS which also makes it difficult to support other than the latest versions of macOS for RsyncUI.
+
 ## MacOS 14 Sonoma
+
+This applies for version 1.7.8 and 1.7.5 of RsyncUI. 
 
 There are two versions of RsyncUI supporting macOS Sonoma. The default version is available from Homebrew and supports macOS Monterey and later. And there is a build for macOS Sonoma only which includes migrating  objects and bindings to the new `@Observable` macro. Migrating code to the new macro is a *breaking change* and that is why there are two builds. 
 
