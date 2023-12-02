@@ -12,6 +12,12 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 This version is to be released later in December 2023, and from this release, RsyncUI is **only supported for macOS Sonoma**, the latest release of macOS. This also includes the RsyncUI version on Homebrew. With every new release of SwiftUI and macOS, there are several new features that are also beneficial for RsyncUI. The result is that the macOS Sonoma version of RsyncUI includes enhancements not found in the other version. And it is difficult to maintain two releases of RsyncUI; there are too many `#avaliable` statements in the code, which makes the code more vulnerable to bugs.
 
+New features in code (not yet released):
+
+- RsyncUI now starts as a single window app, closing the window also closes the app
+- the toolbar is adjusted to only show functions available if Navigation Stack is enabled or not
+- and most likely a few more minor enhancments will be included
+
 ## Last version supporting previous versions of macOS - 1 December 2023
 
 The relase 23 November 2023 were the last releases of RsyncUI supporting macOS Montery and macOS Ventura, macOS 12 and 13. Next release will be for macOS Sonoma only. This also applies for the Homebrew version as well.
