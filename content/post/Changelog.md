@@ -92,9 +92,6 @@ For macOS 13 and later:
 
 The copy and paste will append task(s) to make it more easy to create new task based upon existing data. Data as source, destination, server, username and parameters to rsync are copied from the selected task(s).
 
-{{< figure src="/images/temp/edit.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/temp/paste.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 ## Version 1.7.0 build(82) - 16 August 2023 
 
 There is tooltip for each function on the toolbar. MacOS Monterey does not support double click on row, see [how to execute](/post/macos12/)  a `--dry-run` on macOS Monterey. The RsyncUI documentation is updated and more updates will be done after this release. 
@@ -103,14 +100,6 @@ There is tooltip for each function on the toolbar. MacOS Monterey does not suppo
 - some adjustments in logs- and restore view
 - some of the functions are moved the toolbar
 - color of the buttons are adjusted
-
-{{< figure src="/images/temp/tasktoolbar.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/temp/taskquickview.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/temp/logstoolbar.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Color of the buttons are adjusted.
-
-{{< figure src="/images/temp/buttons.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.6.6 build(81) - 1 August 2023 
 
@@ -124,8 +113,6 @@ This is a maintenance release. Minor cleanups, bug fixes and enhancements in par
 - enable and disable checking for error in output from rsync
 	- errors in output from rsync is notified
 - and some cleanup and minor fixes.
-
-{{< figure src="/images/temp/estimated.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Version 1.6.5 build(80) - 16 July 2023
 
