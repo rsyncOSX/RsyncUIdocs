@@ -15,9 +15,9 @@ This version is to be released later in December 2023, and from this release, Rs
 New features in code (not yet released):
 
 - RsyncUI now starts as a single window app, closing the window also closes the app
-- the toolbar is adjusted to show functions only available for Navigation Stack if enabled
+- the toolbar functions are now adjusted for which navigation is enabled, either sheets or Navigation Stack
 - after abanding support for previous versions of macOS there are several cleanups in code
-- and most likely some more minor enhancments to be included as well
+- and most likely some other minor enhancments to be included as well
 
 ## Last version supporting previous versions of macOS - 1 December 2023
 
