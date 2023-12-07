@@ -8,16 +8,18 @@ lastmod =  "2023-11-12"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.7.9 (build 89) - not yet relased
+## Version 1.7.9 (build 89) - 7 December 2023
 
-This version is to be released later in December 2023, and from this release, RsyncUI is **only supported for macOS Sonoma**, the latest release of macOS. This also includes the RsyncUI version on Homebrew. With every new release of SwiftUI and macOS, there are several new features that are also beneficial for RsyncUI. The result is that the macOS Sonoma version of RsyncUI includes enhancements not found in the other version. And it is difficult to maintain two releases of RsyncUI; there are too many `#avaliable` statements in the code, which makes the code more vulnerable to bugs.
+This release will also find its way to Homebrew in some days. First of all existing users of the macOS Sonoma version are notified there is a new version.
 
-New features in code (not yet released):
+From this release, RsyncUI is **only supported for macOS Sonoma**, the latest release of macOS. This also includes the RsyncUI version on Homebrew. With every new release of SwiftUI and macOS, there are several new features that are also beneficial for RsyncUI. The result is that the macOS Sonoma version of RsyncUI includes enhancements not found in the other version. And it is difficult to maintain two releases of RsyncUI; there are too many `#avaliable` statements in the code, which makes the code more vulnerable to bugs.
+
+New features:
 
 - RsyncUI now starts as a single window app, closing the window also closes the app
 - the toolbar functions are now adjusted for which navigation is enabled, either sheets or Navigation Stack
 - after abanding support for previous versions of macOS there are several cleanups in code
-- and most likely some other minor enhancments to be included as well
+- navigation by Navigation Stacks is set to default on
 
 ## Last version supporting previous versions of macOS - 1 December 2023
 
