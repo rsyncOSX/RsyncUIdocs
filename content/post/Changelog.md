@@ -21,7 +21,7 @@ New features:
 - after abanding support for previous versions of macOS there are several cleanups in code
 - navigation by Navigation Stacks is set to default on
 
-**A minor issue**: sometimes when RsyncUI estimates tasks and there is data to synchronize, choosing to synchronize data only returns to the previous view without synchronizing data. You will discover when this happens, just do another estimate and synchronize data after estimate. Sometimes there is a mismatch by the UUID (uniq identifier) selected for synchronizing data and UUID on task. I dont know why this sometimes happens, it might be a bug.  The guard statement just bails out if it happens, just du another estimate and synchronize.
+**A minor issue**: sometimes when RsyncUI estimates tasks and there is data to synchronize, choosing to synchronize data only returns to the previous view without synchronizing data. You will discover when this happens, just do another estimate and synchronize data after estimate. Sometimes there is a mismatch by the UUID (uniq identifier) selected for synchronizing data and UUID on task. I dont know why this sometimes happens, it might be a bug.  The guard statement just bails out if it happens, just do another estimate and synchronize.
 
 ## Last version supporting previous versions of macOS - 1 December 2023
 
