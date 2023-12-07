@@ -20,6 +20,8 @@ New features:
 - the toolbar functions are now adjusted for which navigation is enabled, either sheets or Navigation Stack
 - after abanding support for previous versions of macOS there are several cleanups in code
 - navigation by Navigation Stacks is set to default on
+- automatic execute tasks after estimate is not available if Navigation Stacks is enabled
+	- this function will most likely be removed from RsyncUI
 
 **A minor issue**: sometimes when RsyncUI estimates tasks and there is data to synchronize, choosing to synchronize data only returns to the previous view without synchronizing data. You will discover when this happens, just do another estimate and synchronize data after estimate. Sometimes there is a mismatch by the UUID (uniq identifier) selected for synchronizing data and UUID on task. I dont know why this sometimes happens, it might be a bug.  The guard statement just bails out if it happens, just do another estimate and synchronize.
 
