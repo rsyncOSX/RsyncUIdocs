@@ -22,7 +22,7 @@ New features:
 - after abanding support for previous versions of macOS there are several cleanups in code
 - navigation by `NavigationStack` is default on, switch off in usersettings for sheet views and pop-ups
 - automatic execute tasks after estimate and the timer function are disabled
-	- any automatic functions introduces some risks for failure, better *safe than sorry*
+	- any automatic function introduces some risks for failure, better *safe than sorry*
 
 **A minor issue**: *sometimes* when RsyncUI estimates tasks and there is data to synchronize, choosing to synchronize data after estimate only returns to the previous view without synchronizing. You will discover when this happens, just do another estimate and synchronize data after estimating. Sometimes there is a mismatch by the UUID (uniq identifier) selected for synchronizing data and UUID on task. I dont know why this sometimes happens, it might be a bug.  The guard statement just bails out if it happens, just do another estimate and synchronize.
 
