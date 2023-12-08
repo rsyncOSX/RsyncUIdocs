@@ -26,7 +26,7 @@ New features:
 
 **A minor issue**: *sometimes* when RsyncUI estimates tasks and there is data to synchronize, choosing to synchronize data after estimate only returns to the previous view without synchronizing. You will discover when this happens, just do another estimate and synchronize data after estimating. Sometimes there is a mismatch by the UUID (uniq identifier) selected for synchronizing data and UUID on task. I dont know why this sometimes happens, it might be a bug.  The guard statement just bails out if it happens, just do another estimate and synchronize.
 
-## Last version supporting previous versions of macOS - 1 December 2023
+###  Last version  supporting previous versions of macOS - 1.7.5 build (88)
 
 The relase 23 November 2023 were the last releases of RsyncUI supporting macOS Montery and macOS Ventura, macOS 12 and 13. Next release will be for macOS Sonoma only. This also applies for the Homebrew version as well.
 
