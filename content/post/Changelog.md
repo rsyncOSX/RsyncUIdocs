@@ -10,19 +10,19 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.7.9 (build 89) - 7 December 2023
 
-This release will also find its way to Homebrew in some days. First of all existing users of the macOS Sonoma version are notified there is a new version.
+Updated 8 December 2023, the timer and automatic execution of tasks are disabled and this version is uploaded to Homebrew as well. 
 
 From this release, RsyncUI is **only supported on macOS Sonoma**, the latest release of macOS. This also includes the RsyncUI version on Homebrew. With every new release of SwiftUI and macOS, there are several new features that are also beneficial for RsyncUI. The result is that the macOS Sonoma version of RsyncUI includes enhancements not found in the other version. And it is difficult to maintain two releases of RsyncUI; there are too many `#avaliable` statements in the code, which makes the code more vulnerable to bugs.
 
 New features:
 
+- RsyncUI is now supported on macOS Sonoma only
 - RsyncUI now starts as a single window app, closing the window also closes the app
 - the toolbar functions are now adjusted for which navigation is enabled, either sheets or Navigation Stack
 - after abanding support for previous versions of macOS there are several cleanups in code
 - navigation by Navigation Stacks is set to default on
-- automatic execute tasks after estimate is not available if Navigation Stacks is enabled
-	- this function will be removed from RsyncUI before updating to Homebrew
-	- after updating to Homebrew RsyncUI is only supported on macOS Sonoma
+- automatic execute tasks after estimate and the timer function are disabled
+	- any automatic functions introduces some risks for failure, better *safe than sorry*
 
 **A minor issue**: *sometimes* when RsyncUI estimates tasks and there is data to synchronize, choosing to synchronize data after estimate only returns to the previous view without synchronizing. You will discover when this happens, just do another estimate and synchronize data after estimating. Sometimes there is a mismatch by the UUID (uniq identifier) selected for synchronizing data and UUID on task. I dont know why this sometimes happens, it might be a bug.  The guard statement just bails out if it happens, just do another estimate and synchronize.
 
