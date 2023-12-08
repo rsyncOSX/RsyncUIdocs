@@ -10,8 +10,8 @@ lastmod = "2023-01-03"
 
 | App      | Lines of code | Swift files | Version 1.0 |
 | ----------- | ----------- |   ----------- | -------- |
-| RsyncUI   | about 14K     | about 170       | 6 May 2021 |
-| RsyncOSX   | about 11K   | about 120      | 14 March 2016 |	
+| RsyncUI   | about 15,5K     | about 175       | 6 May 2021 |
+| RsyncOSX   | about 11K   | about 121      | 14 March 2016 |	
 
 Which application to use? Both applications does the same job. They read and update the same files for tasks and logs which means you can use both apps, but not at the same time due to locking of files. 
 
@@ -97,7 +97,11 @@ All synchronize tasks are executed asynchron. The process object, which is respo
 
 ### Breaking change
 
-The `@Observable` macro is a breaking change. It is not possible to include the new macro in code and support older macOS versions as Monterey and Ventura. There are also som other changes and new properties which also makes it difficult to include new features in code and still support previous versions of macOS. The new Observation framework is a new implementation of the observer design pattern and removes the need for including Combine. Combine itself is still used in the RsyncUI, but not in combination with the Observation framework. 
+The `@Observable` macro is a breaking change. It is not possible to include the new macro in code and support older macOS versions as Monterey and Ventura. There are also som other changes and new properties which also makes it difficult to include new features in code and still support previous versions of macOS. The new Observation framework is a new implementation of the observer design pattern and removes the need for including Combine. Combine itself is still used in the RsyncUI.
+
+### Combine and SwiftUI
+
+There is no need for Combine in combination with the new  `@Observable` macro, but Combine is used in a couple of SwiftUI views to debounce text input from the user. The user input is a search or filter string and by default the userinput is a `@State` string variable. The view reacts on the input by every keypress and the filter algorithm is triggered by every keypress. This causes a sluggish user interface, but by debounce input by *one second* causes the filter algorithm only update after the *one second* debounce.
 
 ## OSLog
 
