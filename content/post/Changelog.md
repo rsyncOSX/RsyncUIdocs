@@ -18,9 +18,9 @@ New features:
 
 - RsyncUI is now supported on macOS Sonoma only
 - RsyncUI now starts as a single window app, closing the window also closes the app
-- the toolbar functions are now adjusted for which navigation is enabled, either sheets or Navigation Stack
+- the toolbar functions are now adjusted for which navigation is enabled, either sheet views or `NavigationStack`
 - after abanding support for previous versions of macOS there are several cleanups in code
-- navigation by Navigation Stacks is set to default on
+- navigation by `NavigationStack` is default on, switch off in usersettings for sheet views and pop-ups
 - automatic execute tasks after estimate and the timer function are disabled
 	- any automatic functions introduces some risks for failure, better *safe than sorry*
 
