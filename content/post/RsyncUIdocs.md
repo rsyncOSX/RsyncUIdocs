@@ -11,12 +11,13 @@ RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line t
 
 ## Before commencing use of RsyncUI
 
-See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.  RsyncUI can be installed by homebrew by command
+See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.  RsyncUI can be installed by Homebrew by command
 
 ```bash
 brew install --cask rsyncui
 ```
-or by  [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases). 
+or by  [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases). If installed by Homebrew, the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
+
 
 ## Remote servers, passwordless logins and local disks
 
