@@ -40,9 +40,9 @@ Please be aware it is an external task not controlled by RsyncUI, which executes
 
 ## RsyncUI vs RsyncOSX
 
-For the moment, there are more users of RsyncOSX than RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear, SwiftUI, which RsyncUI is developed by, is the future. This means that most of my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and no new features.
+For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: SwiftUI, which RsyncUI is developed by, is the future. This means that my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and there are no new features. And RsyncUI has a few more features than RsyncOSX. If you are on macOS Sonoma, my recommendation is to use RsyncUI, not RsyncOSX.
 
-RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. RsyncUI is developed utilizing SwiftUI. RsyncOSX is developed utilizing storyboards. Both apps utilize another great declarative library, Combine, developed by Apple and JSON files for storing tasks, logrecords and user configuration.
+There is some info about how [RsyncUI is built](/post/built/).
 
 ## New tasks, verify task and synchronizing data
 

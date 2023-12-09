@@ -10,7 +10,7 @@ lastmod = "2023-01-03"
 
 | App      | Lines of code | Swift files | Version 1.0 |
 | ----------- | ----------- |   ----------- | -------- |
-| RsyncUI   | about 15,5K     | about 175       | 6 May 2021 |
+| RsyncUI   | about 15.5K     | about 175       | 6 May 2021 |
 | RsyncOSX   | about 11K   | about 121      | 14 March 2016 |	
 
 Which application to use? Both applications does the same job. They read and update the same files for tasks and logs which means you can use both apps, but not at the same time due to locking of files. 
