@@ -6,17 +6,15 @@ tags = ["snapshot"]
 categories = ["synchronize"]
 lastmod = "2020-12-13"
 +++
-Utilizing snapshot is an effective method for restore of previous versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
+Utilizing snapshot is an effective method to restore old versions of data and deleted files. Snapshot utilize [hardlinks](https://en.wikipedia.org/wiki/Hard_link) and only changed and deleted files are saved as separate files in a snapshot. Files which are not changed are hardlinks to the original file.
 
-If a `file.txt` is saved in snapshot number one and never changed or deleted, the file `file.txt` in the latest snapshot is just a hardlink to the original file. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation.
-
-Even if all snapshots are tagged for delete, **the first** and **last** snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation (internal) of delete. 
+If a `file.txt` is saved in snapshot number one and never changed or deleted, the file `file.txt` in the latest snapshot is a hardlink only to the original file. If the `file.txt` is deleted from the first snapshot, the filesystem takes care of updating and where to save the original file as part of the delete operation. In RsyncUI, even if all snapshots are tagged for delete, *the first* and *last* snapshot are not deleted. The first and last snapshot are removed from the delete list as part of preparation for delete. 
 
 Snapshot is **not** possible in a rsync daemon setup.
 
 ## What is a snapshot?
 
-A snapshot is a saved state or backup of data at a specific point of time. Every snapshot is in sync with local catalog at the time of creating the snapshot. Previous versions of files can be restored from a snapshot. The snapshot is by utilizing the `--link-dest` parameter to rsync. The rsync parameter for next snapshot to save is:
+A snapshot is a saved state or backup of data at a specific point of time. Every snapshot is in sync with local catalog *at the time* of creating the snapshot. Previous versions of files can be restored from a snapshot. The snapshot is by utilizing the `--link-dest` parameter to rsync. The rsync parameter for next snapshot to save is:
 
 `--link-dest=~/snapshots/n-1 /Volumes/user/data/ user@remote.server:~/snapshots/n`
 
@@ -35,8 +33,6 @@ RsyncUI creates the snapshots within the remote catalog. The ~ is expanded to th
 
 - snapshot one
 - a full sync when snapshot is created
-
-...
 
 `~/snapshots/n`
 
