@@ -8,6 +8,20 @@ lastmod =  "2023-11-12"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
+## Version 1.8.0 (build 90) - 13 December 2023 (not yet released)
+
+Even more changes have found their way into the code. The following changes until now are:
+
+- fixed some issues regarding adding ssh path and keyfile, ssh port number 
+	- there is a check on the format which kicks in right away, the check is now debounced for some seconds to allow entering data 
+- even more cleanup in code after removing support for previous versions of macOS
+	- there is always some code in a large codebase which should be reviesed and cleaned up
+- and even more views are converted to Navigation Stack and most functions moved to the toolbar
+	- this makes the views cleaner and makes more space for important info
+- for the moment all sheet and pop-up views are available, but they might be removed in some time next year
+
+I dont know if this version will be relased this year or early in 2024. It might very well be even more changes before release.
+
 ## Version 1.7.9 (build 89) - 7 December 2023
 
 Updated 8 December 2023, the timer and automatic execution of tasks are disabled and this version is uploaded to Homebrew as well. 
