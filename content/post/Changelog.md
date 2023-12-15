@@ -20,7 +20,7 @@ Even more changes have found their way into the code. The following changes unti
 	- there is always some code in a large codebase which should be revised and cleaned up
 - and even more views are converted to `NavigationStack` and most functions moved to the toolbar
 	- this makes the views cleaner and more space for important info
-- for the moment all sheet and pop-up views are available, but they might be removed in some time next year
+	- sheet and pop-up views are removed
 
 I dont know if this version will be relased this year or early in 2024. It might very well be even more changes before release.
 
