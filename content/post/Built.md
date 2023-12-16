@@ -10,7 +10,7 @@ lastmod = "2023-01-03"
 
 | App      | Lines of code | Swift files | Version 1.0 |
 | ----------- | ----------- |   ----------- | -------- |
-| RsyncUI   | about 15.5K     | about 175       | 6 May 2021 |
+| RsyncUI   | about 13.7K     | about 161       | 6 May 2021 |
 | RsyncOSX   | about 11K   | about 121      | 14 March 2016 |	
 
 Which application to use? Both applications does the same job. **But if you are on macOS Sonoma go for RsyncUI**. The last year all new development is within RsyncUI. RsyncOSX is maintained, but bugfixes only.  
