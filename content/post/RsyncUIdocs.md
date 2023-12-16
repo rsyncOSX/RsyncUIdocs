@@ -7,7 +7,11 @@ categories = ["general information"]
 lastmod ="2023-11-12"
 +++
 
-RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.  Check out  [the categories](/categories)  for information about other topics not linked to on this page.
+**Important** - the user documentation is not updated with new dumps of views after *1.8.0 release candidate*. The text though is still valid, but some updates are requiered. The user documentation will be updatet before end of 2023.
+
+RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.  Check out  [the categories](/categories)  for information about other topics not linked to on this page. 
+
+RsyncUI is built for macOS Sonoma only.
 
 ## Before commencing use of RsyncUI
 
@@ -33,7 +37,7 @@ RsyncUI can be used in parallel with RsyncOSX. The catalog for storing configura
 
 ## Navigation
 
-There are two ways for information and navigation within RsyncUI, either by sheets or by Navigation Stack. Default for new users is by sheets and Navigation Stack might be switch on in user settings. See more info about [NavigationStack](/post/navstack/).
+Navigation within RsyncUI is by `NavigationStack`. See more info about [NavigationStack](/post/navstack/).
 
 ## Aborting a task
 

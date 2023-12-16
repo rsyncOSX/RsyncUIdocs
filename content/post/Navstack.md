@@ -51,10 +51,3 @@ And after synchronization of data the tasks or root view is updated.
 
 {{< figure src="/images/navstack/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-### Enable `NavigationStack`
-
-Enable using `NavigationStack` by switch on in user settings, save and restart RsyncUI. Disable by switch off, save and restart.
-
-{{< figure src="/images/navstack/settings.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-

@@ -119,31 +119,6 @@ And the OSLogs might be read by using the Console app. Be sure to set the Action
 
 The main navigation, when RsyncUI starts, is by a `NavigationSplitView`: *A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.* RsyncUI utilizes two columns. Left column for main functions and the right column for details about each main function.  The details part is computed every time the user select a function like the Synchronize view, Tasks view and so on. 
 
-By each view functions are avaliable by the Toolbar and for many functions by keyboard shortcuts as well. Some functions by each view is also connected to Buttons within the view. Actions by buttons could also be by the Toolbar, but to many functions by the Toolbar might confuse the user.
-
-### Sheet views and NavigationStack
-
-The user may select either pop-up views, sheets, or emedded views by `NavigationStack`. It is for the user to decide which type to prefer. Views by `NavigationStack` are views embedded and ontop of the root view. An arrow left on the Toolbar shows when it is a view over the main view. A pop-up view hast to be closed by a Button to continue.
-
-The main root view
-
-{{< figure src="/images/Xcode/taskview.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Estimate by `NavigationStack`
-
-{{< figure src="/images/Xcode/navestimate.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Details by `NavigationStack`
-
-{{< figure src="/images/Xcode/navdetails.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Estimate by sheet view
-
-{{< figure src="/images/Xcode/sheetestimate.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-Details by sheet view
-
-{{< figure src="/images/Xcode/sheetdetails.png" alt="" position="center" style="border-radius: 8px;" >}}
-
+Navigation within each view is by `NavigationStack`: "*A view that displays a root view and enables you to present additional views over the root view*".  The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. 
 
 
