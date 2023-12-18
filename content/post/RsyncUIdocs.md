@@ -32,19 +32,15 @@ The first time RsyncUI starts, it presents a link to [important](/post/important
 
 RsyncUI can be used in parallel with RsyncOSX. The catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX do not share user settings, e.g, like enabling version 3.x of rsync, has to be set in both apps.
 
-## Navigation
-
-Navigation within RsyncUI is by `NavigationStack`. See more info about [NavigationStack](/post/navstack/).
-
 ## Aborting a task
 
 Please be aware it is an external task not controlled by RsyncUI, which executes the command line tool `rsync`. RsyncUI is monitoring the task for progress and termination. The user can at any time abort a task. Please let the abort to finish and cleanup properly before starting a new task. It might take a few seconds. If not, the apps might become unresponsive.
 
 ## RsyncUI vs RsyncOSX
 
-For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: SwiftUI, which RsyncUI is developed by, is the future. This means that my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and there are no new features. And RsyncUI has a few more features than RsyncOSX. *If you are on macOS Sonoma, my recommendation is to use RsyncUI, not RsyncOSX.*
+For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: SwiftUI, which RsyncUI is developed by, is the future.   And RsyncUI has a few more features than RsyncOSX. RsyncOSX is still supported, but only issues are fixed and there are no new features. Last  update of RsyncOSX was in april 2023. 
 
-There is some info about how [RsyncUI is built](/post/built/).
+*If you are on macOS Sonoma, my recommendation is to use RsyncUI, not RsyncOSX.* There is some info about how [RsyncUI is built](/post/built/).
 
 ## New tasks, verify task and synchronizing data
 

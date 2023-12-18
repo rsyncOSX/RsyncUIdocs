@@ -6,20 +6,18 @@ tags = ["parameters"]
 categories = ["rsync parameters"]
 lastmod = "2023-12-18"
 +++
-RsyncUI implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over *network connection* or not. Which standard parameters to use is computed during startup of application by reading the configuration file. The user can also remove default parameters if required. Parameters to rsync is saved by task.  The ssh parameter might be set global to all tasks. The global ssh parameters might by overridden by ssh parameter by task.
+RsyncUI implements default parameters which are working fine for simple synchronize and restore tasks. The actual parameters used in tasks are depended upon executing rsync over *network connection* or not. The user can remove default parameters if required. Parameters to rsync is saved by task.  The ssh parameter might be set global to all tasks. The global ssh parameters might by overridden by ssh parameter by task.
 
-About verify changes in parameters, see below about Verify.
+## Ssh parameters by task
 
-## Ssh parameters (local)
-
-There are two parameters to set for ssh. The local ssh parameters overrides global ssh parameters set in the user config.
+The by task ssh parameters overrides global ssh parameters set in the user config.
 
 - ssh port, set if ssh uses other port than standard port 22
-- the ssh keypath and identity file, normally this is `.ssh/id_rsa`, set name only if other keypath and identity file to be used by ssh
+- the ssh keypath and identity file, normally this is `.ssh/id_rsa`, set  only if other keypath and identity file to be used by ssh
 
 ## Adding parameters to rsync
 
-To add a parameter to rsync add the parameter in the field. RsyncUI enables seven user added parameters. Use any of the field to add a parameter.  The user is responsible for adding correct parameter. If there is added parameters which rsync dont understand, rsync will throw an error message.
+To add a parameter to rsync add the parameter in the field. RsyncUI enables seven user added parameters. Use any of the field to add parameter.  The user is responsible for adding correct parameter. If there is added parameters which rsync dont understand, rsync will throw an error message.
 
 {{< figure src="/images/rsyncparameters/parameters.png" alt="" position="center" style="border-radius: 8px;" >}}
 

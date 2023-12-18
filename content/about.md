@@ -3,7 +3,6 @@ author = "Thomas Evensen"
 title = "About"
 date = "2021-03-11"
 description = "Who am I?"
-tags = ["about"]
 lastmod = "2021-04-12"
 +++
 
