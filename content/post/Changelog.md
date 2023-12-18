@@ -8,13 +8,11 @@ lastmod =  "2023-11-12"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.8.0 (build 90) - release candidate
-
-Date: 16 December 2023 
+## Version 1.8.0 (build 90) - 18 December 2023
 
 Important: **all** functions within every view are now icons on the toolbar, upper right. Major functions are colored blue.
 
-Even more changes have found their way into the code. The following changes in rc are:
+The following changes in release are:
 
 - fixed some issues regarding adding ssh keypath, file and ssh port number 
 	- there is a check on the format which kicks in right away, the check is now debounced a few seconds to allow entering data 
@@ -22,10 +20,10 @@ Even more changes have found their way into the code. The following changes in r
 	- there is always some code in a large codebase which should be revised and cleaned up
 - and even more views are converted to `NavigationStack` and most functions moved to the toolbar
 	- this makes the views cleaner and more space for important info
-	- all sheet and pop-up views are removed, only Alert as pop-up if some odd situation occurs like missing either source or destination when adding tasks
+	- **all** sheet and pop-up views are removed, only Alert as pop-up if some odd situation occurs like missing either source or destination when adding tasks
 	- within every view the main icon (function) is colored blue and a short help text is displayed when hoover mouse over icon
 
-This version will be relased before Christmas holiday. Update of user documentation might take some more time because most screen dumps are changed and text need updates.
+Update of user documentation is commenced, it might take some more time because most screen dumps are changed and text need updates. 
 
 ## Version 1.7.9 (build 89) - 7 December 2023
 
