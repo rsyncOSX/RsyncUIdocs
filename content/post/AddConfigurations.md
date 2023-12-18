@@ -2,24 +2,17 @@
 author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Add and update tasks"
-tags = ["add"]
+tags = ["add","profle"]
 categories = ["synchronize"]
-lastmod = "2021-03-25"
+lastmod = "2023-12-18"
 +++
-Always verify, by a `--dry-run`,  the result of a new task before executing it.
+Always verify, by a `--dry-run`,  the result of a new task before executing it. 
 
-A task require minimum a *local catalog* and a *remote catalog*. After entering information about a task, select the `Add` button to add it to RsyncUI. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
+A task require minimum a *local catalog* and a *remote catalog*. After entering information about a task, select the `+` icon upper right to add it to RsyncUI. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
 
 {{< figure src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-After adding or changed a task please verify the result by executing an estimation run.
-
-The following actions within this view:
-
-- `Add` - will add a new task
-- `Update` - the `Add` button will change when a task is selected
-
-Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID.
+Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID. Or  `+` will add a new task. To update a task select it and to save changes press the `+`, which has changed to an update icon.
 
 ## Copy and paste
 
@@ -30,15 +23,31 @@ Shortcuts for copy and paste are `⌘C` and  `⌘V` or from the Edit menu. The c
 
 ## Delete
 
-Select tasks to be deleted and delete from the Edit menu.
+Select tasks to be deleted and delete from the Edit menu or the `backspace` button.
 
 {{< figure src="/images/add/delete.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+## Profiles
+
+Either add or delete profiles. A profile is only a catalog where data about tasks are saved. See tag about `config-file` where RsyncUI stores files.
+
+{{< figure src="/images/add/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+## Shell commands
+
+The user can execute shellcommands ahead and after a synchronization task. Be carefull with this option, most likely for the advanced user.
+
+{{< figure src="/images/add/shellcommands.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+## Data about tasks
+
+The following are data about tasks:
+
 ### Task
 
-- synchronize, which is default and keeps source and destination in sync
-- [snapshots](/post/snapshots/), save changes and deletes ahead of a synchronize
-- syncremote, remote is source, synchronize a remote source to a local volume
+- `synchronize`, which is default and keeps source and destination in sync
+- `snapshot`, save changes and deletes ahead of a synchronize
+- `syncremote`, remote is source, synchronize a remote source to a local volume
 - Dont´t add `/`
   - by default a trailing `/` is added to both source and destination
 
@@ -57,12 +66,3 @@ Select tasks to be deleted and delete from the Edit menu.
   - username for login to remote server
 - Remote server:
   - either server name or IP-address for remote server
-
-
-## Add tasks
-
-Select the `Add` button when completed and task is added to RsyncUI. RsyncUI adds a trailing / character to both local and remote volume. After selecting the Add button another task might be added. Any changes (edit or delete) to task are done from the Synchronize view.
-
-## Update task
-
-To update a task select it and update. After changes either save or select another task to abandon the update.
