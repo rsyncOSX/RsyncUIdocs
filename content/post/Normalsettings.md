@@ -57,5 +57,3 @@ The log file can be inspected by `⌘O` shortcut or by the File menu. The log fi
     - if a network connection is dropped during execution, RsyncUI sends an interrupt signal to the task and it halts with an error
 - Check for error in output
     - if the word `error` is discovered in output from rsync it is notified
-- Automatic execute
-    - in view for summarized view, enable automatic execute and time before automatic execute kicks in 

@@ -8,7 +8,7 @@ lastmod = "2021-03-11"
 +++
 In this view you can let RsyncUI assist in creating ssh-keys and setup global ssh keypath and identityfile, either utilizing default values or set your own. There is some more info [about ssh](/post/ssh/).
 
-{{< figure src="/images/usersettings/ssh1.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Local ssh keys found
 
@@ -37,5 +37,3 @@ where
 - `-p` is the port number ssh communicates through, default port 22
 
 If global ssh parameters are set, it applies to **all configurations**. It is possible to set other ssh values on each task. Global SSH keypath and identityfile in use.
-
-{{< figure src="/images/usersettings/ssh2.png" alt="" position="center" style="border-radius: 8px;" >}}
