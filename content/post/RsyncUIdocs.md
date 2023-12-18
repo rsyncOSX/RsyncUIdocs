@@ -7,8 +7,6 @@ categories = ["general information"]
 lastmod ="2023-11-12"
 +++
 
-**Important** - the user documentation is not updated with new dumps of views after *1.8.0 release candidate*. The text though is still valid, but some updates are requiered. The user documentation will be updatet before end of 2023.
-
 RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.  Check out  [the categories](/categories)  for information about other topics not linked to on this page. 
 
 RsyncUI is built for macOS Sonoma only.
@@ -21,7 +19,6 @@ See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Univers
 brew install --cask rsyncui
 ```
 or by  [download from GitHub](https://github.com/rsyncOSX/RsyncUI/releases). If installed by Homebrew, the shasum is automatically verified. If downloaded from GitHub please verify the shasum.
-
 
 ## Remote servers, passwordless logins and local disks
 
@@ -45,7 +42,7 @@ Please be aware it is an external task not controlled by RsyncUI, which executes
 
 ## RsyncUI vs RsyncOSX
 
-For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: SwiftUI, which RsyncUI is developed by, is the future. This means that my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and there are no new features. And RsyncUI has a few more features than RsyncOSX. If you are on macOS Sonoma, my recommendation is to use RsyncUI, not RsyncOSX.
+For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: SwiftUI, which RsyncUI is developed by, is the future. This means that my development is now on RsyncUI. RsyncOSX is still supported, but only issues are fixed and there are no new features. And RsyncUI has a few more features than RsyncOSX. *If you are on macOS Sonoma, my recommendation is to use RsyncUI, not RsyncOSX.*
 
 There is some info about how [RsyncUI is built](/post/built/).
 
