@@ -50,9 +50,9 @@ Default catalog for backup of `<catalog to synchronize>` relativ to the synchron
 ```bash
 ../backup_<catalog to synchronize>
 ```
-## The Verify flag
+## The Verify flag (icon)
 
-The resulting commandline string is dynamically updated when changing parameters. By the `Verify` flag new parameters might be tested before saving. The verify executes a `--dry-run` task for verification of parameters. The above applies to both default and user set parameters. The `Verify` is context sensitive. If like the `verify` swicth is selected the verify executes a verify. And likewise for `synchronize` and `restore` switch.
+The resulting commandline string is dynamically updated when changing parameters. By the `Verify` flag new parameters might be tested before saving. The verify executes a `--dry-run` task for verification of parameters. The `Verify` is context sensitive. If like the `verify` swicth is selected the verify executes a verify. And likewise for `synchronize` and `restore` switch.
 
 {{< figure src="/images/rsyncparameters/verify.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -60,7 +60,7 @@ Regarding the Verify flag and the `verify` switch is on. If there are many files
 
 ## Default rsync parameters
 
-Selecting the default tab presents the default parameters to rsync. The defaults parameters can also be switched on or off on a task.
+The defaults parameters can be switched on or off on a task.
 
 {{< figure src="/images/rsyncparameters/default.png" alt="" position="center" style="border-radius: 8px;" >}}
 
