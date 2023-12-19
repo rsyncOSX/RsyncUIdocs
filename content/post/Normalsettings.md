@@ -46,7 +46,7 @@ There is three choices for logging, none, min and full and they are mutually exc
 - min - last 10 lines of output is logged
 - full - everything is logged
 
-The log file can be inspected by `⌘O` shortcut or by the File menu. The log file is stored at `$HOME/.rsyncosx/macserial/rsynclog.txt`.
+The log file is stored at `$HOME/.rsyncosx/macserial/rsyncosx.txt`. The logfile can be opened from the main view.
 
 ## Other settings
 
