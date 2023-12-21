@@ -10,10 +10,10 @@ lastmod = "2023-01-03"
 
 | App      | Lines of code | Swift files | Version 1.0 |
 | ----------- | ----------- |   ----------- | -------- |
-| RsyncUI   | about 13.7K     | about 161       | 6 May 2021 |
+| RsyncUI   | about 13.6K     | about 162       | 6 May 2021 |
 | RsyncOSX   | about 11K   | about 121      | 14 March 2016 |	
 
-Which application to use? Both applications does the same job. **But if you are on macOS Sonoma go for RsyncUI**. The last year all new development is within RsyncUI. RsyncOSX is maintained, but bugfixes only.  
+Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma? Go for RsyncUI**. In the last year, all new development has been within RsyncUI. RsyncOSX is maintained, but only for bug fixes.
 
 ## A few words about the code
 
@@ -21,7 +21,7 @@ Even though I am an educated IT person, most of my professional work has been as
 
 ## RsyncUI vs RsyncOSX
 
-For the moment, there are more users of RsyncOSX than RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear, *SwiftUI*, which RsyncUI is developed by, is the future. This means new development is on RsyncUI. RsyncOSX is still maintained, but only issues are fixed. RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. Both apps utilize another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration.
+For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: *SwiftUI*, which RsyncUI is developed by, is the future. This means new development is on RsyncUI. RsyncOSX is still maintained, but only issues have been fixed. RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. Both apps utilise another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration.
 
 | App      | UI | Paradigm |
 | ----------- | ----------- |   ----------- |
