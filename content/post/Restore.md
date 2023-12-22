@@ -10,7 +10,7 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 
 ### Selecting and filtering
 
-List of files with more than 20,000 lines will be truncated.  Either search for files to restore by filter or by listing all files. The string `./.` will fetch all filenames from remote. A filterstring will only fetch filenames which containes filterstring.
+List of files with more than 20,000 lines will be truncated.  Either search for files to restore by filter or by listing all files. A filterstring will only fetch filenames ahead of a restore, which containes filterstring.
 
 {{< figure src="/images/restore/restore_filter_all.png" alt="" position="center" style="border-radius: 8px;" >}}
 
