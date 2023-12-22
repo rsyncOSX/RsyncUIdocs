@@ -16,9 +16,13 @@ The following are allowed shortcut actions:
 - `Synchronize` - `⌘R` synchronize all tasks 
 - `Abort` - `⌘K` abort and halt any ongoing task
 
-When RsyncUI starts it automatically open the main view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar will estimate all tasks.
+When RsyncUI starts it automatically open the main view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar start estimating all tasks.
 
 {{< figure src="/images/tasks/tasks.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+The estimate counts down number of tasks to estimate. 
+
+{{< figure src="/images/tasks/startestimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 The result of an estimate, blue numbers indicates there is data to synchronize.  Execute the real run either direct from the summarized estimated view or by *left arrow* (shortcut `⌘R`) on the toolbar. To se details from the estimate, select a row and details are presented. 
 
@@ -26,4 +30,12 @@ The result of an estimate, blue numbers indicates there is data to synchronize. 
 
 Selecting a row presents the details.
 
-{{< figure src="/images/tasks/details.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/tasks/estimatedetails.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Synchronize tasks by selecting *blue arrow* (shortcut `⌘R`) from the toolbar on the summarized view after estimating all tasks.
+
+ {{< figure src="/images/tasks/execute.png" alt="" position="center" style="border-radius: 8px;" >}}
+ 
+ All synchronize tasks adds a logrecord, time for synchronize task and transferred amount of data. All data about synchronize tasks are collected from rsync output.
+ 
+ {{< figure src="/images/tasks/logrecords.png" alt="" position="center" style="border-radius: 8px;" >}}

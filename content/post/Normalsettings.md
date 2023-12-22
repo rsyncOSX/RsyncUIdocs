@@ -6,7 +6,7 @@ tags = ["userconfig"]
 categories = ["general information"]
 lastmod = "2021-03-11"
 +++
-You can any time backup the current setup, configurations and logs including all profiles by the `Backup` button. The backup executes a copy to your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`.
+You can any time backup the current setup, configurations and logs including all profiles by the `wrench` icon on the toolbar. The backup executes a copy to your Documents catalog and postfixes the copy with a timestamp `-month-day-year/hour/minute`.
 
 `$HOME/Documents/RsyncUIcopy-05-06-2021/08/21`
 
