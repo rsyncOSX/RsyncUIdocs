@@ -11,7 +11,7 @@ RsyncUI is only depended upon the Swift language and SwiftUI and Foundation fram
 
 ## Remove signing credentials or replace
 
-To compile you have to either remove signing or replace signing credentials. To remove or replace select Target RsyncUI and tab "Signing and Capabilities".
+To compile you have to either remove signing or replace signing credentials. To remove or replace select Target RsyncUI and tab "Signing and Capabilities". Insert your own or just `none` if you dont have a paid developer account at Apple. 
 
 ## Compile scripts
 

@@ -16,6 +16,8 @@ There are a few more minor GUI enhancements and tweaks. And cleaning of code, re
 
 The documentation is updated with  screenshots, also tweaked views from version 1.8.1, which is to be released in January 2024. Hoover the mouse over the toolbar shows a short message of what the action is.
 
+If you want to compile and test your own version, just [follow the compile instructions](/post/compile/) after downloading or forking the source. The [main repository](https://github.com/rsyncOSX/RsyncUI)  is updated with latest changes. It is easy and you dont need any experience with Swift or SwiftUI to do it.
+
 ## Version 1.8.0 (build 90) - 18 December 2023
 
 Important: **all** functions within every view are now icons on the toolbar, upper right. Major functions are colored blue.
