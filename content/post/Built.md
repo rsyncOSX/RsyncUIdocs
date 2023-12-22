@@ -13,7 +13,7 @@ lastmod = "2023-01-03"
 | RsyncUI   | about 13.6K     | about 162       | 6 May 2021 |
 | RsyncOSX   | about 11K   | about 121      | 14 March 2016 |	
 
-Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma? Go for RsyncUI**. In the last year, all new development has been within RsyncUI. RsyncOSX is maintained, but only for bug fixes.
+Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma?** Go for RsyncUI. And for the last year and years to come, all development has been and will be within RsyncUI. RsyncOSX is maintained, but only for bug fixes.
 
 ## A few words about the code
 
@@ -30,25 +30,35 @@ For the moment, there are more users of RsyncOSX than of RsyncUI. But the number
 
 SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
 
-### RsyncUI, SwiftUI
+## RsyncUI, SwiftUI
 
 *RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are property wrappers to create bindings to mutable properties.
 
-### RsyncOSX, Storyboard
+## RsyncOSX, Storyboard
 
 *RsyncOSX* utilizes *Storyboard*, which is a tool for graphical design of views. UI components like buttons, tables and other UI components are added and placed within the view by the developer utilizing Xcode. After design all UI components are connected by creating bindings to Swift code. The developer manually adds a reference to the Swift source code for every view  within the Storyboard. If the developer misses to bind a UI component, the app will crash with an nil pointer exception every time that view is exposed.
 
-Storyboard for the tab views:
+### Storyboard for the tab views
+
+Xcode supports multiple storyboards. For RsyncOSX there is created two storyboards, *tab views* which are the main views and *sheetviews* which are pop-up views.
+
 {{< figure src="/images/Xcode/storyboard1.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Storyboard for the sheetviews:
+### Storyboard for the sheetviews
+
+And for every UI component within a storyboard it is requiered to manually bind it to Swift code. And then there are constraints to control where UI components are placed and position when the UI is resized.
+
 {{< figure src="/images/Xcode/storyboard2.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+To be honest, it is way easier to work with SwiftUI and not Storyboards. 
 
 ## Asynchronous execution 
 
 Asynchronous execution of tasks are key components of both apps. Every time a `rsync` synchronize and restore task is executed the termination of the task is not known ahead.  When the *termination signal* is observed some actions are required. Some actions are like stopping a progressview, send a message about task is completed, do some logging and execute next synchronize task.
 
-There are two methods for asynchronous execution. One is utilizing *callback functions* or *completion handlers*, which trigger next action when task is completed. The second is utilize Swift´s `async` and `await` utilities for asynchronous execution. Utilizing `async` and `await` makes the code simpler and cleaner. The need for *completion handlers* are reduced.  And lesser code is better code. Swift concurrency is a seperate and huge topic to discuss. I am not in a position to discuss it. There are structured and unstructered concurrency in Swift. Within RsyncUI and RsyncOSX there are only one asynchronous execution at any time except for concurrency within the Swift and SwiftUI libraries such as GUI updates. 
+There are two methods for asynchronous execution. *Callback functions* or *completion handlers*, which trigger next action when task is completed, and Swift´s `async` and `await` keywords for asynchronous execution. Utilizing `async` and `await` makes the code simpler and cleaner. The need for *completion handlers* are reduced.  And lesser code is better code. 
+
+Swift concurrency is a seperate and huge topic to discuss. I dont have the details and knowlegde to discuss it. There are structured and unstructered concurrency in Swift. Within RsyncUI and RsyncOSX there is only one asynchronous execution at any time except for concurrency within the Swift and SwiftUI libraries such as GUI updates. 
 
 All code which utilizes asynchronous execution are shared between the two apps. The `Process` object is where the real work is done. Input to the `Process` are the command to execute and the parameters for the command. The `Process` object utilizes Combine for monitoring *process termination* and output, when needed by the apps, from the command.  There are two versions of the process object:
 
