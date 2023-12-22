@@ -36,7 +36,7 @@ SwiftUI is the latest declarative framework developed by Apple for views, contro
 
 ## RsyncOSX, Storyboard
 
-*RsyncOSX* utilizes *Storyboard*, which is a tool for graphical design of views. UI components like buttons, tables and other UI components are added and placed within the view by the developer utilizing Xcode. After design all UI components are connected by creating bindings to Swift code. The developer manually adds a reference to the Swift source code for every view  within the Storyboard. If the developer misses to bind a UI component, the app will crash with an nil pointer exception every time that view is exposed.
+*RsyncOSX* utilizes *Storyboard*, which is a tool for graphical design of views. UI components like buttons, tables and other UI components are added and placed within the view by the developer utilizing Xcode. After design all UI components are connected by creating bindings to Swift code. The developer manually adds a reference to the Swift source code for every view within the Storyboards and the UI components within the views. If the developer misses to bind a UI component, the app will crash with an nil pointer exception every time that view is exposed.
 
 ### Storyboard for the tab views
 
@@ -46,7 +46,7 @@ Xcode supports multiple storyboards. For RsyncOSX there is created two storyboar
 
 ### Storyboard for the sheetviews
 
-And for every UI component within a storyboard it is requiered to manually bind it to Swift code. And then there are constraints to control where UI components are placed and position when the UI is resized.
+And for every UI component within a storyboard it is requiered to manually bind it. And then there are constraints to control where UI components are placed and position when the UI is resized.
 
 {{< figure src="/images/Xcode/storyboard2.png" alt="" position="center" style="border-radius: 8px;" >}}
 
@@ -78,6 +78,7 @@ Combine, a *declarative* library by Apple, makes the code easy to write and easy
 - [read](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) configurations for tasks
 - [write](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configurations for tasks
 - [the process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) for executing tasks
+- debouncing input from user
 
 ## Start of RsyncOSX
 
@@ -89,7 +90,7 @@ The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/
 
 # The model
 
-Parts of the model is equal, but there are some differences due to the fact that SwiftUI views are value types (structs) and not reference types (classes) as in Storyboard and Swift. The model is also responsible for informing the views when there are changes. Both apps share basic functions like reading and writing data from the store, updating the model, and so on. The memory footprint of tasks is minimal. Data for tasks are kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
+Parts of the model is equal, but there are some differences due to the fact that SwiftUI views are *value types*, structs, and not *reference types*, classes, as in Storyboard and Swift. The model is also responsible for informing the views when there are changes. Both apps share basic functions like reading and writing data from the store, updating the model, and so on. The memory footprint of tasks is minimal. Data for tasks are kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
 
 # SwiftUI
 
@@ -101,9 +102,9 @@ With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `@Observable` macro. 
 
 ## Environment property
 
-Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views  within the view hierarchy by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on *macOS Ventura* and *Monterey*. The property makes the data global available for views. The `@Bindable` property wrapper is also, on macOS Sonoma, used for creating bindings to the mutable properties of observable objects.
+Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views  within the view hierarchy by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on previous versions of macOS. The property makes the data global available for views. The `@Bindable` property wrapper is also, on macOS Sonoma, used for creating bindings to the mutable properties of `@Observable` objects.
 
-All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `@StateObject` or `@State` on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
+All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `@State` object on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
 
 ### Breaking change
 
@@ -129,6 +130,27 @@ And the OSLogs might be read by using the Console app. Be sure to set the Action
 
 The main navigation, when RsyncUI starts, is by a `NavigationSplitView`: *A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.* RsyncUI utilizes two columns. Left column for main functions and the right column for details about each main function.  The details part is computed every time the user select a function like the Synchronize view, Tasks view and so on. 
 
-Navigation within each view is by `NavigationStack`: "*A view that displays a root view and enables you to present additional views over the root view*".  The root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. 
+Navigation within **all** view is by `NavigationStack`: "*A view that displays a root view and enables you to present additional views over the root view*".  One root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. RsyncUI utilizes two APIs of  `NavigationStack`:
+
+The additional view is one view only and it might be present the output from rsync.
+
+```bash
+ NavigationStack {
+ 	.navigationDestination(isPresented: $somestate) {
+                SomeView()
+            }
+        }
+```
+
+The additional views are computed dependend upon what the user decides to do. The path is an `Array[Task]` and the `NavigationStack` uses to the stack to decide which view to show. Like with the main tasks view, selecting estimate all, push the enum which represent start estimate onto the path and the `NavigationStack` loads that view ontop of the root view.
+
+```bash
+NavigationStack(path: $path) {
+	.navigationDestination(for: Tasks.self) { which in
+                    makeView(view: which.task)
+                }
+        }
+```
+
 
 
