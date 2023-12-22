@@ -6,7 +6,7 @@ tags = ["userconfig"]
 categories = ["general information"]
 lastmod = "2021-03-12"
 +++
-There are a few settings to be tweaked. Settings are saved to permanent store. Usersettings might be opened by the default `⌘,` shortcut for settings.
+There are a few settings to be tweaked. Settings are saved to permanent store. Usersettings might be opened by the default shortcut `⌘,`.
 
 - [Settings](/post/normalsettings/) - rsync and other settings
 - [Ssh](/post/sshsettings) - SSH settings

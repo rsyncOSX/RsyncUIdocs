@@ -24,15 +24,15 @@ The estimate counts down number of tasks to estimate.
 
 {{< figure src="/images/tasks/startestimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-The result of an estimate, blue numbers indicates there is data to synchronize.  Execute the real run either direct from the summarized estimated view or by *left arrow* (shortcut `⌘R`) on the toolbar. To se details from the estimate, select a row and details are presented. 
+The result of an estimate, blue numbers indicates there is data to synchronize.  Execute the real run either direct from the summarized estimated view by *left arrow* (shortcut `⌘R`) on the toolbar. To se details from the estimate, select a row and details are presented. 
 
 {{< figure src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Selecting a row presents the details.
+Selecting a row presents the details after an estimate run.
 
 {{< figure src="/images/tasks/estimatedetails.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Synchronize tasks by selecting *blue arrow* (shortcut `⌘R`) from the toolbar on the summarized view after estimating all tasks.
+Synchronize tasks by selecting *blue arrow* (shortcut `⌘R`) from the toolbar on the summarized view after estimating all tasks. A progress is shown on each task with data to be synchronized.
 
  {{< figure src="/images/tasks/execute.png" alt="" position="center" style="border-radius: 8px;" >}}
  

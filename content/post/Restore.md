@@ -13,9 +13,9 @@ Restore either files or complete synchronized files is easy in RsyncUI. A restor
 List of files with more than 20,000 lines will be truncated.  Either search for files to restore by filter or by listing all files. The string `./.` will fetch all filenames from remote. A filterstring will only fetch filenames which containes filterstring.
 
 {{< figure src="/images/restore/restore_filter_all.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/restore/restore_filter.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 Select either file or catalog to restore.  Switching the command toggle shows the actual restore command. Selecting restore shows a `--dry-run` of restore. Switch of `--dry-run` toggle for actual restore of files. After a restore a view presenting output from rsync will be displayed.
 
-{{< figure src="/images/restore/restore_select.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/restore/restore_filter.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 {{< figure src="/images/restore/restore_dryrun.png" alt="" position="center" style="border-radius: 8px;" >}}
