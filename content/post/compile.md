@@ -23,7 +23,7 @@ Either execute RsyncUI directly in Xcode or utilize make. Go to the catalog top 
 
 `make clean & make`
 
-After the compiling is completed the RsyncOSX.app is build and saved in:
+After the compiling is completed the RsyncUI.app is build and saved in:
 
 `RsyncUI/Build/Products/Release/RsyncUI.app`
 
