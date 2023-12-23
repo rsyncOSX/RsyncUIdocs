@@ -15,11 +15,11 @@ lastmod = "2023-01-03"
 
 Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma?** Go for RsyncUI. And for the last year and years to come, all development has been and will be within RsyncUI. RsyncOSX is maintained, but only for bug fixes.
 
-## A few words about the code
+# A few words about the code
 
 Even though I am an educated IT person, most of my professional work has been as an IT manager and not a developer. Most of my coding experience is with private projects such as RsyncOSX and RsyncUI. Google is and has been a great resource for research and advice on how to solve specific problems. Reading about other developers code and discussions is always valuable input for me. The MVC pattern and single source of truth are important patterns for both apps. I have also tried to use all Apple Frameworks, utilizing most of the required built-in functions, like sorting or filter algorithms. And even if there are many lines of code in both apps, I have tried to write as little code as possible. So if you are looking at my code, keep this in mind, my code is only one of probably many ways to solve a problem.
 
-## RsyncUI vs RsyncOSX
+# RsyncUI vs RsyncOSX
 
 For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: *SwiftUI*, which RsyncUI is developed by, is the future. This means new development is on RsyncUI. RsyncOSX is still maintained, but only issues have been fixed. RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. Both apps utilise another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration.
 
@@ -30,21 +30,21 @@ For the moment, there are more users of RsyncOSX than of RsyncUI. But the number
 
 SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
 
-## RsyncUI, SwiftUI
+# RsyncUI, SwiftUI
 
 *RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are property wrappers to create bindings to mutable properties.
 
-## RsyncOSX, Storyboard
+# RsyncOSX, Storyboard
 
 *RsyncOSX* utilizes *Storyboard*, which is a tool for graphical design of views. UI components like buttons, tables and other UI components are added and placed within the view by the developer utilizing Xcode. After design all UI components are connected by creating bindings to Swift code. The developer manually adds a reference to the Swift source code for every view within the Storyboards and the UI components within the views. If the developer misses to bind a UI component, the app will crash with an nil pointer exception every time that view is exposed.
 
-### Storyboard for the tab views
+## Storyboard for the tab views
 
 Xcode supports multiple storyboards. For RsyncOSX there is created two storyboards, *tab views* which are the main views and *sheetviews* which are pop-up views.
 
 {{< figure src="/images/Xcode/storyboard1.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-### Storyboard for the sheetviews
+## Storyboard for the sheetviews
 
 And for every UI component within a storyboard it is requiered to manually bind it. And then there are constraints to control where UI components are placed and position when the UI is resized.
 
@@ -52,7 +52,7 @@ And for every UI component within a storyboard it is requiered to manually bind 
 
 To be honest, it is way easier to work with SwiftUI and not Storyboards. 
 
-## Asynchronous execution 
+# Asynchronous execution 
 
 Asynchronous execution of tasks are key components of both apps. Every time a `rsync` synchronize and restore task is executed the termination of the task is not known ahead.  When the *termination signal* is observed some actions are required. Some actions are like stopping a progressview, send a message about task is completed, do some logging and execute next synchronize task.
 
@@ -67,11 +67,11 @@ All code which utilizes asynchronous execution are shared between the two apps. 
 
 The difference between those two objects are minor, the async version marks the function for execution with keyword `async`. Calling the `async` require the `await` keyword. 
 
-## The Process object
+# The Process object
 
 Without communicating to the macOS system, RsyncUI is *nothing*. Every command within RsyncUI, except administration of tasks and logs, are commands to be executed by the macOS system. The main commands are executing `rsync` with the approriate arguments. But there are also commands executing `rm`, `ssh` and `mkdir`. And the Process object is utilized for all those commands. 
 
-## Combine
+# Combine
 
 Combine, a *declarative* library by Apple, makes the code easy to write and easy to read. In the Combine code for encode and write data to JSON file, the publisher require *macOS BigSur* and later. The following are examples of utilizing Combine:
 
@@ -80,11 +80,11 @@ Combine, a *declarative* library by Apple, makes the code easy to write and easy
 - [the process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) for executing tasks
 - debouncing input from user
 
-## Start of RsyncOSX
+# Start of RsyncOSX
 
 The start of RsyncOSX starts with the attribute `@NSApplicationMain` which kicks off everything. Within the Storyboard, the entry point is marked, and the view is binded with the Switf code to start the application. The Toolbar is programmatically constructed, which makes it easier to change vs. designing it on the Storyboard.
 
-## Start of RsyncUI
+# Start of RsyncUI
 
 The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/documentation/SwiftUI/App). There is only one entrance point, `@main`, in RsyncUI. The `@main` initialises the app, setup of the menubar, and opens the navigation bar which is the main user start for the app.
 
@@ -92,9 +92,9 @@ The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/
 
 Parts of the model is equal, but there are some differences due to the fact that SwiftUI views are *value types*, structs, and not *reference types*, classes, as in Storyboard and Swift. The model is also responsible for informing the views when there are changes. Both apps share basic functions like reading and writing data from the store, updating the model, and so on. The memory footprint of tasks is minimal. Data for tasks are kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
 
-# SwiftUI
+# RsyncUI
 
-The following are for RsyncUI and SwiftUI.
+The following are for RsyncUI and SwiftUI. No more details about RsyncOSX.
 
 ## Property wrapper for objects
 
@@ -106,11 +106,11 @@ Data for tasks are read from store and made available for all the views by an En
 
 All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `@State` object on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
 
-### Breaking change
+## Breaking change
 
 The `@Observable` macro is a breaking change. It is not possible to include the new macro in code and support older macOS versions as Monterey and Ventura. There are also som other changes and new properties which also makes it difficult to include new features in code and still support previous versions of macOS. The new Observation framework is a new implementation of the observer design pattern and removes the need for including Combine. Combine itself is still used in the RsyncUI.
 
-### Combine and SwiftUI
+## Combine and SwiftUI
 
 There is no need for Combine in combination with the new  `@Observable` macro, but Combine is used in a couple of SwiftUI views to debounce text input from the user. The user input is a search or filter string and by default the userinput is a `@State` string variable. The view reacts on the input by every keypress and the filter algorithm is triggered by every keypress. This causes a sluggish user interface, but by debounce input by *one second* causes the filter algorithm only update after the *one second* debounce.
 
@@ -128,28 +128,51 @@ And the OSLogs might be read by using the Console app. Be sure to set the Action
 
 ## Navigation
 
-The main navigation, when RsyncUI starts, is by a `NavigationSplitView`: *A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.* RsyncUI utilizes two columns. Left column for main functions and the right column for details about each main function.  The details part is computed every time the user select a function like the Synchronize view, Tasks view and so on. 
+The main navigation, when RsyncUI starts, is by a `NavigationSplitView`: *A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.* RsyncUI utilizes two columns. Left column for main functions and the right column for details about each main function.  The details part is computed every time the user select a function like the Synchronize view, Tasks view and so on. The navigation within usersetting is also by `NavigationSplitView`.
 
 Navigation within **all** view is by `NavigationStack`: "*A view that displays a root view and enables you to present additional views over the root view*".  One root view is the tasks view, and the all other views like estimating details, execution of tasks and so on will be presented ontop of the root view. RsyncUI utilizes two APIs of  `NavigationStack`:
 
-The additional view is one view only and it might be present the output from rsync.
+The additional view is one view only and it is presented when `$somestate` becomes true.
 
 ```bash
- NavigationStack {
- 	.navigationDestination(isPresented: $somestate) {
+@State private var somestate: Bool = false
+
+var body: some View {
+ 	NavigationStack {
+ 		...
+ 		.navigationDestination(isPresented: $somestate) {
                 SomeView()
             }
         }
+    }
 ```
 
-The additional views are computed dependend upon what the user decides to do. The path is an `Array[Task]` and the `NavigationStack` uses to the stack to decide which view to show. Like with the main tasks view, selecting estimate all, push the enum which represent start estimate onto the path and the `NavigationStack` loads that view ontop of the root view.
+The views ontop of the root view are computed depended upon what the user decides to do. Like with the main tasks view, selecting estimate all, push the enum which represent start estimate onto the path and the `NavigationStack` loads that view ontop of the root view.
 
 ```bash
-NavigationStack(path: $path) {
-	.navigationDestination(for: Tasks.self) { which in
+@State var path: [Tasks] = []
+ 
+var body: some View {
+	NavigationStack(path: $path) {
+		...
+		.navigationDestination(for: Tasks.self) { which in
                     makeView(view: which.task)
-                }
+            }
         }
+    }
+ }
+ 
+ enum DestinationView: String, Identifiable {
+    case executestimatedview, executenoestimatetasksview,
+         estimatedview, firsttime, dryrunonetask, alltasksview,
+         dryrunonetaskalreadyestimated, viewlogfile
+    var id: String { rawValue }
+}
+
+struct Tasks: Hashable, Identifiable {
+    let id = UUID()
+    var task: DestinationView
+}
 ```
 
 
