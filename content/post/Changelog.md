@@ -14,6 +14,8 @@ To be released sometime in January 2024.
 
 There are a few more minor GUI enhancements and tweaks. And cleaning of code, remove unused code and updates where needed. If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+- a new confirm dialog if number of files to synchronize is like a new task, sometimes a remote server or locak disk is unavailable, rsync might believe this is a new full synchronize and a dialog either confirm synchronize or abort
+
 The documentation is updated with  screenshots, also tweaked views from version 1.8.1, which is to be released in January 2024. Hoover the mouse over the toolbar shows a short message of what the action is.
 
 If you want to compile and test your own version, just [follow the compile instructions](/post/compile/) after downloading or forking the source. The [main repository](https://github.com/rsyncOSX/RsyncUI)  is updated with latest changes. It is easy and you dont need any experience with Swift or SwiftUI to do it.
