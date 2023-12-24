@@ -15,7 +15,9 @@ To be released sometime in January 2024.
 There are a few more minor GUI enhancements and tweaks. And cleaning of code, remove unused code and updates where needed. If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
 - a new confirm dialog if number of files to synchronize is like a new task
-	- sometimes a remote server or local disk is unavailable, rsync might believe this is a new full synchronize and a dialog either confirm synchronize or abort
+	- sometimes a remote server or local disk is unavailable, rsync might believe this is a new full synchronize and a dialog confirms synchronize or abort
+	- the feature to be switch on off in usersettings
+	- if a remote server is unavailable rsync will most likely complain and throw an error, if a local disk is not attached rsync will try to synchronize data to `/Volumes/` catalog on your mac
 
 The documentation is updated with  screenshots, also tweaked views from version 1.8.1, which is to be released in January 2024. Hoover the mouse over the toolbar shows a short message of what the action is.
 
