@@ -17,7 +17,12 @@ There are a few more minor GUI enhancements and tweaks. And cleaning of code, re
 - a new confirm dialog if number of files to synchronize is like a new task
 	- sometimes a remote server or local disk is unavailable, rsync might believe this is a new full synchronize and a dialog confirms synchronize or abort
 	- the feature to be switch on off in usersettings
-	- if a remote server is unavailable rsync will most likely complain and throw an error, if a local disk is not attached rsync will try to synchronize data to `/Volumes/` catalog on your mac
+	- if a remote server is unavailable rsync will most likely complain and throw an error
+	- if a local disk is not attached rsync will try to synchronize data to `/Volumes/` catalog on your mac, this catalog is normally where macOS mounts local attached disks
+```bash
+/dev/disk5s2 on /Volumes/Import bilder (apfs, local, nodev, nosuid, journaled, noowners)
+/dev/disk6s1 on /Volumes/Backups (apfs, local, nodev, nosuid, journaled, noowners)
+```
 
 The documentation is updated with  screenshots, also tweaked views from version 1.8.1, which is to be released in January 2024. Hoover the mouse over the toolbar shows a short message of what the action is.
 
