@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
 title = "Changelog"
-date = "2023-11-10"
+date = "2023-12-24"
 tags = ["changelog"]
 categories = ["general information"]
-lastmod =  "2023-11-12"
+lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 

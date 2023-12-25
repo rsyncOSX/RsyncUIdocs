@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
-date = "2022-05-01"
+date = "2023-12-23"
 title =  "How are the apps built?"
 tags = ["built"]
 categories = ["general information"]
-lastmod = "2023-01-03"
+lastmod = "2023-12-23"
 +++
 *Under development.* This page is an overview of the main components of RsyncUI and some of RsyncOSX as well. The development of the apps has been an evolving process. The open source community has been and still is a great resource for ideas and how to solve specific tasks. Both apps today are stable and in a state of maintenance. Some numbers:
 
@@ -19,6 +19,8 @@ Which application should I use? Both applications do the same job, but RsynUI is
 
 Even though I am an educated IT person, most of my professional work has been as an IT manager and not a developer. Most of my coding experience is with private projects such as RsyncOSX and RsyncUI. Google is and has been a great resource for research and advice on how to solve specific problems. Reading about other developers code and discussions is always valuable input for me. The MVC pattern and single source of truth are important patterns for both apps. I have also tried to use all Apple Frameworks, utilizing most of the required built-in functions, like sorting or filter algorithms. And even if there are many lines of code in both apps, I have tried to write as little code as possible. So if you are looking at my code, keep this in mind, my code is only one of probably many ways to solve a problem.
 
+There is only some info further about RsyncOSX. RsyncOSX is stable for many years and it does the job. But parts of the source code is due for a revision and rewrite. The future is RsyncUI and source code in RsyncOSX is frozen. Only bugs are fixed. All ideas about QA and changes of code in RsyncOSX is implemented in RsyncUI. 
+
 # RsyncUI vs RsyncOSX
 
 For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: *SwiftUI*, which RsyncUI is developed by, is the future. This means new development is on RsyncUI. RsyncOSX is still maintained, but only issues have been fixed. RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. Both apps utilise another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration.
@@ -30,27 +32,13 @@ For the moment, there are more users of RsyncOSX than of RsyncUI. But the number
 
 SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
 
-# RsyncUI, SwiftUI
+# RsyncOSX,
+
+There is only some info [about RsyncOSX and built info](/post/builtrsyncosx/).
+
+# SwiftUI
 
 *RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are property wrappers to create bindings to mutable properties.
-
-# RsyncOSX, Storyboard
-
-*RsyncOSX* utilizes *Storyboard*, which is a tool for graphical design of views. UI components like buttons, tables and other UI components are added and placed within the view by the developer utilizing Xcode. After design all UI components are connected by creating bindings to Swift code. The developer manually adds a reference to the Swift source code for every view within the Storyboards and the UI components within the views. If the developer misses to bind a UI component, the app will crash with an nil pointer exception every time that view is exposed.
-
-## Storyboard for the tab views
-
-Xcode supports multiple storyboards. For RsyncOSX there is created two storyboards, *tab views* which are the main views and *sheetviews* which are pop-up views.
-
-{{< figure src="/images/Xcode/storyboard1.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-## Storyboard for the sheetviews
-
-And for every UI component within a storyboard it is requiered to manually bind it. And then there are constraints to control where UI components are placed and position when the UI is resized.
-
-{{< figure src="/images/Xcode/storyboard2.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-To be honest, it is way easier to work with SwiftUI and not Storyboards. 
 
 # Asynchronous execution 
 
@@ -80,10 +68,6 @@ Combine, a *declarative* library by Apple, makes the code easy to write and easy
 - [the process object](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) for executing tasks
 - debouncing input from user
 
-# Start of RsyncOSX
-
-The start of RsyncOSX starts with the attribute `@NSApplicationMain` which kicks off everything. Within the Storyboard, the entry point is marked, and the view is binded with the Switf code to start the application. The Toolbar is programmatically constructed, which makes it easier to change vs. designing it on the Storyboard.
-
 # Start of RsyncUI
 
 The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/documentation/SwiftUI/App). There is only one entrance point, `@main`, in RsyncUI. The `@main` initialises the app, setup of the menubar, and opens the navigation bar which is the main user start for the app.
@@ -92,29 +76,25 @@ The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/
 
 Parts of the model is equal, but there are some differences due to the fact that SwiftUI views are *value types*, structs, and not *reference types*, classes, as in Storyboard and Swift. The model is also responsible for informing the views when there are changes. Both apps share basic functions like reading and writing data from the store, updating the model, and so on. The memory footprint of tasks is minimal. Data for tasks are kept in memory for both apps during their lifetime. The memory footprint for logs will grow over time as new logs are created and stored. But logs are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
 
-# RsyncUI
-
-The following are for RsyncUI and SwiftUI. No more details about RsyncOSX.
-
-## Property wrapper for objects
+# Property wrapper for objects
 
 With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `@Observable` macro. On previous macOS versions, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, are used to create binding to mutable properties. The new macro simplifies how to create bindings and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of `@Observable` objects. 
 
-## Environment property
+# Environment property
 
 Data for tasks are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views  within the view hierarchy by the `.environment` property on *macOS Sonoma* and  by the `.environmentObject` property on previous versions of macOS. The property makes the data global available for views. The `@Bindable` property wrapper is also, on macOS Sonoma, used for creating bindings to the mutable properties of `@Observable` objects.
 
 All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `@State` object on macOS Sonoma, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
 
-## Breaking change
+# Breaking change
 
 The `@Observable` macro is a breaking change. It is not possible to include the new macro in code and support older macOS versions as Monterey and Ventura. There are also som other changes and new properties which also makes it difficult to include new features in code and still support previous versions of macOS. The new Observation framework is a new implementation of the observer design pattern and removes the need for including Combine. Combine itself is still used in the RsyncUI.
 
-## Combine and SwiftUI
+# Combine and SwiftUI
 
 There is no need for Combine in combination with the new  `@Observable` macro, but Combine is used in a couple of SwiftUI views to debounce text input from the user. The user input is a search or filter string and by default the userinput is a `@State` string variable. The view reacts on the input by every keypress and the filter algorithm is triggered by every keypress. This causes a sluggish user interface, but by debounce input by *one second* causes the filter algorithm only update after the *one second* debounce.
 
-## OSLog
+# OSLog
 
 Included in Swift 5 there is a unified logging feature `OSLog`. There are several methods for logging and investigate what the application is up to. By using OSLog there is no need for print statements to follow execution. All logging is by utilizing OSLog displayed as part of Xcode. The `Process` objects are where all the real work is done. OSLog is  included in all objects which perform work and it is very easy to check which commands RsyncUI are executing.
 
@@ -126,7 +106,7 @@ And the OSLogs might be read by using the Console app. Be sure to set the Action
 
 {{< figure src="/images/Xcode/console.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Navigation
+# Navigation
 
 The main navigation, when RsyncUI starts, is by a `NavigationSplitView`: *A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.* RsyncUI utilizes two columns. Left column for main functions and the right column for details about each main function.  The details part is computed every time the user select a function like the Synchronize view, Tasks view and so on. The navigation within usersetting is also by `NavigationSplitView`.
 
