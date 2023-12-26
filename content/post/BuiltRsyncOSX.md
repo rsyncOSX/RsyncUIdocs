@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
-date = "2022-05-01"
+date = "2021-01-01"
 title =  "How are RsyncOSX built?"
 tags = ["built"]
 categories = ["general information"]
-lastmod = "2023-01-01"
+lastmod = "2021-01-01"
 +++
 
 This is only a very short overview of some details about RsyncOSX.

@@ -32,7 +32,7 @@ For the moment, there are more users of RsyncOSX than of RsyncUI. But the number
 
 SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
 
-# RsyncOSX,
+# RsyncOSX
 
 There is only some info [about RsyncOSX and built info](/post/builtrsyncosx/).
 
