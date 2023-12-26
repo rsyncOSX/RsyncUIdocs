@@ -139,8 +139,22 @@ var body: some View {
                     makeView(view: which.task)
             }
         }
+        
+    @ViewBuilder
+    func makeView(view: DestinationView) -> some View {
+        switch view {
+        case .executestimatedview:
+            ExecuteEstimatedTasksView(selecteduuids: $selecteduuids,
+                                      reload: $reload,
+                                      path: $path)
+                .environmentObject(executeprogressdetails)
+        case .executenoestimatetasksview:
+           ...
+        case .estimatedview:
+           ...
+        }
     }
- }
+}
  
  enum DestinationView: String, Identifiable {
     case executestimatedview, executenoestimatetasksview,
