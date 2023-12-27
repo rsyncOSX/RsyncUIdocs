@@ -27,12 +27,6 @@ Select tasks to be deleted and delete from the Edit menu or the `backspace` butt
 
 {{< figure src="/images/add/delete.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-## Profiles
-
-Either add or delete profiles. A profile is only a catalog where data about tasks are saved. See tag about `config-file` where RsyncUI stores files.
-
-{{< figure src="/images/add/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
-
 ## Data about tasks
 
 The following are data about tasks:
@@ -60,6 +54,19 @@ The following are data about tasks:
   - username for login to remote server
 - Remote server:
   - either server name or IP-address for remote server
+  
+## Catalogs
+
+Selecting the `Home` icon lists all catalogs from your `$Home`. If there is attached a local disk, the first name of volume is automatically copied to the destination.
+
+{{< figure src="/images/add/homecatalogs.png" alt="" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/images/add/volumes.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+## Profiles
+
+Either add or delete profiles. A profile is only a catalog where data about tasks are saved. See tag about `config-file` where RsyncUI stores files.
+
+{{< figure src="/images/add/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
   
 ## Shell commands
 
