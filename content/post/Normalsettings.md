@@ -69,7 +69,7 @@ Sample of error in output from rsync. If switch `Check for error in output` is o
 
 ### Confirm execute
 
-The new confirm dialog if number of files to synchronize is like a new task. Sometimes a remote server or local disk is unavailable or forgotten to attach. If you commence a synchronize task unaware of destination resource is not available, rsync might believe this is a new full synchronize and a dialog confirms synchronize or abort
+The confirm dialog if number of files to synchronize is like a new task. Sometimes a remote server or local disk is unavailable or forgotten to attach. If you commence a synchronize task unaware of destination resource is not available, rsync might believe this is a new full synchronize and a dialog confirms synchronize or abort
 - if a remote server is unavailable rsync will *most likely* complain and throw an error, if `check for error in output` in user settings is enabled, the rsync error messages written to log and an Alert informing about it will occur
 - if a local disk is not attached rsync will try to synchronize data to `/Volumes/` catalog on your mac, this catalog is normally where macOS mounts local attached disks
 ```bash
