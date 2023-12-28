@@ -8,9 +8,9 @@ lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
 
-## Version 1.8.1 (build 91) - not yet released
+## Version 1.8.1 (build 91) release candidate - 28 December 2023
 
-To be released sometime in January 2024. The documentation is updated with  screenshots, also tweaked views from version 1.8.1, which is to be released in January 2024. Hoover the mouse over the toolbar shows a short message of what the action is.
+To be released  in January 2024. The documentation is updated with  screenshots, also tweaked views from version 1.8.1. Hoover the mouse over the toolbar shows a short message of what the action is.
 
 There are a few more minor GUI enhancements and tweaks. And cleaning of code, remove unused code and updates where needed. If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
