@@ -38,7 +38,7 @@ Please be aware it is an external task not controlled by RsyncUI, which executes
 
 ## RsyncUI vs RsyncOSX
 
-Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma?** Go for RsyncUI. And for the last year and years to come, all development has been and will be within RsyncUI. RsyncOSX is maintained, but only for bug fixes. There is some info about how [RsyncUI is built](/post/built/).
+Which application should I use? Both applications do the same job, but RsyncUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma?** Go for RsyncUI. And for the last year and years to come, all development has been and will be within RsyncUI. RsyncOSX is maintained, but only for bug fixes. There is some info about how [RsyncUI is built](/post/built/).
 
 ## New tasks, verify task and synchronizing data
 
