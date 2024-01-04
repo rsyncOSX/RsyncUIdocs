@@ -6,7 +6,13 @@ tags = ["changelog"]
 categories = ["general information"]
 lastmod =  "2023-12-24"
 +++
-RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). Please see info about [the latest version of rsync in install](/post/rsync/).
+RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). 
+
+## Version 1.8.2 (build 92) - not yet released
+
+There are a few minor updates and enhancements in next version. Cleanup of code, remove duplications in code, fixed some actions and some GUI updates. To be released later in January 2024.
+
+If you want to compile and test your own version, just [follow the compile instructions](/post/compile/) after downloading or forking the source. The [main repository](https://github.com/rsyncOSX/RsyncUI)  is updated with latest changes.
 
 ## Version 1.8.1 (build 91) - 29 December 2023
 
@@ -24,9 +30,6 @@ There are a few more minor GUI enhancements and tweaks. And cleaning of code, re
 /dev/disk5s2 on /Volumes/Import bilder (apfs, local, nodev, nosuid, journaled, noowners)
 /dev/disk6s1 on /Volumes/Backups (apfs, local, nodev, nosuid, journaled, noowners)
 ```
-
-If you want to compile and test your own version, just [follow the compile instructions](/post/compile/) after downloading or forking the source. The [main repository](https://github.com/rsyncOSX/RsyncUI)  is updated with latest changes. It is easy and you dont need any experience with Swift or SwiftUI to do it.
-
 ## Version 1.8.0 (build 90) - 18 December 2023
 
 Important: **all** functions within every view are now icons on the toolbar, upper right. Major functions are colored blue.
