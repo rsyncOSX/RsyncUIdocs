@@ -21,6 +21,14 @@ Even though I am an educated IT person, most of my professional work has been as
 
 There is only some info further about RsyncOSX. RsyncOSX is stable for many years and it does the job. But parts of the source code is due for a revision and rewrite. The future is RsyncUI and source code in RsyncOSX is frozen. Only bugs are fixed. All ideas about QA and changes of code in RsyncOSX is implemented in RsyncUI. 
 
+# Why not App Store
+
+One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox and one restriction is not allowed to access local .dotfiles outside catalogs like the Documents catalog. One important feature for RsyncUI is passwordless login by ssh to remote servers. Passwordless login by ssh is by ssh-keys and default ssh-key is:
+```bash
+~/.ssh/id_rsa
+```
+The App Sandbox capability is set off and access local files on. This is the only way to get RsyncUI working as expected. In theory I could make a version for local attached disks only and using SwiftData only. But then there is two versions again which are difficult to keep in sync. The sequrity for RsyncUI is the app is Notarized and Signed by Apple. 
+
 # RsyncUI vs RsyncOSX
 
 For the moment, there are more users of RsyncOSX than of RsyncUI. But the number of users of RsyncUI is growing. And Apple is clear: *SwiftUI*, which RsyncUI is developed by, is the future. This means new development is on RsyncUI. RsyncOSX is still maintained, but only issues have been fixed. RsyncUI and RsyncOSX share most of the code for the model components. The main differences between the two apps are the user interface (UI) and how the UI is built. Both apps utilise another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration.
