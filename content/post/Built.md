@@ -27,7 +27,12 @@ One important requirement for macOS apps on Apple App Store is, quote Apple: *"T
 ```bash
 ~/.ssh/id_rsa
 ```
-The App Sandbox capability is set off and access local files on. This is the only way to get RsyncUI working as expected. In theory I could make a version for local attached disks only and using SwiftData only. But then there is two versions again which are difficult to keep in sync. The sequrity for RsyncUI is the app is Notarized and Signed by Apple. 
+The App Sandbox capability is set off and access local files on. This is the only way to get RsyncUI working as expected. In theory I could make a version for local attached disks only and by using SwiftData only. But then there is two versions again which are difficult to keep in sync. The sequrity for RsyncUI not containing malicious code is by [signed and notarized by Apple](/post/notarized/). 
+
+RsyncUI is also storing data in a .dotfile catalog.
+```bash
+$HOME/.rsyncosx/macserialnumber/configurations.json
+```
 
 # RsyncUI vs RsyncOSX
 
@@ -176,6 +181,25 @@ struct Tasks: Hashable, Identifiable {
     var task: DestinationView
 }
 ```
+# ContentUnavailableView
 
+In macOS 14 and SwiftUI there is a new view `ContentUnavailableView` to notify the user when there is nothing to show. There are several options for informing and within RsyncUI the view is utlized in combination with filter search. One example is search for records in snapshot:
 
+```bash
+if logrecords.count == 0,
+           selectedconfig != nil,
+           selectedconfig?.task == SharedReference.shared.snapshot,
+           snapshotdata.snapshotlist == false
+        {
+            ContentUnavailableView {
+                Label("There are no snapshot records by this search string in Date or Tag",
+                      systemImage: "doc.richtext.fill")
+            } description: {
+                Text("Change search string to filter records")
+            }
+        }
+```
+{{< figure src="/images/Xcode/contentavailable.png" alt="" position="center" style="border-radius: 8px;" >}}
+After filter no records:
+{{< figure src="/images/Xcode/contentunavailable.png" alt="" position="center" style="border-radius: 8px;" >}}
 
