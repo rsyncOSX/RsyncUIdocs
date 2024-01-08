@@ -8,13 +8,18 @@ lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). 
 
-## Version 1.8.2 (build 92) - not yet released
+## Version 1.8.2 (build 92) - 8 January 2024
 
-To be released later in January 2024.
+This is maintenance release including a few minor enhancements: 
 
-There are a few minor updates and enhancements in next version. Cleanup of code, remove duplications in code, fixed some actions and some GUI updates. And a new filter search in Snapshots. And where there are filter search the new SwiftUI `ContentUnavailableView` is used to inform when there are no match for filter. This is one example of what is new in macOS 14 and SwiftUI, which makes development in SwiftUI great and fun.
-
-If you want to compile and test your own version, just [follow the compile instructions](/post/compile/) after downloading or forking the source. The [main repository](https://github.com/rsyncOSX/RsyncUI)  is updated with latest changes.
+- cleanup and remove duplicates in code
+- fixed some toolbar actions and updated some of the icons on the toolbar
+- new filtersearch in snapshots
+- converted the last `ObservableObject` with the new `Observation` macro
+	- property wrappers for create binding to mutable properties in SwiftUI
+- the new `ContentUnavailableView` is used to inform when there are no match for filter search
+	- there are filter search in tasks, logrecords and snapshots
+- and fixed a couple of minor bugs as well
 
 ## Version 1.8.1 (build 91) - 29 December 2023
 
