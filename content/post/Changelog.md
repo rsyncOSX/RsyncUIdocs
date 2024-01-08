@@ -21,6 +21,8 @@ This is maintenance release including a few minor enhancements:
 	- there are filter search in tasks, logrecords and snapshots
 - and fixed a couple of minor bugs as well
 
+If you hoover the mouse over a toolbar icon, it will display a short message about which function is behind the icon. Just give it a second to display the message.
+
 ## Version 1.8.1 (build 91) - 29 December 2023
 
 The documentation is updated with  screenshots. Hoover the mouse over the toolbar shows a short message of what the action is.
