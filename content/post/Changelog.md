@@ -6,7 +6,7 @@ tags = ["changelog"]
 categories = ["general information"]
 lastmod =  "2023-12-24"
 +++
-RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary). 
+RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
 ## Version 1.8.2 (build 92) - 8 January 2024
 
@@ -16,7 +16,7 @@ This is maintenance release including a few minor enhancements:
 - fixed some toolbar actions and updated some of the icons on the toolbar
 - new filtersearch in snapshots
 - converted the last `ObservableObject` with the new `Observation` macro
-	- property wrappers for create binding to mutable properties in SwiftUI
+	- property wrapper to create binding to mutable properties in SwiftUI
 - the new `ContentUnavailableView` is used to inform when there are no match for filter search
 	- there are filter search in tasks, logrecords and snapshots
 - and fixed a couple of minor bugs as well
@@ -25,9 +25,7 @@ If you hoover the mouse over a toolbar icon, it will display a short message abo
 
 ## Version 1.8.1 (build 91) - 29 December 2023
 
-The documentation is updated with  screenshots. Hoover the mouse over the toolbar shows a short message of what the action is.
-
-There are a few more minor GUI enhancements and tweaks. And cleaning of code, remove unused code and updates where needed. If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
+There are a few more minor GUI enhancements and tweaks. And cleaning of code, remove unused code and updates where needed. 
 
 - the adding tasks includes a list of all catalogs from your `$Home` catalog, if there is attached a drive the volume name is automatically copied to destination
 - a new confirm dialog if number of files to synchronize is like a new task
