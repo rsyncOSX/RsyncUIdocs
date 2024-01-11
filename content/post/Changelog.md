@@ -8,6 +8,12 @@ lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+## Version 1.8.5 (build 93) - not yet released
+
+The internal naming of logrecords in the model in RsyncUI, including the physical file for saving logrecords, is changed to support understanding of what it is. Much of the model part was imported from RsyncOSX, and due to the history of RsyncOSX, the naming in RsyncUI was inconvenient. RsyncUI takes care of automatically copying and creating new files for log records. The change is a kind of *breaking* change; you have to choose either to use RsyncUI or RsyncOSX. Not both. My advice is, of course, to use RsyncUI.
+
+There is a bug in the Confetti view and the FirstTime view for new users of RsyncUI. The bug is not resolved, and the Confetti is removed from RsyncUI. Confetti was an external package imported into RsyncUI.
+
 ## Version 1.8.2 (build 92) - 8 January 2024
 
 This is maintenance release including a few minor enhancements: 
