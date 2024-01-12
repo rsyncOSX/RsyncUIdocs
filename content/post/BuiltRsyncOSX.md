@@ -1,7 +1,7 @@
 +++
 author = "Thomas Evensen"
 date = "2021-01-01"
-title =  "How are RsyncOSX built?"
+title =  "Short about RsyncOSX?"
 tags = ["built"]
 categories = ["general information"]
 lastmod = "2021-01-01"
