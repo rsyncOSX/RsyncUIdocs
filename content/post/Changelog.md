@@ -13,16 +13,18 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 Work in progress, summarized:
 
 - internal naming logrecords and physical file for saving is changed and completed
-- the work with SwiftData is commenced and I have to study what and how about SwidData myself
+- the work on *SwiftData* is commenced, but I have to study what and understand how to use it myself
+	- if success on SwiftData there might be a minor version of RsyncUI on App Store, by minor means only default version of rsync on macOS and attached disks only
+	- the full version of RsyncUI will always be available on Homebrew
 - Confetti in FirsTime view is removed due to a bug in external code for Confetti
 
 Some details:
 
 The internal naming of logrecords in the model in RsyncUI, including the physical file for saving logrecords, is changed to support understanding of what it is. Much of the model part was imported from RsyncOSX, and due to the history of RsyncOSX, the naming in RsyncUI was inconvenient. RsyncUI takes care of automatically copying and creating new files for log records. The change is a kind of *breaking* change; you have to choose either to use RsyncUI or RsyncOSX. Not both. My advice is, of course, to use RsyncUI.
 
-*SwiftData* - I have commenced the work in this release to see if SwiftData might be beneficial for RsyncUI. There are only three files saved to storage from RsyncUI, data about tasks, logrecords and user settings. Those data might be enabled to utilize SwiftData and if so RsyncUI might be available from the Apple App Store as well. This is due to App Sandbox capability and what is allowed and not allowed inside an App Sandbox. Reading and writing files from a .dotcatalog on a users home directory is not allowed which RsyncUI does now. The work is commenced. What is requiered first is to update the internal dataflow before introducing SwiftData for RsyncUI.
+*SwiftData* - I have commenced the work in this release to see if SwiftData might be beneficial for RsyncUI. There are only three files saved to storage from RsyncUI, data about tasks, logrecords and user settings. Those data might be enabled to utilize SwiftData and if so RsyncUI might be available from the Apple App Store as well. This is due to App Sandbox capability and what is allowed and not allowed inside an App Sandbox. Reading and writing files from a `.dotcatalog` on a users home directory is not allowed which RsyncUI does now. The work is commenced. What is requiered first is to update the internal dataflow before introducing SwiftData for RsyncUI.
 
-*If SwiftData* is enabled, there will be two versions of RsyncUI, one for Homebrew as today and one for the App Store utlizing only attached discs and default version of rsync. I have just commenced learning about SwifData and a new version might be ready sometime late in February 2024.
+If a *SwiftData* version is enabled, there will be two versions of RsyncUI, one for Homebrew as today and one for the App Store utlizing only attached discs and default version of rsync. I have just commenced learning about SwifData and a new version might be ready sometime late in February 2024.
 
 There is a bug in the Confetti view and the FirstTime view for new users of RsyncUI. The bug is not resolved, and the Confetti is removed from RsyncUI. Confetti was an external package imported into RsyncUI.
 
