@@ -193,7 +193,7 @@ After filter no records:
 
 # Dataflow in RsyncUI
 
-How is data stored and views updated when data is changed. There are three files on permanent storage; tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and and decode is requiered to represent JSON data as internal data within RsyncUI. 
+How is data stored and views updated when data is changed? There are three files on permanent storage; tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and and decode is requiered to represent JSON data as internal data within RsyncUI. 
 
 When RsyncUI starts it reads *user configuration* and *data about tasks for the default profile*. The object holding data about tasks is an `@Observable` object created when RsyncUI starts.
 
@@ -206,3 +206,17 @@ var rsyncUIdata: RsyncUIconfigurations {
     }
 ```
 All views which require data about tasks get data through a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([Configuration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
+
+# How are tasks executed?
+
+There are several ways to execute tasks:
+
+- two double clicks on a task, first is an estimate run and second is the real run
+- select task(s) and either estimate first or execute without estimation
+- estimate first all tasks and then execute or execute all tasks without estimation
+
+The following is a brief overview of *estimate first and then execute tasks*. The difference between an estimation run and a real run is; estimation run is a `--dryn-run` and there is no logging. An estimation run is commenced by selecting the *wand and stars* icon or shortcut `⌘E` from the main view. The navigation path for estimate all view is pushed onto the view stack and a progress informes which tasks are estimated. For each task the result of the estimation run is saved. After estimation RsyncUI marks tasks where there is data to synchronize. 
+
+The user then select synchronize tasks and the navigation path for executing tasks including progress of each is pushed onto the view stack. From this view the reference of the class with data from estimation is passed onto the class which executes the tasks. The id for each task is pushed onto a stack and the class executing tasks is not released until the stack is emtpy and a process termination signal is observed from the last task. The progess of synchronising is communicated to the progress view by an *escaping closure*, `@escaping (Int) -> Void)`. 
+
+There are of course a few more details happening during estimating and synchronizing of data. The above is a very hich level info, for more details study the source.
