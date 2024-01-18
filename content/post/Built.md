@@ -191,3 +191,18 @@ if logrecords.count == 0,
 After filter no records:
 {{< figure src="/images/Xcode/contentunavailable.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+# Dataflow in RsyncUI
+
+How is data stored and views updated when data is changed. There are three files on permanent storage; tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and and decode is requiered to represent JSON data as internal data within RsyncUI. 
+
+When RsyncUI starts it reads *user configuration* and *data about tasks for the default profile*. The object holding data about tasks is an `@Observable` object created when RsyncUI starts.
+
+```bash
+var rsyncUIdata: RsyncUIconfigurations {
+        let configurationsdata = ReadConfigurationsfromstore(selectedprofile)
+        return RsyncUIconfigurations(selectedprofile,
+                                     configurationsdata.configurations ?? [],
+                                     configurationsdata.validhiddenIDs)
+    }
+```
+All views which require data about tasks get data through a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([Configuration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
