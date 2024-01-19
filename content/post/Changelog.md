@@ -13,6 +13,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 Work in progress, summarized:
 
 - internal naming logrecords and physical file for saving is changed and completed
+- user settings now discover self if parameters and data is changed and autosaves if changed, no need for explicit save changes
 - the work on *SwiftData* is commenced, but I have to study what and understand how to use it myself
 	- if success on SwiftData there might be a minor version of RsyncUI on App Store, by minor means only default version of rsync on macOS and attached disks only
 	- the full version of RsyncUI will always be available on Homebrew
