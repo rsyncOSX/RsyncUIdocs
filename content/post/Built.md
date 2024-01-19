@@ -10,7 +10,7 @@ lastmod = "2023-12-23"
 
 | App      | Lines of code | Swift files | Version 1.0 |
 | ----------- | ----------- |   ----------- | -------- |
-| RsyncUI   | about 13.4K     | about 163       | 6 May 2021 |
+| RsyncUI   | about 13.2K     | about 163       | 6 May 2021 |
 | RsyncOSX   | about 11K   | about 121      | 14 March 2016 |	
 
 Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma?** Go for RsyncUI. And for the last year and years to come, all development has been and will be within RsyncUI. RsyncOSX is bugfixed only.
@@ -21,18 +21,19 @@ Even though I am an educated IT person, most of my professional work has been as
 
 And I believe there is no wright or wrong in development. Each developer and team chooses their way to developed based on their skills and what they want to achieve. I know my own code and I have no issues understanding what my code is doing. And as times go on, in my opinion, I do changes in code to the better. But I fully understand other developers might have some issues understanding my code. 
 
-# Why not App Store
+# Why not App Store (yet)
 
 One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox and one restriction is not allowed to access local .dotfiles outside catalogs like the Documents catalog. One important feature for RsyncUI is passwordless login by ssh to remote servers. Passwordless login by ssh is by ssh-keys and default ssh-key is:
 ```bash
 ~/.ssh/id_rsa
 ```
-The App Sandbox capability is set off and access local files on. This is the only way to get RsyncUI working as expected. In theory I could make a version for local attached disks only and by using SwiftData only. But then there is two versions again which are difficult to keep in sync. The sequrity for RsyncUI not containing malicious code is by [signed and notarized by Apple](/post/notarized/). 
+The App Sandbox capability is set off and access local files on. This is the only way to get the latest version of RsyncUI working as expected. The sequrity for RsyncUI not containing malicious code is by [signed and notarized by Apple](/post/notarized/). 
 
 RsyncUI is also storing data in a .dotfile catalog.
 ```bash
 $HOME/.rsyncosx/macserialnumber/configurations.json
 ```
+But there might be a version for RsyncUI on App Store later in 2024. I have commenced the work on integrating SwiftData and a limited version of RsyncUI might find it way to the App Store.
 
 # RsyncUI vs RsyncOSX
 
