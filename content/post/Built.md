@@ -74,7 +74,7 @@ Combine, a *declarative* library by Apple, is utilized in several parts of Rsync
 - [read json ](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) configuration file for tasks
 - [write json](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configuration file for tasks
 - [observing signals](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) within the process object
-- debouncing user input from user, filter strings and other values which are validated before saving
+- debouncing input from user, filter strings and other values which are validated before saving
 
 Combine is utilized in all read and write of data to permanent storage, configurations, logrecords and user configuration. The user input for search or filter is by default a `@State` string variable. The view reacts on the input by every keypress and the filter algorithm is triggered by every keypress. This causes a sluggish user interface, but by debounce input by *a second* causes the filter algorithm only to update the view after the debounce period.
 
@@ -220,4 +220,38 @@ The following is a brief overview of *estimate first and then execute tasks*. Th
 
 The user then select synchronize tasks and the navigation path for executing tasks including progress of each is pushed onto the view stack. From this view the reference of the class with data from estimation is passed onto the class which executes the tasks. The id for each task is pushed onto a stack and the class executing tasks is not released until the stack is emtpy and a process termination signal is observed from the last task. The progess of synchronizing is communicated to the progress view by an *escaping closure*, `@escaping (Int) -> Void)`. 
 
-There are of course a few more details happening during estimating and synchronizing of data. The above is a very hich level info, for more details study the source.
+```bash
+func executemultipleestimatedtasks() {
+        var uuids: Set<Configuration.ID>?
+        if selecteduuids.count > 0 {
+            uuids = selecteduuids
+        } else if executeprogressdetails.estimatedlist?.count ?? 0 > 0 {
+            let uuidcount = executeprogressdetails.estimatedlist?.compactMap { $0.id }
+            uuids = Set<Configuration.ID>()
+            for i in 0 ..< (uuidcount?.count ?? 0) where
+                executeprogressdetails.estimatedlist?[i].datatosynchronize == true
+            {
+                uuids?.insert(uuidcount?[i] ?? UUID())
+            }
+        }
+        guard (uuids?.count ?? 0) > 0 else { return }
+        if let uuids = uuids {
+            multipletaskstate.updatestate(state: .execute)
+            ExecuteMultipleTasks(uuids: uuids,
+                                 profile: rsyncUIdata.profile,
+                                 rsyncuiconfigurations: rsyncUIdata,
+                                 multipletaskstateDelegate: multipletaskstate,
+                                 executeprogressdetailsDelegate: executeprogressdetails,
+                                 filehandler: filehandler,
+                                 updateconfigurations: updateconfigurations)
+        }
+    }
+    
+     func filehandler(count: Int) {
+        progress = Double(count)
+    }
+
+    func updateconfigurations(_ configurations: [Configuration]) {
+        rsyncUIdata.configurations = configurations
+    }
+```
