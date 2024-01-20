@@ -74,7 +74,7 @@ Combine, a *declarative* library by Apple, is utilized in several parts of Rsync
 - [read json ](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) configuration file for tasks
 - [write json](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configuration file for tasks
 - [observing signals](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) within the process object
-- [debouncing user input](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Views/LogRecords/LogsbyConfigurationView.swift) from user (filter string)
+- debouncing user input from user, filter strings and other values which are validated before saving
 
 Combine is utilized in all read and write of data to permanent storage, configurations, logrecords and user configuration. The user input for search or filter is by default a `@State` string variable. The view reacts on the input by every keypress and the filter algorithm is triggered by every keypress. This causes a sluggish user interface, but by debounce input by *a second* causes the filter algorithm only to update the view after the debounce period.
 
@@ -194,7 +194,7 @@ After filter no records:
 
 # Dataflow in RsyncUI
 
-How is data stored and views updated when data is changed? There are three files on permanent storage; tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and and decode is requiered to represent JSON data as internal data within RsyncUI. 
+How is data stored and views updated when data is changed? There are three files on permanent storage; tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and decode is requiered to represent JSON data as internal data within RsyncUI. 
 
 When RsyncUI starts it reads *user configuration* and *data about tasks for the default profile*. The object holding data about tasks is an `@Observable` object created when RsyncUI starts.
 
