@@ -6,11 +6,13 @@ tags = ["passwordless","rsync daemon"]
 categories = ["remote servers"]
 lastmod = "2020-07-16"
 +++
-With a few tweaks it is possible to get RsyncOSX working with rsync daemon. Be aware of not utilizing ssh, transfer of data is not encrypted. This is might not a problem on a local network, but I would not advise it on a public network. Also be aware of **snapshot is not possible** with a rsync daemon setup.
+RsyncUI does not support a rsync daemon setup. Passwordless connections is by ssh-keys. But you might get it to work by following this guide. 
 
-Setting up a rsync daemon setup require a server side setup and some tweaks in RsyncOSX.
+With a few tweaks it is possible to get RsyncUI working with rsync daemon. Be aware of not utilizing ssh, transfer of data is not encrypted. This is might not a problem on a local network, but I would not advise it on a public network. Also be aware of **snapshot is not possible** with a rsync daemon setup.
 
-## Server setup
+Setting up a rsync daemon setup require a server side setup and some tweaks in RsyncUI.
+
+# Server setup
 
 The sample setup below is based upon a Ubuntu 19.04 server. How to get the rsync daemon up and running on the Ubuntu server is not part of this document. The rsync daemon on the server is setup to listen on port 873. It is also advised that the versions of rsync are equal on both client and server. There are two solutions for enabling a rsync daemon connection. For both setup of `/etc/rsyncd.conf` serverside is required.
 
@@ -41,11 +43,11 @@ user2:password_for_user2
 
 The rsync daemon has to be started on the server. There are several methods to automatically start the rsync daemon. For a test you can execute `sudo rsync --daemon` to start rsync as a daemon on the server.
 
-## RsyncUI setup
+# RsyncUI setup
 
-There are two methods in RsyncOSX to enable rsync daemon setup. One is to prefix the username and the second is to use a double colon. Both are demonstrated below.
+There are two methods in RsyncUI to enable rsync daemon setup. One is to prefix the username and the second is to use a double colon. Both are demonstrated below.
 
-## Prefix username in RsyncUI
+# Prefix username in RsyncUI
 
 Within the edit view:
 
@@ -56,7 +58,7 @@ Within the parameter view:
 - in the parameter view, add a full path to the file with password, `--password-file=/Users/thomas/passord.txt`, remember to set `chmod 600` on the password file
 - in the parameter view, delete the `-e ssh` parameter
 
-## Enable the rsync daemon
+# Enable the rsync daemon
 
 All actions is within the parameter view:
 
