@@ -15,8 +15,11 @@ Changes, summarized:
 - internal naming of logrecords and physical file for saving are changed
 	- this is a somewhat big internal change
 	- data from old file logrecords are automatically saved by new filename, including for profiles if profiles is used
+- the internal flow of and loading of data is also changed, the internal datastructure is now an `@Observable` class and data is now made avaliable to other views by a `@Bindable` property
+	- when data is changed the internal data is updated by the `@Bindable` property, views are automatically refreshed and changes are also saved to permanen storage at the same time
 - user settings now discover if parameters and data is changed and autosaves if changed, no need for explicit save changes
 - there is now a possibility to load demo data, loading demodata creates a *DemoData* profile and copy demodata from the RsyncUI GitHub repository
+	- load demo data from the Tasks menu or by shortcut `⌘L`
 - Confetti in FirsTime view is removed due to a bug in external code for Confetti
 
 Some details:
