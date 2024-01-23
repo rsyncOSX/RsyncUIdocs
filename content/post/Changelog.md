@@ -11,10 +11,10 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 ## Version 1.8.5 (build 93) - 23 January 2024
 
 Changes, summarized:
-
 - internal naming of logrecords and physical file for saving are changed
 	- this is a somewhat big internal change
 	- data from old file logrecords are automatically saved by new filename, including for profiles if profiles is used
+	- a kind of *breaking* change; you have to choose either to use RsyncUI or RsyncOSX, my advice is of course use RsyncUI
 - the internal flow of and loading of data is also changed, the internal datastructure is now an `@Observable` class and data is now made avaliable to other views by a `@Bindable` property
 	- when data is changed the internal data is updated by the `@Bindable` property, views are automatically refreshed and changes are also saved to permanen storage at the same time
 - user settings now discover if parameters and data is changed and autosaves if changed, no need for explicit save changes
