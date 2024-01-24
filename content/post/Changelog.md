@@ -10,6 +10,8 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.8.5 (build 93) - 23 January 2024
 
+**One minor bug**: there is a minor non critical issue when adding new tasks, the logrecord after a run is not loaded when viewing logs. *Workaround is add task and restart RsyncUI.* The bug is fixed and a new release will come in a week or two. The issue is for all new tasks added. 
+
 Changes, summarized:
 - internal naming of logrecords and physical file for saving are changed
 	- this is a somewhat big internal change
