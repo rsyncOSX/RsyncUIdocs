@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 **One minor issue**: there is a minor non critical issue when adding new tasks, the logrecord after a run is not loaded when viewing logs. *Workaround is add task and restart RsyncUI.* The bug is fixed and a new release will come in a week or two. **The issue is only when new tasks are added.**
 
-**And a second hickup as well**: To save changes in user settings, do not close the settings view right away, if changes in rsync settings, ssh settings or environment choose the **Info view** before closing the settings view. The issue is fixed in code.  And will be part of an updated release in a week or two. 
+**And a second hickup as well**: To save changes in user settings, do not close the settings view right away, if changes in rsync settings, ssh settings or environment choose the **Info view** before closing the settings view. The issue is fixed in code.  And included in the updated release in a week or two. 
 
 Changes, summarized:
 - internal naming of logrecords and physical file for saving are changed
