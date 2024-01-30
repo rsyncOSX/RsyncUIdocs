@@ -46,6 +46,16 @@ Apple is clear: *SwiftUI*, which RsyncUI is developed by, is the future. This me
 
 SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
 
+# SwiftData
+
+*SwiftData* - I have commenced the work in this release to see if SwiftData might be beneficial for RsyncUI. There are only three files saved to storage from RsyncUI, tasks, log records and user settings. Those data might be enabled to utilize SwiftData and if so RsyncUI might be available from the Apple App Store as well. This is due to App Sandbox capability and what is allowed and not allowed inside an App Sandbox. Reading and writing files from a `.dotcatalog` on a users home directory is not allowed which RsyncUI does now. The work is commenced. What is requiered first is to update the internal dataflow before introducing SwiftData for RsyncUI.
+
+If a *SwiftData* version is enabled, there will be two versions of RsyncUI, one for Homebrew as today and one for the App Store utlizing only attached discs and default version of rsync. I have just commenced learning about SwifData and a new version might be ready sometime late in February or March 2024.
+
+- the work on *SwiftData* is commenced, but I have to study what and understand how to use it myself
+	- if success on SwiftData there might be a minor version of RsyncUI on App Store, by minor means only default version of rsync on macOS and attached disks only
+	- the full version of RsyncUI will always be available on Homebrew
+
 # SwiftUI
 
 *RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are several property wrappers to create bindings to mutable properties.
