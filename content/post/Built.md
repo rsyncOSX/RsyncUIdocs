@@ -48,13 +48,16 @@ SwiftUI is the latest declarative framework developed by Apple for views, contro
 
 # SwiftData
 
-*SwiftData* - I have commenced the work in this release to see if SwiftData might be beneficial for RsyncUI. There are only three files saved to storage from RsyncUI, tasks, log records and user settings. Those data might be enabled to utilize SwiftData and if so RsyncUI might be available from the Apple App Store as well. This is due to App Sandbox capability and what is allowed and not allowed inside an App Sandbox. Reading and writing files from a `.dotcatalog` on a users home directory is not allowed which RsyncUI does now. The work is commenced. What is requiered first is to update the internal dataflow before introducing SwiftData for RsyncUI.
+From Apple Developement Documentations: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*. 
 
-If a *SwiftData* version is enabled, there will be two versions of RsyncUI, one for Homebrew as today and one for the App Store utlizing only attached discs and default version of rsync. I have just commenced learning about SwifData and a new version might be ready sometime late in February or March 2024.
+I have commenced the work on a release of *RsyncGUI*, might be the Apple App Store version of *RsyncUI*, utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage.  Tasks, log records and user settings. Those data might be enabled to utilize SwiftData and if so Rsync(G)UI might be available from the Apple App Store as well. This is due to App Sandbox capability and what is allowed and not allowed inside an App Sandbox. Reading and writing files from a `.dotcatalog` on a users home directory is not allowed which RsyncUI does now.
 
-- the work on *SwiftData* is commenced, but I have to study what and understand how to use it myself
-	- if success on SwiftData there might be a minor version of RsyncUI on App Store, by minor means only default version of rsync on macOS and attached disks only
-	- the full version of RsyncUI will always be available on Homebrew
+If a *SwiftData* version is enabled, there will be two versions of RsyncUI:
+
+- RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
+- RsyncGUI for the Apple App Store utlizing only attached discs and default version of rsync
+
+I have just commenced learning about SwifData and a new public GitHub repository for RsyncGUI is created. Status about development is updated within the Readme file.
 
 # SwiftUI
 
