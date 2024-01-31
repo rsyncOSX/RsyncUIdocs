@@ -8,6 +8,12 @@ lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+## SwiftData 
+
+A [SwiftData version is coming to life](https://github.com/rsyncOSX/RsyncGUI). This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans for the moment to introduce SwiftData for the Homebrew version yet. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalogs` like from `$Home/.ssh` for ssh keys. 
+
+But the downscaled version might be released from Apple App Store. And I am learning about SwiftData developing the downscaled version. And SwiftData might be introduced in the Homebrew version sometime in 2024, but that requiere some development.
+
 ## Version 1.8.6 (build 94) - 30 January 2024
 
 **Important**: the release  fixes the issues in version 1.8.5. Due to refactory of log records it is important you have installed and used version 1.8.5 before installing this release . Version 1.8.6 does **not** include check and copy of old file log records as version 1.8.5 does.
