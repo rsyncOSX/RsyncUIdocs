@@ -44,7 +44,8 @@ I have commenced the work on a release of *RsyncGUI*, which might be the Apple A
 If a *SwiftData* version is enabled, there will be two versions of RsyncUI:
 
 - RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
-- RsyncGUI for the Apple App Store utlizing SwiftData and only for attached discs and default version of rsync
+- RsyncGUI for the Apple App Store utilizing SwiftData and only for attached discs and default version of rsync on macOS Sonoma
+	- requiere approval for distribution from App Store by Apple
 
 I have just commenced learning about SwifData and a new public GitHub repository for RsyncGUI is created. Status about development is updated within the Readme file.
 
