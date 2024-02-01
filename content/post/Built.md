@@ -49,6 +49,26 @@ If a *SwiftData* version is enabled, there will be two versions of RsyncUI:
 
 I have just commenced learning about SwifData and a new public GitHub repository for RsyncGUI is created. Status about development is updated within the Readme file.
 
+## SwiftData and RsyncGUI (not RsyncUI)
+
+[RsyncGUI](https://github.com/rsyncOSX/RsyncGUI) is the SwiftData version of RsyncUI. The name of the app is RsyncGUI, an app name I have previously used for a similar app on Apple App Store. Now this app might be rereleased on the Apple App Store. What is this app compared to the Homebrew version of RsyncUI? RsyncGUI is a downscaled version of RsyncUI. It does not support remote servers or using other versions than the default `rsync` in macOS Sonoma.
+
+- the default `rsync` in macOS Sonoma only
+- synchronize data only to *attached discs* on your Mac
+	- it might synchronize data to the internal volume as well, but that is not a backup
+- not able to delete default `--delete` parameter
+- no support for snapshots due to a bug in default version of `rsync` on macOS
+	- default version is `rsync version 2.6.9 protocol version 29`
+	- this version was released in 2006 which is a while ago
+- supports adding parameters to rsync
+- utilize SwiftData as storage
+	- this might enable iCloud for backup of configurations and log records
+	- SwiftData uses a SQLite database and by default the files are stored as `~/Library/Application Support/default.store`
+	- there are three `default.store` files
+- most of the code is copied from RsyncUI but there are changes where code involves reading and updating configurations, log records and user setting
+- no read from `.dotcatalogs`  as `.ssh` where ssh-keys for passwordless logins are stored which is requiered for synchronize data to remote servers
+- no views for restore, use Finder to restore data
+
 # RsyncUI vs RsyncOSX
 
 Apple is clear: *SwiftUI*, which RsyncUI is developed by, is the future. This means *all new development* is on RsyncUI. The main differences between the two apps are the user interface (UI) and how the UI is built. But there has also been a lot of cleanup and enhancements in code of RsyncUI and not in RsyncOSX. My advice is use RsyncUI. Both apps utilise another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration.
