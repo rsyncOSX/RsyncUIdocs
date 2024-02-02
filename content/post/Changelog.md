@@ -10,9 +10,11 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## SwiftData 
 
-A [SwiftData version is coming to life](https://github.com/rsyncOSX/RsyncGUI). This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans for the moment to introduce SwiftData for the Homebrew version yet. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalogs` like from `$Home/.ssh` for ssh keys. 
+Update 2 February 2024:
 
-But the downscaled version might be released from Apple App Store. And I am learning about SwiftData developing the downscaled version. And SwiftData might be introduced in the Homebrew version sometime in 2024, but that requiere some development.
+A [SwiftData version is coming to life](https://github.com/rsyncOSX/RsyncGUI). This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans to introduce SwiftData for the Homebrew version. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalogs` like from `$Home/.ssh` for ssh keys and one big issue when enabling the Apple Sandbox. The main objective by creating a downscaled version was to learn more about SwiftData. 
+
+When Apple Sandbox is enabled, which is requiered for distribution on Apple App Store, the app is not allowed to execute `rsync` not even from the default catalog `/usr/bin`. And that is a showstopper for distribution from Apple App Store. But I am investigation if there is a method to allow it.  But the *downscaled version* will be released including support for other versions of rsync, like the latest version form Homebrew. And only for local attached disk. 
 
 ## Version 1.8.6 (build 94) - 30 January 2024
 
