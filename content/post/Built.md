@@ -21,9 +21,11 @@ Even though I am an educated IT person, most of my professional work has been as
 
 And I believe there is no wright or wrong in development. Each developer and team chooses their way to developed based on their skills and what they want to achieve. I know my own code and I have no issues understanding what my code is doing. And as times go on, in my opinion, I do changes in code to the better. But I fully understand other developers might have some issues understanding my code. 
 
-# Why not App Store (yet)
+# Why not App Store
 
-One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox and one restriction is not allowed to access local .dotfiles outside catalogs like the Documents catalog. One important feature for RsyncUI is passwordless login by ssh to remote servers. Passwordless login by ssh is by ssh-keys and default ssh-key is:
+One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. It is not allowed to execute command line utilities like `/usr/bin/rsync`  and is not allowed to access local .dotfiles outside catalogs like the Documents catalog. The most serious showstopper is not allowed to execute rsync. 
+
+One important feature for RsyncUI is passwordless login by ssh to remote servers. Passwordless login by ssh is by ssh-keys and default ssh-key is:
 ```bash
 ~/.ssh/id_rsa
 ```
@@ -37,17 +39,12 @@ But there might be a version for RsyncUI on App Store later in 2024. I have comm
 
 # SwiftData
 
-From Apple Developement Documentations: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*. 
-
-I have commenced the work on a release of *RsyncGUI*, which might be the Apple App Store version of *RsyncUI*, utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage.  Tasks, log records and user settings. Those data might be enabled to utilize SwiftData and if so Rsync(G)UI might be available from the Apple App Store as well. This is due to App Sandbox capability and what is allowed and not allowed inside an App Sandbox. Reading and writing files from a `.dotcatalog` on a users home directory is not allowed which RsyncUI does now.
-
-If a *SwiftData* version is enabled, there will be two versions of RsyncUI:
+From Apple Developement Documentations: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*.  I have commenced the work on a release of *RsyncGUI* utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *SwiftData* version is enabled, there will be two versions of RsyncUI:
 
 - RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
-- RsyncGUI for the Apple App Store utilizing SwiftData and only for attached discs and default version of rsync on macOS Sonoma
-	- requiere approval for distribution from App Store by Apple
+- RsyncGUI only for attached discs
 
-I have just commenced learning about SwifData and a new public GitHub repository for RsyncGUI is created. Status about development is updated within the Readme file.
+The development of the SwiftData version is done, now there are some testing and QA before a release on GitHub only. 
 
 ## SwiftData and RsyncGUI (not RsyncUI)
 
