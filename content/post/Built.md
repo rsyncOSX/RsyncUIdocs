@@ -235,6 +235,99 @@ var rsyncUIdata: RsyncUIconfigurations {
 ```
 All views which require data about tasks get data through a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([Configuration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
 
+# SwiftData vs JSON files as storage
+
+SwiftData is easy to use, but there are som changes in code to adapt Rsync(G)UI to use SwiftData. To use SwiftData there is an import of SwiftData Library. The datastructure in RsyncUI is a struct, but SwiftData requiere `@Model final class`, that is the structs are modified to class:
+
+```bash
+import Foundation
+import SwiftData
+
+@Model
+final class SynchronizeConfiguration: Identifiable {
+    var id = UUID()
+    var hiddenID: Int
+    var task: String
+    var localCatalog: String
+    var offsiteCatalog: String
+    var parameter1: String
+    var parameter2: String
+    var parameter3: String
+    var parameter4: String
+    var parameter5: String
+    var parameter6: String
+    var backupID: String
+    var dateRun: String?
+    // parameters choosed by user
+    var parameter8: String?
+    var parameter9: String?
+    var parameter10: String?
+    var parameter11: String?
+    var parameter12: String?
+    var parameter13: String?
+    var parameter14: String?
+    // Profile
+    var profile: String = "Default profile"
+
+    init(id: UUID = UUID(), hiddenID: Int, task: String, localCatalog: String, offsiteCatalog: String, parameter1: String, parameter2: String, parameter3: String, parameter4: String, parameter5: String, parameter6: String, backupID: String, dateRun: String? = nil, parameter8: String? = nil, parameter9: String? = nil, parameter10: String? = nil, parameter11: String? = nil, parameter12: String? = nil, parameter13: String? = nil, parameter14: String? = nil, profile: String) {
+        self.id = id
+        self.hiddenID = hiddenID
+        self.task = task
+        self.localCatalog = localCatalog
+        self.offsiteCatalog = offsiteCatalog
+        self.parameter1 = parameter1
+        self.parameter2 = parameter2
+        self.parameter3 = parameter3
+        self.parameter4 = parameter4
+        self.parameter5 = parameter5
+        self.parameter6 = parameter6
+        self.backupID = backupID
+        self.dateRun = dateRun
+        self.parameter8 = parameter8
+        self.parameter9 = parameter9
+        self.parameter10 = parameter10
+        self.parameter11 = parameter11
+        self.parameter12 = parameter12
+        self.parameter13 = parameter13
+        self.parameter14 = parameter14
+        self.profile = profile
+    }
+ }
+```
+The datamodel is initialized when the app is starting, if first time the datastore is created automatically. 
+
+```bash
+var sharedModelContainer: ModelContainer = {
+        let schema = Schema([GlobalModel.self,
+                             SynchronizeConfiguration.self,
+                             UserConfiguration.self,
+                             LogRecords.self,
+                             Log.self])
+        let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+
+        do {
+            return try ModelContainer(for: schema, configurations: [configuration])
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
+        }
+    }()
+```
+The datamodel is made avaliable for all the views by:
+```bash
+Window("RsyncGUI", id: "main") {
+            RsyncGUIView()
+                .frame(minWidth: 1300, minHeight: 510)
+        }
+        .modelContainer(sharedModelContainer)
+```
+and the views get the data by:
+```bash
+struct Sidebar: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var configurations: [SynchronizeConfiguration]
+```
+To be continued.
+
 # How are tasks executed?
 
 There are several ways to execute tasks:
