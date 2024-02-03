@@ -23,9 +23,7 @@ And I believe there is no wright or wrong in development. Each developer and tea
 
 # Why not App Store
 
-One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. It is not allowed to execute command line utilities like `/usr/bin/rsync`  and is not allowed to access local .dotfiles outside catalogs like the Documents catalog. The most serious showstopper is not allowed to execute rsync. 
-
-One important feature for RsyncUI is passwordless login by ssh to remote servers. Passwordless login by ssh is by ssh-keys and default ssh-key is:
+One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. One important feature for RsyncUI is passwordless login by ssh to remote servers. Passwordless login by ssh is by ssh-keys and default ssh-key is:
 
 ```bash
 ~/.ssh/id_rsa
@@ -37,6 +35,7 @@ RsyncUI is also storing data in a .dotfile catalog.
 ```bash
 $HOME/.rsyncosx/macserialnumber/configurations.json
 ```
+A SwiftData version is coming to life. This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans to introduce SwiftData for the Homebrew version. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalog` like from `$Home/.ssh` for ssh-keys and not allowed to execute rsync from catalogs like `/opt/homebrew/bin`. And I am also experience an issue executing default `/usr/bin/rsync` when the Sandbox is enabled. As far as I know there should not be an issue executing default rsync from an Sanboxed applifcation, but there is. I am investigating why. Apple Sandbox is requiered for distribute applications from Apple App Store.
 
 # SwiftData
 
