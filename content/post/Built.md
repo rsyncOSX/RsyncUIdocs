@@ -237,7 +237,7 @@ All views which require data about tasks get data through a mutable property wra
 
 # SwiftData vs JSON files as storage
 
-SwiftData is easy to use, but there are som changes in code to adapt Rsync(G)UI to use SwiftData. To use SwiftData there is an import of SwiftData Library. The datastructure in RsyncUI is a struct, but SwiftData requiere `@Model final class`, that is the structs are modified to class:
+SwiftData is easy to use, but there are a few changes in code to adapt Rsync(G)UI to use SwiftData. To use SwiftData there is an import of SwiftData Library. The datastructure in RsyncUI is a struct, but SwiftData requiere `@Model final class`, that is the structs are modified to class:
 
 ```bash
 import Foundation
@@ -269,32 +269,9 @@ final class SynchronizeConfiguration: Identifiable {
     // Profile
     var profile: String = "Default profile"
 
-    init(id: UUID = UUID(), hiddenID: Int, task: String, localCatalog: String, offsiteCatalog: String, parameter1: String, parameter2: String, parameter3: String, parameter4: String, parameter5: String, parameter6: String, backupID: String, dateRun: String? = nil, parameter8: String? = nil, parameter9: String? = nil, parameter10: String? = nil, parameter11: String? = nil, parameter12: String? = nil, parameter13: String? = nil, parameter14: String? = nil, profile: String) {
-        self.id = id
-        self.hiddenID = hiddenID
-        self.task = task
-        self.localCatalog = localCatalog
-        self.offsiteCatalog = offsiteCatalog
-        self.parameter1 = parameter1
-        self.parameter2 = parameter2
-        self.parameter3 = parameter3
-        self.parameter4 = parameter4
-        self.parameter5 = parameter5
-        self.parameter6 = parameter6
-        self.backupID = backupID
-        self.dateRun = dateRun
-        self.parameter8 = parameter8
-        self.parameter9 = parameter9
-        self.parameter10 = parameter10
-        self.parameter11 = parameter11
-        self.parameter12 = parameter12
-        self.parameter13 = parameter13
-        self.parameter14 = parameter14
-        self.profile = profile
-    }
- }
+   }
 ```
-The datamodel is initialized when the app is starting, if first time the datastore is created automatically. 
+The datamodel is initialized when the app is starting, if first time the datastore is automatically created . 
 
 ```bash
 var sharedModelContainer: ModelContainer = {
@@ -326,7 +303,9 @@ struct Sidebar: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var configurations: [SynchronizeConfiguration]
 ```
-To be continued.
+And that is basically it. You can create relations and much more in SwiftData, but for RsyncGUI there is noe need for an advanced datamodel. When data is changed, like update timestamp or create a log, the changes are propogated up to the view which initiated the change. And the data is updated and SwiftUI updates the views on the fly. So by using SwiftData only the changes are updated. 
+
+Using JSON files is somewhat different. The complete datastructure is written to file, like if there are 2000 logrecords and adding a new log record causes 2001 records to be written. Data for the views are made avaliable by a `@Bindable` property and a `@Observable` object. When data is changed two actions are requiered, the updated datastructure is updated the property within the `@Observable` object. The `@Bindable` property observes the changes and the views are updated. The second action is the data is written to JSON files for later read when requiered. 
 
 # How are tasks executed?
 
