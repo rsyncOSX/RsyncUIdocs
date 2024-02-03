@@ -35,7 +35,7 @@ RsyncUI is also storing data in a .dotfile catalog.
 ```bash
 $HOME/.rsyncosx/macserialnumber/configurations.json
 ```
-A SwiftData version is coming to life. This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans to introduce SwiftData for the Homebrew version. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalog` like from `$Home/.ssh` for ssh-keys and not allowed to execute rsync from catalogs like `/opt/homebrew/bin`. And I am also experience an issue executing default `/usr/bin/rsync` when the Sandbox is enabled. As far as I know there should not be an issue executing default rsync from an Sanboxed applifcation, but there is. I am investigating why. Apple Sandbox is requiered for distribute applications from Apple App Store.
+A SwiftData version is coming to life. This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans to introduce SwiftData for the Homebrew version. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalog` like from `$Home/.ssh` for ssh-keys and not allowed to execute rsync from catalogs like `/opt/homebrew/bin`. And I am also experience an issue executing default `/usr/bin/rsync` when the Sandbox is enabled. As far as I know there should not be an issue executing default rsync from a Sanboxed applifcation, but there is. I am investigating why. Apple Sandbox is requiered for distribute applications from Apple App Store.
 
 # SwiftData
 

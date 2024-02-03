@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Update 3 February 2024:
 
-A [SwiftData version is coming to life](https://github.com/rsyncOSX/RsyncGUI). This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans to introduce SwiftData for the Homebrew version. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalog` like from `$Home/.ssh` for ssh-keys and not allowed to execute rsync from catalogs like `/opt/homebrew/bin`. And I am also experience an issue executing default `/usr/bin/rsync` when the Sandbox is enabled. As far as I know there should not be an issue executing default rsync from an Sanboxed applifcation, but there is. I am investigating why. Apple Sandbox is requiered for distribute applications from Apple App Store.
+A [SwiftData version is coming to life](https://github.com/rsyncOSX/RsyncGUI). This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans to introduce SwiftData for the Homebrew version. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalog` like from `$Home/.ssh` for ssh-keys and not allowed to execute rsync from catalogs like `/opt/homebrew/bin`. And I am also experience an issue executing default `/usr/bin/rsync` when the Sandbox is enabled. As far as I know there should not be an issue executing default rsync from a Sanboxed applifcation, but there is. I am investigating why. Apple Sandbox is requiered for distribute applications from Apple App Store.
 
 ## Version 1.8.6 (build 94) - 30 January 2024
 
