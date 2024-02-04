@@ -303,7 +303,7 @@ struct Sidebar: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var configurations: [SynchronizeConfiguration]
 ```
-And that is basically it. You can create relations and much more in SwiftData, but for RsyncGUI there is noe need for an advanced datamodel. When data is changed, like update timestamp or create a log, the changes are propogated up to the view which initiated the change. And the data is updated and SwiftUI updates the views on the fly. So by using SwiftData only the changes are updated. 
+And that is basically it. You can create relations and much more in SwiftData, but for RsyncGUI there is no need for an advanced datamodel. When data is changed, like update timestamp or create a log, the changes are propogated up to the view which initiated the change. And the data is updated and SwiftUI updates the views on the fly. So by using SwiftData only the changes are updated. 
 
 Using JSON files is somewhat different. The complete datastructure is written to file, like if there are 2000 logrecords and adding a new log record causes 2001 records to be written. Data for the views are made avaliable by a `@Bindable` property and a `@Observable` object. When data is changed two actions are requiered, the updated datastructure is updated the property within the `@Observable` object. The `@Bindable` property observes the changes and the views are updated. The second action is the data is written to JSON files for later read when requiered. 
 
