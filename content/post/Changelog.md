@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Update 7 February 2024:
 
-A SwiftData version of RsyncUI is coming to life. During the last weeks I have enabled SwiftData, in development, for RsyncUI. The development is still very beta and there are still some missing parts to develop. But it works and it still remains to see if the SwiftData version of RsyncUI will be an option for RsyncUI. SwiftData is new to me, its fun to learn about and develop. 
+A SwiftData version of RsyncUI is coming to life. During the last weeks I have enabled SwiftData, in development, for RsyncUI. The development is still very beta and there are still some missing parts to develop. But it works and it remains to see if the SwiftData version of RsyncUI will be an option for RsyncUI. SwiftData is new to me, its fun to learn about and develop. The datamodel is by no means complicated, but the flow of data compared to the JSON version of RsyncUI is somewhat different. 
 
 ## Version 1.8.6 (build 94) - 30 January 2024
 
