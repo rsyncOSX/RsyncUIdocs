@@ -6,9 +6,9 @@ tags = ["built"]
 categories = ["general information"]
 lastmod = "2024-02-8"
 +++
-This page is an overview of the main components of RsyncUI. The development of both RsyncOSX and RsyncUI has been an evolving process. The open source community has been and still is a great resource for ideas and how to solve issues. Both apps today are stable and in a state of maintenance. **There will be some changes in this page informing what is the main difference between the JSON version and the SwiftData version of RsyncUI. For the moment the built info is not as structured as it should be. To be updated.**
+This page is an overview of the main components of RsyncUI. The development of both RsyncOSX and RsyncUI has been an evolving process. The open source community has been and still is a great resource for ideas and how to solve issues. Both apps today are stable and in a state of maintenance. 
 
- Some numbers:
+Some numbers:
 
 | App      | Data  | Lines of code | Swift files | Version 1.0 |
 | ----------- | ----------- |   ----------- | -------- | -------- |
