@@ -6,7 +6,9 @@ tags = ["built"]
 categories = ["general information"]
 lastmod = "2024-02-8"
 +++
-*Under development.* This page is an overview of the main components of RsyncUI. The development of both RsyncOSX and RsyncUI has been an evolving process. The open source community has been and still is a great resource for ideas and how to solve issues. Both apps today are stable and in a state of maintenance. Some numbers:
+*Under development.* This page is an overview of the main components of RsyncUI. The development of both RsyncOSX and RsyncUI has been an evolving process. The open source community has been and still is a great resource for ideas and how to solve issues. Both apps today are stable and in a state of maintenance. *There will be some changes in this page informing what is the main difference between the JSON version and the SwiftData version of RsyncUI. For the moment the built info is not as structured as it should be.* 
+
+ Some numbers:
 
 | App      | Lines of code | Swift files | Version 1.0 |
 | ----------- | ----------- |   ----------- | -------- |
@@ -50,14 +52,26 @@ RsyncUI, the JSON version, is also storing data in a .dotfile catalog, three fil
 ```bash
 $HOME/.rsyncosx/macserialnumber/*.json
 ```
+# OSLog
+
+Included in Swift 5 there is a unified logging feature `OSLog`. There are several methods for logging and investigate what the application is up to. By using OSLog there is no need for print statements to follow execution. All logging is by utilizing OSLog displayed as part of Xcode. The `Process` objects are where all the real work is done. OSLog is  included in all objects which perform work and it is very easy to check which commands RsyncUI are executing.
+
+OSLog info in Xcode. The logging is displaying commands and arguments as shown below. It makes it convenient to check that RsyncUI is executing the correct command.
+
+{{< figure src="/images/Xcode/Logger.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+And the OSLogs might be read by using the Console app. Be sure to set the Action in Console app menu to `Include Info Messages` and enter `no.blogspot.RsyncUI` as subsystem within the search field.
+
+{{< figure src="/images/Xcode/console.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 # SwiftData
 
-From Apple Developement Documentations: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*.  I have commenced the work on a release of *RsyncUI* utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *SwiftData* version is enabled, there will be two versions of RsyncUI:
+From Apple Developement Documentations: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*.  I have commenced the work on a release of *RsyncUI* utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage: tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *SwiftData* version is enabled, there will be two versions of RsyncUI:
 
 - RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
 - RsyncUI only by download from GitHub using SwiftData.
 
-The development of the SwiftData version is done, now there are some testing and QA before a release on GitHub only. [RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the SwiftData version of RsyncUI. 
+The development of the SwiftData version is more or less completed. Now there are some testing and QA before a release on GitHub only. [RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the SwiftData version of RsyncUI. 
 
 # Asynchronous execution 
 
@@ -104,18 +118,6 @@ With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `@Observable` macro. 
 Data for *tasks* are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views  within the view hierarchy by the `.environment` property. The property makes the data global available for views. The `@Bindable` property wrapper is also used for creating bindings to the mutable properties of `@Observable` objects.
 
 All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `@Observable` object, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
-
-# OSLog
-
-Included in Swift 5 there is a unified logging feature `OSLog`. There are several methods for logging and investigate what the application is up to. By using OSLog there is no need for print statements to follow execution. All logging is by utilizing OSLog displayed as part of Xcode. The `Process` objects are where all the real work is done. OSLog is  included in all objects which perform work and it is very easy to check which commands RsyncUI are executing.
-
-OSLog info in Xcode. The logging is displaying commands and arguments as shown below. It makes it convenient to check that RsyncUI is executing the correct command.
-
-{{< figure src="/images/Xcode/Logger.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-And the OSLogs might be read by using the Console app. Be sure to set the Action in Console app menu to `Include Info Messages` and enter `no.blogspot.RsyncUI` as subsystem within the search field.
-
-{{< figure src="/images/Xcode/console.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 # Navigation
 
