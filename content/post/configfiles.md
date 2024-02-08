@@ -6,6 +6,15 @@ tags = ["config file"]
 categories = ["general information"]
 lastmod = "2020-10-23"
 +++
+
+There are two versions of RsyncUI, one using SwiftData and the other JSON files. 
+
+# SwiftData
+
+The SwiftData version saves all data in an sqlite database. RsyncUI saves the data in `$HOME/Documents/rsyncui.sqlite`. There are three databasefiles.
+
+# JSON-files
+
 RsyncUI read and store configurations, log records and user settings as [JSON](https://en.wikipedia.org/wiki/JSON) files. The location of files is: `$HOME/.rsyncosx/macserialnumber`. RsyncUI evaluates the computer mac serial number at startup. 
 
 ## Configuration files

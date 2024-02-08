@@ -20,18 +20,12 @@ Which application should I use? Both applications do the same job, but RsynUI is
 
 # RsyncUI vs RsyncOSX
 
-Apple is clear: *SwiftUI*, which RsyncUI is developed by, is the future. This means *all new development* is on RsyncUI. The main differences between the two apps are the user interface (UI) and how the UI is built. But there has also been a lot of cleanup and enhancements in code of RsyncUI and not in RsyncOSX. My advice is use RsyncUI. Both apps utilise another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration.
+Apple is clear: *SwiftUI*, which RsyncUI is developed by, is the future. This means *all new development* is on RsyncUI. The main differences between the two apps are the user interface (UI) and how the UI is built. There has also been a lot of cleanup and enhancements in code of RsyncUI. My advice is use RsyncUI. Both apps utilise another great declarative library, Combine, developed by Apple, and JSON files for storing tasks, log records, and user configuration. And the latest development for RsyncUI includes a version using SwiftData instead of JSON files.
 
 | App      | UI | Paradigm |
 | ----------- | ----------- |   ----------- |
 | RsyncUI   | SwiftUI, Swift | declarativ  |
 | RsyncOSX   | Storyboard, Swift  | imperativ |
-
-SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
-
-# SwiftUI
-
-*RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are several property wrappers to create bindings to mutable properties.
 
 # A few words about the code
 
@@ -43,12 +37,12 @@ And I believe there is no wright or wrong in development. Each developer and tea
 
 One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. Execute `rsync`, obvious, and enable passwordless login by ssh to remote servers are two must have features. The Apple Sandbox causes a few issues to both features when switch on. And I have not yet have any success when RsyncUI is set to use default rsync in macOS and only attached discs. But I am inveastigating, so there might be an Apple App Store in the future.
 
-Passwordless login by ssh is by ssh-keys and default ssh-key is:
+Passwordless login by ssh is by ssh-keys and default ssh-key is:.
 
 ```bash
 ~/.ssh/id_rsa
 ```
-RsyncUI, the JSON version, is also storing data in a .dotfile catalog, three files .
+The JSON version of RsyncUI is also storing data in a .dotfile catalog, three files . This does not apply for the SwiftData version. 
 
 ```bash
 $HOME/.rsyncosx/macserialnumber/*.json
@@ -74,6 +68,119 @@ From Apple Developement Documentations: *"Combining Core Data’s proven persist
 
 The development of the SwiftData version is more or less completed. Now there are some testing and QA before a release on GitHub only. [RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the SwiftData version of RsyncUI. 
 
+# SwiftUI
+
+SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
+
+*RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are several property wrappers to create bindings to mutable properties.
+
+# Start of RsyncUI
+
+The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/documentation/SwiftUI/App). There is only one entrance point, `@main`, in RsyncUI. The `@main` initialises the app, setup of the menubar, and opens the navigation bar which is the main user start for the app.
+
+# The model
+
+SwiftUI views are *value types*, structs, and not *reference types*, classes, as in Storyboard and Swift. The model is responsible for informing the views when there are changes. The memory footprint of tasks is minimal. Data for tasks are kept in memory during the lifetime of RsyncUI. The memory footprint for logrecords will grow over time as new logs are created and stored. Logrecords are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
+
+# Property wrapper for objects
+
+With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `@Observable` macro. On previous macOS versions, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, was used to create binding to mutable properties. The new macro *greatly simplifies* how to create bindings and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of `@Observable` objects. 
+
+All old property wrapper `@StateObject` in combination with `ObservableObject` and Combine are converted to the new macro.
+
+# Dataflow in RsyncUI
+
+The flow and handling of data, information about tasks and log-records, are slightly different in the two versions of RsyncUI. The dataflow using SwiftData is like a kind of very easy to understand and use.
+
+## JSON version
+
+There are three files on permanent storage; tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and decode is requiered to represent JSON data as internal data within RsyncUI. 
+
+When RsyncUI starts it reads *user configuration* and *data about tasks for the default profile*. The object holding data about tasks is an `@Observable` object created when RsyncUI starts.
+
+```bash
+var rsyncUIdata: RsyncUIconfigurations {
+        let configurationsdata = ReadConfigurationsfromstore(selectedprofile)
+        return RsyncUIconfigurations(selectedprofile,
+                                     configurationsdata.configurations ?? [],
+                                     configurationsdata.validhiddenIDs)
+    }
+```
+All views which require data about tasks get data through a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([Configuration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
+
+When there are changes on data the complete datastructure is written to file, like if there are 2000 logrecords and adding a new log record causes 2001 records to be written to the JSON-file. Data for the views are made avaliable by a `@Bindable` property and an `@Observable` object.  
+
+# SwiftData version
+
+In the SwiftData version there are two database operations used, insert and delete. Updates of data is by selecting the record and update, SwiftData takes care of updating the database and informes the views to update. To use SwiftData there is an import of SwiftData Library. The datastructure in RsyncUI is a struct, but SwiftData requiere `@Model final class`, that is the structs holding the datamodels are modified to class:
+
+```bash
+import Foundation
+import SwiftData
+
+@Model
+final class SynchronizeConfiguration: Identifiable {
+    var id = UUID()
+    var hiddenID: Int
+    var task: String
+    var localCatalog: String
+    var offsiteCatalog: String
+    var parameter1: String
+    var parameter2: String
+    var parameter3: String
+    var parameter4: String
+    var parameter5: String
+    var parameter6: String
+    var backupID: String
+    var dateRun: String?
+    // parameters choosed by user
+    var parameter8: String?
+    var parameter9: String?
+    var parameter10: String?
+    var parameter11: String?
+    var parameter12: String?
+    var parameter13: String?
+    var parameter14: String?
+    // Profile
+    var profile: String = "Default profile"
+
+   }
+```
+The datamodel is initialized when the app is starting, if first time the datastore is automatically created . 
+
+```bash
+ var sharedModelContainer: ModelContainer = {
+        let schema = Schema([SynchronizeConfiguration.self,
+                             UserConfiguration.self,
+                             LogRecords.self,
+                             Log.self])
+
+        let storeURL = URL.documentsDirectory.appending(path: "rsyncui.sqlite")
+        let configuration = ModelConfiguration(schema: schema, url: storeURL)
+
+        do {
+            return try ModelContainer(for: schema, configurations: [configuration])
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
+        }
+    }()
+```
+The datamodel is made avaliable for all the views by:
+```bash
+Window("RsyncGUI", id: "main") {
+            RsyncGUIView()
+                .frame(minWidth: 1300, minHeight: 510)
+        }
+        .modelContainer(sharedModelContainer)
+```
+and the views get the data by:
+```bash
+struct Sidebar: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var configurations: [SynchronizeConfiguration]
+```
+And that is basically it. You can create relations and much more in SwiftData, but for RsyncUI there is no need for an advanced datamodel. When data is changed, like update timestamp or create a log, the changes are propogated up to the view which initiated the change. The data is updated to the database by SwiftData and SwiftUI updates the views on the fly. 
+
 # Asynchronous execution 
 
 Asynchronous execution is a key component of RsyncUI. Every time a `rsync` synchronize and restore task is executed the termination of the task is not known ahead.  When the *termination signal* is observed some actions are required. Some actions are like send a message about a task is completed, execute next synchronize task, stopping a progressview and do some logging. 
@@ -95,30 +202,12 @@ RsyncUI is depended to communicate with command line tools within the macOS syst
 
 Combine, a *declarative* library by Apple, is utilized in several parts of RsyncUI. Before the new `@Observable` macro was introduced Combine was also a requiered part of the property wrapper `@StateObject` in combination with `ObservableObject`. The new macro `@Observable` is not depended upon Combine and the following are examples of utilizing Combine in RsyncUI:
 
-- [read json ](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) configuration file for tasks
-- [write json](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configuration file for tasks
-- [observing signals](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) within the process object
-- debouncing input from user, filter strings and other values which are validated before saving
+- [read json ](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) configuration file for tasks, only the JSON version of RsyncUI
+- [write json](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configuration file for tasks, only the JSON version of RsyncUI
+- [observing signals](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) within the process object, both versions
+- debouncing input from user, filter strings and other values which are validated before saving, both versions
 
-Combine is utilized in all read and write of data to permanent storage, configurations, logrecords and user configuration. The user input for search or filter is by default a `@State` string variable. The view reacts on the input by every keypress and the filter algorithm is triggered by every keypress. This causes a sluggish user interface, but by debounce input by *a second* causes the filter algorithm only to update the view after the debounce period.
-
-# Start of RsyncUI
-
-The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/documentation/SwiftUI/App). There is only one entrance point, `@main`, in RsyncUI. The `@main` initialises the app, setup of the menubar, and opens the navigation bar which is the main user start for the app.
-
-# The model
-
-SwiftUI views are *value types*, structs, and not *reference types*, classes, as in Storyboard and Swift. The model is responsible for informing the views when there are changes. The memory footprint of tasks is minimal. Data for tasks are kept in memory during the lifetime of RsyncUI. The memory footprint for logrecords will grow over time as new logs are created and stored. Logrecords are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
-
-# Property wrapper for objects
-
-With Swift 5.9, Xcode 15 and macOS 14 Apple introduced the `@Observable` macro. On previous macOS versions, the property wrapper `@StateObject` in combination with `ObservableObject` and Combine, was used to create binding to mutable properties. The new macro simplifies how to create bindings and there is also quite a boost in performance. The performance part is not that important for RsyncUI, but lesser code is better code.  There is also a new `@Bindable` property wrapper which create bindings to mutable properties of `@Observable` objects. 
-
-# Environment property
-
-Data for *tasks* are read from store and made available for all the views by an Environment property. After the app is initialized and started, it opens the main navigation and read tasks for the default profile and other profiles when selected. Data for tasks is made available for all views  within the view hierarchy by the `.environment` property. The property makes the data global available for views. The `@Bindable` property wrapper is also used for creating bindings to the mutable properties of `@Observable` objects.
-
-All synchronize tasks are executed asynchron. The process object, which is responsible for executing the external rsync tasks, is listening for termination of the external process.  A `@Observable` object, which is created when the SwiftUI view for observing the progress is created, is by the model updated during progress of the task.
+The user input for search or filter is by default a `@State` string variable. The view reacts on the input by every keypress and the filter algorithm is triggered by every keypress. This causes a sluggish user interface, but by debounce input by *a second* causes the filter algorithm only to update the view after the debounce period.
 
 # Navigation
 
@@ -204,95 +293,6 @@ if logrecords.count == 0,
 After filter no records:
 {{< figure src="/images/Xcode/contentunavailable.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-# Dataflow in RsyncUI
-
-How is data stored and views updated when data is changed? There are three files on permanent storage; tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and decode is requiered to represent JSON data as internal data within RsyncUI. 
-
-When RsyncUI starts it reads *user configuration* and *data about tasks for the default profile*. The object holding data about tasks is an `@Observable` object created when RsyncUI starts.
-
-```bash
-var rsyncUIdata: RsyncUIconfigurations {
-        let configurationsdata = ReadConfigurationsfromstore(selectedprofile)
-        return RsyncUIconfigurations(selectedprofile,
-                                     configurationsdata.configurations ?? [],
-                                     configurationsdata.validhiddenIDs)
-    }
-```
-All views which require data about tasks get data through a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([Configuration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
-
-# SwiftData vs JSON files as storage
-
-SwiftData is easy to use, but there are a few changes in code to adapt Rsync(G)UI to use SwiftData. To use SwiftData there is an import of SwiftData Library. The datastructure in RsyncUI is a struct, but SwiftData requiere `@Model final class`, that is the structs are modified to class:
-
-```bash
-import Foundation
-import SwiftData
-
-@Model
-final class SynchronizeConfiguration: Identifiable {
-    var id = UUID()
-    var hiddenID: Int
-    var task: String
-    var localCatalog: String
-    var offsiteCatalog: String
-    var parameter1: String
-    var parameter2: String
-    var parameter3: String
-    var parameter4: String
-    var parameter5: String
-    var parameter6: String
-    var backupID: String
-    var dateRun: String?
-    // parameters choosed by user
-    var parameter8: String?
-    var parameter9: String?
-    var parameter10: String?
-    var parameter11: String?
-    var parameter12: String?
-    var parameter13: String?
-    var parameter14: String?
-    // Profile
-    var profile: String = "Default profile"
-
-   }
-```
-The datamodel is initialized when the app is starting, if first time the datastore is automatically created . 
-
-```bash
- var sharedModelContainer: ModelContainer = {
-        let schema = Schema([SynchronizeConfiguration.self,
-                             UserConfiguration.self,
-                             LogRecords.self,
-                             Log.self])
-
-        let storeURL = URL.documentsDirectory.appending(path: "rsyncui.sqlite")
-        let configuration = ModelConfiguration(schema: schema, url: storeURL)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [configuration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-```
-The datamodel is made avaliable for all the views by:
-```bash
-Window("RsyncGUI", id: "main") {
-            RsyncGUIView()
-                .frame(minWidth: 1300, minHeight: 510)
-        }
-        .modelContainer(sharedModelContainer)
-```
-and the views get the data by:
-```bash
-struct Sidebar: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var configurations: [SynchronizeConfiguration]
-```
-And that is basically it. You can create relations and much more in SwiftData, but for RsyncGUI there is no need for an advanced datamodel. When data is changed, like update timestamp or create a log, the changes are propogated up to the view which initiated the change. And the data is updated and SwiftUI updates the views on the fly. So by using SwiftData only the changes are updated. 
-
-Using JSON files is somewhat different. The complete datastructure is written to file, like if there are 2000 logrecords and adding a new log record causes 2001 records to be written. Data for the views are made avaliable by a `@Bindable` property and a `@Observable` object. When data is changed two actions are requiered, the updated datastructure is updated the property within the `@Observable` object. The `@Bindable` property observes the changes and the views are updated. The second action is the data is written to JSON files for later read when requiered. 
-
 # How are tasks executed?
 
 There are several ways to execute tasks:
@@ -305,14 +305,20 @@ The following is a brief overview of *estimate first and then execute tasks*. Th
 
 The user then select synchronize tasks and the navigation path for executing tasks including progress of each is pushed onto the view stack. From this view the reference of the class with data from estimation is passed onto the class which executes the tasks. The id for each task is pushed onto a stack and the class executing tasks is not released until the stack is emtpy and a process termination signal is observed from the last task. The progess of synchronizing is communicated to the progress view by an *escaping closure*, `@escaping (Int) -> Void)`. 
 
+The execution of tasks are eqaul for both versions, but the update of data is different. That is reflected withn the input parameters to `func executemultipleestimatedtasks()`. 
+
+## JSON version
+
+When the execution of tasks are completed the updated data is writen to JSON files from within the `func executemultipleestimatedtasks()`. The updated data is feed back to the `@Bindable` object by the `func updateconfigurations(_ configurations: [SynchronizeConfiguration])` which also causes the UI to be updated by SwiftUI.
+
 ```bash
 func executemultipleestimatedtasks() {
-        var uuids: Set<Configuration.ID>?
+        var uuids: Set<SynchronizeConfiguration.ID>?
         if selecteduuids.count > 0 {
             uuids = selecteduuids
         } else if executeprogressdetails.estimatedlist?.count ?? 0 > 0 {
             let uuidcount = executeprogressdetails.estimatedlist?.compactMap { $0.id }
-            uuids = Set<Configuration.ID>()
+            uuids = Set<SynchronizeConfiguration.ID>()
             for i in 0 ..< (uuidcount?.count ?? 0) where
                 executeprogressdetails.estimatedlist?[i].datatosynchronize == true
             {
@@ -331,12 +337,93 @@ func executemultipleestimatedtasks() {
                                  updateconfigurations: updateconfigurations)
         }
     }
+
+    func updateconfigurations(_ configurations: [SynchronizeConfiguration]) {
+        rsyncUIdata.configurations = configurations
+    }
     
      func filehandler(count: Int) {
         progress = Double(count)
     }
+```
+## SwiftData version
 
-    func updateconfigurations(_ configurations: [Configuration]) {
-        rsyncUIdata.configurations = configurations
+For the SwiftData version all changes of data, e.g. only the changes, are braught back to the calling view by the two functions `func updatedates(_ configrecords: [Typelogdata])` and  `func updatelogrecords(_ logrecords: [Typelogdata])`. The updates are feed back to the calling view and data is updated on the fly. The update causes the views to update as well by SwiftData.
+
+```bash
+func executemultipleestimatedtasks() {
+        var uuids: Set<SynchronizeConfiguration.ID>?
+        if selecteduuids.count > 0 {
+            uuids = selecteduuids
+        } else if executeprogressdetails.estimatedlist?.count ?? 0 > 0 {
+            let uuidcount = executeprogressdetails.estimatedlist?.compactMap { $0.id }
+            uuids = Set<SynchronizeConfiguration.ID>()
+            for i in 0 ..< (uuidcount?.count ?? 0) where
+                executeprogressdetails.estimatedlist?[i].datatosynchronize == true
+            {
+                uuids?.insert(uuidcount?[i] ?? UUID())
+            }
+        }
+        guard (uuids?.count ?? 0) > 0 else { return }
+        if let uuids = uuids {
+            multipletaskstate.updatestate(state: .execute)
+            ExecuteMultipleTasks(uuids: uuids,
+                                 configurations: configurations,
+                                 multipletaskstateDelegate: multipletaskstate,
+                                 executeprogressdetailsDelegate: executeprogressdetails,
+                                 filehandler: filehandler,
+                                 updatedates: updatedates,
+                                 updatelogrecords: updatelogrecords)
+        }
+    }
+
+    func updatedates(_ configrecords: [Typelogdata]) {
+        for i in 0 ..< configrecords.count {
+            let hiddenID = configrecords[i].0
+            let date = configrecords[i].1
+            if let index = configurations.firstIndex(where: { $0.hiddenID == hiddenID }) {
+                // Caution, snapshotnum already increased before logrecord
+                if configurations[index].task == SharedReference.shared.snapshot {
+                    if let num = configurations[index].snapshotnum {
+                        configurations[index].snapshotnum = num + 1
+                    }
+                }
+                configurations[index].dateRun = date
+            }
+        }
+    }
+
+    func updatelogrecords(_ logrecords: [Typelogdata]) {
+        if SharedReference.shared.detailedlogging {
+            for i in 0 ..< logrecords.count {
+                let hiddenID = logrecords[i].0
+                let stats = logrecords[i].1
+                let currendate = Date()
+                let date = currendate.en_us_string_from_date()
+                if let index = configurations.firstIndex(where: { $0.hiddenID == hiddenID }) {
+                    var resultannotaded: String?
+                    if configurations[index].task == SharedReference.shared.snapshot {
+                        if let snapshotnum = configurations[index].snapshotnum {
+                            resultannotaded = "(" + String(snapshotnum - 1) + ") " + stats
+                        } else {
+                            resultannotaded = "(" + "1" + ") " + stats
+                        }
+                    } else {
+                        resultannotaded = stats
+                    }
+                    var inserted: Bool = addlogexisting(hiddenID,
+                                                        resultannotaded ?? "",
+                                                        date)
+                    // Record does not exist, create new Schedule (not inserted)
+                    if inserted == false {
+                        inserted = addlognew(hiddenID, resultannotaded ?? "", date)
+                    }
+                }
+            }
+        }
+    }
+    
+     func filehandler(count: Int) {
+        progress = Double(count)
     }
 ```
