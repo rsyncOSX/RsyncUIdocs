@@ -35,14 +35,14 @@ And I believe there is no wright or wrong in development. Each developer and tea
 
 # Why not App Store
 
-One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. Execute `rsync`, obvious, and enable passwordless login by ssh to remote servers are two must have features. The Apple Sandbox causes a few issues to both features when switch on. And I have not yet have any success when RsyncUI is set to use default rsync in macOS and only attached discs. But I am inveastigating, so there might be an Apple App Store in the future.
+One important requirement for macOS apps on Apple App Store is quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. Execute `rsync`, obvious, and enable passwordless login by ssh to remote servers are two must have features. The Apple Sandbox causes a few issues to both features when switch on. And I have not yet any success when RsyncUI is set to use default rsync in macOS and only attached discs. But I am inveastigating, so there might be an Apple App Store in the future.
 
 Passwordless login by ssh is by ssh-keys and default ssh-key is:.
 
 ```bash
-~/.ssh/id_rsa
+$HOME/.ssh/id_rsa
 ```
-The JSON version of RsyncUI is also storing data in a .dotfile catalog, three files . This does not apply for the SwiftData version. 
+The JSON version of RsyncUI is also storing data in a `.dotfile` catalog. This does not apply for the SwiftData version. 
 
 ```bash
 $HOME/.rsyncosx/macserialnumber/*.json
@@ -61,7 +61,7 @@ And the OSLogs might be read by using the Console app. Be sure to set the Action
 
 # SwiftData
 
-From Apple Developement Documentations: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*.  I have commenced the work on a release of *RsyncUI* utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage: tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *SwiftData* version is enabled, there will be two versions of RsyncUI:
+From Apple Developement Documentations quote Apple: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*.  I have commenced the work on a release of *RsyncUI* utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage: tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *SwiftData* version is enabled, there will be two versions of RsyncUI:
 
 - RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
 - RsyncUI only by download from GitHub using SwiftData.
@@ -72,7 +72,7 @@ The development of the SwiftData version is more or less completed. Now there ar
 
 SwiftUI is the latest declarative framework developed by Apple for views, controls, and layout structures for user interface. 
 
-*RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are several property wrappers to create bindings to mutable properties.
+RsyncUI utilizes SwiftUI for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are several property wrappers to create bindings to mutable properties.
 
 # Start of RsyncUI
 
@@ -90,11 +90,11 @@ All old property wrapper `@StateObject` in combination with `ObservableObject` a
 
 # Dataflow in RsyncUI
 
-The flow and handling of data, information about tasks and log-records, are slightly different in the two versions of RsyncUI. The dataflow using SwiftData is like a kind of very easy to understand and use.
+The flow and handling of data, information about tasks and log-records, are slightly different in the two versions of RsyncUI. The dataflow using SwiftData is like a kind of very easy to understand and use as stated in documents about Apple.
 
 ## JSON version
 
-There are three files on permanent storage; tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and decode is requiered to represent JSON data as internal data within RsyncUI. 
+There are three files on permanent storage: tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and decode is requiered to represent JSON data as internal data within RsyncUI. 
 
 When RsyncUI starts it reads *user configuration* and *data about tasks for the default profile*. The object holding data about tasks is an `@Observable` object created when RsyncUI starts.
 
@@ -106,7 +106,7 @@ var rsyncUIdata: RsyncUIconfigurations {
                                      configurationsdata.validhiddenIDs)
     }
 ```
-All views which require data about tasks get data through a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([Configuration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
+All views which require data about tasks get data by a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([Configuration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
 
 When there are changes on data the complete datastructure is written to file, like if there are 2000 logrecords and adding a new log record causes 2001 records to be written to the JSON-file. Data for the views are made avaliable by a `@Bindable` property and an `@Observable` object.  
 
