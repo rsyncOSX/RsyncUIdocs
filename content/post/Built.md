@@ -38,9 +38,9 @@ What I also experience is how my own understanding of OO, declarative programmin
 
 # Why not App Store
 
-One important requirement for macOS apps on Apple App Store is quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. Execute `rsync`, obvious, and enable passwordless login by ssh to remote servers are two must have features. The Apple Sandbox causes a few issues to both features when switch on. And I have not yet any success when RsyncUI is set to use default rsync in macOS and only attached discs. But I am inveastigating, so there might be an Apple App Store in the future.
+One important requirement for macOS apps on Apple App Store is quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. Execute `rsync`, obvious, and enable passwordless login by ssh to remote servers are two must have features. The Apple Sandbox causes a few issues to both features when switch on. And I have not yet any success when RsyncUI is set to use default rsync in macOS and only attached discs. But I am inveastigating, so there might be an Apple App Store version in the future.
 
-Passwordless login by ssh is by ssh-keys and default ssh-key is:.
+Passwordless login by ssh is by ssh-keys and default ssh-key is:
 
 ```bash
 $HOME/.ssh/id_rsa
@@ -64,12 +64,12 @@ And the OSLogs might be read by using the Console app. Be sure to set the Action
 
 # SwiftData
 
-From Apple Developement Documentations quote Apple: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*.  I have commenced the work on a release of *RsyncUI* utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage: tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *SwiftData* version is enabled, there will be two versions of RsyncUI:
+From Apple Developement Documentations quote Apple: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*. In RsyncUI, the Homebrew version,  there are three JSON files saved to storage: tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *RsyncUI using SwiftData* version is enabled, there will be two versions of RsyncUI:
 
 - RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
-- RsyncUI only by download from GitHub using SwiftData.
+- RsyncUI only by download from GitHub using SwiftData, as a start
 
-The development of the SwiftData version is more or less completed. Now there are some testing and QA before a release on GitHub only. [RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the SwiftData version of RsyncUI. 
+[RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the repository for the SwiftData version of RsyncUI. 
 
 # SwiftUI
 
@@ -83,7 +83,7 @@ The start of RsyncUI conforms to the [App protocol](https://developer.apple.com/
 
 # The model
 
-SwiftUI views are *value types*, structs, and not *reference types*, classes, as in Storyboard and Swift. The model is responsible for informing the views when there are changes. The memory footprint of tasks is minimal. Data for tasks are kept in memory during the lifetime of RsyncUI. The memory footprint for logrecords will grow over time as new logs are created and stored. Logrecords are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
+SwiftUI views are *value types*, structs, and not *reference types*, classes, as in Storyboard and Swift. The model is responsible for informing the views when there are changes. The memory footprint of tasks is minimal. Data for tasks is kept in memory during the lifetime of RsyncUI. The memory footprint for logrecords will grow over time as new logs are created and stored. Logrecords are only read from the store when viewing and deleting logs. When data about logs is not used, the data is released from memory to keep the memory as low as possible.
 
 # Property wrapper for objects
 
@@ -93,7 +93,7 @@ All old property wrapper `@StateObject` in combination with `ObservableObject` a
 
 # Dataflow in RsyncUI
 
-The flow and handling of data, information about tasks and log-records, are slightly different in the two versions of RsyncUI. The dataflow using SwiftData is like a kind of very easy to understand and use as stated in documents about Apple.
+The flow and handling of data, information about tasks and log-records, are slightly different in the two versions of RsyncUI. The dataflow using SwiftData is like a kind of very easy to understand and use as stated in documents from Apple.
 
 ## JSON version
 
@@ -109,7 +109,7 @@ var rsyncUIdata: RsyncUIconfigurations {
                                      configurationsdata.validhiddenIDs)
     }
 ```
-All views which require data about tasks get data by a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([Configuration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
+All views which require data about tasks get data by a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([SynchronizeConfiguration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
 
 When there are changes on data the complete datastructure is written to file, like if there are 2000 logrecords and adding a new log record causes 2001 records to be written to the JSON-file. Data for the views are made avaliable by a `@Bindable` property and an `@Observable` object.  
 
@@ -308,7 +308,7 @@ The following is a brief overview of *estimate first and then execute tasks*. Th
 
 The user then select synchronize tasks and the navigation path for executing tasks including progress of each is pushed onto the view stack. From this view the reference of the class with data from estimation is passed onto the class which executes the tasks. The id for each task is pushed onto a stack and the class executing tasks is not released until the stack is emtpy and a process termination signal is observed from the last task. The progess of synchronizing is communicated to the progress view by an *escaping closure*, `@escaping (Int) -> Void)`. 
 
-The execution of tasks is equal in both versions, but the update of data is different. That is reflected withn the input parameters to `func executemultipleestimatedtasks()`. 
+The execution of tasks is equal in both versions, but the update of data is different. That is reflected by the input parameters to `func executemultipleestimatedtasks()` which kicks of synchronization of all estimated tasks and data to be synchronized. 
 
 ## JSON version
 
