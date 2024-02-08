@@ -305,7 +305,7 @@ The following is a brief overview of *estimate first and then execute tasks*. Th
 
 The user then select synchronize tasks and the navigation path for executing tasks including progress of each is pushed onto the view stack. From this view the reference of the class with data from estimation is passed onto the class which executes the tasks. The id for each task is pushed onto a stack and the class executing tasks is not released until the stack is emtpy and a process termination signal is observed from the last task. The progess of synchronizing is communicated to the progress view by an *escaping closure*, `@escaping (Int) -> Void)`. 
 
-The execution of tasks are eqaul for both versions, but the update of data is different. That is reflected withn the input parameters to `func executemultipleestimatedtasks()`. 
+The execution of tasks is equal in both versions, but the update of data is different. That is reflected withn the input parameters to `func executemultipleestimatedtasks()`. 
 
 ## JSON version
 
