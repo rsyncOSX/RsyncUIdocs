@@ -4,7 +4,7 @@ date = "2023-12-23"
 title =  "How is RsyncUI built?"
 tags = ["built"]
 categories = ["general information"]
-lastmod = "2023-12-23"
+lastmod = "2024-02-8"
 +++
 *Under development.* This page is an overview of the main components of RsyncUI. The development of both RsyncOSX and RsyncUI has been an evolving process. The open source community has been and still is a great resource for ideas and how to solve issues. Both apps today are stable and in a state of maintenance. Some numbers:
 
@@ -14,53 +14,6 @@ lastmod = "2023-12-23"
 | RsyncOSX   | about 11K   | about 121      | 14 March 2016 |	
 
 Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma?** Go for RsyncUI. And for the last year and years to come, all development has been and will be within RsyncUI. RsyncOSX is bugfixed only.
-
-# A few words about the code
-
-Even though I am an educated IT person, most of my professional work has been as an IT manager and not a developer. Most of my coding experience is with private projects such as RsyncOSX and RsyncUI. Google is and has been a great resource for research and advice on how to solve specific problems. Reading about other developers code and discussions is always valuable input for me. The MVC pattern and single source of truth are important patterns for both apps. I have also tried to use all Apple Frameworks, utilizing most of the required built-in functions.  And even if there are many lines of code in both apps, I have tried to write as little code as possible. So if you are looking at my code, keep this in mind, my code is only one of many solutions.
-
-And I believe there is no wright or wrong in development. Each developer and team chooses their way to developed based on their skills and what they want to achieve. I know my own code and I have no issues understanding what my code is doing. And as times go on, in my opinion, I do changes in code to the better. But I fully understand other developers might have some issues understanding my code. 
-
-# Why not App Store
-
-One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. One important feature for RsyncUI is passwordless login by ssh to remote servers. Passwordless login by ssh is by ssh-keys and default ssh-key is:
-
-```bash
-~/.ssh/id_rsa
-```
-The App Sandbox capability is set off and access local files on. This is the only way to get the latest version of RsyncUI working as expected. The sequrity for RsyncUI not containing malicious code is by [signed and notarized by Apple](/post/notarized/). 
-
-RsyncUI is also storing data in a .dotfile catalog.
-
-```bash
-$HOME/.rsyncosx/macserialnumber/configurations.json
-```
-A SwiftData version is coming to life. This is a *downscaled* version of the Homebrew version RsyncUI. There are no plans to introduce SwiftData for the Homebrew version. The Homebrew version will *never* get to the Apple App Store due to restrictions on reading files from `.dotcatalog` like from `$Home/.ssh` for ssh-keys and not allowed to execute rsync from catalogs like `/opt/homebrew/bin`. And I am also experience an issue executing default `/usr/bin/rsync` when the Sandbox is enabled. As far as I know there should not be an issue executing default rsync from a Sanboxed applifcation, but there is. I am investigating why. Apple Sandbox is requiered for distribute applications from Apple App Store.
-
-# SwiftData
-
-From Apple Developement Documentations: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*.  I have commenced the work on a release of *RsyncGUI* utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *SwiftData* version is enabled, there will be two versions of RsyncUI:
-
-- RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
-- RsyncGUI only for attached discs
-
-The development of the SwiftData version is done, now there are some testing and QA before a release on GitHub only. 
-
-## SwiftData and RsyncGUI (not RsyncUI)
-
-[RsyncGUI](https://github.com/rsyncOSX/RsyncGUI) is the SwiftData version of RsyncUI. The name of the app is RsyncGUI, an app name I have previously used for a similar app on Apple App Store. What is this app compared to the Homebrew version of RsyncUI? RsyncGUI is a downscaled version of RsyncUI. It does not support remote servers, but you may use an updated version of `rsync`.
-
-- synchronize data only to *attached discs* on your Mac
-	- it might synchronize data to the internal volume as well, but that is not a backup
-- not able to delete default `--delete` parameter
-- no support for snapshots, use the `--backup` parameter to rsync if backup of old data is requiered
-- supports adding parameters to rsync
-- utilize SwiftData as storage
-	- this might enable iCloud for backup of configurations and log records
-	- SwiftData uses a SQLite database and by default the files are stored as `~/Library/Application Support/default.store`
-	- there are three `default.store` files
-- most of the code is copied from RsyncUI but there are changes where code involves reading and updating configurations, log records and user setting
-- no views for restore, use Finder to restore data
 
 # RsyncUI vs RsyncOSX
 
@@ -76,6 +29,35 @@ SwiftUI is the latest declarative framework developed by Apple for views, contro
 # SwiftUI
 
 *RsyncUI* utilizes *SwiftUI* for the UI. UI components are views, which is a value type `struct` and not a reference type `class`. UI components are added to RsyncUI by code. Every time a property within a SwiftUI view is changed the view is recreated by the runtime. In SwitfUI there are several property wrappers to create bindings to mutable properties.
+
+# A few words about the code
+
+Even though I am an educated IT person, most of my professional work has been as an IT manager and not a developer. Most of my coding experience is with private projects such as RsyncOSX and RsyncUI. Google is and has been a great resource for research and advice on how to solve specific problems. Reading about other developers code and discussions is always valuable input for me. The MVC pattern and single source of truth are important patterns for both apps. I have also tried to use all Apple Frameworks, utilizing most of the required built-in functions.  And even if there are many lines of code in both apps, I have tried to write as little code as possible. So if you are looking at my code, keep this in mind, my code is only one of many solutions.
+
+And I believe there is no wright or wrong in development. Each developer and team chooses their way to developed based on their skills and what they want to achieve. I know my own code and I have no issues understanding what my code is doing. And as times go on, in my opinion, I do changes in code to the better. But I fully understand other developers might have some issues understanding my code. 
+
+# Why not App Store
+
+One important requirement for macOS apps on Apple App Store is, quote Apple: *"To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability."* There are restrictions what an app can do inside the App Sandbox. Execute `rsync`, obvious, and enable passwordless login by ssh to remote servers are two must have features. The Apple Sandbox causes a few issues to both features when switch on. And I have not yet have any success when RsyncUI is set to use default rsync in macOS and only attached discs. But I am inveastigating, so there might be an Apple App Store in the future.
+
+Passwordless login by ssh is by ssh-keys and default ssh-key is:
+
+```bash
+~/.ssh/id_rsa
+```
+RsyncUI, the JSON version, is also storing data in a .dotfile catalog, three files .
+
+```bash
+$HOME/.rsyncosx/macserialnumber/*.json
+```
+# SwiftData
+
+From Apple Developement Documentations: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*.  I have commenced the work on a release of *RsyncUI* utilizing SwiftData. Within RsyncUI, the Homebrew version,  there are three files saved to storage tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *SwiftData* version is enabled, there will be two versions of RsyncUI:
+
+- RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
+- RsyncUI only by download from GitHub using SwiftData.
+
+The development of the SwiftData version is done, now there are some testing and QA before a release on GitHub only. [RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the SwiftData version of RsyncUI. 
 
 # Asynchronous execution 
 
@@ -274,13 +256,14 @@ final class SynchronizeConfiguration: Identifiable {
 The datamodel is initialized when the app is starting, if first time the datastore is automatically created . 
 
 ```bash
-var sharedModelContainer: ModelContainer = {
-        let schema = Schema([GlobalModel.self,
-                             SynchronizeConfiguration.self,
+ var sharedModelContainer: ModelContainer = {
+        let schema = Schema([SynchronizeConfiguration.self,
                              UserConfiguration.self,
                              LogRecords.self,
                              Log.self])
-        let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+
+        let storeURL = URL.documentsDirectory.appending(path: "rsyncui.sqlite")
+        let configuration = ModelConfiguration(schema: schema, url: storeURL)
 
         do {
             return try ModelContainer(for: schema, configurations: [configuration])
