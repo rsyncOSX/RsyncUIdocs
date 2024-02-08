@@ -10,10 +10,11 @@ lastmod = "2024-02-8"
 
  Some numbers:
 
-| App      | Lines of code | Swift files | Version 1.0 |
-| ----------- | ----------- |   ----------- | -------- |
-| RsyncUI   | about 13.2K     | about 163       | 6 May 2021 |
-| RsyncOSX   | about 11K   | about 121      | 14 March 2016 |	
+| App      | Data  | Lines of code | Swift files | Version 1.0 |
+| ----------- | ----------- |   ----------- | -------- | -------- |
+| RsyncUI  | JSON files |  about 13.4K     | about 164       | 6 May 2021 |
+| RsyncUI   | SwiftData |  about 11.8K     | about 138       | February 2024 |
+| RsyncOSX  |  JSON files |  about 11K   | about 121      | 14 March 2016 |	
 
 Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma?** Go for RsyncUI. And for the last year and years to come, all development has been and will be within RsyncUI. RsyncOSX is bugfixed only.
 
