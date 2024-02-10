@@ -95,7 +95,7 @@ All old property wrapper `@StateObject` in combination with `ObservableObject` a
 
 The flow and handling of data, information about tasks and log-records, are slightly different in the two versions of RsyncUI. The dataflow using SwiftData is like a kind of very easy to understand and use as stated in documents from Apple.
 
-## JSON version
+## JSON 
 
 There are three files on permanent storage: tasks, log records and user settings. All files are JSON files and `Combine` is utilized to read and save data. JSON files are *encoded* before a write operation and *decoded* when read from storage. The encode and decode is requiered to represent JSON data as internal data within RsyncUI. 
 
@@ -113,9 +113,9 @@ All views which require data about tasks get data by a mutable property wrapper 
 
 When there are changes on data the complete datastructure is written to file, like if there are 2000 logrecords and adding a new log record causes 2001 records to be written to the JSON-file. Data for the views are made avaliable by a `@Bindable` property and an `@Observable` object.  
 
-# SwiftData version
+# SwiftData 
 
-In the SwiftData version there are two database operations used, insert and delete. Updates of data is by selecting the record and update, SwiftData takes care of updating the database and informes the views to update. To use SwiftData there is an import of SwiftData Library. The datastructure in RsyncUI is a struct, but SwiftData requiere `@Model final class`, that is the structs holding the datamodels are modified to class:
+There are two database operations used, insert and delete. Updates of data is by selecting the record and update, SwiftData takes care of updating the database and informes the views to update. To use SwiftData there is an import of SwiftData Library. The datastructure in RsyncUI is a struct, but SwiftData requiere `@Model final class`, that is the structs holding the datamodels are modified to class:
 
 ```bash
 import Foundation
@@ -146,7 +146,6 @@ final class SynchronizeConfiguration: Identifiable {
     var parameter14: String?
     // Profile
     var profile: String = "Default profile"
-
    }
 ```
 The datamodel is initialized when the app is starting, if first time the datastore is automatically created . 
@@ -207,8 +206,8 @@ Combine, a *declarative* library by Apple, is utilized in several parts of Rsync
 
 - [read json ](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/ReadConfigurationJSON.swift) configuration file for tasks, only the JSON version of RsyncUI
 - [write json](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Storage/WriteConfigurationJSON.swift) configuration file for tasks, only the JSON version of RsyncUI
-- [observing signals](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) within the process object, both versions
-- debouncing input from user, filter strings and other values which are validated before saving, both versions
+- [observing signals](https://github.com/rsyncOSX/RsyncUI/blob/main/RsyncUI/Model/Process/Main/Async/RsyncProcessAsync.swift) within the process object,
+- debouncing input from user, filter strings and other values which are validated before saving
 
 The user input for search or filter is by default a `@State` string variable. The view reacts on the input by every keypress and the filter algorithm is triggered by every keypress. This causes a sluggish user interface, but by debounce input by *a second* causes the filter algorithm only to update the view after the debounce period.
 
@@ -310,7 +309,7 @@ The user then select synchronize tasks and the navigation path for executing tas
 
 The execution of tasks is equal in both versions, but the update of data is different. That is reflected by the input parameters to `func executemultipleestimatedtasks()` which kicks of synchronization of all estimated tasks and data to be synchronized. 
 
-## JSON version
+## JSON
 
 When the execution of tasks are completed the updated data is writen to JSON files from within the `func executemultipleestimatedtasks()`. The updated data is feed back to the `@Bindable` object by the `func updateconfigurations(_ configurations: [SynchronizeConfiguration])` which also causes the UI to be updated by SwiftUI.
 
@@ -349,9 +348,9 @@ func executemultipleestimatedtasks() {
         progress = Double(count)
     }
 ```
-## SwiftData version
+## SwiftData
 
-For the SwiftData version all changes of data, e.g. only the changes, are braught back to the calling view by the two functions `func updatedates(_ configrecords: [Typelogdata])` and  `func updatelogrecords(_ logrecords: [Typelogdata])`. The updates are feed back to the calling view and data is updated on the fly. The update causes the views to update as well by SwiftData.
+All changes of data, e.g. only the changes, are braught back to the calling view by the two functions `func updatedates(_ configrecords: [Typelogdata])` and  `func updatelogrecords(_ logrecords: [Typelogdata])`. The updates are feed back to the calling view and data is updated on the fly. The update causes the views to update as well by SwiftData.
 
 ```bash
 func executemultipleestimatedtasks() {
