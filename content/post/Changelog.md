@@ -8,12 +8,6 @@ lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## SwiftData 
-
-Update 7 February 2024:
-
-A SwiftData version of RsyncUI is coming to life. During the last weeks I have enabled SwiftData, in development, for RsyncUI. The development is still very beta and there are still some missing parts to develop. But it works and it remains to see if the SwiftData version of RsyncUI will be an option for RsyncUI. SwiftData is new to me, its fun to learn about and develop. The datamodel is by no means complicated, but the flow of data compared to the JSON version of RsyncUI is somewhat different. 
-
 ## Version 1.8.6 (build 94) - 30 January 2024
 
 **Important**: the release  fixes the issues in version 1.8.5. Due to refactory of log records it is important you have installed and used version 1.8.5 before installing this release . Version 1.8.6 does **not** include check and copy of old file log records as version 1.8.5 does.
