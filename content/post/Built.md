@@ -16,6 +16,8 @@ Some numbers:
 | RsyncUI   | SwiftData |  about 11.8K     | about 138       | February 2024 |
 | RsyncOSX  |  JSON files |  about 11K   | about 121      | 14 March 2016 |	
 
+The SwiftData is a project to learn more about SwiftData and verify if it might be usable for RsyncUI. It works, but for the moment it seems like the JSON is more convenient.
+
 Which application should I use? Both applications do the same job, but RsynUI is more feature-rich, and the GUI, including navigation, is better. **Are you on macOS Sonoma?** Go for RsyncUI. And for the last year and years to come, all development has been and will be within RsyncUI. RsyncOSX is bugfixed only.
 
 # RsyncUI vs RsyncOSX
