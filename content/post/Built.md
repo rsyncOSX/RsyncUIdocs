@@ -10,7 +10,7 @@ This page is an overview of the main components of RsyncUI. The development of b
 
 Some numbers:
 
-| App      | Data  | Lines of code | Swift files | Version 1.0 |
+| App      | Storage  | Lines of code | Swift files | Version 1.0 |
 | ----------- | ----------- |   ----------- | -------- | -------- |
 | RsyncUI  | JSON files |  about 13.4K     | about 164       | 6 May 2021 |
 | RsyncOSX  |  JSON files |  about 11K   | about 121      | 14 March 2016 |	
@@ -137,7 +137,6 @@ final class SynchronizeConfiguration: Identifiable {
     var parameter12: String?
     var parameter13: String?
     var parameter14: String?
-    // Profile
     var profile: String = "Default profile"
    }
 ```
@@ -162,8 +161,8 @@ The datamodel is initialized when the app is starting, if first time the datasto
 ```
 The datamodel is made avaliable for all the views by:
 ```bash
-Window("RsyncGUI", id: "main") {
-            RsyncGUIView()
+Window("RsyncUI", id: "main") {
+            RsyncUIView()
                 .frame(minWidth: 1300, minHeight: 510)
         }
         .modelContainer(sharedModelContainer)
