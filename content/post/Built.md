@@ -66,12 +66,9 @@ And the OSLogs might be read by using the Console app. Be sure to set the Action
 
 # SwiftData
 
-From Apple Developement Documentations quote Apple: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*. In RsyncUI, the Homebrew version,  there are three JSON files saved to storage: tasks, log records and user settings. Those data is enabled by utilizing SwiftData. When a *RsyncUI using SwiftData* version is enabled, there will be two versions of RsyncUI:
+Using SwiftData in RsyncUI is a test project for learning about SwiftData and check out if SwiftData and RsyncUI is a good match. From Apple Developement Documentations quote Apple: *"Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies."*. In RsyncUI, the Homebrew version,  there are three JSON files saved to storage: tasks, log records and user settings. Those data is enabled by utilizing SwiftData.  
 
-- RsyncUI for Homebrew as today utilizing reading and writing files from a `.dotcatalog` 
-- RsyncUI only by download from GitHub using SwiftData, as a start
-
-[RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the repository for the SwiftData version of RsyncUI. 
+The app is working and some minor testing is commenced. [RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the repository for the SwiftData version of RsyncUI. 
 
 # SwiftUI
 
@@ -104,11 +101,8 @@ There are three files on permanent storage: tasks, log records and user settings
 When RsyncUI starts it reads *user configuration* and *data about tasks for the default profile*. The object holding data about tasks is an `@Observable` object created when RsyncUI starts.
 
 ```bash
-var rsyncUIdata: RsyncUIconfigurations {
-        let configurationsdata = ReadConfigurationsfromstore(selectedprofile)
-        return RsyncUIconfigurations(selectedprofile,
-                                     configurationsdata.configurations ?? [],
-                                     configurationsdata.validhiddenIDs)
+ var rsyncUIdata: RsyncUIconfigurations {
+        return RsyncUIconfigurations(selectedprofile)
     }
 ```
 All views which require data about tasks get data by a mutable property wrapper `@Bindable var rsyncUIdata: RsyncUIconfigurations`.  Within `RsyncUIconfigurations` there is a observed variable holding the data structure about tasks. When tasks are updated, like timestamp last run, the class which executes the tasks does two jobs when executing tasks is completed. The internal datastructure is always updated. The first job is to send the changed updated datastructure up to the view by an *escaping closure*, `@escaping ([SynchronizeConfiguration]) -> Void)`. The view updates the observed variable holding the data structure about tasks and the SwiftUI runtime updates the views. The second job is to write the updates the permanent storage.
