@@ -8,6 +8,8 @@ lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+I am not a YouTuber - but I have used a couple of hours today to create [a get started YouTube video for RsyncUI](https://youtu.be/qrSScdmnnTw?si=x3QR9SNYxJFMTKjE). 
+
 ## Version 1.8.6 (build 94) - 30 January 2024
 
 **Important**: the release  fixes the issues in version 1.8.5. Due to refactory of log records it is important you have installed and used version 1.8.5 before installing this release . Version 1.8.6 does **not** include check and copy of old file log records as version 1.8.5 does.
