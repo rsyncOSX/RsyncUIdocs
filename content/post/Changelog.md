@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Date: 17 February 2024
 
-Next version Is about to be released in some days. By doing the SwiftData version of RsyncUI, there are a few internal changes in the Homebrew version. I am not sure about SwiftData and RsyncUI. SwiftData works, of course, but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I also applied a few internal changes to the default version of RsyncUI. The Quick Task is also moved to a toolbar button in the main tasks view. And the demo data is updatet as well, demo data now also includes some snapshot data to show how tagging works. By tagging snapshots means tagging for delete old snapshots. 
+Next version is about to be released in some days. By doing the SwiftData version of RsyncUI, there are a few internal changes in the Homebrew version. I am not sure about SwiftData and RsyncUI. SwiftData works, of course, but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I also applied a few internal changes to the default version of RsyncUI. The Quick Task is also moved to a toolbar button in the main tasks view. And the demo data is updated as well, demo data now also includes some snapshot data to show how tagging works. By tagging snapshots means tagging for delete old snapshots. 
 
 There is more info [about next version](/post/newversion/).
 

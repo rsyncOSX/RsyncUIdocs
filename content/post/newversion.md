@@ -8,7 +8,7 @@ lastmod = "2024-02-17"
 +++
 Date: 17 Feb 2024
 
-Some info about next version 1.8.7 (build 95). To be relased in som days.
+Some info about next version 1.8.7 (build 95). To be relased in some days.
 
 There are quite a few internal changes in code. I got some ideas by doing the SwiftData project for RsyncUI. The changes are mostly simplifying and deleting code. And there is updates within the demo data as well. The demo data now includes some data about snapshots. Snapshot is an effective method for saving old and deleted files ahead of a synchronizing task. By the restore view,  restore any file from any snapshot. 
 
