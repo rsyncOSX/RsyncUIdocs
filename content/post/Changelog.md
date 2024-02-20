@@ -16,6 +16,7 @@ By doing the SwiftData version of RsyncUI, I got idea and motivation for several
 -  the Quick Task is moved to a toolbar button in the main tasks view
 - there is some updates in demo data is updated as well, demo data now also includes some snapshot data to show how tagging works.
 	- by tagging snapshots means tagging for delete old snapshots
+	- DemoData profile might be deleted using the Tasks menu, choose Profiles from the toolbar
 - and some localization updates, German and Norwegian
 
 ## Version 1.8.6 (build 94) - 30 January 2024
