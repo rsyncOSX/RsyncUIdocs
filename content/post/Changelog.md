@@ -8,11 +8,15 @@ lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Version 1.8.7 (build 95)
+## Version 1.8.7 (build 95) - 20 February 2024
 
-Date: 17 February 2024
+By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version. You can red more about the SwiftData project in  [the built](/post/built/) documentation. 
 
-Next version is about to be released in some days. By doing the SwiftData version of RsyncUI, there are a few internal changes in the Homebrew version. I am not sure about SwiftData and RsyncUI. SwiftData works, of course, but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I also applied a few internal changes to the default version of RsyncUI. The Quick Task is also moved to a toolbar button in the main tasks view. And the demo data is updated as well, demo data now also includes some snapshot data to show how tagging works. By tagging snapshots means tagging for delete old snapshots. 
+- several internal enhancements, use GitHub to compare versions if searching for details
+-  the Quick Task is moved to a toolbar button in the main tasks view
+- there is some updates in demo data is updated as well, demo data now also includes some snapshot data to show how tagging works.
+	- by tagging snapshots means tagging for delete old snapshots
+- and some localization updates, German and Norwegian
 
 There is more info [about next version](/post/newversion/).
 
@@ -124,10 +128,6 @@ Enable  `NavigationStack` by switch on in user settings, save and restart RsyncU
 There are some GUI changes in both apps.  And a couple of minor fixes. There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. Enable `NavigationStack` is by settings and it is default off. All sheets, like pop up views, are for *the macOS Sonoma only* version converted to new Navigation if enabled. For *the Homebrew* version only for macOS 14 users and only the Tasks view including estimating details. 
 
 See more info about it [here](/post/navstack/).
-
-### OSLog
-
-OSLog, a unified logging system developed by Apple, is implemented in both versions. If you want to verify or just see what RsyncUI is executing of commands for `rsync`, you can in this release, use the Console app to verify the commands. Please see more info about OSLog in [the built](/post/Built/) documentation.
 
 ## Version 1.7.7 build (87)  and 1.7.4 build (87) - 31 October 2023
 
