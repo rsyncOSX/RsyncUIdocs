@@ -18,8 +18,6 @@ By doing the SwiftData version of RsyncUI, I got idea and motivation for several
 	- by tagging snapshots means tagging for delete old snapshots
 - and some localization updates, German and Norwegian
 
-There is more info [about next version](/post/newversion/).
-
 ## Version 1.8.6 (build 94) - 30 January 2024
 
 **Important**: the release  fixes the issues in version 1.8.5. Due to refactory of log records it is important you have installed and used version 1.8.5 before installing this release . Version 1.8.6 does **not** include check and copy of old file log records as version 1.8.5 does.
