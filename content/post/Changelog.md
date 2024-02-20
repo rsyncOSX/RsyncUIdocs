@@ -10,13 +10,14 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.8.7 (build 95) - 20 February 2024
 
-By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version. You can red more about the SwiftData project in  [the built](/post/built/) documentation. 
+By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version. You can read more about the SwiftData project in  [the built](/post/built/) documentation. 
 
 - several internal enhancements, use GitHub to compare versions if searching for details
 -  the Quick Task is moved to a toolbar button in the main tasks view
-- there is some updates in demo data is updated as well, demo data now also includes some snapshot data to show how tagging works.
+- there are some updates in demo data is updated as well, demo data now also includes some snapshot data to show how tagging works.
 	- by tagging snapshots means tagging for delete old snapshots
 	- DemoData profile might be deleted using the Tasks menu, choose Profiles from the toolbar
+	- DemoData is downloaded from [GitHub](https://github.com/rsyncOSX/RsyncUI/tree/main/samplejsondata)
 - and some localization updates, German and Norwegian
 
 ## Version 1.8.6 (build 94) - 30 January 2024
