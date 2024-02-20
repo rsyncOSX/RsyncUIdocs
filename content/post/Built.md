@@ -98,6 +98,46 @@ All views which require data about tasks get data by a mutable property wrapper 
 
 When there are changes on data the complete datastructure is written to file, like if there are 2000 logrecords and adding a new log record causes 2001 records to be written to the JSON-file. Data for the views are made avaliable by a `@Bindable` property and an `@Observable` object.  
 
+Filter and sort Logrecords in JSON. See below how it works for the SwiftData.
+
+```bash
+func updatelogs() async {
+        if let logrecords = rsyncUIlogrecords.logrecords {
+            if debouncefilterstring != "" {
+                if hiddenID == -1 {
+                    var merged = [Log]()
+                    for i in 0 ..< logrecords.count {
+                        merged += [logrecords[i].logrecords ?? []].flatMap { $0 }
+                    }
+                    // return merged.sorted(by: \.date, using: >)
+                    let records = merged.sorted(using: [KeyPathComparator(\Log.date, order: .reverse)])
+                    logs = records.filter { ($0.dateExecuted?.en_us_date_from_string().long_localized_string_from_date().contains(debouncefilterstring)) ?? false || ($0.resultExecuted?.contains(debouncefilterstring) ?? false)
+                    }
+                } else {
+                    if let index = logrecords.firstIndex(where: { $0.hiddenID == hiddenID }) {
+                        let records = (logrecords[index].logrecords ?? []).sorted(using: [KeyPathComparator(\Log.date, order: .reverse)])
+                        logs = records.filter { ($0.dateExecuted?.en_us_date_from_string().long_localized_string_from_date().contains(debouncefilterstring)) ?? false || ($0.resultExecuted?.contains(debouncefilterstring) ?? false)
+                        }
+                    }
+                }
+            } else {
+                if hiddenID == -1 {
+                    var merged = [Log]()
+                    for i in 0 ..< logrecords.count {
+                        merged += [logrecords[i].logrecords ?? []].flatMap { $0 }
+                    }
+                    // return merged.sorted(by: \.date, using: >)
+                    logs = merged.sorted(using: [KeyPathComparator(\Log.date, order: .reverse)])
+                } else {
+                    if let index = logrecords.firstIndex(where: { $0.hiddenID == hiddenID }) {
+                        logs = (logrecords[index].logrecords ?? []).sorted(using: [KeyPathComparator(\Log.date, order: .reverse)])
+                    }
+                }
+            }
+        }
+    }
+```
+
 ## SwiftData 
 
 [RsyncUISwiftData](https://github.com/rsyncOSX/RsyncUISwiftData) is the repository for the SwiftData version of RsyncUI.  One of the main differences compared to the JSON-file version of RsyncUI are that read and updates of data is taken care of by SwiftData. Every time a view needs data it is only requiered to use the `@Environment` to get the model and a `@Query` property wrapper to get the actal data data. 
