@@ -2,7 +2,7 @@
 author = "Thomas Evensen"
 date = "2021-03-10"
 title =  "Add and update tasks"
-tags = ["add","profle"]
+tags = ["add","profile"]
 categories = ["synchronize"]
 lastmod = "2023-12-18"
 +++
