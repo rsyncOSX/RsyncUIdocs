@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.8.7 (build 95) - 20 February 2024
 
-By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version. You can read more about the SwiftData project in  [the built](/post/built/) documentation. 
+By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version.  You can read more about [how RsyncUI is built](https://rsyncuibuilt.netlify.app) including some details about SwiftData project. 
 
 - several internal enhancements, see GitHub [to compare versions](https://github.com/rsyncOSX/RsyncUI/compare/v1.8.6...v1.8.7) 
 -  the Quick Task is moved to a toolbar button in the main tasks view
