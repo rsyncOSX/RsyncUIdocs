@@ -74,7 +74,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: This is documents about how to use RsyncUI
+    Content: This web are a few pages about how to use RsyncUI
 
   socialIcons:
     #- name: x
