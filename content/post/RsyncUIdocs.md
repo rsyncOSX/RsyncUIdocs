@@ -30,7 +30,7 @@ The first time RsyncUI starts, it presents a link to [important](/post/important
 
 {{< figure src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-RsyncUI can be used in parallel with RsyncOSX. The catalog for storing configuration files is `$HOME/.rsyncosx/macserialnumber/`. RsyncUI and RsyncOSX do not share user settings, e.g, like enabling version 3.x of rsync, has to be set in both apps.
+The catalog for [storing configuration](/post/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`. 
 
 ## Aborting a task
 
