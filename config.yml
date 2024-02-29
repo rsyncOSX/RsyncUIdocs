@@ -1,6 +1,6 @@
 baseURL: "https://rsyncui.netlify.app"
 title: RsyncUI
-paginate: 5
+paginate: 10
 theme: PaperMod
 
 enableRobotsTXT: true
