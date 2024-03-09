@@ -8,6 +8,10 @@ lastmod =  "2023-12-24"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+## Version 1.8.8 (build 96)
+
+There is some cleanup in code and *one breaking change*, support for pre and post tasks are removed. I belive only a few, if any, uses pre and post task and the cleanup in code causes some issues to pre and post task. This is a heads up before release of this version later in March.
+
 ## Version 1.8.7 (build 95) - 20 February 2024
 
 By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version.  You can read more about [how RsyncUI is built](https://rsyncuibuilt.netlify.app) including some details about SwiftData project. 
