@@ -67,19 +67,3 @@ Selecting the `Home` icon lists all catalogs from your `$Home`. If there is atta
 Either add or delete profiles. A profile is only a catalog where data about tasks are saved. See tag about `config-file` where RsyncUI stores files.
 
 {{< figure src="/images/add/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
-  
-## Shell commands
-
-Be carefull with this option, most likely for the advanced user.
-
-{{< figure src="/images/add/shellcommands.png" alt="" position="center" style="border-radius: 8px;" >}}
-
-You can connect shell scripts to a task. A shell script can e.g. be mounting, pretask and unmounting, posttask of a remote storage. Or you can execute a shell script to encrypyt your data ahead of synchronizing the data. The shell scripts names and locations is set by the user.
-
-- **pretask**: attach optional pre shell script to the synchronize command, the shell script is executed **ahead** of the synchronize command
-  - switch execute shell script on/off
-- **posttask**: attach optional post shell script to the synchronize command, the shell script is executed **after** the synchronize command
-  - switch execute shell script on/off
-- **Halt on error**: if the phrase "error" occurs in the output from the `pre.sh` command, if `on` the execution of synchronize command is aborted
-
-
