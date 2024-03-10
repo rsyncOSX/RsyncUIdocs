@@ -10,7 +10,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.8.8 (build 96)
 
-There is some cleanup in code and *one breaking change*, support for pre and post tasks are removed. I belive only a few, if any, uses pre and post task and the cleanup in code causes some issues to pre and post task. This is a heads up before release of this version later in March.
+There is some cleanup in code and *one breaking change*, support for pre and post tasks are removed. I belive only a few, if any, uses pre and post task and the cleanup in code causes some issues to pre and post task. This is a heads up before release of this version later in March. This version is compiled with Xcode version 15.3, released 5 March 2024, with Swift 5.10. This version fixes one minor bug in RsyncUI, after execution now RsyncUI returns to the root view. 
+
+The main new feature with Swift 5.10 is full dataisolation in the concurrency model. In Xcode the flag SWIFT_STRICT_CONCURRENCY is set to complete. Enabling this flag in RsyncUI caused a few warnings and updates in code. In RsyncUI, there is only one thread a time executing asynchronous task. Two threads writing to the same memory at same time will cause a datarace and crash. The full dataisolation is important and I have learned more about it enabling the above flag in RsyncUI. And it is requiered in Swift 6.0 which is to be released later in 2024.
 
 ## Version 1.8.7 (build 95) - 20 February 2024
 
