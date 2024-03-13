@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.8.8 (build 96) - 13 March 2024 (not yet released)
 
-Changes to be relased before Easter 2024. I am using RsyncUI myself several times a day, both on a local FreeBSD server and on two external local SSD disks. Every time I am making changes to code, documents, or photos, I am using RsyncUI to synchronize my backups. And to my own experience, RsyncUI is very stable, and rsync is, in my opinion, a fantastic and reliable tool for synchronize data. 
+Changes to be relased before Easter 2024. I am using RsyncUI myself several times a day, both on a local FreeBSD server and on two external local SSD disks. Every time I am making changes to code, documents, or photos, I am using RsyncUI to synchronize my backups. And to my own experience, RsyncUI is very stable, and rsync is, in my opinion, a fantastic and reliable tool for synchronize data. Some data about my own updates of data using RsyncUI, using the logs and filter by year, and only to my FreeBSD server: in 2022, 451 updates, in 2023: 1031 updates, in 2024 until today: 247 updates. 
 
 - there is some cleanup in the code and *one breaking change*, support for pre- and post tasks is removed
 	- I believe only a few, if any, use pre- and posttasks, and the cleanup in code causes some issues to pre and post task
