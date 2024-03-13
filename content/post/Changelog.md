@@ -4,15 +4,27 @@ title = "Changelog"
 date = "2023-12-24"
 tags = ["changelog"]
 categories = ["general information"]
-lastmod =  "2023-12-24"
+lastmod =  "2024-03-13"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Version 1.8.8 (build 96)
+## Version 1.8.8 (build 96) - 13 March 2024 (not yet released)
 
-There is some cleanup in code and *one breaking change*, support for pre and post tasks are removed. I belive only a few, if any, uses pre and post task and the cleanup in code causes some issues to pre and post task. This is a heads up before release of this version later in March. This version is compiled with Xcode version 15.3, released 5 March 2024, with Swift 5.10. This version fixes one minor bug in RsyncUI. After execution of tasks RsyncUI returns to the root view. 
+Changes to be relased before Easter 2024. I am using RsyncUI myself several times a day, both on a local FreeBSD server and on two external local SSD disks. Every time I am making changes to code, documents, or photos, I am using RsyncUI to synchronize my backups. And to my own experience, RsyncUI is very stable, and rsync is, in my opinion, a fantastic and reliable tool for synchronize data. 
 
-The main new feature with Swift 5.10 is full dataisolation in the concurrency model. In Xcode the flag SWIFT_STRICT_CONCURRENCY is set to complete. Enabling this flag in RsyncUI caused a few warnings and updates in code. In RsyncUI, there is only one thread a time executing asynchronous task. Two threads writing to the same memory at same time will cause a datarace and crash. The full dataisolation is important and I have learned more about it enabling the above flag in RsyncUI. And it is requiered in Swift 6.0 which is to be released later in 2024.
+- there is some cleanup in the code and *one breaking change*, support for pre- and post tasks is removed
+	- I believe only a few, if any, use pre- and posttasks, and the cleanup in code causes some issues to pre and post task
+- in Add tasks, select the Home button (Home catalogs); if an external drive is attached selecting a catalog and mounted volume add (suggest) values for local catalog, remote catalog and Synchronize ID
+- this version is compiled with Xcode version 15.3, released 5 March 2024, Swift 5.10 and it fixes one minor bug in RsyncUI, after execution of tasks RsyncUI returns to the root view as expected
+	- the main new feature with Swift 5.10 is full dataisolation in the concurrency model
+	- in this release several of previous refactored functions to use Swifts `async` and  `await` keywords for asynchronus execution are converted back to use what is called *completion handlers*, which are triggered post when the rsync task is completed 
+	- I would prefer using Swifts `async` and  `await` keywords in what is called *structured concurrency*, but it does not work as expected by using the `Process` object which is responsible for execute all commands to rsync
+- due to the above a few `async` functions are refactored back to use *completion handlers*, and some cleanup as part of this
+- some changes of icons toolbar
+- and this is also a maintenance release, cleanup and minor fixes in code
+- deleted one external library, there were to many complains in library due to Swifts check for full dataisolation
+	- using default SwiftUI functions, no benefit using external library
+- I am now very reluctant to use other external libraries, another which was removed in version 1.8.5 sometimes caused a crash in RsyncUI
 
 ## Version 1.8.7 (build 95) - 20 February 2024
 
