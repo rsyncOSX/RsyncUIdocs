@@ -8,11 +8,11 @@ lastmod =  "2024-03-13"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Version 1.8.8 (build 96) - 13 March 2024 (not yet released)
+## Version 1.8.8 (build 96) - 14 March 2024
 
-Changes to be relased before Easter 2024:
+Changes in this release:
 
-- there is some cleanup in the code and *one breaking change*, support for pre- and post tasks is removed
+- there is some cleanup in the code and *one possible breaking change*, support for pre- and post tasks is removed
 	- I believe only a few, if any, use pre- and posttasks, and the cleanup in code causes some issues to pre and post task
 - in Add tasks, select the Home button (Home catalogs); if an external drive is attached selecting a catalog and mounted volume add (suggest) values for local catalog, remote catalog and Synchronize ID
 - this version is compiled with Xcode version 15.3, released 5 March 2024, Swift 5.10 and it fixes one minor bug in RsyncUI, after execution of tasks RsyncUI returns to the root view as expected
