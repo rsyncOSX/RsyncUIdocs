@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.8.8 (build 96) - 13 March 2024 (not yet released)
 
-Changes to be relased before Easter 2024. I am using RsyncUI myself several times a day, both on a local FreeBSD server and on two external local SSD disks. Every time I am making changes to code, documents, or photos, I am using RsyncUI to synchronize my backups. And to my own experience, RsyncUI is very stable, and rsync is, in my opinion, a fantastic and reliable tool for synchronize data. Some numbers about my own use of RsyncUI, using the logs and filter by year, and only to my FreeBSD server: in 2022, 451 updates, in 2023: 1031 updates, in 2024 until today: 247 updates. 
+Changes to be relased before Easter 2024:
 
 - there is some cleanup in the code and *one breaking change*, support for pre- and post tasks is removed
 	- I believe only a few, if any, use pre- and posttasks, and the cleanup in code causes some issues to pre and post task
@@ -25,6 +25,8 @@ Changes to be relased before Easter 2024. I am using RsyncUI myself several time
 - deleted one external library, there were to many complains in library due to Swifts check for full dataisolation
 	- using default SwiftUI functions, no benefit using external library
 - I am now very reluctant to use other external libraries, another which was removed in version 1.8.5 sometimes caused a crash in RsyncUI
+
+I am using RsyncUI myself several times a day, both on a local FreeBSD server and on two external local SSD disks. Every time I am making changes to code, documents, or photos, I am using RsyncUI to synchronize my backups. And to my own experience, RsyncUI is very stable, and rsync is, in my opinion, a fantastic and reliable tool for synchronize data. Some numbers about my own use of RsyncUI, using the logs and filter by year, and only to my FreeBSD server: in 2022, 451 synchronizations, in 2023: 1031 synchronizations, in 2024 until today: 247 synchronizations. 
 
 ## Version 1.8.7 (build 95) - 20 February 2024
 
