@@ -8,11 +8,13 @@ lastmod = "2023-12-18"
 +++
 Always verify, by a `--dry-run`,  the result of a new task before executing it. 
 
-A task require minimum a *local catalog* and a *remote catalog*. After entering information about a task, select the `+` icon upper right to add it to RsyncUI. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
+A task require minimum a *local catalog* and a *remote catalog*. After entering information about a task, select `Return` on the toolbar to add the task. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
 
 {{< figure src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID. Or  `+` will add a new task. To update a task select it and to save changes press the `+`, which has changed to an update icon.
+Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID. Or  `Return` will add a new task. 
+
+To update a task, select the task and to save changes, select  `Return` on the toolbar.
 
 ## Copy and paste
 
@@ -57,13 +59,16 @@ The following are data about tasks:
   
 ## Catalogs
 
-Selecting the `Home` icon lists all catalogs from your `$Home`. If there is attached a local disk, the first name of volume is automatically copied to the destination.
+Selecting the `Home` icon lists all catalogs from your `$Home`. If there is attached a local disk, the mounted volumes are presented. Select the homecatalog and mounted volume, return to main Task view and RsyncUI suggest some values. 
 
 {{< figure src="/images/add/homecatalogs.png" alt="" position="center" style="border-radius: 8px;" >}}
-{{< figure src="/images/add/volumes.png" alt="" position="center" style="border-radius: 8px;" >}}
+
+Return, select the left arrow on the toolbar, to main Task view. To add suggested task select `Return` on the toolbar.
+
+{{< figure src="/images/add/homecatalogs_return.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Profiles
 
-Either add or delete profiles. A profile is only a catalog where data about tasks are saved. See tag about `config-file` where RsyncUI stores files.
+Either add or delete profiles. A profile is only a catalog where data about tasks are saved. See tag about `config-file` where RsyncUI stores files. To delete a profile, selct profile and `trash` on toolbar.
 
 {{< figure src="/images/add/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}
