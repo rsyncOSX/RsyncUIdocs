@@ -12,7 +12,7 @@ A task require minimum a *local catalog* and a *remote catalog*. After entering 
 
 {{< figure src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID. Or  `Return` will add a new task. 
+Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID. Or  `Return` on the toolbar will add a new task. 
 
 To update a task, select the task and to save changes, select  `Return` on the toolbar.
 
@@ -69,6 +69,6 @@ Return, select the left arrow on the toolbar, to main Task view. To add suggeste
 
 ## Profiles
 
-Either add or delete profiles. A profile is only a catalog where data about tasks are saved. See tag about `config-file` where RsyncUI stores files. To delete a profile, selct profile and `trash` on toolbar.
+Either add or delete profiles. A profile is only a catalog where data about tasks are saved. See tag about `config-file` where RsyncUI stores files. To delete a profile, select profile and `trash` icon on toolbar.
 
 {{< figure src="/images/add/profiles.png" alt="" position="center" style="border-radius: 8px;" >}}

@@ -6,7 +6,7 @@ tags = ["synchronize"]
 categories = ["synchronize"]
 lastmod = "2024-03-15"
 +++
-Always verify, by a `--dry-run`,  the result of a new task before executing it. The *easiest* way to verify a task, select the task and then the shortcut `⌘E` for estimate.
+Always verify, by `--dry-run`,  the result of a new task before executing it. The *easiest* way to verify a task, select the task and then the shortcut `⌘E` for estimate.
 
 The main task view lets you execute *all* or *selected* tasks in one go. A *double click* on a task wil execute a `--dry-run`, the *next double click* will execute the real run. 
 
