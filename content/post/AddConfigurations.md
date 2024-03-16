@@ -1,12 +1,12 @@
 +++
 author = "Thomas Evensen"
-date = "2021-03-10"
+date = "2023-12-20"
 title =  "Add and update tasks"
 tags = ["add","profile"]
 categories = ["synchronize"]
-lastmod = "2023-12-18"
+lastmod = "2024-03-15"
 +++
-Always verify, by a `--dry-run`,  the result of a new task before executing it. 
+Always verify, by `--dry-run`,  the result of a new task before executing it. 
 
 A task require minimum a *local catalog* and a *remote catalog*. After entering information about a task, select `Return` on the toolbar to add the task. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
 
