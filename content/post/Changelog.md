@@ -10,6 +10,8 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.8.8 (build 96) - 14 March 2024
 
+Update 18 March: there is one minor issue in progressbar. When executing more than one task, the bounds of progressbar is not reset properly. This causes the progress not to work as expected. A fix will be released.
+
 Changes in this release:
 
 - there is some cleanup in the code and *one possible breaking change*, support for pre- and post tasks is removed
