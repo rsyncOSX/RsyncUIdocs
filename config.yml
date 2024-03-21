@@ -119,10 +119,13 @@ menu:
       name: about
       url: /about/
       weight: 5
+    - name: search
+      url: search/
+      weight: 10
     - identifier: categories
       name: categories
       url: /categories/
-      weight: 10
+      weight: 15
     - identifier: tags
       name: tags
       url: /tags/
@@ -141,4 +144,10 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
  
