@@ -12,8 +12,8 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Changes in this release:
 
-- fixed bug in ProgressView, more than one task and bounds for progress is set correctly
-- demo profile is removed, some issues when refactor of object executing external task `rsync`
+- fixed bug in ProgressView, if more than one task and bounds for progress are set correct
+- demo profile is removed, some issues when refactor of object executing external task `rsync` in v1.8.8
 	- fixing the issue would be to much spaghetti code in demodata for snapshots
 - and some minor updates and cleaning of code as usual
 
