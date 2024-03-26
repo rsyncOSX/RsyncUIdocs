@@ -8,7 +8,7 @@ lastmod =  "2024-03-13"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Version 1.8.9 (build 97) - 14 March 2024
+## Version 1.8.9 (build 97) - 26 March 2024
 
 Changes in this release:
 
