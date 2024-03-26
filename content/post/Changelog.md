@@ -8,6 +8,18 @@ lastmod =  "2024-03-13"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+## Version 1.8.9 (build 97) - 14 March 2024
+
+Changes in this release:
+
+- fixed bug in ProgressView, more than one task and bounds for progress is set correctly
+- demo profile is removed, some issues when refactor of object executing external task `rsync`
+	- fixing the issue would be to much spaghetti code in demodata for snapshots
+- and some minor updates and cleaning of code as usual
+
+May you all have a happy Easter and safe computing. Doing frequent backups keeps you most likely safer  :-)
+
+
 ## Version 1.8.8 (build 96) - 14 March 2024
 
 Update 18 March: there is one minor issue in progressbar. When executing more than one task, the bounds of progressbar is not reset properly. This causes the progress not to work as expected. A fix will be released. *Issue is fixed in code.*
