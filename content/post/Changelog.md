@@ -8,6 +8,17 @@ lastmod =  "2024-03-13"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+## Version 1.9.0 (build 98) - not yet released
+
+There will be an maintenance release of RsyncUI about mid April 2024. There are some minor, non critical fixes and minor UI updates. 
+
+- one minor UI update is changing color of icon toolbar reset estimates in main Task view, the color is white if no estimates, red if there are estimates
+	- this also applies to reset selections in Logs view
+- fixed missing refresh of view when deleting log records
+	- workaround, if not refreshed now, change view and return will refresh view
+- updated the view for `ssh-copy-id` of public ssh-keys, in Settings (shortcut `⌘,`), Ssh menu and Show copy keys
+- some minor refactor of internal code
+
 ## Version 1.8.9 (build 97) - 26 March 2024
 
 Changes in this release:
