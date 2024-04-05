@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 1.9.0 (build 98) - not yet released
 
-There will be an maintenance release of RsyncUI about mid April 2024. There are some minor, non critical fixes and minor UI updates. 
+There will be a maintenance release of RsyncUI about mid April 2024. There are some minor, non critical fixes and minor UI updates. 
 
 - one minor UI update is changing color of icon toolbar reset estimates in main Task view, the color is white if no estimates, red if there are estimates
 	- this also applies to reset selections in Logs view
