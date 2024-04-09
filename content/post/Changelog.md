@@ -12,9 +12,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 There will be a maintenance release of RsyncUI about mid April 2024. There are some minor, non critical fixes and minor UI updates. 
 
-- changing color of icon toolbar reset estimates in main Tasks view, the color is white if no estimates, red if there are estimates
+- changing color of icon toolbar reset estimates in the main Tasks view, the color is white if no estimates, red if there are estimates
 	- this also applies to reset selections in Logs view
-- the progress bar in main Tasks view is only presented during synchronization, hidden else
+- the progress bar in the main Tasks view is only presented during synchronization, hidden else
 - moved selection of profile from the Toolbar to the Sidebar, makes the Toolbar cleaner
 - fixed missing refresh of view when deleting log records
 	- workaround, if not refreshed now, change view and return will refresh view
