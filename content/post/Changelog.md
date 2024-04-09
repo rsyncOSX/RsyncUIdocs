@@ -14,6 +14,7 @@ There will be a maintenance release of RsyncUI about mid April 2024. There are s
 
 - one minor UI update is changing color of icon toolbar reset estimates in main Task view, the color is white if no estimates, red if there are estimates
 	- this also applies to reset selections in Logs view
+- moved selection of profile from toolbar to sidebar, makes the toolbar cleaner
 - fixed missing refresh of view when deleting log records
 	- workaround, if not refreshed now, change view and return will refresh view
 - updated the view for `ssh-copy-id` of public ssh-keys, in Settings (shortcut `⌘,`), Ssh menu and Show copy keys
