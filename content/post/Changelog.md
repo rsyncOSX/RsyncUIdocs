@@ -16,6 +16,7 @@ There will be a maintenance release of RsyncUI about mid April 2024. There are s
 	- this also applies to reset selections in Logs view
 - the progress bar in the main Tasks view is only presented during synchronization, hidden else
 - moved selection of profile from the Toolbar to the Sidebar, makes the Toolbar cleaner
+- rsync version is displayed in bottom of the Sidebar
 - fixed missing refresh of view when deleting log records
 	- workaround, if not refreshed now, change view and return will refresh view
 - updated the view for `ssh-copy-id` of public ssh-keys, in Settings (shortcut `⌘,`), Ssh menu and Show copy keys
