@@ -4,13 +4,13 @@ title = "Changelog"
 date = "2023-12-24"
 tags = ["changelog"]
 categories = ["general information"]
-lastmod =  "2024-03-13"
+lastmod =  "2024-04-12"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Version 1.9.0 (build 98) - not yet released
+## Version 1.9.0 (build 98) - 12 April 2024
 
-There will be a maintenance release of RsyncUI about mid April 2024. There are some minor, non critical fixes and minor UI updates. 
+This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates. 
 
 - changing color of icon toolbar reset estimates in the main Tasks view, the color is white if no estimates, red if there are estimates
 	- this also applies to reset selections in Logs view
