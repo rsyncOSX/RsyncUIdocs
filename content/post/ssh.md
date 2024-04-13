@@ -19,13 +19,17 @@ If default values for ssh-keys are used, it is NOT requiered to add any data to 
 ```
 where `-i ~/.ssh_keypath/identityfile` is the ssh keypath and identityfile and `-p NN` is the port number ssh communicates through, default port 22. 
 
-As an example I have created ssh-keys for rsync only. The keypath is set to `~/.ssh_rsyncosx/` and the rsa identityfile to `rsyncosx`, default port `22`. The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my Raspberry Pi5 server:
+As an example I have created ssh-keys for rsync only. The keypath is set to `~/.ssh_rsyncosx/` and the rsa identityfile to `rsyncosx`, default port `22`. The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my Raspberry Pi5 server (os Bookworm with openzfs include):
 
 ```bash
 /opt/homebrew/bin/rsync --archive --verbose --compress --delete 
 -e  "ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22"
 --stats /Users/thomas/Documents/ thomas@thePi5:/backups/Documents/ 
 ```
+
+To use my own ssh-key and keypath data, the following is added to RsyncUI in settings (Ssh).
+
+{{< figure src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Ssh keypath and identityfile
 
