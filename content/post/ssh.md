@@ -6,13 +6,26 @@ tags = ["passwordless","ssh-keys"]
 categories = ["remote servers"]
 lastmod = "2020-04-16"
 +++
-RsyncUI utilizes user set ssh keypath and identityfile. Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. It is not required to set your own values for key path and identityfile if default values are used. The ssh parameter within the rsync command is, if set by the user:
+Using RsyncUI to synchronise data to a remote server requires what is called *passwordless login by ssh-key*. It is not possible to supply a user login and password in progress of synchronize data in RsyncUI. Before commencing to use RsyncUI to synchronize data to a remote server, it is required to setup and enable passwordless login by ssh-key. It is recommended to setup and enable this by terminal before using RsyncUI. There are two ways to setup and enable this, either by default values or by your own values.  Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. 
+
+It is *not required* to add your own values for key path and identityfile in RsyncUI if default values are used. 
+
+## Important
+
+If default values for ssh-keys are used, it is NOT requiered to add any data to RsyncUI. It is only necessary to add data if you create your own ssh-keypath and identityfile. The ssh parameter within the rsync command is, if set by the user:
 
 ```bash
 -e  "ssh -i ~/.ssh_keypath/identityfile -p NN"
 ```
+where `-i ~/.ssh_keypath/identityfile` is the ssh keypath and identityfile and `-p NN` is the port number ssh communicates through, default port 22. 
 
-where `-i ~/.ssh_keypath/identityfile` is the ssh keypath and identityfile and `-p NN` is the port number ssh communicates through, default port 22
+As an example I have created ssh-keys for rsync only. The keypath is set to `~/.ssh_rsyncosx/` and the rsa identityfile to `rsyncosx`, default port `22`. The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my Raspberry Pi5 server:
+
+```bash
+/opt/homebrew/bin/rsync --archive --verbose --compress --delete 
+-e  "ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22"
+--stats /Users/thomas/Documents/ thomas@thePi5:/backups/Documents/ 
+```
 
 ## Ssh keypath and identityfile
 
