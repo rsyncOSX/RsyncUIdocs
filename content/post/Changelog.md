@@ -8,6 +8,19 @@ lastmod =  "2024-04-12"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+## Version 1.9.1 (build 99) - not yet released
+
+Work on next version is commenced, and so far the following enhancements are added:
+
+- adjusted width of RsyncUI to `.frame(minWidth: 1100, idealWidth: 1300, minHeight: 510)`
+	- width might be reduced to 1100 points (`CGFloat`), default 1300 points as now
+- if `Monitor Network` is on in settings, there is a check for connectivity to remote server every time a task is kicked of
+	- if no connection during timeout an error messages is thrown
+- in Add tasks, selected tasks might be tested as in parameters for rsync
+	- only a `—dry-run` to verify what the task does
+	
+This version is to be released sometime in May 2024. And new features and fixes might be added before release.
+
 ## Version 1.9.0 (build 98) - 12 April 2024
 
 This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates. 
