@@ -8,13 +8,17 @@ lastmod = "2024-03-15"
 +++
 Always verify, by `--dry-run`,  the result of a new task before executing it. 
 
-A task require minimum a *local catalog* and a *remote catalog*. After entering information about a task, select `Return` on the toolbar to add the task. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
+A task require as minimum a *local catalog* and a *remote catalog*. 
+
+## Enter tasks
+
+Using the  `Enter` key will advance to next field. The `Enter` key will automatically add a new task after last input. Or `Return` on the toolbar will add a new task. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
 
 {{< figure src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-Just press the Enter key will automatically enter a new task. The Enter key will advance to next field. If the local catalog and remote catalog are local attached catalogs the Enter key will automatically add it after the Synchronize ID. Or  `Return` on the toolbar will add a new task. 
+## Update 
 
-To update a task, select the task and to save changes, select  `Return` on the toolbar.
+To update a task, select the task and to save changes, select  `Return` on the toolbar or use the `Enter` key.
 
 ## Copy and paste
 
@@ -42,6 +46,7 @@ The following are data about tasks:
   - by default a trailing `/` is added to both source and destination
 
 ### Catalog parameters
+
 - Local catalog: required field
 - Remote catalog: required field
   - the backup catalog might also be a local catalog on a local attached disk
@@ -52,6 +57,7 @@ The following are data about tasks:
   - informal tag for the task
 
 ### Remote parameters
+
 - Remote username:
   - username for login to remote server
 - Remote server:
