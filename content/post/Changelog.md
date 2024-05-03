@@ -18,6 +18,8 @@ Work on next version is commenced, and so far the following enhancements are add
 	- if no connection during timeout an error messages is thrown
 - in Add tasks, selected tasks might be tested as in parameters for rsync
 	- only a `—dry-run` to verify what the task does
+- in Add tasks, update tasks
+	- fix a minor glitch refresh view when update tasks
 	
 This version is to be released sometime in May 2024. And new features and fixes might be added before release.
 
