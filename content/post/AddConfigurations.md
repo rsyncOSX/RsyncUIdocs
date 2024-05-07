@@ -6,19 +6,17 @@ tags = ["add","profile"]
 categories = ["synchronize"]
 lastmod = "2024-03-15"
 +++
-Always verify, by `--dry-run`,  the result of a new task before executing it. 
-
-A task require as minimum a *local catalog* and a *remote catalog*. 
+Always verify, by `--dry-run`,  the result of a new task before executing it.  A task require as minimum a *local catalog* and a *remote catalog*. 
 
 ## Enter tasks
 
-Using the  `Enter` key will advance to next field. The `Enter` key will automatically add a new task after last input. Or `Return` on the toolbar will add a new task. Continue adding new tasks until completed and tasks are saved to permanent storage after each entry.
+Using the  `Enter` key will advance to next field. The `Enter` key will automatically add a new task after last input. Or the `Return` icon on the toolbar will add a new task. Tasks are saved to permanent storage after each entry.
 
 {{< figure src="/images/add/add.png" alt="" position="center" style="border-radius: 8px;" >}}
 
 ## Update 
 
-To update a task, select the task and to save changes, select  `Return` on the toolbar or use the `Enter` key.
+To update a task, select the task and to save changes, select the `Return` icon on the toolbar or use the `Enter` key.
 
 ## Copy and paste
 

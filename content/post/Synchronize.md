@@ -12,8 +12,8 @@ The main task view lets you execute *all* or *selected* tasks in one go. A *doub
 
 The following are allowed shortcut actions:
 
-- `Estimate` - `⌘E` estimates all tasks
-- `Synchronize` - `⌘R` synchronize all tasks 
+- `Estimate` - `⌘E` estimates all or selected tasks
+- `Synchronize` - `⌘R` synchronize all or selected tasks
 - `Abort` - `⌘K` abort and halt any ongoing task
 
 When RsyncUI starts it automatically open the main view. By selecting *wand and stars*  (shortcut `⌘E`) from the toolbar start estimating all tasks.
@@ -24,7 +24,9 @@ The estimate counts down number of tasks to estimate.
 
 {{< figure src="/images/tasks/startestimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-The result of an estimate, blue numbers indicates there is data to synchronize.  Execute the real run either direct from the summarized estimated view by *left arrow* (shortcut `⌘R`) on the toolbar. To se details from the estimate, select a row and details are presented. 
+The result of an estimate, blue numbers indicates there is data to synchronize.  Execute the real run either direct from the summarized estimated view by *left arrow* (shortcut `⌘R`) on the toolbar. 
+
+To se details from the estimate, select a row and details are presented. 
 
 {{< figure src="/images/tasks/estimate.png" alt="" position="center" style="border-radius: 8px;" >}}
 
