@@ -14,12 +14,13 @@ Work on next version is commenced, and so far the following enhancements are add
 
 - adjusted width of RsyncUI to `.frame(minWidth: 1100, idealWidth: 1300, minHeight: 510)`
 	- width might be reduced to 1100 points (`CGFloat`), default 1300 points as now
-- if `Monitor Network` is on in settings, there is a check for connectivity to remote server every time a task is kicked of
+- if `Monitor Network` is on in settings, there is a check for connectivity to remote server every time a task is executed
 	- if no connection during timeout an error messages is thrown
 - in Add tasks, selected tasks might be tested as in parameters for rsync
 	- only a `—dry-run` to verify what the task does
 - in Add tasks, update tasks
 	- fix a minor glitch refresh view when update tasks
+- the Profiles view is moved to sidebar from the Add tasks
 	
 This version is to be released sometime in May 2024. And new features and fixes might be added before release.
 
