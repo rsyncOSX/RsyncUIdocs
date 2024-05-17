@@ -4,7 +4,7 @@ title = "Changelog"
 date = "2023-12-24"
 tags = ["changelog"]
 categories = ["general information"]
-lastmod =  "2024-04-12"
+lastmod =  "2024-05-17"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
@@ -21,14 +21,15 @@ Work on next version is commenced, and so far the following enhancements are add
 - in Add tasks, update tasks
 	- fix a minor glitch refresh view when update tasks
 - the Profiles view is moved to sidebar from the Add tasks
+- a minor GUI update in view for details, each task, after an estimation run
 	
-This version is to be released sometime in May 2024. And new features and fixes might be added before release.
+This version is to be released by end of May 2024. And new features and fixes might be added before release.
 
 ## Version 1.9.0 (build 98) - 12 April 2024
 
 This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates. 
 
-- changing color of icon toolbar reset estimates in the main Tasks view, the color is white if no estimates, red if there are estimates
+- changing colour of icon toolbar reset estimates in the main Tasks view, the colour is white if no estimates, red if there are estimates
 	- this also applies to reset selections in Logs view
 - the progress bar in the main Tasks view is only presented during synchronization, hidden else
 - moved selection of profile from the Toolbar to the Sidebar, makes the Toolbar cleaner
