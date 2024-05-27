@@ -4,13 +4,13 @@ title = "Changelog"
 date = "2023-12-24"
 tags = ["changelog"]
 categories = ["general information"]
-lastmod =  "2024-05-17"
+lastmod =  "2024-05-2”7
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Version 1.9.1 (build 99) - not yet released
+## Version 1.9.1 (build 99) - 27 May 2024
 
-Work on next version is commenced, and so far the following enhancements are added:
+This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates. 
 
 - adjusted width of RsyncUI to `.frame(minWidth: 1100, idealWidth: 1300, minHeight: 510)`
 	- width might be reduced to 1100 points (`CGFloat`), default 1300 points as now
@@ -22,8 +22,6 @@ Work on next version is commenced, and so far the following enhancements are add
 	- fix a minor glitch refresh view when update tasks
 - the Profiles view is moved to sidebar from the Add tasks
 - a minor GUI update in view for details, each task, after an estimation run
-	
-This version is to be released by end of May 2024. And new features and fixes might be added before release.
 
 ## Version 1.9.0 (build 98) - 12 April 2024
 
