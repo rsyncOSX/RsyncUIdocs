@@ -8,6 +8,10 @@ lastmod =  "2024-05-27"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
+## Viewing the log file is missing 
+
+In version 1.9.1 viewing the log file is “by accident”  missing from the release. Sometimes RsyncUI writes errors to the log file and until next release you might find the log file [here](https://rsyncui.netlify.app/post/configfiles/).
+
 ## Version 1.9.1 (build 99) - 27 May 2024
 
 This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates. 
