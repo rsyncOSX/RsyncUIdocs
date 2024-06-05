@@ -8,13 +8,28 @@ lastmod =  "2024-05-27"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Viewing the log file is missing 
+## Viewing the logfile is missing
 
-In version 1.9.1 viewing the log file is “by accident”  missing from the release. Sometimes RsyncUI writes errors to the log file and until next release you might find the log file [here](https://rsyncui.netlify.app/post/configfiles/).
+In version 1.9.1 viewing the logfile is “by accident”  missing from the release. Sometimes RsyncUI writes errors to the logfile and until next release you might find the log file [here](https://rsyncui.netlify.app/post/configfiles/).
+
+## Version 1.9.2 (build 100) - not yet released
+
+To be released by end of June 2024.
+
+- view of the logfile is back
+- the logging of synchronization task is simplified
+  - by default `on`, a summary only of each synchronization is added to the logrecords, view `Log Listings` from Sidebar (not changed)
+  - by default `off`, there is also possible to add a short summary to the logfile
+    - timestamp
+    - the actual rsync command
+    - last twenty lines of output from rsync which includes a summary of the task
+- the Settingsview is updated
+
+And there might be some other enhancements as well.
 
 ## Version 1.9.1 (build 99) - 27 May 2024
 
-This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates. 
+This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates.
 
 - adjusted width of RsyncUI to `.frame(minWidth: 1100, idealWidth: 1300, minHeight: 510)`
 	- width might be reduced to 1100 points (`CGFloat`), default 1300 points as now
@@ -29,7 +44,7 @@ This is a maintenance release of RsyncUI. There are some minor, non critical fix
 
 ## Version 1.9.0 (build 98) - 12 April 2024
 
-This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates. 
+This is a maintenance release of RsyncUI. There are some minor, non critical fixes and minor UI updates.
 
 - changing colour of icon toolbar reset estimates in the main Tasks view, the colour is white if no estimates, red if there are estimates
 	- this also applies to reset selections in Logs view
@@ -73,13 +88,13 @@ Changes in this release:
 	- using default SwiftUI functions, no benefit using external library
 - I am now very reluctant to use other external libraries, another which was removed in version 1.8.5 sometimes caused a crash in RsyncUI
 
-I am using RsyncUI myself several times a day, both on a local FreeBSD server and on two external local SSD disks. Every time I am making changes to code, documents, or photos, I am using RsyncUI to synchronize my backups. And to my own experience, RsyncUI is very stable, and rsync is, in my opinion, a fantastic and reliable tool for synchronize data. Some numbers about my own use of RsyncUI, using the logs and filter by year, and only to my FreeBSD server: in 2022, 451 synchronizations, in 2023: 1031 synchronizations, in 2024 until today: 247 synchronizations. 
+I am using RsyncUI myself several times a day, both on a local FreeBSD server and on two external local SSD disks. Every time I am making changes to code, documents, or photos, I am using RsyncUI to synchronize my backups. And to my own experience, RsyncUI is very stable, and rsync is, in my opinion, a fantastic and reliable tool for synchronize data. Some numbers about my own use of RsyncUI, using the logs and filter by year, and only to my FreeBSD server: in 2022, 451 synchronizations, in 2023: 1031 synchronizations, in 2024 until today: 247 synchronizations.
 
 ## Version 1.8.7 (build 95) - 20 February 2024
 
-By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version.  You can read more about [how RsyncUI is built](https://rsyncuibuilt.netlify.app) including some details about SwiftData project. 
+By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version.  You can read more about [how RsyncUI is built](https://rsyncuibuilt.netlify.app) including some details about SwiftData project.
 
-- several internal enhancements, see GitHub [to compare versions](https://github.com/rsyncOSX/RsyncUI/compare/v1.8.6...v1.8.7) 
+- several internal enhancements, see GitHub [to compare versions](https://github.com/rsyncOSX/RsyncUI/compare/v1.8.6...v1.8.7)
 -  the Quick Task is moved to a toolbar button in the main tasks view
 - there are some updates in demo data is updated as well, demo data now also includes some snapshot data to show how tagging works.
 	- by tagging snapshots means tagging for delete old snapshots
@@ -95,7 +110,7 @@ By doing the SwiftData version of RsyncUI, I got idea and motivation for several
 
 **One minor issue**: there is a minor non critical issue when adding new tasks, the logrecord after a run is not loaded when viewing logs. *Workaround is add task and restart RsyncUI.* The bug is fixed and a new release will come in a week or two. **The issue is only when new tasks are added.**
 
-**And a second hickup as well**: To save changes in user settings, do not close the settings view right away, if changes in rsync settings, ssh settings or environment choose the **Info view** before closing the settings view. The issue is fixed in code.  And included in the updated release in a week or two. 
+**And a second hickup as well**: To save changes in user settings, do not close the settings view right away, if changes in rsync settings, ssh settings or environment choose the **Info view** before closing the settings view. The issue is fixed in code.  And included in the updated release in a week or two.
 
 Changes, summarized:
 - internal naming of logrecords and physical file for saving are changed
@@ -117,7 +132,7 @@ There is a bug in the Confetti view and the FirstTime view for new users of Rsyn
 
 ## Version 1.8.2 (build 92) - 8 January 2024
 
-This is maintenance release including a few minor enhancements: 
+This is maintenance release including a few minor enhancements:
 
 - cleanup and remove duplicates in code
 - fixed some toolbar actions and updated some of the icons on the toolbar
@@ -132,7 +147,7 @@ If you hoover the mouse over a toolbar icon, it will display a short message abo
 
 ## Version 1.8.1 (build 91) - 29 December 2023
 
-There are a few more minor GUI enhancements and tweaks. And cleaning of code, remove unused code and updates where needed. 
+There are a few more minor GUI enhancements and tweaks. And cleaning of code, remove unused code and updates where needed.
 
 - the adding tasks includes a list of all catalogs from your `$Home` catalog, if there is attached a drive the volume name is automatically copied to destination
 - a new confirm dialog if number of files to synchronize is like a new task
@@ -150,8 +165,8 @@ Important: **all** functions within every view are now icons on the toolbar, upp
 
 The following changes in release are:
 
-- fixed some issues regarding adding ssh keypath, file and ssh port number 
-	- there is a check on the format which kicks in right away, the check is now debounced a few seconds to allow entering data 
+- fixed some issues regarding adding ssh keypath, file and ssh port number
+	- there is a check on the format which kicks in right away, the check is now debounced a few seconds to allow entering data
 - even more cleanup in code after removing support for previous versions of macOS
 	- there is always some code in a large codebase which should be revised and cleaned up
 - and even more views are converted to `NavigationStack` and most functions moved to the toolbar
@@ -159,11 +174,11 @@ The following changes in release are:
 	- **all** sheet and pop-up views are removed, only Alert as pop-up if some odd situation occurs like missing either source or destination when adding tasks
 	- within every view the main icon (function) is colored blue and a short help text is displayed when hoover mouse over icon
 
-Update of user documentation is commenced, it might take some more time because most screen dumps are changed and text need updates. 
+Update of user documentation is commenced, it might take some more time because most screen dumps are changed and text need updates.
 
 ## Version 1.7.9 (build 89) - 7 December 2023
 
-Updated 8 December 2023, the timer and automatic execution of tasks are disabled and this version is uploaded to Homebrew as well. 
+Updated 8 December 2023, the timer and automatic execution of tasks are disabled and this version is uploaded to Homebrew as well.
 
 From this release, RsyncUI is **only supported on macOS Sonoma**, the latest release of macOS. This also includes the RsyncUI version on Homebrew. With every new release of SwiftUI and macOS, there are several new features that are also beneficial for RsyncUI. The result is that the macOS Sonoma version of RsyncUI includes enhancements not found in the other version. And it is difficult to maintain two releases of RsyncUI; there are too many `#avaliable` statements in the code, which makes the code more vulnerable to bugs.
 
@@ -185,22 +200,22 @@ The relase 23 November 2023 were the last releases of RsyncUI supporting macOS M
 
 ## Version 1.7.8 build (88)  and 1.7.5 build (88) - 23 November 2023
 
-Both versions will run on macOS Sonoma, but one is built for macOS Sonoma only. And by the release of version *1.7.8 b(88)* and *1.7.5 b(88)* the macOS includes a few more enhancements than the other version. There are two versions because of the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. 
+Both versions will run on macOS Sonoma, but one is built for macOS Sonoma only. And by the release of version *1.7.8 b(88)* and *1.7.5 b(88)* the macOS includes a few more enhancements than the other version. There are two versions because of the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma.
 
 Enable  `NavigationStack` by switch on in user settings, save and restart RsyncUI. Disable it by switch off, save and restart.
 
 - *Version 1.7.5 b(88)* supports all macOS versions from macOS Monterey and is available from Homebrew as well
 - *Version 1.7.8 b(88)* for **macOS Sonoma** only
 
-There are some GUI changes in both apps.  And a couple of minor fixes. There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. Enable `NavigationStack` is by settings and it is default off. All sheets, like pop up views, are for *the macOS Sonoma only* version converted to new Navigation if enabled. For *the Homebrew* version only for macOS 14 users and only the Tasks view including estimating details. 
+There are some GUI changes in both apps.  And a couple of minor fixes. There are several methods for navigation within SwiftUI, and one method is utilizing `NavigationStack`. Enable `NavigationStack` is by settings and it is default off. All sheets, like pop up views, are for *the macOS Sonoma only* version converted to new Navigation if enabled. For *the Homebrew* version only for macOS 14 users and only the Tasks view including estimating details.
 
 See more info about it [here](/post/navstack/).
 
 ## Version 1.7.7 build (87)  and 1.7.4 build (87) - 31 October 2023
 
-*Version 1.7.4 build(87)* supports all macOS versions from macOS Monterey and is available from Homebrew as well.  
+*Version 1.7.4 build(87)* supports all macOS versions from macOS Monterey and is available from Homebrew as well.
 
-*Version 1.7.7 build(87)* for **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.7/RsyncUI.1.7.7.dmg) from GitHub. This version is for macOS Sonoma only because of migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. 
+*Version 1.7.7 build(87)* for **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.7/RsyncUI.1.7.7.dmg) from GitHub. This version is for macOS Sonoma only because of migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma.
 
 There is, by the search field, in some of the views possible to filter the output. Within the logs and restore view filter by any string. In the previous releases, the filter might be observed as a kind of not working properly if there are many rows of data. This is due to the list of data is refreshed on every keypress in search field. And by every refresh, the list of data is computed. In the this version there is a one *second debounce* or delay in refresh. By the delay, typing in the search field is smoother.  The 1 second delay in *filter search* is notified by a rotating progressview.
 
@@ -208,39 +223,39 @@ And there are some other minor updates as well.
 
 ## Version 1.7.3 build (86) - 19 October 2023
 
-Changes as for the macOS Sonoma build, but built for macOS Monterey to macOS Sonoma. Major difference for this version compared to the macOS Sonoma only, is the bindings introduced in Swift 5.9, the `@Observable` macro. 
+Changes as for the macOS Sonoma build, but built for macOS Monterey to macOS Sonoma. Major difference for this version compared to the macOS Sonoma only, is the bindings introduced in Swift 5.9, the `@Observable` macro.
 
-*Version 1.7.3 build(86)* supports all macOS versions from macOS Monterey and is available from Homebrew as well.  
+*Version 1.7.3 build(86)* supports all macOS versions from macOS Monterey and is available from Homebrew as well.
 
 ## Version 1.7.6 build (86) - 19 October 2023
 
-For **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.6/RsyncUI.1.7.6.dmg) from GitHub. This is a maintenance release. 
+For **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.6/RsyncUI.1.7.6.dmg) from GitHub. This is a maintenance release.
 
-There are some minor fixes and the major work is replacing the ShellOut package with an updated and maintained package. The ShellOut in the released version of RsyncUI is not working. The ShellOut let the user execute shellscript ahead and after execution of a synchronization task. A shell script might be like moving files, mounting a filesystem from a remote server and so on. The ShellOut must be used with care and most likely only the advanced macOS users with experience in writing shellscripts might find this feature usefull. 
+There are some minor fixes and the major work is replacing the ShellOut package with an updated and maintained package. The ShellOut in the released version of RsyncUI is not working. The ShellOut let the user execute shellscript ahead and after execution of a synchronization task. A shell script might be like moving files, mounting a filesystem from a remote server and so on. The ShellOut must be used with care and most likely only the advanced macOS users with experience in writing shellscripts might find this feature usefull.
 
 ## Version 1.7.5 build (84) - 28 September 2023
 
 For **macOS Sonoma** only and only by direct [download](https://github.com/rsyncOSX/RsyncUI/releases/download/v1.7.5(b84)/RsyncUI.1.7.5.dmg) from GitHub.
 
-The major work in this release is migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. Migrating code to the new macro is a *breaking change* and that is why there are two builds.  This version only supports macOS Sonoma. 
+The major work in this release is migrating objects and bindings to the new `@Observable` macro introduced in Swift 5.9, Xcode 15 and macOS Sonoma. Migrating code to the new macro is a *breaking change* and that is why there are two builds.  This version only supports macOS Sonoma.
 
-*Version 1.7.2* supports all macOS versions from macOS Monterey and is available from Homebrew as well.  
+*Version 1.7.2* supports all macOS versions from macOS Monterey and is available from Homebrew as well.
 
 ## Version 1.7.2 build (85) - 23 September 2023
 
-This is a maintenance release. Build by Xcode 15 for macOS Monterey to macOS Sonoma. There are no bugfixes (none reported), some enhancements only and a few cleanups in code. 
+This is a maintenance release. Build by Xcode 15 for macOS Monterey to macOS Sonoma. There are no bugfixes (none reported), some enhancements only and a few cleanups in code.
 
 - there is a change in restore for snapshot task, either select to restore from a previous snapshot or default the latest
 - on macOS Sonoma, to delete a task, log or snapshot select and use the ⌫ (backspace)
 	- the delete from the Edit menu does not work on *macOS Sonoma*
-	- the delete works as expected on macOS Ventura and Monterey 
- 
+	- the delete works as expected on macOS Ventura and Monterey
+
 ## Version 1.7.1 build(83) - 1 September 2023
 
-The following are enhancements of RsyncUI, minor updates which makes the app easier to use.  Some of the changes are utilizing SwiftUI modifiers for table operations like *copy*, *paste* and *delete*. By utilizing modifiers for table, default menu functions are automatically enabled for all three table operations. 
+The following are enhancements of RsyncUI, minor updates which makes the app easier to use.  Some of the changes are utilizing SwiftUI modifiers for table operations like *copy*, *paste* and *delete*. By utilizing modifiers for table, default menu functions are automatically enabled for all three table operations.
 
  For macOS 12 and later:
- 
+
  - profile is moved to the toolbar, it makes the navigation stack more clean
  - delete tasks from main- and add view is updated to use function from Edit menu (deleted from Tasks menu)
  - delete logrecords from within Log listings view from Edit menu
@@ -248,26 +263,26 @@ The following are enhancements of RsyncUI, minor updates which makes the app eas
  - added automatic execution when all tasks are estimated
  	- user set seconds before execution and function can be disabled, *disabled* by default
  	- select the button counting down to *temporary* disable
- 
+
 For macOS 13 and later:
 
-- from the Edit menu the shortcuts `⌘C` and  `⌘V` will copy and paste copies of the selected tasks. 
+- from the Edit menu the shortcuts `⌘C` and  `⌘V` will copy and paste copies of the selected tasks.
 
 The copy and paste will append task(s) to make it more easy to create new task based upon existing data. Data as source, destination, server, username and parameters to rsync are copied from the selected task(s).
 
-## Version 1.7.0 build(82) - 16 August 2023 
+## Version 1.7.0 build(82) - 16 August 2023
 
-There is tooltip for each function on the toolbar. MacOS Monterey does not support double click on row, see [how to execute](/post/macos12/)  a `--dry-run` on macOS Monterey. The RsyncUI documentation is updated and more updates will be done after this release. 
+There is tooltip for each function on the toolbar. MacOS Monterey does not support double click on row, see [how to execute](/post/macos12/)  a `--dry-run` on macOS Monterey. The RsyncUI documentation is updated and more updates will be done after this release.
 
 - there is a cleanup in main taskview, if a task is executed after any estimation a progressbar will be presented
 - some adjustments in logs- and restore view
 - some of the functions are moved the toolbar
 - color of the buttons are adjusted
 
-## Version 1.6.6 build(81) - 1 August 2023 
+## Version 1.6.6 build(81) - 1 August 2023
 
-This is a maintenance release. Minor cleanups, bug fixes and enhancements in parts of the code. 
- 
+This is a maintenance release. Minor cleanups, bug fixes and enhancements in parts of the code.
+
 - task are marked when estimated
 - new button for display rsync output on estimated task
 	-	remeber first double click estimate a task, next double click will execute the estimated task
@@ -283,7 +298,7 @@ This is a maintenance release.  No enhancments but a few cleanups and bugfixes. 
 
 ## macOS Sonoma and RsyncUI
 
-I have commenced porting RsyncUI to macOS Sonoma and Swift 5.9. By Swift 5.9 the new `Observable` macro replace the  `@StateObject` propertywrapper. This is a *breaking* change and there will be two releases for RsyncUI when macOS Sonoma is public. Combine is still used in parts of the macOS Sonoma version of RsyncUI. The port of RsyncUI to macOS Sonoma is almost completed. 
+I have commenced porting RsyncUI to macOS Sonoma and Swift 5.9. By Swift 5.9 the new `Observable` macro replace the  `@StateObject` propertywrapper. This is a *breaking* change and there will be two releases for RsyncUI when macOS Sonoma is public. Combine is still used in parts of the macOS Sonoma version of RsyncUI. The port of RsyncUI to macOS Sonoma is almost completed.
 
 ## Version 1.6.3 build(79) -  29 June 2023
 
@@ -306,9 +321,9 @@ The release includes some important fixes for *administration* of snapshots. The
 
 Update **19 June 2023**: there are a couple of *non critical issues* which cause some functions like `--dry-run` within the main view not working **after** a synchronize all execution of tasks. Fixes are done in code and an update will be released in a  day or two.
 
-There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. The restore part is changed a little bit. 
+There are several minor GUI changes like all `list` and `foreach` listing are replaced with `table`.  There are also a new log of major synchronize actions. Select  the shortcut `⌘O` for view logfile and select actions. The restore part is changed a little bit.
 
-And as always there are some cleanup in code. 
+And as always there are some cleanup in code.
 
 ## Version 1.5.0 build(73) - 4 May 2023
 
@@ -329,7 +344,7 @@ There are cleanup and refactor of the main tasks view, internal code only. There
 
 ## Version 1.4.7 build(69)  -  14 March 2023
 
-Update 17 March 2023: 
+Update 17 March 2023:
 
 - RsyncUI is now avaliable to install by Homebrew: `brew install --cask rsyncui`
 
@@ -385,7 +400,7 @@ Estimate and details:
     - after closing the summarized estimated view, select a task and the details (`--dry-run`) is presented
     - select another task and the details is presented
     - the `Reset` will reset all estimates, likewise if tasks er executed after estimate will reset all estimates.
-    
+
 And there is a bugfix in [Quick Synchronize](https://rsyncui.netlify.app/post/quicktask/).
 
 ## Version 1.3.9 build (57) - 18 November 2022
@@ -414,7 +429,7 @@ There is fixed a minor bug when selecting a task and hitting the shortcut `⌘R`
 
 Compiled on Apple Silicon (M1 Pro) by Xcode 14.0 as a Universal macOS Binary
 
-The major work in this release is rewriting some of the code to utilize Swifts async and await for asynchronous execution of code. The new code utilizing async and await is much simpler to read and write. The need for callback functions are reduced and it makes code lesser.  Lesser code is better code. Asynchronous execution is a key part of RsyncUI. The completion of a task is not known ahead of execution and whenever a task is completed next action is executed. Next action is e.g. execute next synchronization task, present output from rsync or present a list of files. 
+The major work in this release is rewriting some of the code to utilize Swifts async and await for asynchronous execution of code. The new code utilizing async and await is much simpler to read and write. The need for callback functions are reduced and it makes code lesser.  Lesser code is better code. Asynchronous execution is a key part of RsyncUI. The completion of a task is not known ahead of execution and whenever a task is completed next action is executed. Next action is e.g. execute next synchronization task, present output from rsync or present a list of files.
 
 The main view is also changed a little bit, see [the changed main view](/post/tasks/).
 
