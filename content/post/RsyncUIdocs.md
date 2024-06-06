@@ -7,9 +7,11 @@ categories = ["general information"]
 lastmod ="2023-12-25"
 +++
 
-RsyncUI is a pure *SwiftUI* based macOS application utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync. RsyncUI is signed and notarized by Apple.  RsyncUI is built for *macOS Sonoma* only.
+RsyncUI is a pure *SwiftUI* based macOS application, built for *macOS Sonoma*, utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync.
 
-## Before commencing use of RsyncUI
+RsyncUI is signed and notarized by Apple.
+
+## Changelog and install
 
 See [the changelog](/post/changelog/) for updates. RsyncUI is built as a Universal macOS Binary, which means it runs nativly on Apple Silicon and Intel-based Mac computers.  RsyncUI can be installed by Homebrew by command
 
@@ -28,7 +30,7 @@ The first time RsyncUI starts, it presents a link to [important](/post/important
 
 {{< figure src="/images/start/firsttask.png" alt="" position="center" style="border-radius: 8px;" >}}
 
-The catalog for [storing configuration](/post/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`. 
+The catalog for [storing configuration](/post/configfiles/) files is `$HOME/.rsyncosx/macserialnumber/`.
 
 ## Aborting a task
 
