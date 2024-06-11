@@ -8,24 +8,19 @@ lastmod =  "2024-05-27"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Viewing the logfile is missing
+## Version 1.9.2 (build 100) - 11 June 2024
 
-In version 1.9.1 viewing the logfile is “by accident”  missing from the release. Sometimes RsyncUI writes errors to the logfile and until next release you might find the log file [here](https://rsyncui.netlify.app/post/configfiles/).
+This is most likely the last release before macOS 15, macOS Sequoia is released sometime after the summer.. Bugs will be fixed, though, if found. The work with Swift 6 and Xcode 16 beta commenced today. The major work in next release 2.0.0 (build 101) is compliance with the new concurrency model of Swift 6. And there are some new things there for me to learn and understand.
 
-## Version 1.9.2 (build 100) - not yet released
-
-To be released by end of June 2024.
+The user doc will be updated in a week or two.
 
 - view of the logfile is back
 - the logging of synchronization task is simplified
   - by default `on`, a summary only of each synchronization is added to the logrecords, view `Log Listings` from Sidebar (not changed)
   - by default `off`, there is also possible to add a short summary to the logfile
     - timestamp
-    - the actual rsync command
     - last twenty lines of output from rsync which includes a summary of the task
 - the Settingsview is updated
-
-And there might be some other enhancements as well.
 
 ## Version 1.9.1 (build 99) - 27 May 2024
 
