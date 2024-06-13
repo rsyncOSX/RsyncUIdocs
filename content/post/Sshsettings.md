@@ -10,6 +10,10 @@ In this view you can let RsyncUI assist in creating ssh-keys and setup global ss
 
 {{< figure src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 
+SSH keys
+
+{{< figure src="/images/usersettings/sshkeys.png" alt="" position="center" style="border-radius: 8px;" >}}
+
 ## Local ssh keys found
 
 If `on` RsyncUI has found local ssh keys.

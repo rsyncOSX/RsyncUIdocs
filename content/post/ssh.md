@@ -8,18 +8,18 @@ lastmod = "2020-04-16"
 +++
 Using RsyncUI to synchronise data to a remote server requires what is called *passwordless login by ssh-key*. It is not possible to supply a user login and password in progress of synchronize data in RsyncUI. Before commencing to use RsyncUI to synchronize data to a remote server, it is required to setup and enable passwordless login by ssh-key. It is recommended to setup and enable this by terminal before using RsyncUI. There are two ways to setup and enable this, either by default values or by your own values.  Default values for ssh are `~/.ssh/id_rsa` and portnumber `22`. 
 
-It is *not required* to add your own values for key path and identityfile in RsyncUI if default values are used. 
-
 ## Important
 
-If default values for ssh-keys are used, it is NOT requiered to add any data to RsyncUI. It is only necessary to add data if you create your own ssh-keypath and identityfile. The ssh parameter within the rsync command is, if set by the user:
+If default values for ssh-keys are used, it is NOT required to add any data to RsyncUI. 
+
+It is only necessary to add data if you create your own ssh-keypath and identityfile. The ssh parameter within the rsync command is, if set by the user:
 
 ```bash
 -e  "ssh -i ~/.ssh_keypath/identityfile -p NN"
 ```
 where `-i ~/.ssh_keypath/identityfile` is the ssh keypath and identityfile and `-p NN` is the port number ssh communicates through, default port 22. 
 
-As an example I have created ssh-keys for rsync only. The keypath is set to `~/.ssh_rsyncosx/` and the rsa identityfile to `rsyncosx`, default port `22`. The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my Raspberry Pi5 server (os Bookworm with openzfs include):
+As an example I have created ssh-keys for rsync only. The keypath is set to `~/.ssh_rsyncosx/` and the rsa identityfile to `rsyncosx`, default port `22`. The rsync command to synchronize my Documents catalog is, set by RsyncUI, to my Raspberry Pi5 server, os Bookworm with openzfs include:
 
 ```bash
 /opt/homebrew/bin/rsync --archive --verbose --compress --delete 
@@ -27,7 +27,7 @@ As an example I have created ssh-keys for rsync only. The keypath is set to `~/.
 --stats /Users/thomas/Documents/ thomas@thePi5:/backups/Documents/ 
 ```
 
-To use my own ssh-key and keypath data, the following is added to RsyncUI in settings (Ssh).
+To use my own ssh-key and keypath data, the following is added to RsyncUI in settings.
 
 {{< figure src="/images/usersettings/ssh.png" alt="" position="center" style="border-radius: 8px;" >}}
 
