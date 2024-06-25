@@ -16,7 +16,7 @@ RsyncUI is not a multithreaded application. But that does not mean there were se
 
 I also discovered a bug in SwiftUI that has been reported and will be fixed in later beta releases of Xcode 16.
 
-I am also very happy to see that the number of users is growing. Since the release of the last version, there have been about 900 downloads of RsyncUI. 
+I am also very happy to see that the number of users is growing. Since the release of the last version, there have been about 900 downloads of RsyncUI.  Version 2.0.0 is to be released when macOS 15, macOS Sequoia is public sometime after the summer. And there will be a few more refactor of code during the summer. 
 
 ## Version 1.9.2 (build 100) - 11 June 2024
 
