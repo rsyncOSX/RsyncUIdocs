@@ -10,24 +10,27 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 2.0.0 (build 101) -  work in progress
 
-Date: 25 June 2024
+Date: 1 July 2024
 
-The work on adapting RsyncUI to the new concurrency model of Swift 6 is progressing. There was one external source file,  [John Sundell´s Files](https://github.com/JohnSundell/Files), which caused some issues adapting to the concurrency model. The source file is now deleted. Every folder and file operation is now by using the default FileManager in the Apple Foundation. There are now no external sources or libraries in RsyncUI; it is a 100% pure SwiftUI and Swift application. 
+The work on adapting RsyncUI to the new concurrency model of Swift 6 is progressing. There was one external source file,  [John Sundell´s Files](https://github.com/JohnSundell/Files), which caused some issues adapting to the concurrency model. The source file is now deleted. Every folder and file operation is now using the default FileManager in the Apple Foundation. There are now no external sources or libraries in RsyncUI; it is a 100% pure SwiftUI and Swift application. 
 
-RsyncUI is not a multithreaded application. But that does not mean several threads were running. By default, all UI updates are on the main thread. And as part of adapting to Swift 6 and the new concurrency model. Most classes and structs are now annotated for executing on the main thread. This is to make sure no data races will occur, e.g., two or more threads accessing the same data at the same time. 
+RsyncUI is not a multi threaded application. There is only one real asynchronous task in RsyncUI, apart from UI updates by the runtime system. Every synchronization task is executed asynchronous, e.g. RsyncUI is waiting for a termination signal before executing next task. During the asynchronous execution, a progress bar in the UI is updated.   Still, there might be more than one thread running.  
+
+By default, all UI updates are on the main thread. And as part of adapting to Swift 6 and the new concurrency model. Most classes and structs are now annotated for executing on the main thread. This is to make sure no data races will occur, e.g., two or more threads accessing the same data at the same time. 
 
 I also discovered a bug in SwiftUI that has been reported and will be fixed in later beta releases of Xcode 16.
 
-I am also very happy to see that the number of users is growing. Since the release of the last version, there have been about 900 downloads of RsyncUI.  Version 2.0.0 is to be released when macOS 15, macOS Sequoia is public sometime after the summer. And there will be a few more refactors of code during the summer.
+I am also thrilled to see that the number of users is growing. Since the release of the last version, there have been about 1,1K downloads of RsyncUI. Version 2.0.will be released when macOS 15, macOS Sequoia is public sometime after the summer. And there will be a few more refactors of code during the summer.
+
 
 ## Version 1.9.2 (build 100) - 11 June 2024
 
 This is most likely the last release before macOS 15, macOS Sequoia is released sometime after the summer. Bugs will be fixed, though, if found. The work with Swift 6 and Xcode 16 beta commenced today. The major work in next release 2.0.0 (build 101) is compliance with the new concurrency model of Swift 6. And there are some new things there for me to learn and understand.
 
-- view of the logfile is back
+- view of the log file is back
 - the logging of synchronization task is simplified
-  - by default `on`, a summary only of each synchronization is added to the logrecords, view `Log Listings` from Sidebar (not changed)
-  - by default `off`, there is also possible to add a short summary to the logfile
+  - by default `on`, a summary only of each synchronization is added to the log records, view `Log Listings` from Sidebar (not changed)
+  - by default `off`, there is also possible to add a short summary to the log file
     - timestamp
     - last twenty lines of output from rsync which includes a summary of the task
 - the Settingsview is updated
