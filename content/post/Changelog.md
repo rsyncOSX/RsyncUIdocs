@@ -12,7 +12,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Date: 1 July 2024
 
-The work on adapting RsyncUI to the new concurrency model of Swift 6 is progressing. There was one external source file,  [John Sundell´s Files](https://github.com/JohnSundell/Files), which caused some issues adapting to the concurrency model. The source file is now deleted. Every folder and file operation is now using the default FileManager in the Apple Foundation. There are now no external sources or libraries in RsyncUI; it is a 100% pure SwiftUI and Swift application. 
+The work on adapting RsyncUI to the new concurrency model of Swift 6 is progressing. There was one external source file,  [John Sundell´s Files](https://github.com/JohnSundell/Files), which caused some issues adapting to the concurrency model. The source file is now deleted. Every folder and file operation is now using the default FileManager in the Apple Foundation. There are **no** external sources or libraries in RsyncUI. 
 
 RsyncUI is not a multi threaded application. There is only one real asynchronous task in RsyncUI, apart from UI updates by the runtime system. Every synchronization task is executed asynchronous, e.g. RsyncUI is waiting for a termination signal before executing next task. During the asynchronous execution, a progress bar in the UI is updated.   Still, there might be more than one thread running.  
 
