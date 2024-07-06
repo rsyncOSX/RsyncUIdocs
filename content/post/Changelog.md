@@ -16,7 +16,7 @@ The work on adapting RsyncUI to the new concurrency model of Swift 6 is progress
 
 RsyncUI is not a multi threaded application. There is only one real asynchronous task in RsyncUI. And the task is executed by the macOS system, the `rsync` command line tool and not by RsyncUI. RsyncUI is only listening for termination and real time output from `rsync`. During the asynchronous execution, RsyncUI is updating a progressbar and all UI updates are on the main application thread. Most classes and structs are now annotated for executing on the main thread. This is to prevent data races, e.g. two or more threads accessing the same data at the same time. 
 
-I am also thrilled to see that the number of users is growing. Since the release of the last version, there have been about 1,1K downloads of RsyncUI. Version 2.0.will be released when macOS 15, macOS Sequoia is public sometime after the summer. And there will be a few more refactors of code during the summer.
+I am also thrilled to see that the number of users is growing. Since the release of the last version, there have been about 1,1K downloads of RsyncUI. Version 2.0.0 will be released when macOS 15, macOS Sequoia is public sometime after the summer. And there will be a few more refactors of code during the summer.
 
 
 ## Version 1.9.2 (build 100) - 11 June 2024
