@@ -10,13 +10,21 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 2.0.0 (build 101) -  work in progress
 
-Date: 1 July 2024
+Date: 17 July 2024
 
-The work on adapting RsyncUI to the new concurrency model of Swift 6 is progressing. There was one external source file,  [John Sundell´s Files](https://github.com/JohnSundell/Files), which caused some issues adapting to the concurrency model. The source file is now deleted. Every folder and file operation is now using the default FileManager in the Apple Foundation. There are **no** external sources or libraries in RsyncUI. 
+The work on adapting RsyncUI to the new concurrency model of Swift 6 is completed. There was one external source file, [John Sundell´s Files](https://github.com/JohnSundell/Files), which caused some issues adapting to the concurrency model. The source file is now deleted. Every folder and file operation is now using the default FileManager in the Apple Foundation. 
 
-RsyncUI is not a multi threaded application. There is only one real asynchronous task in RsyncUI. And the task is executed by the macOS system, the `rsync` command line tool and not by RsyncUI. RsyncUI is only listening for termination and real time output from `rsync`. During the asynchronous execution, RsyncUI is updating a progressbar and all UI updates are on the main application thread. Most classes and structs are now annotated for executing on the main thread. This is to prevent data races, e.g. two or more threads accessing the same data at the same time. 
+There are **no** external sources or libraries in RsyncUI. 
 
-I am also thrilled to see that the number of users is growing. Since the release of the last version, there have been about 1,1K downloads of RsyncUI. Version 2.0.0 will be released when macOS 15, macOS Sequoia is public sometime after the summer. And there will be a few more refactors of code during the summer.
+RsyncUI is not a multi threaded application. There is only one real asynchronous task in RsyncUI. And the task is executed by the macOS system, the `rsync` command line tool and not by RsyncUI. RsyncUI is only listening for termination and real time output from `rsync`. During the asynchronous execution, RsyncUI is updating a progressbar and all UI updates are on the main application thread. Most classes and structs are now annotated for executing on the main thread. This is to prevent data race and application crash. A data race is when one thread accesses a memory while the same memory is being mutated by another thread.
+
+Summary:
+
+- there has been 1,6K downloads of version 1.9.2 of RsyncUI since release 11 June 2024
+- version 2.0.0 will be released when macOS 15, macOS Sequoia is public sometime after the summer
+- by using the tool [periphery](https://github.com/peripheryapp/periphery), the code is cleaned and all not used classes, structs, functions and attributes are deleted
+- there has been refactor of internal code and a few GUI cleanups
+- and the QA and review of code will continue until next release
 
 
 ## Version 1.9.2 (build 100) - 11 June 2024
