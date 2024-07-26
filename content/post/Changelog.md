@@ -12,11 +12,9 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 Date: 26 July 2024
 
-The work on adapting RsyncUI to the new concurrency model of Swift 6 is completed. There was one external source file, [John Sundell´s Files](https://github.com/JohnSundell/Files), which caused some issues adapting to the concurrency model. The source file is now deleted. Every folder and file operation is now using the default FileManager in the Apple Foundation. 
+The work on adapting RsyncUI to the new concurrency model of Swift 6 is complete. There was one external source file, [John Sundell's Files](https://github.com/JohnSundell/Files). It caused some issues with adapting to the concurrency model. The source file is now deleted. The folder and file operations now use FileManager from Apple's Foundation.
 
-There are **no** external sources or libraries in RsyncUI. 
-
-RsyncUI is not a multi threaded application. There is only one real asynchronous task in RsyncUI. And the task is executed by the macOS system, the `rsync` command line tool and not by RsyncUI. RsyncUI is only listening for termination and real time output from `rsync`. During the asynchronous execution, RsyncUI is updating a progressbar and all UI updates are on the main application thread. Most classes and structs are now annotated for executing on the main thread. This is to prevent data race and application crash. A data race is when one thread accesses a memory while the same memory is being mutated by another thread.
+RsyncUI is not a multi-threaded application. There is only one real asynchronous task in RsyncUI. The macOS system executes the task using the `rsync` command-line tool, not RsyncUI. RsyncUI only listens for termination and real-time output from `rsync`. During the async execution, RsyncUI updates a progress bar. All UI updates are on the main app thread. Most classes and structs are now annotated for execution on the main thread. This is to prevent data races and application crashes. A data race is when one thread accesses memory while the same memory is being mutated by another thread.
 
 Summary:
 
