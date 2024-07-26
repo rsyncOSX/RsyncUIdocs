@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 2.0.0 (build 101) -  work in progress
 
-Date: 17 July 2024
+Date: 26 July 2024
 
 The work on adapting RsyncUI to the new concurrency model of Swift 6 is completed. There was one external source file, [John Sundell´s Files](https://github.com/JohnSundell/Files), which caused some issues adapting to the concurrency model. The source file is now deleted. Every folder and file operation is now using the default FileManager in the Apple Foundation. 
 
@@ -20,12 +20,17 @@ RsyncUI is not a multi threaded application. There is only one real asynchronous
 
 Summary:
 
-- there has been 1,6K downloads of version 1.9.2 of RsyncUI since release 11 June 2024
+- there has been 1,8K downloads of version 1.9.2 of RsyncUI since release 11 June 2024
 - version 2.0.0 will be released when macOS 15, macOS Sequoia is public sometime after the summer
+	- there might be a release candidate later in August 2024
 - by using the tool [periphery](https://github.com/peripheryapp/periphery), the code is cleaned and all not used classes, structs, functions and attributes are deleted
 - there has been refactor of internal code and a few GUI cleanups
 - and the QA and review of code will continue until next release
-
+- thx to [Cavaliere100](https://github.com/Cavaliere100) for testing RsyncUI on MacOS Sequoia and experienced an application crash for new users
+	- the issue is solved and fixed in code
+- RsyncUI is now testet on MacOS Sequoia, built by Xcode16 beta4 and it is verified working as expected
+- there is a new export and import function, tasks can now be exported and imported between profiles and to new Macs
+	- import and export is by file
 
 ## Version 1.9.2 (build 100) - 11 June 2024
 
