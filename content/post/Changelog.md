@@ -8,22 +8,19 @@ lastmod =  "2024-05-27"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
-## Version 2.0.0 (build 101) -  work in progress
+## Version 2.0.0 (build 101) -  27 July 2024
 
-Date: 26 July 2024
+This is a release candidate. There will be a version 2.0.1 when macOS Sequoia is public sometime after the summer.
 
 The work on adapting RsyncUI to the new concurrency model of Swift 6 is complete. There was one external source file, [John Sundell's Files](https://github.com/JohnSundell/Files). It caused some issues with adapting to the concurrency model. The source file is now deleted. The folder and file operations now use FileManager from Apple's Foundation.
 
 RsyncUI is not a multi-threaded application. There is only one real asynchronous task in RsyncUI. The macOS system executes the task using the `rsync` command-line tool, not RsyncUI. RsyncUI only listens for termination and real-time output from `rsync`. During the async execution, RsyncUI updates a progress bar. All UI updates are on the main app thread. Most classes and structs are now annotated for execution on the main thread. This is to prevent data races and application crashes. A data race is when one thread accesses memory while the same memory is being mutated by another thread.
 
-Summary:
+Summary changes:
 
 - there has been 1,8K downloads of version 1.9.2 of RsyncUI since release 11 June 2024
-- version 2.0.0 will be released when macOS 15, macOS Sequoia is public sometime after the summer
-	- there might be a release candidate later in August 2024
 - by using the tool [periphery](https://github.com/peripheryapp/periphery), the code is cleaned and all not used classes, structs, functions and attributes are deleted
 - there has been refactor of internal code and a few GUI cleanups
-- and the QA and review of code will continue until next release
 - thx to [Cavaliere100](https://github.com/Cavaliere100) for testing RsyncUI on MacOS Sequoia and experienced an application crash for new users
 	- the issue is solved and fixed in code
 - RsyncUI is now testet on MacOS Sequoia, built by Xcode16 beta4 and it is verified working as expected
