@@ -25,8 +25,8 @@ Summary changes:
 - by using the tool [periphery](https://github.com/peripheryapp/periphery), the code is cleaned and all not used classes, structs, functions and attributes are deleted
 - there has been refactor of internal code and a few GUI cleanups
 - thx to [Cavaliere100](https://github.com/Cavaliere100) for testing RsyncUI on MacOS Sequoia and experienced an application crash for new users
-	- the issue is solved and fixed in code
-- RsyncUI is now testet on MacOS Sequoia, built by Xcode16 beta4 and it is verified working as expected
+	- the issue is solved in the 2.0.0 rc
+- RsyncUI is testet on MacOS Sequoia, built by Xcode16 beta4 and it is verified working as expected
 - there is a new export and import function, tasks can now be exported and imported between profiles and to new Macs
 	- import and export is by file
 
