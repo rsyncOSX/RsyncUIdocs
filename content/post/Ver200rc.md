@@ -8,7 +8,7 @@ lastmod = "2024-07-26"
 +++
 Some info about the version 2.0.0 release candidate.
 
-RsyncUI is now fully adapted to Swifts new concurrency model and Swift version 6. The code was not to hard to adapt to the new concurrency model. Xcode16 beta throws warnings and compiler errors when there are issues about the new concurrency model. And by handling the warnings and errors one by one it is a matter of time before all code is OK. Another task was cleaning up the code. There is a really fantastic tool [periphery](https://github.com/peripheryapp/periphery) to assist finding not used parts of the code. About [120+](https://github.com/rsyncOSX/RsyncUI/compare/v1.9.2...v2.0.0) files are changed as part of adapting code and cleaning up.
+RsyncUI is fully adapted to Swift's new concurrency model and Swift version 6. The code was not too hard to adjust to the new concurrency model. Xcode16 beta throws warnings and compiler errors when there are issues with the new concurrency model. And by handling the warnings and errors one by one it is a matter of time before all code is OK. Another task was cleaning up the code. There is a fantastic tool [periphery](https://github.com/peripheryapp/periphery) to assist in finding not used parts of the code. About [120+](https://github.com/rsyncOSX/RsyncUI/compare/v1.9.2...v2.0.0) files are changed as part of adapting code and cleaning up.
 
 In Xcode16 the following build settings are set:
 
