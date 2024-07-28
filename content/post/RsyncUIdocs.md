@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
 title = "RsyncUI - a GUI for rsync"
-date = "2023-12-25"
+date = "2024-07-28"
 tags = ["overview"]
 categories = ["general information"]
-lastmod ="2023-12-25"
+lastmod = "2024-07-28"
 +++
 
 RsyncUI is a pure *SwiftUI* based macOS application, built for *macOS Sonoma*, utilizing the command line tool `rsync` for synchronizing files. It is `rsync` which executes the real synchronizing task, not RsyncUI. RsyncUI is a GUI only on top of rsync.

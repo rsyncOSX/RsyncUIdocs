@@ -1,10 +1,10 @@
 +++
 author = "Thomas Evensen"
 title = "Changelog"
-date = "2023-12-24"
+date = "2024-07-27"
 tags = ["changelog"]
 categories = ["general information"]
-lastmod =  "2024-05-27"
+lastmod = "2024-07-27"
 +++
 RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macOS Binary](https://developer.apple.com/documentation/xcode/building_a_universal_macos_binary).  If you miss some functions please drop me an email: thomeven@gmail.com or create an Issue on GitHub. All suggestions about enhancements are welcome.
 
@@ -29,6 +29,7 @@ Summary changes:
 - RsyncUI is testet on MacOS Sequoia, built by Xcode16 beta4 and it is verified working as expected
 - there is a new export and import function, tasks can now be exported and imported between profiles and to new Macs
 	- import and export is by file
+	- some more info [about export and import](/post/ver200rc/)
 
 ## Version 1.9.2 (build 100) - 11 June 2024
 
@@ -107,7 +108,7 @@ I am using RsyncUI myself several times a day, both on a local FreeBSD server an
 
 ## Version 1.8.7 (build 95) - 20 February 2024
 
-By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version.  You can read more about [how RsyncUI is built](https://rsyncuibuilt.netlify.app) including some details about SwiftData project.
+By doing the SwiftData version of RsyncUI, I got idea and motivation for several internal changes in version 1.8.7 (build 95). Regarding SwiftData and RsyncUI, it works but there seems not to be any real advantages compared to the JSON file version. Anyway, by doing the SwiftData project, I have done quite a few internal enhancements in this version. 
 
 - several internal enhancements, see GitHub [to compare versions](https://github.com/rsyncOSX/RsyncUI/compare/v1.8.6...v1.8.7)
 -  the Quick Task is moved to a toolbar button in the main tasks view
