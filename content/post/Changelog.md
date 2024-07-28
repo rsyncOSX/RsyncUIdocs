@@ -20,7 +20,7 @@ Summary changes:
 
 - RsyncUI is now fully adapted to Swifts new concurrency model and Swift version 6
 	- in Xcode `SWIFT_STRICT_CONCURRENCY = complete` and `SWIFT_VERSION = 6;` is set 
-	- about [120+](https://github.com/rsyncOSX/RsyncUI/compare/v1.9.2...v2.0.0) files is changed and cleaned up
+	- about [120+](https://github.com/rsyncOSX/RsyncUI/compare/v1.9.2...v2.0.0) files are changed and cleaned up
 - there has been 1,8K downloads of version 1.9.2 of RsyncUI since release 11 June 2024
 - by using the tool [periphery](https://github.com/peripheryapp/periphery), the code is cleaned and all not used classes, structs, functions and attributes are deleted
 - there has been refactor of internal code and a few GUI cleanups
