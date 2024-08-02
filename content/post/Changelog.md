@@ -21,12 +21,11 @@ Summary changes:
 - RsyncUI is now fully adapted to Swifts new concurrency model and Swift version 6
 	- in Xcode `SWIFT_STRICT_CONCURRENCY = complete` and `SWIFT_VERSION = 6;` is set 
 	- about [120+](https://github.com/rsyncOSX/RsyncUI/compare/v1.9.2...v2.0.0) files are changed and cleaned up
-- there has been 1,8K downloads of version 1.9.2 of RsyncUI since release 11 June 2024
 - by using the tool [periphery](https://github.com/peripheryapp/periphery), the code is cleaned and all not used classes, structs, functions and attributes are deleted
 - there has been refactor of internal code and a few GUI cleanups
 - thx to [Cavaliere100](https://github.com/Cavaliere100) for testing RsyncUI on MacOS Sequoia and experienced an application crash for new users
 	- the issue is solved in the 2.0.0 rc
-- RsyncUI is testet on MacOS Sequoia, built by Xcode16 beta4 and it is verified working as expected
+- RsyncUI is tested on MacOS Sequoia, built by Xcode16 beta4 and it is verified working as expected
 - there is a new export and import function, tasks can now be exported and imported between profiles and to new Macs
 	- import and export is by file
 	- some more info [about export and import](/post/ver200rc/)
