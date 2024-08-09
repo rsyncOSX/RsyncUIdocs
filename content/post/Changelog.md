@@ -32,10 +32,9 @@ An example of the rsync command which causes the issue is: `rsync -e ssh -r --li
 
 If not the default values for ssh-key is enabled, `rsync` will not granted access to remote server by the above command. When default values for ssh-key and ssh-port number are used, it is not requiered to include in command. SSH will automatically pick up default values if exist.
 
-The correct rsync command for listing of remote files is : `rsync --verbose --compress -e ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22 -r --list-only thomas@raspberrypi:/backups/Documents/`. The user defined ssh-key and identityfile is included. 
+The correct rsync command for listing of filenames on a remote server when only user defined ssh-key and identityfile are enabled is: `rsync --verbose --compress -e ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22 -r --list-only thomas@raspberrypi:/backups/Documents/`. The user defined ssh-key and identityfile is included. 
 
-Workaround: create and enable default ssh-key and identifyfile. 
-
+Workaround: create and enable default ssh-key and identifyfile. This is fixed in version 2.1.x (not in version 2.0.0)
 
 ## Version 2.0.0 (build 101) -  27 July 2024
 
