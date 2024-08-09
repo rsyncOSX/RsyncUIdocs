@@ -10,7 +10,7 @@ RsyncUI is [signed and notarized](/post/notarized/) and built as [Universal macO
 
 ## Version 2.1.x (work in progress)
 
-Date: 7 August 2024
+Date: 9 August 2024
 
 #### Xcode 16, Swift Testing and Swift Package Manager
 
@@ -21,6 +21,21 @@ By Using Swift Package Manager (SPM), parts of the source code in RsyncUI is ext
 In Xcode 16 there is also a new module, Swift Testing, for testing packages. By creating packages and Swift Testing, important code is isolated and tested to verify it is working as expected. By SPM and Swift Testing, the code for RsyncUI is modularized, isolated, and tested before committing changes.
 
 This is *work in progress*. I am learning every day and developing new code.
+
+### Possible issue in function for restore
+
+The issue only affects what I assume are advanced users who synchronize data to remote servers by [passwordless logins](/post/ssh/).
+
+There is an issue for some users in function for *restore files*. In the next version of RsyncUI, restore data from within RsyncUI is **only** valid for remote serves. The macOS Finder is a much better tool for restoring files from a local attached backup discs. By developing the package [RsyncArguments](https://github.com/rsyncOSX/RsyncArguments) I discovered an issue (for some users) in the current releases. The issue is when collecting list filenames from a remote server for select and restore. The issue does not affect the actual restore itself, only list of filenames to select before a restore. If using only user selected ssh-keys, not the default values for ssh-key, the user selected ssh-key and identityfile is not included in rsync command for listing files.
+
+An example of the rsync command which causes the issue is: `rsync -e ssh -r --list-only thomas@raspberrypi:/backups/Documents/`. 
+
+If not the default values for ssh-key is enabled, `rsync` will not granted access to remote server by the above command. When default values for ssh-key and ssh-port number are used, it is not requiered to include in command. SSH will automatically pick up default values if exist.
+
+The correct rsync command for listing of remote files is : `rsync --verbose --compress -e ssh -i ~/.ssh_rsyncosx/rsyncosx -p 22 -r --list-only thomas@raspberrypi:/backups/Documents/`. The user defined ssh-key and identityfile is included. 
+
+Workaround: create and enable default ssh-key and identifyfile. 
+
 
 ## Version 2.0.0 (build 101) -  27 July 2024
 
